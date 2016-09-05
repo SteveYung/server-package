@@ -15,4 +15,6 @@ strlist = str.split('/')
   #  print value
 
 str_final = str.replace(strlist[len(strlist)-1],'')
+outputDir = '/'+strlist[len(strlist)-4]+'/'+strlist[len(strlist)-3]+'/'+strlist[len(strlist)-2]+'/'
+print outputDir
 print str_final
