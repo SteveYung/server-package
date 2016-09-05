@@ -53,7 +53,7 @@ class ConfigParse(object):
 
     @staticmethod
     def shareInstance():
-	ConfigParse.__lock.acquire()
+        ConfigParse.__lock.acquire()
         if not ConfigParse.__configParse:
             ConfigParse.__configParse = object.__new__(ConfigParse)
             object.__init__(ConfigParse.__configParse)
@@ -70,8 +70,8 @@ class ConfigParse(object):
         #self.addLibPath()
         self.readUserDatabase()
         if platform == 0:
-	    self.__gameVersionName = file_operate.getApkVersion(self._source)
-	    print 'gameVersionName='+self.__gameVersionName
+            self.__gameVersionName = file_operate.getApkVersion(self._source)
+            print 'gameVersionName='+self.__gameVersionName
         elif platform == 1:
             self.__gameVersionName = self.getIosProjectVersion()
 
@@ -133,21 +133,21 @@ class ConfigParse(object):
         self.readUserSDKParam(cx)
         self.readGameLs(cx)
         self.readUserSource(cx)
-        self.readProjFolder(cx)
-        self.readProjSDKPath(cx)
+        # self.readProjFolder(cx)
+        # self.readProjSDKPath(cx)
         self.readOutputDir(cx)
         self.readPackage(cx)
-        self.readTargetName(cx) #从user.xml里读取targetName
+        # self.readTargetName(cx) #从user.xml里读取targetName
         cx.close()
         game = self.getCurrentGame()
-	if game is None:
+        if game is None:
             print 'game == None'
-	    return
+            return
         self._keystore['file'] = game['keystoreFile']
         self._keystore['storepassword'] = game['keystorePwd']
         self._keystore['keyalias'] = game['keystoreAlias']
         self._keystore['aliaspassword'] = game['keystoreAliasPwd']
-	print 'keystore-->'+game['keystoreFile']
+        print 'keystore-->'+game['keystoreFile']
     def readSDKLs(self, cx):
         """get the data about tpl_sdk from database"""
         self.__SDKLs.clear()
@@ -174,7 +174,7 @@ class ConfigParse(object):
         """get the data about tpl_channel_customer from database"""
         self.__channelCustomLs.clear()
         c = cx.cursor(MySQLdb.cursors.DictCursor) 
-	c.execute('select * from tpl_channel_customer')
+        c.execute('select * from tpl_channel_customer')
         rows = c.fetchall()
         for r in rows:
             dictTemp = {}
@@ -192,7 +192,7 @@ class ConfigParse(object):
         """get the data about tpl_sdk from database"""
         self.__SDKVersionLs = []
         c = cx.cursor(MySQLdb.cursors.DictCursor)
-     	c.execute('select * from tpl_version')
+        c.execute('select * from tpl_version')
         rows = c.fetchall()
         for r in rows:
             dictTemp = {}
@@ -208,7 +208,7 @@ class ConfigParse(object):
         """get the data about tpl_channel from database"""
         self.__channelLs.clear()
         c = cx.cursor(MySQLdb.cursors.DictCursor)
-	c.execute('select * from tpl_channel')
+        c.execute('select * from tpl_channel')
         rows = c.fetchall()
         for r in rows:
             dictTemp = {}
@@ -222,35 +222,44 @@ class ConfigParse(object):
             dictTemp['keystoreAlias'] = r['keystoreAlias']
             dictTemp['keystoreAliasPwd'] = r['keystoreAliasPwd']
             if(r['uapiKey']==None):
-	    	dictTemp['uapiKey'] =''
-	    else:
-	        dictTemp['uapiKey'] = r['uapiKey']
-	    if(r['uapiSecret']==None):
-	        dictTemp['uapiSecret'] =''
-	    else:
-            	dictTemp['uapiSecret'] = r['uapiSecret']
+                dictTemp['uapiKey'] =''
+            else:
+                dictTemp['uapiKey'] = r['uapiKey']
+            if(r['uapiSecret']==None):
+                dictTemp['uapiSecret'] =''
+            else:
+                dictTemp['uapiSecret'] = r['uapiSecret']
             dictTemp['oauthLoginServer'] = r['oauthLoginServer']
             dictTemp['bHasSplash'] = r['bHasSplash']
             if(r['extChannel']==None):
-	    	dictTemp['extChannel'] =''
-	    else:
-	        dictTemp['extChannel'] = r['extChannel']
+                dictTemp['extChannel'] =''
+            else:
+                dictTemp['extChannel'] = r['extChannel']
             if(r['jsonMeta']==None):
-	   	dictTemp['jsonMeta'] ='' 
-	    else:
-		dictTemp['jsonMeta'] = r['jsonMeta']
+                dictTemp['jsonMeta'] =''
+            else:
+                dictTemp['jsonMeta'] = r['jsonMeta']
             if(r['customChannelNumber'] == None):
-		dictTemp['customChannelNumber'] =''	    
-	    else:
-	        dictTemp['customChannelNumber'] = r['customChannelNumber']
+                dictTemp['customChannelNumber'] =''
+            else:
+                dictTemp['customChannelNumber'] = r['customChannelNumber']
             dictTemp['r_big_app_id'] = r['r_big_app_id']
             dictTemp['r_sub_app_id'] = r['r_sub_app_id']
-            dictTemp['r_gameversion'] = r['r_gameversion']
-            dictTemp['r_gameversion_build'] = r['r_gameversion_build']
-            dictTemp['r_bundle_id'] = r['r_bundle_id']
-	    if(None == r['display_name']):
-		dictTemp['display_name'] = ''
-	    else:
+            if(r['r_gameversion']==None):
+                dictTemp['r_gameversion'] = ''
+            else:
+                dictTemp['r_gameversion'] = r['r_gameversion']
+            if(r['r_gameversion_build'] == None):
+                dictTemp['r_gameversion_build'] = ''
+            else:
+                dictTemp['r_gameversion_build'] = r['r_gameversion_build']
+            if(r['r_bundle_id'] == None):
+                dictTemp['r_bundle_id'] =''
+            else:
+                dictTemp['r_bundle_id'] = r['r_bundle_id']
+            if(None == r['display_name']):
+                dictTemp['display_name'] = ''
+            else:
                 dictTemp['display_name']=r['display_name'].encode('utf-8')
             dictTemp['sdkLs'] = []
             self.__channelLs[dictTemp['idChannel']] = dictTemp
@@ -260,7 +269,7 @@ class ConfigParse(object):
     def readChannelSdk(self, cx):
         """get the data about sdk in channel from database"""
         c = cx.cursor(MySQLdb.cursors.DictCursor)
-	c.execute('select * from tpl_channel_sdk')
+        c.execute('select * from tpl_channel_sdk')
         rows = c.fetchall()
         for r in rows:
             dictTemp = {}
@@ -269,9 +278,9 @@ class ConfigParse(object):
             dictTemp['idSDK'] = r['idSDK']
             dictTemp['type'] = r['type']
             dictTemp['childSDK'] = r['childSDK']
-	    if(r['notify_url'] == None):
-	    	dictTemp['notify_url'] = ''
-	    else:
+            if(r['notify_url'] == None):
+                dictTemp['notify_url'] = ''
+            else:
                 dictTemp['notify_url'] = r['notify_url']
             idChannel = dictTemp['idChannel']
             channel = self.__channelLs.get(idChannel)
@@ -284,7 +293,7 @@ class ConfigParse(object):
         """get the data about tpl_user_sdk_config from database"""
         self.__userSDKConfigLs.clear()
         c = cx.cursor(MySQLdb.cursors.DictCursor)
-	c.execute('select * from tpl_user_sdk_config')
+        c.execute('select * from tpl_user_sdk_config')
         rows = c.fetchall()
         for r in rows:
             dictTemp = {}
@@ -295,9 +304,9 @@ class ConfigParse(object):
             dictTemp['showName'] = r['showName']
             dictTemp['type'] = r['type']
             dictTemp['childSDK'] = r['childSDK']
-	    if(r['notify_url']==None):
-	    	dictTemp['notify_url'] =''
-	    else:	
+            if(r['notify_url']==None):
+                dictTemp['notify_url'] =''
+            else:
                 dictTemp['notify_url'] = r['notify_url']
             dictTemp['param'] = []
             self.__userSDKConfigLs[dictTemp['idUserSDK']] = dictTemp
@@ -307,7 +316,7 @@ class ConfigParse(object):
     def readUserSDKParam(self, cx):
         """get the data about tpl_user_sdk_param from database"""
         c = cx.cursor(MySQLdb.cursors.DictCursor)
-	c.execute('select * from tpl_user_sdk_param')
+        c.execute('select * from tpl_user_sdk_param')
         rows = c.fetchall()
         for r in rows:
             dictTemp = {}
@@ -327,11 +336,11 @@ class ConfigParse(object):
 
     def readUserSource(self, cx):
         """read apk src from user.xml"""
-        data = self.readConfig(1)
-        if data is not None:
-            self._source = sys.argv[4]
-            if data.get('data4') is not None:
-                self.__appName = data['data4']
+        # data = self.readConfig(1)
+        # if data is not None:
+        self._source = sys.argv[4]
+            # if data.get('data4') is not None:
+            #     self.__appName = data['data4']
 
     def readOutputDir(self, cx):
         """read output dir from user.xml"""
@@ -341,36 +350,36 @@ class ConfigParse(object):
         print "<---outputDir--->"+outputDir
         self._outputDir = outputDir
 
-    def readProjFolder(self, cx):
-        data = self.readConfig(6)
-        if data is not None:
-            self._projFolder = data['data1']
-            self._projXcode = data['data2']
-            self._projSDKVersion = data['data3']
-            self._projIpaPackage = data['data4']
-            if data.get('data5') is not None:
-                self.__iOSName = data['data5']
+    # def readProjFolder(self, cx):
+        # data = self.readConfig(6)
+        # if data is not None:
+            # self._projFolder = data['data1']
+            # self._projXcode = data['data2']
+            # self._projSDKVersion = data['data3']
+            # self._projIpaPackage = data['data4']
+            # if data.get('data5') is not None:
+            #     self.__iOSName = data['data5']
 
     #从user.xml里读取targetName
-    def readTargetName(self,cx):
+    # def readTargetName(self,cx):
         """read target name from user.xml"""
-        data = self.readConfig(9)
-        if data is not None:
-            self._targetName = data['data1']
+        # data = self.readConfig(9)
+        # if data is not None:
+        #     self._targetName = data['data1']
 
-    def readProjSDKPath(self, cx):
-        data = self.readConfig(7)
-        if data is not None:
-            self._projSDKPath = data['data1']
+    # def readProjSDKPath(self, cx):
+        # data = self.readConfig(7)
+        # if data is not None:
+        #     self._projSDKPath = data['data1']
 
-    def readConfig(self, type):
+    # def readConfig(self, type):
         """
             read config from config/user.xml
             @param type:
                 1:apk src
                 2:out dir
                 3:user name
-        """
+
         configPath = '../config/user.xml'
         configPath = file_operate.getFullPath(configPath)
         if not os.path.exists(configPath):
@@ -393,7 +402,7 @@ class ConfigParse(object):
             dictTemp['desc'] = dataNode.get('desc')
             if dictTemp['type'] is not None and int(dictTemp['type']) == type:
                 return dictTemp
-
+        """
     def readGameLs(self, cx):
         """get the data about game list from database"""
         self.__gameLs = []
@@ -410,25 +419,37 @@ class ConfigParse(object):
             dictTemp['gameQQ'] = r['gameQQ']
             dictTemp['gameWx'] = r['gameWx']
             if(r['gameWeibo']== None):
-	    	dictTemp['gameWeibo'] = ''
-	    else:	
-		dictTemp['gameWeibo'] = r['gameWeibo']
+                dictTemp['gameWeibo'] = ''
+            else:
+                dictTemp['gameWeibo'] = r['gameWeibo']
             if(r['gameIconPos']==None):
-		dictTemp['gameIconPos'] = ''
-	    else: 
-	    	dictTemp['gameIconPos'] = r['gameIconPos']
+                dictTemp['gameIconPos'] = ''
+            else:
+                dictTemp['gameIconPos'] = r['gameIconPos']
             if(r['gameIconOffsetX']==None):
-		dictTemp['gameIconOffsetX'] = ''
-	    else:	
-	    	dictTemp['gameIconOffsetX'] = r['gameIconOffsetX']
-	    if(r['gameIconOffsetY']==None):
-		dictTemp['gameIconOffsetY']='' 
-	    else:
-		dictTemp['gameIconOffsetY'] = r['gameIconOffsetY']
-            dictTemp['keystoreFile'] = r['keystoreFile']
-            dictTemp['keystorePwd'] = r['keystorePwd']
-            dictTemp['keystoreAlias'] = r['keystoreAlias']
-            dictTemp['keystoreAliasPwd'] = r['keystoreAliasPwd']
+                dictTemp['gameIconOffsetX'] = ''
+            else:
+                dictTemp['gameIconOffsetX'] = r['gameIconOffsetX']
+            if(r['gameIconOffsetY']==None):
+                dictTemp['gameIconOffsetY']=''
+            else:
+                dictTemp['gameIconOffsetY'] = r['gameIconOffsetY']
+            if(r['keystoreFile'] == None):
+                dictTemp['keystoreFile'] =''
+            else:
+                dictTemp['keystoreFile'] = r['keystoreFile']
+            if(r['keystorePwd'] == None):
+                dictTemp['keystorePwd'] = ''
+            else:
+                dictTemp['keystorePwd'] = r['keystorePwd']
+            if(r['keystoreAlias'] == None):
+                dictTemp['keystoreAlias'] = ''
+            else:
+                dictTemp['keystoreAlias'] = r['keystoreAlias']
+            if(r['keystoreAliasPwd'] == None):
+                dictTemp['keystoreAliasPwd'] =''
+            else:
+                dictTemp['keystoreAliasPwd'] = r['keystoreAliasPwd']
             dictTemp['privateKey'] = r['privateKey']
             dictTemp['order_url'] = r['order_url']
             dictTemp['isModifyAppName'] = r['isModifyAppName']
