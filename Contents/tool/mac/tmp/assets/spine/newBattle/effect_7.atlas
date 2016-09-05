@@ -1,0 +1,69 @@
+
+effect_7.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect3/effect_7_0
+  rotate: true
+  xy: 339, 11
+  size: 81, 332
+  orig: 200, 450
+  offset: 65, 59
+  index: -1
+battleEffect3/effect_7_1
+  rotate: true
+  xy: 2, 2
+  size: 90, 335
+  orig: 200, 450
+  offset: 61, 58
+  index: -1
+battleEffect3/effect_7_2
+  rotate: false
+  xy: 542, 99
+  size: 149, 400
+  orig: 200, 450
+  offset: 21, 45
+  index: -1
+battleEffect3/effect_7_3
+  rotate: false
+  xy: 367, 94
+  size: 173, 405
+  orig: 200, 450
+  offset: 13, 45
+  index: -1
+battleEffect3/effect_7_4
+  rotate: false
+  xy: 187, 94
+  size: 178, 405
+  orig: 200, 450
+  offset: 2, 45
+  index: -1
+battleEffect3/effect_7_5
+  rotate: false
+  xy: 2, 94
+  size: 183, 405
+  orig: 200, 450
+  offset: 5, 45
+  index: -1
+battleEffect3/effect_7_6
+  rotate: false
+  xy: 783, 166
+  size: 86, 333
+  orig: 200, 450
+  offset: 65, 59
+  index: -1
+battleEffect3/effect_7_7
+  rotate: false
+  xy: 693, 164
+  size: 88, 335
+  orig: 500, 500
+  offset: 214, 83
+  index: -1
+battleEffect3/effect_7_8
+  rotate: false
+  xy: 871, 166
+  size: 82, 333
+  orig: 500, 500
+  offset: 215, 84
+  index: -1

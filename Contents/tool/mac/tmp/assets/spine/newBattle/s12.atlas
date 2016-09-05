@@ -1,0 +1,146 @@
+
+s12.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+s11/s11_attack_1
+  rotate: false
+  xy: 2, 623
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_attack_2
+  rotate: false
+  xy: 2, 416
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_attack_3
+  rotate: false
+  xy: 209, 623
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_attack_4
+  rotate: false
+  xy: 2, 209
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_attack_5
+  rotate: false
+  xy: 209, 416
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_hit_1
+  rotate: false
+  xy: 416, 623
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_hit_2
+  rotate: false
+  xy: 2, 2
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_hit_3
+  rotate: false
+  xy: 209, 209
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_hit_4
+  rotate: false
+  xy: 416, 416
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_stand_1
+  rotate: false
+  xy: 623, 623
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_1
+  rotate: false
+  xy: 209, 2
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_2
+  rotate: false
+  xy: 416, 209
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_3
+  rotate: false
+  xy: 623, 416
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_4
+  rotate: false
+  xy: 830, 623
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_5
+  rotate: false
+  xy: 416, 2
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_hit_1
+  rotate: false
+  xy: 623, 209
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_hit_2
+  rotate: false
+  xy: 830, 416
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_hit_3
+  rotate: false
+  xy: 1037, 623
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_hit_4
+  rotate: false
+  xy: 623, 2
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+s11/s11_sw_stand_1
+  rotate: false
+  xy: 830, 209
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1

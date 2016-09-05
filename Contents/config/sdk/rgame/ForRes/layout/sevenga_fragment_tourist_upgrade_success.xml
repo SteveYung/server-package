@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sevenga_stage_background"
+    android:minWidth="@dimen/sevenga_dialog_min_width"
+    android:orientation="vertical"
+    android:padding="@dimen/sevenga_layout_value_16"
+    tools:context=".OriginalLoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sevenga_layout_value_12"
+            android:text="@string/sevenga_guest_upgrade_success"
+            android:textColor="#000000"
+            android:textSize="@dimen/sevenga_text_size_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sevenga_layout_value_12"
+            android:text="@string/sevenga_guest_upgrade_success_text"
+            android:textColor="#000000"
+            android:textSize="@dimen/sevenga_text_size_normal" />
+
+        <Button
+            android:id="@+id/tourist_sure_btn"
+            style="@style/sevenga_common_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sevenga_layout_value_16"
+            android:text="@string/sevenga_sure_text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/registersuccess_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sevenga_layout_value_12" />
+
+</LinearLayout>

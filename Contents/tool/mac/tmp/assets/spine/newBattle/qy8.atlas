@@ -1,0 +1,153 @@
+
+qy8.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleRoleEx/q8/qy8_sw_hit1_1
+  rotate: false
+  xy: 2, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit1_2
+  rotate: false
+  xy: 2, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit1_3
+  rotate: false
+  xy: 124, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit1_4
+  rotate: false
+  xy: 124, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit1_5
+  rotate: false
+  xy: 246, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit1_6
+  rotate: false
+  xy: 246, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit1_7
+  rotate: false
+  xy: 368, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit1_8
+  rotate: false
+  xy: 368, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit2_1
+  rotate: false
+  xy: 490, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit2_2
+  rotate: false
+  xy: 490, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit2_3
+  rotate: false
+  xy: 612, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit2_4
+  rotate: false
+  xy: 612, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit2_5
+  rotate: false
+  xy: 734, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit2_6
+  rotate: false
+  xy: 734, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit2_7
+  rotate: false
+  xy: 856, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_hit2_8
+  rotate: false
+  xy: 856, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_stand_1
+  rotate: false
+  xy: 978, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_stand_2
+  rotate: false
+  xy: 978, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_stand_3
+  rotate: false
+  xy: 1100, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_stand_4
+  rotate: false
+  xy: 1100, 2
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+battleRoleEx/q8/qy8_sw_stand_5
+  rotate: false
+  xy: 1222, 204
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+	   <developer>
+	  			<channel 
+	  					IAPOnlineDebug_notify_url="" 
+	  					idChannel="999999" 
+	  					oauthLoginServer="http://devsdk.raysns.com/rsdkdebug/rsdk/rayapi/index.php/rsdkdebuglogin" 
+	  					privateKey="E232DCC39297363743FA10CE8EEF0A11" 
+	  					
+	  					r_big_app_id="devsdk" 
+	  					r_sub_app_id="subappid" 
+	  					rsdkdebug_r_order_url="http://devsdk.raysns.com/rsdkdebug/rsdk-base-server/src/pay/create_order/devsdk/rsdkdebug/v1" 
+	  					rsdkdebug_r_sdk_platform="rsdkdebug" 
+	  					rsdkdebug_r_login_rsdkserver_version="v1"/>
+	  </developer>

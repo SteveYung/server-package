@@ -1,0 +1,118 @@
+
+effect_20.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiqiang_1
+  rotate: true
+  xy: 867, 52
+  size: 109, 64
+  orig: 400, 200
+  offset: 48, 66
+  index: -1
+jiqiang_2
+  rotate: true
+  xy: 1829, 21
+  size: 233, 135
+  orig: 400, 200
+  offset: 50, 30
+  index: -1
+jiqiang_3
+  rotate: true
+  xy: 1966, 13
+  size: 241, 63
+  orig: 400, 200
+  offset: 49, 71
+  index: -1
+jiqiang_4
+  rotate: false
+  xy: 1344, 10
+  size: 302, 103
+  orig: 400, 200
+  offset: 40, 48
+  index: -1
+jiqiang_5
+  rotate: false
+  xy: 977, 40
+  size: 365, 133
+  orig: 400, 200
+  offset: 29, 37
+  index: -1
+jiqiang_6
+  rotate: false
+  xy: 1452, 115
+  size: 375, 139
+  orig: 400, 200
+  offset: 25, 36
+  index: -1
+jiqiang_7
+  rotate: false
+  xy: 498, 20
+  size: 367, 141
+  orig: 400, 200
+  offset: 33, 39
+  index: -1
+jujiqiang/images/01
+  rotate: false
+  xy: 2, 2
+  size: 92, 11
+  orig: 92, 11
+  offset: 0, 0
+  index: -1
+jujiqiang/images/02
+  rotate: true
+  xy: 2031, 146
+  size: 108, 15
+  orig: 108, 15
+  offset: 0, 0
+  index: -1
+jujiqiang/images/03
+  rotate: false
+  xy: 1648, 91
+  size: 107, 22
+  orig: 107, 22
+  offset: 0, 0
+  index: -1
+jujiqiang/images/04
+  rotate: false
+  xy: 2, 15
+  size: 105, 25
+  orig: 105, 25
+  offset: 0, 0
+  index: -1
+jujiqiang/images/05
+  rotate: false
+  xy: 1344, 149
+  size: 100, 24
+  orig: 100, 24
+  offset: 0, 0
+  index: -1
+jujiqiang/images01/01
+  rotate: false
+  xy: 977, 175
+  size: 473, 79
+  orig: 473, 79
+  offset: 0, 0
+  index: -1
+jujiqiang/images01/02
+  rotate: false
+  xy: 498, 163
+  size: 477, 91
+  orig: 477, 91
+  offset: 0, 0
+  index: -1
+jujiqiang/images01/03
+  rotate: false
+  xy: 2, 42
+  size: 475, 103
+  orig: 475, 103
+  offset: 0, 0
+  index: -1
+jujiqiang/images01/04
+  rotate: false
+  xy: 2, 147
+  size: 494, 107
+  orig: 494, 107
+  offset: 0, 0
+  index: -1

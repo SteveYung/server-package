@@ -1,0 +1,125 @@
+
+sl_sb.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ZB_SL_di
+  rotate: false
+  xy: 2, 137
+  size: 472, 104
+  orig: 472, 104
+  offset: 0, 0
+  index: -1
+zb_ZDSBd
+  rotate: false
+  xy: 2, 44
+  size: 441, 91
+  orig: 441, 91
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-bjqiang01
+  rotate: false
+  xy: 1556, 177
+  size: 153, 64
+  orig: 153, 64
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-bjqiang02
+  rotate: false
+  xy: 790, 148
+  size: 276, 93
+  orig: 276, 93
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-cb01
+  rotate: false
+  xy: 1711, 164
+  size: 102, 77
+  orig: 102, 77
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-cb02
+  rotate: false
+  xy: 1977, 182
+  size: 67, 59
+  orig: 67, 59
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-cb03
+  rotate: false
+  xy: 1902, 166
+  size: 73, 75
+  orig: 73, 75
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-cb04
+  rotate: true
+  xy: 1547, 75
+  size: 100, 111
+  orig: 100, 111
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-cb05
+  rotate: false
+  xy: 1462, 36
+  size: 50, 35
+  orig: 50, 35
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-cb06
+  rotate: true
+  xy: 1660, 109
+  size: 66, 43
+  orig: 66, 43
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-cb07
+  rotate: false
+  xy: 2, 2
+  size: 75, 40
+  orig: 75, 40
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-cb08
+  rotate: false
+  xy: 1815, 163
+  size: 85, 78
+  orig: 85, 78
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-huizhang
+  rotate: false
+  xy: 1309, 32
+  size: 151, 146
+  orig: 151, 146
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-logo
+  rotate: false
+  xy: 1462, 73
+  size: 83, 105
+  orig: 83, 105
+  offset: 0, 0
+  index: -1
+zb_ZDSLd-shengli
+  rotate: false
+  xy: 476, 172
+  size: 312, 69
+  orig: 312, 69
+  offset: 0, 0
+  index: -1
+zb_ZDSLd_guangq
+  rotate: false
+  xy: 1068, 15
+  size: 239, 226
+  orig: 239, 226
+  offset: 0, 0
+  index: -1
+zb_sbwz
+  rotate: false
+  xy: 1309, 180
+  size: 245, 61
+  orig: 245, 61
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sevenga_app_name">RSDK</string>
+
+    <!-- valid hint -->
+    <string name="sevenga_username_blank">Username cannot be empty</string>
+    <string name="sevenga_username_format_incorrect">Username invalid, only 5-30 letters and numbers allowed</string>
+    <string name="sevenga_password_blank">Password cannot be empty</string>
+    <string name="sevenga_password_format_incorrect">Password invalid, only 5-32 letters or symbols, notice the Capital letter</string>
+    <string name="sevenga_password_confirm_incorrect">Password confirm invalid</string>
+    <string name="sevenga_displayname_blank">Nickname can\'t be blank</string>
+    <string name="sevenga_displayname_format_incorrect">Nickname cannot be empty</string>
+
+    <!-- network -->
+    <string name="sevenga_network_unknown_error">Unknown Error</string>
+    <string name="sevenga_network_not_available">Network Not Available</string>
+    <string name="sevenga_network_login_password_incorrect">Incorrect username or password</string>
+    <string name="sevenga_network_timed_out">Connect Timed Out</string>
+    <string name="sevenga_network_register_username_exists">Account already exist</string>
+    <string name="sevenga_network_invalid_relogin">Network error, please login again.</string>
+
+    <!-- Loading -->
+    <string name="sevenga_network_loading_loading">Loading...</string>
+    <string name="sevenga_network_loading_login">Logging in...</string>
+    <string name="sevenga_network_loading_pay">Payment being processed...</string>
+    <!--  -->
+    <string name="sevenga_email_blank">Email cannot be empty</string>
+    <string name="sevenga_network_email_has_been_bound">This email has been bound to other account</string>
+    <string name="sevenga_network_email_not_exists">Please confirm the email has been bound.</string>
+    <string name="sevenga_email_format_incorrect">Email invalid</string>
+    <string name="sevenga_bound_email_already">You have bound to an email already</string>
+    <string name="sevenga_bound_account_already">Bind failed, you can\'t rebind the same account.</string>
+    <string name="sevenga_alreay_upgrade">You have been upgraded already.</string>
+    <string name="sevenga_upgrade_success">Bind successfully, enter the game.</string>
+    <string name="sevenga_please_accept_agreement">Please accept the user agreement.</string>
+    <string name="sevenga_guest_upgrade_success">You will enter the game as a guest user.</string>
+    <string name="sevenga_guest_upgrade_success_text">	In order to ensure your account security and provide better service, we recommend you upgrading to the official account as soon as possible.</string>
+    <!--  -->
+    <string name="sevenga_tp_number_already_bind">This account has already been bound.</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="sevenga_username_hint">username</string>
+    <string name="sevenga_password_hint">password</string>
+    <string name="sevenga_confirm_password_hint">confirm password</string>
+    <string name="sevenga_displayname_hint">displayname</string>
+    <!-- Login -->
+
+    <string name="sevenga_login_text">Login</string>
+    <string name="sevenga_fast_login_text">FastLogin</string>
+    <string name="sevenga_saved_text">Save Password</string>
+    <string name="sevenga_sign_up_text">Register</string>
+    <string name="sevenga_login_facebook_text">Войти через VK</string>
+
+    <!-- Register -->
+    <string name="sevenga_register_show_password_text">Show Password</string>
+    <string name="sevenga_register_text">Register</string>
+    <!--  -->
+    <string name="sevenga_email_hint">Email</string>
+    <string name="sevenga_email_optional_hint">Email(optional)</string>
+    <string name="sevenga_bind_email_text">Bind Email</string>
+    <string name="sevenga_forget_password_text">Forget password?</string>
+    <string name="sevenga_restore_password_title">Password Reset</string>
+    <string name="sevenga_login_immediately">Login Immediately</string>
+    <string name="sevenga_bind_text">Bind</string>
+    <string name="sevenga_sure_text">OK</string>
+    <string name="sevenga_cancel_text">Cancel</string>
+    <string name="sevenga_switch_user_text">Switch Account</string>
+    <string name="sevenga_register_success_hint">Please remember your user information : </string>
+    <string name="sevenga_register_bound_hint">You may also bind another account in case you forget.</string>
+    <string name="sevenga_bind_email_success_hint">Your account has been already  bound to this mailbox : </string>
+    <string name="sevenga_reset_password_success_hint">The link to reset password has been sent to your mailbox:</string>
+    <!--  -->
+    <string name="sevenga_tourist_update_title">Bind Account</string>
+    <string name="sevenga_tourist_hint">Guest Account</string>
+    <string name="sevenga_sevengalogin_text">Login</string>
+    <string name="sevenga_guestlogin_text">Guest Login</string>
+    <string name="sevenga_update_number">BindAccount</string>
+    <string name="sevenga_guest_upgrade_text">Bind</string>
+    <string name="sevenga_fast_login">Guest Login</string>
+    <string name="sevenga_guest_upgrade_rules_text">Protocol</string>
+    <!--  -->
+    <string name="sevenga_history_login">History Login</string>
+    <string name="sevenga_other_channel">Other Channel</string>
+    <string name="sevenga_bund_official_account">Bind to other account</string>
+    <string name="sevenga_new_game_progress">You will switch to other account</string>
+    <string name="sevenga_disbound_and_bound">Bind your account to increase the safety degree. Are you sure to bind?</string>
+    <string name="sevenga_warning_title">Warning!</string>
+    <string name="sevenga_cover_existing_progress">Cover the existing progress or not?</string>
+    <string name="sevenga_choose_upgrade_text">Your account has been bound. Its safety has reached the highest degree!</string>
+
+</resources>

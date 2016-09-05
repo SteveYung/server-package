@@ -1,0 +1,62 @@
+
+effect_21.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiaoshe_A/yan/02/paowei0001
+  rotate: false
+  xy: 182, 2
+  size: 25, 19
+  orig: 250, 150
+  offset: 141, 81
+  index: -1
+jiaoshe_A/yan/02/paowei0005
+  rotate: true
+  xy: 411, 13
+  size: 49, 38
+  orig: 250, 150
+  offset: 118, 63
+  index: -1
+jiaoshe_A/yan/02/paowei0009
+  rotate: false
+  xy: 411, 64
+  size: 68, 57
+  orig: 250, 150
+  offset: 99, 50
+  index: -1
+jiaoshe_A/yan/02/paowei0013
+  rotate: true
+  xy: 338, 35
+  size: 86, 71
+  orig: 250, 150
+  offset: 89, 44
+  index: -1
+jiaoshe_A/yan/02/paowei0017
+  rotate: true
+  xy: 258, 32
+  size: 89, 78
+  orig: 250, 150
+  offset: 82, 39
+  index: -1
+jiaoshe_A/yan/02/paowei0021
+  rotate: true
+  xy: 182, 23
+  size: 98, 74
+  orig: 250, 150
+  offset: 74, 36
+  index: -1
+jiaoshe_A/yan/02/paowei0025
+  rotate: true
+  xy: 97, 10
+  size: 111, 83
+  orig: 250, 150
+  offset: 64, 32
+  index: -1
+jiaoshe_A/yan/02/paowei0029
+  rotate: true
+  xy: 2, 8
+  size: 113, 93
+  orig: 250, 150
+  offset: 58, 28
+  index: -1

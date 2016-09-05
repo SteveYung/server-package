@@ -1,0 +1,69 @@
+
+effect_13.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect/effect_13_0
+  rotate: false
+  xy: 556, 137
+  size: 188, 113
+  orig: 200, 200
+  offset: 0, 21
+  index: -1
+battleEffect/effect_13_1
+  rotate: false
+  xy: 2, 102
+  size: 188, 148
+  orig: 200, 200
+  offset: 0, 21
+  index: -1
+battleEffect/effect_13_2
+  rotate: false
+  xy: 192, 115
+  size: 180, 135
+  orig: 200, 200
+  offset: 0, 34
+  index: -1
+battleEffect/effect_13_3
+  rotate: false
+  xy: 374, 118
+  size: 180, 132
+  orig: 200, 200
+  offset: 0, 37
+  index: -1
+battleEffect/effect_13_4
+  rotate: true
+  xy: 901, 115
+  size: 135, 114
+  orig: 200, 200
+  offset: 45, 55
+  index: -1
+battleEffect/effect_13_5
+  rotate: false
+  xy: 746, 136
+  size: 153, 114
+  orig: 200, 200
+  offset: 27, 55
+  index: -1
+battleEffect/effect_13_6
+  rotate: false
+  xy: 707, 21
+  size: 148, 113
+  orig: 200, 200
+  offset: 32, 56
+  index: -1
+battleEffect/effect_13_7
+  rotate: false
+  xy: 556, 22
+  size: 149, 113
+  orig: 200, 200
+  offset: 31, 56
+  index: -1
+battleEffect/effect_13_8
+  rotate: false
+  xy: 857, 2
+  size: 126, 111
+  orig: 200, 200
+  offset: 61, 58
+  index: -1

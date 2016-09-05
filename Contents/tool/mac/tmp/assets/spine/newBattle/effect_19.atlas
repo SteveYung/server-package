@@ -1,0 +1,27 @@
+
+effect_19.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+aa0055
+  rotate: false
+  xy: 2, 132
+  size: 160, 120
+  orig: 160, 120
+  offset: 0, 0
+  index: -1
+lizi0001_91
+  rotate: false
+  xy: 2, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+qq0028
+  rotate: false
+  xy: 164, 124
+  size: 62, 128
+  orig: 62, 128
+  offset: 0, 0
+  index: -1

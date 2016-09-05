@@ -1,0 +1,76 @@
+
+effect_16.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect3/effect_16_0
+  rotate: false
+  xy: 2, 43
+  size: 42, 47
+  orig: 200, 200
+  offset: 79, 35
+  index: -1
+battleEffect3/effect_16_1
+  rotate: false
+  xy: 2, 92
+  size: 74, 162
+  orig: 200, 200
+  offset: 66, 15
+  index: -1
+battleEffect3/effect_16_2
+  rotate: true
+  xy: 78, 125
+  size: 129, 109
+  orig: 200, 200
+  offset: 36, 0
+  index: -1
+battleEffect3/effect_16_3
+  rotate: true
+  xy: 291, 2
+  size: 122, 105
+  orig: 200, 200
+  offset: 38, 2
+  index: -1
+battleEffect3/effect_16_4
+  rotate: true
+  xy: 189, 126
+  size: 128, 103
+  orig: 200, 200
+  offset: 37, 0
+  index: -1
+battleEffect3/effect_16_5
+  rotate: true
+  xy: 398, 34
+  size: 113, 106
+  orig: 200, 200
+  offset: 42, 0
+  index: -1
+battleEffect3/effect_16_6
+  rotate: true
+  xy: 78, 7
+  size: 116, 108
+  orig: 200, 200
+  offset: 42, 0
+  index: -1
+battleEffect3/effect_16_7
+  rotate: false
+  xy: 398, 149
+  size: 112, 105
+  orig: 200, 200
+  offset: 46, 0
+  index: -1
+battleEffect3/effect_16_8
+  rotate: true
+  xy: 188, 7
+  size: 116, 101
+  orig: 200, 200
+  offset: 41, 1
+  index: -1
+battleEffect3/effect_16_9
+  rotate: true
+  xy: 294, 151
+  size: 103, 94
+  orig: 200, 200
+  offset: 49, 0
+  index: -1

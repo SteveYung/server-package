@@ -1,0 +1,83 @@
+
+result_star.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleResult/result_star_1
+  rotate: false
+  xy: 1160, 304
+  size: 383, 298
+  orig: 383, 298
+  offset: 0, 0
+  index: -1
+battleResult/result_star_10
+  rotate: false
+  xy: 1160, 604
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_11
+  rotate: false
+  xy: 774, 2
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_2
+  rotate: false
+  xy: 2, 604
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_3
+  rotate: false
+  xy: 2, 303
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_4
+  rotate: false
+  xy: 388, 604
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_5
+  rotate: false
+  xy: 2, 2
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_6
+  rotate: false
+  xy: 388, 303
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_7
+  rotate: false
+  xy: 774, 604
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_8
+  rotate: false
+  xy: 388, 2
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1
+battleResult/result_star_9
+  rotate: false
+  xy: 774, 303
+  size: 384, 299
+  orig: 384, 299
+  offset: 0, 0
+  index: -1

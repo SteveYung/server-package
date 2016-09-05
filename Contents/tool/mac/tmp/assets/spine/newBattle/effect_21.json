@@ -1,0 +1,88 @@
+{
+"skeleton": { "hash": "EVL2G+vPB3UxS9PvzXuvxfSeQ1I", "spine": "2.1.27", "width": 250, "height": 150, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root" }
+],
+"slots": [
+	{ "name": "jiaoshe_A/yan/y_17", "bone": "bone", "attachment": "jiaoshe_A/yan/02/paowei0029" },
+	{ "name": "jiaoshe/che/1", "bone": "root" }
+],
+"skins": {
+	"default": {
+		"jiaoshe_A/yan/y_17": {
+			"jiaoshe_A/yan/02/paowei0001": { "width": 250, "height": 150 },
+			"jiaoshe_A/yan/02/paowei0005": { "width": 250, "height": 150 },
+			"jiaoshe_A/yan/02/paowei0009": { "width": 250, "height": 150 },
+			"jiaoshe_A/yan/02/paowei0013": { "width": 250, "height": 150 },
+			"jiaoshe_A/yan/02/paowei0017": { "width": 250, "height": 150 },
+			"jiaoshe_A/yan/02/paowei0021": { "width": 250, "height": 150 },
+			"jiaoshe_A/yan/02/paowei0025": { "width": 250, "height": 150 },
+			"jiaoshe_A/yan/02/paowei0029": { "width": 250, "height": 150 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"jiaoshe_A/yan/y_17": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.2666, "name": "jiaoshe_A/yan/02/paowei0001" },
+					{ "time": 0.3333, "name": "jiaoshe_A/yan/02/paowei0005" },
+					{ "time": 0.4, "name": "jiaoshe_A/yan/02/paowei0009" },
+					{ "time": 0.4666, "name": "jiaoshe_A/yan/02/paowei0013" },
+					{ "time": 0.5333, "name": "jiaoshe_A/yan/02/paowei0017" },
+					{ "time": 0.6, "name": "jiaoshe_A/yan/02/paowei0021" },
+					{ "time": 0.6666, "name": "jiaoshe_A/yan/02/paowei0025" },
+					{ "time": 0.7333, "name": "jiaoshe_A/yan/02/paowei0029" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.2666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7333, "color": "ffffffff" },
+					{ "time": 0.9333, "color": "ffffff1c" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"rotate": [
+					{ "time": 0, "angle": 48.43, "curve": "stepped" },
+					{ "time": 0.2666, "angle": 48.43 }
+				],
+				"translate": [
+					{ "time": 0, "x": -12.9, "y": -1.54, "curve": "stepped" },
+					{ "time": 0.2666, "x": -12.9, "y": -1.54 }
+				],
+				"scale": [
+					{ "time": 0, "x": 2, "y": 2, "curve": "stepped" },
+					{ "time": 0.2666, "x": 2, "y": 2 },
+					{ "time": 0.7333, "x": 2.5, "y": 2.5 },
+					{ "time": 0.9333, "x": 3, "y": 3 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0,
+				"offsets": [
+					{ "slot": "jiaoshe_A/yan/y_17", "offset": 1 }
+				]
+			},
+			{
+				"time": 0.2666,
+				"offsets": [
+					{ "slot": "jiaoshe_A/yan/y_17", "offset": 1 }
+				]
+			},
+			{
+				"time": 0.6,
+				"offsets": [
+					{ "slot": "jiaoshe_A/yan/y_17", "offset": 1 }
+				]
+			}
+		]
+	}
+}
+}

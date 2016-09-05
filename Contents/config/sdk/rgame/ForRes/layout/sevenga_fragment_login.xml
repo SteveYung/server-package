@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sevenga_stage_background"
+    android:minWidth="@dimen/sevenga_dialog_min_width"
+    android:orientation="vertical"
+    tools:context=".OriginalLoginActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7" >
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/sevenga_logo_width"-->
+            <!--android:layout_height="@dimen/sevenga_logo_height"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginBottom="@dimen/sevenga_layout_value_12"-->
+            <!--android:layout_marginLeft="@dimen/sevenga_layout_value_16"-->
+            <!--android:layout_marginTop="@dimen/sevenga_layout_value_12"-->
+            <!--android:src="@drawable/sevenga_logo_normal" />-->
+
+        <!-- 临时 -->
+        <TextView
+            android:layout_width="@dimen/sevenga_logo_width"
+            android:layout_height="@dimen/sevenga_logo_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/sevenga_layout_value_12"
+            android:layout_marginLeft="@dimen/sevenga_layout_value_12"
+            android:layout_marginTop="@dimen/sevenga_layout_value_12"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="@dimen/sevenga_alert_size"
+            android:text="@string/sevenga_login_text"/>
+
+        <ImageView
+            android:id="@+id/login_stage_return_btn"
+            android:layout_width="@dimen/sevenga_layout_value_24"
+            android:layout_height="@dimen/sevenga_layout_value_24"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/sevenga_layout_value_12"
+            android:layout_marginRight="@dimen/sevenga_layout_value_16"
+            android:layout_marginTop="@dimen/sevenga_layout_value_12"
+            android:src="@drawable/sevenga_return_btn"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/login_stage_close_btn"
+            android:layout_width="@dimen/sevenga_layout_value_24"
+            android:layout_height="@dimen/sevenga_layout_value_24"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/sevenga_layout_value_12"
+            android:layout_marginRight="@dimen/sevenga_layout_value_16"
+            android:layout_marginTop="@dimen/sevenga_layout_value_12"
+            android:src="@drawable/sevenga_close_btn"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="@dimen/sevenga_layout_value_16" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/login_username_edittext"
+                style="@style/sevenga_common_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sevenga_username_hint"
+                android:imeActionLabel="Next"
+                android:imeOptions="actionNext"
+                android:inputType="textVisiblePassword"
+                android:paddingRight="@dimen/sevenga_layout_padding_right"
+                android:tag="username_old" />
+
+            <ImageView
+                android:id="@+id/login_username_clear"
+                android:layout_width="@dimen/sevenga_alert_size"
+                android:layout_height="@dimen/sevenga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/sevenga_layout_value_8"
+                android:src="@drawable/sevenga_clear"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/login_username_alert"
+                android:layout_width="@dimen/sevenga_alert_size"
+                android:layout_height="@dimen/sevenga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/sevenga_layout_value_8"
+                android:src="@drawable/sevenga_alert"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sevenga_layout_value_8" >
+
+            <EditText
+                android:id="@+id/login_password_edittext"
+                style="@style/sevenga_common_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sevenga_password_hint"
+                android:imeActionLabel="Done"
+                android:inputType="textVisiblePassword"
+                android:paddingRight="@dimen/sevenga_layout_padding_right"
+                android:tag="password" />
+
+            <ImageView
+                android:id="@+id/login_password_clear"
+                android:layout_width="@dimen/sevenga_alert_size"
+                android:layout_height="@dimen/sevenga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/sevenga_layout_value_8"
+                android:src="@drawable/sevenga_clear"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/login_password_alert"
+                android:layout_width="@dimen/sevenga_alert_size"
+                android:layout_height="@dimen/sevenga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/sevenga_layout_value_8"
+                android:src="@drawable/sevenga_alert"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sevenga_layout_value_16" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sevenga_layout_value_12" >
+
+            <TextView
+                android:id="@+id/login_to_bindemail_btn"
+                style="@style/sevenga_link_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/sevenga_bind_email_text" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/login_to_restorepassword_btn"
+                style="@style/sevenga_link_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/sevenga_forget_password_text" >
+            </TextView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sevenga_layout_value_16"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/login_login_btn"
+                style="@style/sevenga_common_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sevenga_login_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_to_register_btn"
+            style="@style/sevenga_link_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/sevenga_layout_value_12"
+            android:text="@string/sevenga_sign_up_text" >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/login_tplogin_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:id="@+id/login_tplogin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="@dimen/sevenga_layout_value_12"
+        android:orientation="horizontal"
+        android:padding="@dimen/sevenga_layout_value_16" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+
+jiguanqiang.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+right_leg
+  rotate: true
+  xy: 986, 150
+  size: 89, 296
+  orig: 113, 309
+  offset: 14, 13
+  index: -1
+shenti
+  rotate: true
+  xy: 2, 30
+  size: 209, 593
+  orig: 223, 607
+  offset: 10, 7
+  index: -1
+wuqi
+  rotate: false
+  xy: 597, 2
+  size: 387, 237
+  orig: 397, 248
+  offset: 7, 7
+  index: -1
+you_gebo
+  rotate: true
+  xy: 986, 52
+  size: 96, 171
+  orig: 107, 180
+  offset: 4, 4
+  index: -1
+zuo_arm
+  rotate: false
+  xy: 1284, 153
+  size: 88, 86
+  orig: 99, 96
+  offset: 7, 5
+  index: -1
+zuo_hand
+  rotate: false
+  xy: 1159, 19
+  size: 129, 129
+  orig: 143, 135
+  offset: 7, 6
+  index: -1

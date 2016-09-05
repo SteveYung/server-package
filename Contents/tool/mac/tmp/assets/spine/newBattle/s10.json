@@ -1,0 +1,150 @@
+{
+"skeleton": { "hash": "fGWuvP830hh0/LXXAdIEaHZbpUY", "spine": "2.1.27", "width": 300, "height": 300, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "gunpoint", "parent": "root", "x": 63.05, "y": 45.3 }
+],
+"slots": [
+	{ "name": "battleEffect/effect_bruise", "bone": "root", "attachment": "s10/s10_sw_stand_6" }
+],
+"skins": {
+	"default": {
+		"battleEffect/effect_bruise": {
+			"s10/s10_attack_1": { "width": 300, "height": 300 },
+			"s10/s10_attack_2": { "width": 300, "height": 300 },
+			"s10/s10_attack_3": { "width": 300, "height": 300 },
+			"s10/s10_attack_4": { "width": 300, "height": 300 },
+			"s10/s10_attack_5": { "width": 300, "height": 300 },
+			"s10/s10_attack_6": { "width": 300, "height": 300 },
+			"s10/s10_hit_1": { "width": 300, "height": 300 },
+			"s10/s10_hit_2": { "width": 300, "height": 300 },
+			"s10/s10_hit_3": { "width": 300, "height": 300 },
+			"s10/s10_hit_4": { "width": 300, "height": 300 },
+			"s10/s10_hit_5": { "width": 300, "height": 300 },
+			"s10/s10_stand_1": { "width": 300, "height": 300 },
+			"s10/s10_stand_2": { "width": 300, "height": 300 },
+			"s10/s10_stand_3": { "width": 300, "height": 300 },
+			"s10/s10_stand_4": { "width": 300, "height": 300 },
+			"s10/s10_stand_5": { "width": 300, "height": 300 },
+			"s10/s10_stand_6": { "width": 300, "height": 300 },
+			"s10/s10_sw_attack_1": { "width": 300, "height": 300 },
+			"s10/s10_sw_attack_2": { "width": 300, "height": 300 },
+			"s10/s10_sw_attack_3": { "width": 300, "height": 300 },
+			"s10/s10_sw_attack_4": { "width": 300, "height": 300 },
+			"s10/s10_sw_attack_5": { "width": 300, "height": 300 },
+			"s10/s10_sw_attack_6": { "width": 300, "height": 300 },
+			"s10/s10_sw_hit_1": { "width": 300, "height": 300 },
+			"s10/s10_sw_hit_2": { "width": 300, "height": 300 },
+			"s10/s10_sw_hit_3": { "width": 300, "height": 300 },
+			"s10/s10_sw_hit_4": { "width": 300, "height": 300 },
+			"s10/s10_sw_hit_5": { "width": 300, "height": 300 },
+			"s10/s10_sw_stand_1": { "width": 300, "height": 300 },
+			"s10/s10_sw_stand_2": { "width": 300, "height": 300 },
+			"s10/s10_sw_stand_3": { "width": 300, "height": 300 },
+			"s10/s10_sw_stand_4": { "width": 300, "height": 300 },
+			"s10/s10_sw_stand_5": { "width": 300, "height": 300 },
+			"s10/s10_sw_stand_6": { "width": 300, "height": 300 }
+		}
+	}
+},
+"animations": {
+	"attack": {
+		"slots": {
+			"battleEffect/effect_bruise": {
+				"attachment": [
+					{ "time": 0, "name": "s10/s10_attack_1" },
+					{ "time": 0.0666, "name": "s10/s10_attack_2" },
+					{ "time": 0.1333, "name": "s10/s10_attack_3" },
+					{ "time": 0.2, "name": "s10/s10_attack_4" },
+					{ "time": 0.3333, "name": "s10/s10_attack_5" },
+					{ "time": 0.5333, "name": "s10/s10_attack_6" }
+				]
+			}
+		},
+		"bones": {
+			"gunpoint": {
+				"translate": [
+					{ "time": 0, "x": -42.09, "y": 10.04 }
+				]
+			}
+		}
+	},
+	"hit": {
+		"slots": {
+			"battleEffect/effect_bruise": {
+				"attachment": [
+					{ "time": 0, "name": "s10/s10_hit_1" },
+					{ "time": 0.1, "name": "s10/s10_hit_2" },
+					{ "time": 0.2333, "name": "s10/s10_hit_3" },
+					{ "time": 0.3666, "name": "s10/s10_hit_4" },
+					{ "time": 0.5, "name": "s10/s10_hit_5" }
+				]
+			}
+		}
+	},
+	"stand": {
+		"slots": {
+			"battleEffect/effect_bruise": {
+				"attachment": [
+					{ "time": 0, "name": "s10/s10_stand_1" },
+					{ "time": 0.1, "name": "s10/s10_stand_2" },
+					{ "time": 0.2, "name": "s10/s10_stand_3" },
+					{ "time": 0.3, "name": "s10/s10_stand_4" },
+					{ "time": 0.4, "name": "s10/s10_stand_5" },
+					{ "time": 0.5, "name": "s10/s10_stand_6" },
+					{ "time": 0.6, "name": "s10/s10_stand_1" }
+				]
+			}
+		}
+	},
+	"sw_attack": {
+		"slots": {
+			"battleEffect/effect_bruise": {
+				"attachment": [
+					{ "time": 0, "name": "s10/s10_sw_attack_1" },
+					{ "time": 0.0666, "name": "s10/s10_sw_attack_2" },
+					{ "time": 0.1333, "name": "s10/s10_sw_attack_3" },
+					{ "time": 0.2, "name": "s10/s10_sw_attack_4" },
+					{ "time": 0.3, "name": "s10/s10_sw_attack_5" },
+					{ "time": 0.4333, "name": "s10/s10_sw_attack_6" }
+				]
+			}
+		},
+		"bones": {
+			"gunpoint": {
+				"translate": [
+					{ "time": 0, "x": -85.14, "y": -25.35 }
+				]
+			}
+		}
+	},
+	"sw_hit": {
+		"slots": {
+			"battleEffect/effect_bruise": {
+				"attachment": [
+					{ "time": 0, "name": "s10/s10_sw_hit_1" },
+					{ "time": 0.1, "name": "s10/s10_sw_hit_2" },
+					{ "time": 0.2333, "name": "s10/s10_sw_hit_3" },
+					{ "time": 0.3666, "name": "s10/s10_sw_hit_4" },
+					{ "time": 0.5, "name": "s10/s10_sw_hit_5" }
+				]
+			}
+		}
+	},
+	"sw_stand": {
+		"slots": {
+			"battleEffect/effect_bruise": {
+				"attachment": [
+					{ "time": 0, "name": "s10/s10_sw_stand_1" },
+					{ "time": 0.1, "name": "s10/s10_sw_stand_2" },
+					{ "time": 0.2, "name": "s10/s10_sw_stand_3" },
+					{ "time": 0.3, "name": "s10/s10_sw_stand_4" },
+					{ "time": 0.4, "name": "s10/s10_sw_stand_5" },
+					{ "time": 0.5, "name": "s10/s10_sw_stand_6" },
+					{ "time": 0.6, "name": "s10/s10_sw_stand_1" }
+				]
+			}
+		}
+	}
+}
+}

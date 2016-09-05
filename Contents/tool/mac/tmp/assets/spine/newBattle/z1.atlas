@@ -1,0 +1,146 @@
+
+z1.png
+size: 2048,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+z1/z1_sw_attack_1
+  rotate: false
+  xy: 2, 17
+  size: 114, 109
+  orig: 200, 200
+  offset: 29, 49
+  index: -1
+z1/z1_sw_attack_2
+  rotate: true
+  xy: 1225, 67
+  size: 59, 86
+  orig: 200, 200
+  offset: 52, 43
+  index: -1
+z1/z1_sw_attack_3
+  rotate: true
+  xy: 959, 2
+  size: 57, 67
+  orig: 200, 200
+  offset: 56, 47
+  index: -1
+z1/z1_sw_attack_4
+  rotate: true
+  xy: 885, 2
+  size: 57, 72
+  orig: 200, 200
+  offset: 56, 49
+  index: -1
+z1/z1_sw_hit_1
+  rotate: true
+  xy: 1482, 62
+  size: 64, 80
+  orig: 200, 200
+  offset: 46, 56
+  index: -1
+z1/z1_sw_hit_2
+  rotate: true
+  xy: 720, 55
+  size: 71, 78
+  orig: 200, 200
+  offset: 39, 58
+  index: -1
+z1/z1_sw_hit_3
+  rotate: true
+  xy: 1313, 66
+  size: 60, 84
+  orig: 200, 200
+  offset: 51, 58
+  index: -1
+z1/z1_sw_hit_4
+  rotate: true
+  xy: 800, 2
+  size: 56, 76
+  orig: 200, 200
+  offset: 55, 58
+  index: -1
+z1/z1_sw_run_1
+  rotate: true
+  xy: 526, 51
+  size: 75, 97
+  orig: 200, 200
+  offset: 50, 44
+  index: -1
+z1/z1_sw_run_2
+  rotate: true
+  xy: 625, 51
+  size: 75, 93
+  orig: 200, 200
+  offset: 48, 51
+  index: -1
+z1/z1_sw_run_3
+  rotate: true
+  xy: 230, 45
+  size: 81, 97
+  orig: 200, 200
+  offset: 45, 55
+  index: -1
+z1/z1_sw_run_4
+  rotate: true
+  xy: 329, 48
+  size: 78, 96
+  orig: 200, 200
+  offset: 50, 59
+  index: -1
+z1/z1_sw_run_5
+  rotate: true
+  xy: 118, 50
+  size: 76, 110
+  orig: 200, 200
+  offset: 59, 40
+  index: -1
+z1/z1_sw_run_6
+  rotate: true
+  xy: 427, 49
+  size: 77, 97
+  orig: 200, 200
+  offset: 59, 46
+  index: -1
+z1/z1_sw_stand_1
+  rotate: true
+  xy: 885, 61
+  size: 65, 83
+  orig: 200, 200
+  offset: 54, 49
+  index: -1
+z1/z1_sw_stand_2
+  rotate: true
+  xy: 800, 60
+  size: 66, 83
+  orig: 200, 200
+  offset: 54, 49
+  index: -1
+z1/z1_sw_stand_3
+  rotate: true
+  xy: 1056, 62
+  size: 64, 83
+  orig: 200, 200
+  offset: 56, 49
+  index: -1
+z1/z1_sw_stand_4
+  rotate: true
+  xy: 970, 62
+  size: 64, 84
+  orig: 200, 200
+  offset: 57, 49
+  index: -1
+z1/z1_sw_stand_5
+  rotate: true
+  xy: 1141, 62
+  size: 64, 82
+  orig: 200, 200
+  offset: 56, 49
+  index: -1
+z1/z1_sw_stand_6
+  rotate: true
+  xy: 1399, 61
+  size: 65, 81
+  orig: 200, 200
+  offset: 55, 49
+  index: -1

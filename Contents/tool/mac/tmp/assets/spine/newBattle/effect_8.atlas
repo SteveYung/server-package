@@ -1,0 +1,48 @@
+
+effect_8.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect/effect_8_0
+  rotate: false
+  xy: 1012, 21
+  size: 165, 181
+  orig: 200, 200
+  offset: 0, 19
+  index: -1
+battleEffect/effect_8_1
+  rotate: false
+  xy: 2, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+battleEffect/effect_8_2
+  rotate: false
+  xy: 204, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+battleEffect/effect_8_3
+  rotate: false
+  xy: 406, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+battleEffect/effect_8_4
+  rotate: false
+  xy: 608, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+battleEffect/effect_8_5
+  rotate: false
+  xy: 810, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1

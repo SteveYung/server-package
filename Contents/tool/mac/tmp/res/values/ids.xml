@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="rsdk_username">false</item>
+    <item type="id" name="rsdk_txt_username">false</item>
+    <item type="id" name="rsdk_password">false</item>
+    <item type="id" name="rsdk_txt_password">false</item>
+    <item type="id" name="rsdk_tips">false</item>
+    <item type="id" name="rsdk_login_username">false</item>
+    <item type="id" name="rsdk_login_password">false</item>
+</resources>

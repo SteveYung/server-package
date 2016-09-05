@@ -1,0 +1,146 @@
+
+Button_a-c.png
+size: 791,278
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Btn
+  rotate: false
+  xy: 279, 209
+  size: 270, 67
+  orig: 270, 74
+  offset: 0, 2
+  index: -1
+Btn1
+  rotate: false
+  xy: 279, 135
+  size: 249, 72
+  orig: 249, 72
+  offset: 0, 0
+  index: -1
+btn0006
+  rotate: true
+  xy: 2, 15
+  size: 9, 35
+  orig: 500, 200
+  offset: 378, 110
+  index: -1
+btn0010
+  rotate: false
+  xy: 720, 28
+  size: 46, 59
+  orig: 500, 200
+  offset: 342, 105
+  index: -1
+btn0014
+  rotate: true
+  xy: 481, 2
+  size: 84, 57
+  orig: 500, 200
+  offset: 302, 106
+  index: -1
+btn0018
+  rotate: false
+  xy: 530, 92
+  size: 119, 55
+  orig: 500, 200
+  offset: 268, 106
+  index: -1
+btn0022
+  rotate: false
+  xy: 551, 149
+  size: 162, 65
+  orig: 500, 200
+  offset: 225, 97
+  index: -1
+btn0026
+  rotate: false
+  xy: 279, 5
+  size: 200, 81
+  orig: 500, 200
+  offset: 187, 82
+  index: -1
+btn0030
+  rotate: false
+  xy: 551, 216
+  size: 238, 60
+  orig: 500, 200
+  offset: 150, 100
+  index: -1
+btn0034
+  rotate: false
+  xy: 2, 119
+  size: 275, 75
+  orig: 500, 200
+  offset: 113, 86
+  index: -1
+btn0038
+  rotate: false
+  xy: 2, 196
+  size: 275, 80
+  orig: 500, 200
+  offset: 113, 77
+  index: -1
+btn0042
+  rotate: false
+  xy: 2, 68
+  size: 275, 49
+  orig: 500, 200
+  offset: 113, 102
+  index: -1
+btn0046
+  rotate: false
+  xy: 2, 26
+  size: 274, 40
+  orig: 500, 200
+  offset: 113, 111
+  index: -1
+btn0050
+  rotate: false
+  xy: 279, 88
+  size: 247, 45
+  orig: 500, 200
+  offset: 113, 103
+  index: -1
+btn_shu0021
+  rotate: true
+  xy: 729, 89
+  size: 60, 57
+  orig: 500, 200
+  offset: 255, 36
+  index: -1
+btn_shu0025
+  rotate: true
+  xy: 651, 89
+  size: 58, 76
+  orig: 500, 200
+  offset: 256, 31
+  index: -1
+btn_shu0029
+  rotate: false
+  xy: 609, 15
+  size: 56, 72
+  orig: 500, 200
+  offset: 257, 46
+  index: -1
+btn_shu0033
+  rotate: false
+  xy: 540, 12
+  size: 67, 78
+  orig: 500, 200
+  offset: 248, 46
+  index: -1
+btn_shu0037
+  rotate: false
+  xy: 667, 15
+  size: 51, 72
+  orig: 500, 200
+  offset: 253, 46
+  index: -1
+btn_shu0041
+  rotate: true
+  xy: 715, 151
+  size: 63, 70
+  orig: 500, 200
+  offset: 238, 46
+  index: -1

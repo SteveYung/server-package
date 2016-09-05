@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="sevenga_transparent_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.PopupWindow</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="sevenga_fullscreen_transparent_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.PopupWindow</item>
+    </style>
+
+    <style name="DialogActivity" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="sevenga_common_edittext">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/sevenga_text_size_snormal</item>
+        <item name="android:background">@drawable/sevenga_common_edittext</item>
+        <item name="android:drawablePadding">@dimen/sevenga_layout_value_8</item>
+    </style>
+
+    <style name="sevenga_link_button">
+        <item name="android:textColor">#2E7FDB</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sevenga_text_size_snormal</item>
+    </style>
+
+    <style name="sevenga_common_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/sevenga_btn</item>
+        <item name="android:paddingBottom">@dimen/sevenga_layout_value_8</item>
+        <item name="android:paddingLeft">@dimen/sevenga_layout_value_16</item>
+        <item name="android:paddingRight">@dimen/sevenga_layout_value_16</item>
+        <item name="android:paddingTop">@dimen/sevenga_layout_value_8</item>
+        <item name="android:textSize">@dimen/sevenga_text_size_normal</item>
+    </style>
+    <style name="sevenga_fast_login_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/sevenga_fast_login_btn</item>
+        <item name="android:paddingBottom">@dimen/sevenga_layout_value_8</item>
+        <item name="android:paddingLeft">@dimen/sevenga_layout_value_16</item>
+        <item name="android:paddingRight">@dimen/sevenga_layout_value_16</item>
+        <item name="android:paddingTop">@dimen/sevenga_layout_value_8</item>
+        <item name="android:textSize">@dimen/sevenga_text_size_normal</item>
+    </style>
+    <style name="sevenga_login_login_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/sevenga_login_btn</item>
+        <item name="android:paddingBottom">@dimen/sevenga_layout_value_8</item>
+        <item name="android:paddingLeft">@dimen/sevenga_layout_value_16</item>
+        <item name="android:paddingRight">@dimen/sevenga_layout_value_16</item>
+        <item name="android:paddingTop">@dimen/sevenga_layout_value_8</item>
+        <item name="android:textSize">@dimen/sevenga_text_size_normal</item>
+    </style>
+    <style name="sevenga_facebook_style">
+        <item name="android:background">@drawable/sevenga_facebook_style</item>
+    </style>
+    <style name="sevenga_vk_style">
+        <item name="android:background">@drawable/sevenga_vk_style</item>
+    </style>
+    <style name="sevenga_googlegame_style">
+        <item name="android:background">@drawable/sevenga_googlegame_style</item>
+    </style>
+    <style name="sevenga_googleplus_style">
+        <item name="android:background">@drawable/sevenga_googleplus_style</item>
+    </style>
+    <style name="sevenga_sevenga_style">
+        <item name="android:background">@drawable/sevenga_sevenga_style</item>
+    </style>
+
+    <drawable name="white">#ffffff</drawable>
+
+</resources>

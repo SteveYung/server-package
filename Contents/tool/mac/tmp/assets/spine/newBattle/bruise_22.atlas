@@ -1,0 +1,111 @@
+
+bruise_22.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect2/bruise_22_0
+  rotate: false
+  xy: 2, 127
+  size: 176, 123
+  orig: 300, 300
+  offset: 63, 88
+  index: -1
+battleEffect2/bruise_22_1
+  rotate: false
+  xy: 2, 2
+  size: 176, 123
+  orig: 300, 300
+  offset: 63, 88
+  index: -1
+battleEffect2/bruise_22_10
+  rotate: false
+  xy: 713, 2
+  size: 174, 123
+  orig: 300, 300
+  offset: 64, 88
+  index: -1
+battleEffect2/bruise_22_11
+  rotate: false
+  xy: 714, 127
+  size: 175, 123
+  orig: 300, 300
+  offset: 64, 88
+  index: -1
+battleEffect2/bruise_22_12
+  rotate: false
+  xy: 358, 127
+  size: 176, 123
+  orig: 300, 300
+  offset: 63, 88
+  index: -1
+battleEffect2/bruise_22_13
+  rotate: false
+  xy: 358, 2
+  size: 176, 123
+  orig: 300, 300
+  offset: 63, 88
+  index: -1
+battleEffect2/bruise_22_14
+  rotate: false
+  xy: 536, 127
+  size: 176, 123
+  orig: 300, 300
+  offset: 63, 88
+  index: -1
+battleEffect2/bruise_22_2
+  rotate: false
+  xy: 180, 127
+  size: 176, 123
+  orig: 300, 300
+  offset: 63, 88
+  index: -1
+battleEffect2/bruise_22_3
+  rotate: false
+  xy: 180, 2
+  size: 176, 123
+  orig: 300, 300
+  offset: 63, 88
+  index: -1
+battleEffect2/bruise_22_4
+  rotate: false
+  xy: 536, 2
+  size: 175, 123
+  orig: 300, 300
+  offset: 64, 88
+  index: -1
+battleEffect2/bruise_22_5
+  rotate: false
+  xy: 891, 128
+  size: 174, 122
+  orig: 300, 300
+  offset: 64, 88
+  index: -1
+battleEffect2/bruise_22_6
+  rotate: false
+  xy: 1241, 130
+  size: 171, 120
+  orig: 300, 300
+  offset: 66, 89
+  index: -1
+battleEffect2/bruise_22_7
+  rotate: false
+  xy: 1414, 133
+  size: 168, 117
+  orig: 300, 300
+  offset: 67, 91
+  index: -1
+battleEffect2/bruise_22_8
+  rotate: false
+  xy: 1584, 133
+  size: 168, 117
+  orig: 300, 300
+  offset: 67, 91
+  index: -1
+battleEffect2/bruise_22_9
+  rotate: false
+  xy: 1067, 129
+  size: 172, 121
+  orig: 300, 300
+  offset: 65, 89
+  index: -1

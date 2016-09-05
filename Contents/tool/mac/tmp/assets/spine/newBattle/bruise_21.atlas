@@ -1,0 +1,62 @@
+
+bruise_21.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect2/bruise_21_0
+  rotate: true
+  xy: 733, 19
+  size: 101, 124
+  orig: 200, 200
+  offset: 47, 42
+  index: -1
+battleEffect2/bruise_21_1
+  rotate: true
+  xy: 300, 2
+  size: 118, 145
+  orig: 200, 200
+  offset: 41, 31
+  index: -1
+battleEffect2/bruise_21_12
+  rotate: false
+  xy: 929, 37
+  size: 68, 83
+  orig: 200, 200
+  offset: 66, 60
+  index: -1
+battleEffect2/bruise_21_2
+  rotate: true
+  xy: 447, 5
+  size: 115, 141
+  orig: 200, 200
+  offset: 42, 33
+  index: -1
+battleEffect2/bruise_21_3
+  rotate: true
+  xy: 2, 2
+  size: 118, 147
+  orig: 200, 200
+  offset: 41, 31
+  index: -1
+battleEffect2/bruise_21_4
+  rotate: true
+  xy: 590, 5
+  size: 115, 141
+  orig: 200, 200
+  offset: 42, 33
+  index: -1
+battleEffect2/bruise_21_5
+  rotate: true
+  xy: 151, 3
+  size: 117, 147
+  orig: 200, 200
+  offset: 41, 31
+  index: -1
+battleEffect2/bruise_21_6
+  rotate: false
+  xy: 859, 36
+  size: 68, 84
+  orig: 200, 200
+  offset: 66, 60
+  index: -1

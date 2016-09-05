@@ -1,0 +1,188 @@
+
+jianzhao.png
+size: 2048,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+build_effect/building_build_01
+  rotate: true
+  xy: 350, 44
+  size: 77, 174
+  orig: 77, 204
+  offset: 0, 0
+  index: -1
+build_effect/building_build_02
+  rotate: true
+  xy: 162, 14
+  size: 28, 66
+  orig: 28, 66
+  offset: 0, 0
+  index: -1
+build_effect/building_build_03
+  rotate: true
+  xy: 1826, 93
+  size: 28, 66
+  orig: 28, 66
+  offset: 0, 0
+  index: -1
+build_effect/building_build_effect_0
+  rotate: false
+  xy: 230, 4
+  size: 48, 38
+  orig: 100, 100
+  offset: 22, 34
+  index: -1
+build_effect/building_build_effect_1
+  rotate: false
+  xy: 1767, 79
+  size: 57, 42
+  orig: 100, 100
+  offset: 21, 33
+  index: -1
+build_effect/building_build_effect_2
+  rotate: false
+  xy: 1705, 75
+  size: 60, 46
+  orig: 100, 100
+  offset: 19, 30
+  index: -1
+build_effect/building_build_effect_3
+  rotate: false
+  xy: 1639, 73
+  size: 64, 48
+  orig: 100, 100
+  offset: 18, 29
+  index: -1
+build_effect/building_build_effect_4
+  rotate: false
+  xy: 1569, 72
+  size: 68, 49
+  orig: 100, 100
+  offset: 17, 28
+  index: -1
+build_effect/building_build_effect_5
+  rotate: false
+  xy: 1494, 71
+  size: 73, 50
+  orig: 100, 100
+  offset: 17, 27
+  index: -1
+build_effect/building_build_effect_6
+  rotate: false
+  xy: 1411, 68
+  size: 81, 53
+  orig: 100, 100
+  offset: 16, 24
+  index: -1
+build_effect/building_build_effect_7
+  rotate: false
+  xy: 1327, 63
+  size: 82, 58
+  orig: 100, 100
+  offset: 16, 21
+  index: -1
+build_effect/building_build_effect_8
+  rotate: false
+  xy: 1059, 58
+  size: 83, 63
+  orig: 100, 100
+  offset: 16, 17
+  index: -1
+build_effect/building_build_effect_9
+  rotate: false
+  xy: 1144, 57
+  size: 81, 64
+  orig: 100, 100
+  offset: 18, 17
+  index: -1
+build_effect/qizhongji_bi_0
+  rotate: false
+  xy: 652, 35
+  size: 113, 86
+  orig: 118, 93
+  offset: 2, 2
+  index: -1
+build_effect/qizhongji_bi_0_1
+  rotate: true
+  xy: 280, 18
+  size: 24, 41
+  orig: 30, 43
+  offset: 2, 2
+  index: -1
+build_effect/qizhongji_bi_0_2
+  rotate: true
+  xy: 323, 19
+  size: 23, 41
+  orig: 28, 48
+  offset: 0, 5
+  index: -1
+build_effect/qizhongji_bi_0_3
+  rotate: true
+  xy: 1979, 99
+  size: 22, 40
+  orig: 23, 45
+  offset: 0, 2
+  index: -1
+build_effect/qizhongji_bi_0_4
+  rotate: true
+  xy: 1937, 96
+  size: 25, 40
+  orig: 32, 46
+  offset: 4, 4
+  index: -1
+build_effect/qizhongji_bi_0_5
+  rotate: true
+  xy: 1894, 96
+  size: 25, 41
+  orig: 28, 47
+  offset: 0, 2
+  index: -1
+build_effect/qizhongji_bi_100
+  rotate: false
+  xy: 526, 40
+  size: 124, 81
+  orig: 136, 89
+  offset: 9, 3
+  index: -1
+build_effect/qizhongji_bi_20
+  rotate: true
+  xy: 767, 32
+  size: 89, 93
+  orig: 93, 99
+  offset: 0, 3
+  index: -1
+build_effect/qizhongji_bi_40
+  rotate: true
+  xy: 959, 61
+  size: 60, 98
+  orig: 67, 106
+  offset: 4, 4
+  index: -1
+build_effect/qizhongji_bi_60
+  rotate: true
+  xy: 1227, 77
+  size: 44, 98
+  orig: 56, 109
+  offset: 5, 4
+  index: -1
+build_effect/qizhongji_bi_80
+  rotate: true
+  xy: 862, 46
+  size: 75, 95
+  orig: 84, 103
+  offset: 4, 4
+  index: -1
+build_effect/qizhongji_jia
+  rotate: true
+  xy: 162, 44
+  size: 77, 186
+  orig: 77, 204
+  offset: 0, 0
+  index: -1
+build_effect/world_island_4
+  rotate: false
+  xy: 2, 2
+  size: 158, 119
+  orig: 160, 171
+  offset: 2, 19
+  index: -1

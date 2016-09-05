@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sevenga_app_name">RayjoySDK</string>
+    <!-- 德语 -->
+    <!-- valid hint -->
+    <string name="sevenga_username_blank">Benutzername darf nicht leer sein</string>
+    <string name="sevenga_username_format_incorrect">Benutzername ungültig, zwischen 5 und 30 Zahlen oder englische Buchstaben länge erlaubt</string>
+    <string name="sevenga_password_blank">Passwort darf nicht leer sein</string>
+    <string name="sevenga_password_format_incorrect">Passwort ungültig, zwischen 5 und 32 Zeichen(darf nur Zahlen, englische Buchstaben und Zeichen) länge erlaubt, achten auf die Groß- und Kleinbuchstabe</string>
+    <string name="sevenga_password_confirm_incorrect"></string>
+    <string name="sevenga_displayname_blank">Spitzname darf nicht leer sein</string>
+    <string name="sevenga_displayname_format_incorrect">Form des Spitznames falsch</string>
+
+    <!-- network -->
+    <string name="sevenga_network_unknown_error">unbekannter Fehler</string>
+    <string name="sevenga_network_not_available">Netzwerk unbenutzbar</string>
+    <string name="sevenga_network_login_password_incorrect">Benutzername oder Passwort falsch</string>
+    <string name="sevenga_network_timed_out">Zeitüberschreitung bei Verbindungsaufbau</string>
+    <string name="sevenga_network_register_username_exists">Account existiert</string>
+    <string name="sevenga_network_invalid_relogin">Netzwerk ungewöhnlich. Bitte einloggen Sie wieder Mal.</string>
+
+    <!-- Loading -->
+    <string name="sevenga_network_loading_loading">lädt...</string>
+    <string name="sevenga_network_loading_login">einloggen...</string>
+    <string name="sevenga_network_loading_pay">Zahlung wird bearbeitet...</string>
+    <!--  -->
+    <string name="sevenga_email_blank">E-Mail darf nicht leer sein</string>
+    <string name="sevenga_network_email_has_been_bound">Anderer Account wurde schon mit diesem Mailbox verknüpft</string>
+    <string name="sevenga_network_email_not_exists">Bestätigen Sie bitte mal die Email, die wurde schon verknüpft...</string>
+    <string name="sevenga_email_format_incorrect">E-Mail-Adresse ist ungültig</string>
+    <string name="sevenga_bound_email_already">Sie haben schon mit einer E-mail verknüpft, verknüpfen bitte nicht wieder mal</string>
+     <string name="sevenga_bound_account_already">Binden falsch. Gleiches Account nie wiederholt binden</string>
+    <string name="sevenga_alreay_upgrade">Sie haben das Upgrade schon geschaffen.</string>
+    <string name="sevenga_upgrade_success">Verbindung erfolgreich, gehen sofort ins Spiel</string>
+     <string name="sevenga_guest_upgrade_success">Du wirst dich als Gastbenutzer ins Spiel einloggen.</string>
+    <string name="sevenga_guest_upgrade_success_text">Du wirst dich als Gastbenutzer ins Spiel einloggen. Damit du deinen Account schützen und einen besseren Service erhalten kannst,  wir empfehlen dir so schnell wie möglich ein Upgrade auf die offizielle Version .</string>
+    <string name="sevenga_please_accept_agreement">Bitte annehmen Sie die Benutzervereinführung.</string>
+    <!--  -->
+    <string name="sevenga_tp_number_already_bind">该帐号已被绑定.</string>
+
+</resources>

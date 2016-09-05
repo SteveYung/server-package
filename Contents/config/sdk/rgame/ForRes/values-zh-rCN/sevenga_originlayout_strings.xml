@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sevenga_username_hint">用户名</string>
+    <string name="sevenga_password_hint">密码</string>
+    <string name="sevenga_confirm_password_hint">确认密码</string>
+    <string name="sevenga_displayname_hint">昵称</string>
+    <!-- Login -->
+    <string name="sevenga_login_text">登录</string>
+    <string name="sevenga_fast_login_text">立即登录</string>
+    <string name="sevenga_saved_text">记住密码</string>
+    <string name="sevenga_sign_up_text">注册</string>
+  <!-- <string name="sevenga_login_facebook_text">Войти через VK</string> --> 
+ <!--     Register -->
+    <string name="sevenga_register_show_password_text">显示密码</string>
+    <string name="sevenga_register_text">注册</string>
+    <!--  -->
+    <string name="sevenga_email_hint">邮箱</string>
+    <string name="sevenga_email_optional_hint">邮箱(选填)</string>
+    <string name="sevenga_forget_password_text">忘记密码?</string>
+    <string name="sevenga_bind_email_text">绑定邮箱</string>
+    <string name="sevenga_restore_password_title">重置密码</string>
+    <string name="sevenga_login_immediately">立即登录</string>
+    <string name="sevenga_bind_text">绑定</string>
+    <string name="sevenga_sure_text">确定</string>
+    <string name="sevenga_cancel_text">取消</string>
+    <string name="sevenga_switch_user_text">切换账号</string>
+    <string name="sevenga_register_success_hint">请牢记您的用户信息:</string>
+    <string name="sevenga_register_bound_hint">您也可以绑定其他帐号,避免忘记.</string>
+    <string name="sevenga_bind_email_success_hint">邮箱绑定成功:</string>
+    <string name="sevenga_reset_password_success_hint">重置密码连接已发送至您的邮箱:</string>
+    <!-- Register -->
+    <string name="sevenga_tourist_update_title">绑定账号</string>
+    <string name="sevenga_tourist_hint">游客帐号</string>
+    <string name="sevenga_sevengalogin_text">帐号登录</string>
+    <string name="sevenga_guestlogin_text">游客登录</string>
+    <string name="sevenga_update_number">绑定账号</string>
+    <string name="sevenga_guest_upgrade_text">绑定</string>
+    <string name="sevenga_fast_login">快速登录</string>
+    <string name="sevenga_guest_upgrade_rules_text">用户协议</string>
+    <!--  -->
+    <string name="sevenga_history_login">历史帐号记录</string>
+    <!--<string name="sevenga_other_channel">其他登录方式</string>-->
+    <string name="sevenga_other_channel">其他账号登录</string>
+    <!--<string name="sevenga_bund_official_account">绑定为其他账号</string>-->
+    <string name="sevenga_bund_official_account">绑定账号</string>
+    <string name="sevenga_new_game_progress">您将切换到其他账号</string>
+    <string name="sevenga_disbound_and_bound">绑定可以增加安全度哦!您确定要绑定么?</string>
+    <string name="sevenga_warning_title">注意</string>
+    <string name="sevenga_cover_existing_progress">是否覆盖已存在的进度</string>
+     <string name="sevenga_choose_upgrade_text">您已经全部绑定完成,帐号安全度已经达到最高了!</string>
+
+</resources>

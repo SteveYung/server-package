@@ -1,0 +1,69 @@
+
+load_ani.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beijing
+  rotate: false
+  xy: 1296, 875
+  size: 640, 1136
+  orig: 640, 1136
+  offset: 0, 0
+  index: -1
+beijing_shangshi
+  rotate: true
+  xy: 2, 347
+  size: 1186, 508
+  orig: 1186, 518
+  offset: 0, 0
+  index: -1
+ground
+  rotate: true
+  xy: 1583, 108
+  size: 765, 452
+  orig: 765, 452
+  offset: 0, 0
+  index: -1
+qiangkou_nan
+  rotate: false
+  xy: 2, 37
+  size: 239, 176
+  orig: 239, 176
+  offset: 0, 0
+  index: -1
+qiangkou_nv
+  rotate: false
+  xy: 1583, 27
+  size: 142, 79
+  orig: 142, 79
+  offset: 0, 0
+  index: -1
+qianjing_shangshi
+  rotate: false
+  xy: 2, 1535
+  size: 1292, 476
+  orig: 1292, 476
+  offset: 0, 0
+  index: -1
+renwu
+  rotate: true
+  xy: 512, 962
+  size: 571, 641
+  orig: 571, 641
+  offset: 0, 0
+  index: -1
+wuxiao
+  rotate: true
+  xy: 512, 2
+  size: 871, 1069
+  orig: 871, 1069
+  offset: 0, 0
+  index: -1
+yinying1
+  rotate: false
+  xy: 2, 215
+  size: 497, 130
+  orig: 497, 130
+  offset: 0, 0
+  index: -1

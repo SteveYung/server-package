@@ -1,0 +1,34 @@
+
+effect_1.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect/effect_1_0
+  rotate: false
+  xy: 2, 49
+  size: 135, 200
+  orig: 200, 200
+  offset: 56, 0
+  index: -1
+battleEffect/effect_1_1
+  rotate: false
+  xy: 139, 110
+  size: 156, 139
+  orig: 200, 200
+  offset: 32, 61
+  index: -1
+battleEffect/effect_1_2
+  rotate: false
+  xy: 297, 123
+  size: 166, 126
+  orig: 200, 200
+  offset: 11, 74
+  index: -1
+battleEffect/effect_1_3
+  rotate: false
+  xy: 297, 2
+  size: 160, 119
+  orig: 200, 200
+  offset: 14, 80
+  index: -1

@@ -1,0 +1,41 @@
+
+effect_6.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect3/effect_6_0
+  rotate: true
+  xy: 2, 3
+  size: 34, 194
+  orig: 200, 200
+  offset: 82, 0
+  index: -1
+battleEffect3/effect_6_1
+  rotate: true
+  xy: 2, 3
+  size: 34, 194
+  orig: 200, 200
+  offset: 82, 0
+  index: -1
+battleEffect3/effect_6_2
+  rotate: true
+  xy: 198, 5
+  size: 32, 157
+  orig: 200, 200
+  offset: 84, 0
+  index: -1
+battleEffect3/effect_6_3
+  rotate: true
+  xy: 198, 5
+  size: 32, 157
+  orig: 200, 200
+  offset: 84, 0
+  index: -1
+battleEffect3/effect_6_4
+  rotate: true
+  xy: 357, 2
+  size: 35, 120
+  orig: 200, 200
+  offset: 78, 0
+  index: -1

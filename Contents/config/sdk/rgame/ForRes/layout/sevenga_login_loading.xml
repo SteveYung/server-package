@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/sevenga_progress_background" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/sevenga_layout_value_16"
+            android:paddingLeft="@dimen/sevenga_layout_value_32"
+            android:paddingRight="@dimen/sevenga_layout_value_32"
+            android:paddingTop="@dimen/sevenga_layout_value_16" >
+
+            <ProgressBar
+                android:layout_width="@dimen/sevenga_layout_value_32"
+                android:layout_height="@dimen/sevenga_layout_value_32"
+                android:layout_gravity="center"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/sevenga_progressbar_shape"
+                android:indeterminateOnly="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/sevenga_layout_value_16"
+                android:layout_marginRight="@dimen/sevenga_layout_value_16"
+                android:gravity="center"
+                android:text="@string/sevenga_network_loading_login"
+                android:textColor="#000000"
+                android:textSize="@dimen/sevenga_text_size_normal" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/sevenga_loginloading_switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/sevenga_layout_value_16"
+        android:layout_marginTop="@dimen/sevenga_layout_value_16"
+        android:background="@drawable/sevenga_progress_background"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/sevenga_layout_value_24"
+            android:layout_height="@dimen/sevenga_layout_value_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/sevenga_layout_value_16"
+            android:src="@drawable/sevenga_switch_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingBottom="@dimen/sevenga_layout_value_8"
+            android:paddingLeft="@dimen/sevenga_layout_value_16"
+            android:paddingRight="@dimen/sevenga_layout_value_16"
+            android:paddingTop="@dimen/sevenga_layout_value_8"
+            android:text="@string/sevenga_switch_user_text"
+            android:textColor="#000000"
+            android:textSize="@dimen/sevenga_text_size_snormal" />
+    </LinearLayout>
+
+</FrameLayout>

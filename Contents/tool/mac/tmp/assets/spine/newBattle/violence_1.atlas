@@ -1,0 +1,34 @@
+
+violence_1.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect2/violence_1_0
+  rotate: false
+  xy: 326, 49
+  size: 61, 53
+  orig: 160, 240
+  offset: 77, 64
+  index: -1
+battleEffect2/violence_1_1
+  rotate: false
+  xy: 326, 104
+  size: 156, 138
+  orig: 160, 240
+  offset: 2, 49
+  index: -1
+battleEffect2/violence_1_2
+  rotate: false
+  xy: 164, 44
+  size: 160, 198
+  orig: 160, 240
+  offset: 0, 23
+  index: -1
+battleEffect2/violence_1_3
+  rotate: false
+  xy: 2, 2
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1

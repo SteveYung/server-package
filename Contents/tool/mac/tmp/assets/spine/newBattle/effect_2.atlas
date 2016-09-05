@@ -1,0 +1,48 @@
+
+effect_2.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect/effect_2_0
+  rotate: true
+  xy: 2, 138
+  size: 100, 142
+  orig: 200, 200
+  offset: 49, 13
+  index: -1
+battleEffect/effect_2_1
+  rotate: true
+  xy: 280, 130
+  size: 108, 140
+  orig: 200, 200
+  offset: 45, 23
+  index: -1
+battleEffect/effect_2_2
+  rotate: true
+  xy: 146, 138
+  size: 100, 132
+  orig: 200, 200
+  offset: 50, 40
+  index: -1
+battleEffect/effect_2_3
+  rotate: true
+  xy: 2, 27
+  size: 109, 149
+  orig: 200, 200
+  offset: 42, 31
+  index: -1
+battleEffect/effect_2_4
+  rotate: false
+  xy: 153, 8
+  size: 159, 120
+  orig: 200, 200
+  offset: 18, 45
+  index: -1
+battleEffect/effect_2_5
+  rotate: true
+  xy: 314, 2
+  size: 126, 175
+  orig: 200, 200
+  offset: 39, 17
+  index: -1

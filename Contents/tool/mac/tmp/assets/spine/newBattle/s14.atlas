@@ -1,0 +1,146 @@
+
+s14.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+s11/s11_attack_1
+  rotate: false
+  xy: 2, 576
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_attack_2
+  rotate: false
+  xy: 2, 289
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_attack_3
+  rotate: false
+  xy: 289, 576
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_attack_4
+  rotate: false
+  xy: 2, 2
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_attack_5
+  rotate: false
+  xy: 289, 289
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_hit_1
+  rotate: false
+  xy: 576, 576
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_hit_2
+  rotate: false
+  xy: 289, 2
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_hit_3
+  rotate: false
+  xy: 576, 289
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_hit_4
+  rotate: false
+  xy: 863, 576
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_stand_1
+  rotate: false
+  xy: 576, 2
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_1
+  rotate: false
+  xy: 863, 289
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_2
+  rotate: false
+  xy: 1150, 576
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_3
+  rotate: false
+  xy: 863, 2
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_4
+  rotate: false
+  xy: 1150, 289
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_attack_5
+  rotate: false
+  xy: 1437, 576
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_hit_1
+  rotate: false
+  xy: 1150, 2
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_hit_2
+  rotate: false
+  xy: 1437, 289
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_hit_3
+  rotate: false
+  xy: 1724, 576
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_hit_4
+  rotate: false
+  xy: 1437, 2
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1
+s11/s11_sw_stand_1
+  rotate: false
+  xy: 1724, 289
+  size: 285, 285
+  orig: 285, 285
+  offset: 0, 0
+  index: -1

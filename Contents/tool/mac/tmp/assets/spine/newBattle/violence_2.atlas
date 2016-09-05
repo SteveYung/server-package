@@ -1,0 +1,97 @@
+
+violence_2.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect2/violence_2_0
+  rotate: false
+  xy: 2, 244
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_1
+  rotate: false
+  xy: 2, 2
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_10
+  rotate: false
+  xy: 812, 244
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_11
+  rotate: false
+  xy: 812, 2
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_12
+  rotate: false
+  xy: 974, 244
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_2
+  rotate: false
+  xy: 164, 244
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_3
+  rotate: false
+  xy: 164, 2
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_4
+  rotate: false
+  xy: 326, 244
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_5
+  rotate: false
+  xy: 326, 2
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_6
+  rotate: false
+  xy: 488, 244
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_7
+  rotate: false
+  xy: 488, 2
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_8
+  rotate: false
+  xy: 650, 244
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1
+battleEffect2/violence_2_9
+  rotate: false
+  xy: 650, 2
+  size: 160, 240
+  orig: 160, 240
+  offset: 0, 0
+  index: -1

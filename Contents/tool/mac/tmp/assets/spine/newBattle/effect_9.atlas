@@ -1,0 +1,62 @@
+
+effect_9.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect/effect_9_0
+  rotate: false
+  xy: 189, 356
+  size: 185, 153
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+battleEffect/effect_9_1
+  rotate: false
+  xy: 2, 309
+  size: 185, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+battleEffect/effect_9_2
+  rotate: false
+  xy: 2, 125
+  size: 177, 182
+  orig: 200, 200
+  offset: 0, 18
+  index: -1
+battleEffect/effect_9_3
+  rotate: false
+  xy: 376, 356
+  size: 129, 153
+  orig: 200, 200
+  offset: 48, 47
+  index: -1
+battleEffect/effect_9_4
+  rotate: true
+  xy: 189, 207
+  size: 147, 153
+  orig: 200, 200
+  offset: 30, 47
+  index: -1
+battleEffect/effect_9_5
+  rotate: true
+  xy: 181, 63
+  size: 142, 149
+  orig: 200, 200
+  offset: 35, 51
+  index: -1
+battleEffect/effect_9_6
+  rotate: true
+  xy: 344, 211
+  size: 143, 152
+  orig: 200, 200
+  offset: 34, 48
+  index: -1
+battleEffect/effect_9_7
+  rotate: true
+  xy: 2, 2
+  size: 121, 149
+  orig: 200, 200
+  offset: 63, 51
+  index: -1

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sevenga_app_name">SevengaSDK</string>
+
+    <!-- valid hint -->
+    <string name="sevenga_username_blank">用户名不能为空</string>
+    <string name="sevenga_username_format_incorrect">用户名需为5-30位字母或数字</string>
+    <string name="sevenga_password_blank">密码不能为空</string>
+    <string name="sevenga_password_format_incorrect">密码需为5-32位,大小写敏感</string>
+    <string name="sevenga_password_confirm_incorrect">确认密码不一致</string>
+    <string name="sevenga_displayname_blank">昵称不能为空</string>
+    <string name="sevenga_displayname_format_incorrect">昵称格式不正确</string>
+
+    <!-- network -->
+    <string name="sevenga_network_unknown_error">未知错误</string>
+    <string name="sevenga_network_not_available">当前网络不可用</string>
+    <string name="sevenga_network_login_password_incorrect">用户名或密码错误</string>
+    <string name="sevenga_network_timed_out">连接超时</string>
+    <string name="sevenga_network_register_username_exists">该账户已存在</string>
+    <string name="sevenga_network_invalid_relogin">网络异常,请重新登录.</string>
+
+    <!-- Loading -->
+    <string name="sevenga_network_loading_loading">连接中...</string>
+    <string name="sevenga_network_loading_login">登录中...</string>
+    <string name="sevenga_network_loading_pay">支付中...</string>
+    <!--  -->
+    <string name="sevenga_email_blank">邮箱不能为空</string>
+    <string name="sevenga_network_email_has_been_bound">该邮箱已绑定其他账号</string>
+    <string name="sevenga_network_email_not_exists">请确认输入邮箱为已绑定邮箱.</string>
+    <string name="sevenga_email_format_incorrect">邮箱格式不正确.</string>
+    <string name="sevenga_bound_email_already">您已经绑定过邮箱,请不要重复绑定.</string>
+    <string name="sevenga_bound_account_already">绑定失败，不可重复绑定相同账号。</string>
+    <string name="sevenga_alreay_upgrade">您已经升级了.</string>
+    <string name="sevenga_upgrade_success">绑定成功,马上进入游戏.</string>
+    <string name="sevenga_please_accept_agreement">请接受用户协议.</string>
+    <string name="sevenga_guest_upgrade_success">你将用游客帐号进入游戏.</string>
+    <string name="sevenga_guest_upgrade_success_text">为了确保您的账号安全，并提供更好的服务，我们建议您尽快升级到官方账号.</string>
+    <!--  -->
+    <string name="sevenga_tp_number_already_bind">该帐号已被绑定.</string>
+
+</resources>

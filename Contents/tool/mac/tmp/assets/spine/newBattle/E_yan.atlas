@@ -1,0 +1,230 @@
+
+E_yan.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect2/E_yan0
+  rotate: false
+  xy: 2, 610
+  size: 247, 205
+  orig: 250, 250
+  offset: 2, 8
+  index: -1
+battleEffect2/E_yan1
+  rotate: false
+  xy: 2, 817
+  size: 248, 205
+  orig: 250, 250
+  offset: 2, 8
+  index: -1
+battleEffect2/E_yan10
+  rotate: true
+  xy: 212, 162
+  size: 241, 201
+  orig: 250, 250
+  offset: 6, 8
+  index: -1
+battleEffect2/E_yan11
+  rotate: false
+  xy: 502, 619
+  size: 238, 200
+  orig: 250, 250
+  offset: 6, 9
+  index: -1
+battleEffect2/E_yan12
+  rotate: false
+  xy: 981, 619
+  size: 234, 199
+  orig: 250, 250
+  offset: 8, 11
+  index: -1
+battleEffect2/E_yan13
+  rotate: true
+  xy: 1451, 584
+  size: 234, 195
+  orig: 250, 250
+  offset: 8, 13
+  index: -1
+battleEffect2/E_yan14
+  rotate: false
+  xy: 572, 507
+  size: 89, 110
+  orig: 250, 250
+  offset: 75, 52
+  index: -1
+battleEffect2/E_yan15
+  rotate: false
+  xy: 1565, 406
+  size: 138, 176
+  orig: 250, 250
+  offset: 68, 50
+  index: -1
+battleEffect2/E_yan16
+  rotate: false
+  xy: 429, 425
+  size: 141, 178
+  orig: 250, 250
+  offset: 66, 50
+  index: -1
+battleEffect2/E_yan17
+  rotate: true
+  xy: 415, 51
+  size: 149, 179
+  orig: 250, 250
+  offset: 64, 49
+  index: -1
+battleEffect2/E_yan18
+  rotate: true
+  xy: 2, 2
+  size: 157, 179
+  orig: 250, 250
+  offset: 58, 49
+  index: -1
+battleEffect2/E_yan19
+  rotate: false
+  xy: 1873, 416
+  size: 164, 179
+  orig: 250, 250
+  offset: 53, 49
+  index: -1
+battleEffect2/E_yan2
+  rotate: false
+  xy: 252, 818
+  size: 248, 204
+  orig: 250, 250
+  offset: 2, 8
+  index: -1
+battleEffect2/E_yan20
+  rotate: false
+  xy: 1705, 406
+  size: 166, 181
+  orig: 250, 250
+  offset: 53, 49
+  index: -1
+battleEffect2/E_yan21
+  rotate: false
+  xy: 1197, 429
+  size: 171, 188
+  orig: 250, 250
+  offset: 50, 46
+  index: -1
+battleEffect2/E_yan22
+  rotate: true
+  xy: 1370, 407
+  size: 175, 193
+  orig: 250, 250
+  offset: 47, 42
+  index: -1
+battleEffect2/E_yan23
+  rotate: false
+  xy: 251, 407
+  size: 176, 196
+  orig: 250, 250
+  offset: 47, 41
+  index: -1
+battleEffect2/E_yan24
+  rotate: false
+  xy: 415, 202
+  size: 179, 203
+  orig: 250, 250
+  offset: 45, 37
+  index: -1
+battleEffect2/E_yan25
+  rotate: false
+  xy: 251, 605
+  size: 182, 210
+  orig: 250, 250
+  offset: 43, 33
+  index: -1
+battleEffect2/E_yan26
+  rotate: true
+  xy: 981, 433
+  size: 184, 214
+  orig: 250, 250
+  offset: 42, 32
+  index: -1
+battleEffect2/E_yan27
+  rotate: false
+  xy: 1846, 597
+  size: 190, 221
+  orig: 250, 250
+  offset: 38, 28
+  index: -1
+battleEffect2/E_yan28
+  rotate: false
+  xy: 1648, 589
+  size: 196, 229
+  orig: 250, 250
+  offset: 34, 21
+  index: -1
+battleEffect2/E_yan29
+  rotate: true
+  xy: 1217, 620
+  size: 198, 232
+  orig: 250, 250
+  offset: 32, 18
+  index: -1
+battleEffect2/E_yan3
+  rotate: false
+  xy: 2, 405
+  size: 247, 203
+  orig: 250, 250
+  offset: 2, 9
+  index: -1
+battleEffect2/E_yan30
+  rotate: true
+  xy: 742, 615
+  size: 204, 237
+  orig: 250, 250
+  offset: 28, 13
+  index: -1
+battleEffect2/E_yan31
+  rotate: false
+  xy: 2, 161
+  size: 208, 242
+  orig: 250, 250
+  offset: 25, 8
+  index: -1
+battleEffect2/E_yan4
+  rotate: false
+  xy: 999, 820
+  size: 245, 202
+  orig: 250, 250
+  offset: 4, 9
+  index: -1
+battleEffect2/E_yan5
+  rotate: false
+  xy: 502, 821
+  size: 247, 201
+  orig: 250, 250
+  offset: 3, 9
+  index: -1
+battleEffect2/E_yan6
+  rotate: false
+  xy: 751, 821
+  size: 246, 201
+  orig: 250, 250
+  offset: 3, 9
+  index: -1
+battleEffect2/E_yan7
+  rotate: false
+  xy: 1493, 821
+  size: 245, 201
+  orig: 250, 250
+  offset: 4, 8
+  index: -1
+battleEffect2/E_yan8
+  rotate: false
+  xy: 1246, 820
+  size: 245, 202
+  orig: 250, 250
+  offset: 3, 8
+  index: -1
+battleEffect2/E_yan9
+  rotate: false
+  xy: 1740, 820
+  size: 244, 202
+  orig: 250, 250
+  offset: 5, 8
+  index: -1

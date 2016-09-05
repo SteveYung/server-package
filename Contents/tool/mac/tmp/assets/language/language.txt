@@ -1,0 +1,30 @@
+{
+"language":{
+"zh-Hans-CN":"cn",
+"zh-Hans":"cn",
+"zh-Hant":"tw",
+"id":"in",
+"th":"thai",
+"en":"en",
+"de":"de",
+"ko":"ko",
+"ru":"ru",
+"pt":"pt",
+"ar":"ar",
+"fr":"fr",
+"ja":"ja"
+},
+"cn" : {"key1":"幸存者们正闻讯而来...","key2":"幸存者们正闻讯而来...","key3":"部队升级即将完成...","key4":"提示","key5":"系统有新版本了，请更新最新版本","key6":"温馨提示：如遇到充值问题请联系客服。"},
+"tw" : {"key1":"艦隊集結中...","key2":"戰艦正在升級中...","key3":"戰艦升級即將完成...","key4":"提示","key5":"系統有新版本了，請更新最新版本","key6":"储值失败"},
+"en" : {"key1":"The Fleets are gethering...","key2":"The Fleets are updating...","key3":"Update is finished...","key4":"Notice","key5":"There is a new version, please update your system.","key6":"Notice: charge failed? Please contact us."},
+"in" : {"key1":"Tank transmitter sedang dipanaskan...","key2":"Program sedang diperbarui...","key3":"Program Initiating...","key4":"Peringatan","key5":"Sistem memiliki versi terbaru, silakan perbarui","key6":"pengisian ulang gagal"},
+"thai" : {"key1":"กำลังรวบรวมกองทัพเรือ...","key2":"กำลังอัพเลเวลเรือรบ...","key3":"อัพเลเวลเรือรบใกล้เสร็จสิ้นแล้ว...","key4":"คำเตือน","key5":"มีเวอร์ชั่นใหม่ กรุณาอัพเดทเวอร์ชั่นล่าสุดของระบบ","key6":"ข้อเสนอแนะ: หากพบปัญหาเรื่องการเติมเงิน กรุณาติดต่อฝ่ายบริการลูกค้า"},
+"de" : {"key1":"Die Flotten sammeln sich...","key2":"Die Flotten sind verbessert...","key3":"Flotten Update werden erledigt...","key4":"Hinweis","key5":"Es gibt eine neue Version, bitte mache ein System Update.","key6":"Hinweis: Fragen beim Aufladen? Bitte Kontaktiere uns."},
+"ko": {"key1":"집결중…","key2":"업그레이드중…","key3":"업그레이드 완성중…","key4":"제시","key5":"새로운 버전이 있습니다.업데이트 해주시기 바랍니다.","key6":"제시:충전에 문제 발생시 고객센터에 연락주시기 바랍니다."},
+"ru": {"key1":"Флот собирается...","key2":"Военный корабль повышается...","key3":"Повышение военного корабли скоро закончится...","key4":"Подсказка","key5":"Новая версия онлайн. Пожалуйста, обновите до последней версии.","key6":"Внимание：если у вас проблемы о пополнении, пожалуйста, свяжитесь с клиентской поддержкой."},
+"pt" : {"key1":"Tanque está iniciando...","key2":"Tanque está atualizando...","key3":"Atualização.Tanque está acabado...","key4":"Dicas","key5":"O sistema tem nova versão. Por favor atualize a versão mais recente.","key6":"falha de recarga"},
+"ja" : {"key1":"艦隊集結中…","key2":"戦艦レベルアップ中…","key3":"戦艦レベルアップまもなく完了…","key4":"情報","key5":"新しいバージョンをインストールしてください。","key6":"情報：ゲーム内のバグなどは問い合わせよりご連絡ください。"},
+"ar" : {"key1":"يتم تجهيز الاتصال...","key2":"يتم تحديث البيانات...","key3":"المحركات تعمل...","key4":"تنبيه","key5":"هناك نسخة جديدة، يرجى تحديث اللعبة للإصدار الأحدث","key6":"فشل الشراء"},
+"fr" : {"key1":"Rassemblement des flottes...","key2":"Mise à niveau des navires...","key3":" Mise à niveau des navires presque terminée...","key4":"Note","key5":"Nouvelle version du système, veuillez mettre à jour la dernière version","key6":"Note: veuillez contacter le service client pour tout problème de recharge."},
+"tu" : {"key1":" Tank motoru ısınıyor...","key2":" Tank geliştiriliyor...","key3":" Geliştirme işlemi tamamlanmak üzere...","key4":" Uyarı","key5":" Yeni versiyon mevcut. Lütfen güncelleme yapınız.","key6":"Ödeme başarısız!"}
+}

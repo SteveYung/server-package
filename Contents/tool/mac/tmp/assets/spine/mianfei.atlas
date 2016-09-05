@@ -1,0 +1,34 @@
+
+mianfei.png
+size: 381,152
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Mf0128
+  rotate: false
+  xy: 2, 5
+  size: 144, 145
+  orig: 150, 150
+  offset: 6, 4
+  index: -1
+a0127
+  rotate: false
+  xy: 265, 2
+  size: 42, 42
+  orig: 63, 59
+  offset: 10, 8
+  index: -1
+golw0072
+  rotate: false
+  xy: 148, 32
+  size: 115, 118
+  orig: 150, 150
+  offset: 16, 13
+  index: -1
+mianfei
+  rotate: false
+  xy: 265, 46
+  size: 114, 104
+  orig: 114, 108
+  offset: 0, 3
+  index: -1

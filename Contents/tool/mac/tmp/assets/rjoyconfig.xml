@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <platform>2002001011</platform>
+    <sdk_name>rsdk</sdk_name>
+    <rayloadpath>http://lastday-ly-web01.goldgame2.com/tankheroclient/load_new.php</rayloadpath>
+    <rayloadpathtest>http://lastday-ly-web01.goldgame2.com/tankheroclient/load_test.php</rayloadpathtest>
+    <raycversion>12</raycversion>
+</config>

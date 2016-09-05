@@ -1,0 +1,41 @@
+
+zhanshazhe_03.png
+size: 1367,312
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+head
+  rotate: true
+  xy: 676, 51
+  size: 67, 106
+  orig: 67, 106
+  offset: 0, 0
+  index: -1
+left_arm
+  rotate: true
+  xy: 570, 120
+  size: 190, 435
+  orig: 191, 436
+  offset: 0, 0
+  index: -1
+left_jian
+  rotate: false
+  xy: 570, 36
+  size: 104, 82
+  orig: 104, 82
+  offset: 0, 0
+  index: -1
+right_arm
+  rotate: true
+  xy: 1007, 80
+  size: 230, 358
+  orig: 230, 358
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 2, 2
+  size: 308, 566
+  orig: 308, 566
+  offset: 0, 0
+  index: -1

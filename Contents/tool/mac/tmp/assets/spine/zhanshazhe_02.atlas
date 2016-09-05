@@ -1,0 +1,48 @@
+
+zhanshazhe_02.png
+size: 354,1050
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dao
+  rotate: true
+  xy: 2, 265
+  size: 254, 350
+  orig: 254, 350
+  offset: 0, 0
+  index: -1
+dao_R01
+  rotate: true
+  xy: 2, 2
+  size: 261, 239
+  orig: 305, 260
+  offset: 27, 21
+  index: -1
+head
+  rotate: true
+  xy: 197, 524
+  size: 101, 87
+  orig: 101, 87
+  offset: 0, 0
+  index: -1
+left_arm
+  rotate: false
+  xy: 197, 627
+  size: 127, 421
+  orig: 127, 421
+  offset: 0, 0
+  index: -1
+right_arm
+  rotate: false
+  xy: 243, 78
+  size: 92, 185
+  orig: 100, 193
+  offset: 6, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 2, 521
+  size: 193, 527
+  orig: 193, 527
+  offset: 0, 0
+  index: -1

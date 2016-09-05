@@ -1,0 +1,1605 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: assets/audio/building.mp3
+SHA1-Digest: mtnSqICFm2ynncc8LAmqvoIIu7Y=
+
+Name: assets/public/tankLoadingBar.png
+SHA1-Digest: J2W0DwGo+xOddyi7j+KIMPd44/s=
+
+Name: assets/spine/newBattle/baozha.png
+SHA1-Digest: bI28WFC7RplgLA/jZs4rgqv/CT8=
+
+Name: assets/spine/newBattle/effect_6.atlas
+SHA1-Digest: 6TEcwrIxpfhbAx8FfUW8ucVdYDk=
+
+Name: assets/spine/newBattle/effect_21.atlas
+SHA1-Digest: z47R9odrjvBStFDrapo2xAORzus=
+
+Name: assets/audio/music_atk_6.mp3
+SHA1-Digest: YoydiTVUs6Nh4tMvhM/Ul67TF1A=
+
+Name: assets/spine/newBattle/violence_2.atlas
+SHA1-Digest: OkX22eKcT/OyLbLlezV4Xfyl6Hw=
+
+Name: assets/zombieImage/danTu/story/story_chapter_15.jpg
+SHA1-Digest: WY1s5hSnJ8pILJ0Tl/60cnM6A5o=
+
+Name: assets/spine/newBattle/s19.atlas
+SHA1-Digest: S8rnyrKOhcj8CIWRz5MP1ssPEAU=
+
+Name: res/layout/rsdk_plugin_login.xml
+SHA1-Digest: yCbB3VcEUB5rO1eP+RuwnIh4xLQ=
+
+Name: assets/spine/newBattle/s5.json
+SHA1-Digest: tNcsIsztiQRMM1lMaBfogztNLHk=
+
+Name: assets/spine/newBattle/s2.atlas
+SHA1-Digest: f4NkFu2FdCg6EJXJgGXdYrodhvI=
+
+Name: assets/spine/sl_sb.atlas
+SHA1-Digest: iJbQd8aDlinf1/7AFn83sJ9nck4=
+
+Name: assets/public/number_Gold.png
+SHA1-Digest: D98055NK89Bpp9/9UhWFKNQMbuo=
+
+Name: assets/spine/Button_a-c.png
+SHA1-Digest: ik3jUDAQe4oovCdGbZQoC7qnD0M=
+
+Name: assets/spine/newBattle/effect_10.atlas
+SHA1-Digest: deWtiw7YA9OhhHwZ1Ktv2xJS/ao=
+
+Name: assets/spine/newBattle/result_star.png
+SHA1-Digest: F1lsBd3dQaoBUXKpK/UQbWSEuYM=
+
+Name: assets/spine/newBattle/qy9.json
+SHA1-Digest: KB22PUYfEHAtPKeDoT4Dbxq8JZM=
+
+Name: assets/zombieImage/lizi/starBgParticle.plist
+SHA1-Digest: SO/ghCgqV/lLcUvtC2JqnwVHSTc=
+
+Name: assets/spine/newBattle/s1.json
+SHA1-Digest: 0AuptELiiYK/WVEz64Pz7KzZ3Lk=
+
+Name: assets/spine/kaichang3.png
+SHA1-Digest: 5x3zxgpAnI+VIhWOAto7Aw+tf3Q=
+
+Name: assets/spine/newBattle/violence_2.png
+SHA1-Digest: Vw7bD2RWdNaOiY3YM4IhXgbe5L8=
+
+Name: assets/spine/newBattle/effect_14.atlas
+SHA1-Digest: ldnBbZhIZlRP47YUbCspVEcr5YY=
+
+Name: assets/audio/music_def_9.mp3
+SHA1-Digest: otFD5vmLEXMEHzkS6FI1BnUPlKk=
+
+Name: assets/spine/newBattle/effect_8.atlas
+SHA1-Digest: 5mna1QVUJzLVB880TkTa/JPJL7k=
+
+Name: assets/audio/background_music.mp3
+SHA1-Digest: v531GeUsU5Q93R3O1UvkYgH9l0c=
+
+Name: assets/zombieImage/iconGoldImage.plist
+SHA1-Digest: yq1SNdlrqXhYtsmr7DbGZmJ30wE=
+
+Name: assets/spine/newBattle/effect_21.json
+SHA1-Digest: I4d0E3vCvHFG/H5sUAyfGYSQtj8=
+
+Name: assets/spine/newBattle/effect_14.json
+SHA1-Digest: hdu6hnffCAehliLfqhtqn0AuPqA=
+
+Name: assets/zombieImage/zhiShengJi.plist
+SHA1-Digest: YSR9NrNRy2nz/d2+/PsivdVXdz4=
+
+Name: assets/zombieImage/lizi/starBgParticle1.plist
+SHA1-Digest: pivIhZ7NcIvvbWVq7kXy0mQrbpc=
+
+Name: assets/spine/newBattle/qy7.atlas
+SHA1-Digest: h7Xd3tb/s5T4lxVXQVq6X9LtJ0U=
+
+Name: assets/public/closeBtn.png
+SHA1-Digest: 9vOcKRMGgi8r0k0khJXQmHj4ZEM=
+
+Name: assets/zombieImage/mainUIImageNew.plist
+SHA1-Digest: Y/zGSFovwT8e/AnqFZ49yCKljaM=
+
+Name: assets/zombieImage/registerPic.plist
+SHA1-Digest: bA6LuxxlrQkDpiJrGP7hJ9/zWI4=
+
+Name: assets/public/tankShape.png
+SHA1-Digest: UKpHNZEcdixLXQ8HDHis15Airy4=
+
+Name: assets/zombieImage/buildingAnim.pvr.ccz
+SHA1-Digest: 8wnIQJdvBf4jkdS/ty2QcxW/7MY=
+
+Name: assets/spine/newBattle/s16.png
+SHA1-Digest: bFrNaakvD6g3tatYBfr2HKdiC74=
+
+Name: assets/spine/newBattle/s14.json
+SHA1-Digest: TmZk9xSVk08lTLfjywRGpA0j5D0=
+
+Name: assets/zombieImage/chongZhi.pvr.ccz
+SHA1-Digest: aX9mCQI5Gkww9ZP42I8ev0dQloQ=
+
+Name: assets/zombieImage/junYan.pvr.ccz
+SHA1-Digest: UmcXnr+7l+KBTiLHnePtKnVMoQM=
+
+Name: assets/spine/newBattle/s1.atlas
+SHA1-Digest: i5WgqJZdu1qYFvuJSzlc3EbpujM=
+
+Name: assets/spine/newBattle/z6.atlas
+SHA1-Digest: wyyrM7bt9yeZW99JPW4Wv4o69gg=
+
+Name: assets/audio/building_zongbu.mp3
+SHA1-Digest: /3TEtv2THkeodzHN0yIjCFV7gW8=
+
+Name: assets/WarImage/number_attack_new.fnt
+SHA1-Digest: VVyaq7lBoF7qN3Ctimgu4W8aLNA=
+
+Name: assets/qianggeng/qianggeng.plist
+SHA1-Digest: DlZBs/RnB2s7QHfYLg3Tltoq+Ac=
+
+Name: assets/audio/building_boatyard.mp3
+SHA1-Digest: KGJ7L2wmWOH4DjgfWt/SvEmg1EA=
+
+Name: assets/spine/newBattle/bruise_21.png
+SHA1-Digest: yEUn2UKtbgpnZ/utWJrQ66bQ0OM=
+
+Name: assets/zombieImage/lizi/accessoryLevelUp.plist
+SHA1-Digest: 5xDq7ZZBIJkq9rvMQNOCC8+JnLM=
+
+Name: assets/spine/newBattle/s5.png
+SHA1-Digest: 7HCl874POBs9E/N2kJyGA9HLyV4=
+
+Name: assets/spine/newBattle/effect_8.json
+SHA1-Digest: Iho7SdeImCppl1icenRJne32/L4=
+
+Name: assets/zombieImage/danTu/story/story_chapter_2.jpg
+SHA1-Digest: /Jtz0J1rTGMBia6k0lA1IbfgOkU=
+
+Name: assets/spine/newBattle/z6.png
+SHA1-Digest: Ghb3QAu4+aauFboCWMelrZqcRt0=
+
+Name: assets/zombieImage/lizi/lotteryStarParticle.plist
+SHA1-Digest: VR9CdW7DlZXfBjy6B8SPwaSAHkc=
+
+Name: assets/spine/newBattle/effect_18.atlas
+SHA1-Digest: 2vtmhiUrw48/VFO565d6pyjT1a0=
+
+Name: assets/zombieImage/danTu/story/story_chapter_3.jpg
+SHA1-Digest: CJ9QMhBAUH9UeFerjRxvBgbNK5I=
+
+Name: assets/zombieImage/chongZhi.plist
+SHA1-Digest: hLevoKk25cZlYFZE9O8eoI7mPvY=
+
+Name: assets/audio/battle_lose.mp3
+SHA1-Digest: UfKso6qrH0e7916lLaKzAaIi3OU=
+
+Name: assets/spine/mianfei.atlas
+SHA1-Digest: r3qBc9n6ciTuqQm62QbPZWO7NBU=
+
+Name: assets/zombieImage/danTu/cityR1_mi.jpg
+SHA1-Digest: RTzLlPyJymgtw1Xk9KAsjHab8Go=
+
+Name: assets/audio/building_depot.mp3
+SHA1-Digest: w5MqKCIzo2ZF6/Wy4L4Uok0WQN4=
+
+Name: assets/zombieImage/lizi/starBgParticle.png
+SHA1-Digest: TklyXyujHmr+FNnmORl3lOSZXdI=
+
+Name: assets/zombieImage/zombie_ui.pvr.ccz
+SHA1-Digest: JLkxhAdM/u9XA71GbB2JagU9Tq8=
+
+Name: res/layout/plugin_login.xml
+SHA1-Digest: zUHFHx7LkCHzeX9I3VQbXettyQo=
+
+Name: assets/audio/building_tie.mp3
+SHA1-Digest: q8jt8frpdN4z6bIDBm5RPVdYqPA=
+
+Name: assets/spine/newBattle/z11.atlas
+SHA1-Digest: 1tHa0GaoTfv78bFAjKyRFS/lplE=
+
+Name: assets/spine/newBattle/qy5.png
+SHA1-Digest: tvZ+/dSgu5JFvQXPOm/DnfkpKAg=
+
+Name: assets/spine/newBattle/effect_13.png
+SHA1-Digest: HlnZHNdRYuPmVB6FKiAEdksaj+0=
+
+Name: assets/spine/newBattle/z1.json
+SHA1-Digest: hFsyO5DxOG26vPdGd8PiA/hB3CE=
+
+Name: assets/spine/newBattle/qy9.atlas
+SHA1-Digest: 9c7r/5MYhU/NT+uUEp2DlzsAkMI=
+
+Name: assets/spine/newBattle/s12.png
+SHA1-Digest: WbYpfXJGtCi8DjnCdUSMn6+AH4w=
+
+Name: assets/spine/newBattle/qy3.png
+SHA1-Digest: 2wCce4btM4gVm+Chlx9uhzaW1rY=
+
+Name: assets/spine/jiguanqiang.json
+SHA1-Digest: Mu0nopJkPuIPYConlUud+sFHTkI=
+
+Name: assets/spine/zhanshazhe_04.atlas
+SHA1-Digest: +Hg4o0z2KF1CZ5DFfBRrzoaVN0Q=
+
+Name: assets/spine/newBattle/qy13.atlas
+SHA1-Digest: JXcp6Ckh63LqqDSZU5xxMzrhvCg=
+
+Name: assets/zombieImage/zb_huodong/acOnlineImage.plist
+SHA1-Digest: 9ZDeuLI7T3su9ETzwXQJT6T/RRI=
+
+Name: assets/spine/zhanshazhe_03.atlas
+SHA1-Digest: 7fhgl58VGVV8pdjFnjjkyv2VtzA=
+
+Name: assets/zombieImage/lizi/lotteryLightParticle.png
+SHA1-Digest: BfafwGu3UCmABPofIgKDg/3NxD4=
+
+Name: assets/zombieImage/tankRestraint.plist
+SHA1-Digest: noOdPsfXQw7Q9N0JuB9+Kw9Cv2E=
+
+Name: assets/spine/jianzhao.atlas
+SHA1-Digest: lKa6C527uTv1/FNzo4JIqOZCXto=
+
+Name: assets/zombieImage/createNameImg.plist
+SHA1-Digest: /jM65eaPiAfDEnIT1KqZKZJeLRw=
+
+Name: assets/spine/zhanshazhe_02.atlas
+SHA1-Digest: HNdA5R2Uxofc3RQivAWx26KRr2g=
+
+Name: assets/zombieImage/slotMachine.pvr.ccz
+SHA1-Digest: jjKDQowCpRlm5nf8KcJKdZ6uWB8=
+
+Name: assets/spine/newBattle/s16.json
+SHA1-Digest: oqZ5NrpgZT7dXnr9T4jMagPuG/g=
+
+Name: assets/spine/newBattle/qy11.atlas
+SHA1-Digest: KUTGgeSDm8HxK/HT7APq1Bo/t80=
+
+Name: assets/zombieImage/lizi/baozang1.png
+SHA1-Digest: UiZkV9v2NZHOXfs281DUbM8PMao=
+
+Name: assets/audio/music_def_3.mp3
+SHA1-Digest: KxVwWPX920HL3qzpUtDwNFNo1b4=
+
+Name: res/drawable/com_ray_close.png
+SHA1-Digest: vzoVwUXnEtJQCL4582EeDreqvIA=
+
+Name: assets/rjoyconfig.xml
+SHA1-Digest: IkkMVqxwMvNOs4vos5rB+hhG4cE=
+
+Name: assets/audio/building_HQ.mp3
+SHA1-Digest: ESSrpppK3QJUgsBllcDN4ffS9Uc=
+
+Name: assets/audio/music_def_6.mp3
+SHA1-Digest: h+9UtzOp/b2e4Ncjnb9skrGaR8w=
+
+Name: assets/zombieImage/new_image_battle.plist
+SHA1-Digest: shrgL4Wa2ipidWbS2Yn3Bj6uQeA=
+
+Name: assets/spine/newBattle/effect_18.json
+SHA1-Digest: Yx7hqga4s+9W/Kgb9UqdeljQTQ0=
+
+Name: assets/audio/music_atk_103.mp3
+SHA1-Digest: DLh4vrqjZtm/kvI0BJsoxTnyTso=
+
+Name: assets/zombieImage/danTu/homeMap.png
+SHA1-Digest: +EvD2pwBg5qhZBSq+REPMYzeyuk=
+
+Name: assets/zombieImage/lizi/particleSmog.png
+SHA1-Digest: sI95wUX7gsG4cQFmQQfCnnuYajI=
+
+Name: assets/spine/newBattle/effect_6.json
+SHA1-Digest: EjtBZ2k4G8/qch6f591hb0BTt4c=
+
+Name: assets/spine/newBattle/qy6.png
+SHA1-Digest: X34XINA3TPZrKMabWWE0EOtQb/Y=
+
+Name: assets/spine/newBattle/s3.json
+SHA1-Digest: +7BK3OZcKwUgqykF1ytUghz7m4E=
+
+Name: assets/zombieImage/zhaoMu.pvr.ccz
+SHA1-Digest: oS96lKzTg4MDXrEt1JV6Zht9hnY=
+
+Name: assets/zombieImage/soliderFactoryUI.pvr.ccz
+SHA1-Digest: lVctOW88+O7qeJGtvAqCNhMEGio=
+
+Name: assets/spine/newBattle/s9.png
+SHA1-Digest: N+nCySgFvIwJZuPT9fdANxgXYlc=
+
+Name: assets/spine/newBattle/jiqiang.png
+SHA1-Digest: B8RwNoR4u42aWJxxtgaunCDUq3Q=
+
+Name: assets/spine/newBattle/effect_8.png
+SHA1-Digest: +HmGdREJMRg8s4HGdMcnUBr4FRU=
+
+Name: assets/zombieImage/accessoryImage2.plist
+SHA1-Digest: 7f70G3nWKZPotRkiP/UE7Na4b0E=
+
+Name: assets/spine/newBattle/s7.png
+SHA1-Digest: dRjhKNMUG58om9B/Al54+jK3vkc=
+
+Name: assets/audio/building_union.mp3
+SHA1-Digest: hy+rcywTIa3P+KUnaCfBcsC7oYs=
+
+Name: assets/zombieImage/danTu/story/story_chapter_12.jpg
+SHA1-Digest: XKvwPy8T0Ek4CW4qfa+IJSKfWB0=
+
+Name: assets/spine/jiguanqiang.png
+SHA1-Digest: TdG8u6dAJtxUjt4huslfXNXswHA=
+
+Name: lib/armeabi/libcocos2dlua.so
+SHA1-Digest: 3DabhJOijxBx0osftpCHB3z/5NE=
+
+Name: assets/spine/newBattle/qy1.png
+SHA1-Digest: 7P/DY+u6z7VM181MnRfSXUzRiak=
+
+Name: assets/spine/newBattle/qy13.json
+SHA1-Digest: x0I4DU50Wo3Oj5Q23rEA0nerJxQ=
+
+Name: assets/zombieImage/door.pvr.ccz
+SHA1-Digest: oQe4YdTYiqHqf0KR6o7xX68Bdwo=
+
+Name: assets/spine/newBattle/baozha.json
+SHA1-Digest: Gm6F6miT3jv/PZskjSmACJMDIAU=
+
+Name: assets/zombieImage/lizi/occupy.plist
+SHA1-Digest: 6xyYqIV/qD9pWYOJagrDiFyc+sM=
+
+Name: assets/audio/copter_fly.mp3
+SHA1-Digest: 4v5fKcuCzZqYP0DmNWhxUPFAuOs=
+
+Name: assets/audio/building_shiyou.mp3
+SHA1-Digest: lyir28wakgjdd5LcjAHFdp7hcKA=
+
+Name: assets/audio/base.mp3
+SHA1-Digest: XA4VigrmsnJXFpRo/qwKpbWA4/8=
+
+Name: assets/spine/newBattle/qy9.png
+SHA1-Digest: OiyWTaoxbW9KGZT5CMLOO5fpZYU=
+
+Name: assets/audio/music_atk_102.mp3
+SHA1-Digest: e0rW7b6HKeP4yKsiZJzmterfUSw=
+
+Name: assets/spine/newBattle/s3.atlas
+SHA1-Digest: n5yD2+nXh0LfTQcdUHjHy6qDcSA=
+
+Name: assets/zombieImage/danTu/Logo_zh.png
+SHA1-Digest: 6mlB1ALNOg0RyJWR/m5SlUsENOc=
+
+Name: assets/zombieImage/zombie_heroIcons2.pvr.ccz
+SHA1-Digest: uB/lhVtV0DJFPrLXhtrXN+gN2tQ=
+
+Name: assets/spine/newBattle/jiqiang.atlas
+SHA1-Digest: TulxOhxi4q35gyp8tZVm1SNk2LM=
+
+Name: assets/spine/Button_a-c.atlas
+SHA1-Digest: 50RlyE0MOfxnHaBaq7+oVqElUwU=
+
+Name: assets/spine/newBattle/effect_19.json
+SHA1-Digest: NtL+W9/s/UN7dPZ71qFDrq/AKiU=
+
+Name: assets/zombieImage/soliderInfoImage_bb.plist
+SHA1-Digest: ovKAcPDrqMn8AeX3awpYy4u2Q38=
+
+Name: assets/spine/newBattle/s3.png
+SHA1-Digest: un2wa05EIXX2wk+kbLu2zrXEDps=
+
+Name: assets/spine/newBattle/qy11.json
+SHA1-Digest: FC52b6r6NQzQ3Wd9d+X01KO0OsA=
+
+Name: assets/spine/newBattle/s10.atlas
+SHA1-Digest: DDCLfUtumnQR4i+y2bkzw6ZX6C4=
+
+Name: assets/spine/jianzhao.png
+SHA1-Digest: /6L4MWnEAXwD97LY8aTP9+nAvtk=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: dV+Kb0bGb2Q7e1SmA/C5WuHjLMA=
+
+Name: assets/WarImage/number_attack_double.png
+SHA1-Digest: z/So8IBRc7bi+3GeshgVIiGctZ4=
+
+Name: assets/audio/music_atk_3.mp3
+SHA1-Digest: UnhNiKJeRZea7iF/uGUDujqeUYA=
+
+Name: assets/spine/newBattle/s20.png
+SHA1-Digest: HvvZNY9vbXvarTQpwxfM7vcXrbI=
+
+Name: assets/zombieImage/buildingAnim.plist
+SHA1-Digest: qA2R0oBkluJ7b8sdHASVZXTmcak=
+
+Name: assets/zombieImage/lizi/particleFire.png
+SHA1-Digest: lHpEHo23BT/hUH8rg7THkJY9JBk=
+
+Name: assets/zombieImage/lizi/lotteryStarParticle.png
+SHA1-Digest: mwU6r++24zNb1dajCpqgeYheGVw=
+
+Name: assets/spine/newBattle/s12.json
+SHA1-Digest: EjQ8ly8LtI/p7RxdDOvE4K9D+VI=
+
+Name: assets/spine/newBattle/effect_20.json
+SHA1-Digest: 5smGacpHFA03uJANyqnCm7bU7Js=
+
+Name: assets/spine/newBattle/s9.atlas
+SHA1-Digest: DlDiGyj72PA5YK1hZOp5xrIU1g4=
+
+Name: assets/spine/newBattle/violence_1.atlas
+SHA1-Digest: zhnriPXfb4+FONQ6U33slnUD0ZY=
+
+Name: assets/spine/newBattle/s8.atlas
+SHA1-Digest: 8Htf1/pLQHt3c36HgeEYpkavScg=
+
+Name: assets/spine/newBattle/effect_3.json
+SHA1-Digest: pvqxyRv4Un//osOFrVKRUwlWQu8=
+
+Name: assets/spine/jianzhao.json
+SHA1-Digest: JQv61+NjSltIrnp4+HlmFfzrMLw=
+
+Name: assets/spine/newBattle/z1.png
+SHA1-Digest: XZYGvQJJ3cryY6cEOwJgF6xpU6Y=
+
+Name: assets/zombieImage/danTu/story/story_chapter_14.jpg
+SHA1-Digest: SYfIQsAWpfG0sGaKVHgY7XPXYI4=
+
+Name: assets/audio/Tank_Dead.mp3
+SHA1-Digest: zoASDTjj3NK1t9RwwGz7NXUJDxY=
+
+Name: assets/spine/newBattle/qy3.atlas
+SHA1-Digest: paeYrmb6TJtLlwR9tb+sPG+zS0I=
+
+Name: assets/audio/music_def_4.mp3
+SHA1-Digest: PuD4WJH/fPSU36KrtTzCIqd96e0=
+
+Name: assets/spine/newBattle/s19.png
+SHA1-Digest: OfCmT9ngq5kjxJ9JqmoEX6oOd5I=
+
+Name: assets/zombieImage/lizi/occupy.png
+SHA1-Digest: DE9Ed3Qo++oR5FIguiUf8qNMAC0=
+
+Name: assets/zombieImage/danTu/framebtn.png
+SHA1-Digest: hk6ZtC/dqaKHOa1z5QhVnm1Xs4s=
+
+Name: assets/spine/newBattle/effect_18.png
+SHA1-Digest: DRLzIg8wxvyLeIMea25sVSNjSuY=
+
+Name: assets/spine/newBattle/s14.atlas
+SHA1-Digest: //nJm7Uk5w+JFF25oPDLVP1o+hg=
+
+Name: assets/zombieImage/iconLevel.pvr.ccz
+SHA1-Digest: YbvDpAT0MPVIWusCUIHINidJiw0=
+
+Name: assets/spine/newBattle/effect_11.json
+SHA1-Digest: LUBdWLkPt+r+9CWDXFHuepcfBuI=
+
+Name: assets/spine/zhanshazhe_05.png
+SHA1-Digest: wFyPfrsXcJxbuwl9grciDsqog1k=
+
+Name: assets/audio/star.mp3
+SHA1-Digest: 9Y7+T3Kpaw8yCkMnNqG7m+nYU/w=
+
+Name: assets/spine/mianfei.png
+SHA1-Digest: KJD8RJ0RC6iKhV47pGgfUWHblRM=
+
+Name: assets/spine/newBattle/s11.atlas
+SHA1-Digest: 1sXq3rWxiAeQOHdrNkwBtJK7tSo=
+
+Name: assets/zombieImage/door.plist
+SHA1-Digest: HX9ERFyzvZFjZo3Zr2jhPPFasJg=
+
+Name: assets/spine/newBattle/z11.png
+SHA1-Digest: Pl2XD2NAFBtYcBnQYfJImsYP4HQ=
+
+Name: assets/spine/load_ani.atlas
+SHA1-Digest: 8NCW2hwKdaLBla9LoA7zKIlAfCg=
+
+Name: assets/audio/music_atk_4.mp3
+SHA1-Digest: tX4/mDCo4GkOd7pWcfJLwec7gxc=
+
+Name: assets/spine/jiguanqiang.atlas
+SHA1-Digest: 0OK+jsqowVB7Xrqv7PgluQIxp+g=
+
+Name: assets/zombieImage/danTu/story/story_chapter_7.jpg
+SHA1-Digest: C/XPJcQSUbrxFaeC2+rmqkkD5oA=
+
+Name: assets/zombieImage/zb_huodong/speedupDiscImage.plist
+SHA1-Digest: QfnABaN5MqTFbwgrwSJcpAv4urY=
+
+Name: assets/audio/Fight_VS.mp3
+SHA1-Digest: WMpZCCjpSf3w60MBG/H25BDEUUI=
+
+Name: assets/audio/music_atk_10.mp3
+SHA1-Digest: YoydiTVUs6Nh4tMvhM/Ul67TF1A=
+
+Name: assets/zombieImage/lizi/Snow.png
+SHA1-Digest: kWjkiYT2Aya95+ZMo6jZGg+Mm2Q=
+
+Name: assets/spine/zhanshazhe_01.json
+SHA1-Digest: syKFrHP9VUw1dhgIu8nEXfrQmi0=
+
+Name: assets/zombieImage/chat_look_image.pvr.ccz
+SHA1-Digest: UVkfP+eOQar4aSOYKVFPf5zNYCA=
+
+Name: assets/zombieImage/chengfang.plist
+SHA1-Digest: kUdworTEuLis6Sna7UTddOzve7k=
+
+Name: assets/spine/newBattle/s7.atlas
+SHA1-Digest: eubLcQHo4IkOcsQGLT+Hu7IoLuo=
+
+Name: assets/zombieImage/CheckCode.pvr.ccz
+SHA1-Digest: oG7v2+2cLfIyvRc7pywaZlmxBcs=
+
+Name: assets/spine/newBattle/s13.atlas
+SHA1-Digest: OWpjaJSS9eqpCX791jgqHNGTl/g=
+
+Name: assets/zombieImage/storyImage.pvr.ccz
+SHA1-Digest: btkdGS4XXDcRh0B4mBYX6AWuBhA=
+
+Name: assets/zombieImage/CheckCode.plist
+SHA1-Digest: gtFX78Zy6dn0CsLyOL2vDF7QiW8=
+
+Name: assets/spine/newBattle/z1.atlas
+SHA1-Digest: KZmlckOljelkXcBn6mVCDtr5gaY=
+
+Name: assets/spine/zhanshazhe_05.json
+SHA1-Digest: kmHSxV2AP1xar5pUNkp35GGozS4=
+
+Name: assets/spine/newBattle/effect_15.json
+SHA1-Digest: cJ4H1UW4RjTN3rWnWqyjHUgC4kw=
+
+Name: assets/audio/battle_flag_down.mp3
+SHA1-Digest: frVzl0VahOZjy93cquA0I1fuM6Q=
+
+Name: assets/audio/music_atk_101.mp3
+SHA1-Digest: lLjod68JA6KuQLrbAXXD+84nhvE=
+
+Name: assets/spine/newBattle/effect_21.png
+SHA1-Digest: K8TEBz+SBqSUrkYgTtXze75CywQ=
+
+Name: assets/zombieImage/worldMap.plist
+SHA1-Digest: coEO8SfSyTu4umw9r6qPjoRdOL0=
+
+Name: assets/spine/newBattle/effect_16.png
+SHA1-Digest: Mqht2KQktqnnPt8P1QuIXAnpQPw=
+
+Name: assets/public/number_Gold.fnt
+SHA1-Digest: 7xI2uQ+gS4KEGi2cOMn65KU4GP8=
+
+Name: assets/spine/kaichang.atlas
+SHA1-Digest: 6JNrEEtT4xu3ptU7rGQaw3KSOmc=
+
+Name: assets/zombieImage/lizi/Raindrop.png
+SHA1-Digest: sl5Rs8z9czluIU8kuBoL9XPJUAs=
+
+Name: assets/spine/zhanshazhe_04.json
+SHA1-Digest: Sh7VbZ80PKhVCkGh0qmH7530jhE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: CEwh2QNnG+IujsHC/GG7z1ZlP0s=
+
+Name: assets/spine/load_ani.json
+SHA1-Digest: rsX/BqeCkAE0qV2MHZjYndc+LKg=
+
+Name: assets/spine/newBattle/effect_19.png
+SHA1-Digest: DtagaGXXFjYsk0+YM1/DY3Gdl2g=
+
+Name: assets/spine/newBattle/effect_9.png
+SHA1-Digest: MRg0whwmpHHpSL0hWL47JpUxBkE=
+
+Name: assets/fonts/Marker Felt.ttf
+SHA1-Digest: Ul8qSkVFD87LPYpf1H07D0hPYps=
+
+Name: assets/zombieImage/soliderFactoryUI.plist
+SHA1-Digest: FkhG+KR1MKL1pHl5a7sOycwCGjI=
+
+Name: assets/zombieImage/lizi/tips.png
+SHA1-Digest: nO+5yBh3VL9bfvUeOqK9QXtCKiQ=
+
+Name: assets/spine/newBattle/effect_20.atlas
+SHA1-Digest: bS14hbipKZch116DDDksuujGq1k=
+
+Name: assets/zombieImage/zombie_jiangshiIcon.plist
+SHA1-Digest: +GQkCs3+HLK2V809P/w5vo4Hf0A=
+
+Name: assets/spine/newBattle/effect_12.json
+SHA1-Digest: oY4p5jeNKLhbzbuxIoEdItVyS1Y=
+
+Name: assets/spine/newBattle/s15.atlas
+SHA1-Digest: XJX2dD4wmPvAX7NgjoHgQndRGYA=
+
+Name: assets/zombieImage/danTu/story/story_chapter_17.jpg
+SHA1-Digest: RuKZhRekc2g5oZWos771ls8+uwM=
+
+Name: assets/spine/newBattle/qy2.atlas
+SHA1-Digest: HKhp3kVyaMd7IisVIxaIj7Odg8E=
+
+Name: assets/spine/newBattle/qy4.atlas
+SHA1-Digest: 8hg3zCVODNHaM/3N+4261SJUX5Y=
+
+Name: classes.dex
+SHA1-Digest: w7GIcnz1Tn+toU/z6/UkoFQ/j1k=
+
+Name: assets/zombieImage/old_main_ui_image.pvr.ccz
+SHA1-Digest: lcPNQRxokha52+BlNE2uWjbNVpg=
+
+Name: assets/zombieImage/zombie_icon.plist
+SHA1-Digest: aispAN0aqV2zfE2HHdOUUHBamAQ=
+
+Name: assets/zombieImage/player.pvr.ccz
+SHA1-Digest: MKjVwaRmBVlcsFUUgPQHVhrjf1k=
+
+Name: assets/spine/newBattle/qy8.png
+SHA1-Digest: PmL9cbtVDZRq9LmjIq8jSaQhvF4=
+
+Name: assets/spine/newBattle/s17.atlas
+SHA1-Digest: qUo1wWju7MH8tCj5BCGYvdUsWg0=
+
+Name: assets/zombieImage/zombie_icon.pvr.ccz
+SHA1-Digest: Dye4Uh8PMAkT+dPFcc/QrkiHBeU=
+
+Name: assets/spine/sl_sb.json
+SHA1-Digest: ek1glSbjDLXCMm6zIUnv98q+vXo=
+
+Name: assets/zombieImage/levelUpImage.plist
+SHA1-Digest: YMPc1D7HwwoToq2J8f/1t0l24fI=
+
+Name: assets/zombieImage/danTu/battle_map_BG.jpg
+SHA1-Digest: NxhboowzfJlykp36OxHI/5alboY=
+
+Name: assets/audio/music_atk_104.mp3
+SHA1-Digest: HGUefBYO5KmGlnLe/exyn09Z9f0=
+
+Name: assets/zombieImage/zombie_uibutton.plist
+SHA1-Digest: gYP8J2j97DWNScwYY89PLH6QBKU=
+
+Name: assets/zombieImage/zombieMainUI.plist
+SHA1-Digest: p32W12Vnd+Axfm2SKtS+Cy33FPQ=
+
+Name: assets/zombieImage/zombieMainUI.pvr.ccz
+SHA1-Digest: mcE7Kr9v4JkPvY9VoeLXHdBlM68=
+
+Name: assets/spine/newBattle/s20.json
+SHA1-Digest: 3qTU9DdvVaWIdaWiIc7ERLuACi8=
+
+Name: assets/zombieImage/allianceActiveImage.plist
+SHA1-Digest: AdmaUtBfbp+qtoGVzOZs4AZv2rA=
+
+Name: assets/audio/building_buji.mp3
+SHA1-Digest: mqK4tAWj2ysM9B0i9yMLOGM08TE=
+
+Name: assets/zombieImage/zombie_BuffIcon.pvr.ccz
+SHA1-Digest: r8mk5x0CSFzsSakOtxJbwd7arY0=
+
+Name: assets/zombieImage/LVUP.plist
+SHA1-Digest: FcezoolJr6T2m0S5rFc94Qu0Lys=
+
+Name: assets/audio/music_def_7.mp3
+SHA1-Digest: kjqmoXw37UXu79tZY6i+p+tgF3s=
+
+Name: assets/audio/missile.mp3
+SHA1-Digest: UIGE7/B1ioIRIeTp1cqg4l4HKWs=
+
+Name: assets/audio/music_def_2.mp3
+SHA1-Digest: fJBqG2tL2gxYfRuVfGptMvL/Ps8=
+
+Name: assets/zombieImage/jiangShiTu.plist
+SHA1-Digest: pjS+rR/DWicndiUEHzPSlpIJuks=
+
+Name: assets/spine/newBattle/qy5.atlas
+SHA1-Digest: uM6bR7aP5qEdUIE+kYZV2ffogKc=
+
+Name: assets/spine/newBattle/z6.json
+SHA1-Digest: M8b1SNoMLPKa5ikc6S4q0V9x0IM=
+
+Name: assets/zombieImage/lizi/worldMoveParticle.plist
+SHA1-Digest: uVH34SJYpTNWRlw4RRPYg0vcIhQ=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: IFLYhm4l55wQqybo9EvXx4OiwwY=
+
+Name: assets/spine/newBattle/s6.png
+SHA1-Digest: vpant8wa8rrUPvuyUFK0fOANco4=
+
+Name: assets/spine/newBattle/z20.atlas
+SHA1-Digest: v2WLZqKssPyJI2CbiCNzk75yQJA=
+
+Name: assets/audio/close.mp3
+SHA1-Digest: u1GbfcaGBxzUGEfYHCp5NR2pcq4=
+
+Name: assets/zombieImage/jiangShiTu.pvr.ccz
+SHA1-Digest: Xvjln8wIGFvTEZk2Bgvjx4XPDHA=
+
+Name: assets/spine/newBattle/qy13.png
+SHA1-Digest: UnW5BGSkGSSzr/fcd/Jqlz0LiIk=
+
+Name: assets/spine/newBattle/qy14.atlas
+SHA1-Digest: IFZLCPN3C3La+mduXaEYlP8CMJ0=
+
+Name: assets/zombieImage/storyImage.plist
+SHA1-Digest: E1adPuEgoDwv+EzFeuCjr4hO7I0=
+
+Name: assets/spine/newBattle/s15.png
+SHA1-Digest: eu5qvNO3XL+i4DRX19pDQWPVw/s=
+
+Name: assets/spine/newBattle/s4.png
+SHA1-Digest: H2G7xlqY6pGEJ2RxFRj1snf5fXU=
+
+Name: assets/spine/newBattle/baozha.atlas
+SHA1-Digest: 3p9wfauM5M9FauPahV/98UTxM28=
+
+Name: assets/spine/newBattle/s12.atlas
+SHA1-Digest: WCz/lufNMCWSNPZUI4u2rJw/wPM=
+
+Name: assets/spine/newBattle/effect_2.json
+SHA1-Digest: xqVsb3o12nwvgTRUuP0JD+XHgzw=
+
+Name: assets/spine/newBattle/s18.atlas
+SHA1-Digest: tz03Aa/GfERZVr+7AoNDdv/4ZaQ=
+
+Name: assets/zombieImage/lizi/baozang2.png
+SHA1-Digest: Ggqc+WhjDQzuN9gIDJEj8YgoQDE=
+
+Name: assets/spine/newBattle/qy5.json
+SHA1-Digest: eaGeUlIdQEk092qRmMQlRUr/fpI=
+
+Name: assets/spine/newBattle/bruise_22.png
+SHA1-Digest: SJxTr3dCCqoDXoOik2aLlojtPC8=
+
+Name: assets/spine/newBattle/s11.png
+SHA1-Digest: EoLEpSA5lZ7nNtFRhiyQ9afjKj4=
+
+Name: assets/spine/zhanshazhe_04.png
+SHA1-Digest: MMkuSx0ye4BjxDNyC6NcZXdwJQs=
+
+Name: assets/zombieImage/danTu/storyMap_2.jpg
+SHA1-Digest: +zxk0mx4WYYFzwSXRToFgYPlbKk=
+
+Name: assets/zombieImage/zombie_heroIcons.pvr.ccz
+SHA1-Digest: 9q9e3brtveeuUIYSbHokHYIpBMY=
+
+Name: assets/zombieImage/homeBuilding.plist
+SHA1-Digest: uWDPywXPBmDkgNvB45uzJZTtccY=
+
+Name: assets/spine/newBattle/jiqiang.json
+SHA1-Digest: RUQQ8Z/AWPBpqy/4DX27+iVMrfc=
+
+Name: assets/zombieImage/zombie_soliderIcon.plist
+SHA1-Digest: Yh3YrgYi9kSQHQfjhq0gGXziwMA=
+
+Name: assets/zombieImage/danTu/story/story_chapter_8.jpg
+SHA1-Digest: WYFoF7LCMKC/aT8TqxPXFRNoMjE=
+
+Name: assets/spine/newBattle/effect_16.json
+SHA1-Digest: D7SG4u0NoluqCH9mCHlXEKWdoG0=
+
+Name: assets/spine/newBattle/qy14.json
+SHA1-Digest: GCyXwqXiND0fOMNdvnvWxpvqsRI=
+
+Name: assets/zombieImage/bodyWalk.pvr.ccz
+SHA1-Digest: NxQqU/vCTkwLDpUZ4quqmx/O0XE=
+
+Name: assets/zombieImage/lizi/tips.plist
+SHA1-Digest: OeiA+rrmu2G+gBpxTs/QWtqBi4s=
+
+Name: assets/zombieImage/soliderInfoImage.plist
+SHA1-Digest: upMbdrANqHQXOeb2vEUFTQl4tx0=
+
+Name: assets/spine/newBattle/effect_14.png
+SHA1-Digest: Lowz0jdki6obwEdyF8R8VcwvYE8=
+
+Name: assets/spine/newBattle/bruise_22.atlas
+SHA1-Digest: G3cu2gGN/llF8Wuc0x719YdGcyE=
+
+Name: assets/spine/newBattle/qy1.atlas
+SHA1-Digest: VslYnA6MGtHjRIdQ4YLI6q4vHoE=
+
+Name: assets/zombieImage/mainUIImageNew.pvr.ccz
+SHA1-Digest: qT2RAHmKrXxCh5H2eeCALFGHQqA=
+
+Name: assets/spine/newBattle/effect_11.atlas
+SHA1-Digest: qkS0XJSTsKCyFYGY6dZlXw9Cllg=
+
+Name: assets/spine/newBattle/effect_7.atlas
+SHA1-Digest: Fsh/QQqdQKXzZfItWBr1KnDkYFE=
+
+Name: res/drawable-xhdpi/icon.png
+SHA1-Digest: 0T68bhUVK6E7mk69n7FcuCs/mZ8=
+
+Name: assets/spine/newBattle/bruise_21.json
+SHA1-Digest: eR0bTHyuOCMhXryx1fTUyEA4sL4=
+
+Name: assets/spine/newBattle/effect_6.png
+SHA1-Digest: ebNmoklAVKAiHwPBj6a8l0gu2eE=
+
+Name: assets/spine/newBattle/s8.png
+SHA1-Digest: 2oCifmhh69jNsyITLVG0wi72iXM=
+
+Name: assets/spine/newBattle/effect_1.atlas
+SHA1-Digest: YSCKXe/IVNTOiHiLDFApjcjqdoE=
+
+Name: assets/audio/music_def_1.mp3
+SHA1-Digest: jz/3iP34nYpymaDlMCJZwzbOaB8=
+
+Name: assets/qianggeng/qianggeng.pvr.ccz
+SHA1-Digest: xpH9gEfUMZeDBaTDlm9WDuYqrbk=
+
+Name: assets/audio/music_def_5.mp3
+SHA1-Digest: yKdo5VKWpiL0FFvLELODm5Xa+a4=
+
+Name: assets/zombieImage/lizi/rain.png
+SHA1-Digest: CNdDA/67NWfUOrnkoeq7Z7bqXqk=
+
+Name: assets/zombieImage/zb_huodong/acMysteriousArms.pvr.ccz
+SHA1-Digest: bP5gr+fSWr3jeWTYkvwQ8cvR7MY=
+
+Name: assets/WarImage/building_lvl_num.fnt
+SHA1-Digest: ZdhjEftkJneG0r2M5yQ/CQAcKlc=
+
+Name: assets/spine/xiaozhushou.png
+SHA1-Digest: FNiLViDEwK41vL4ybKLfg7UN3wY=
+
+Name: assets/zombieImage/soliderInfoImage.pvr.ccz
+SHA1-Digest: Q6nuLesbSzVckWsfRnYY5zXFlfo=
+
+Name: assets/Image/color.plist
+SHA1-Digest: StaXgBecafCNxJ4V7sfQJduPX1w=
+
+Name: assets/public/loadingParticleS.plist
+SHA1-Digest: NZpupX+VvMk4cs22tsT0eY0bM14=
+
+Name: assets/spine/newBattle/effect_3.atlas
+SHA1-Digest: cGMbSp7ODSlWgfoOYXzZ2TnZVFI=
+
+Name: assets/spine/newBattle/s2.png
+SHA1-Digest: nfIQstsraIgXa4rfmVqtHIC0tpo=
+
+Name: assets/zombieImage/GuoQiImage.pvr.ccz
+SHA1-Digest: DB3Z0TKL3qGT9qrl2gJjDmMC1Dg=
+
+Name: assets/spine/load_ani.png
+SHA1-Digest: yMnBkeadqbI1dbaNb/09wiRL+Y4=
+
+Name: assets/WarImage/building_lvl_num_0.png
+SHA1-Digest: ofQsgzYinmkTuXI+WxnWnz/Xrn8=
+
+Name: assets/zombieImage/danTu/storyMap_1.jpg
+SHA1-Digest: 4yrfiYA29e2eWxHEVDWNGW3uuhQ=
+
+Name: assets/audio/battleGround.mp3
+SHA1-Digest: PAGiF5wGYO3KMI5suVxaE0fZeV4=
+
+Name: assets/audio/background_Warning.mp3
+SHA1-Digest: qne9fZ7KJtq8Yq/1rqyj/Iuhsww=
+
+Name: assets/audio/music_atk_2.mp3
+SHA1-Digest: CAam0aa6Eo+DTUuh6OCIcHYoguc=
+
+Name: assets/spine/newBattle/violence_1.json
+SHA1-Digest: ZfojMV29iqScjSwIZmOC7dIJ7Cw=
+
+Name: assets/zombieImage/iconGoldImage.pvr.ccz
+SHA1-Digest: Ac3VvisXAS9Pj8KdczOIG3o3cnc=
+
+Name: assets/zombieImage/zb_huodong/speedupDiscImage.pvr.ccz
+SHA1-Digest: xe4XaEl7HwfqMdY4y5bTXuATZ0s=
+
+Name: res/drawable/sample_yuanbao.png
+SHA1-Digest: 9ZY3ZKL4kzg/dm1DTWo5I/lUmkY=
+
+Name: assets/spine/newBattle/s14.png
+SHA1-Digest: HxIpg5qztlqvyk5SpCQFs696s2U=
+
+Name: assets/spine/newBattle/qy8.atlas
+SHA1-Digest: vtt9E3XgqNVZys5y+HjXeo57MMY=
+
+Name: assets/zombieImage/accessoryImage.plist
+SHA1-Digest: NIXYK+973jkNlCe6bGkp9tvohd4=
+
+Name: assets/spine/newBattle/s15.json
+SHA1-Digest: J7JUJVB2EnH8ADR08RuQm/yKjMo=
+
+Name: assets/spine/newBattle/effect_10.json
+SHA1-Digest: KcwVJD4wifWJ7MkysjSewTL+80M=
+
+Name: assets/spine/newBattle/qy6.atlas
+SHA1-Digest: mkhoJDPpv+HkSDk1GtcdBdOy8xM=
+
+Name: assets/zombieImage/zombie_BuffIcon.plist
+SHA1-Digest: IblSCST9qTROZ9o6Vo7oQlbna0E=
+
+Name: assets/zombieImage/iconLevel.plist
+SHA1-Digest: I/bbcB76WZ9ykVxb7Jy9JXwlT2o=
+
+Name: assets/zombieImage/story_star_batch_image.plist
+SHA1-Digest: FBT0ZAfYby/gjoByk1uTlDu76kM=
+
+Name: assets/spine/newBattle/E_yan.png
+SHA1-Digest: 1ijAu6tALD6iymCEnA11fePagA8=
+
+Name: assets/spine/mianfei.json
+SHA1-Digest: N4ovt5p5Ql1urujnLHw1na2I2Ps=
+
+Name: assets/zombieImage/zb_peijian.pvr.ccz
+SHA1-Digest: alfTd307woBOTIS0nzXowZQbb+o=
+
+Name: assets/zombieImage/danTu/story/story_chapter_13.jpg
+SHA1-Digest: 1AWQLlXOWWP19DtGsC08SD8b0LY=
+
+Name: assets/zombieImage/danTu/story/story_chapter_4.jpg
+SHA1-Digest: UEMaFKz+NS2npC1cCzcBhsnzegg=
+
+Name: assets/spine/newBattle/effect_9.atlas
+SHA1-Digest: dZ/UrCHLG3vpYB++vfLJ0ZYRyQk=
+
+Name: assets/audio/building_tai.mp3
+SHA1-Digest: ZHtT+pKVqk/GSKxO9Vyp3ojsU5Q=
+
+Name: assets/zombieImage/zhaoMu.plist
+SHA1-Digest: eGaWpwYbNaY+4uXVaRCrDiAX7Oo=
+
+Name: assets/audio/building_academy.mp3
+SHA1-Digest: 6gqmosEDRmJdJ0Eku5VEKRJ5XPo=
+
+Name: assets/spine/newBattle/s9.json
+SHA1-Digest: n0g6GoQrAfT0dKTfzR4jJ9I/2+w=
+
+Name: assets/spine/newBattle/bruise_22.json
+SHA1-Digest: gDoVfNnUOVPrthWxnmMwlGF8PJE=
+
+Name: assets/spine/newBattle/effect_3.png
+SHA1-Digest: 0JJDEDMOTyh6JNm285tj1kewMQE=
+
+Name: assets/zombieImage/zb_huodong/acMysteriousArms.plist
+SHA1-Digest: mHNj1qKlxLTPlwam69ca3l1RY24=
+
+Name: assets/spine/newBattle/qy14.png
+SHA1-Digest: VFoG/or3Vxqi8vcpHbVXyaBD7CI=
+
+Name: assets/spine/newBattle/qy12.png
+SHA1-Digest: Gg3IDYFvbgipTyhQkfl2K2t49Nc=
+
+Name: assets/audio/torpedo.mp3
+SHA1-Digest: joacQawCN8h7mCLtCX8ITBllkDA=
+
+Name: assets/config.xml
+SHA1-Digest: 4XwwjlaJhG7FqVM7z+CdijsrI2E=
+
+Name: assets/zombieImage/bodyWalk.plist
+SHA1-Digest: eH4X74dZjBkwVFaZV2HXLQzOP5Q=
+
+Name: assets/zombieImage/danTu/story/story_chapter_16.jpg
+SHA1-Digest: FAnsA2rcEJquwkEgA7GC1RLpzrU=
+
+Name: assets/audio/typewriter.mp3
+SHA1-Digest: TL0I8plEXlmkfHM8Kc9LLTFRoXQ=
+
+Name: assets/zombieImage/lizi/baozang3.png
+SHA1-Digest: nmWu2Hf/1hsc3mdPkYk0/ytyMlc=
+
+Name: assets/spine/kaichang.png
+SHA1-Digest: a68opkuEjxJMoVmVDDKgUlKR6Do=
+
+Name: assets/zombieImage/lizi/worldMoveParticle.png
+SHA1-Digest: yQ7AtGqsxEDN7zq4LrvP5aYGR4s=
+
+Name: assets/zombieImage/story_star_batch_image.pvr.ccz
+SHA1-Digest: MWBuwQZd8rCKpzMxA3eJWjFGVUU=
+
+Name: assets/zombieImage/danTu/story/story_chapter_1.jpg
+SHA1-Digest: m/YL1AIg1r9YKSUBdihJJC+niLE=
+
+Name: assets/zombieImage/lizi/changeMainUI.png
+SHA1-Digest: 4FdPssDcJhbeUVi7QyPj+boqg44=
+
+Name: assets/zombieImage/zombie_heroIcons2.plist
+SHA1-Digest: TFZWhx+6Nz4voORNGpgPKqJw//E=
+
+Name: assets/spine/newBattle/qy12.atlas
+SHA1-Digest: Dgw1LPoKAlEJ30PItPaiQ1WSn4s=
+
+Name: assets/audio/story_bomb.mp3
+SHA1-Digest: 53pnZNw1HJ+p8vUVPILwRnmDQKg=
+
+Name: assets/zombieImage/player.plist
+SHA1-Digest: g1fDJDFwpfh+TTv/PXq9+Jcps3c=
+
+Name: assets/zombieImage/lizi/Raindrop.plist
+SHA1-Digest: AgpTdLEsjFcilj55/qljzFrGr48=
+
+Name: assets/spine/newBattle/effect_12.png
+SHA1-Digest: 59cQyQnJzAPMZPuOF6ZqNSSpcec=
+
+Name: assets/spine/newBattle/qy6.json
+SHA1-Digest: 9OQdaPVofZLTmm01sI2CNpoue9M=
+
+Name: assets/spine/newBattle/effect_4.json
+SHA1-Digest: s8iuqNL35zaejFee04c4m9q9tFM=
+
+Name: assets/zombieImage/slotMachine.plist
+SHA1-Digest: aK1n9iPJzI7az2Oc46dk6u0RdA0=
+
+Name: assets/zombieImage/lizi/starBombParticle.plist
+SHA1-Digest: O55KanXMSw+r+rRgyBRfNf9//7U=
+
+Name: assets/zombieImage/lizi/particleFire.plist
+SHA1-Digest: 9pvQYdTcly2A9B0sH8+B+36CafA=
+
+Name: assets/zombieImage/tank_slot_line.png
+SHA1-Digest: P9H6k0YXKDzYiiJJ/h5Jw/CJAz0=
+
+Name: assets/zombieImage/soliderInfoImage_small.plist
+SHA1-Digest: ruQWNvtI1fq2ZwkgYH/LgMe0/+4=
+
+Name: assets/zombieImage/zombie_common.pvr.ccz
+SHA1-Digest: wLVxKJ1qILaz0XL3ChasKUF7UC8=
+
+Name: assets/zombieImage/danTu/story/story_chapter_5.jpg
+SHA1-Digest: rfGTvEVKTsTjNFrE1RJBy6ODWVI=
+
+Name: assets/spine/newBattle/s4.json
+SHA1-Digest: lOHl7gnoupJBGLieEQLq5mO72Oo=
+
+Name: assets/audio/music_atk_7.mp3
+SHA1-Digest: b3lzsiRtieq21o3oq2j8wLDGzFE=
+
+Name: assets/zombieImage/danTu/homeMap2.png
+SHA1-Digest: paK3QWCJR4835T5ZnCFaXuD7uVA=
+
+Name: assets/zombieImage/accessoryImage3.plist
+SHA1-Digest: XKG3vVnEwa2ROOpy9G+YPTh5TP4=
+
+Name: assets/zombieImage/old_main_ui_image.plist
+SHA1-Digest: Y5kI45xNr3EDcxnJmb0VWNRq50E=
+
+Name: assets/spine/newBattle/bruise_20.json
+SHA1-Digest: P+l92Ix0/duTEcxZGQWMRAzktqg=
+
+Name: assets/zombieImage/lizi/accessoryLevelUp.png
+SHA1-Digest: BfafwGu3UCmABPofIgKDg/3NxD4=
+
+Name: assets/audio/lightning.mp3
+SHA1-Digest: Thv+nC+X0cJkqI8Od0M0UlWc+hs=
+
+Name: assets/zombieImage/danTu/story/story_chapter_6.jpg
+SHA1-Digest: /m/3PeAHIZP9AYeIeO2FN/WjbQY=
+
+Name: assets/zombieImage/registerPic.pvr.ccz
+SHA1-Digest: KO21dDPv2qK51FI0Njdpruvucwc=
+
+Name: assets/audio/music_atk_9.mp3
+SHA1-Digest: scW4yNc9MAiJ1CCihmpp2UbnD/Y=
+
+Name: assets/spine/newBattle/s19.json
+SHA1-Digest: 7vu97G0sIVPwJTXGrR7P+cajiKw=
+
+Name: assets/spine/newBattle/effect_7.png
+SHA1-Digest: DE4AYQNe+FVJiErTWyKMGrquR9o=
+
+Name: assets/zombieImage/vipImage.plist
+SHA1-Digest: Jgvh7TlPOzY7V36i550PETk4xdg=
+
+Name: assets/zombieImage/goldAnimImage.pvr.ccz
+SHA1-Digest: kU0xan2OE5DfSnbeULqyafKlEuw=
+
+Name: assets/audio/music_atk_8.mp3
+SHA1-Digest: edFGSGX01Jigiec8P0EqAvuT7aw=
+
+Name: assets/spine/newBattle/bruise_21.atlas
+SHA1-Digest: 9sSWK2LJEayA2LMGGvWA6iaBXcE=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: KTwNf/MWLdFIqUbbx32VsVdfhtk=
+
+Name: assets/zombieImage/rewardCenter.plist
+SHA1-Digest: mWNWLKDICWje8ts6XSuSVSYjHRg=
+
+Name: assets/spine/newBattle/bruise_20.atlas
+SHA1-Digest: 5T/Rz+lF4UPtS2gyAkK03em4qFU=
+
+Name: assets/zombieImage/worldMap.png
+SHA1-Digest: mgEh/Rom92HF/7QSx8FIvbR1QQY=
+
+Name: assets/spine/kaichang4.png
+SHA1-Digest: 1eId33oV+6gYd/zSudvvLv3Xe4s=
+
+Name: assets/spine/newBattle/effect_17.png
+SHA1-Digest: 3pMgeX1nU0l94ZRnsn9KzsGhixQ=
+
+Name: assets/zombieImage/lizi/SMOKE.plist
+SHA1-Digest: gltYbW5LhslfxYPkLnF8gO/avSk=
+
+Name: assets/zombieImage/createNameImg.pvr.ccz
+SHA1-Digest: RxnDlVF0oKKpjb8hInSUvsC51bE=
+
+Name: assets/supportPluginDebug.xml
+SHA1-Digest: vs8kusiqw7mS+fvETcRAmwxVMiM=
+
+Name: assets/spine/newBattle/qy10.png
+SHA1-Digest: HQ8rVmF6fp/1iSvd6lytKZs0cPo=
+
+Name: assets/spine/newBattle/s10.json
+SHA1-Digest: CmYEqIwJD0ylM5Sv1Q9JNt6cpwU=
+
+Name: assets/spine/Button_a-c.json
+SHA1-Digest: TvgdaOg11GpLJ+Ib3DgQh2lvuiA=
+
+Name: assets/spine/zhanshazhe_03.png
+SHA1-Digest: 5hqlXciUV9DY7SS9dv9NvYYtO94=
+
+Name: assets/spine/kaichang.json
+SHA1-Digest: P3HzeUoN/S+284pMP95X8fspsY0=
+
+Name: assets/cfg/config.xml
+SHA1-Digest: 4XwwjlaJhG7FqVM7z+CdijsrI2E=
+
+Name: assets/public/logo_effect.png
+SHA1-Digest: Z5eyHPpZ9UwCzFFK34ojPsNpffg=
+
+Name: assets/fonts/android_emoji.ttf
+SHA1-Digest: hbj5wHV1ici9SyMv8kFumg5qbt8=
+
+Name: assets/spine/newBattle/s16.atlas
+SHA1-Digest: yDMWdkZAVqaGLRuEHim0pcfSMlg=
+
+Name: assets/zombieImage/danTu/loadImage.png
+SHA1-Digest: CRsgPmxuS3E+AIDwvybS+5oVdoM=
+
+Name: assets/spine/newBattle/s13.json
+SHA1-Digest: J7JUJVB2EnH8ADR08RuQm/yKjMo=
+
+Name: assets/spine/newBattle/s4.atlas
+SHA1-Digest: wknZGPoAcnZ3GfuP9r//Hp6Dwhc=
+
+Name: assets/cfg/supportPluginDebug.xml
+SHA1-Digest: vs8kusiqw7mS+fvETcRAmwxVMiM=
+
+Name: assets/spine/newBattle/effect_10.png
+SHA1-Digest: 8fLrSOoof0y6tkdHIln3cfXL2pU=
+
+Name: assets/spine/newBattle/bruise_20.png
+SHA1-Digest: PAINuyWJhnHjepb83Xz1TQKxhU4=
+
+Name: assets/audio/zombie_die.mp3
+SHA1-Digest: ovBbn8UokDjGIBOeKy/cWnzUjTA=
+
+Name: assets/zombieImage/zombie_common.plist
+SHA1-Digest: H9bV0BTEQxI1Fqe11ahwGE249Po=
+
+Name: assets/spine/newBattle/effect_12.atlas
+SHA1-Digest: 1hAI94K0Uir79Tb6yjXrAR6Anqs=
+
+Name: assets/zombieImage/newBattle/battleResult.plist
+SHA1-Digest: /rP7VfZ1i4njCWjknPD64LzsTeM=
+
+Name: assets/zombieImage/lizi/snow2.plist
+SHA1-Digest: Qo+v51OxfApD0NMwdH1lCrW5TPY=
+
+Name: assets/zombieImage/lizi/particleSmog.plist
+SHA1-Digest: 4yv1EqWYlABYPk+X5FGjd55cDqY=
+
+Name: assets/spine/newBattle/s10.png
+SHA1-Digest: q2fCpuTqowliq2wqkwMNGmtyoKE=
+
+Name: assets/zombieImage/zombie_panel.pvr.ccz
+SHA1-Digest: 2C8sJgYAvjcdohbL1qvSqoYLD2Y=
+
+Name: assets/spine/newBattle/result_star.atlas
+SHA1-Digest: DLMxuchQyL/mR6er34l1laCD76o=
+
+Name: assets/zombieImage/lizi/baozang2.plist
+SHA1-Digest: YFlroVi33t6MHOsZcOMGI9FtgHM=
+
+Name: assets/zombieImage/buBing.plist
+SHA1-Digest: CpgikqgPEkXI539tOaU/jaXHhEI=
+
+Name: res/drawable-hdpi/logo.png
+SHA1-Digest: Xs187dJNvymr6YhO3QzbxG8B2P4=
+
+Name: assets/audio/building_shuijing.mp3
+SHA1-Digest: bxa01RdbNsYW4jATJOlt3X12b7Y=
+
+Name: assets/spine/newBattle/qy2.json
+SHA1-Digest: mT7axjCuThi8Ll+RbSFMWM6HxlE=
+
+Name: lib/armeabi/librsdk.so
+SHA1-Digest: wc0ncVWVGS7qEsNOxf+H304/xfc=
+
+Name: assets/spine/newBattle/effect_2.png
+SHA1-Digest: jD5Zz/R/RCc52rIukJREhs/k+p8=
+
+Name: assets/zombieImage/zb_huodong/acOnlineImage.png
+SHA1-Digest: hSXrbjLv7SNnYHN8ZoSof+edJWw=
+
+Name: assets/zombieImage/lizi/changeMainUI.plist
+SHA1-Digest: HpJHvPhoSYTjYYO/IojyjimbJLM=
+
+Name: assets/cfg/rjoyconfig.xml
+SHA1-Digest: 0ngV7V6dmB2U8Iv0Jj4dzB0OM80=
+
+Name: assets/audio/kaichang.mp3
+SHA1-Digest: PLku79AZNxI96zzieP0ddRrSiO4=
+
+Name: assets/spine/newBattle/effect_19.atlas
+SHA1-Digest: 9JLl30pGXahOJi9wdNhNTSzYhB8=
+
+Name: assets/audio/explosion.mp3
+SHA1-Digest: 8DM8ZZl4bUnk3o3zKawh/Yyfvr0=
+
+Name: assets/zombieImage/rewardCenter.pvr.ccz
+SHA1-Digest: hpvdk4fto0Gl+naxLEPAoOknkdA=
+
+Name: assets/audio/building_research.mp3
+SHA1-Digest: ldVX/Z64usE1Z0W6N+UQuyn+crQ=
+
+Name: assets/spine/newBattle/qy11.png
+SHA1-Digest: aHEc0iIVr5kLKb5CZuaNgm1CacY=
+
+Name: assets/zombieImage/lizi/SMOKE.png
+SHA1-Digest: 7yzcext070couBdkupWiGb7zkss=
+
+Name: assets/audio/music_atk_5.mp3
+SHA1-Digest: O+R2rC1bwUeOWuaLn/gWAyAAwx0=
+
+Name: assets/zombieImage/danTu/story/story_chapter_9.jpg
+SHA1-Digest: 3B+XsPCY2nqsVs0JyPtvD6pxP8I=
+
+Name: assets/spine/newBattle/effect_13.atlas
+SHA1-Digest: IQN7Lq38kr0TVJDhl0OTPFRS/vc=
+
+Name: assets/spine/newBattle/s5.atlas
+SHA1-Digest: pyR9bGP0R79NMAbv/tqOsUB2DR8=
+
+Name: assets/zombieImage/levelUpImage.pvr.ccz
+SHA1-Digest: RmVdDM9B3CHBHguBhMkBJwTPStg=
+
+Name: assets/spine/newBattle/violence_2.json
+SHA1-Digest: 5rPu9eTIPt0EY6yO3oZVvF5JEKs=
+
+Name: assets/spine/kaichang2.png
+SHA1-Digest: XfZXi6z0FuR+UaclzgBcxsgT0Qc=
+
+Name: assets/spine/xiaozhushou.json
+SHA1-Digest: 6vhjmp6QefmqRTxsxkwgc7YYVeQ=
+
+Name: assets/zombieImage/zombie_soliderIcon.pvr.ccz
+SHA1-Digest: xnWe+9s0o0prFwMwDd6e0SL6fEk=
+
+Name: assets/spine/newBattle/E_yan.atlas
+SHA1-Digest: ZnRnCgh7RHXavUEtMEc3RG4MYDY=
+
+Name: assets/zombieImage/accessoryImage3.pvr.ccz
+SHA1-Digest: OxPk536KuVDh8Hj9M3kF4mz+qLQ=
+
+Name: assets/spine/newBattle/s17.json
+SHA1-Digest: 7vu97G0sIVPwJTXGrR7P+cajiKw=
+
+Name: assets/zombieImage/lizi/Snow.plist
+SHA1-Digest: ussawHNbfTJ7KWEF/briv1eSdWE=
+
+Name: assets/zombieImage/new_image_battle.pvr.ccz
+SHA1-Digest: VCFtBOHS6iWoQDEujVyoWIHtqWY=
+
+Name: assets/spine/newBattle/z20.json
+SHA1-Digest: txHaFpqADgm+CT/Nozfu58UNFNA=
+
+Name: assets/zombieImage/lizi/snow2.png
+SHA1-Digest: R2HoXsCR4V3aVwv76RE+vnxFlIQ=
+
+Name: assets/spine/newBattle/effect_7.json
+SHA1-Digest: QHpWMOX7CqEr4YU+fPxV7IJCk7A=
+
+Name: assets/audio/building_qian.mp3
+SHA1-Digest: w+bzWV4fsIu7bQkNQ6MxtWJtBe8=
+
+Name: assets/Image/color.pvr.ccz
+SHA1-Digest: b4myQo7+IXhXBRGWO1ulMa6xsxI=
+
+Name: assets/spine/newBattle/qy8.json
+SHA1-Digest: gIxFdEt+Pw/u68kwmruxQas+kI8=
+
+Name: assets/spine/newBattle/s11.json
+SHA1-Digest: +rKh2NolWLqcHjXDePlc5RfiYLg=
+
+Name: assets/spine/newBattle/effect_1.json
+SHA1-Digest: DJxPDDqF5KhXEf2exhUB1m5xVmk=
+
+Name: assets/zombieImage/allianceActiveImage.png
+SHA1-Digest: GSQHpRBAck1j0l3I0PsO0lTRb+Y=
+
+Name: assets/zombieImage/zombie_heroIcons.plist
+SHA1-Digest: ZLRxhmTQCFPB3xk1Amzj8e6CRkg=
+
+Name: assets/zombieImage/zb_peijian.plist
+SHA1-Digest: kJkW8Z3P62qObBeBFe13j4V6tEQ=
+
+Name: assets/public/loadingParticleS.png
+SHA1-Digest: 323BO43ExkeR9kF60kK91pbd3ec=
+
+Name: assets/spine/newBattle/qy4.json
+SHA1-Digest: 53qqoerDemCY2b0MqNtmZM7qfV8=
+
+Name: assets/spine/newBattle/result_star.json
+SHA1-Digest: Cx7pvwc6lrc+81m5TaIywhgGGK0=
+
+Name: assets/spine/zhanshazhe_01.png
+SHA1-Digest: VlSa5FB0IU89Ks0cZjrRrweott8=
+
+Name: assets/spine/newBattle/s1.png
+SHA1-Digest: WJKkG1oq82A89yWOGNpk7XWnyto=
+
+Name: assets/spine/zhanshazhe_01.atlas
+SHA1-Digest: wtwJxAZ9Fx8YHYlrJ8oiiBDCdaM=
+
+Name: assets/audio/loading_back.mp3
+SHA1-Digest: op2dkoVz0gPibJYBQy2zmWD2HlA=
+
+Name: assets/spine/newBattle/violence_1.png
+SHA1-Digest: a4eQvUlaM3u5wWGpJnLpvFKFjFg=
+
+Name: assets/spine/newBattle/z11.json
+SHA1-Digest: rR/36wHt6sroHkZIH4EiIEept+8=
+
+Name: assets/spine/sl_sb.png
+SHA1-Digest: yEoVXoyM7DoELAVx7nOSX6IgijM=
+
+Name: assets/audio/building_peijian.mp3
+SHA1-Digest: 4eOtldYMkHXK+Prfk5XWO6HUudk=
+
+Name: assets/spine/newBattle/s18.json
+SHA1-Digest: 7vu97G0sIVPwJTXGrR7P+cajiKw=
+
+Name: assets/spine/newBattle/E_yan.json
+SHA1-Digest: qeWLg+W5UG3yid+ot3mYZBfX1ZA=
+
+Name: assets/zombieImage/zombie_panel.plist
+SHA1-Digest: bNKrsAj1oyPAjY2Mx58p2rVtR40=
+
+Name: assets/spine/newBattle/effect_13.json
+SHA1-Digest: mEbT6h4kcdEpbNpkzW6znNWguFc=
+
+Name: assets/audio/miss.mp3
+SHA1-Digest: YVdBZUPE4l8IxxSJj0L6CibUQ/o=
+
+Name: resources.arsc
+SHA1-Digest: dU66rsXUS/RneUCru1rCzspeNXk=
+
+Name: assets/spine/zhanshazhe_02.json
+SHA1-Digest: JU8c3p2Alm2hM93Eo/ncdt/xTKE=
+
+Name: assets/spine/newBattle/qy7.json
+SHA1-Digest: 2FwCUIhAjPJ8tQJRXFN+Sa1u/9s=
+
+Name: assets/zombieImage/lizi/baozang3.plist
+SHA1-Digest: sgHujrev5yGul5eUb/lbTp+T1k8=
+
+Name: assets/public/tankLoadingBg.png
+SHA1-Digest: xARKC6pX9PqmIatH+6YPm4w7E4o=
+
+Name: assets/spine/newBattle/effect_15.atlas
+SHA1-Digest: nQY+njBNIkIMS8bEBDLP5IfproE=
+
+Name: assets/spine/newBattle/s20.atlas
+SHA1-Digest: L7QMvpR3g9z4TLfw2POToegCWNY=
+
+Name: assets/zombieImage/accessoryImage2.pvr.ccz
+SHA1-Digest: PixDfbAM1OV8Vn+7uWu/Xtq2o2o=
+
+Name: assets/zombieImage/tankRestraint.pvr.ccz
+SHA1-Digest: 6dGt5xJBLqjLXNxfEl69rB/IeWE=
+
+Name: assets/zombieImage/soliderInfoImage_small.pvr.ccz
+SHA1-Digest: SZ312YXgtSf6agiGa4+8dvH4LuU=
+
+Name: assets/spine/newBattle/qy4.png
+SHA1-Digest: 1yH7CgWre+MG3W7hRryJGKrm9C8=
+
+Name: assets/zombieImage/danTu/story/story_chapter_11.jpg
+SHA1-Digest: 0ALlyMoPi1sMToPR0lzL2FCShPw=
+
+Name: assets/zombieImage/danTu/story/story_tech_header.png
+SHA1-Digest: l7Jw4WzPrGFPXF4T8y6GW8DwXl4=
+
+Name: assets/zombieImage/GuoQiImage.plist
+SHA1-Digest: K8UwYSarMJAGqOyQfDFcpZ4tv/8=
+
+Name: assets/spine/zhanshazhe_02.png
+SHA1-Digest: cMVFgiHgEFmoVnWTFLGX9p5Ygqk=
+
+Name: assets/zombieImage/homeBuilding.pvr.ccz
+SHA1-Digest: d/ejGYAyfGFogpXcwJCW7ozlZyo=
+
+Name: assets/spine/zhanshazhe_03.json
+SHA1-Digest: wzoGGgfhhh75WqbVdY5WEQkXbJU=
+
+Name: assets/zombieImage/accessoryImage.pvr.ccz
+SHA1-Digest: ONWE9eDEissyRccq6u5x4xuOirE=
+
+Name: assets/zombieImage/newBattle/battleResult.pvr.ccz
+SHA1-Digest: DJd1bbIVb8iC8snDscCUzVLDRKk=
+
+Name: assets/spine/newBattle/z20.png
+SHA1-Digest: LfYitc6ZGJo64EKU0p5wJoR3Ro4=
+
+Name: assets/spine/newBattle/s2.json
+SHA1-Digest: 6NqHa+bkANtfBYHcdaBTJtPs4tM=
+
+Name: assets/zombieImage/lizi/baozang1.plist
+SHA1-Digest: ViDpnPcs55vQHB+sFKLDNv5OU6A=
+
+Name: assets/spine/newBattle/qy10.atlas
+SHA1-Digest: ih/0FAnBsgapGo4cgYxmsfYiu7A=
+
+Name: assets/language/language.txt
+SHA1-Digest: W5Kx4vxLGBxrA2/AOzRpdrpJs/4=
+
+Name: assets/spine/newBattle/effect_11.png
+SHA1-Digest: VY758Ltw49pcuDc+TJsGraXMz8E=
+
+Name: assets/WarImage/number_attack_double.fnt
+SHA1-Digest: m3dqlC7lRrW44fp/0lu6JCjRLwc=
+
+Name: assets/zombieImage/lizi/starBombParticle.png
+SHA1-Digest: Ii4O8HsflRDVNaKu72laExyaqQ8=
+
+Name: assets/cfg/developerInfoDebug.xml
+SHA1-Digest: p41GZQYlMIHQtVpZr5g2IKOqcnk=
+
+Name: assets/spine/newBattle/effect_17.atlas
+SHA1-Digest: Ohe3+m9GXAwBJYp/cRCmkahGjhc=
+
+Name: assets/spine/newBattle/s13.png
+SHA1-Digest: uEDUEQa5qN+t11HQfn9Dq5wfTC8=
+
+Name: assets/zombieImage/LVUP.pvr.ccz
+SHA1-Digest: /SuQgkfunCD1+EyBeRUl0pOUWYQ=
+
+Name: assets/developerInfoDebug.xml
+SHA1-Digest: p41GZQYlMIHQtVpZr5g2IKOqcnk=
+
+Name: assets/spine/zhanshazhe_05.atlas
+SHA1-Digest: sDumpGs3QPO3vLTLGGDFmAkUvoU=
+
+Name: assets/zombieImage/danTu/story/story_chapter_10.jpg
+SHA1-Digest: 9UYL5OBXQpyuqDy8XXUV/ml1hu0=
+
+Name: assets/spine/newBattle/s6.json
+SHA1-Digest: a+Hw8FggvKyQWwoFIQNrB7mtgcg=
+
+Name: assets/zombieImage/zhiShengJi.pvr.ccz
+SHA1-Digest: c6a7QeQI5vHzdx8ppBLqFQb1eB0=
+
+Name: assets/spine/newBattle/qy2.png
+SHA1-Digest: 2wCce4btM4gVm+Chlx9uhzaW1rY=
+
+Name: assets/Image/color.png
+SHA1-Digest: ho0lTLdobn0e5rlyMCnxj9j+kyg=
+
+Name: assets/zombieImage/lizi/lotteryBombParticle.plist
+SHA1-Digest: u7hQFPZ7WsDhMUauM6mpXFZI8gY=
+
+Name: assets/zombieImage/chengfang.pvr.ccz
+SHA1-Digest: s43eB0Z+mM8FrqSfKUrrdjokzSM=
+
+Name: assets/spine/newBattle/effect_20.png
+SHA1-Digest: SNNW55dPKln25RCVlQKIZPLNrcg=
+
+Name: assets/spine/newBattle/effect_2.atlas
+SHA1-Digest: z7rO1u2EwAsS4AjMJ3i04+CJEfQ=
+
+Name: assets/audio/battle_win.mp3
+SHA1-Digest: 7GYwFuwYrz1iHqUVW1huEsmvJtE=
+
+Name: assets/spine/newBattle/s6.atlas
+SHA1-Digest: j4xmtacEwmV2CJatkIh7qbWoP0k=
+
+Name: assets/spine/newBattle/effect_1.png
+SHA1-Digest: 0pqZxGUlsgTYnbQ8kvW5+o3Q+gQ=
+
+Name: assets/spine/newBattle/qy12.json
+SHA1-Digest: NTe+cvTDBExsxl62a/fvGoLssNg=
+
+Name: assets/spine/newBattle/effect_15.png
+SHA1-Digest: kxFQSGgFeKfDdWWFEhR5flmgeuM=
+
+Name: assets/spine/newBattle/effect_4.atlas
+SHA1-Digest: d8QZJU5w5Vz21XuoUUk/n+BBN3o=
+
+Name: assets/spine/newBattle/qy1.json
+SHA1-Digest: 9J8YSsPltcDv5aalH9GD3LrvqSY=
+
+Name: assets/spine/newBattle/s8.json
+SHA1-Digest: btwYMON5/vLySku3qlSZfOkvXgM=
+
+Name: assets/audio/music_def_8.mp3
+SHA1-Digest: bdLDErMK4R/2DsNStuWabLQlyo0=
+
+Name: assets/zombieImage/junYan.plist
+SHA1-Digest: oIyDkQlGTC7kxcgtaRSNLzp8VnY=
+
+Name: assets/WarImage/number_attack_new.png
+SHA1-Digest: ZQFRd7D48DtW0R9sYhWtpfdUx/0=
+
+Name: assets/public/loadingTipBg.png
+SHA1-Digest: G7k42um5E7IDzm0qBlqC6L++LiE=
+
+Name: assets/audio/building_workshop.mp3
+SHA1-Digest: sUoydtpNDxJQ12nTeRyD4M6Q39o=
+
+Name: assets/zombieImage/chat_look_image.plist
+SHA1-Digest: 0da13GP0QyiBgZIVsSiMKZJWTn4=
+
+Name: assets/zombieImage/zombie_uibutton.pvr.ccz
+SHA1-Digest: oWjoI+PwXbbJe3AH/MKe0ZM5+ic=
+
+Name: assets/zombieImage/goldAnimImage.plist
+SHA1-Digest: j3v0hzXlYrwG96w/QKNFSUTOzCk=
+
+Name: assets/spine/kaichang5.png
+SHA1-Digest: +beeN3MbwpL6/d2tNp0S/hSXdeA=
+
+Name: assets/audio/music_atk_1.mp3
+SHA1-Digest: RYSv1NfIa5nIEDwPwDIAiqygQdw=
+
+Name: assets/spine/newBattle/qy10.json
+SHA1-Digest: 6cunHUrqpkNVQ3mNd4FYle6F3/s=
+
+Name: assets/zombieImage/soliderInfoImage_bb.pvr.ccz
+SHA1-Digest: Ksguda2SZtW/XBI1lp34KtqedWA=
+
+Name: assets/spine/newBattle/qy7.png
+SHA1-Digest: J7KThBn9LFQUV9eLEe4sD7Ga7yw=
+
+Name: assets/spine/newBattle/s18.png
+SHA1-Digest: xeqyXSTmjCFaVQ6rqD1ty2PKDvo=
+
+Name: assets/zombieImage/lizi/rain.plist
+SHA1-Digest: JPBZvv4DZH7HDBrfm8sdBqWtT9E=
+
+Name: assets/spine/newBattle/effect_4.png
+SHA1-Digest: Qgm0fc+CEtwwOsu+HZ748BOcQT8=
+
+Name: assets/zombieImage/lizi/lotteryBombParticle.png
+SHA1-Digest: K7y8+SYtTDBTnMR4Eezrsasi9GU=
+
+Name: assets/zombieImage/buBing.pvr.ccz
+SHA1-Digest: wpREnOBF67EUOPWd6SfiSIHB3IQ=
+
+Name: assets/spine/newBattle/effect_16.atlas
+SHA1-Digest: xEK11YoNPYLYReHhqNqnDp2gA7Q=
+
+Name: assets/audio/music_def_10.mp3
+SHA1-Digest: 7JNcdCbf0U0+TqtXXvQLL68hrtM=
+
+Name: assets/zombieImage/zombie_jiangshiIcon.pvr.ccz
+SHA1-Digest: 2jpOxCBnWjuSWpVij3/dLVUrKX4=
+
+Name: assets/audio/Button.mp3
+SHA1-Digest: tR6Robf4XcWRhz4HMroDFx01EGs=
+
+Name: assets/spine/newBattle/s7.json
+SHA1-Digest: dmUGB5OU+xMg3XSn0JZQcNimdco=
+
+Name: assets/spine/newBattle/s17.png
+SHA1-Digest: 9t3A+ks5TsRWXZlsUp7/bAxaO04=
+
+Name: assets/zombieImage/vipImage.pvr.ccz
+SHA1-Digest: 6hYneDDqCQ/rYE57SXFeDzlS/0Q=
+
+Name: assets/spine/xiaozhushou.atlas
+SHA1-Digest: xBUto6ZuYUPb3jK3a9jDuC5fPVM=
+
+Name: assets/zombieImage/zombie_ui.plist
+SHA1-Digest: lqY+LI3gmiQh6qBr8Y4FCGNVTss=
+
+Name: assets/zombieImage/lizi/lotteryLightParticle.plist
+SHA1-Digest: dJSyJ0aPU2pQTGS9LonM+p59e+A=
+
+Name: assets/spine/newBattle/effect_17.json
+SHA1-Digest: yfCEQPpw8yEWLRIy0kuLc1/Xucw=
+
+Name: assets/spine/newBattle/qy3.json
+SHA1-Digest: mT7axjCuThi8Ll+RbSFMWM6HxlE=
+
+Name: assets/spine/newBattle/effect_9.json
+SHA1-Digest: iaExk6+iDWmRTRY2VxLv2Ze0rcY=
+

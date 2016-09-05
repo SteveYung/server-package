@@ -1,0 +1,76 @@
+
+effect_4.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+battleEffect/effect_4_0
+  rotate: true
+  xy: 881, 16
+  size: 119, 92
+  orig: 200, 200
+  offset: 56, 47
+  index: -1
+battleEffect/effect_4_1
+  rotate: false
+  xy: 2, 136
+  size: 197, 114
+  orig: 200, 200
+  offset: 1, 39
+  index: -1
+battleEffect/effect_4_2
+  rotate: false
+  xy: 735, 15
+  size: 144, 120
+  orig: 200, 200
+  offset: 26, 37
+  index: -1
+battleEffect/effect_4_3
+  rotate: false
+  xy: 577, 16
+  size: 156, 121
+  orig: 200, 200
+  offset: 18, 37
+  index: -1
+battleEffect/effect_4_4
+  rotate: false
+  xy: 190, 2
+  size: 159, 126
+  orig: 200, 200
+  offset: 18, 29
+  index: -1
+battleEffect/effect_4_5
+  rotate: false
+  xy: 763, 137
+  size: 180, 113
+  orig: 200, 200
+  offset: 10, 26
+  index: -1
+battleEffect/effect_4_6
+  rotate: false
+  xy: 2, 13
+  size: 186, 121
+  orig: 200, 200
+  offset: 9, 24
+  index: -1
+battleEffect/effect_4_7
+  rotate: false
+  xy: 201, 130
+  size: 186, 120
+  orig: 200, 200
+  offset: 9, 25
+  index: -1
+battleEffect/effect_4_8
+  rotate: false
+  xy: 389, 131
+  size: 186, 119
+  orig: 200, 200
+  offset: 9, 32
+  index: -1
+battleEffect/effect_4_9
+  rotate: false
+  xy: 577, 139
+  size: 184, 111
+  orig: 200, 200
+  offset: 11, 36
+  index: -1

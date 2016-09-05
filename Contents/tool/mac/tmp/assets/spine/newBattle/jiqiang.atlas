@@ -1,0 +1,62 @@
+
+jiqiang.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiqiang_1
+  rotate: false
+  xy: 2, 608
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+jiqiang_2
+  rotate: false
+  xy: 2, 406
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+jiqiang_3
+  rotate: false
+  xy: 404, 608
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+jiqiang_4
+  rotate: false
+  xy: 2, 204
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+jiqiang_5
+  rotate: false
+  xy: 404, 406
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+jiqiang_6
+  rotate: true
+  xy: 806, 408
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+jiqiang_7
+  rotate: false
+  xy: 2, 2
+  size: 400, 200
+  orig: 400, 200
+  offset: 0, 0
+  index: -1
+qq0028
+  rotate: false
+  xy: 404, 276
+  size: 62, 128
+  orig: 62, 128
+  offset: 0, 0
+  index: -1

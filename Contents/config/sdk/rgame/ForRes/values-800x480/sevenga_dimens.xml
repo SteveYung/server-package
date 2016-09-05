@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 800*480--> 
+    <dimen name="sevenga_dialog_min_width">280dp</dimen>
+    <dimen name="sevenga_share_image_size">140dp</dimen>
+    <dimen name="sevenga_logo_width">105dp</dimen>
+    <dimen name="sevenga_logo_height">40dp</dimen>
+    <dimen name="sevenga_layout_value_40">31dp</dimen>
+    <dimen name="sevenga_layout_value_220">175dp</dimen>
+    <dimen name="sevenga_layout_value_36">27dp</dimen>
+    <dimen name="sevenga_layout_value_32">24dp</dimen>
+    <dimen name="sevenga_layout_value_24">18dp</dimen>
+    <dimen name="sevenga_layout_value_20">15dp</dimen>
+    <dimen name="sevenga_layout_value_16">12dp</dimen>
+    <dimen name="sevenga_layout_value_12">9dp</dimen>
+    <dimen name="sevenga_layout_value_8">6dp</dimen>
+    <dimen name="sevenga_layout_value_4">3dp</dimen>
+    <dimen name="sevenga_fb_logo_width">15dp</dimen>
+    <dimen name="sevenga_fb_logo_height">24dp</dimen>
+    <dimen name="sevenga_vk_logo_width">27dp</dimen>
+    <dimen name="sevenga_vk_logo_height">24dp</dimen>
+    <dimen name="sevenga_google_logo_width">27dp</dimen>
+    <dimen name="sevenga_google_logo_height">24dp</dimen>
+    <dimen name="sevenga_alert_size">18dp</dimen>
+
+    <!--  -->
+    <dimen name="sevenga_text_size_large">18sp</dimen>
+    <dimen name="sevenga_text_size_normal">14sp</dimen>
+    <dimen name="sevenga_text_size_snormal">12sp</dimen>
+    <dimen name="sevenga_text_size_small">9sp</dimen>
+     <!--  -->
+    <dimen name="sevenga_layout_top_16_0">1dp</dimen>
+    <dimen name="sevenga_layout_padding_right">40dp</dimen>
+
+</resources>
