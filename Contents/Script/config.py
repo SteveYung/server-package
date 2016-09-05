@@ -337,7 +337,7 @@ class ConfigParse(object):
         """read output dir from user.xml"""
         str = sys.argv[5]
         strlist = str.split('/')
-        outputDir = '/'+strlist[len(strlist)-4]+'/'+strlist[len(strlist)-3]+'/'+strlist[len(strlist)-2]+'/'
+        outputDir = strlist[len(strlist)-4]+'/'+strlist[len(strlist)-3]+'/'+strlist[len(strlist)-2]+'/'
         print "<---outputDir--->"+outputDir
         self._outputDir = outputDir
 

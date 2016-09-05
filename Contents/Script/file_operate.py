@@ -247,10 +247,10 @@ def getTargetSdkVersion(apkFile):
 
 
 def backupApk(source, game, versionName):
-    #outputDir = ConfigParse.shareInstance().getOutputDir()
+    outputDir = ConfigParse.shareInstance().getOutputDir()
     #if outputDir == '':
-    outputDir = '../output/'
-    outputDir += '/'+game['gameName'].encode('utf-8')+'/' + versionName + '/common'
+    outputDir = '/data/plattech/server-sdk-pack/Contents/backupApk/'+outputDir
+    # outputDir += '/'+game['gameName'].encode('utf-8')+'/' + versionName + '/common'
     outputDir = getFullPath(outputDir)
     backupName = '%s/common.apk' % outputDir
     print '<---backupApk apkname--->'+backupName
