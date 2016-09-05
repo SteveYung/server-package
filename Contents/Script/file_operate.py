@@ -18,6 +18,9 @@ bPrint = False
 Language = 'Chinese'
 curDir = os.getcwd()
 
+def get_server_dir():
+    return '/data/plattech/server-sdk-pack/Contents'
+
 def delete_file_folder(src):
     if os.path.exists(src):
         if os.path.isfile(src):
@@ -132,7 +135,7 @@ def getToolPath(filename):
     #else:
 #	os.environ['LD_LIBRARY_PATH']=''
 	#print '<---LD_LIBRARY_PATH--->'+os.environ['LD_LIBRARY_PATH']
-    toolPath = '/data/plattech/sdk_server_pack/Contents/tool/mac/' + filename
+    toolPath = get_server_dir()+'/tool/mac/' + filename
     return toolPath
 
 
@@ -249,7 +252,7 @@ def getTargetSdkVersion(apkFile):
 def backupApk(source, game, versionName):
     outputDir = ConfigParse.shareInstance().getOutputDir()
     #if outputDir == '':
-    outputDir = '/data/plattech/server-sdk-pack/Contents/backupApk/'+outputDir
+    outputDir = get_server_dir()+'/backupApk/'+outputDir
     # outputDir += '/'+game['gameName'].encode('utf-8')+'/' + versionName + '/common'
     outputDir = getFullPath(outputDir)
     backupName = '%s/common.apk' % outputDir
@@ -311,7 +314,7 @@ def reportError(errorOuput, idChannel):
 
 def log(str):
     outputDir = ConfigParse.shareInstance().getOutputDir()
-    logDir = outputDir + '/log/'
+    logDir = get_server_dir()+'/'+outputDir + '/log/'
     if not os.path.exists(logDir):
         os.makedirs(logDir)
     logFile = codecs.open(logDir + 'error.txt', 'a+', 'utf-8')
