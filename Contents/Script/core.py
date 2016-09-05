@@ -56,7 +56,7 @@ def main(channel):
         workDir = file_operate.get_server_dir()+'/workspace/' + channelNum
         workDir = file_operate.getFullPath(workDir)
         file_operate.delete_file_folder(workDir)
-	if not os.path.exists(source):
+        if not os.path.exists(source):
             error_operate.error(60)
             return
         tmpApkSource = workDir + '/temp.apk'
@@ -64,7 +64,7 @@ def main(channel):
         print 'tmpApkSource-->'+ tmpApkSource
         decompileDir = workDir + '/decompile'
         ret = apk_operate.decompileApk(tmpApkSource, decompileDir, taskLock)
-    	print 'step--decompileAPK--RET-->%d' %(ret)
+        print 'step--decompileAPK--RET-->%d' %(ret)
         if ret:
             return
         unknownFile = decompileDir + '/AddForRoot'
@@ -118,9 +118,9 @@ def main(channel):
             apk_operate.resetApkVersion(maniFestFile, channel['r_gameversion_build'], channel['r_gameversion'])
             file_operate.printf("Reset ApkVersion success")
 
-	taskManager.shareInstance().notify(idChannel, 45)
+        taskManager.shareInstance().notify(idChannel, 45)
         print 'dir:%s,channel:%s,game:%s' %(decompileDir,channel,game)
-	apk_operate.writeChannelInfoIntoDevelopInfo(decompileDir, channel, game)
+        apk_operate.writeChannelInfoIntoDevelopInfo(decompileDir, channel, game)
         apk_operate.writeSupportInfo(decompileDir)
         taskManager.shareInstance().notify(idChannel, 50)
         bExecuteSpecialScipt = False
@@ -199,7 +199,7 @@ def main(channel):
         ret = apk_operate.recompileApk(decompileDir, tempApkName)
         if ret:
             return
-	print '<---recompileApk success--->'
+        print '<---recompileApk success--->'
         taskManager.shareInstance().notify(idChannel, 90)
         for Channel_SDK in channel['sdkLs']:
             idSDK = Channel_SDK['idSDK']
@@ -230,15 +230,15 @@ def main(channel):
         #get final apk name
         finalAppName = ''
         print '<---start rename apk--->'
-	if game.get('isModifyAppName') is not None and game['isModifyAppName'] != False:
+        if game.get('isModifyAppName') is not None and game['isModifyAppName'] != False:
             finalAppName = game.get('gameName').encode('utf-8')
-	display_name = channel['display_name'].encode('utf-8')
+        display_name = channel['display_name'].encode('utf-8')
         if display_name is not None and display_name != '':
             finalAppName = display_name
 	
         if finalAppName == '':
             finalAppName = game.get('gameName')
-	channel_name = channel['name'].encode('utf-8')
+        channel_name = channel['name'].encode('utf-8')
         #outputDir += '/' + game['gameName'] + '/' + versionName + '/' + channel_name
         #outputDir = file_operate.getFullPath(outputDir)
         #apkName = ('%s/%s_%s_%s_%s%s' % (outputDir,
@@ -254,7 +254,7 @@ def main(channel):
           #  print '<---apk path:'+apkName+'--->'
         strlist = apkName.split('/')
         outputDir = apkName.replace('/'+strlist[len(strlist)-1],'')
-	print '<---outputDir--->'+outputDir
+        print '<---outputDir--->'+outputDir
         ret = apk_operate.alignAPK(tempApkName, apkName,outputDir)
         if ret:
             return
@@ -471,7 +471,7 @@ def deleteWorkspace(channel):
     file_operate.delete_file_folder(gameIconDir)
 # 定义函数 8.4
 def inspectJDK():
-    print '<---inspectJDK LD_LIBRARY_PATH--> '+os.environ['LD_LIBRARY_PATH']
+    # print '<---inspectJDK LD_LIBRARY_PATH--> '+os.environ['LD_LIBRARY_PATH']
     (status,output)= commands.getstatusoutput('java -version')
     if status == 0:
         print output

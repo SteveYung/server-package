@@ -504,7 +504,7 @@ class ConfigParse(object):
         while True:
             if SDK['operateLs'] is not None and len(SDK['operateLs']) > 0:
                 break
-            configPath = '../config/sdk/' + SDK['SDKName'] + '/config.xml'
+            configPath = file_operate.get_server_dir()+'/config/sdk/' + SDK['SDKName'] + '/config.xml'
             configPath = file_operate.getFullPath(configPath)
             if not os.path.exists(configPath):
                 break
