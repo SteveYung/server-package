@@ -26,7 +26,9 @@ def main(channel):
     inspectJDK()
     source = ConfigParse.shareInstance().getSource()
     if os.path.isdir(source):
-        buildGradle(channel)
+        error_operate.error(3000)
+        return
+        # buildGradle(channel)
     else:
         idChannel = channel.get('idChannel')
         channelName = channel.get('name')
@@ -51,7 +53,7 @@ def main(channel):
             error_operate.error(5)
             return
         taskManager.shareInstance().notify(idChannel, 10)
-        workDir = '../workspace/' + channelNum
+        workDir = file_operate.get_server_dir()+'/workspace/' + channelNum
         workDir = file_operate.getFullPath(workDir)
         file_operate.delete_file_folder(workDir)
 	if not os.path.exists(source):
@@ -84,7 +86,7 @@ def main(channel):
             SDK = ConfigParse.shareInstance().findSDK(idSDK)
             if SDK == None:
                 continue
-            SDKSrcDir = '../config/sdk/' + SDK['SDKName']
+            SDKSrcDir = file_operate.get_server_dir()+'/config/sdk/' + SDK['SDKName']
             SDKSrcDir = file_operate.getFullPath(SDKSrcDir)
             SDKDestDir = SDKWorkDir + SDK['SDKName']
             file_operate.copyFiles(SDKSrcDir, SDKDestDir)
@@ -204,7 +206,7 @@ def main(channel):
             SDK = ConfigParse.shareInstance().findSDK(idSDK)
             if SDK == None:
                 continue
-            SDKSrcDir = '../config/sdk/' + SDK['SDKName']
+            SDKSrcDir = file_operate.get_server_dir()+'/config/sdk/' + SDK['SDKName']
             SDKSrcDir = file_operate.getFullPath(SDKSrcDir)
             ForRootDir = SDKSrcDir + '/ForRootDir'
             if os.path.exists(ForRootDir):
@@ -258,7 +260,7 @@ def main(channel):
             return
         taskManager.shareInstance().notify(idChannel, 100)
 
-
+"""
 def buildGradle(channel):
     # setting gradle environ
     # libPath = file_operate.getToolPath('')
@@ -457,7 +459,7 @@ def buildGradle(channel):
                                     '.apk')
     file_operate.copyFile(appModule + '/build/outputs/apk/app-rsdk-release.apk', apkName)
     taskManager.shareInstance().notify(idChannel, 100)
-
+"""
 
 def deleteWorkspace(channel):
     channelNum = channel['channelNum']
