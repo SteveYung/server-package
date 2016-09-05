@@ -314,7 +314,7 @@ def reportError(errorOuput, idChannel):
 
 def log(str):
     outputDir = ConfigParse.shareInstance().getOutputDir()
-    logDir = get_server_dir()+'/'+outputDir + '/log/'
+    logDir = get_server_dir()+'/log/'+outputDir + '/'
     if not os.path.exists(logDir):
         os.makedirs(logDir)
     logFile = codecs.open(logDir + 'error.txt', 'a+', 'utf-8')
@@ -323,7 +323,7 @@ def log(str):
     if platform.system() == 'Windows':
         logFile.write(unicode(content, 'gbk'))
     else:
-        logFile.write(unicode(content, 'utf-8'))
+        logFile.write(unicode(content, 'gbk'))
     logFile.close()
 
 
