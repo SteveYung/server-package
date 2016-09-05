@@ -318,11 +318,12 @@ def log(str):
     if not os.path.exists(logDir):
         os.makedirs(logDir)
     logFile = codecs.open(logDir + 'error.txt', 'a+', 'utf-8')
+    print '<---logFile--->'+logDir + 'error.txt'
     content = str + '\r\n'
     if platform.system() == 'Windows':
         logFile.write(unicode(content, 'gbk'))
     else:
-        logFile.write(unicode(content, 'gbk'))
+        logFile.write(unicode(content, 'utf-8'))
     logFile.close()
 
 
