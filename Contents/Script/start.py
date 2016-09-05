@@ -42,7 +42,7 @@ def start():
     packThreadManager.shareInstance().clearRecord()
     packThreadManager.shareInstance().setCurWorkDir(os.getcwd())
     source = ConfigParse.shareInstance().getSource()
-    print '<---source-->'+source
+    #print '<---source-->'+source
     game = ConfigParse.shareInstance().getCurrentGame()
     if os.path.isfile(source):
         versionName = ConfigParse.shareInstance().getVersionName()
