@@ -463,9 +463,9 @@ def buildGradle(channel):
 
 def deleteWorkspace(channel):
     channelNum = channel['channelNum']
-    workDir = '../workspace/' + channelNum
+    workDir = file_operate.get_server_dir()+'/workspace/' + channelNum
     workDir = file_operate.getFullPath(workDir)
-    gameIconDir = '../workspace/icon/' + channelNum
+    gameIconDir = file_operate.get_server_dir()+'/workspace/icon/' + channelNum
     gameIconDir = file_operate.getFullPath(gameIconDir)
     file_operate.delete_file_folder(workDir)
     file_operate.delete_file_folder(gameIconDir)

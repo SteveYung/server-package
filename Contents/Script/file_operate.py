@@ -314,7 +314,7 @@ def reportError(errorOuput, idChannel):
 
 def log(str):
     outputDir = ConfigParse.shareInstance().getOutputDir()
-    logDir = get_server_dir()+'/log/'+outputDir + '/'
+    logDir = get_server_dir()+'/Log/'+outputDir + '/'
     if not os.path.exists(logDir):
         os.makedirs(logDir)
     logFile = codecs.open(logDir + 'error.txt', 'a+', 'utf-8')
