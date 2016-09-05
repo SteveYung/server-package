@@ -162,7 +162,7 @@ def getSignInfo(game, channel):
             if ret:
                 return ret
         else:
-            keystoreFile = file_operate.getFullPath('../config/keystore/default.keystore')
+            keystoreFile = file_operate.getFullPath(file_operate.get_server_dir()+'/config/keystore/default.keystore')
             ret = {'keystoreFile' : keystoreFile, 'keystorePwd': '123456', 'keystoreAlias': '123456', 'keystoreAliasPwd': '123456'}
             if ret:
                 return ret
@@ -202,8 +202,8 @@ def signApk(apkFile, keyStore, storepassword, keyalias, aliaspassword):
 
 def signApkAuto(apkFile, game, channel):
     """"""
-    keystorePath = file_operate.getFullPath('../config/games/' + game['gameName'] + '/keystore/')
-    defaultPath = file_operate.getFullPath('')
+    keystorePath = file_operate.getFullPath(file_operate.get_server_dir()+'/config/games/' + game['gameName'] + '/keystore/')
+    # defaultPath = file_operate.getFullPath('')
     keystoreFile = channel['keystoreFile']
     keystorePwd = channel['keystorePwd']
     keystoreAlias = channel['keystoreAlias']
@@ -220,7 +220,7 @@ def signApkAuto(apkFile, game, channel):
             keystoreFile = keystorePath.encode('utf-8') + keystoreFile.encode('utf-8')
 	    print '<---keystoreFile2--->'+keystoreFile
             if not os.path.exists(keystoreFile):
-                keystoreFile = defaultPath + '../config/keystore/1.keystore'
+                keystoreFile = file_operate.get_server_dir()+'/config/keystore/1.keystore'
         ret = signApk(apkFile, keystoreFile, keystorePwd, keystoreAlias, keystoreAliasPwd)
         print ('<---sign Apk ret--->%d' %(ret))
 	if ret:
@@ -916,7 +916,7 @@ def writeDeveloperIntoManifest(SDK, usrSDKConfig, decompileDir):
 
 
 def pushIconIntoApk(gameName, channelNum, decompileDir):
-    gameIconDir = '../workspace/icon/' + channelNum
+    gameIconDir = file_operate.get_server_dir()+'/workspace/icon/' + channelNum
     gameIconDir = file_operate.getFullPath(gameIconDir)
     if not os.path.exists(gameIconDir):
         return 0
@@ -1069,7 +1069,7 @@ def addSplashScreen(channel, decompileDir):
     splashSDKName=str(channel['bHasSplash']).split('##')[1]
 
     #use sdk splash file
-    SplashPath='../config/sdk/'+splashSDKName+'/ForSplash/'+splashDirName+'/'
+    SplashPath=file_operate.get_server_dir()+'/config/sdk/'+splashSDKName+'/ForSplash/'+splashDirName+'/'
     #don't copy sdk splash file to config/channel
     #SplashPath = '../config/channel/' + channelNum + '/' + str(channel['bHasSplash']) + '/'
     SplashPath = file_operate.getFullPath(SplashPath)
@@ -1078,11 +1078,11 @@ def addSplashScreen(channel, decompileDir):
         error_operate.error(111)
         return (1, False)
 
-    SplashCodePath = '../config/channel/SplashActivity.smali'
+    SplashCodePath = file_operate.get_server_dir()+'/config/channel/SplashActivity.smali'
     SplashCodePath = file_operate.getFullPath(SplashCodePath)
-    SplashCode2Path = '../config/channel/SplashActivity$1.smali'
+    SplashCode2Path = file_operate.get_server_dir()+'/config/channel/SplashActivity$1.smali'
     SplashCode2Path = file_operate.getFullPath(SplashCode2Path)
-    xmlSplashSrc = '../config/channel/plugin_splash.xml'
+    xmlSplashSrc = file_operate.get_server_dir()+'/config/channel/plugin_splash.xml'
     xmlSplashSrc = file_operate.getFullPath(xmlSplashSrc)
     if not os.path.exists(SplashPath) or not os.path.exists(SplashCodePath) or not os.path.exists(SplashCode2Path) or not os.path.exists(xmlSplashSrc):
         error_operate.error(111)
@@ -1139,7 +1139,7 @@ def addSplashScreenToSource(channel, srcDir):
     splashSDKName=str(channel['bHasSplash']).split('##')[1]
 
     #use sdk splash file
-    SplashPath='../config/sdk/'+splashSDKName+'/ForSplash/'+splashDirName+'/'
+    SplashPath=file_operate.get_server_dir()+'/config/sdk/'+splashSDKName+'/ForSplash/'+splashDirName+'/'
     #don't copy sdk splash file to config/channel
     #SplashPath = '../config/channel/' + channelNum + '/' + str(channel['bHasSplash']) + '/'
     SplashPath = file_operate.getFullPath(SplashPath)
@@ -1148,9 +1148,9 @@ def addSplashScreenToSource(channel, srcDir):
         error_operate.error(111)
         return 1
 
-    SplashCodePath = '../config/channel/SplashActivity.java'
+    SplashCodePath = file_operate.get_server_dir()+'/config/channel/SplashActivity.java'
     SplashCodePath = file_operate.getFullPath(SplashCodePath)
-    xmlSplashSrc = '../config/channel/plugin_splash.xml'
+    xmlSplashSrc = file_operate.get_server_dir()+'/config/channel/plugin_splash.xml'
     xmlSplashSrc = file_operate.getFullPath(xmlSplashSrc)
     if not os.path.exists(SplashPath) or not os.path.exists(SplashCodePath) or not os.path.exists(xmlSplashSrc):
         error_operate.error(111)
@@ -1705,7 +1705,7 @@ def splitDex(workDir, channel):
     samilDir = workDir + '/decompile/smali'
     decompileDir = workDir + '/decompile'
 
-    multidexPath = '../config/channel/android-support-multidex.dex'
+    multidexPath = file_operate.get_server_dir()+'/config/channel/android-support-multidex.dex'
     multidexPath = file_operate.getFullPath(multidexPath)
     ret = dexTrans2Smali(multidexPath, samilDir, 10)
     if ret:
