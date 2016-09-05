@@ -335,7 +335,11 @@ class ConfigParse(object):
 
     def readOutputDir(self, cx):
         """read output dir from user.xml"""
-        self._outputDir = sys.argv[5]
+        str = sys.argv[5]
+        strlist = str.split('/')
+        outputDir = '/'+strlist[len(strlist)-4]+'/'+strlist[len(strlist)-3]+'/'+strlist[len(strlist)-2]+'/'
+        print "<---outputDir--->"+outputDir
+        self._outputDir = outputDir
 
     def readProjFolder(self, cx):
         data = self.readConfig(6)
