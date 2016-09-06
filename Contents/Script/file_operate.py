@@ -128,10 +128,11 @@ def getFullPath(filename):
 
 def getToolPath(filename):
     print '<---getToolPath,filename of Tool--->'+filename
-    if (filename == 'aapt' or filename == 'zipalign'):
-	#os.environ['LD_LIBRARY_PATH']='/opt/glibc-2.14/lib'
+    # if (filename == 'aapt' or filename == 'zipalign'):
+    #     return filename
+    # os.environ['LD_LIBRARY_PATH']='/opt/glibc-2.14/lib'
 	#print '<---AAPT_LD_LIBRARY_PATH--->'+os.environ['LD_LIBRARY_PATH'] 
-	return filename
+
     #else:
 #	os.environ['LD_LIBRARY_PATH']=''
 	#print '<---LD_LIBRARY_PATH--->'+os.environ['LD_LIBRARY_PATH']
