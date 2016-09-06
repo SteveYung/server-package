@@ -161,11 +161,11 @@ def main(channel):
                 return
 
         taskManager.shareInstance().notify(idChannel, 70)
-        if(ConfigParse.getChannelIcon(idChannel) != ''):
-            iconDir = file_operate.get_server_dir()+'/'+ConfigParse.getOutputDir()+'/icon/'
+        if(ConfigParse.shareInstance().getChannelIcon(idChannel) != ''):
+            iconDir = file_operate.get_server_dir()+'/'+ConfigParse.shareInstance().getOutputDir()+'/icon/'
             if not os.path.exists(iconDir):
                 os.makedirs(iconDir)
-            urllib.urlretrieve(ConfigParse.getChannelIcon(idChannel),iconDir+'icon.png')
+            urllib.urlretrieve(ConfigParse.shareInstance().getChannelIcon(idChannel),iconDir+'icon.png')
 
             ret = apk_operate.pushIconIntoApk(game['gameName'], iconDir, decompileDir)
             if ret:
