@@ -226,7 +226,7 @@ def getApkVersion(apkFile):
     nPos = info.find('versionName')
     nEnd = info.find("'", nPos + 13)
     versionName = info[nPos + 13:nEnd]
-    os.environ['LD_LIBRARY_PATH']=''
+    # os.environ['LD_LIBRARY_PATH']=''
     if versionName == '':
         versionName = 'Unknown Version'
     return versionName

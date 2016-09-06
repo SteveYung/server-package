@@ -46,9 +46,9 @@ def main(channel):
             error_operate.error(3)
             return
         versionName = ConfigParse.shareInstance().getVersionName()
-        print '<---versionName-->%s' %(versionName)
+        print '<---Parent apk versionName-->%s' %(versionName)
         keystore = ConfigParse.shareInstance().getKeyStore()
-        print '<---keystore-->%s' %(keystore)
+        print '<---Game keystore info-->%s' %(keystore)
         if channelName is None:
             error_operate.error(5)
             return

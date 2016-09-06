@@ -41,13 +41,13 @@ def start():
     taskManager.shareInstance().clearRecord()
     packThreadManager.shareInstance().clearRecord()
     packThreadManager.shareInstance().setCurWorkDir(os.getcwd())
-    source = ConfigParse.shareInstance().getSource()
+    # source = ConfigParse.shareInstance().getSource()
     #print '<---source-->'+source
-    game = ConfigParse.shareInstance().getCurrentGame()
-    if os.path.isfile(source):
-        versionName = ConfigParse.shareInstance().getVersionName()
-        print '<---Config VersionName-->'+versionName
-	file_operate.backupApk(source, game, versionName)
+    # game = ConfigParse.shareInstance().getCurrentGame()
+    # if os.path.isfile(source):
+        # versionName = ConfigParse.shareInstance().getVersionName()
+        # print '<---Config VersionName-->'+versionName
+	# file_operate.backupApk(source, game, versionName)
     packThreadManager.shareInstance().startTask(0)
     thread.start_new_thread(checkTaskThread, ())
 

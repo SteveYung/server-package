@@ -71,7 +71,7 @@ class ConfigParse(object):
         self.readUserDatabase()
         if platform == 0:
             self.__gameVersionName = file_operate.getApkVersion(self._source)
-            print 'gameVersionName='+self.__gameVersionName
+            # print 'gameVersionName='+self.__gameVersionName
         elif platform == 1:
             self.__gameVersionName = self.getIosProjectVersion()
 
@@ -147,7 +147,7 @@ class ConfigParse(object):
         self._keystore['storepassword'] = game['keystorePwd']
         self._keystore['keyalias'] = game['keystoreAlias']
         self._keystore['aliaspassword'] = game['keystoreAliasPwd']
-        print 'keystore-->'+game['keystoreFile']
+        # print 'keystore-->'+game['keystoreFile']
     def readSDKLs(self, cx):
         """get the data about tpl_sdk from database"""
         self.__SDKLs.clear()
