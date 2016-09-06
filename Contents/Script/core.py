@@ -470,12 +470,12 @@ def buildGradle(channel):
 
 def deleteWorkspace(channel):
     channelNum = channel['channelNum']
-    workDir = file_operate.get_server_dir()+'/workspace/' + channelNum
+    workDir = file_operate.get_server_dir()+'/workspace/'
     workDir = file_operate.getFullPath(workDir)
-    gameIconDir = file_operate.get_server_dir()+'/workspace/icon/' + channelNum
-    gameIconDir = file_operate.getFullPath(gameIconDir)
+    # gameIconDir = file_operate.get_server_dir()+'/workspace/icon/' + channelNum
+    # gameIconDir = file_operate.getFullPath(gameIconDir)
     file_operate.delete_file_folder(workDir)
-    file_operate.delete_file_folder(gameIconDir)
+    # file_operate.delete_file_folder(gameIconDir)
 # 定义函数 8.4
 def inspectJDK():
     # print '<---inspectJDK LD_LIBRARY_PATH--> '+os.environ['LD_LIBRARY_PATH']
