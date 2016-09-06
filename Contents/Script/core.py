@@ -162,7 +162,7 @@ def main(channel):
 
         taskManager.shareInstance().notify(idChannel, 70)
         if(ConfigParse.shareInstance().getChannelIcon(idChannel) != ''):
-            iconDir = file_operate.get_server_dir()+'/'+ConfigParse.shareInstance().getOutputDir()+'/icon/'
+            iconDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/icon/'
             if not os.path.exists(iconDir):
                 os.makedirs(iconDir)
             urllib.urlretrieve(ConfigParse.shareInstance().getChannelIcon(idChannel),iconDir+'icon.png')
