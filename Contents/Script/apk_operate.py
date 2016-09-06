@@ -915,11 +915,19 @@ def writeDeveloperIntoManifest(SDK, usrSDKConfig, decompileDir):
     file_operate.printf('write Developer Infomation into AndroidManifest.xml success')
 
 
-def pushIconIntoApk(gameName, channelNum, decompileDir):
-    gameIconDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/icon'
-    gameIconDir = file_operate.getFullPath(gameIconDir)
-    if not os.path.exists(gameIconDir):
+def pushIconIntoApk(gameName, iconDir, decompileDir):
+    # gameIconDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/icon'
+    # gameIconDir = file_operate.getFullPath(gameIconDir)
+    if not os.path.exists(iconDir):
         return 0
+
+    file_operate.resizeImg(ori_img=iconDir+'icon.png',dst_img=iconDir+'icon36x36.png',dst_w=36,dst_h=36,save_q=75)
+    file_operate.resizeImg(ori_img=iconDir+'icon.png',dst_img=iconDir+'icon48x48.png',dst_w=48,dst_h=48,save_q=75)
+    file_operate.resizeImg(ori_img=iconDir+'icon.png',dst_img=iconDir+'icon72x72.png',dst_w=72,dst_h=72,save_q=100)
+    file_operate.resizeImg(ori_img=iconDir+'icon.png',dst_img=iconDir+'icon96x96.png',dst_w=96,dst_h=96,save_q=100)
+    file_operate.resizeImg(ori_img=iconDir+'icon.png',dst_img=iconDir+'icon144x144.png',dst_w=144,dst_h=144,save_q=100)
+    file_operate.resizeImg(ori_img=iconDir+'icon.png',dst_img=iconDir+'icon192x192.png',dst_w=192,dst_h=192,save_q=100)
+
     manifestFile = decompileDir + '/AndroidManifest.xml'
     ET.register_namespace('android', androidNS)
     targetTree = ET.parse(manifestFile)
@@ -969,14 +977,14 @@ def pushIconIntoApk(gameName, channelNum, decompileDir):
     if idxDrawable != -1:
         iconName = icon[idxDrawable + 10:]
     resDir = decompileDir + '/res'
-    iconCopytoDrawable(os.path.join(resDir, 'drawable'), os.path.join(gameIconDir, 'icon48x48.png'), iconName)
-    iconCopytoDrawable(os.path.join(resDir, 'drawable-ldpi'), os.path.join(gameIconDir, 'icon36x36.png'), iconName)
-    iconCopytoDrawable(os.path.join(resDir, 'drawable-mdpi'), os.path.join(gameIconDir, 'icon48x48.png'), iconName)
-    iconCopytoDrawable(os.path.join(resDir, 'drawable-hdpi'), os.path.join(gameIconDir, 'icon72x72.png'), iconName)
-    iconCopytoDrawable(os.path.join(resDir, 'drawable-xhdpi'), os.path.join(gameIconDir, 'icon96x96.png'), iconName)
-    iconCopytoDrawable(os.path.join(resDir, 'drawable-xxhdpi'), os.path.join(gameIconDir, 'icon144x144.png'), iconName)
+    iconCopytoDrawable(os.path.join(resDir, 'drawable'), os.path.join(iconDir, 'icon48x48.png'), iconName)
+    iconCopytoDrawable(os.path.join(resDir, 'drawable-ldpi'), os.path.join(iconDir, 'icon36x36.png'), iconName)
+    iconCopytoDrawable(os.path.join(resDir, 'drawable-mdpi'), os.path.join(iconDir, 'icon48x48.png'), iconName)
+    iconCopytoDrawable(os.path.join(resDir, 'drawable-hdpi'), os.path.join(iconDir, 'icon72x72.png'), iconName)
+    iconCopytoDrawable(os.path.join(resDir, 'drawable-xhdpi'), os.path.join(iconDir, 'icon96x96.png'), iconName)
+    iconCopytoDrawable(os.path.join(resDir, 'drawable-xxhdpi'), os.path.join(iconDir, 'icon144x144.png'), iconName)
     if os.path.exists(os.path.join(resDir, 'drawable-xxxhdpi')):
-        iconCopytoDrawable(os.path.join(resDir, 'drawable-xxxhdpi'), os.path.join(gameIconDir, 'icon192x192.png'), iconName)
+        iconCopytoDrawable(os.path.join(resDir, 'drawable-xxxhdpi'), os.path.join(iconDir, 'icon192x192.png'), iconName)
 
 
 def doModifyAppName(decompileDir,newAppName):

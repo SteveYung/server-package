@@ -17,6 +17,7 @@ from time import sleep
 import os
 import time
 import commands
+import urllib
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -160,9 +161,15 @@ def main(channel):
                 return
 
         taskManager.shareInstance().notify(idChannel, 70)
-        ret = apk_operate.pushIconIntoApk(game['gameName'], channelNum, decompileDir)
-        if ret:
-            return
+        if(ConfigParse.getChannelIcon(idChannel) != ''):
+            iconDir = file_operate.get_server_dir()+'/'+ConfigParse.getOutputDir()+'/icon/'
+            if not os.path.exists(iconDir):
+                os.makedirs(iconDir)
+            urllib.urlretrieve(ConfigParse.getChannelIcon(idChannel),iconDir+'icon.png')
+
+            ret = apk_operate.pushIconIntoApk(game['gameName'], iconDir, decompileDir)
+            if ret:
+                return
         newAppName = ConfigParse.shareInstance().getAppName()
         #modify app display name by game setting
         apk_operate.modifyAppName(game, decompileDir, newAppName)

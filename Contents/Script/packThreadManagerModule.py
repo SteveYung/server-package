@@ -42,7 +42,7 @@ class packThreadManager(object):
         packageLs = ConfigParse.shareInstance().getPackageLs()
         #print '<---TASK INFO--->%s' %(packageLs)
     	for package in packageLs:
-	    idChannel = package['idChannel']
+            idChannel = package['idChannel']
             if idChannel in self.__finishChannel:
                 #print '<---...CONTINUE WORKING...--->'
 		continue
@@ -52,11 +52,11 @@ class packThreadManager(object):
             pkThread.setPlatform(platform)
             channel = ConfigParse.shareInstance().findChannel(idChannel)
             print '<---Channel--->%s' %(channel)
-	    if channel is None:
+            if channel is None:
                 continue
             pkThread.assignPackTask(channel)
             print '<---packThreadStart--->'
-	    if not pkThread.isAlive():
+            if not pkThread.isAlive():
                 pkThread.start()
             self.__finishChannel.append(idChannel)
 

@@ -217,6 +217,10 @@ class ConfigParse(object):
             dictTemp['name'] = r['name'].encode('utf-8')
             dictTemp['idGame'] = r['idGame']
             dictTemp['packNameSuffix'] = r['packNameSuffix']
+            if(r['r_channel_game_icon'] == None):
+                dictTemp['r_channel_game_icon'] = ''
+            else:
+                dictTemp['r_channel_game_icon'] = r['r_channel_game_icon']
             dictTemp['keystoreFile'] = r['keystoreFile']
             dictTemp['keystorePwd'] = r['keystorePwd']
             dictTemp['keystoreAlias'] = r['keystoreAlias']
@@ -492,6 +496,9 @@ class ConfigParse(object):
 
     def findChannel(self, idChannel):
         return self.__channelLs[idChannel]
+
+    def getChannelIcon(self,idChannel):
+        return self.__channelLs[idChannel]['r_channel_game_icon']
 
     def findCustomChannel(self, channelNum):
         return self.__channelCustomLs.get(channelNum)
