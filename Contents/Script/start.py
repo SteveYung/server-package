@@ -40,7 +40,7 @@ def start():
     ConfigParse.shareInstance().readUserConfig(0)
     taskManager.shareInstance().clearRecord()
     packThreadManager.shareInstance().clearRecord()
-    packThreadManager.shareInstance().setCurstrlistWorkDir(os.getcwd())
+    packThreadManager.shareInstance().setCurWorkDir(os.getcwd())
     # source = ConfigParse.shareInstance().getSource()
     #print '<---source-->'+source
     # game = ConfigParse.shareInstance().getCurrentGame()
