@@ -216,14 +216,14 @@ def signApkAuto(apkFile, game, channel):
     if keystoreFile != '' and keystorePwd != '' and keystoreAlias != '' and keystoreAliasPwd != '':
         print '<---apk sign with channelInfo--->'
         if not os.path.exists(keystoreFile):
-	    print '<---keystoreFile--->'+keystoreFile
+            print '<---keystoreFile--->'+keystoreFile
             keystoreFile = keystorePath.encode('utf-8') + keystoreFile.encode('utf-8')
-	    print '<---keystoreFile2--->'+keystoreFile
+            print '<---keystoreFile2--->'+keystoreFile
             if not os.path.exists(keystoreFile):
                 keystoreFile = file_operate.get_server_dir()+'/config/keystore/1.keystore'
         ret = signApk(apkFile, keystoreFile, keystorePwd, keystoreAlias, keystoreAliasPwd)
         print ('<---sign Apk ret--->%d' %(ret))
-	if ret:
+        if ret:
             return 1
     else:
         print('<---apk sign with gameInfo--->')
@@ -242,7 +242,7 @@ def signApkAuto(apkFile, game, channel):
     return 0
 
 
-def alignAPK(tempApkFile, apkFile, outputDir):
+def alignAPK(tempApkFile, apkFile,outputDir):
     if not os.path.exists(outputDir):
         os.makedirs(outputDir)
     align = file_operate.getToolPath('zipalign')
@@ -916,7 +916,7 @@ def writeDeveloperIntoManifest(SDK, usrSDKConfig, decompileDir):
 
 
 def pushIconIntoApk(gameName, channelNum, decompileDir):
-    gameIconDir = file_operate.get_server_dir()+'/workspace/icon/' + channelNum
+    gameIconDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/icon'
     gameIconDir = file_operate.getFullPath(gameIconDir)
     if not os.path.exists(gameIconDir):
         return 0

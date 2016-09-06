@@ -197,7 +197,7 @@ def execFormatCmd(cmd):
     if ret:
         s = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
         stdoutput, erroutput = s.communicate()
-	reportCmdError(cmd, stdoutput, erroutput)
+        reportCmdError(cmd, stdoutput, erroutput)
         cmd = 'ERROR:' + cmd + ' ===>>> exec Fail <<<=== '
     else:
         cmd += ' ===>>> exec success <<<=== '
@@ -228,7 +228,7 @@ def getApkVersion(apkFile):
     versionName = info[nPos + 13:nEnd]
     # os.environ['LD_LIBRARY_PATH']=''
     if versionName == '':
-        versionName = 'Unknown Version'
+        versionName = 'UnknownVersion'
     return versionName
 
 

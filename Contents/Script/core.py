@@ -236,8 +236,8 @@ def main(channel):
         if display_name is not None and display_name != '':
             finalAppName = display_name
 	
-        if finalAppName == '':
-            finalAppName = game.get('gameName')
+        # if finalAppName == '':
+        #     finalAppName = game.get('gameName')
         channel_name = channel['name'].encode('utf-8')
         #outputDir += '/' + game['gameName'] + '/' + versionName + '/' + channel_name
         #outputDir = file_operate.getFullPath(outputDir)
