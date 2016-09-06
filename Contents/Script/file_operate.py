@@ -209,9 +209,9 @@ def getApkVersion(apkFile):
     """get the version about apk"""
     #os.environ['PATH']=os.environ['PATH']+ ':/usr/java/android/android-sdk-linux/build-tools/24.0.1/'
     #print os.environ['PATH']
-    os.environ['LD_LIBRARY_PATH']='/opt/glibc-2.14/lib'
+    # os.environ['LD_LIBRARY_PATH']='/opt/glibc-2.14/lib'
 
-    cmd = '"aapt"'+' d badging "' + apkFile + '"'
+    cmd = getToolPath('aapt') +' d badging "' + apkFile + '"'
     cmd = cmd.replace('\\', '/')
     cmd = re.sub('/+', '/', cmd)
     ret = 0
