@@ -20,6 +20,7 @@ import hashlib
 import threading
 import json
 from config import ConfigParse
+import urllib
 import sys
 import stat
 sys.path.append('module')
@@ -176,7 +177,7 @@ def signApk(apkFile, keyStore, storepassword, keyalias, aliaspassword):
     apkFile = file_operate.getFullPath(apkFile)
     print '<---apkFile--->'+apkFile
     keyStore = file_operate.getFullPath(keyStore)
-    print '<---keyStort--->'+keyStore
+    print '<---keyStore--->'+keyStore
     aapt = file_operate.getToolPath('aapt')
     listcmd = '%s list %s' % (aapt, apkFile)
     listcmd = listcmd.encode('gb2312')
@@ -202,7 +203,7 @@ def signApk(apkFile, keyStore, storepassword, keyalias, aliaspassword):
 
 def signApkAuto(apkFile, game, channel):
     """"""
-    keystorePath = file_operate.getFullPath(file_operate.get_server_dir()+'/config/games/' + game['gameName'] + '/keystore/')
+    # keystorePath = file_operate.getFullPath(file_operate.get_server_dir()+'/config/games/' + game['gameName'] + '/keystore/')
     # defaultPath = file_operate.getFullPath('')
     keystoreFile = channel['keystoreFile']
     keystorePwd = channel['keystorePwd']
@@ -214,24 +215,30 @@ def signApkAuto(apkFile, game, channel):
     keystore['keyalias'] = game['keystoreAlias']
     keystore['aliaspassword'] = game['keystoreAliasPwd']
     if keystoreFile != '' and keystorePwd != '' and keystoreAlias != '' and keystoreAliasPwd != '':
-        print '<---apk sign with channelInfo--->'
-        if not os.path.exists(keystoreFile):
-            print '<---keystoreFile--->'+keystoreFile
-            keystoreFile = keystorePath.encode('utf-8') + keystoreFile.encode('utf-8')
-            print '<---keystoreFile2--->'+keystoreFile
-            if not os.path.exists(keystoreFile):
-                keystoreFile = file_operate.get_server_dir()+'/config/keystore/1.keystore'
-        ret = signApk(apkFile, keystoreFile, keystorePwd, keystoreAlias, keystoreAliasPwd)
-        print ('<---sign Apk ret--->%d' %(ret))
+        print '<---Sign apk with ChannelInfo--->'
+        channelkeystoreDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/keystore/'
+        if not os.path.exists(channelkeystoreDir):
+            os.makedirs(channelkeystoreDir)
+        urllib.urlretrieve(keystoreFile,channelkeystoreDir+'channel.keystore')
+        print '<---channelkeystoreFile--->'+channelkeystoreDir+'channel.keystore'
+            # keystoreFile = keystorePath.encode('utf-8') + keystoreFile.encode('utf-8')
+            # print '<---keystoreFile2--->'+keystoreFile
+            # if not os.path.exists(keystoreFile):
+            #     keystoreFile = file_operate.get_server_dir()+'/config/keystore/1.keystore'
+        ret = signApk(apkFile, channelkeystoreDir+'channel.keystore', keystorePwd, keystoreAlias, keystoreAliasPwd)
+        # print ('<---sign Apk ret--->%d' %(ret))
         if ret:
             return 1
     else:
         print('<---apk sign with gameInfo--->')
         keystoreFile = keystore.get('file')
         if keystoreFile != '' and keystore.get('storepassword') != '' and keystore.get('keyalias') != '' and keystore.get('aliaspassword') != '':
+            gamekeystoreDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/keystore/'
             if not os.path.exists(keystoreFile):
-                keystoreFile = keystorePath + keystoreFile
-            ret = signApk(apkFile, keystoreFile, keystore.get('storepassword'), keystore.get('keyalias'), keystore.get('aliaspassword'))
+                os.makedirs(gamekeystoreDir)
+            urllib.urlretrieve(keystoreFile,gamekeystoreDir+'game.keystore')
+            print '<---gamekeystoreFile--->'+gamekeystoreDir+'game.keystore'
+            ret = signApk(apkFile, gamekeystoreDir+'game.keystore', keystore.get('storepassword'), keystore.get('keyalias'), keystore.get('aliaspassword'))
             if ret:
                 return 1
         else:
