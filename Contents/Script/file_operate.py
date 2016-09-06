@@ -250,6 +250,7 @@ def getTargetSdkVersion(apkFile):
 
 
 def backupApk(source, game, versionName):
+    """
     outputDir = ConfigParse.shareInstance().getOutputDir()
     #if outputDir == '':
     outputDir = get_server_dir()+'/backupApk/'+outputDir
@@ -260,7 +261,7 @@ def backupApk(source, game, versionName):
     if os.path.exists(backupName):
         os.remove(backupName)
     copyFile(source, backupName)
-
+    """
 
 def getJavaBinDir():
     javaBinDir = '/usr/java/jdk1.7.0_79/bin/'
