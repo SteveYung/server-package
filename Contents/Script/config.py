@@ -333,6 +333,7 @@ class ConfigParse(object):
             dictTemp['bUserOffer'] = r['bUserOffer']
             dictTemp['bWriteIntoClient'] = r['bWriteIntoClient']
             sdkItem = self.__userSDKConfigLs.get(dictTemp['idUserSDK'])
+            print '<TTTTT %s' %(self.__userSDKConfigLs.get(dictTemp['idUserSDK'])['param'])
             if sdkItem != None:
                 sdkItem['param'].append(dictTemp)
                 print '<TTTTTEEEEESSSSTTTT> %s' %(self.__userSDKConfigLs.get(dictTemp['idUserSDK'])['param'])
