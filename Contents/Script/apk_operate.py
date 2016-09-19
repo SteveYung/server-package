@@ -707,6 +707,14 @@ def configDeveloperInfo(channel, SDK, usrSDKConfig, decompileDir):
     writeDeveloperIntoManifest(SDK, usrSDKConfig, decompileDir)
     return 0
 
+def downloadUserConfigFile(channel, SDK, usrSDKConfig, decompileDir):
+    for param in usrSDKConfig['param']:
+        if param['name'] == 'resource':
+            fileUrl = param['value']
+
+
+
+
 
 def writeChannelInfoIntoDevelopInfo(decompileDir, channel, game):
     """
