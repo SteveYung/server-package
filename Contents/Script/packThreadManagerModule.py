@@ -51,7 +51,6 @@ class packThreadManager(object):
                 return
             pkThread.setPlatform(platform)
             channel = ConfigParse.shareInstance().findChannel(idChannel)
-            print '<---Channel--->%s' %(channel)
             if channel is None:
                 continue
             pkThread.assignPackTask(channel)
