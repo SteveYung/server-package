@@ -720,8 +720,8 @@ def downloadUserConfigFile(channel, game, usrSDKConfig):
             strlist = fileUrl.split('/')
             fileName = strlist[len(strlist)-1]
             print '<---fileName--->'+fileName
-            targetFileName = targetFile.encode('utf-8')+fileName
-            urllib.urlretrieve(fileUrl,targetFileName)
+            targetFileName = targetFile+fileName
+            urllib.urlretrieve(fileUrl,targetFileName.encode('utf-8'))
             print '<---targetFileName--->'+targetFileName+' exists = %s' % os.path.exists(targetFileName)
 
 def writeChannelInfoIntoDevelopInfo(decompileDir, channel, game):
