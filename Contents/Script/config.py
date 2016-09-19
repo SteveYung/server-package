@@ -117,7 +117,7 @@ class ConfigParse(object):
     def initDatabase(self):
         """get the data from database."""
         cx = MySQLdb.connect(host = '10.66.118.154',port=3307,user = 'root',passwd = 'ycfwkX6312')
-        cx.select_db(sys.argv[1])
+        cx.select_db('rsdk_user')
         self.readSDKLs(cx)
         cx.close()
 
