@@ -335,7 +335,7 @@ class ConfigParse(object):
             sdkItem = self.__userSDKConfigLs.get(dictTemp['idUserSDK'])
             if sdkItem != None:
                 sdkItem['param'].append(dictTemp)
-                print '<TTTTTEEEEESSSSTTTT>'+self.__userSDKConfigLs.get(dictTemp['idUserSDK'])['param']['value']
+                print '<TTTTTEEEEESSSSTTTT>'+self.__userSDKConfigLs.get(dictTemp['idUserSDK'])[0]['value']
 
         c.close()
 
