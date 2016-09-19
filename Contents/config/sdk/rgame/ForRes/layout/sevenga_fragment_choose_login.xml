@@ -74,7 +74,7 @@
         android:orientation="horizontal"
         android:padding="@dimen/sevenga_layout_value_16" >
     </LinearLayout>
-	<TextView 
+	<TextView
 	    android:layout_height="2dp"
 	    android:layout_width="match_parent"/>
 </LinearLayout>

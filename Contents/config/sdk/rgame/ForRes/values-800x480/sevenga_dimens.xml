@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- 800*480--> 
+	<!-- 800*480-->
     <dimen name="sevenga_dialog_min_width">280dp</dimen>
     <dimen name="sevenga_share_image_size">140dp</dimen>
     <dimen name="sevenga_logo_width">105dp</dimen>

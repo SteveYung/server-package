@@ -30,5 +30,5 @@
      <!--  -->
 <dimen name="sevenga_layout_top_16_0">12dp</dimen>
     <dimen name="sevenga_layout_padding_right">50dp</dimen>
-    
+
 </resources>

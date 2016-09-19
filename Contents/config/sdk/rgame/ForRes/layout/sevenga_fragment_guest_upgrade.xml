@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#F7F7F7" >
-         <ImageView 
+         <ImageView
             android:layout_width="@dimen/sevenga_layout_value_24"
             android:layout_height="@dimen/sevenga_layout_value_24"
             android:background="@drawable/sevenga_upgrade_logo"
@@ -208,6 +208,7 @@
                     android:layout_gravity="center_vertical"
                     android:background="#ffffff"
                     android:hint="@string/sevenga_register_show_password_text"
+                    android:textColorHint="@color/text_color"
                     android:paddingLeft="@dimen/sevenga_layout_value_8"
                     android:textColor="#666666"
                     android:textSize="@dimen/sevenga_text_size_snormal" />

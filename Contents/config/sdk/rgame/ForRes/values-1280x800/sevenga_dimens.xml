@@ -28,7 +28,7 @@
     <dimen name="sevenga_text_size_large">22sp</dimen>
     <dimen name="sevenga_text_size_normal">18sp</dimen>
     <dimen name="sevenga_text_size_snormal">16sp</dimen>
-    
+
     <dimen name="sevenga_text_size_small">8sp</dimen>
    <!--   -->
     <dimen name="sevenga_layout_top_16_0">16dp</dimen>
