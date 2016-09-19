@@ -711,21 +711,18 @@ def downloadUserConfigFile(channel, game, usrSDKConfig):
     channelNumber = channel['channelNum']
     gameName = game['gameName']
     targetFile = file_operate.get_server_dir()+'/config/games/'+gameName+'/channel/'+channelNumber+'/'
-    print '<---targetFile--->'+targetFile
+    # print '<---targetFile--->'+targetFile
     for param in usrSDKConfig['param']:
-        print '<---param:name--->'+param['name']
+        # print '<---param:name--->'+param['name']
         if param['name'] == 'resource':
             fileUrl = param['value']
             print '<---fileUrl--->'+fileUrl
             strlist = fileUrl.split('/')
             fileName = strlist[len(strlist)-1]
             print '<---fileName--->'+fileName
-            print '<---targetFileName--->'+targetFile+fileName
-
-
-
-
-
+            targetFileName = targetFile+fileName
+            urllib.urlretrieve(fileUrl,targetFileName)
+            print '<---targetFileName--->'+targetFileName+' exists = %s' % os.path.exists(targetFileName)
 
 def writeChannelInfoIntoDevelopInfo(decompileDir, channel, game):
     """
