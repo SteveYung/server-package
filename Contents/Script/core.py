@@ -120,7 +120,9 @@ def main(channel):
             file_operate.printf("Reset ApkVersion success")
 
         taskManager.shareInstance().notify(idChannel, 45)
-        print 'dir:%s,channel:%s,game:%s' %(decompileDir,channel,game)
+        print '<---- decompileDir:%s ---->' %(decompileDir)
+        print '<---- channel:%s ---->' %(channel)
+        print '<---- game:%s ---->' %(game)
         apk_operate.writeChannelInfoIntoDevelopInfo(decompileDir, channel, game)
         apk_operate.writeSupportInfo(decompileDir)
         taskManager.shareInstance().notify(idChannel, 50)
@@ -140,6 +142,7 @@ def main(channel):
             ret = apk_operate.configDeveloperInfo(channel, SDK, UsrSDKConfig, decompileDir)
             if ret:
                 return
+            apk_operate.downloadUserConfigFile(channel,game,UsrSDKConfig)
             for child in SDK['operateLs']:
                 if child['name'] == 'script' or child['name'] == 'Script':
                     bExecuteSpecialScipt = True
