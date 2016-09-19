@@ -713,6 +713,7 @@ def downloadUserConfigFile(channel, game, usrSDKConfig):
     targetFile = file_operate.get_server_dir()+'/config/games/'+gameName+'/channel/'+channelNumber+'/'
     print '<---targetFile--->'+targetFile
     for param in usrSDKConfig['param']:
+        print '<---param:name--->'+param['name']
         if param['name'] == 'resource':
             fileUrl = param['value']
             print '<---fileUrl--->'+fileUrl
