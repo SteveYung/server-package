@@ -14,9 +14,9 @@ def script(SDK, decompileDir, packageName, usrSDKConfig):
     for param in allparams:
         if param['name']=='resource':
             sourceFile=param['value']
+            print '<---Sdk Config sourceFile URL --->'+sourceFile
             strlist = sourceFile.split('/')
             fileName = strlist[len(strlist)-1]
-            print '<---Sdk Config file --->'+fileName
             assetsDir = decompileDir + '/assets/'
             if not os.path.exists(assetsDir):
                 os.makedirs(assetsDir)
