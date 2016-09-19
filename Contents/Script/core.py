@@ -142,7 +142,7 @@ def main(channel):
             ret = apk_operate.configDeveloperInfo(channel, SDK, UsrSDKConfig, decompileDir)
             if ret:
                 return
-            apk_operate.downloadUserConfigFile(channel,game,UsrSDKConfig)
+            # apk_operate.downloadUserConfigFile(channel,game,UsrSDKConfig)
             for child in SDK['operateLs']:
                 if child['name'] == 'script' or child['name'] == 'Script':
                     bExecuteSpecialScipt = True
