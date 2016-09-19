@@ -712,6 +712,9 @@ def downloadUserConfigFile(channel, game, usrSDKConfig):
     gameName = game['gameName']
     targetFile = file_operate.get_server_dir()+'/config/games/'+gameName+'/channel/'+channelNumber+'/'
     # print '<---targetFile--->'+targetFile
+    if os.path.exists(targetFile):
+        file_operate.delete_file_folder(targetFile)
+    os.makedirs(targetFile)
     for param in usrSDKConfig['param']:
         # print '<---param:name--->'+param['name']
         if param['name'] == 'resource':
@@ -721,7 +724,7 @@ def downloadUserConfigFile(channel, game, usrSDKConfig):
             fileName = strlist[len(strlist)-1]
             print '<---fileName--->'+fileName
             targetFileName = targetFile+fileName
-            urllib.urlretrieve(fileUrl,targetFileName.encode('utf-8'))
+            urllib.urlretrieve(fileUrl,targetFileName)
             print '<---targetFileName--->'+targetFileName+' exists = %s' % os.path.exists(targetFileName)
 
 def writeChannelInfoIntoDevelopInfo(decompileDir, channel, game):
