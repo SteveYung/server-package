@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/float_web_ll"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kkk_top_account" >
+
+        <ImageView
+            android:id="@+id/kkk_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:contentDescription="@null"
+            android:src="@drawable/kkk_back" />
+
+        <ImageView
+            android:id="@+id/kkk_back_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:contentDescription="@null"
+            android:src="@drawable/kkk_back_game" />
+
+        <TextView
+            android:id="@+id/kkk_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/kkk_back_game"
+            android:layout_toRightOf="@id/kkk_back"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.kkk.webgame.view.webview.ProgressWebView
+        android:id="@+id/kkk_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+
+</LinearLayout>
