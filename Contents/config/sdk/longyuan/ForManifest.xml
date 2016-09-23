@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifestConfig xmlns:android="http://schemas.android.com/apk/res/android">
+    <permissionCfg>
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    </permissionCfg>
+    <applicationCfg keyword="longyuan">
+    <!-- sdk begin -->
+    <activity
+        android:name="com.longyuan.sdk.ac.ActivityWeb"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+        android:windowSoftInputMode="adjustPan" >
+    </activity>
+    <activity
+        android:name="com.longyuan.sdk.ac.SdkLoginActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+        android:windowSoftInputMode="adjustPan" >
+    </activity>
+    <activity
+        android:name="com.longyuan.sdk.ac.ExitSDKActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+    </activity>
+    <activity
+        android:name="com.longyuan.sdk.ac.ActivityUser"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+    </activity>
+    <activity
+        android:name="com.longyuan.sdk.ac.ActivityBindPhone"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+    </activity>
+    <activity
+        android:name="com.longyuan.sdk.ac.ActivityUpdateAccount"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+    </activity>
+    
+    <!-- 支付相关 -->
+    <activity
+        android:name="com.longyuan.sdk.pay.LyPayActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+    </activity>
+    <!-- alipay sdk begin -->
+    <activity
+        android:name="com.alipay.sdk.app.H5PayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:exported="false"
+        android:screenOrientation="behind"
+        android:windowSoftInputMode="adjustResize|stateHidden" >
+    </activity>
+    <!-- alipay sdk end -->
+    
+    <activity android:name="com.unionpay.uppay.PayActivity" />
+    <activity
+        android:name="com.longyuan.sdk.pay.tenpay.LyCftPayActivity"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+    </activity>
+    <!-- end支付相关 -->
+    <service
+        android:name="com.longyuan.sdk.gamecenter.GameService"
+        android:exported="true" >
+    </service>
+    
+    <activity
+        android:name="com.longyuan.sdk.ac.ActivityGameNoticePage"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+    </activity>
+    <!-- sdk end -->
+</applicationCfg>
+
+</manifestConfig>

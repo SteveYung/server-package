@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33ffffff" >
+
+    <!-- <include layout="@layout/ilong_layout_exitsdk" / -->
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ilong_login_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/icon_image"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:clickable="true"
+                android:padding="10dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/icon_image"
+                android:text="亲，记得下次还要再来哦！"
+                android:textColor="#2372d1"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1px"
+            android:background="#b4b4b4" />
+
+        <RelativeLayout
+            android:id="@+id/gift_layout"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/icon_get_gift"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:clickable="true"
+                android:padding="13dp"
+                android:src="@drawable/get_gift" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/icon_get_gift"
+                android:text="领取礼包"
+                android:textColor="@color/u_funtion_text_colist"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1px"
+            android:background="#b4b4b4" />
+
+        <RelativeLayout
+            android:id="@+id/help_layout"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/icon_help"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:clickable="true"
+                android:padding="13dp"
+                android:src="@drawable/help_me" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/icon_help"
+                android:text="请求帮助"
+                android:textColor="@color/u_funtion_text_colist"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="280dp"
+            android:layout_height="1px"
+            android:background="#b4b4b4" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/ilong_exit_sdk_out_btn"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/continue_game_button_bg"
+                android:gravity="center"
+                android:text="退出游戏"
+                android:textColor="@color/u_funtion_text_colist"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/ilong_exit_sdk_continue_btn"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/exit_game_button_bg"
+                android:gravity="center"
+                android:text="继续游戏"
+                android:textColor="@color/exit_button_text_colist"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
