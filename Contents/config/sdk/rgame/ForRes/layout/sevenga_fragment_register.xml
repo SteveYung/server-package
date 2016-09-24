@@ -28,7 +28,7 @@
             android:layout_marginBottom="@dimen/sevenga_layout_value_12"
             android:layout_marginLeft="@dimen/sevenga_layout_value_12"
             android:layout_marginTop="@dimen/sevenga_layout_value_12"
-            android:textColor="@color/text_color"
+            android:textColor="@color/text_color_title"
             android:gravity="center_horizontal|center_vertical"
             android:textSize="@dimen/sevenga_alert_size"
             android:text="@string/sevenga_register_text"/>
@@ -247,7 +247,7 @@
                         android:layout_gravity="center_vertical"
                         android:background="#ffffff"
                         android:hint="@string/sevenga_register_show_password_text"
-                        android:textColorHint="@color/text_color"
+                        android:textColorHint="@color/text_color_checkbox"
                         android:paddingLeft="@dimen/sevenga_layout_value_8"
                         android:textSize="@dimen/sevenga_text_size_snormal" />
                 </LinearLayout>

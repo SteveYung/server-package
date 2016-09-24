@@ -27,7 +27,7 @@
             android:layout_marginTop="@dimen/sevenga_layout_value_12"
             android:gravity="center_vertical"
             android:text="@string/sevenga_bind_email_text"
-            android:textColor="@android:color/black"
+            android:textColor="@color/text_color_title"
             android:textSize="@dimen/sevenga_text_size_large" />
 
         <ImageView
@@ -174,7 +174,7 @@
                 android:layout_gravity="center_vertical"
                 android:background="#FFFFFFFF"
                 android:hint="@string/sevenga_register_show_password_text"
-                android:textColorHint="@color/text_color"
+                android:textColorHint="@color/text_color_checkbox"
                 android:paddingLeft="@dimen/sevenga_layout_value_8"
                 android:textSize="@dimen/sevenga_text_size_snormal" />
         </LinearLayout>
