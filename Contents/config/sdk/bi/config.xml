@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+  <paramLs>
+    <param name="coco_aid" required="1" showName="coco_aid" desc="应用id" bWriteIntoManifest="1" bUserOffer="1" bWriteIntoClient="1"/>
+    <param name="coco_cid" required="1" showName="coco_cid" desc="渠道Id" bWriteIntoManifest="1" bUserOffer="1" bWriteIntoClient="1" placeholderText="例如：\ 000000，请加上斜杠空格在加入渠道号"/>
+    <param name="callback" required="1" desc="anysdk支付结果通知" showName="支付通知地址" bUserOffer="1" bWriteIntoClient="0"/>
+  </paramLs>
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="bi"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="AnalyticsBI" typePlugin="5" desc="BI统计插件"/>
+  </pluginLs>
+</config>

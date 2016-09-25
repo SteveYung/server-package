@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/game_gift_title" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/e_383838"
+        android:textSize="@dimen/e_text_size_34"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/efun_pd_ff9368_rectangle_bg"
+        android:padding="@dimen/e_size_5"
+        android:layout_marginTop="@dimen/e_size_25"
+        android:orientation="horizontal"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/e_size_215"
+            android:orientation="vertical"
+            android:background="@drawable/efun_pd_white_dash_rectangle"
+            android:padding="@dimen/e_size_10"
+            >
+            <TextView 
+                android:id="@+id/game_gift_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/e_text_size_34"
+                android:layout_gravity="center"
+                android:lines="4"
+                android:ellipsize="end"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/game_gift_remain" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/e_ff4848"
+        android:textSize="@dimen/e_text_size_34"
+        android:layout_marginTop="@dimen/e_size_20"/>
+    
+    <TextView
+        android:id="@+id/game_gift_reward_btn" 
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/e_text_size_40"
+        android:layout_marginTop="@dimen/e_size_30"
+        android:background="@drawable/efun_pd_00a0e9_rectangle_bg"
+        android:paddingLeft="@dimen/e_size_30"
+        android:paddingRight="@dimen/e_size_30"
+        android:paddingTop="@dimen/e_size_10"
+        android:paddingBottom="@dimen/e_size_10" 
+        android:text="@string/efun_pd_gift_gift_get" 
+        />
+    
+</LinearLayout>

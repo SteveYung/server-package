@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config pluginId="100016">
+	<paramLs>
+		<param name="EwanAppKey" required="1" desc="AppKey" showName="AppKey" bWriteIntoManifest="0" bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="EwanSignKey" required="1" desc="SignKey" showName="SignKey" bWriteIntoManifest="0" bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="EwanPacketId" required="1" desc="PacketId" showName="PacketId" bWriteIntoManifest="0" bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="Orientation" required="1" showName="Orientation" desc="横竖屏" bWriteIntoManifest="0" bUserOffer="1" bWriteIntoClient="1">
+            <option value="portrait"/>
+            <option value="landscape"/>
+        </param>
+	</paramLs>
+	
+	<operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc=""/>
+        <operate step="2" name="copy" from="ForAssets" to="assets" desc=""  />
+        <operate step="3" name="copy" from="ForRes" to="res" desc=""/>
+        <operate step="4" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行" />
+    </operateLs>
+
+	<pluginLs>
+		<plugin name="UserEwan" typePlugin="0" desc=""/>
+		<plugin name="IAPOnlineEwan" typePlugin="2" desc=""/>
+        <plugin name="AnalyticsEwan" typePlugin="5" desc=""/>
+	</pluginLs>
+	<version code = "1000" showVersion = "2.0.0_1.0.0" minClientVer="2.0"
+        minFrameworkVer="2.0">
+        <![CDATA[更新至2.0.0版本 ]]>
+    </version>
+</config>

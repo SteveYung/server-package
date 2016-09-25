@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fh_view"
+    android:layout_width="426.0dp"
+    android:layout_height="wrap_content"
+    android:background="@color/fh_white"
+   
+    android:paddingBottom="20.0dp" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp" >
+
+        <ImageView
+            android:id="@+id/fh_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fh_land_margin"
+            android:layout_marginTop="5.0dp"
+            android:src="@drawable/fh_back_img" />
+
+        <TextView
+            android:id="@+id/fh_register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10.0dp"
+            android:text="@string/fh_register_title"
+            android:textColor="@color/fh_gray_33"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/fh_login_edt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17.0dp"
+                android:layout_marginLeft="@dimen/fh_land_margin"
+                android:layout_marginRight="@dimen/fh_land_margin"
+                android:background="@drawable/fh_edit_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dp" >
+
+                    <ImageView
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/fh_gray_df" />
+
+                    <ImageView
+                        android:id="@+id/fh_phone_edt_clear_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7.0dp"
+                        android:src="@drawable/fh_edt_clear"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/fh_regiter_phone_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/fh_phone_edt_clear_img"
+                        android:background="@null"
+                        android:hint="@string/fh_register_username_hint"
+                        android:imeOptions="actionNext"
+                        android:padding="10.0dp"
+                        android:singleLine="true"
+                        android:textColor="@color/fh_gray_33"
+                        android:textColorHint="@color/fh_gray_99"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.0sp" >
+                    </EditText>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/fh_gray_df" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dp" >
+
+                    <CheckBox
+                        android:id="@+id/fh_pwd_visible_cd"
+                        style="@style/fh_pwdVisibleCheckBoxStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dp"
+                        android:layout_marginRight="10.0dp" />
+
+                    <ImageView
+                        android:id="@+id/fh_pwd_edt_clear_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/fh_pwd_visible_cd"
+                        android:src="@drawable/fh_edt_clear"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/fh_register_pwd_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/fh_pwd_edt_clear_img"
+                        android:background="@null"
+                        android:hint="@string/fh_register_user_pwd_hint"
+                        android:inputType="textPassword"
+                        android:padding="10.0dp"
+                        android:textColor="@color/fh_gray_33"
+                        android:textColorHint="@color/fh_gray_99"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.0sp" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fh_register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45.0dp"
+                android:layout_below="@id/fh_login_edt_layout"
+                android:layout_marginLeft="@dimen/fh_land_margin"
+                android:layout_marginRight="@dimen/fh_land_margin"
+                android:background="@drawable/fh_login_btn_selector"
+                android:text="@string/fh_submit_register"
+                android:textColor="@color/fh_white"
+                android:textSize="19.0sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fh_register_btn"
+                android:layout_marginLeft="@dimen/fh_land_margin"
+                android:layout_marginRight="@dimen/fh_land_margin"
+                android:layout_marginTop="14.0dp" >
+
+                <CheckBox
+                    android:id="@+id/fh_agree_checkbox"
+                    android:layout_width="15.0dp"
+                    android:layout_height="15.0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/fh_checkbox_bg"
+                    android:paddingLeft="1.0dp"
+                    android:textColor="#137FB6" />
+
+                <LinearLayout
+                    android:id="@+id/fh_other_register_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/fh_other_register_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fh_register_phone"
+                        android:textColor="@color/fh_5ec3e4"
+                        android:textSize="16.0sp" />
+
+                    <ImageView
+                        android:layout_width="20.0dp"
+                        android:layout_height="20.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:src="@drawable/fh_next" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fh_xieyi_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_toLeftOf="@id/fh_other_register_layout"
+                    android:layout_toRightOf="@id/fh_agree_checkbox"
+                    android:singleLine="true"
+                    android:text="@string/fh_register_xieyi"
+                    android:textColor="@color/fh_gray_a3"
+                    android:textSize="13.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

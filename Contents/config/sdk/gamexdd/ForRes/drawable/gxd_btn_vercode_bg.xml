@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/gamexdd_999999" android:state_selected="true"/>
+    <item android:drawable="@color/gamexdd_e04a32"/>
+</selector><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_btn_vercode_bg.xml -->

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#b0000000"
+        >
+        <LinearLayout 
+	        android:layout_height="@dimen/pptvvas_height"
+	        android:layout_width="@dimen/pptvvas_width"
+	        android:orientation="vertical"
+	        android:layout_centerInParent="true"
+	        android:layout_marginTop="15dip"
+        	android:layout_marginBottom="15dip"
+	        >
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="44dip"
+		        android:background="@drawable/pptvvas_top_bar"
+		        >
+		        <Button 
+		            android:id="@+id/pptvvas_backbtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/pptvvas_regist_backbtn"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="15dip"
+		            />
+		        <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_centerInParent="true"
+		            android:orientation="horizontal"
+		            >
+		            <TextView 
+		                android:text="@string/pptvvas_enter_set_numbox"
+		                style="@style/pptvvas_title_text"
+		                />
+		        </LinearLayout>
+		    </RelativeLayout>
+		    <LinearLayout
+		        style="@style/pptvvas_enter_container"
+		        android:orientation="vertical" >
+		        <RelativeLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            >
+		            <ListView 
+		                android:id="@+id/pptvvas_numlist"
+		                android:layout_height="fill_parent"
+		                android:layout_width="fill_parent"
+		                android:layout_marginLeft="20dip"
+		                android:layout_marginRight="20dip"
+		                android:divider="#00000000"
+		                android:dividerHeight="5dip"
+		                android:cacheColorHint="#00000000"
+		                android:layout_marginTop="10dip"
+		                ></ListView>
+		        </RelativeLayout>
+		    </LinearLayout>
+		    <include layout="@layout/pptvvas_buttom"/>
+    	</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,304 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4" >
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/yyg_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/kalagame_webview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:id="@+id/headImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/yyg_sdk_user_head_default" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/username_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="8dp"
+                        android:text="---"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="4dp"
+                            android:text="多玩通行证:"
+                            android:textColor="#999999" />
+
+                        <TextView
+                            android:id="@+id/passport_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="4dp"
+                            android:text="---"
+                            android:textColor="#999999" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yy_money_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Y币:"
+                            android:textColor="#999999" />
+
+                        <TextView
+                            android:id="@+id/balance_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="4dp"
+                            android:text="---"
+                            android:textColor="#FF6600" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/guest_convert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/yyg_round_setting_button"
+                        android:padding="8dp"
+                        android:text="帐号完善"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:text="安全管理"
+                android:textColor="#999999" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/duowan_sdk_divider_grey" />
+
+            <TextView
+                android:id="@+id/editpwd_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/yyg_sdk_textview"
+                android:drawableLeft="@drawable/yyg_sdk_modify_password"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/yyg_sdk_navigation_next_item"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="修改密码"
+                android:textColor="@android:color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/duowan_sdk_divider_grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="财务管理"
+                android:textColor="#999999"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/duowan_sdk_divider_grey"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/charge_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/yyg_sdk_textview"
+                android:drawableLeft="@drawable/yyg_sdk_recharge"
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/yyg_sdk_navigation_next_item"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="立刻充值"
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/duowan_sdk_divider_grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="消息管理"
+                android:textColor="#999999" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/duowan_sdk_divider_grey" />
+
+            <RelativeLayout
+                android:id="@+id/msg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/yyg_sdk_textview"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/message_frame"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/message_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="12dp"
+                        android:src="@drawable/yyg_sdk_message" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/message_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/message_frame"
+                    android:background="@drawable/yyg_sdk_textview"
+                    android:drawableRight="@drawable/yyg_sdk_navigation_next_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="12dp"
+                    android:text="消息"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/duowan_sdk_divider_grey" />
+
+            <RelativeLayout
+                android:id="@+id/gift_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/yyg_sdk_textview"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/gift_frame"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/gift_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="12dp"
+                        android:src="@drawable/yyg_sdk_gift" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/gift_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/gift_frame"
+                    android:background="@drawable/yyg_sdk_textview"
+                    android:drawableRight="@drawable/yyg_sdk_navigation_next_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="12dp"
+                    android:text="礼包"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/duowan_sdk_divider_grey" />
+
+            <TextView
+                android:id="@+id/logout_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/yyg_sdk_logout_bg"
+                android:gravity="center"
+                android:text="切换账号"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

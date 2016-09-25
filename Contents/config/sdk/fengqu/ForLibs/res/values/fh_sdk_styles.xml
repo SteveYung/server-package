@@ -1,0 +1,329 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Transparent">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/fh_transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="fh_dialog_style">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="fh_dialog_style_fullscreen" parent="@style/fh_dialog_style">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="fh_agreement_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="fh_tabRadioButtonGreen" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/fh_pay_tab_bg</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/fh_pay_name_color</item>
+    </style>
+
+    <style name="fh_pay_radiobutton_p" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:drawablePadding">11dp</item>
+        <item name="android:textColor">@color/fh_pay_name_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="fh_emailRadioButtonGreen" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/fh_email_name_color</item>
+        <item name="android:background">@drawable/fh_email_radio_bg</item>
+    </style>
+
+    <style name="fh_email_item_name_normal">
+        <item name="android:textColor">@color/fh_gray_33</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="fh_email_item_name_press">
+        <item name="android:textColor">@color/fh_gray_66</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 支付历史 -->
+    <style name="fh_history_title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/fh_gray_33</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="fh_fhpay_history_title_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/fh_gray_33</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="fh_history_item_title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/fh_gray_66</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="fh_history_item_title_p_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 自定义键盘布局 -->
+    <style name="fh_keybord_item_btn">
+        <item name="android:textColor">@color/fh_black</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/fh_keybord_btn_bg</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="fh_AnimationFade">
+        <item name="android:windowEnterAnimation">@anim/fh_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/fh_dialog_exit</item>
+    </style>
+
+    <!-- 用户详情 -->
+    <style name="fh_userinfo_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fh_gray_33</item>
+        <item name="android:textSize">@dimen/fh_pay_content_size</item>
+        <item name="android:layout_marginLeft">26dp</item>
+    </style>
+    
+    <!-- 用户中心 每个ITEM的样式-->
+    <style name="fh_userinfo_center_item_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+         <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/fh_item_selector</item>
+    </style>
+    
+    
+     <!-- 用户中心 标题-->
+    <style name="fh_userinfo_center_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fh_gray_33</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/fh_margin_left</item>
+    </style>
+    
+    
+     <!-- 用户中心 -->
+    <style name="fh_userinfo_center_point_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/fh_enter_arrow</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/fh_margin_right</item>
+    </style>
+    
+    <!-- 用户中心 -->
+    <style name="fh_userinfo_center_line_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/fh_e0e1e2</item>
+        <item name="android:layout_marginLeft">@dimen/fh_margin_left</item>
+    </style>
+    
+    
+    <style name="fh_userinfo_center_line_top_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/fh_e0e1e2</item>
+    </style>
+    
+    
+     
+    <style name="fh_userinfo_layout_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/fh_pay_item_hight</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="fh_userinfo_layout_button_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:textColor">@color/fh_gray_33</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="fh_pwdVisibleCheckBoxStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/fh_pwd_visible_radio_selector</item>
+    </style>
+ <style name="fh_newPhoneCheckBoxStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/fh_newphone_checkbox_selector</item>
+    </style>
+    <style name="WePayTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 支付密码 -->
+
+    <style name="GridPasswordView" />
+
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <!-- dialog -->
+    <style name="wepay_common_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 浮动在屏幕中间 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- dialog背景 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- dialog内容背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 显示window背景 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 窗口半透明 -->
+    </style>
+
+    <!-- 普通文本 -->
+    <style name="wepay_txt_normal">
+        <item name="android:textSize">@dimen/wepay_txt_middle</item>
+        <item name="android:textColor">@color/wepay_txt_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/wepay_txt_unenable</item>
+    </style>
+
+    <style name="wepay_divider_line">
+        <item name="android:layout_width">@dimen/wepay_divider_line_height</item>
+        <item name="android:layout_height">@dimen/wepay_divider_line_height</item>
+        <item name="android:background">@color/wepay_divider_common</item>
+    </style>
+
+    <!-- TEXT -->
+    <style name="wepay_content_page_large_text">
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/wepay_text_main_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="wepay_content_page_small_text">
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/wepay_txt_unenable</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="wepay_content_page_large_count_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff8295bf</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wepay_edit_divider_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/wepay_divider_line_height</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="wepay_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 默认文本框 -->
+    <style name="wepay_edit_normal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:layout_height">@dimen/wepay_widget_height</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/wepay_txt_hint</item>
+    </style>
+
+</resources>

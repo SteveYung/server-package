@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/eff_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/efunfun_layout_bg_s" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/efunfun_title_layout" />
+
+        <TextView
+            android:id="@+id/eff_bind_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/eff_bind_title"
+            android:textColor="@color/eff_blue"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:id="@+id/eff_bind_name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/efunfun_login_submit"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/eff_username_img" />
+
+                <EditText
+                    android:id="@+id/eff_bind_input_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/eff_reg_account_format_hint" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eff_bind_password_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/efunfun_login_submit"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/eff_password_img" />
+
+                <EditText
+                    android:id="@+id/eff_bind_input_pw"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/eff_reg_input_password"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eff_reg_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/efunfun_login_submit"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/eff_password_img" />
+
+                <EditText
+                    android:id="@+id/eff_bind_input_conpw"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/eff_reg_input_confirm_password"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/eff_bind_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/efunfun_login_submit_blue"
+            android:padding="0dp"
+            android:text="@string/efunfun_login"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

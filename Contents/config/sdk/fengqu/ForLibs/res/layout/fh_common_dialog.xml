@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fh_white" >
+
+    <TextView
+        android:id="@+id/fh_dialog_title_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/fh_pay_dialog_title_str"
+        android:textColor="@color/fh_gray_33"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fh_dialog_content_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fh_dialog_title_textView"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="@dimen/fh_margin_left"
+        android:layout_marginRight="@dimen/fh_margin_right"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/fh_loginout_dialog_content_str"
+        android:textColor="@color/fh_gray_33"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/fh_dialog_sapce_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fh_dialog_content_textView"
+        android:background="#EFEFEF" />
+
+    <LinearLayout
+        android:id="@+id/button_layput"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/fh_dialog_sapce_line"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/fh_dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/fh_item_selector"
+            android:text="@string/fh_cancel"
+            android:textColor="@color/fh_userinfo_color"
+            android:textSize="@dimen/fh_top_content_size" />
+
+        <ImageView
+            android:id="@+id/fh_dialog_sapce_cline"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#EFEFEF" />
+
+        <Button
+            android:id="@+id/fh_dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/fh_item_selector"
+            android:text="@string/fh_ok"
+            android:textColor="@color/fh_userinfo_color"
+            android:textSize="@dimen/fh_top_content_size" />
+    </LinearLayout>
+
+</RelativeLayout>

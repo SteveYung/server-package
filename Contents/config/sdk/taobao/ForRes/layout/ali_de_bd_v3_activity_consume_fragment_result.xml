@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ali_de_bd_v3_id_consume_notify_head_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/ali_de_bd_v3_consume_info_close_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ali_de_bd_v3_activity_consume_top_view_close_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:paddingBottom="20dp"
+                >
+                <com.taobao.de.aligame.views.BaodianTextView
+                    android:id="@+id/id_ali_de_bd_v3_consume_notify_head_main_msg_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/ali_de_bd_color_white"
+                    android:textSize="18sp" />
+
+                <com.taobao.de.aligame.views.BaodianTextView
+                    android:id="@+id/id_ali_de_bd_v3_consume_notify_head_sub_msg_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/ali_de_bd_color_v3_consume_notify_head_sub_text"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ali_de_bd_v3_consume_below_half_bg"
+            android:orientation="vertical"
+            android:layout_marginTop="-10dp"
+            android:paddingBottom="10dp" >
+
+            <com.taobao.de.aligame.views.BaodianTextView
+                android:id="@+id/id_ali_de_bd_v3_consume_notify_content_main_msg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:textColor="@color/ali_de_bd_color_black"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <com.taobao.de.aligame.views.BaodianTextView
+                android:id="@+id/id_ali_de_bd_v3_consume_notify_content_sub_msg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/ali_de_bd_color_v3_consume_notify_content_sub_text"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <com.taobao.de.aligame.views.BaodianPayBtnContainer
+                android:id="@+id/ali_de_bd_id_consume_btn_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/id_ali_de_bd_v3_consume_notify_positive_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ali_de_bd_v3_consume_btn_selector"
+                    android:textColor="@color/ali_de_bd_color_black"
+                    android:textSize="18sp" >
+                </Button>
+            </com.taobao.de.aligame.views.BaodianPayBtnContainer>
+
+            <include
+                android:id="@+id/id_ali_de_bd_v3_consume_notify_alipay_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                layout="@layout/ali_de_bd_v3_consume_checkbox_protocal_veiw" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

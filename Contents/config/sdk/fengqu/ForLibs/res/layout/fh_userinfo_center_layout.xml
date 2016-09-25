@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fh_userinfo_center_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="416dp"
+    android:background="@color/fh_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fh_userinfo_top_view" />
+
+   <LinearLayout style="@style/fh_userinfo_center_line_top_style" />
+
+    <RelativeLayout
+        android:id="@+id/fh_useringo_head_layout"
+        style="@style/fh_userinfo_center_item_style" >
+
+        <TextView
+            android:id="@+id/fh_useringo_head_hint_layout"
+            style="@style/fh_userinfo_center_title_style"
+            android:text="@string/fh_userinfo_center_photo_str" />
+
+        <com.feihuo.gamesdk.api.view.FhCircleImageView
+            android:id="@+id/fh_useringo_head_imagview"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fh_useringo_head_point"
+            android:src="@drawable/fh_userinfo_center_default_icon" />
+
+        <ImageView
+            android:id="@+id/fh_useringo_head_point"
+            style="@style/fh_userinfo_center_point_style" />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/fh_userinfo_center_line_style" />
+
+    <RelativeLayout
+        android:id="@+id/fh_useringo_nickname_layout"
+        style="@style/fh_userinfo_center_item_style" >
+
+        <TextView
+            android:id="@+id/fh_useringo_nickname_hint_layout"
+            style="@style/fh_userinfo_center_title_style"
+            android:text="@string/fh_userinfo_center_nickname_str" />
+
+        <TextView
+            android:id="@+id/fh_useringo_nickname_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fh_useringo_nickname_point"
+            android:src="@drawable/fh_headface"
+            android:text="@string/fh_userinfo_center_nosetting_str"
+            android:textColor="@color/fh_gray_99"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/fh_useringo_nickname_point"
+            style="@style/fh_userinfo_center_point_style" />
+    </RelativeLayout>
+
+   <LinearLayout style="@style/fh_userinfo_center_line_style" />
+
+    <RelativeLayout
+        android:id="@+id/fh_useringo_username_layout"
+        style="@style/fh_userinfo_center_item_style"
+        android:clickable="false"
+        android:focusable="false"
+         >
+
+        <TextView
+            android:id="@+id/fh_useringo_username_hint_layout"
+            style="@style/fh_userinfo_center_title_style"
+            android:text="@string/fh_userinfo_center_username_str" />
+
+        <TextView
+            android:id="@+id/fh_useringo_username_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fh_useringo_username_point"
+            android:layout_toRightOf="@+id/fh_useringo_username_hint_layout"
+            android:gravity="right"
+            android:singleLine="true"
+            android:src="@drawable/fh_headface"
+            android:text="@string/fh_userinfo_center_nosetting_str"
+            android:textColor="@color/fh_gray_99"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/fh_useringo_username_point"
+            style="@style/fh_userinfo_center_point_style"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+  <LinearLayout style="@style/fh_userinfo_center_line_top_style" />
+
+    <TextView
+        android:id="@+id/fh_userinfo_lasttime_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dp"
+        android:layout_marginRight="15.0dp"
+        android:layout_marginTop="@dimen/fh_botton_button_margin_top"
+        android:gravity="center"
+        android:text="@string/fh_userinfo_lasttime_str"
+        android:textColor="@color/fh_gray_99"
+        android:textSize="12.0sp" />
+
+</LinearLayout>

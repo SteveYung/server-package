@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<paramLs>
+		<param name = "Nd91AppId" required = "1" desc = "nd91" showName = "AppId" bWriteIntoManifest = "0" bUserOffer = "1"/>
+		<param name = "Nd91AppKey" required = "1" desc = "nd91" showName = "AppKey" bWriteIntoManifest = "0" bUserOffer = "1"/>
+		<param name = "Nd91Orientation" required = "1" desc = "nd91" showName = "Orientation" bWriteIntoManifest = "0" bUserOffer = "1" >
+			<option value = "landscape"/>
+			<option value = "portrait"/>
+			<option value = "auto"/>
+		</param>
+		<param name = "Nd91VersionStatus" required = "1" desc = "nd91" showName = "CheckUpdate" bWriteIntoManifest = "0" bUserOffer = "1">
+		    <option value = "NORMAL"/>
+			<option value = "STRICT"/>
+		</param>
+		
+		<param name = "callback" required = "1" desc = "nd91" showName = "支付通知url" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "0"/>
+	</paramLs>
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "nd91"/>
+		<operate step = "2" name = "copy" from = "ForRes" to = "res" desc = "nd91"/>
+		<operate step = "3" name = "mergeR" desc = "nd91(合并R文件，此步骤需在res目录合并完后才执行)"/>
+	</operateLs>
+	<pluginLs>
+		<plugin name = "UserNd91" typePlugin = "0" desc = "nd91"/>
+		<plugin name = "IAPOnlineNd91" typePlugin = "2" desc = "nd91"/>
+	</pluginLs>
+</config>

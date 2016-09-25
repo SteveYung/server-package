@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    <item type="drawable" name="fh_dootview_backgroud">@color/fh_e2e2e2</item>
+    <item type="drawable" name="fh_dootview_background_p">@color/fh_ff6300</item>
+    
+    
+</resources>

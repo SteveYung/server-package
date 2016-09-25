@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/eff_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/efunfun_layout_bg_s" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/efunfun_title_layout" />
+
+        <TextView
+            android:id="@+id/eff_service_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/eff_services_title"
+            android:textColor="@color/eff_blue"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:id="@+id/eff_service_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/eff_cs_input_bg">
+
+            <TextView
+                android:id="@+id/eff_lately_login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eff_lately_login"
+                android:textColor="@color/eff_privacy_text_color" />
+
+            <TextView
+                android:id="@+id/eff_recommend_service_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eff_recommend_service"
+                android:textColor="@color/eff_privacy_text_color" />
+
+            <TextView
+                android:id="@+id/eff_lately_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/eff_cs_input_blue_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/eff_recommend_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/eff_cs_input_blue_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/eff_services_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" 
+                android:visibility="gone"/>
+
+            <GridView
+                android:id="@+id/eff_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="15dp" >
+            </GridView>
+
+            <TextView
+                android:id="@+id/eff_service_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/eff_service_list_null"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

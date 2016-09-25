@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    tools:context=".MISignUpInActivity"
+    >
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/mispine_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        />
+    <ScrollView
+        android:id="@+id/mispine_form_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <!--  Header  Starts-->
+            <!--<LinearLayout android:id="@+id/header"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@layout/header_gradient"-->
+            <!--android:paddingTop="5dip"-->
+            <!--android:paddingBottom="5dip">-->
+            <!--&lt;!&ndash; Logo Start&ndash;&gt;-->
+            <!--<ImageView android:src="@drawable/logo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dip"/>-->
+            <!--&lt;!&ndash; Logo Ends &ndash;&gt;-->
+            <!--</LinearLayout>-->
+            <!--  Header Ends -->
+            <!-- Footer Start -->
+            <!--<LinearLayout android:id="@+id/footer"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="90dip"-->
+                <!--android:background="@layout/footer_repeat"-->
+                <!--android:layout_alignParentBottom="true">-->
+            <!--</LinearLayout>-->
+            <!-- Footer Ends -->
+
+            <!-- Form -->
+            <LinearLayout
+                android:id="@+id/mispine_form"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip">
+                <!--android:layout_below="@id/header">-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/mispine_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mispine_signinup_prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/mispine_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mispine_signinup_prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/mispine_signinup_action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:singleLine="true"/>
+
+                <Button
+                    android:id="@+id/mispine_submit_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/mispine_signinup_action_sign_in"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <!-- Link to switch -->
+                <Button android:id="@+id/mispine_toggle_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:layout_marginBottom="3dip"
+                    android:text="@string/mispine_signinup_promote_sign_up"
+                    android:textStyle="italic"
+                    android:gravity="center"
+                    android:textSize="20dip"
+                    android:background="@android:color/transparent"
+                    android:textColor="#025f7c"/>
+
+            </LinearLayout>
+            <!-- Form Ends -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

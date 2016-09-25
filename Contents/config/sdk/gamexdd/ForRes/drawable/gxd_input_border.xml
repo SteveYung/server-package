@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#FFFFFF"/>
+
+    <stroke
+        android:width="0.01dp"
+        android:color="#cccccc"/>
+
+</shape><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_input_border.xml -->

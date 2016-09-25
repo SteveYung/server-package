@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <paramLs>
+        <param name="SnailAppId" required="1" showName="AppId" desc="应用id " bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="SnailAppKey" required="1" showName="AppKey" desc="应用key" bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="callback" required="1" desc="anysdk支付结果通知" showName="支付通知地址" bUserOffer="1" bWriteIntoClient="0"/>
+    </paramLs>
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="snail"/>
+        <operate step="2" name="copy" from="ForLibs" to="lib" desc="snail"/>
+        <operate step="3" name="copy" from="ForRes" to="res" desc="snail"/>
+        <operate step="4" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    <pluginLs>
+        <plugin name="UserSnail" typePlugin="0" desc="蜗牛用户插件"/>
+        <plugin name="IAPOnlineSnail" typePlugin="2" desc="蜗牛支付插件"/>
+    </pluginLs>
+</config>

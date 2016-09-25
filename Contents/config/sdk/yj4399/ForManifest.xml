@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifestConfig xmlns:android="http://schemas.android.com/apk/res/android">
+    <applicationCfg keyword="com.yj4399.insdk.activity.ContainerActivity">
+        
+        <!-- 4399支付sdk配置开始 -->   
+        <activity
+            android:name="cn.m4399.recharge.activities.RechargeCenterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MVTheme" />
+        <activity
+            android:name="cn.m4399.recharge.activities.PayFixedSumActivity"
+            android:theme="@style/MVTheme" />
+        <activity
+            android:name="cn.m4399.recharge.activities.PayUnfixedSumActivity"
+            android:theme="@style/MVTheme" />
+        <activity
+            android:name="cn.m4399.recharge.activities.MultiCardActivity"
+            android:theme="@style/MVTheme" />
+        <activity
+            android:name="cn.m4399.recharge.activities.CardFixedActivity"
+            android:theme="@style/MVTheme" />
+        <activity
+            android:name="cn.m4399.recharge.activities.SingleCardActivity"
+            android:theme="@style/MVTheme" />
+        <activity
+            android:name="cn.m4399.recharge.activities.PayWebActivity"
+            android:configChanges="orientation|keyboard|screenSize" />
+        <activity
+            android:name="cn.m4399.recharge.activities.BankTabActivity"
+            android:theme="@style/MVTheme" />
+        <activity
+            android:name="cn.m4399.recharge.activities.PayResultActivity"
+            android:theme="@style/MVTheme" />
+        <activity
+            android:name="cn.m4399.recharge.activities.DXTimerActivity"
+            android:theme="@style/MVTheme" />
+        <!-- For Ali SDK -->
+        <activity android:name="com.alipay.android.app.sdk.WapPayActivity" />
+        <!-- For YiDong Recharge SDK -->
+        <activity
+            android:name="com.umpay.huafubao.ui.BillingActivity"
+            android:configChanges="orientation|keyboard|screenSize"
+            android:excludeFromRecents="true" >
+        </activity>
+
+        <service android:name="com.umpay.huafubao.service.AppUpgradeService" >
+        </service>
+
+    </applicationCfg>
+    <permissionCfg>
+        <!-- 4399支付sdk必须添加权限 开始-->
+		<uses-permission android:name="android.permission.INTERNET"/>
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+		<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+		<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+		<uses-permission android:name="android.permission.GET_TASKS" />  
+		<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> 
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
+		<uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+		<uses-permission android:name="android.permission.CALL_PHONE" /> 
+		<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+		<uses-permission android:name="android.permission.SEND_SMS" />
+	   	<!--  4399支付sdk必须添加权限结束 -->
+    </permissionCfg>
+</manifestConfig>

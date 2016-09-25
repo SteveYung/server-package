@@ -1,0 +1,42 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="pop18_activity_horizontal_margin">16dp</dimen>
+    <dimen name="pop18_activity_vertical_margin">16dp</dimen>
+    <dimen name="pop18_login_title_height">53dp</dimen>
+    <dimen name="pop18_login_user_height">51dp</dimen>
+    <dimen name="pop18_login_pwd_height">45dp</dimen>
+    <dimen name="pop18_login_button_width">130dp</dimen>
+    <dimen name="pop18_login_button_pad">8dp</dimen>
+    <dimen name="pop18_login_pad">12dp</dimen>
+	<dimen name="pop18_login_textview_width">30dp</dimen>
+	<dimen name="pop18_login_top">36dp</dimen>
+	<dimen name="pop18_icon_back_height">18dp</dimen>
+	<dimen name="pop18_icon_pad">9dp</dimen>
+	<dimen name="pop18_textview_pd">24dp</dimen>
+	<dimen name="pop18_main_view_right_margin">5dp</dimen>
+	<dimen name="pop18_person_center_lable_textsize">18sp</dimen>
+	<dimen name="pop18_game_detail_info_title">18sp</dimen>
+	<dimen name="pop18_game_simple_info">13sp</dimen>
+	<dimen name="pop18_game_flag_text_size">8sp</dimen>
+	<dimen name="pop18_game_info_flag_size">50dp</dimen>
+	<dimen name="pop18_game_info_heigh">100dp</dimen>
+	<dimen name="pop18_gift_list_item_80dp">80dp</dimen>
+	<dimen name="pop18_search_key_padding">10dp</dimen>
+	<dimen name="pop18_drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="pop18_drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="pop18_drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="pop18_drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="pop18_drop_down_list_footer_progress_bar_height">36dp</dimen>
+	<dimen name="pop18_line_hight">1dp</dimen>
+	<dimen name="pop18_text_padding">2dp</dimen>
+	<dimen name="pop18_text_size_15sp">15sp</dimen>
+	<dimen name="pop18_person_center_info_button_width">200dp</dimen>
+	<dimen name="pop18_person_center_info_button_height">42dp</dimen>
+	<dimen name="pop18_person_setting_list_height">33dp</dimen>
+	<dimen name="pop18_person_setting_list_name_width">150dp</dimen>
+	<dimen name="pop18_person_setting_list_name_height">27dp</dimen>
+	<dimen name="pop18_person_setting_text">18sp</dimen>
+	<dimen name="pop18_person_information_height">60dp</dimen>
+	<dimen name="pop18_person_information_textsize">12sp</dimen>
+	<dimen name="pop18_person_update_ignore_width">80sp</dimen>
+</resources>

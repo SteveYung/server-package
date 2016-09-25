@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="32dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/ali_pop_window_bg" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:text="@string/ali_pop_hint" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:scaleType="fitXY"
+        android:background="#00ffffff"
+        android:src="@drawable/m4399_rec_right_arrow" />
+
+</LinearLayout>

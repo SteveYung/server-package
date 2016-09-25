@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lunqiitemback_w">
+    
+   <ProgressBar
+         android:id="@+id/an1_mypayprogressBar1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:layout_centerInParent="true"
+         style="?android:attr/progressBarStyleLarge" 
+         android:visibility="gone"/>
+	 <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:orientation="vertical">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="0px"
+    	android:layout_weight="1"
+    	android:gravity="center_vertical"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageView 
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:background="@drawable/mytitlebg"/>
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:orientation="horizontal">		    
+			    
+			
+    		<ImageView 
+    		    android:id="@+id/an1_mytitlebut"
+    		    android:layout_width="0px"
+    		    android:layout_weight="1"
+    			android:layout_height="fill_parent"
+    			android:layout_marginLeft="5dp"
+    			android:adjustViewBounds="true"
+    			android:src="@drawable/bg_top_back"/>
+        	<TextView
+        	    android:id="@+id/an1_mypayonetitle"
+        		android:layout_width="0px"
+    		    android:layout_weight="14"
+    			android:layout_height="fill_parent"
+       	 		android:gravity="center_horizontal"
+       	 		android:textSize="20sp"
+        		android:text="@string/pay_main" 
+        		android:textColor="#88ffffff"/>
+        	<ImageView 
+        	    android:id="@+id/lunqi_mycardtitle_blvalue"
+        	    android:layout_width="0px"
+    			android:layout_weight="2"
+    			android:layout_height="fill_parent"    			
+    			android:padding="1dp"
+    			android:background="@null"
+    			android:layout_marginRight="5dp"
+    			android:src="@drawable/bg_top_bl"     
+    			android:adjustViewBounds="true"   
+        	    />
+            </LinearLayout>
+        	</RelativeLayout>
+        </LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+    		android:layout_height="0px"
+    		android:layout_weight="9"
+    		android:orientation="horizontal"
+    		android:layout_marginTop="10dp"
+    		android:layout_marginBottom="10dp">
+        	<View 
+        	    android:layout_width="0px"
+    			android:layout_height="fill_parent"
+    			android:layout_weight="1"/>		    
+			<ScrollView 
+				android:layout_width="0px"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="8" 
+				    >
+			<RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			   >
+        		
+				
+			    <LinearLayout
+			        android:layout_centerHorizontal="true"
+			        android:id="@+id/an1_linearLayout1_mycard"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        
+			        android:gravity="center"
+			        android:orientation="vertical" >
+			        
+			        <ImageView 
+        		    	android:layout_width="250dp"
+        		    	android:layout_height="103dp"
+        		    	android:src="@drawable/an1_mycardlogoh"
+        		    />
+
+			        <LinearLayout
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:orientation="horizontal" >
+
+			            <TextView
+			                android:id="@+id/an1_TextView01_myca"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:textColor="#000000"
+			                android:text="卡    号" />
+
+			            <EditText
+			                android:id="@+id/an1_editText1_myca"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerHorizontal="true"
+			                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+			                android:ems="15"
+			                android:hint="请输入卡号" />
+			        </LinearLayout>
+
+			        <LinearLayout
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:layout_marginTop="@dimen/an1_lcard_side"
+			            android:orientation="horizontal" >
+
+			            <TextView
+			                android:id="@+id/an1_TextView02_myca"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:textColor="#000000"
+			                android:text="密    码 " />
+
+			            <EditText
+			                android:id="@+id/an1_editText2_myca"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+			                android:ems="15"
+			                android:hint="请输入密码" />
+			        </LinearLayout>
+			    </LinearLayout>
+				
+			    <Button
+			        android:id="@+id/an1_button1_mycard"
+			        android:layout_width="wrap_content"
+			        android:layout_height="50dp"
+			        android:layout_alignLeft="@+id/an1_linearLayout1_mycard"
+			        android:layout_alignRight="@+id/an1_linearLayout1_mycard"
+			        android:layout_below="@+id/an1_linearLayout1_mycard"
+			        android:layout_marginTop="@dimen/an1_lcard_side"
+			        android:background="@drawable/an1_lcard_button_shape"
+			        android:enabled="false"
+			        android:textColor="#ffffff"
+			        android:text="@string/an1_lcard_button"/>
+			</RelativeLayout>
+			</ScrollView>
+    		<View 
+    	    	android:layout_width="0px"
+    			android:layout_height="fill_parent"
+    			android:layout_weight="1"/>		 
+    	
+	</LinearLayout>
+	</LinearLayout>
+	
+</RelativeLayout>

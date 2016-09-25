@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifestConfig xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <permissionCfg>
+        <uses-permission android:name="android.permission.INTERNET" />
+    	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    	<uses-permission android:name="android.permission.GET_TASKS" />
+    </permissionCfg>
+    
+    <applicationCfg keyword="com.cw.platform.activity.PlatformActivity">
+        <activity
+            android:name="com.cw.platform.activity.PlatformActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.RecommendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cw.platform.activity.PlLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.cw.platform.activity.AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cw.platform.activity.PlRegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.PlForgetPwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.PlResetPwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.AccountSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cw.platform.activity.DownloadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cw.platform.activity.ChangePwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        
+        <activity
+            android:name="com.cwmob.sdk.activity.PopupActivity"
+            android:configChanges="keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.cwmob.sdk.activity.DetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <service android:name="com.cwmob.sdk.ad_push.PushService"
+            	 android:process=":cwmob_service"/>
+        <activity
+            android:name="com.cw.platform.activity.BindPhoneActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.IAroundActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.QQActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.WeiboActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.ForgetPwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.ResetPwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.ChannelActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cw.platform.activity.PayCenterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.PayRecordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cw.platform.activity.AliPayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cw.platform.activity.TenpayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cw.platform.activity.PayCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.PayNetActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.cw.platform.activity.PayManualActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cw.platform.activity.PayCardWithoutSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+    </applicationCfg>
+
+</manifestConfig>

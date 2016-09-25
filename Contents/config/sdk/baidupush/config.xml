@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config pluginId="000087">
+  <paramLs>
+    <param
+        name="BDPush_api_key"
+        required="1"
+        showName="ApiKey"
+        desc="请在百度推送开发着后台申请"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+    <param
+        name="appid"
+        required="0"
+        showName="AppId"
+        desc="服务器端使用"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="0"/>
+    <param
+        name="secret_key"
+        required="0"
+        showName="SecretKey"
+        desc="服务器端使用"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="0"/>
+  </paramLs>
+  
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="baidupush"/>
+    <operate step="2" name="copy" from="ForLibs" to="lib" desc="baidupush"/>
+    <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="PushBaidu" typePlugin="6" desc="百度推送"/>
+  </pluginLs>
+  <version code = "1006" showVersion = "2.0.6_4.5.1.8" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[百度推送4.5.1.8]]>
+    </version>
+</config>

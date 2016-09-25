@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:background="@color/gamexdd_bg_color"
+              android:orientation="vertical">
+
+    <com.gamexdd.sdk.widget.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/x700"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x94"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/gxd_input_border">
+
+            <ImageView
+                android:id="@+id/imgXY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/gxd_icon_user"/>
+
+            <ImageView
+                android:id="@+id/imgXYone"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/x20"
+                android:layout_toRightOf="@+id/imgXY"
+                android:background="#CCCCCC"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x94"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/rlMoreUserName"
+                android:layout_toRightOf="@+id/imgXYone"
+                android:background="@null"
+                android:completionThreshold="2"
+                android:hint="手機號/用戶名"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:imeOptions="actionNext"
+                android:textColorHint="#999999"
+                android:textSize="14sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rlMoreUserName"
+                android:layout_width="@dimen/x140"
+                android:layout_height="@dimen/x94"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:src="@drawable/gxd_icon_jiantou_down"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x94"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/gxd_input_border">
+
+            <ImageView
+                android:id="@+id/imgXYtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/gxd_icon_password"/>
+
+            <ImageView
+                android:id="@+id/imgXYothree"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/x20"
+                android:layout_toRightOf="@+id/imgXYtwo"
+                android:background="#CCCCCC"/>
+
+            <EditText
+                android:id="@+id/etPwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/btnForgetPwd"
+                android:layout_toRightOf="@+id/imgXYothree"
+                android:background="@null"
+                android:hint="請輸入密碼"
+                android:maxLength="16"
+                android:password="true"
+                android:textColor="#333333"
+                android:textColorHint="#999999"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnForgetPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingRight="@dimen/x10"
+                android:text="忘記密碼"
+                android:textColor="#0066CC"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x94"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/gxd_btn_blue_selector"
+            android:text="登錄"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnMobileRegister"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x94"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_weight="1"
+                android:background="@drawable/gxd_btn_green_selector"
+                android:drawableLeft="@drawable/gxd_btn_icon_mob"
+                android:drawablePadding="0dp"
+                android:paddingLeft="@dimen/x20"
+                android:text="手機一鍵註冊"
+                android:textColor="#ffffff"
+
+                />
+
+            <Button
+                android:id="@+id/btnGuest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x94"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_weight="1"
+                android:background="@drawable/gxd_btn_red_selector"
+                android:drawableLeft="@drawable/gxd_btn_icon_play"
+                android:drawablePadding="0dp"
+                android:paddingLeft="@dimen/x60"
+                android:text="快速試玩"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x80"
+            android:gravity="center_vertical"
+            android:text="用其他帳號登錄"
+            android:textColor="#0066CC"
+            android:textSize="18sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x52"
+            android:layout_marginBottom="@dimen/x20">
+
+
+            <Button
+                android:id="@+id/btnFaceBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/gxd_btn_icon_login01"
+                android:drawablePadding="@dimen/x4"
+                android:gravity="left|center_vertical"
+                android:text="FaceBook"
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnGoole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/gxd_btn_icon_login02"
+                android:drawablePadding="@dimen/x4"
+                android:gravity="left|center_vertical"
+                android:text="Sign in"
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnAPP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/gxd_btn_icon_login03"
+                android:drawablePadding="@dimen/x4"
+                android:gravity="left|center_vertical"
+                android:text="176APP登入"
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

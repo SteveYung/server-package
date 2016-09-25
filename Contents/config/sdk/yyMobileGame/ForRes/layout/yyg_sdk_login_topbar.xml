@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/yyg_round_float_bg"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/loginBarText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:drawableLeft="@drawable/yyg_logo64"
+        android:drawablePadding="8dp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="#4c4c4c" />
+
+    <Button
+        android:id="@+id/loginShiftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/yyg_yy_login_btn_normal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="切换账号"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

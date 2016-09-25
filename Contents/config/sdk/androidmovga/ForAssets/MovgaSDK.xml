@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MovgaSDK>
+	<RunConfig>
+	     <RunConfig
+	        appId="10001"
+	        appKey="1cc54099b16071f8d909c2d0f5ce42af"
+	        channelId="1"  
+	        debug="true"
+	        billingModule="Google"
+	        language="de"
+			register="true"
+	        switchuser="true"
+	        checkVersion="false"	
+			/>
+	
+	    <ThirdPlatform>
+				<Facebook
+	                appId="407624142768146"
+	                enabled="true" >
+	            </Facebook>
+	    </ThirdPlatform>
+	
+		<Tracker>
+	
+	            <Adjust
+	                appToken="qwq97cw8lk5b"
+	                create_order_tag="fs50u2"
+	                enabled="true"
+	                eventBuffering="false"
+	                finish_order_tag="pnn469"
+	                logLevel="verbose"
+	                login_tag="s5l0yp"
+	                open_tag="gar96b"
+	                register_tag="2m40u0"
+	                tp_login_tag="v8afqs" />
+	           
+	        </Tracker>
+		
+	</RunConfig>
+		
+</MovgaSDK>

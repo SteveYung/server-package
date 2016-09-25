@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/ali_de_bd_color_transparent"
+    >
+
+    <include 
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       layout="@layout/ali_de_bd_v2_consume_title_layout"
+       />
+    
+    <TextView
+        android:id="@+id/id_ali_de_bd_v2_consume_error_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/ali_de_bd_color_v2_consume_text"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/id_ali_de_bd_v2_consume_error_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ali_de_bd_v2_consume_dialog_btn_bg"
+        android:textColor="@color/ali_de_bd_color_white"
+        android:textSize="24sp" >
+    </Button>
+
+</LinearLayout>

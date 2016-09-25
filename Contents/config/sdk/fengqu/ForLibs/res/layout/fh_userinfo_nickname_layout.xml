@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="416dp"
+    android:background="@color/fh_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fh_userinfo_top_view" />
+
+    <View style="@style/fh_userinfo_center_line_top_style" />
+
+    <RelativeLayout
+        style="@style/fh_userinfo_center_item_style" >
+
+        <TextView
+            android:id="@+id/fh_useringo_nickname_hint_layout"
+            style="@style/fh_userinfo_center_title_style"
+            android:text="@string/fh_userinfo_center_nickname_str" />
+
+        <EditText
+            android:id="@+id/fh_useringo_nickname_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/fh_useringo_nickname_hint_layout"
+            android:layout_marginLeft="24dp"
+            android:textColorHint="@color/fh_gray_99"
+            android:textColor="@color/fh_gray_33"
+            android:background="@color/fh_transparent"
+            android:hint="@string/fh_userinfo_center_nosetting_str"
+            android:textSize="15sp"
+            android:textCursorDrawable="@null"
+            android:layout_marginRight="@dimen/fh_margin_right" 
+             />
+    </RelativeLayout>
+
+    <View style="@style/fh_userinfo_center_line_top_style" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fh_change_nickname_limt"
+        android:textColor="@color/fh_gray_99"
+         android:textSize="12sp"
+        android:layout_marginLeft="@dimen/fh_margin_left" />
+
+    
+    <Button
+        android:id="@+id/fh_changepwd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fh_botton_button_height"
+        android:layout_marginLeft="@dimen/fh_margin_left"
+        android:layout_marginRight="@dimen/fh_margin_right"
+        android:layout_marginTop="@dimen/fh_botton_button_margin_top"
+        android:textSize="@dimen/fh_botton_button_textsize"
+        android:background="@drawable/fh_login_btn_selector"
+        android:text="@string/fh_changepwd_ok_str"
+        android:textColor="@color/fh_white"
+         />
+
+</LinearLayout>

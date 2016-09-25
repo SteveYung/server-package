@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/eff_layout_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/efunfun_layout_bg_s"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/efunfun_title_layout" />
+
+        <LinearLayout
+            android:id="@+id/eff_ly_findback_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/eff_tv_official_findback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:background="@drawable/eff_find_back_official_blue"
+                android:text="@string/eff_find_back_official_count"
+                android:textColor="@color/eff_white" />
+
+            <TextView
+                android:id="@+id/eff_tv_try_play_find_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:background="@drawable/eff_find_back_try_play"
+                android:text="@string/eff_find_back_try_play_count"
+                android:textColor="@color/eff_findback" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/eff_vp_vPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</RelativeLayout>

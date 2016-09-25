@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<SDKLs>
+		<SDK SDKName = "SinaWeibo" SDKType = "2" SDKShowName = "新浪微博">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppKey" required = "1" desc = "填写您在新浪微博上注册到的AppKey" showName = "AppKey" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppSecret" required = "1" desc = "填写您在新浪微博上注册到的AppSecret" showName = "AppSecret" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "RedirectUrl" required = "1" desc = "填写您在新浪微博上注册的RedirectUrl" showName = "RedirectUrl" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "ShareByAppClient" required = "1" desc = "是否使用客户端进行分享" showName = "ShareByAppClient" bWriteIntoManifest = "0" bWriteIntoClient = "0">
+			    <option value = "true"/>
+				<option value = "false"/>
+			</param>
+		</SDK>
+		<SDK SDKName = "QQ" SDKType = "2" SDKShowName = "QQ好友">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppId" required = "1" desc = "填写您在QQ好友上注册到的AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppKey" required = "1" desc = "填写您在QQ好友上注册到的AppKey" showName = "AppKey" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+		</SDK>
+		<SDK SDKName = "QZone" SDKType = "2" SDKShowName = "QQ空间">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppId" required = "1" desc = "填写您在QZONE上注册到的AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppKey" required = "1" desc = "填写您在QZONE上注册到的AppKey" showName = "AppKey" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "ShareByAppClient" required = "1" desc = "是否使用客户端进行分享" showName = "ShareByAppClient" bWriteIntoManifest = "0" bWriteIntoClient = "0">
+				<option value = "true"/>
+				<option value = "false"/>
+			</param>
+		</SDK>
+		<SDK SDKName = "TencentWeibo" SDKType = "2" SDKShowName = "腾讯微博">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppKey" required = "1" desc = "填写您在腾讯微博上注册到的AppKey" showName = "AppKey" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppSecret" required = "1" desc = "填写您在腾讯微博上注册到的AppSecret" showName = "AppSecret" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "RedirectUrl" required = "1" desc = "填写您在腾讯微博上注册的RedirectUrl" showName = "RedirectUrl" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+		</SDK>
+		<SDK SDKName = "Wechat" SDKType = "2" SDKShowName = "微信">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppId" required = "1" desc = "填写您在微信上注册到的AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "BypassApproval" required = "1" desc = "BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过审核的应用也可以执行分享" showName = "BypassApproval" bWriteIntoManifest = "0" bWriteIntoClient = "0">
+				<option value = "true"/>
+				<option value = "false"/>
+			</param>
+		</SDK>
+		<SDK SDKName = "WechatMoments" SDKType = "2" SDKShowName = "微信朋友圈">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppId" required = "1" desc = "填写您在微信朋友圈上注册到的AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "BypassApproval" required = "1" desc = "BypassApproval是绕过审核的标记，设置为true后AppId将被忽略，故不经过审核的应用也可以执行分享" showName = "BypassApproval" bWriteIntoManifest = "0" bWriteIntoClient = "0">
+				<option value = "true"/>
+				<option value = "false"/>
+			</param>
+		
+		</SDK>
+		<SDK SDKName = "WechatFavorite" SDKType = "2" SDKShowName = "微信收藏">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppId" required = "1" desc = "填写您在微信收藏上注册到的AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+		</SDK>
+		<SDK SDKName = "Renren" SDKType = "2" SDKShowName = "人人">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppId" required = "1" desc = "填写您在人人上注册到的AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "ApiKey" required = "1" desc = "填写您在人人上注册到的ApiKey" showName = "ApiKey" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "SecretKey" required = "1" desc = "填写您在人人上注册到的SecretKey" showName = "SecretKey" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			
+		</SDK>
+		<SDK SDKName = "Yixin" SDKType = "2" SDKShowName = "易信">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppId" required = "1" desc = "填写您在易信上注册到的AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "ShareByAppClient" required = "1" desc = "是否使用客户端进行分享" showName = "ShareByAppClient" bWriteIntoManifest = "0" bWriteIntoClient = "0" >
+				<option value = "true"/>
+				<option value = "false"/>
+			</param>
+		</SDK>
+		<SDK SDKName = "YixinMoments" SDKType = "2" SDKShowName = "易信朋友圈">
+			<param name = "SortId" required = "1" desc = "此平台在您分享列表中的位置，整型，数值越大越靠后" showName = "SortId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "AppId" required = "1" desc = "填写您在易信收藏上注册到的AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+			<param name = "ShareByAppClient" required = "1" desc = "是否使用客户端进行分享" showName = "ShareByAppClient" bWriteIntoManifest = "0" bWriteIntoClient = "0" >
+				<option value = "true"/>
+				<option value = "false"/>
+			</param>
+		</SDK>
+	</SDKLs>
+	<paramLs>
+		<param name = "AppKey" required = "1" desc = "ShareSDK的appkey" showName = "AppKey" bWriteIntoManifest = "0" bWriteIntoClient = "0" />
+	</paramLs>
+	
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "shareSDK"/>
+        <operate step = "2" name = "copy" from = "ForRes" to = "res" desc = "shareSDK"/>
+        <operate step = "3" name = "mergeR" desc = "shareSDK(合并R文件，此步骤需在res目录合并完后才执行)"/>
+		<operate step = "4" name = "script" from = "script.py" desc = "ShareSDK特殊脚本操作"/>
+	</operateLs>
+	
+	<pluginLs>
+		<plugin name = "ShareShareSDK" typePlugin = "4" desc = "shareSDK"/>
+	</pluginLs>
+</config>

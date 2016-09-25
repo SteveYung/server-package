@@ -1,0 +1,22 @@
+<resources>
+    <string name="cc_select_payment_title"><b>选择支付方式</b></string>
+    <string name="cc_coco_pay_center"><b>coco支付中心</b></string>
+    <string name="cc_pay_select_game_card"><b>请选择游戏点卡</b></string>
+    <string name="cc_pay_select_deno"><b>请选充值卡面额</b></string>
+    <string name="cc_input_num_pwd"><b>输入卡号和密码</b></string>
+    <string name="cc_pay_coco"><b>使用coco币支付</b></string>
+    <string name="cc_pay_other"><u>选择其他支付方式>></u></string>
+    <string name="cc_coco_balance">帐户余额:  {0}coco币</string>
+    <string name="cc_coco_money">您需要支付{0}个</string>
+    <string name="cc_pay_btn"><b>使用{0}支付</b></string>
+    <string name="cc_pay_money">您需要支付{0}元</string>
+    <string name="cc_pay_card_deno_text">注：如果卡面额大于要支付的金额，余额会转为coco币存入您的帐户</string>
+    <string name="cc_pay_card_deno_sms">（支持联通，电信，移动三种话费卡支付）</string>
+    <string name="cc_card_submit"><b>提 交</b></string>
+    <string name="cc_pay_card_text">您选择了{0}元充值卡，本次消费{1}元。</string>
+    <string name="cc_pay_num">卡  号</string>
+    <string name="cc_pay_pwd">密  码</string>
+    <string name="cc_pay_payfail">支付失败</string>
+    <string name="cc_pay_close">关    闭</string>
+    <string name="cc_pay_card_error">该充值卡没有能支付这个金额的种类</string>
+</resources>

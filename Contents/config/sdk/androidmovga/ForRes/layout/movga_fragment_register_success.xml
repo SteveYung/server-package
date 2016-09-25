@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/movga_stage_background"
+    android:minWidth="@dimen/movga_dialog_min_width"
+    android:orientation="vertical"
+    android:padding="@dimen/movga_layout_value_16"
+    tools:context=".OriginalLoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movga_layout_value_16"
+            android:text="@string/movga_register_success_hint"
+            android:textColor="#000000"
+            android:textSize="@dimen/movga_text_size_snormal" />
+
+        <TextView
+            android:id="@+id/registersuccess_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movga_layout_value_8"
+            android:textColor="#000000"
+            android:textSize="@dimen/movga_text_size_normal" />
+         <TextView
+             android:id="@+id/movga_register_bind_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movga_layout_value_16"
+            android:text="@string/movga_register_bound_hint"
+            android:textColor="#000000"
+            android:textSize="@dimen/movga_text_size_snormal" />
+
+        <Button
+            android:id="@+id/registersuccess_loginnow_btn"
+            style="@style/movga_common_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movga_layout_value_16"
+            android:text="@string/movga_login_text" />
+    </LinearLayout>
+
+</LinearLayout>

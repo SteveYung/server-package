@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sdk_page_width"
+    android:layout_height="@dimen/sdk_page_height"
+    android:background="@drawable/m4399_rec_page_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_title_height"
+        layout="@layout/m4399_rec_sec_confirm_title" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/m4399_rec_sec_gameinfo_body" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/single_btn_marginBottom"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sdk_sum_btns_eara_height"
+            android:layout_marginBottom="@dimen/sdk_paddingBottom"
+            android:layout_marginTop="@dimen/sdk_paddingTop"
+            android:layout_marginLeft="@dimen/sdk_paddingLeft"
+        	android:layout_marginRight="@dimen/sdk_paddingLeft"
+            layout="@layout/m4399_rec_sec_single_btn_area" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/m4399_rec_sec_foot_comfirmation_info" />
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="94"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <ImageView
+                android:id="@+id/demo_myback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_myback" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:background="@drawable/shape_choice"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10" />
+
+                <Button
+                    android:id="@+id/gogame"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"
+                    android:background="@drawable/selector_button_other"
+                    android:text="進入遊戲"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5" />
+
+                <Button
+                    android:id="@+id/chooseband"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"
+                    android:background="@drawable/selector_button_other"
+                    android:text="綁定帳號"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+				<View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8" />
+                <TextView
+                    android:id="@+id/hintband"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="15"
+                    android:gravity="center_horizontal"
+                    android:text="你正在使用試玩帳號進入遊戲，\n為了帳號安全，建議你綁定正式帳號。"
+                    android:textSize="10sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="37" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+</LinearLayout>

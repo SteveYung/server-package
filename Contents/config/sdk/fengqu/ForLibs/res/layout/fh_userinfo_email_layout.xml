@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="416dp"
+    android:background="@color/fh_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fh_userinfo_top_view" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/fh_space_line_color" />
+
+    <RadioGroup
+        android:id="@+id/fh_pay_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <RadioButton
+            android:id="@+id/fh_email_unread_btn"
+            style="@style/fh_emailRadioButtonGreen"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/fh_email_unread_str" />
+
+        <RadioButton
+            android:id="@+id/fh_email_read_btn"
+            style="@style/fh_emailRadioButtonGreen"
+            android:layout_weight="1"
+            android:text="@string/fh_email_read_str" />
+    </RadioGroup>
+
+    <LinearLayout style="@style/fh_userinfo_center_line_top_style" />
+
+    <com.feihuo.gamesdk.api.view.FhEmailDetailView
+        android:id="@+id/fh_email_read_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.feihuo.gamesdk.api.view.FhEmailDetailView
+        android:id="@+id/fh_email_unread_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

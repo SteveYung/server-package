@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/package_name"
+        android:hint="请输入包名"/>
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_name"
+        android:hint="请输入启动项完整路径"/>
+    
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="启动"
+        android:id="@+id/start_app"/>
+</LinearLayout>

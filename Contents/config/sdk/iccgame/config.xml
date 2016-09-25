@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId = "100017">
+
+  <paramLs>
+    <param name="backup" required="1" desc="预留" showName="预留" bUserOffer="1" bWriteIntoClient="0"/>
+  </paramLs>
+
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="icc"/>
+    <operate step="2" name="copy" from="ForAssets" to="assets" desc="icc"/>
+    <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+
+  <pluginLs>
+    <plugin name = "UserIccgame" typePlugin = "0" desc = "user"/>
+    <plugin name = "IAPOnlineIccgame" typePlugin = "2" desc = "iap"/>
+  </pluginLs>
+
+</config>

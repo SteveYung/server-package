@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- For Ftnn Sdk -->
+    <string name="sdk_cancel">取消</string>
+    <string name="sdk_loading_page">加载中，请稍候 </string>
+    
+    <string name="sdk_no_network">网络异常,不能正常访问服务器</string>
+    <string name="sdk_login_success">登录成功</string>
+    <string name="sdk_login_failed_unable_access_oauth2">不能取得认证</string>
+    <string name="sdk_login_failed_user_cancelled">用户取消登录</string>
+    <string name="sdk_login_failed_error_known">由于知原因导致登录失败</string> 
+    <string name="sdk_logout_success">登出成功</string>
+    <string name="sdk_logout_failed_error_unknown">由于未知原因导致登出失败，请检查网络或者是否已经登录成功</string>
+    
+    <string name="sdk_found_version">检查到新版本</string>
+    <string name="sdk_update_now">立即更新</string>
+    <string name="sdk_do_not_prompt">不再提示</string>
+    <string name="sdk_download_apk">正在下载APK</string>
+    <string name="sdk_update_success">更新成功</string>
+    <string name="sdk_update_result_no_update">无更新内容</string>
+    <string name="sdk_update_result_user_canclled">用户取消更新</string>
+    <string name="sdk_update_result_update_now">立即更新</string>
+    <string name="sdk_update_result_download_success">下载APK成功</string>
+    <string name="sdk_update_result_check_error">由于未知原因导致检查版本失败</string>
+    <string name="sdk_update_result_download_error">由于未知原因导致下载失败</string>
+    
+    <string name="sdk_pay_success">充值成功</string>
+    <string name="pay_failed_init_error">初始化充值中心失败</string>
+    <string name="pay_failed_fetch_token">不能正确获取充值令牌，请检查账号是否在登录中</string>
+    <string name="pay_failed_illegal_je">输入金额超过最大允许值(%s), 请重新输入</string>
+    <string name="sdk_pay_failed_error_unknown">由于未知原因导致充值失败，请检查网络和是否已经登录成功</string>
+    <string name="sdk_pay_failed_user_cancelled">用户取消充值流程</string>
+    
+    <string name="sdk_unknown_circumstance">未知情况</string>
+    <!--string name=""></string>
+    <string name=""></string>
+    <string name=""></string-->
+</resources>

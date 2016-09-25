@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"   
+   >
+
+    <RelativeLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"       
+        android:gravity="center"    	
+    	android:background="#55000000"
+        >
+        <ImageView 
+            android:id="@+id/lunqi_new_loadingview_rootlayout"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"  
+        	        
+            />
+ 		<ProgressBar
+ 		    android:layout_centerInParent="true"
+     		android:id="@+id/lunqi_new_loadingview_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lunqi_new_loadingview_progressbar"
+            android:layout_centerHorizontal="true"
+            android:text="loading..." />
+
+       
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <paramLs>
+        <param name="dw_appid" required="1" showName="appid" desc="dw_appid 都玩分配的 应用id" bWriteIntoManifest="1" 
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="dw_channelid" required="1" showName="channelid" desc="dw_channelid 都玩分配的 渠道id" bWriteIntoManifest="1"
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="Orientation" required="1" showName="Orientation" desc="界面方向" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1">
+            <option value="landscape"/>
+            <option value="portrait"/>
+        </param>
+        <param name="DuwanDebug" required="1" showName="setDebug" desc="测试模式" bWritenIntoManifest="1"
+                bUserOffer="1" bWriteIntoClient="1">
+            <option value="ture"/>
+            <option value="false"/>
+        </param>
+        <param name="dw_coop" required="1" showName="coop" desc="dw_ coop 合作模式" bWriteIntoManifest="1"
+               bUserOffer="1" bWriteIntoClient="1"/>
+    </paramLs>    
+
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="appduwan"/>
+        <operate step="2" name="copy" from="ForRes" to="res" desc="appduwan"/>
+        <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    
+    <pluginLs>
+        <plugin name="UserDuwan" typePlugin="0" desc="都玩用户插件"/>
+        <plugin name="IAPOnlineDuwan" typePlugin="2" desc="都玩支付插件"/>
+    </pluginLs>
+    <version code = "1014" showVersion = "1.0" >
+        <![CDATA[
+        <br/>
+    ]]>
+    </version>
+</config>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_ali_de_bd_activity_credit_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:fillViewport="true"
+    android:scrollY="0px"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#36a6ab" />
+
+        <ListView
+            android:id="@+id/id_ali_de_bd_activity_credit_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffefa"
+            android:divider="@color/ali_de_bd_color_transparent"
+            android:dividerHeight="16dp"
+            android:listSelector="@color/ali_de_bd_color_transparent"
+            android:paddingBottom="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp" >
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bababd" />
+
+        <TextView
+            android:id="@+id/id_ali_de_bd_activity_credit_hint"
+            style="@style/ali_de_bd_style_credit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ali_de_bd_dimen_credit_margin"
+            android:layout_marginRight="@dimen/ali_de_bd_dimen_credit_margin"
+            android:layout_marginTop="32dp"
+            android:clickable="false"
+            android:lineSpacingExtra="10dp" />
+
+        <LinearLayout
+            android:id="@+id/id_ali_de_bd_activity_credit_protocal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ali_de_bd_dimen_credit_margin"
+            android:layout_marginRight="@dimen/ali_de_bd_dimen_credit_margin"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/id_ali_de_bd_activity_credit_protocal_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/ali_de_bd_credit_checkbox_selector" />
+
+            <TextView
+                android:id="@+id/id_ali_de_bd_activity_credit_protocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/ali_de_bd_color_black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ali_de_bd_dimen_btn_heigth"
+            android:layout_marginLeft="@dimen/ali_de_bd_dimen_credit_margin"
+            android:layout_marginRight="@dimen/ali_de_bd_dimen_credit_margin"
+            android:layout_marginTop="33dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/id_ali_de_bd_question_negative_btn"
+                style="@style/ali_de_bd_style_btn"
+                android:background="@drawable/ali_de_bd_negative_btn_selector"
+                android:text="@string/ali_de_bd_string_credit_charge" />
+
+            <Button
+                android:id="@+id/id_ali_de_bd_question_positive_btn"
+                style="@style/ali_de_bd_style_btn"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ali_de_bd_negative_btn_selector"
+                android:text="@string/ali_de_bd_string_credit_agree_credit" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

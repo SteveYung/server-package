@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/sdk_user_detail_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_set_item_bg"
+    android:padding="@dimen/margin_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sdk_icon_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@id/sdk_detail_icon"
+            android:layout_width="@dimen/passport_icon_width"
+            android:layout_height="@dimen/passport_icon_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/user_default_icon"
+            android:contentDescription="@string/content_description" />
+
+        <TextView
+            android:id="@id/sdk_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/sdk_detail_icon"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/color_network_error_text"
+            android:textSize="@dimen/content_generic_xsmall_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/passport_icon_height"
+        android:layout_alignTop="@id/sdk_icon_container"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:layout_toRightOf="@id/sdk_icon_container" >
+
+        <RelativeLayout
+            android:id="@id/sdk_nick_input_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/sdk_btn_save_nick"
+            android:background="@drawable/sdk_input_bg_blue"
+            android:paddingBottom="4dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/sdk_btn_clear_nick" >
+
+                <EditText
+                    android:id="@id/sdk_tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_horizontal"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:maxWidth="130dip"
+                    android:textSize="@dimen/sdk_set_nick_font"
+                    android:focusable="false" />
+
+                <ImageView
+                    android:id="@id/sdk_btn_edit_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/sdk_tv_nickname"
+                    android:layout_marginLeft="@dimen/margin_horizontal"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_toRightOf="@id/sdk_tv_nickname"
+                    android:contentDescription="@string/content_description"
+                    android:src="@drawable/sdk_nick_edit"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@id/sdk_btn_clear_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margin_horizontal"
+                android:layout_marginRight="@dimen/margin_small"
+                android:contentDescription="@string/content_description"
+                android:padding="@dimen/margin_small"
+                android:src="@drawable/sdk_nick_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/sdk_btn_save_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_horizontal"
+            android:background="@drawable/sdk_input_bg_blue"
+            android:paddingBottom="4dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/sdk_save"
+            android:textColor="@color/color_bottom_divider"
+            android:textSize="@dimen/common_generic_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

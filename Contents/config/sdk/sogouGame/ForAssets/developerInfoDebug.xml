@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+	  <developer>
+	  			<channel 
+	  					IAPSogouGame_notify_url="http://pay.anysdk.com/v5/SouGouPayNotice/SouGouPayNotice/" 
+	  					gid="1016"
+	  					gameName="开炮吧坦克"
+	  					appKey="8ad6e54b2f760682136a28d4ab7ed7d83cf8f687ba774f8a3cf6df5ba579e1cd"
+	  					developMode="false"
+	  					currency="钻石包"   
+	  					rate="1"
+	  					amountEditable="false"
+	  					oauthLoginServer="http://devsdk.raysns.com/qubing/rsdk/rayapi/index.php/rsdklogin" 
+	  					order_url="http://pay.anysdk.com/v5/Order/getOrderId/" 
+	  					privateKey="356A23EF8517556A83F6BB598D089311" 
+	  					SougouGame_Version="2.0.4_1.4.27" 
+	  					
+	  					r_big_app_id="devsdk"
+	  					r_sub_app_id="subappid" 
+	  					sogouGame_r_nofify_url="http://mytest/v5/Order/nofityurl/" 
+	  					sogouGame_r_order_url="http://devsdk.raysns.com/qubing/rsdk-base-server/src/pay/create_order/devsdk/androidsogou/v1" 
+	  					sogouGame_r_sdk_platform="androidsogou" 
+	  					sogouGame_r_login_rsdkserver_version="v1" 
+	  					
+	  					/>
+	  </developer>

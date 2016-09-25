@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/efunfun_bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/eff_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/efunfun_layout_bg_s" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/efunfun_title_layout" />
+
+        <TextView
+            android:id="@+id/eff_cs_case_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/eff_cs_case_text"
+            android:textColor="@color/eff_blue"
+            android:textSize="24sp" />
+
+        <com.efunfun.efunfunplatformbasesdk.ui.EfunfunXExpandableListView
+            android:id="@+id/eff_cs_case_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/eff_cs_case_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:childDivider="@android:color/transparent"
+            android:divider="@drawable/eff_cs_line"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" >
+        </com.efunfun.efunfunplatformbasesdk.ui.EfunfunXExpandableListView>
+
+        <TextView
+            android:id="@+id/eff_cs_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/eff_cs_question_null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

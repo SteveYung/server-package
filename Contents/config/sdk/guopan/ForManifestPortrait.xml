@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifestConfig xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <permissionCfg>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />x
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.GET_TASKS" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.READ_CONTACTS" />
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.webkit.permission.PLUGIN" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.RECEIVE_SMS" />
+        <uses-permission android:name="android.permission.READ_SMS" />
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <uses-permission android:name="android.permission.RECORD_VIDEO" />
+        <uses-permission android:name="android.hardware.camera.autofocus" />
+        <uses-feature android:name="android.hardware.camera" />
+    </permissionCfg>
+    
+    <applicationCfg keyword="com.wandoujia.mariosdk.plugin.apk.activity.MarioAccountActivity" >
+        
+        <activity
+        android:name="com.alipay.sdk.app.H5PayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind" />
+        <activity
+        android:name="com.alipay.sdk.auth.AuthActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind" />
+        <activity
+        android:name="com.flamingo.sdk.ui.GPMainActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        
+        <service android:name="com.flamingo.sdk.floatview.api.PluginServiceProxy"></service>
+        
+        <activity
+            android:name="com.flamingo.sdk.floatview.api.PluginActivityProxy"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></activity>
+        <!-- 根据⾃自⼰己的需要设置⻚页⾯面的⽅方向 -->
+        
+        
+        <!-- 连连支付的activity -->
+        <activity
+        android:name="com.yintong.secure.activity.BaseActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="adjustResize" />
+        <!-- 连连支付的service -->
+        <service
+        android:name="com.yintong.secure.service.PayService"
+        android:exported="false" />
+        <!-- 易联支付  插件入口界面 -->
+        <activity
+        android:name="com.payeco.android.plugin.PayecoPluginLoadingActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+        
+        <!-- 插件拍照界面 -->
+        <activity
+        android:name="com.payeco.android.plugin.PayecoCameraActivity"
+        android:screenOrientation="portrait" />
+        
+        <!-- 插件录像界面 -->
+        <activity
+        android:name="com.payeco.android.plugin.PayecoVedioActivity"
+        android:process="com.payeco.android.plugin.vedio"
+        android:screenOrientation="landscape" />
+        
+        <!-- 百度插件部分 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"></action>
+            </intent-filter>
+        </service>
+        
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+        android:name="com.baidu.lbsapi.API_KEY"
+        android:value="DhNxS47YIr3CNdocGoAcy1ts" />
+        
+        <!-- PP支付 -->
+        <activity
+            android:name="cn.merchant.pppaypalm.Merchant_PPPaymentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name="cn.paypalm.pppayment.WaitingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name="cn.paypalm.pppayment.PPPayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        
+        <service android:name="cn.paypalm.service.SafeService" />
+        
+        <receiver android:name="cn.paypalm.receiver.SafeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <!-- PP支付end -->
+        <!-- 现在支付 start -->
+        <activity
+            android:name="com.ipaynow.plugin.activity.PayMethodActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoDisplay"></activity>
+        <!-- 现在支付 end -->
+    </applicationCfg>
+    
+</manifestConfig>

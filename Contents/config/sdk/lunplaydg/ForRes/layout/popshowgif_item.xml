@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/giftbeground"  >
+         <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+             <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="分享禮包"
+            android:textColor="@color/mol_black"
+            android:textSize="@dimen/activity_horizontal_margin" />
+         </LinearLayout>
+          <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+              <TextView
+            android:id="@+id/tv_prizeInfo"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:text="領取說明"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/mol_item_text2" />
+          </LinearLayout>
+           <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+               
+        <Button
+            android:id="@+id/btn_getGift"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_button_other"
+            android:padding="5dp"
+            android:text="領取"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/tv_desc"
+             android:layout_weight="40"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_getGift"
+            android:layout_centerHorizontal="true"
+            android:text="使用說明"
+             android:textColor="#FF0000"
+            android:textSize="@dimen/mol_item_text2" />
+        <Button
+            android:id="@+id/btn_fbshare"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+             android:layout_weight="5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_flogin"
+            android:padding="5dp"
+            android:text="分享"
+          
+            android:textColor="#FFFFFF" />
+           </LinearLayout>
+
+   
+
+   
+    </LinearLayout>
+
+
+
+</LinearLayout>

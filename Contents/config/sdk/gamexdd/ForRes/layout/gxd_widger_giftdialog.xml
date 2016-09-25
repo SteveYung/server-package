@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x700"
+    android:layout_height="@dimen/x280"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x166"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恭喜您!成功兌換禮包"
+            android:textColor="@color/gamexdd_e04a32"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/x30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="序號:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCDKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="59000IA06VSEFUGFH"
+                android:textColor="@color/gamexdd_0066CC"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x94"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_weight="1"
+            android:background="@drawable/gxd_btn_blue_selector"
+            android:text="關閉窗口"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnLookBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x94"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:background="@drawable/gxd_btn_red_selector"
+            android:text="查看我的存號箱"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_widger_giftdialog.xml -->

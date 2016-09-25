@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:background="@color/kkk_white"
+    
+     >
+
+    <ImageView
+        android:id="@+id/kkk_gift_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/kkk_icon_packs" />
+
+    <Button
+        android:id="@+id/kkk_gift_recive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center"
+        android:textColor="@color/kkk_account_gift_recive"
+        android:background="@drawable/kkk_account_recive"
+        android:text="@string/kkk_account_recive" />
+
+    <TextView
+        android:id="@+id/kkk_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kkk_gift_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/kkk_gift_icon"
+        android:text=""
+        android:textColor="@color/kkk_accout_gift_name"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/kkk_gift_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kkk_gift_icon"
+        android:layout_alignLeft="@+id/kkk_gift_name"
+        android:text="@string/kkk_account_gift_name"
+        android:textColor="@color/kkk_accout_text"
+       	android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/kkk_gift_date_detial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kkk_gift_date"
+        android:layout_toRightOf="@+id/kkk_gift_date"
+        android:text=""
+        android:textColor="@color/kkk_accout_text"
+       	android:textSize="14sp" />
+
+</RelativeLayout>

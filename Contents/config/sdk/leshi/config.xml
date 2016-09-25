@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="600012">
+  <paramLs>
+    <param
+        name="lepay_appid"
+        required="1"
+        showName="Lepay_appid"
+        desc="lepay_appid,初始化参数"
+        bWriteIntoManifest="1"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+        
+    <param
+        name="lepay_appkey"
+        required="1"
+        showName="Lepay_appkey"
+        desc="lepay_appkey,初始化参数"
+        bWriteIntoManifest="1"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+  </paramLs>
+  
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc=""/>
+    <operate step="2" name="copy" from="ForRes" to="res" desc=""/>
+    <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="UserLeshi" typePlugin="0" desc=""/>
+    <plugin name="IAPOnlineLeshi" typePlugin="2" desc=""/>
+  </pluginLs>
+  <version code = "1006" showVersion = "2.0.6_3.2.0" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[2015年6月12日 更新至3.2.0]]>
+    </version>
+</config>

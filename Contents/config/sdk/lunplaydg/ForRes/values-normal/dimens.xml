@@ -1,0 +1,27 @@
+<resources>
+
+    <dimen name="my_img">30dp</dimen>
+    <dimen name="my_img_bg">60dp</dimen>
+    
+    <dimen name="my_button_h">45dp</dimen>
+    <dimen name="my_button_w">106dp</dimen>
+    
+    <dimen name="my_padding">10dp</dimen>
+    <dimen name="my_txtsize">20sp</dimen>
+    
+    <dimen name="my_title_button_h">25dp</dimen>
+    <dimen name="my_title_button_w">41dp</dimen>
+    
+    <dimen name="an1_check_button_w">200dp</dimen>
+    <dimen name="an1_check_button_h">122dp</dimen>
+    
+    <dimen name="my_title_button_w_kf">75dp</dimen>
+    <dimen name="my_title_button_h_kf">25dp</dimen>
+    
+    <dimen name="an1_lcard_top">30dp</dimen>
+    <dimen name="an1_lcard_side">10dp</dimen>
+    <dimen name="an1_lcard_buttonh">20dp</dimen>
+    
+    
+    
+</resources>

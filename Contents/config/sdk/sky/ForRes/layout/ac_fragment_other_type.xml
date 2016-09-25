@@ -1,0 +1,49 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/window_width"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_background"
+        android:paddingBottom="@dimen/bottom_offset" >
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/ac_title" />
+
+        <TextView
+            android:id="@+id/text_tips_1"
+            style="@style/text_other_type_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="@dimen/content_left"
+            android:layout_marginTop="@dimen/content_top"
+            android:text="@string/other_type_tips_1" />
+
+        <TextView
+            android:id="@+id/text_tips_2"
+            style="@style/text_other_type_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_tips_1"
+            android:layout_marginLeft="@dimen/content_left"
+            android:layout_marginTop="@dimen/content_top"
+            android:text="@string/other_type_tips_2" />
+
+        <ImageView
+            android:contentDescription="@string/default_welcome"
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_tips_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/content_left"
+            android:layout_marginTop="@dimen/content_top"
+            android:src="@drawable/ac_icon_sns" />
+    </RelativeLayout>
+
+</ScrollView>

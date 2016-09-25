@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config pluginId="13">
+    <paramLs>
+        <param name="AnzhiAppKey" required="1" showName="AppKey" desc="应用的唯一标示,用于标示应用" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="AnzhiAppSecret" required="1" showName="AppSecret" desc="应用私钥" bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="AnzhiGameName" required="1" showName="GameName" desc="游戏名" bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="callback" required="1" desc="支付结果通知" showName="支付通知地址" bUserOffer="1" bWriteIntoClient="0"/>
+    </paramLs>
+    
+    <operateLs>
+        <operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "anzhi"/>
+        <operate step = "2" name = "copy" from = "ForLibs" to = "lib" desc = "anzhi"/>
+        <operate step = "3" name = "copy" from = "ForAssets" to = "assets" desc = "anzhi"/>
+        <operate step = "4" name = "copy" from = "ForRes" to = "res" desc = "anzhi"/>
+        <operate step = "5" name = "script" desc=""/>
+        <operate step = "6" name = "mergeR" desc = "合并R文件，此步骤需在res目录合并完后才执行" />
+    </operateLs>
+    
+    <pluginLs>
+        <plugin name="UserAnZhi" typePlugin="0" desc="安智用户插件 "/>
+        <plugin name="IAPOnlineAnZhi" typePlugin="2" desc="安智支付插件"/>
+    </pluginLs>
+
+    <version code = "1013" showVersion = "2.1.3_3.2" >
+        <requestVersion minClientVer="2.0" minFrameworkVer="2.0"/>
+        <![CDATA[更新框架2.0]]>
+    </version>
+</config>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/yyg_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dip" >
+
+            <com.yy.gamesdk.view.EditTextDel
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/yyg_edit_top"
+                android:hint="@string/yyg_hedit_uname"
+                android:inputType="text|textEmailAddress"
+                android:paddingLeft="4dip"
+                android:textSize="21sp" />
+
+            <com.yy.gamesdk.view.EditTextDel
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_below="@id/username"
+                android:background="@drawable/yyg_edit_bottom"
+                android:hint="@string/yyg_input_password"
+                android:inputType="textPassword"
+                android:paddingLeft="4dip"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/loginbtn"
+                style="@style/yyg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_below="@id/password"
+                android:layout_marginTop="24dip"
+                android:text="@string/yyg_login"
+                android:textSize="21sp" />
+
+            <CheckBox
+                android:id="@+id/savepwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/loginbtn"
+                android:layout_marginTop="14dip"
+                android:button="@drawable/yyg_check_selector"
+                android:checked="true"
+                android:paddingRight="12dip"
+                android:text="@string/yyg_save_password"
+                android:textColor="@color/yyg_clr_lightblue"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/loginbtn"
+                android:layout_below="@id/loginbtn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/guest_retrieve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:padding="12dip"
+                    android:text="@string/yyg_forget_guest"
+                    android:textColor="@color/yyg_clr_lightblue"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:background="@drawable/yyg_vline_gray" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/retrieve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:padding="12dip"
+                    android:text="@string/yyg_forget_password"
+                    android:textColor="@color/yyg_clr_lightblue"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

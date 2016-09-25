@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="100118">
+  <paramLs>
+  	   <param
+            name="adbrix_logevent_flag"
+            bUserOffer="1"
+            bWriteIntoManifest="0"
+            bWriteIntoClient="1"
+            desc="adbrix_logevent_flag"
+            required="1"
+            showName="adbrix_logevent_flag" >
+            <option value="true" />
+            <option value="false" />
+        </param>
+        <param
+            name="adbrixIsOpenPush"
+            bUserOffer="1"
+            bWriteIntoManifest="0"
+            bWriteIntoClient="1"
+            desc="adbrixIsOpenPush"
+            required="1"
+            showName="adbrixIsOpenPush" >
+            <option value="true" />
+            <option value="false" />
+        </param>
+        <param
+            name="igaworks_app_key"
+            bUserOffer="1"
+            bWriteIntoManifest="1"
+            bWriteIntoClient="1"
+            desc="igaworks_app_key"
+            required="1"
+            showName="igaworks_app_key" />
+
+        <param
+            name="igaworks_hash_key"
+            bUserOffer="1"
+            bWriteIntoManifest="1"
+            bWriteIntoClient="1"
+            desc="igaworks_hash_key"
+            required="1"
+            showName="igaworks_hash_key" />
+
+        <param
+            name="adbrixLoginPopkey"
+            bUserOffer="1"
+            bWriteIntoManifest="0"
+            bWriteIntoClient="1"
+            desc="弹窗通知key，包涵多个时使用逗号分割，如：abcd,qsdw,ffpe"
+            required="1"
+            showName="adbrixLoginPopkey" />
+  </paramLs>
+  
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc=""/>
+    <operate step="2" name="script" desc=""/>
+    <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+  	<plugin name="AnalyticsAdbrix" desc="adbrix" typePlugin="5" />
+  </pluginLs>
+  <version code = "1006" showVersion = "2.0.6_2.5.0" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[2015年8月18日 更新至2.5.0]]>
+  </version>
+</config>

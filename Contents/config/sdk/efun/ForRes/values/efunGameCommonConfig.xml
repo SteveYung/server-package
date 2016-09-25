@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 登入首选地址 -->
+    <string name="efunLoginPreferredUrl">http://login.efuntw.com/</string>
+    <!-- 登入备用地址 -->
+    <string name="efunLoginSpareUrl">http://logintw.efunsea.com/</string>
+    <!-- 第三方（目前只有伊凡达）登入首选地址 -->
+    <string name="efunPlatformLoginPreferredUrl">http://ptlogin.efuntw.com/</string>
+    <!-- 第三方（目前只有伊凡达）登入备用地址 -->
+    <string name="efunPlatformLoginSpareUrl">http://ptlogintw.efunsea.com/</string>
+    <!-- 广告首选地址 -->
+    <string name="efunAdsPreferredUrl">http://ad.efuntw.com/</string>
+    <!-- 广告备用地址 -->
+    <string name="efunAdsSpareUrl">http://adtw.efunsea.com/</string>
+    <!-- 储值获取首选地址 -->
+    <string name="efunPayPreferredUrl">http://pay.efuntw.com/</string>
+    <!-- 储值备用地址 -->
+    <string name="efunPaySpareUrl">http://paytw.efunsea.com/</string>
+    <!-- fb社交功能首选地址 -->
+    <string name="efunFbPreferredUrl">http://fb.efuntw.com/</string>
+    <!-- fb社交功能备用地址 -->
+    <string name="efunFbSpareUrl">http://fbtw.efunsea.com/</string>
+    <!-- 推送首选地址 -->
+    <string name="efunGamePreferredDomainUrl">http://game.efuntw.com/</string>
+    <!-- 推送备用地址 -->
+    <string name="efunGameSpareDomainUrl">http://gametw.efunsea.com/</string>
+    <!-- 动态域名首选地址、系统公告 -->
+    <string name="efunDynamicPreUrl">http://sdk.download.efuntw.com/</string>
+    <!-- 动态域名备用地址 -->
+    <string name="efunDynamicSpaUrl">http://sdk.downloadtw.efunsea.com/</string>
+    <!-- 动态域名首选地址 -->
+    <string name="efundownloadPreferredUr">http://sdk.download.efuntw.com/</string>
+    <!-- 动态域名备用地址 -->
+    <string name="efundownloadSpareUrl">http://sdk.downloadtw.efunsea.com/</string>
+    <!-- 客服域名-->
+	<string name="efunServiceUrl">http://pf.efuntw.com/</string>
+	<!-- 获取手机号区域用 -->
+	<string name="efunPlatformPreferredUrl">http://pf.efuntw.com/</string>
+	
+    
+    <!-- google分析接入广告的类类名 -->
+    <string name="efunGAListenerName">com.efun.tc.ads.GAAdvert</string>
+    <!-- S2S接入广告的类类名 -->
+    <string name="efunS2SListenerName">com.efun.tc.ads.S2SAdvert</string>
+    <!-- 登录监听的类类名 -->
+    <string name="efunLoginListenerName">com.efun.tc.dao.SdkListener</string>
+    <!-- 语言种类 -->
+    <string name="efunLanguage">zh_HK</string>
+    <!-- 地区前缀 -->
+    <string name="efunPrefixName"></string>
+    <!-- 谷歌储值错误提示 -->
+    <string name="efunGoogleServerError">訪問服務器超時，請稍候再試</string>
+    <string name="efunGoogleBuyFailError">儲值失敗</string>
+    <string name="efunGoogleStoreError">您所在的地區不支持google錢包</string>
+
+</resources>

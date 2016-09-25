@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="600014">
+    <paramLs>
+        <param name="CH_AppID" required="1" showName="CH_AppID" desc="CH_AppID" bWriteIntoManifest="1" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="CH_AppKey" required="1" showName="CH_AppKey" desc="CH_AppKey" bWriteIntoManifest="1" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="coin_name" required="1" desc="货币的名称（金币 、钻石）" showName="coin_name" bUserOffer="1"  bWriteIntoManifest="0" bWriteIntoClient="1"/>
+    </paramLs>
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="caohua"/>
+        <operate step="2" name="copy" from="ForAssets" to="assets" desc="caohua"/>        
+        <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    <pluginLs>
+        <plugin name="IAPOnlineCaohua" typePlugin="2" desc=" 草花支付插件"/>
+        <plugin name="UserCaohua" typePlugin="0" desc="草花用户插件"/>
+    </pluginLs>
+</config>

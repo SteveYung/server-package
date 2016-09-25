@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="416dp"
+    android:background="@color/fh_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fh_userinfo_top_view" />
+
+   <View style="@style/fh_userinfo_center_line_top_style" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/fh_margin_left"
+            android:layout_marginRight="@dimen/fh_margin_right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/fh_feedback_check_type_str"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/fh_feedback_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/fh_feedback_type_feedback_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fh_feedback_btn_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/fh_feedback_type_feedback_str"
+                    android:textColor="@color/fh_feedback_btn_color"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/fh_feedback_type_bug_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fh_feedback_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/fh_feedback_type_bug_str"
+                    android:textColor="@color/fh_feedback_btn_color"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/fh_feedback_type_other_checkbox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/fh_feedback_btn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/fh_feedback_type_other_str"
+                    android:textColor="@color/fh_feedback_btn_color"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+
+                <EditText
+                    android:id="@+id/fh_feedback_content_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fh_feedback_edit_bg"
+                    android:gravity="top"
+                    android:hint="@string/fh_feedback_content_hint_str"
+                    android:padding="10dp"
+                    android:textColor="@color/fh_gray_33"
+                    android:textColorHint="#bbbaba"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fh_feedback_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fh_botton_button_height"
+                android:layout_marginTop="@dimen/fh_botton_button_margin_top"
+                android:background="@drawable/fh_login_btn_selector"
+                android:text="@string/fh_feedback_submit"
+                android:textColor="@color/fh_white"
+                android:textSize="@dimen/fh_botton_button_textsize" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

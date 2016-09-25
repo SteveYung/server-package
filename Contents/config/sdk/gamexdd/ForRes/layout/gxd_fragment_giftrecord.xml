@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="#eeeeee"
+              android:orientation="vertical">
+
+    <com.gamexdd.sdk.widget.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x110"
+        android:background="@color/gamexdd_0066CC">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="我的禮券"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvGiftDot"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textColor="@color/gamexdd_0066CC"
+            />
+
+    </RelativeLayout>
+
+    <com.gamexdd.sdk.library.widget.ProgressLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gamexdd.sdk.library.widget.listview.LGListView
+            android:id="@+id/lgListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0px"
+            android:orientation="vertical">
+
+        </com.gamexdd.sdk.library.widget.listview.LGListView>
+    </com.gamexdd.sdk.library.widget.ProgressLayout>
+</LinearLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_fragment_giftrecord.xml -->

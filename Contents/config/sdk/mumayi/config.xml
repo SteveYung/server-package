@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<paramLs>
+		<param name = "MuMaYiAppKey" required = "1" desc = "应用key" showName = "AppKey" bWriteIntoManifest = "0" bUserOffer = "1"/>
+		<param name = "MuMaYiGameName" required = "1" desc = "应用名称" showName = "GameName" bWriteIntoManifest = "0" bUserOffer = "1"/>
+		<param name = "callback" required = "1" desc = "mumayi" showName = "支付通知地址" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "0"/>
+	</paramLs>
+	
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "mumayi"/>
+		<operate step = "2" name = "copy" from = "ForAssets" to = "assets" desc = "mumayi"/>
+		<operate step = "3" name = "copy" from = "ForLibs" to = "lib" desc = "mumayi"/>
+		<operate step = "4" name = "copy" from = "ForRes" to = "res" desc = "mumayi"/>
+		<operate step = "5" name = "mergeR" desc = "mumayi(合并R文件，此步骤需在res目录合并完后才执行)" />
+	</operateLs>
+	
+	<pluginLs>
+		<plugin name = "UserMuMaYi" typePlugin = "0" desc = "mumayi"/>
+		<plugin name = "IAPOnlineMuMaYi" typePlugin = "2" desc = "mumayi"/>
+	</pluginLs>
+</config>

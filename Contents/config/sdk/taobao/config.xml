@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <paramLs>
+        <param name="TaobaoAppId" required="1" showName="AppId" desc="appId" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="TaobaoAppSecret" required="1" showName="AppSecret" desc="AppSecret" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="TaobaoOption" required="0" showName="option" desc="标识位目前用于天猫积分专场" bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="GameMainActivity" required="1" showName="游戏主Activity" desc="游戏主Activity的包名加类名" bWriteIntoManifest="0" bUserOffer="1"  bWriteIntoClient="1" placeholderText="com.example.GameMainActivity"/>
+        <param name="callback" required="1" showName="支付通知地址" desc="" bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="0"/>
+
+    </paramLs>
+    <operateLs>
+        <operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "taobao"/>
+        <operate step = "2" name = "copy" from = "ForLibs" to = "lib" desc = "taobao"/>
+        <operate step = "3" name = "copy" from = "ForRes" to = "res" desc = "taobao"/>
+        <operate step = "4" name = "script"  desc = "taobao"/>
+        <operate step = "5" name = "mergeR" desc = "sky(合并R文件，此步骤需在res目录合并完后才执行)"/>
+    </operateLs>
+    <pluginLs>
+        <plugin name="UserTaobao" typePlugin="0" desc="智乐用户插件"/>
+        <plugin name="IAPOnlineTaobao" typePlugin="2" desc="智乐支付插件"/>
+    </pluginLs>
+</config>

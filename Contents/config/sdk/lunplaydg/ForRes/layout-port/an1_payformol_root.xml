@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#dfe0e2" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="20"
+            android:background="@drawable/lunqi_mytitlebg_newv"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <ImageView
+                android:id="@+id/an1_mytitlebut"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_top_back" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/an1_mypayonetitle"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/pay_main"
+                android:textColor="#88ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <ImageView
+                android:id="@+id/lunqi_maititle_blvalue"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="35"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_top_bl" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="5" />
+
+            <ImageView
+                android:id="@+id/lunqi_titleservice"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="35"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_top_kf" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="5" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="170"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="5" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="190"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        layout="@layout/an1_molpay_item"
+                        android:gravity="center" />
+                </LinearLayout>             
+				<View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="2" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/shape_line1" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:background="#88000000" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/shape_line2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="2" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="165"
+                    android:gravity="left" >
+
+                    <GridView
+                        android:id="@+id/an1_gridview"
+                        android:layout_width="432px"
+                        android:layout_height="fill_parent"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:numColumns="2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="5" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/lunqi_loadView_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/an1_ddt_loadview"
+        android:visibility="gone" />
+
+</RelativeLayout>

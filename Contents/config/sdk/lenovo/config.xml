@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config pluginId="11">
+	<paramLs>
+		<param name = "LenovoAppKey" required = "1" desc = "应用key" showName = "AppKey" bWriteIntoManifest = "0" bWriteIntoClient = "1" bUserOffer = "1"/>
+        <param name = "lenovo.open.appid" required = "1" desc = "应用id" showName = "openAppId" bWriteIntoManifest = "1" bWriteIntoClient = "1" bUserOffer = "1" />
+        <param name = "LenovoProductNumber" required = "1" desc = "商品编码" showName = "productNumber" bWriteIntoManifest = "0" bWriteIntoClient = "1" bUserOffer = "1" />
+		<param name = "Orientation" required = "1" desc = "屏幕方向" showName = "Orientation" bWriteIntoManifest = "0" bUserOffer = "1" >
+			<option value = "landscape"/>
+			<option value = "portrait"/>
+		</param>
+		<param name = "callback" required = "1" desc = "cp方的游戏服务器支付通知地址" showName = "支付通知地址" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "0"/>
+	</paramLs>
+	
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "lenovo"/>
+		<operate step = "2" name = "copy" from = "ForRes" to = "res" desc = "lenovo"/>
+		<operate step = "3" name = "script" desc = "修改AndroidManifest.xml中的WelcomeActivity和PsLoginActivity"/>
+		<operate step = "4" name = "mergeR" desc = "合并R文件，此步骤需在res目录合并完后才执行" />
+	</operateLs>
+	
+	<pluginLs>
+		<plugin name = "UserLenovo" typePlugin = "0" desc = "联想用户插件"/>
+		<plugin name = "IAPOnlineLenovo" typePlugin = "2" desc = "联想支付插件"/>
+	</pluginLs>
+	<version code = "1011" showVersion = "2.1.1_2.3.2.2" minClientVer="1.5" minFrameworkVer="1.5">
+          <![CDATA[更新至2.3.2.2版本]]>
+    </version>
+</config>

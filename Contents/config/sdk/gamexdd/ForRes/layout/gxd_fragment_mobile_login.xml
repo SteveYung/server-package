@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/gamexdd_bg_color"
+              android:orientation="vertical"
+    >
+
+
+    <com.gamexdd.sdk.widget.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/x720"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x94"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/gxd_input_border"
+            android:paddingLeft="@dimen/x20"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手機號:"
+                android:textColor="@color/gamexdd_default_color"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="請輸入手機號碼"
+                android:numeric="integer"
+                android:textColor="@color/gamexdd_default_color"
+                android:textColorHint="@color/gamexdd_default_hint"
+                android:textSize="14sp"
+                />
+
+            <Button
+                android:id="@+id/btnObtianVerCode"
+                android:layout_width="@dimen/x140"
+                android:layout_height="match_parent"
+                android:background="@drawable/gxd_btn_vercode_bg"
+                android:gravity="center"
+                android:padding="@dimen/x10"
+                android:text="獲取驗證碼"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x90"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/gxd_input_border"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="驗證碼:"
+                android:textColor="@color/gamexdd_default_color"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/etVerCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="請輸入你收到的驗證碼"
+                android:textColor="@color/gamexdd_default_color"
+                android:textColorHint="@color/gamexdd_default_hint"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x75"
+            >
+
+            <Button
+                android:id="@+id/btnAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="用戶協議"
+                android:textColor="#e04a32"
+                android:textSize="14sp"
+
+                />
+
+            <CheckBox
+                android:id="@+id/cbConfrimAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_toLeftOf="@+id/btnAgreement"
+                android:button="@drawable/gxd_checkbox_selector"
+                android:checked="true"
+                android:paddingLeft="@dimen/x8"
+                android:text="同意"
+                android:textColor="@color/gamexdd_default_color"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x90"
+            android:background="@drawable/gxd_btn_blue_selector"
+            android:text="驗證並登錄"
+            android:textColor="#FFFFFF"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/x40"
+            android:background="#cccccc"
+            />
+
+        <Button
+            android:id="@+id/btnAccountRegister"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x74"
+            android:background="@null"
+            android:drawableRight="@drawable/gxd_icon_right"
+            android:gravity="center_vertical"
+            android:text="您也可以選擇帳號註冊"
+            android:textColor="@color/gamexdd_default_color"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/x40"
+            android:background="#cccccc"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_fragment_mobile_login.xml -->

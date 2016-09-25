@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- title颜色 -->
+    <color name="pop18_title_bk">#f2f2f2</color> 
+    <!-- 白色 -->
+    <color name="pop18_white"> #ffffff</color> 
+    <!-- 黑色 -->
+    <color name="pop18_black">#000000</color> 
+    <!-- 游戏简要说明中文字颜色 -->
+    <color name="pop18_game_sample_info_text">#999999</color> 
+    <!-- 软件提示的字体颜色 -->
+    <color name="pop18_game_info_message">#1d89fc</color> 
+    <!-- 详情页中选择条的底色 -->
+    <color name="pop18_game_select_line">#a3a5a9</color> 
+    <!-- 列表选中时样式 -->
+    <color name="pop18_transparent">#D9D9D9</color>
+    <!-- 评论信息文字颜色 -->
+    <color name="pop18_player_message_create_date">#666</color>
+    <!-- drop down list header font color -->
+    <color name="pop18_drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="pop18_drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="pop18_drop_down_list_footer_font_color">#000000</color>
+    <!-- 删除按钮点击状态 -->
+ 	<color name="pop18_delete_button_press">#cccccc</color>
+     <!-- 底部颜色值 -->
+     <color name="pop18_tab_bg_color"> #f1f1f1</color>
+     <!-- 底部选中颜色值 -->
+     <color name="pop18_tab_points_text"> #007DFB</color>
+     <!-- 底部未选中颜色值 -->
+     <color name="pop18_tab_normal_text"> #666666</color>
+     
+     <color name="pop18_tab_normal_remote_control_text">#999999</color>
+     
+     <color name="pop18_tab_text_point_color">#007CFF</color>
+    
+      <color name="pop18_top_bar_bg_color">#EFEFEF</color>
+      <color name="pop18_person_center_text">#666666</color>
+      <!-- 浅蓝色字体 -->
+      <color name="pop18_bule">#1d89fc</color>
+      <color name="pop18_person_center_text_press">#999999</color>
+      <color name="pop18_person_feedback">#333333</color>
+      
+      <!-- 搜索结果中的 -->
+      <color name="pop18_game_yellow">#f39800</color>
+      <color name="pop18_vadio_bule">#1d89fc</color>
+      <color name="pop18_news_red">#e72a26</color>
+</resources>

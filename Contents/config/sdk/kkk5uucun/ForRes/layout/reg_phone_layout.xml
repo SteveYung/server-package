@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="320dp"
+    android:background="@drawable/sdk_trans_bg"
+    android:minWidth="240dp"
+    android:paddingLeft="@dimen/sdk_fast_reg_margin_h_dimen"
+    android:paddingRight="@dimen/sdk_fast_reg_margin_h_dimen"
+    android:layout_gravity="center" >
+
+    <!--
+     android:drawableLeft="@drawable/tip_drawable"
+        android:drawablePadding="5.0dip"
+    -->
+
+    <TextView
+        android:id="@id/tv_register_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/sdk_fast_reg_margin_v_dimen"
+        android:layout_marginLeft="@dimen/sdk_fast_reg_margin_h_dimen"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_dimen"
+        android:textColor="@color/color_warn_text"
+        android:textSize="@dimen/sdk_tip_size"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <com.uucun.android.passport.layout.InputCommonLayout
+        android:id="@id/common_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_layout_height"
+        android:layout_below="@id/tv_register_tip"
+        android:background="@drawable/sdk_input_bg_gray" >
+
+        <!--
+                         android:drawableLeft="@drawable/sdk_user"
+            android:drawablePadding="@dimen/sdk_input_drawable_margin"
+        -->
+
+        <TextView
+            android:id="@id/sdk_tv_passport_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/sdk_passport_tip"
+            android:textColor="@color/color_tip_text"
+            android:textSize="@dimen/sdk_tip_size"
+            android:layout_marginLeft="@dimen/sdk_text_margin" >
+        </TextView>
+
+        <EditText
+            android:id="@id/sdk_et_input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/sdk_btn_clear"
+            android:layout_toRightOf="@id/sdk_tv_passport_tip"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/color_input_text"
+            android:textSize="@dimen/input_generic_size"
+            android:focusable="false"
+            android:text="@string/sdk_phone_reg_hint" >
+        </EditText>
+
+        <ImageView
+            android:id="@id/sdk_btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/sdk_clear_code"
+            android:visibility="invisible" />
+    </com.uucun.android.passport.layout.InputCommonLayout>
+
+    <com.uucun.android.passport.layout.InputPassportLayout
+        android:id="@id/passport_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_layout_height"
+        android:layout_below="@id/common_input_layout"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_max_dimen"
+        android:background="@drawable/sdk_input_bg_gray" >
+
+        <!--
+             android:drawableLeft="@drawable/sdk_code"
+            android:drawablePadding="@dimen/sdk_input_drawable_margin"
+        -->
+
+        <TextView
+            android:id="@id/sdk_tv_code_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/sdk_code_tip"
+            android:textColor="@color/color_tip_text"
+            android:textSize="@dimen/sdk_tip_size"
+            android:layout_marginLeft="@dimen/sdk_text_margin" >
+        </TextView>
+
+        <EditText
+            android:id="@id/sdk_et_pass_input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/sdk_btn_pass_clear"
+            android:layout_toRightOf="@id/sdk_tv_code_tip"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/sdk_reg_code_hint"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:textColor="@color/color_input_text"
+            android:textColorHint="@color/color_hint_text"
+            android:textSize="@dimen/input_generic_size" />
+
+        <ImageView
+            android:id="@id/sdk_btn_pass_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/margin_min"
+            android:layout_toLeftOf="@id/sdk_btn_pass_show"
+            android:contentDescription="@string/content_description"
+            android:scaleType="center"
+            android:src="@drawable/sdk_clear_code"
+            android:visibility="invisible" />
+
+        <ToggleButton
+            android:id="@id/sdk_btn_pass_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sdk_toggle_button_selector"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="@dimen/toggle_text_size"
+            android:visibility="invisible" />
+    </com.uucun.android.passport.layout.InputPassportLayout>
+
+    <Button
+        android:id="@id/sdk_btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_button_height"
+        android:layout_below="@id/passport_input_layout"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_max_dimen"
+        android:background="@drawable/sdk_btn_blue_selector"
+        android:text="@string/sdk_register"
+        android:textColor="@color/color_button_text"
+        android:textSize="@dimen/button_generic_size"
+        android:enabled="false" />
+    
+    <TextView
+        android:id="@id/sdk_uu_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sdk_btn_register"
+        android:text="@string/sdk_agreement" 
+        android:textSize="@dimen/sdk_tip_size"
+        android:textColor="@color/color_blue_text"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_dimen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdk_btn_register"
+        android:layout_toLeftOf="@id/sdk_uu_agreement"
+        android:text="@string/sdk_agreement_tip"
+        android:textColor="@color/color_tip_text"
+        android:textSize="@dimen/sdk_tip_size"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_dimen" />
+    <Button
+        android:id="@id/sdk_btn_fast_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_button_height"
+        android:layout_below="@id/sdk_uu_agreement"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_max_dimen"
+        android:background="@drawable/sdk_btn_blue_line_selector"
+        android:text="@string/sdk_fast_register"
+        android:textColor="@color/color_button_text"
+        android:textSize="@dimen/button_small_size" />
+
+    <TextView
+        android:id="@id/sdk_tv_other_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdk_btn_fast_reg"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_max_dimen"
+        android:text="@string/sdk_other_account"
+        android:textSize="@dimen/sdk_tip_size"
+        android:textColor="@color/color_tip_gray" />
+
+    <ImageView
+        android:id="@+id/sdk_btn_other_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdk_tv_other_account"
+        android:contentDescription="@string/content_description"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_h_dimen"
+        android:background="@drawable/btn_logo"/>
+
+</RelativeLayout>

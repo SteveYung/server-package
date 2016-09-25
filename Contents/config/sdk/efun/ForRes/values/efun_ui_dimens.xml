@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 控件几何形状- 描边宽度 -->
+    <dimen name="efun_ui_shape_input_width">2px</dimen>
+    <!-- 控件几何形状- 描边宽度 -->
+    <dimen name="efun_twui_shape_stroke_width">2px</dimen>
+    <!-- 圆角大小  登录注册板块 -->
+    <dimen name="efun_ui_round">5dp</dimen>
+    <!-- 圆角大小 按钮 -->
+    <dimen name="efun_ui_round_button">10dp</dimen>
+    <!-- 按钮的字符大小 -->
+    <dimen name="efun_ui_button_textsize_large">7sp</dimen>
+    <!-- 按钮的字符大小 -->
+    <dimen name="efun_ui_button_textsize_middle">7sp</dimen>
+    <!-- 按钮的字符大小 -->
+    <dimen name="efun_ui_button_textsize_small">6sp</dimen>
+
+</resources>

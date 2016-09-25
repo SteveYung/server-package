@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical"
+    >
+
+    <com.gamexdd.sdk.widget.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.gamexdd.sdk.widget.gridview.GridViewWithHeaderAndFooter
+        android:id="@+id/gxdGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/x248"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        >
+
+    </com.gamexdd.sdk.widget.gridview.GridViewWithHeaderAndFooter>
+
+
+</LinearLayout><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_fragment_invite.xml -->

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="100dp"   
+    android:background="#88ffffff" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/an1_pop_progressBar1"        
+       	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal" 
+    	style="?android:attr/progressBarStyleLarge"   
+    	android:indeterminateDrawable="@drawable/bg_myprogressbar"   	        
+        android:layout_margin="10dp" />
+    
+     <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textColor="#000000"
+    	android:text="@string/an1_dialog_loadword"	/>
+
+  
+
+   
+
+</LinearLayout>
+<!-- 
+        style="?android:attr/progressBarStyleHorizontal" 
+        
+          <ProgressBar
+        android:id="@+id/an1_pop_progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+       	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"   
+        android:max="100"  
+        android:minWidth="180dp"  
+        android:minHeight="20dp" 
+        android:layout_margin="10dp" />
+
+    
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textColor="#000000"
+    	android:text="缓冲中,请耐心等待"	/>
+        
+        -->

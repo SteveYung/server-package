@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fh_white"
+   >
+
+    <ListView
+        android:id="@+id/fh_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:dividerHeight="0.5dp"
+        android:divider="#dfdfdf"
+        android:smoothScrollbar="true" 
+        />
+
+    <com.feihuo.gamesdk.api.view.FhProgressView
+        android:id="@+id/fh_progress_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" />
+
+</FrameLayout>

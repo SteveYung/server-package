@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+            
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="#2894FF" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFFFF"
+            android:text="禮包列表"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/an1_mytitlebut"
+            android:layout_width="@dimen/my_title_button_w"
+            android:layout_height="@dimen/my_title_button_h"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/bg_top_back" />
+    </RelativeLayout>
+     <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+       <LinearLayout
+            android:id="@+id/myRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/giftbegroundtop"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="2dp"
+                android:background="#C9C9C9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="進化吧！小精靈"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bt_invit_friends"
+                   
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/selector_flogin"
+                    android:text="邀請好友"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textviewId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:text="新手禮包: "
+                            android:textColor="#000000"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp"
+                            android:text="    掃蕩卷*50、鑽石*100、金幣*10萬"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/btn_newkard"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.8" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#C9C9C9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textviewId12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="FB分享禮包: "
+                            android:textColor="#000000"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="    掃蕩卷*100、鑽石*188、金幣*20萬"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button12"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="8"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_weight="6"
+                                    android:text="完成【分享】後即可領取"
+                                    android:textColor="#FF3300"
+                                    android:textSize="18dp" />
+
+                                <Button
+                                    android:id="@+id/bt_share"
+                                   
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:background="@drawable/selector_flogin"
+                                    android:text="分  享"
+                                    android:textColor="#FFFFFF" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/textviewId217"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="遊戲專屬禮包"
+                            android:textColor="#000000"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="    鑽石*500、金幣*1888888、體力藥效*5"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button1217"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="0.8"
+                                android:text="登錄遊戲就能領取喔~"
+                                android:textColor="#FF3300"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#C9C9C9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textviewId21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="等級禮包（5級）"
+                            android:textColor="#000000"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="    體力漢堡*2、大經驗果實*15、金幣*10萬"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button121"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="0.8"
+                                android:text="角色達到5級即可領取"
+                                android:textColor="#FF3300"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#C9C9C9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="等級禮包（10級）"
+                            android:textColor="#000000"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:id="@+id/textviewId212"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="    1階戰神之力*2、1階白銀聖劍*2、1階魔魂水晶*2"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button1212"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="0.8"
+                                android:text="角色達到10級即可領取"
+                                android:textColor="#FF3300"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#C9C9C9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textviewId01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="等級禮包（20級）"
+                            android:textColor="#000000"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="    培養豆*30、歷練卡*3、超級經驗果實*10"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button1"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="0.8"
+                                android:text="角色達到20級即可領取"
+                                android:textColor="#FF3300"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#C9C9C9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textviewId11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="等級禮包（32級）"
+                            android:textColor="#000000"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="    優良玉片*8、死神魂晶*15、培養豆*50"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button111"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.8"
+                                android:text="角色達到32級即可領取"
+                                android:textColor="#FF3300"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#C9C9C9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="等級禮包（45級）"
+                            android:textColor="#000000"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:id="@+id/textviewId110"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="    寵物金剛*1、榮譽卡*3、聲望卡*3"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button1110"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="0.8"
+                                android:text="角色達到45級即可領取"
+                                android:textColor="#FF3300"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#C9C9C9" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textviewId115"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="等級禮包（50級）"
+                            android:textColor="#000000"
+                            android:textSize="22dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="    3星火龍（SS）*1"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button1115"
+                               
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/selector_button_other"
+                                android:text="領  取"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="0.8"
+                                android:text="角色達到50級即可領取"
+                                android:textColor="#FF3300"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#C9C9C9" />
+                </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+                </ScrollView>
+
+</LinearLayout>

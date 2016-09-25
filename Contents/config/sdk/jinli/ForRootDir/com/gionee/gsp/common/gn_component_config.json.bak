@@ -1,0 +1,61 @@
+<!-- http://update.gionee.com/synth/open/checkUpgrade.do?product=com.gionee.account&version=0&rom=4.0.2 -->
+<!-- http://update.gionee.com/synth/open/checkUpgrade.do?product=com.gionee.pay&version=0&rom=4.0.2 -->
+
+参数说明:
+           product:产品标识key  ,必传
+           version：应用软件的内部版本号，必传
+           rom:手机rom版本 
+           model:手机机型
+		   platform:平台
+           patch:是否支持差分包升级标识，当值为false或不传此参数，则只支持请求全包升级,当值为true,则支持请求差分升级
+           md5:客户端apk的md5值；只有在patch是true时，才生效，必传
+           diffVer:请求差分的编号；只有在patch是true时，才生效，必传
+		   test：是否选择测试（已提交和测试通过）的版本信息标识，当不传或为false，则只请求正式发布的版本信息
+
+		   
+[
+    {
+        "id":1,
+        "name":"--支持多种账号登录",
+        "packageName":"com.gionee.account",
+        "path":"gionee/GN_Account.apk",
+        "product":"com.gionee.account",
+        "currentVersion":"2.0.2.c",
+        "minVersion":"0",
+        "rom":"4.0.3",
+        "model":"",
+        "platform":"",
+        "md5":"",
+        "test":false
+    }
+    ,
+    {
+        "id":2,
+        "name":"--支持多种充值方式",
+        "packageName":"com.gionee.pay",
+        "path":"gionee/Amigo_Play.apk",
+        "product":"com.gionee.pay",
+        "currentVersion":"2.6.2.d",
+        "minVersion":"0",
+        "rom":"4.0.0",
+        "model":"",
+        "platform":"",
+        "md5":"",
+        "test":false
+    }
+    ,
+    {
+        "id":3,
+        "name":"--支持管理会员信息",
+        "packageName":"com.gionee.gnservice",
+        "path":"gionee/GN_Service.apk",
+        "product":"com.gionee.gnservice",
+        "currentVersion":"1.6.0.c",
+        "minVersion":"0",
+        "rom":"4.0.3",
+        "model":"",
+        "platform":"",
+        "md5":"",
+        "test":false
+    }
+]

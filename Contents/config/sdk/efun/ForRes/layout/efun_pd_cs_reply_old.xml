@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/e_size_25"
+        android:layout_marginTop="@dimen/e_size_30"
+        android:text="@string/cs_reply_old_title"
+        android:textColor="@color/e_383838"
+        android:textSize="@dimen/e_text_size_48" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_3"
+        android:layout_marginLeft="@dimen/e_size_138"
+        android:layout_marginRight="@dimen/e_size_138"
+        android:background="@color/e_d9d9d9" />
+    
+     <com.efuntw.platform.support.widget.PagingListView
+        android:id="@+id/paging_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:paddingTop="@dimen/e_size_30"
+        android:paddingLeft="@dimen/e_size_40"
+        android:paddingRight="@dimen/e_size_130"
+        android:paddingBottom="@dimen/e_size_60"
+        android:divider="@null"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </com.efuntw.platform.support.widget.PagingListView>
+
+</LinearLayout>

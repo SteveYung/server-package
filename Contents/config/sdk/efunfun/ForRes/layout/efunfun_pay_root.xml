@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/eff_layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/efunfun_layout_bg_s"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/efunfun_title_layout" />
+
+        <TextView
+            android:id="@+id/eff_pay_index_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/eff_pay_index_title"
+            android:textColor="@color/eff_blue"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:id="@+id/eff_pay_role_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/eff_pay_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/eff_pay_role_text"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/eff_pay_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/eff_pay_server_text"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eff_pay_google"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/eff_google_play_item_blue"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/eff_google_play_item_blue"
+                android:layout_weight="1"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/eff_google_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/eff_google_play" />
+
+            <TextView
+                android:id="@+id/eff_google_text"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/eff_pay_google"
+                android:textColor="#FFFFFF"
+                 android:layout_weight="1"
+                android:textSize="25sp" />
+            
+            
+        </LinearLayout>
+        
+        <ListView
+                android:id="@+id/eff_pay_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="3dp" >
+            </ListView>
+
+        <RelativeLayout
+            android:id="@+id/eff_pay_list_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" >
+
+            <ProgressBar
+                android:id="@+id/eff_paylist_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config pluginId="6">
+    <paramLs>
+        <param
+            name="UCCpID"
+            required="1"
+            showName="cpId"
+            desc="游戏合作厂商标识"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="UCGameID"
+            required="1"
+            showName="gameId"
+            desc="游戏标识"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="UCGameTag"
+            required="1"
+            showName="是否是新游戏"
+            desc="2014年12月25号之后的是新游戏"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="old"/>
+            <option value="new"/>
+         </param>
+        
+        <param
+            name="UCApiKey"
+            required="1"
+            showName="apiKey"
+            desc="签名密钥"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="0"/>
+            
+        <param
+            name="UCLogLevel"
+            required="1"
+            showName="UCLogLevel"
+            desc="日志水平"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="WARN"/>
+            <option value="DEBUG"/>
+            <option value="ERROR"/>
+        </param>
+        
+        <param
+            name="UCDebugMode"
+            required="1"
+            showName="DebugMode"
+            desc="是否为测试模式"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="false"/>
+            <option value="true"/>
+        </param>
+        
+        <param
+            name="UCRechargeHistory"
+            required="1"
+            showName="充值历史查询"
+            desc="是否支持充值历史查询"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="supportable"/>
+            <option value="unsupported"/>
+        </param>
+        
+        <param
+            name="UCSwitchAccount"
+            required="1"
+            showName="账号切换"
+            desc="是否支持切换账号"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="supportable"/>
+            <option value="unsupported"/>
+        </param>
+        
+        <param
+            name="UCLoginUI"
+            required="1"
+            showName="登录界面"
+            desc="登录界面分为简洁和标准"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="简版登录界面"/>
+            <option value="标准登录界面"/>
+        </param>
+        
+         <param
+             name="UCSeverId"
+             required="1"
+             showName="服务器编号"
+             desc="由UC分配的服务器（分区）编号，如果还未进入分区，可以传0"
+             bWriteIntoManifest="0"
+             bUserOffer="1"
+             bWriteIntoClient="1"
+             placeholderText="服务器（分区）编号"/>
+         
+        <param
+            name="UCOrientation"
+            required="1"
+            showName="Orientation"
+            desc="界面方向"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="landscape"/>
+            <option value="portrait"/>
+        </param>
+    </paramLs>
+
+    <operateLs>
+        <operate step="1" name="modifyManifest" desc="uc" from="ForManifest.xml" to="AndroidManifest.xml" />
+        <operate step="2" name="copy" desc="uc" from="ForAssets" to="assets" />
+    </operateLs>
+
+    <pluginLs>
+        <plugin name="IAPOnlineUC" desc="UC支付插件" typePlugin="2" />
+        <plugin name="UserUC" desc="UC用户插件" typePlugin="0" />
+    </pluginLs>
+
+    <version
+        code="1015"
+        minClientVer="1.5"
+        minFrameworkVer="1.5"
+        showVersion="2.1.5_3.5.3.1" >
+<![CDATA[2015年3月3日 更新版本至3.5.3.1]]>
+    </version>
+
+</config>

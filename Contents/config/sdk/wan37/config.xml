@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <paramLs>
+        <param name="WAN37APPID" required="1" showName="APPID" desc="应用id" bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="WAN37APPKEY" required="1" showName="APPKEY" desc="应用密钥" bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="1"/>
+        <param name="callback" required="1" desc="anysdk支付结果通知" showName="支付通知地址" bUserOffer="1" bWriteIntoClient="0"/>
+    </paramLs>
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="wan37"/>
+        <operate step="2" name="copy" from="ForAssets" to="assets" desc="wan37"/>
+        <operate step="3" name="copy" from="ForLibs" to="lib" desc="wan37"/>
+        <operate step="4" name="copy" from="ForRes" to="res" desc="wan37"/>
+        <operate step="5" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    <pluginLs>
+        <plugin name="IAPOnlineWan37" typePlugin="2" desc="37玩支付插件"/>
+        <plugin name="UserWan37" typePlugin="0" desc="37玩用户插件"/>
+    </pluginLs>
+</config>

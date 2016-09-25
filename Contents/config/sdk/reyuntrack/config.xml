@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config pluginId="100120">
+    <paramLs>
+        <param
+            name="com.reyunchannel.KEY"
+            bUserOffer="1"
+            bWriteIntoClient="1"
+            bWriteIntoManifest="1"
+            desc="热云appkey"
+            required="1"
+            showName="com.reyunchannel.KEY" />
+        <param
+            name="com.reyunchannel.CKEY"
+            bUserOffer="1"
+            bWriteIntoManifest="1"
+            bWriteIntoClient="1"
+            desc="渠道标识，可选"
+            required="1"
+            showName="com.reyunchannel.CKEY" />
+
+    </paramLs>
+    
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc=""/>
+        <operate step="2" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    <pluginLs>
+        <plugin name="AnalyticsReyuntrack" desc="AnalyticsReyuntrack" typePlugin="5" />
+    </pluginLs>
+    <version code = "1006" showVersion = "2.0.6_2.5.0" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[2015年8月18日 更新至2.5.0]]>
+    </version>
+</config>

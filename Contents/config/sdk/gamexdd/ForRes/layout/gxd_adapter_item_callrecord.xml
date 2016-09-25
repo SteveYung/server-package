@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x134"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/tvGameName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x46"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/gamexdd_default_color"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/x20"/>
+
+    <TextView
+        android:id="@+id/tvRecoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x46"
+        android:layout_toRightOf="@+id/tvGameName"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_toLeftOf="@+id/llState"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/gamexdd_default_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvRecoreTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRecoreTitle"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:textColor="@color/gamexdd_default_hint"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/llState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x60"
+            android:background="@color/gamexdd_btn_green_normal"
+            android:gravity="center"
+            android:text="狀態:"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvRecoreState"
+            android:layout_width="@dimen/x110"
+            android:layout_height="@dimen/x60"
+            android:background="@drawable/gxd_input_border"
+            android:gravity="center"
+            android:text="處理中"
+            android:textColor="@color/gamexdd_e04a32" />
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_adapter_item_callrecord.xml -->

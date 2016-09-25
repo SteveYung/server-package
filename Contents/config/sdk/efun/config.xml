@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="000095">
+  <paramLs>
+    <param
+        name="efunChannelType"
+        required="1"
+        showName="efunChannelType"
+        desc="efun_google表示google版,efun_efun表示第三方版"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="efun_google"/>
+        <option value="efun_efun"/>
+    </param>
+    <param
+        name="efunPayKey"
+        required="0"
+        showName="efunPayKey"
+        placeholderText="efun支付key"
+        desc="支付验签使用"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+        
+    <param
+        name="efunAppKey"
+        required="0"
+        showName="efunAppKey"
+        placeholderText="efunAppkey"
+        desc="登录验签使用"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+        
+  </paramLs>
+  
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="efun"/>
+    <operate step="2" name="copy" from="ForRes" to="res" desc="efun"/>
+    <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="UserEfun" typePlugin="0" desc="efun用户插件"/>
+    <plugin name="IAPOnlineEfun" typePlugin="2" desc="efun支付插件"/>
+    <plugin name="ShareEfunFacebook" typePlugin="4" desc="分享插件"/>
+    <plugin name="SocialEfunFacebook" typePlugin="3" desc="社交插件"/>
+  </pluginLs>
+  <version code = "1006" showVersion = "2.0.6_6.12" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[6月12日发行的sdk]]>
+    </version>
+</config>

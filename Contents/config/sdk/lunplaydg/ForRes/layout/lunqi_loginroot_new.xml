@@ -1,0 +1,356 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >   	   
+   <RelativeLayout 
+	        android:id="@+id/lunqi360_layout_pop_root"
+	        android:layout_width="700px"
+    		android:layout_height="420px"
+    		android:layout_centerInParent="true"
+	        >
+	   <LinearLayout 	   
+	    	android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"  
+    		android:orientation="horizontal"> 
+       <View 
+	    	android:layout_width="0px"
+    		android:layout_height="fill_parent"  
+    		android:layout_weight="27"
+	    	/>
+	   <LinearLayout 	   
+	    	android:layout_width="0px"
+    		android:layout_height="fill_parent"  
+    		android:layout_weight="645"
+    		android:orientation="vertical"    	
+	    	>
+	    	<LinearLayout 
+        	 	android:layout_width="fill_parent"
+    		 	android:layout_height="0px"
+    		 	android:layout_weight="155"
+    		 	android:gravity="center"
+    		 	>
+    		 	<ImageView
+    		    	android:layout_width="wrap_content"
+	       			android:layout_height="fill_parent"
+	       			android:src="@drawable/an1_ddt_mm_bg7"
+	       			android:scaleType="centerInside"
+	       			android:adjustViewBounds="true"
+	       			android:background="@null"
+	       			/>
+	    		</LinearLayout >
+	    		<!--  -->
+	    		<View 
+	    		   	android:layout_width="fill_parent"
+    		 		android:layout_height="0px"
+    		 		android:layout_weight="11"
+	    		    />
+	    		 <LinearLayout 
+    		    	android:layout_width="fill_parent"
+    		 		android:layout_height="0px"
+    		 		android:layout_weight="54"
+    		 		android:orientation="horizontal" 
+    		    	 >
+	    		<RelativeLayout 
+    		     	android:layout_width="fill_parent"
+    		 	 	android:layout_height="fill_parent"
+    		 	 	>    		     
+    		 
+    		 	<LinearLayout 
+    		    	android:layout_width="fill_parent"
+    		 		android:layout_height="fill_parent"    		 	
+    		 		android:orientation="horizontal" >
+    		      		<View 
+    		    			android:layout_width="0px"
+    		 				android:layout_height="fill_parent"
+    		 				android:layout_weight="177"
+    		     			/>    		         
+    		         	<ImageView 
+    		             	android:id="@+id/lpchange_login_zhback"
+    		             	android:layout_width="0px"
+    		 		     	android:layout_height="fill_parent"
+    		 		     	android:layout_weight="290"
+    		             	android:src="@drawable/an1_lp_mm_bg1"
+    		             	android:adjustViewBounds="true"
+    		             	android:scaleType="fitCenter"    		             
+    		             	/>
+    		     		<View 
+    		    			android:layout_width="0px"
+    		 				android:layout_height="fill_parent"
+    		 				android:layout_weight="178"
+    		     			/>
+    		 	</LinearLayout>
+    		  	<LinearLayout 
+    		         android:layout_width="fill_parent"
+    		         android:layout_height="fill_parent"
+    		         android:orientation="horizontal"  
+    		         >
+
+    		  		<View
+    		  		    android:layout_width="0px"
+    		  		    android:layout_height="fill_parent"
+    		  		    android:layout_weight="242" />
+
+    		            	  <EditText 
+    		            	 	  android:id="@+id/an1_lpchange_loginname"
+    		            	      android:layout_width="0px"
+    		 					  android:layout_height="fill_parent"
+    		 					  android:layout_weight="180"
+    		 					  android:gravity="center_vertical"
+    		 					  android:background="@null"
+    		 					  android:singleLine="true"
+    		 					  android:textColor="#ffffff"
+    		 					  android:hint="請輸入賬號"
+    		 					  android:textColorHint="#99ffffff"
+    		 					  android:maxLength="20"    		
+    		            	      />
+    		              	<ImageButton    
+    		              	    android:id="@+id/an1_lpchange_listbut"         
+    		             		android:layout_width="0px"
+    		 					android:layout_height="fill_parent"
+    		 					android:layout_weight="38"
+    		             		android:src="@drawable/an1_ddt_main_popdata"
+    		             		android:adjustViewBounds="true"
+    		             		android:scaleType="fitCenter"
+    		             		android:background="@null"    	
+    		             			             		
+    		             		/>
+    		              	<View 
+    		    				android:layout_width="0px"
+    		 					android:layout_height="fill_parent"
+    		 					android:layout_weight="185"
+    		     			 	/>
+    		             
+    		         </LinearLayout>
+    		 	</RelativeLayout>
+    		 </LinearLayout>
+	    	<!--  -->
+	    	<View 
+        	 	android:layout_width="fill_parent"
+    		 	android:layout_height="0px"
+    		 	android:layout_weight="10"/>
+	    	<!--  -->
+    		 <LinearLayout 
+    		    	android:layout_width="fill_parent"
+    		 		android:layout_height="0px"
+    		 		android:layout_weight="54"
+    		 		android:orientation="horizontal" 
+    		    	 >
+	    		<RelativeLayout 
+    		     	android:layout_width="fill_parent"
+    		 	 	android:layout_height="fill_parent"
+    		 	 	>    		     
+    		 
+    		 	<LinearLayout 
+    		    	android:layout_width="fill_parent"
+    		 		android:layout_height="fill_parent"    		 	
+    		 		android:orientation="horizontal" >
+    		      		<View 
+    		    			android:layout_width="0px"
+    		 				android:layout_height="fill_parent"
+    		 				android:layout_weight="177"
+    		     			/>    		         
+    		         	<ImageView 
+    		             	android:layout_width="0px"
+    		 		     	android:layout_height="fill_parent"
+    		 		     	android:layout_weight="290"
+    		             	android:src="@drawable/an1_lp_mm_bg2"
+    		             	android:adjustViewBounds="true"
+    		             	android:scaleType="fitXY"    		             
+    		             	/>
+    		     		<View 
+    		    			android:layout_width="0px"
+    		 				android:layout_height="fill_parent"
+    		 				android:layout_weight="178"
+    		     			/>
+    		 	</LinearLayout>
+    		  	<LinearLayout 
+    		         android:layout_width="fill_parent"
+    		         android:layout_height="fill_parent"
+    		         android:orientation="horizontal"  
+    		         >
+    		          <View 
+    		    			android:layout_width="0px"
+    		 				android:layout_height="fill_parent"
+    		 				android:layout_weight="242"
+    		     			 />
+    		            	  <EditText 
+    		            	 	  android:id="@+id/an1_lpchange_loginwords"
+    		            	      android:layout_width="0px"
+    		 					  android:layout_height="fill_parent"
+    		 					  android:layout_weight="218"
+    		 					  android:gravity="center_vertical"
+    		 					  android:background="@null"
+    		 					  android:singleLine="true"
+    		 					  android:textColor="#ffffff"
+    		 					  android:hint="請輸入密碼"
+    		 					  android:password="true"
+    		 					  android:textColorHint="#99ffffff"	
+    		 					  android:maxLength="20"    		
+    		            	      />    		              	
+    		              	<View 
+    		    				android:layout_width="0px"
+    		 					android:layout_height="fill_parent"
+    		 					android:layout_weight="185"
+    		     			 	/>
+    		             
+    		         </LinearLayout>
+    		 	</RelativeLayout>
+    		 </LinearLayout>
+    		 <!--  -->
+    		  <View 
+        	 	android:layout_width="fill_parent"
+    		 	android:layout_height="0px"
+    		 	android:layout_weight="10"/>
+    		  <!--  -->
+    		<LinearLayout 
+        	 	android:layout_width="fill_parent"
+    		 	android:layout_height="0px"
+    		 	android:layout_weight="38"
+    		 	android:orientation="horizontal"
+    		 	android:gravity="center"
+    		 	>
+    		 <View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="176"
+    		     />
+    		<CheckBox    
+    			android:id="@+id/an1_ddt_mycheck_sigle"	
+    			style="@style/CustomCheckboxTheme"
+    			android:gravity="center"
+				android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="38"
+				android:checked="true"/>
+    		 <View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="10"
+    		     />
+    		 <ImageView 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="99"
+				android:src="@drawable/an1_ddt_mm_text1"
+    		    android:adjustViewBounds="true"
+    		    android:scaleType="fitCenter"
+    		     />
+    		  <View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="10"
+    		     />
+    		  <ImageButton 
+    		    android:id="@+id/an1_lpchange_regbut"
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="130"
+    		 	android:src="@drawable/an1_ddt_mm_btn2"
+    		 	android:scaleType="fitCenter"
+    		 	android:background="@null"
+    		      />
+    		   <View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="182"
+    		     />
+    		 </LinearLayout>
+
+    		<View
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="0px"
+    		    android:layout_weight="22" />
+
+	    <LinearLayout 
+        	 android:layout_width="fill_parent"
+    		 android:layout_height="0px"
+    		 android:layout_weight="45"
+    		 android:gravity="center"
+    		 android:orientation="horizontal"
+    		 
+    		 >
+    		<LinearLayout 
+    			android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="242"
+    		 	android:gravity="right"
+    		 	android:background="@null"
+    		    >
+    			<ImageView
+    		    	android:id="@+id/an1_lpchange_tryplay"
+    		    	android:layout_width="wrap_content"
+    		 		android:layout_height="fill_parent"    		 		
+					android:src="@drawable/lunqizhijieyouxi1"
+    		    	android:adjustViewBounds="true"
+    		    	android:scaleType="centerInside"
+    		    	android:background="@null"
+    		    	/>
+    			
+    		 </LinearLayout>
+    		 
+    		  <View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="8"
+    		    />
+    		  
+    		  <LinearLayout 
+    			android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="185"
+    		 	android:gravity="center_horizontal"
+    		    >    			
+    			<ImageButton
+    		    	android:id="@+id/an1_lpchange_loginbut"
+    		   	 	android:layout_width="wrap_content"
+    		 		android:layout_height="fill_parent"
+					android:src="@drawable/lpchangeloginbutnew"
+    		    	android:adjustViewBounds="true"
+    		    	android:scaleType="centerInside"
+    		    	android:background="@null"    		    
+    		    	/>
+    		 </LinearLayout>
+    		  
+    		  <View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="8"
+    		    />
+    		  
+    		<LinearLayout 
+    			android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="202"
+    		 	android:gravity="left"
+    		    >	
+    		    
+    			<ImageButton
+    		    	android:id="@+id/an1_lpchange_fbbut"
+    		    	android:layout_width="wrap_content"
+    		 		android:layout_height="fill_parent"
+    		 		android:src="@drawable/lpchangefbbut"
+    		    	android:adjustViewBounds="true"
+    		    	android:scaleType="centerInside"
+    		    	android:background="@null"
+    		  	    />
+    		 </LinearLayout>
+	    </LinearLayout >
+	    <View
+    		android:layout_width="fill_parent"
+    		android:layout_height="0px"
+    		android:layout_weight="21" />
+	    <!--  -->
+	  
+	    	</LinearLayout>
+	  <View 
+	    	android:layout_width="0px"
+    		android:layout_height="fill_parent"  
+    		android:layout_weight="28"
+	    	/>
+	<!--  -->
+	</LinearLayout>
+   		</RelativeLayout>
+
+</RelativeLayout>
+<!-- an1_lp_zhijieyx" lunqizhijieyouxi1-->

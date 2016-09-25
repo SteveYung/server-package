@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_container"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@+id/btn_logo"
+    android:background="@drawable/yyg_round_float_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp" >
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/yyg_zh"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="账号"
+        android:textColor="#333333"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/libao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/yyg_lb"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:text="礼包"
+        android:textColor="#333333"
+        android:textSize="10sp" />
+    
+    <TextView
+        android:id="@+id/huodong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/yyg_hd"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:text="活动"
+        android:textColor="#333333"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/gonglv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/yyg_gl"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:text="攻略"
+        android:textColor="#333333"
+        android:textSize="10sp" />
+    
+        <TextView
+        android:id="@+id/help"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/yyg_bz"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:text="帮助"
+         android:textColor="#333333"
+        android:textSize="10sp" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical" >
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+            <TextView
+        android:id="@+id/tv_role_reply_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLines="4"
+        android:text="juesem"
+       android:textColor="#0080FF"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_comment_reply_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_role_reply_text"
+        android:minLines="1"
+        android:maxLines="20"
+        android:text="这里是作者给的回复"
+        android:textColor="#3C3C3C"
+        android:textSize="14dp" />
+
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_comment_reply_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="10sp"
+        android:text="ggg"
+        android:textColor="@color/mol_black_1"
+        android:textSize="8dp" />
+
+        </RelativeLayout>
+
+</LinearLayout>

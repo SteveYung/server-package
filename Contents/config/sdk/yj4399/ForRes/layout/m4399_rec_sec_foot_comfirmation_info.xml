@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/m4399_rec_mvcenter_foot_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/sdk_paddingLeft"
+    android:paddingRight="@dimen/sdk_paddingRight" >
+
+    <TextView
+        android:id="@+id/extra_info_rowa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="@string/extra_info_rowa" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/extra_info_rowb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/extra_info_rowb"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/sdk_help_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/sdk_btns_hspacing"
+            android:src="@drawable/m4399_rec_sdk_help" />
+
+        <TextView
+            android:id="@+id/extra_info_rowc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="@string/extra_info_rowc" />
+
+        <TextView
+            android:id="@+id/sdk_telephone"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/sdk_color_blue"
+            android:textSize="13sp"
+            android:text="@string/sdk_telphone" />
+        
+         <ImageView
+            android:id="@+id/ftnn_logo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/m4399_rec_sdk_ftnn_logo" />
+
+    </LinearLayout>
+
+</LinearLayout>

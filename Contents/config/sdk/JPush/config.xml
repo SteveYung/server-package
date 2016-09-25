@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<paramLs>
+		<param name = "JPUSH_APPKEY" required = "1" desc = "umengPush" showName = "AppKey" bWriteIntoManifest = "1" bUserOffer = "1"/>
+	</paramLs>
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "极光推送"/>
+		<operate step = "2" name = "copy" from = "ForAssets" to = "assets" desc = "极光推送"/>
+		<operate step = "3" name = "copy" from = "ForLibs" to = "lib" desc = "极光推送"/>
+		<operate step = "4" name = "script" from = "script.py" desc = "修改包名"/>
+	</operateLs>
+	<pluginLs>
+		<plugin name = "PushJ" typePlugin = "6" desc = "极光推送"/>
+	</pluginLs>
+</config>

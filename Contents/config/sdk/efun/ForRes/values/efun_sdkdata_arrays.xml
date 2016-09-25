@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="activity">
+        <!-- UI登陆主页面 -->
+        <item>com.efun.tc.ui.PageContainer</item>
+        <!-- 自动登陆页面 -->
+        <item>com.efun.tc.ui.AutoLoginActivity</item>
+        <!-- FB登陆页面 -->
+        <item>com.efun.tc.ui.FacebookActivity</item>
+        <!-- FB 4.X SDK配置 -->
+        <item>com.facebook.FacebookActivity</item>
+        <!-- FB 3.X SDK配置 -->
+        <!-- <item>com.facebook.LoginActivity</item> -->
+        <!-- 邀请-主页面 -->
+        <item>com.efun.invite.activity.InviteActivity</item>
+        <!-- 邀请-点赞页 -->
+        <item>com.efun.invite.activity.EfunFansActivity</item>
+        <!-- 邀请-功能说明 -->
+        <item>com.efun.invite.activity.InformaActivity</item>
+        <!-- SDK客服页 -->
+        <item>com.efun.tc.service.EfunCustomerService</item>
+        <!-- 统一储值页 -->
+        <item>com.efun.tc.google.EfunWebGoogleActivity</item>
+        <!-- 原生储值页 -->
+        <item>com.efun.tc.google.BillingActivity</item>
+        <!-- 平台 平台个人中心-->
+        <item>com.efuntw.platform.support.person.personFragmentActivity</item>
+        <!-- 平台客服-->
+        <item>com.efuntw.platform.support.cs.csFragmentActivity</item>
+        <!-- 平台咨询与活动 -->
+        <item>com.efuntw.platform.support.summary.summaryFragmentActivity</item>
+    </string-array>
+    <string-array name="receiver">
+        <!-- Appsflyer -->
+        <item>com.appsflyer.MultipleInstallBroadcastReceiver</item>
+        <!-- Efun GA -->
+        <item>com.efun.ads.activity.GABroadcact</item>
+        <!-- Adwords -->
+        <item>com.google.ads.conversiontracking.InstallReceiver</item>
+        <!-- 推送 -->
+        <item>com.efun.push.client.receiver.EfunPushReceiver</item>
+    </string-array>
+    <string-array name="service">
+        <!-- Efun GA -->
+        <item>com.efun.ads.activity.EfunGAService</item>
+        <!-- Efun S2S -->
+        <item>com.efun.ads.activity.EfunAdsS2SService</item>
+        <!-- 推送 -->
+        <item>com.efun.push.client.service.EfunPushService</item>
+        <!-- 储值服务兑换券-->
+        <item>com.efun.googlepay.EfunGooglePayService</item>
+    </string-array>
+    <string-array name="uses_permission">
+        <item>android.permission.INTERNET</item>
+        <item>com.android.vending.BILLING</item>
+        <item>android.permission.WRITE_EXTERNAL_STORAGE</item>
+        <item>android.permission.RECEIVE_BOOT_COMPLETED</item>
+        <item>android.permission.READ_PHONE_STATE</item>
+    </string-array>
+    <string-array name="uses_feature">
+        <item>android.hardware.telephony</item>
+        <item>android.hardware.location</item>
+        <item>android.hardware.microphone</item>
+    </string-array>
+    <string-array name="metadata">
+        <!-- FB配置 -->
+        <item>com.facebook.sdk.ApplicationId</item>
+        <!-- Google Service 配置 -->
+        <item>com.google.android.gms.version</item>
+        <!-- FB 4.X SDK配置 -->
+        <item>com.facebook.sdk.ApplicationName</item>
+    </string-array>
+    <string-array name="provider">
+        <!-- FB 4.X SDK配置 -->
+        <item>com.facebook.FacebookContentProvider</item>
+    </string-array>
+
+</resources>

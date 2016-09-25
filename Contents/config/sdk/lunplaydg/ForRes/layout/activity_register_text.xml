@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" 
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/text_myback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_myback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="會員條款及管理規章"
+            android:textColor="#3A5895"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#3492d0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/agreetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_agree"
+                        android:maxLines="1000"
+                        android:padding="10dp"
+                        android:scrollbars="vertical"
+                        android:singleLine="false"
+                        android:text="
+服務條款\t\n    
+
+為保障您的權益，請詳細閱讀本服務條款所有內容。並同意遵守以下所有服務條款之會員規範。
+\t\n1.(認知與接受條款)
+
+\t\n    當您註冊成為本網站會員後，即可使用本公司所提供之各項會員服務(以下簡稱本服務)，且表示您已閱讀、瞭解並同意接受本服務條款之所有內容。 當會員使用本服務時，即表示除了同意遵守本服務條款外，還同意接受本公司對本網站會員之規範(包括遊戲規則、客服中心內容、公告事項各別服務之規範等) 並遵守相關法律規定。
+\t\n    若您未滿二十歲，除應符合上述規定外，並應於您的家長(法定代理人或監護人)閱讀、瞭解並同意本服務條款之所有內容及其後修改變更後，方得使用或繼續使用本服務。
+\t\n2.(會員服務條款之增訂及修改)
+
+\t\n    本公司保留增訂及修改本會員條款之權利，本條款如有增訂或修改時，本公司將於網站首頁公告修改之事實，對會員不另作個別通知。 如您不同意修訂的內容，請勿繼續使用本服務，如果您於公告後繼續使用本服務，則視為您已接受並同意該修訂條款。
+\t\n3.(服務介紹)
+
+\t\n    本網站所提供的包含遊戲、休閒、社群等各項服務，陸續提供更多其他網路服務供會員使用。接受本服務之會員必須自行配備上網所需之各項電腦設備， 以及負擔「網際網路連線費用」、「電話費用」等之電信相關費用。
+\t\n4.(會員責任與義務)
+
+\t\n    a.您同意於註冊時登錄您本人正確、完整且符合真實之個人資料。您所登錄之資料若事後有所變更時，應隨時於線上更新。當所登錄的個人資料， 或原登錄之資料已不符合真實而未更新，或有任何誤導之嫌，本公司將保留隨時終止您會員資格及使用本服務之權利。
+
+\t\n    b.1.會員不得利用本服務進行任何商業行為。
+
+\t\n    b.2.除了遵守本服務條款外，您同意遵守網際網路國際使用慣例與禮節之相關規定。
+
+\t\n    b.3.會員不得利用本服務傳送、發表涉及辱罵、毀謗、不雅、淫穢、攻擊性之文章或圖片。
+
+\t\n    b.4.會員同意必須充分尊重智慧財產權，禁止發表侵害他人各項智慧財產權或其他權利之文字、圖片或任何形式之檔案。
+
+\t\n    c.1.您暸解當您成為本網站會員後得開始使用本服務，其所有權仍屬本公司所及其所約定之人所有，會員僅得依本服務條款之約定使用， 不得出租、出借、移轉或讓與給其他之三人使用。
+
+\t\n    c.2.會員有義務妥善保管本網站帳號、密碼及其他相關之會員資料，並為此組帳號登入系統後所進行之一切活動、行為責負。
+
+\t\n    c.3.若會員發現帳號或密碼遭人非法使用或有任何異常破壞使用安全之情形時，應立即通知本公司。但若是因您的保管疏忽， 而導致帳號、密碼遭他人非法使用時，本公司將不負責處理。
+\t\n5.(會員儲值責任限制)
+
+\t\n    本網站會員使用本服務付費項目時所使用之儲值點數，您瞭解當點數儲值入本網站或是轉入本服務付費項目後，無法取消、更改、退費或轉入其他本網站裡。 若您使用虛偽不正之方式進行「儲值」，本公司保留隨時終止您會員資格及使用本服務之權利，並將追究相關法律責任。
+\t\n6.(服務之終止與變更)
+
+\t\n    會員若有下列任一情形時，本公司有權隨時終止或變更任一會員帳號之服務，且無需事先通知會員。就終止或更改會員使用本服務 所可能產生之困擾、不便或損害，本服務對任何會員或第三人均不負任何責任。
+
+\t\n    1.會員登錄不實資料進行註冊。
+
+\t\n    2.以本公司或類似本公司名稱使用本服務者。
+
+\t\n    3.使用中文、英文及數字以外之字元及不雅文字作為本服務之名稱。
+
+\t\n    4.冒用他人名義申請本服務之帳號。
+
+\t\n    5.使用虛偽不正之方式進行儲值。
+
+\t\n    6.違反本服務條款時。
+
+\t\n    7.違反公共安全、公共秩序與善良風俗之行為時。
+
+\t\n    8.違反現行法律之行為時。
+\t\n7.(服務暫停或中斷)
+
+\t\n    於下列情形任一情形發生時，本公司有權暫停或中斷本服務之全部或一部，對因此而產生之困擾、不便或損害，本服務對任何會員或第三人均不負任何責任。
+
+\t\n    1.對本服務之相關軟硬體設備與電子通信設備進行維修保養及施工時。
+
+\t\n    2.發生突發性之軟硬體設備與電子通信設備故障時。
+
+\t\n    3.因天災等不可抗力之因素致使本服務無法提供服務時。
+
+\t\n    4.在緊急情況下為維護其他會員或第三人的人身、資料之完整安全。
+
+\t\n    如因使用者違反法令或本服務條款或因不可歸責於本公司之事由而造成本服務之全部或一部暫停或中斷時，暫停或中斷期間之費用仍依正常標準計費。
+\t\n8.(服務變更權利)
+
+\t\n    本公司將保留新增、修改或刪除本服務之全部或一部之權利，且不另行個別通知，會員不得因此而要求任何補償或賠償。
+\t\n9.(責任範圍)
+
+\t\n    本服務依本公司既有之規劃提供對於特定使用者之特殊需求，本公司不擔保本服務將完全符合您的需求。
+
+\t\n    本服務可能因自身、其他協力廠商或相關電信業者網路系統軟硬體設備之故障或失靈；或人為操作上之疏失而造成中斷、暫時無法使用、遲延、 資料傳輸或儲存上之錯誤；或遭第三人侵入系統篡改或偽造變造資料等。本公司就以上情形不保證各項服務之穩定、安全、無誤、及不中斷。 會員需明白使用本服務之所有風險及可能致生之任何損害，不得因此而要求任何補償或賠償。
+\t\n10.(會員資料處理與隱私權保護)
+
+\t\n    對於會員所登錄或留存之個人資料，您同意本公司得於合理之範圍內保存、蒐集、處理、傳遞及使用會員個人資料或其衍生之相關電磁錄， 以提供會員其他資訊服務，或作成會員統計資料、進行關於網路行為之調查或研究或為任何之合法使用。
+
+\t\n    對於會員所登錄或留存之個人資料，本公司在未獲會員同意之前，不對外揭露會員之姓名、地址、電子郵件地址及其他依法受保護之個人資料， 但下列情況不在此限：
+
+\t\n    1.受司法、警察或其他有權機關基於法定程序之要求時。
+
+\t\n    2.於維護公益或保護本公司或他人權益時。
+
+\t\n    3.因會員之行為違反法令或本服務條款之規定時。
+
+\t\n    4.在緊急情況下為維護其他會員或第三人之人身、交易內容、遊戲歷程、個人資料之完整安全時。
+\t\n11.(遊戲管理)
+
+\t\n    1.資料轉移：在出現本公司遊戲伺服器合併情形時，本公司有權將用戶的角色檔案轉移到其它本公司遊戲伺服器。
+
+\t\n    2.為規範遊戲進行之方式，本公司應訂立合理公平之遊戲管理規則，會員應遵守本公司公告之遊戲管理規則。
+
+\t\n    3.遊戲管理規則有下列情形之一者，其規定無效： 
+
+\t\n        (1)抵觸線上遊戲定型化契約應記載及不得記載事項之規定。 
+
+\t\n        (2)剝奪或限制會員之契約上權利。但本公司依下列第4項第7點對違反應遵守服務使用者守則之會員進行處理，不在此限。
+
+\t\n    4.遊戲伺服器關服：在出現本公司遊戲伺服器關服時，本公司應提前30天公告關服消息。
+
+\t\n    5.會員應遵守服務使用者守則
+
+\t\n        (1) 嚴禁修改、反譯或進行任何影響遊戲程序和遊戲網路數據傳輸封包的行為；
+
+\t\n        (2) 嚴禁使用任何方法對伺服器進行惡意入侵、攻擊，或任何破壞網路服務正常運行的行為；
+
+\t\n        (3) 禁止利用遊戲Bug和第三方外掛程式進行賺取金錢、複製裝備、快速累積經驗值等破壞遊戲公平性及造成伺服器負擔加重的行為；
+
+\t\n        (4) 禁止公開或私下傳播任何存在並可利用的遊戲Bug，請在發現該類問題時立即向本公司反應；
+
+\t\n        (5) 禁止使用含有人身攻擊、淫穢、辱罵、反動及其他危害本遊戲形象、同GM角色名故意相似擾亂正常服務秩序以及違反社會善良風氣的角色名；
+
+\t\n        (6) 禁止使用公共頻道惡意刷屏，或做出任何影響正常遊戲秩序的行為；
+
+\t\n        (7) 任何違反以上條款的違規行為，GM有權根據情節輕重對違規者進行警告、強制下線、禁閉、更名、刪除人物或凍結帳號的處罰，情節尤其嚴重者，將進一步追究法律責任，違規造成的一切損害或損失，由會員自行承擔；
+
+\t\n        (8) 除本契約另有規定外，有事實足證會員於本遊戲中違反遊戲管理規則時，本公司應於遊戲網站或遊戲進行中公告，並以線上即時通訊方式或電子郵件通知會員。經本公司通知改善而未改善者，本公司得依遊戲管理規則，按其情節輕重限制會員之遊戲使用權利；
+
+\t\n        (9) 本公司依遊戲管理規則停止會員進行遊戲之權利，每次不得超過七日；
+
+\t\n        (10) 除構成第12條契約終止事由外，本公司依遊戲管理規則對會員所為之處置，不得影響會員依本契約應享之權利。
+
+    
+ 
+\t\n12.(公司擁有終止權)
+
+\t\n    契約終止時，本公司於扣除必要成本後，應於三十日內以現金、信用卡、匯票或掛號寄發支票方式退還會員未使用之儲值或遊戲費用。 
+
+\t\n    會員應確實遵守本合約及有關法律命令的規定，會員有下列重大情事之一者，本公司以書面或電子郵件通知會員後，得立即終止本契約，或暫停、終止或刪除會員帳號與會員帳號中的所有相關資料、檔案及任何記錄，以及取消、停止、限制會員的會員資格： 
+
+\t\n    一、利用任何系統或工具對本公司電腦系統之惡意攻擊或破壞。 
+
+\t\n    二、以利用外掛程式、病毒程式、遊戲程式漏洞或其他違反公平合理之方式進行遊戲。 
+
+\t\n    三、經司法機關查獲從事任何不法之行為。
+
+\t\n    四、其他重大損害本公司或其他玩家權利或利益之行為。
+
+\t\n    本公司對前項事實認定產生錯誤或無法舉證時，本公司應對會員之損害負賠償責任。
+
+\t\n    為了向會員提供本服務，本公司因非預先計劃需對有關的網站伺服器或遊戲伺服器或本公司所提供的本服務的相關官方網站進行維護，該維護可能造成服務的中斷，並且該中斷本公司可能無法事先的通知。
+
+\t\n    對於因他人侵入本公司的網路或遊戲系統，篡改、刪改或偽造、變造網站和遊戲資料或數據而造成本服務的停止或中斷，本公司除未採取合理之回復措施外，不承擔任何責任。
+\t\n13.(智慧財產權)
+
+\t\n    此網站上之所有著作及資料，其著作權、專利權、商標、營業秘密、其他智慧財產權，所有權或其他權利，均為本公司或其權利人所有， 除事先經本公司或其各別權利人之合法授權外，會員不得擅自以重製、傳輸、改作、編輯或以其他任何形式、基於任何目的加以使用， 違者應自行負所有相關法律責任。
+\t\n14.(個別條款之效力)
+
+\t\n    本同意書所定之任何會員條款之全部或部分無效時，不影響其他條款之效力。
+\t\n15.(準據法)
+
+\t\n    本服務條款之解釋及適用，以及會員因使用本服務而與本公司間所生之權利義務關係，應依中國法律解釋適用之(不含涉外民事法律適用法或其他類似法規。)
+\t\n16.(管轄法院)
+
+\t\n    因本服務條款而生之爭議，均同意以本公司所在地的人民法院為第一審管轄法院。
+
+                        " />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/checked"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/selector_button_other"
+                            android:text="確  認"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+                        <Button
+                            android:id="@+id/cancel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/selector_button_other"
+                            android:text="取  消"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

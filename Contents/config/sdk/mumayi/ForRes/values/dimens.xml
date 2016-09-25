@@ -1,0 +1,27 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="textsize1">26px</dimen>
+    <dimen name="textsize2">16px</dimen>
+    <dimen name="textsize3">22px</dimen>
+    <dimen name="textsize4">24px</dimen>
+    <dimen name="textsize5">20px</dimen>
+    <dimen name="input_height">60px</dimen>
+    <dimen name="payeco_smaller_textsize">14.0sp</dimen>
+    <dimen name="payeco_small_textsize">15.0sp</dimen>
+    <dimen name="payeco_normal_textsize">16.0sp</dimen>
+    <dimen name="payeco_middle_textsize">17.0sp</dimen>
+    <dimen name="payeco_large_textsize">18.0sp</dimen>
+    <dimen name="payeco_larger_textsize">22.0sp</dimen>
+    <dimen name="payeco_button_textsize">18.0sp</dimen>
+    <dimen name="payeco_pw_textsize">20.0sp</dimen>
+    <dimen name="payeco_pwkeyboard_button_textsize">17.0sp</dimen>
+    <dimen name="payeco_pwkeyboard_toast_textsize">30.0sp</dimen>
+    <dimen name="paycenter_rdo1">0dp</dimen>
+    <dimen name="paycenter_rdo2">100dp</dimen>
+    <dimen name="paycenter_rdo3">200dp</dimen>
+    <dimen name="paycenter_rdo4">300dp</dimen>
+    <dimen name="paycenter_rdo5">400dp</dimen>
+</resources>

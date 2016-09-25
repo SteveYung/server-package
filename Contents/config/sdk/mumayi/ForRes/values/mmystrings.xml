@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="remote_call_failed">Failure calling remote service</string>
+    <string name="confirm_install_hint">安装提示</string>
+    <string name="alix_confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="Ensure">"确定"</string>
+    <string name="Cancel">"取消"</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+    <string name="pay_title">木蚂蚁支付</string>
+    <string name="pay_choice">选择支付方式</string>
+    <string name="pay_confirm_alipay">确认商品无误后去支付宝付款</string>
+    <string name="pay_confirm_unionpay">支持的储蓄卡列表:</string>
+    <string name="pay_confirm_unionpay_creadit_card">支持的信用卡列表:</string>
+    <string name="pay_confirm_unionpay_savings_Card">支持所有带银联标志的信用卡(农行除外)</string>
+    <string name="pay_confirm_prepaid_card">支持移动、联通、电信充值卡</string>
+    <string name="pay_confirm_prepaid_money">如果卡面金额大于支付金额，余额将转换为蚂蚁币</string>
+    <string name="pay_confirm_prepaid_card_price_choice">请选择充值卡面额</string>
+    <string name="pay_confirm_account_cancel_pay">您放弃支付的原因是?</string>
+    <string name="pay_goto_alipay">去支付宝付款</string>
+    <string name="pay_goto_pay">立即付款</string>
+    <string name="pay_alix_content">支付宝</string>
+    <string name="pay_yeepay_content">银联支付</string>
+    <string name="pay_weipai_content">短信支付</string>
+    <string name="pay_mo9_content">先玩后付</string>
+    <string name="pay_19pay_content">手机充值卡</string>
+    <string name="pay_submit">提交</string>
+    <string name="order_id_title">订 单 号：</string>
+    <string name="pay_money_title">支付金额：</string>
+    <string name="select_card_type">充值卡类型：</string>
+    <string name="select_card_money">充值卡面额：</string>
+    <string name="input_card_sn">请输入充值卡序列号</string>
+    <string name="input_card_pwd">请输入充值卡密码</string>
+    <string name="str_save_sn">记住卡号</string>
+    <string name="str_save_password">记住密码</string>
+    <string name="str_pay_submit">提交支付</string>
+    <string name="str_pay_submit_success">支付成功！</string>
+    <string name="str_pay_success_notice">如有任何问题请联系19pay官方，点击确定后将返回支付前界面。</string>
+    <string name="str_19pay_remind">请选择和支付金额相同的充值卡金额，否则充值卡的余额将会丢失。</string>
+    <!-- 支付中心 -->
+    <string name="str_paycenter_version">木蚂蚁用户中心V2.1.5</string>
+    <string name="str_paycenter_login_welcome">欢迎来到木蚂蚁用户中心</string>
+    <string name="str_paycenter_login_account">木蚂蚁账号</string>
+    <string name="str_paycenter_login_title">登录注册</string>
+    <string name="str_paycenter_login_exit">退出</string>
+    <string name="str_paycenter_login_name">账号  </string>
+    <string name="str_paycenter_login_pass">密码  </string>
+    <string name="str_paycenter_login_regist">注册</string>
+    <string name="str_paycenter_login_regist_my">我也注册</string>
+    <string name="str_paycenter_login_login">登录</string>
+    <string name="str_paycenter_login_autoregist">体验试玩</string>
+    <string name="str_paycenter_login_findpass">忘记密码</string>
+    <string name="str_paycenter_regist_username">名字长度为3-15位</string>
+    <string name="str_paycenter_regist_password">6位以上字母或数字</string>
+    <string name="str_paycenter_regist_username_limit">用户名长度限制为3-15位</string>
+    <string name="str_paycenter_regist_password_limit">6位以上字母与数字</string>
+    <string name="str_paycenter_usercenter">用户中心</string>
+    <string name="str_paycenter_usercenter_zeroyuan">0</string>
+    <string name="str_paycenter_center_myingot">我的元宝</string>
+    <string name="str_paycenter_center_chargeingot">充值元宝</string>
+    <string name="str_paycenter_center_modifyinfo">完善信息</string>
+    <string name="str_paycenter_center_charge_record">充值记录</string>
+    <string name="str_paycenter_center_pay_record">消费记录</string>
+    <string name="str_paycenter_center_update_pass">修改密码</string>
+    <string name="str_paycenter_center_saving_setting">安全设置</string>
+    <string name="str_paycenter_center_account_setting">账号设置</string>
+    <string name="str_paycenter_center_good_game">精品游戏</string>
+    <string name="str_paycenter_center_about_us">关于我们</string>
+    <string name="str_paycenter_center_loginout">切换帐号/注销</string>
+    <string name="str_paycenter_update_submit">升级</string>
+    <string name="str_paycneter_update_title">升级提示</string>
+    <string name="str_paycenter_center_changeaccount">切换帐号</string>
+    <string name="str_paycenter_center_nowingot">当前元宝:</string>
+    <string name="str_paycenter_compelete_title">账户安全提示</string>
+    <string name="str_paycenter_complete_info">账户信息</string>
+    <string name="str_paycenter_complete_oldpass">旧密码 :  </string>
+    <string name="str_paycenter_complete_newpass">新密码 :  </string>
+    <string name="str_paycenter_complete_phone">手机号码：  </string>
+    <string name="str_paycenter_complete_save">保存</string>
+    <string name="str_paycenter_complete_baomi">保密</string>
+    <string name="str_paycenter_complete_upate_onetime">只可修改一次</string>
+    <string name="str_paycenter_complete_findaccount">用于找回帐号</string>
+    <string name="str_paycenter_complete_remind">    您的帐号属于一键注册帐户,安全系数较低,建议立即重新设定用户名和密码。</string>
+    <string name="str_paycenter_bind_remind">    您尚未绑定手机，忘记密码或账号不慎被盗将无法通过手机找回密码。</string>
+    <string name="str_paycenter_update_dialog">    发现新版本，请升级到最新版本后进入游戏。</string>
+    <string name="str_paycenter_prepaid_card_type">类型 : </string>
+    <string name="str_paycenter_prepaid_card_type_choice">请选择</string>
+    <string name="str_paycenter_prepaid_card_value">面值 : </string>
+    <string name="str_paycenter_prepaid_card_number">卡号 : </string>
+    <string name="str_paycenter_prepaid_card_pass">密码 : </string>
+    <string name="str_paycenter_mayi_coin_balance">蚂蚁币余额</string>
+    <string name="str_paycenter_mayi_coin_balance_now">蚂蚁币余额</string>
+    <string name="str_paycenter_mayi_coin_card_charge">蚂蚁卡充值</string>
+    <string name="str_paycenter_mayi_coin_card_hint">请输入蚂蚁卡密码</string>
+    <string name="str_paycenter_mayi_coin_charge">充值</string>
+    <string name="str_paycenter_input_pay_pass">请输入支付密码</string>
+    <string name="str_paycenter_credit_card">信用卡</string>
+    <string name="str_paycenter_saving_card">储蓄卡</string>
+    <string name="str_paycenter_game_name">游戏名称 : </string>
+    <string name="str_paycenter_accoutn_name">帐号名称 : </string>
+    <string name="str_paycenter_pay_price">支付金额 : </string>
+    <string name="str_paycenter_product_name">商品名称 : </string>
+    <!-- 统计支付退出 -->
+    <string name="str_paycenter_account_exit_reason_1">就是进来看看</string>
+    <string name="str_paycenter_account_exit_reason_2">重新选择其他道具购买</string>
+    <string name="str_paycenter_account_exit_reason_3">没有想要的支付方式</string>
+    <string name="str_paycenter_account_exit_reason_4">其他</string>
+    <string name="str_paycenter_account_exit_email">邮箱</string>
+    <!-- 反馈邮箱提示 -->
+    <string name="str_paycenter_email">V3.0   客服邮箱: cz@mumayi.com</string>
+    <string name="str_paycenter_contact">联系方式:</string>
+    <!-- 易联支付确认 -->
+    <string name="confirm_order">确认订单</string>
+    <string name="pay_order_info">订单详情</string>
+    <string name="pay_order_no">订单号</string>
+    <string name="pay_order_productname">商品名称</string>
+    <string name="pay_order_productprice">商品金额</string>
+    <string name="pay_order_moneyunit">元</string>
+    <string name="pay_order_tradetime">交易时间</string>
+    <string name="pay_order_trddedesc">商品描述</string>
+    <string name="pay_order_trade">支     付</string>
+    <!-- 易联 -->
+    <string name="payeco_app_name">易联移动支付</string>
+    <string name="payeco"><br>易联支付</br></string>
+    <string name="payeco_loading">"正在提交，请稍候&#8230;"</string>
+    <string name="payeco_submiting">"正在提交&#8230;"</string>
+    <string name="payeco_error_pan">"请输入正确的银行卡号"</string>
+    <string name="payeco_error_pin">"请输入正确的银行卡密码"</string>
+    <string name="payeco_error_cvn2">"请输入正确的CNV2"</string>
+    <string name="payeco_error_mobliemac">"请输入正确的短信验证码"</string>
+    <string name="payeco_error_riskcontrol">		"请输入<xliff:g id="riskValue">%1$s</xliff:g>"</string>
+    <string name="payeco_error_idNum">"请输入正确的证件号码"</string>
+    <string name="payeco_prompt">"提示"</string>
+    <string name="payeco_networkError">"没有网络连接，请检查网络设置"</string>
+    <string name="payeco_support_bank"><u>"支持的银行列表"</u></string>
+    <string name="payeco_order_detail">"订单详情"</string>
+    <string name="payeco_order_detail_orderId">"订单编号:"</string>
+    <string name="payeco_order_detail_description">"订单描述:"</string>
+    <string name="payeco_order_detail_orderAmt">"支付金额:"</string>
+    <string name="payeco_amount">		"￥<xliff:g id="amt">%1$s</xliff:g>"</string>
+    <string name="payeco_order_detail_orderState">"交易状态:"</string>
+    <string name="payeco_order_detail_merchantName">"商户名称:"</string>
+    <string name="payeco_order_detail_orderTime">"交易时间:"</string>
+    <string name="payeco_pay_detail">"交易详情"</string>
+    <string name="payeco_back_merchant">"关\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020闭"</string>
+    <string name="payeco_exit_pay">"退出支付"</string>
+    <string name="payeco_re_toPay">"再次提交"</string>
+    <string name="payeco_pay_state">"交易结果:"</string>
+    <string name="payeco_payfail_desc">"失败原因:"</string>
+    <string name="payeco_pay_state_success">支付成功</string>
+    <string name="payeco_pay_state_fail">"支付失败"</string>
+    <string name="payeco_pay_state_unupdate">"交易已提交成功，银联系统需要进行身份验证，请耐心等待，在30分钟后查看订单状态，客服专线：020&#8211;28863558 020&#8211;62322898"</string>
+    <string name="payeco_error_http_unknow_error">"网络连接异常，请检查网络设置。"</string>
+    <string name="payeco_confirm">"确\u0020\u0020\u0020\u0020认"</string>
+    <string name="payeco_cancel">"取\u0020\u0020\u0020\u0020消"</string>
+    <string name="payeco_commint_pay">"提交付款"</string>
+    <string name="payeco_confirm_pay">"确认付款"</string>
+    <string name="payeco_pay_panType">"选择卡种:"</string>
+    <string name="payeco_panType_debit">"储蓄卡"</string>
+    <string name="payeco_panType_credit">"信用卡"</string>
+    <string name="payeco_usecqp_tips">"一键支付，免输密码"</string>
+    <string name="payeco_pay_pan">"银行卡号:"</string>
+    <string name="payeco_pay_oldpan">"您的银行卡号:"</string>
+    <string name="payeco_pay_pan_hint">"输入银行卡卡号"</string>
+    <string name="payeco_pay_pin">"银行卡密码:"</string>
+    <string name="payeco_pay_pin_hint">"输入银行卡密码"</string>
+    <string name="payeco_pay_validate">"有\u0020\u0020\u0020\u0020效\u0020\u0020\u0020\u0020期:"</string>
+    <string name="payeco_pay_cvn2">"C\u0020\u0020\u0020V\u0020\u0020\u0020N\u0020\u0020\u00202:"</string>
+    <string name="payeco_pay_cvn2_hint">"卡背面最后三位数字"</string>
+    <string name="payeco_pay_credit_info">"<u>什么是有效期和CVN2</u>"</string>
+    <string name="payeco_validate_cvn2_detail">"CVN2代码是印在信用卡背面签名栏最后的3位数代码。我们需要这个代码做位确保客户安全。如果您找不到此代码或者此代码难以辨认，请与信用卡发卡银行联络。\n\n有效期是卡正面上带有 /的四位数字 ，格式为：月/年\u0020\u0020例：12/15，则有效期为2015年12月。如果有两组有效期，就看Valid Thru后面的数字为到期日。"</string>
+    <string name="payeco_pay_username">"真\u0020实\u0020姓\u0020名:"</string>
+    <string name="payeco_pay_idType">"证\u0020件\u0020类\u0020型:"</string>
+    <string name="payeco_pay_idtype_prompt">"选择证件类型"</string>
+    <string name="payeco_pay_idNum">"证\u0020件\u0020号\u0020码:"</string>
+    <string name="payeco_pay_bank_address">"开户行地区:"</string>
+    <string name="payeco_select_province">"请选择省份"</string>
+    <string name="payeco_select_city">"请选择市"</string>
+    <string name="payeco_pay_result_title">"交易结果"</string>
+    <string name="payeco_pay_benifitName">"受\u0020\u0020\u0020\u0020益\u0020\u0020\u0020\u0020人:"</string>
+    <string name="payeco_pay_photoDesc">"照\u0020片\u0020描\u0020述:"</string>
+    <string name="payeco_pay_address">"户\u0020籍\u0020地\u0020址:"</string>
+    <string name="payeco_pay_yixiantong">"一线通标志:"</string>
+    <string name="payeco_takepickture_tips">"银联安全提示：为保障您的支付安全，请拍摄本人身份证照片，以进行验证"</string>
+    <string name="payeco_pay_idcard_photo">"请拍摄身份证原件照片"</string>
+    <string name="payeco_get_photo_fail">"获取照片数据失败，请检查相机设置或者存储卡空间是否足够"</string>
+    <string name="payeco_scale_picture">"正在压缩并显示照片&#8230;"</string>
+    <string name="payeco_pay_bindMobileNum">"手\u0020机\u0020号\u0020码:"</string>
+    <string name="payeco_pay_mobileNum_hint">"请输入手机号"</string>
+    <string name="payeco_pay_mobileMac">"短信验证码:"</string>
+    <string name="payeco_pay_regetmobliemac">"重新获取"</string>
+
+    <!-- 密码键盘 -->
+
+    <string name="payeco_keyboard">"密\u0020\u0020码\u0020\u0020键\u0020\u0020盘"</string>
+    <string name="payeco_keyboard_tips">"密码键盘采用银联标准加密技术加密传输，保证密码输入安全。"</string>
+    <string name="payeco_keyboard_digital">"数字"</string>
+    <string name="payeco_keyboard_character">"字母"</string>
+    <string name="payeco_keyboard_symbol">"符号"</string>
+    <string name="payeco_keyboard_confirm">"确\u0020\u0020\u0020\u0020定"</string>
+    <string name="payeco_keyboard_delete">"回\u0020\u0020\u0020\u0020退"</string>
+    <string name="payeco_keyboard_edit_hint">"请输入密码"</string>
+    <string name="payeco_keyboard_next">"下一页"</string>
+    <string name="payeco_keyboard_pre">"上一页"</string>
+
+    <!-- 退出对话框 -->
+    <string name="payeco_exit_app_msg">"支付未完成，确定退出支付？"</string>
+
+    <!-- 风控 -->
+    <string name="payeco_no_sdcard">"没有找到存储卡"</string>
+    <string name="payeco_get_mobilemac_fail">"获取短信验证码失败，<xliff:g id="failDesc">%1$s</xliff:g>，重新获取"</string>
+
+    <!-- 认证快付 -->
+    <string name="payeco_close">"返\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020回"</string>
+    <string name="payeco_close_line">"<u>返\u0020回"</u></string>
+    <string name="payeco_next">"下\u0020一\u0020步"</string>
+    <string name="payeco_back">"上\u0020一\u0020步"</string>
+    <string name="payeco_open_cpq">"同意开通认证快付协议"</string>
+    <string name="payeco_read_cpq_protocol"><u>阅读</u></string>
+    <string name="payeco_cpq_tips">提醒：下次用该银行卡支付不用输入密码，支付更快捷！</string>
+    <string name="payeco_changeCard">"换卡"</string>
+    <string name="payeco_cardType_tip">"对不起，暂时不支持您所使用的银行卡类型"</string>
+
+    <!-- 支付结果 -->
+    <string name="payeco_plugin_pay_success">"支付成功"</string>
+    <string name="payeco_plugin_pay_fail">"支付失败"</string>
+    <string name="payeco_plugin_pay_cancel">"支付取消"</string>
+    <string name="payeco_plugin_pay_wait_manualrisk">"订单支付状态未更新，为了您的交易安全，银联系统需要验证您的身份信息。"</string>
+    <string name="payeco_plugin_pay_exception">"支付插件异常，请重新支付。"</string>
+
+    <!-- 进度条 -->
+    <string name="payeco_plugin_step_1">填资料</string>
+    <string name="payeco_plugin_step_2">认证中</string>
+    <string name="payeco_plugin_free_auth">免认证</string>
+    <string name="payeco_plugin_step_3">完成</string>
+    <!-- 用户中心 -->
+    <string name="str_paycenter_user_center">个人中心</string>
+    <string name="str_paycenter_user_change_account">切换账号</string>
+    <string name="str_paycenter_user_save_setting">安全设置</string>
+    <string name="str_paycenter_user_forum">游戏论坛</string>
+    <string name="str_paycenter_user_modifymima">修改密码</string>
+    <string name="str_paycenter_user_oldmima">旧密码</string>
+    <string name="str_paycenter_user_newmima">新密码</string>
+    <string name="str_paycenter_user_bindphone">绑定手机</string>
+    <string name="str_paycenter_user_bindphone_tip">请输入手机号码</string>
+    <!-- foot -->
+    <string name="paycenter_foot_game_center">木蚂蚁游戏中心</string>
+    <string name="paycenter_foot_faqs">常见问题</string>
+    <!-- 关于我们 -->
+    <string name="paycenter_about_us_item_title">提示信息:</string>
+    <string name="paycenter_about_us_item_content">cz@mumayi.com</string>
+    <!-- 安全中心 -->
+    <string name="paycenter_bind_num_tip">已绑定的号码:13800138000</string>
+    <string name="paycenter_bind_phone_tip1">手机号码用于找回密码等重要操作</string>
+    <string name="paycenter_bind_phone_tip2">填写后可随时修改</string>
+    <string name="paycenter_bind_phone_tip3">请放心,木蚂蚁不会泄露您的手机号码</string>
+    <string name="paycenter_bind_phone_dialog_tip">你尚未绑定手机。当忘记密码或者账号被盗时,将不利于帮你找回密码哦~</string>
+    <string name="paycenter_bind_phone_dialog_title">安全账户提示</string>
+    <string name="paycenter_bind_phone_dialog_cancel">取消</string>
+    <string name="paycenter_bind_phone_dialog_ok">确定</string>
+    <string name="paycenter_bind_phone_valid_dialog_title">密码验证</string>
+    <string name="paycenter_bind_phone_valid_dialog_msg">为了您的账号安全,请进行密码验证~</string>
+    <string name="paycenter_bind_phone_valid_tip">请输入登录密码</string>
+    <!-- header -->
+    <string name="paycenter_header_week">一周内</string>
+    <string name="paycenter_header_month">一个月内</string>
+    <!-- 常见问题 -->
+    <string name="paycenter_faqs_dial_service">拨打客服</string>
+    <string name="paycenter_faqs_cancel">取消</string>
+    <string name="paycenter_faqs_ok">确定</string>
+    <string name="paycenter_faqs_tip">呼叫木蚂蚁:13800138000</string>
+    <string name="paycenter_down_tip">下载更新</string>
+    <!-- 邮箱 -->
+    <string name="paycenter_mail_dialog_title">登录邮箱</string>
+    <string name="paycenter_mail_dialog_tip">目前支持QQ邮箱,网易(162、163)邮箱,雅虎邮箱,搜狐邮箱,新浪邮箱</string>
+    <string name="paycenter_mail_dialog_send">发送</string>
+    <string name="paycenter_mail_dialog_subject">标题 </string>
+    <string name="paycenter_mail_dialog_content">请输入反馈内容 </string>
+    <string name="paycenter_mail_dialog_account">邮箱账号 </string>
+    <string name="paycenter_mail_dialog_pwd">邮箱密码 </string>
+    <!--  -->
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config pluginId = "600006">
+	<paramLs>
+		<param name = "htcGameCode" required = "1" desc = "游戏GameCode,合作方提供" showName = "GameCode" bWriteIntoManifest = "0" bUserOffer = "1"/>
+        <param name = "htcCpPrivateKeyPkcs8"  required = "1"  desc = "CpPrivateKeyPkcs8,前端需要,cp自己生成" showName = "CpPrivateKeyPkcs8" bWriteIntoManifest="0" bUserOffer = "1"/>
+	</paramLs>
+	
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = ""/>
+		<operate step = "2" name = "copy" from = "ForAssets" to = "assets" desc = ""/>
+		<operate step = "3" name = "copy" from = "ForRes" to = "res" desc = ""/>
+		<operate step = "4" name = "mergeR" desc = "合并R文件，此步骤需在res目录合并完后才执行" />
+	</operateLs>
+	
+	<pluginLs>
+		<plugin name = "UserHtc" typePlugin = "0" desc = ""/>
+		<plugin name = "IAPOnlineHtc" typePlugin = "2" desc = ""/>
+	</pluginLs>
+    <version code = "1010" showVersion = "2.1.0_1.3.1.1" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[]]>
+    </version>
+</config>

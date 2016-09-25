@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.efuntw.platform.support.widget.PagingListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paging_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:cacheColorHint="@android:color/transparent"
+    android:divider="@android:color/transparent"
+    android:listSelector="@android:color/transparent" >
+
+</com.efuntw.platform.support.widget.PagingListView>

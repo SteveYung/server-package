@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/movga_stage_background"
+    android:minWidth="@dimen/movga_dialog_min_width"
+    android:orientation="vertical"
+    tools:context=".OriginalLoginActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7" >
+         <ImageView 
+            android:layout_width="@dimen/movga_layout_value_24"
+            android:layout_height="@dimen/movga_layout_value_24"
+            android:background="@drawable/movga_upgrade_logo"
+            android:layout_marginLeft="@dimen/movga_layout_value_16"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/movga_logo_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/movga_layout_value_12"
+            android:layout_marginLeft="@dimen/movga_layout_value_40"
+            android:layout_marginTop="@dimen/movga_layout_value_12"
+            android:gravity="center_vertical"
+            android:text="@string/movga_tourist_update_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/movga_text_size_large" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/guest_upgrade_return_btn"
+                android:layout_width="@dimen/movga_layout_value_24"
+                android:layout_height="@dimen/movga_layout_value_24"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="@dimen/movga_layout_value_12"
+                android:layout_marginRight="@dimen/movga_layout_value_16"
+                android:layout_marginTop="@dimen/movga_layout_value_12"
+                android:src="@drawable/movga_return_btn" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="@dimen/movga_layout_value_16" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/guest_upgrade_username_edittext"
+                style="@style/movga_common_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/movga_username_hint"
+                android:imeActionLabel="Next"
+                android:imeOptions="actionNext"
+                android:inputType="textVisiblePassword"
+                android:paddingRight="@dimen/movga_layout_padding_right"
+                android:tag="username_old" />
+
+            <ImageView
+                android:id="@+id/guest_upgrade_username_clear"
+                android:layout_width="@dimen/movga_alert_size"
+                android:layout_height="@dimen/movga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/movga_layout_value_8"
+                android:src="@drawable/movga_clear"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/guest_upgrade_username_alert"
+                android:layout_width="@dimen/movga_alert_size"
+                android:layout_height="@dimen/movga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/movga_layout_value_8"
+                android:src="@drawable/movga_alert"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movga_layout_value_8" >
+
+            <EditText
+                android:id="@+id/guest_upgrade_password_edittext"
+                style="@style/movga_common_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/movga_password_hint"
+                android:imeActionLabel="Next"
+                android:imeOptions="actionNext"
+                android:inputType="textVisiblePassword"
+                android:paddingRight="@dimen/movga_layout_padding_right"
+                android:tag="password" />
+
+            <ImageView
+                android:id="@+id/guest_upgrade_password_clear"
+                android:layout_width="@dimen/movga_alert_size"
+                android:layout_height="@dimen/movga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/movga_layout_value_8"
+                android:src="@drawable/movga_clear"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/guest_upgrade_password_alert"
+                android:layout_width="@dimen/movga_alert_size"
+                android:layout_height="@dimen/movga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/movga_layout_value_8"
+                android:src="@drawable/movga_alert"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movga_layout_value_8" >
+
+            <EditText
+                android:id="@+id/guest_upgrade_email_edittext"
+                style="@style/movga_common_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/movga_email_optional_hint"
+                android:imeActionLabel="Done"
+                android:inputType="textEmailAddress"
+                android:paddingRight="@dimen/movga_layout_padding_right"
+                android:tag="email" />
+
+            <ImageView
+                android:id="@+id/guest_upgrade_email_clear"
+                android:layout_width="@dimen/movga_alert_size"
+                android:layout_height="@dimen/movga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/movga_layout_value_8"
+                android:src="@drawable/movga_clear"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/guest_upgrade_email_alert"
+                android:layout_width="@dimen/movga_alert_size"
+                android:layout_height="@dimen/movga_alert_size"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/movga_layout_value_8"
+                android:src="@drawable/movga_alert"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <LinearLayout
+                android:id="@+id/guest_upgrade_rules_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/guest_upgrade_rules_checkbox"
+                    android:layout_width="@dimen/movga_layout_value_24"
+                    android:layout_height="@dimen/movga_layout_value_24"
+                    android:src="@drawable/movga_checkbox" />
+
+                <TextView
+                    android:id="@+id/guest_upgrade_rules_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:paddingLeft="@dimen/movga_layout_value_8"
+                    android:text="@string/movga_guest_upgrade_rules_text"
+                    android:textColor="#2E7FDB"
+                    android:textSize="@dimen/movga_text_size_snormal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/guest_upgrade_show_password_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/guest_upgrade_show_password_checkbox"
+                    android:layout_width="@dimen/movga_layout_value_24"
+                    android:layout_height="@dimen/movga_layout_value_24"
+                    android:src="@drawable/movga_checkbox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:hint="@string/movga_register_show_password_text"
+                    android:paddingLeft="@dimen/movga_layout_value_8"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/movga_text_size_snormal" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/guest_upgrade_upgrade_btn"
+            style="@style/movga_common_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/movga_layout_value_8"
+            android:text="@string/movga_guest_upgrade_text" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movga_layout_value_8" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

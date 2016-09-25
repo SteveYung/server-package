@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocosdk="http://schemas.android.com/apk/res-auto"
+    style="@style/CCPageTheme" >
+
+    <com.coco.sdk.ui.widget.CCPageTitle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cocosdk:title_text="@string/cc_regist_failure_1"
+        cocosdk:title_type="only_close" />
+
+    <View
+        android:id="@+id/height_118"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cc_height_118" />
+
+    <TextView
+        android:id="@+id/t1"
+        style="@style/LabelOrange"
+        android:layout_below="@id/height_118"
+        android:text="@string/cc_regist_failure_2" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/EditTextPhone"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="@dimen/cc_margin_30"
+        android:hint="@string/cc_regist_coco_2" />
+
+    <TextView
+        android:id="@+id/errorinfo_text"
+        style="@style/ErrorInfo"
+        android:layout_above="@+id/et_phone"
+        android:layout_alignLeft="@+id/et_phone" />
+
+    <Button
+        android:id="@+id/bt_get_captcha"
+        style="@style/OneLineButton"
+        android:layout_below="@id/et_phone"
+        android:layout_marginTop="@dimen/cc_margin_30"
+        android:text="@string/cc_regist_coco_3" />
+
+    <RelativeLayout
+        android:id="@+id/checkbox_container_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cc_height_90"
+        android:layout_below="@+id/bt_get_captcha" >
+
+        <CheckBox
+            android:id="@+id/cb_accept_eula"
+            style="@style/CheckBox"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/cc_margin_50"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/tv_accept_eula"
+            style="@style/CheckBoxText"
+             android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cb_accept_eula"
+            android:text="@string/cc_regist_coco_4" />
+        
+
+        <Button
+            android:id="@+id/bt_eula"
+            style="@style/TextLinkSmall"
+           android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_accept_eula"
+            android:text="@string/cc_regist_coco_5" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/errorinfo_page"
+        style="@style/ErrorInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

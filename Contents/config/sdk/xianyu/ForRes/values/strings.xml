@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- Label for the "Done" button on the far left of action mode toolbars. -->
+    <string name="abc_action_mode_done">Done</string>
+    <!-- Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] -->
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <!-- Content description for the action bar "up" affordance. [CHAR LIMIT=NONE] -->
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <!-- Content description for the action menu overflow button. [CHAR LIMIT=NONE] -->
+    <string name="abc_action_menu_overflow_description">More options</string>
+
+    <!-- Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] -->
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+
+    <!-- Formatting string for describing the action bar's title/home/up affordance.
+         This is a single tappable "button" that includes the app icon, the Up indicator
+         (usually a "<" chevron) and the window title text.
+         %1$s is the title. %2$s is the description of what tapping/clicking the whole
+         thing is going to do. -->
+    <!-- <string name="abc_action_bar_home_description_format" msgid="1397052879051804371">"%1$s, %2$s"</string> -->
+    <!-- Just like action_bar_home_description_format, but this one will be used
+         if the window is also providing subtitle text.
+         %1$s is the title. %2$s is the subtitle. %3$s is the description of what
+         tapping/clicking the whole thing is going to do. -->
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+
+    <!-- SearchView accessibility description for search button [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_search">Search</string>
+    <!-- Default hint text for the system-wide search UI's text field. [CHAR LIMIT=30] -->
+    <string name="abc_search_hint">Search…</string>
+    <!-- SearchView accessibility description for search text field [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_query">Search query</string>
+    <!-- SearchView accessibility description for clear button [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <!-- SearchView accessibility description for submit button [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <!-- SearchView accessibility description for voice button [CHAR LIMIT=NONE] -->
+    <string name="abc_searchview_description_voice">Voice search</string>
+
+    <!-- ActivityChooserView - accessibility support -->
+    <!-- Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] -->
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <!-- Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] -->
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <!-- Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] -->
+    <!-- <string name="abc_shareactionprovider_share_with_application" msgid="7165123711973476752">"Share with %s"</string> -->
+    <!-- Description of the choose target button in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] -->
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+
+    <!-- Text to use when the number in a notification info is too large
+         (greater than status_bar_notification_info_maxnum, defined in
+         values/config.xml) and must be truncated. May need to be localized
+         for most appropriate textual indicator of "more than X".
+         [CHAR LIMIT=4] -->
+    <string name="status_bar_notification_info_overflow">999+</string>
+
+    <!-- Default text for a button that can be toggled on and off. -->
+    <string name="abc_capital_on">ON</string>
+    <!-- Default text for a button that can be toggled on and off. -->
+    <string name="abc_capital_off">OFF</string>
+    <string name="action_settings">Settings</string>
+    <string name="back_game">返回游戏</string>
+    <string name="xianyugamezhifupingtai">咸鱼游戏支付平台</string>
+    <string name="dingdanguanli">订单管理</string>
+    <string name="dingdanxinxi">充值信息</string>
+    <string name="zhifufangshi">充值方式</string>
+    <string name="dingdanhao">订单号</string>
+    <string name="goumaiwupin">购买物品：</string>
+    <string name="zhifuzhanghao">充值账号：</string>
+    <string name="zhifuzonge">支付总额：</string>
+    <string name="chongzhijilu">充值记录</string>
+    <string name="zhifubangzhu">支付帮助</string>
+    <string name="lianxikefu">联系客服</string>
+    <string name="zhifushibai">支付失败</string>
+    <string name="zhifuchenggong">支付成功</string>
+    <string name="youyuzhongtufangqi">由于中途放弃或其他原因，本次支付失败</string>
+    <string name="fanhuicongxinzhifu">支付失败返回重新支付</string>
+    <string name="dingdanzhuangtai">订单状态：</string>
+    <string name="dingdanbianhao">订单编号：</string>
+    <string name="goumaiwupins">购买物品：</string>
+    <string name="chongzhishijian">充值时间：</string>
+    <string name="chongzhizhonge">充值总额：</string>
+    <string name="zhifufangshis">支付方式：</string>
+    <string name="zhifubaozhifu">支付宝支付</string>
+    <string name="querenzhifu">确认支付</string>
+    <string name="queren">确认</string>
+    <string name="username">用户名：</string>
+    <string name="password">密    码：</string>
+    <string name="savesuccess">保存成功！</string>
+    <string name="savefailed">保存失败！</string>
+    <string name="neterro">当前网络异常,请检查网络后再试</string>
+    <string name="netbusy">网络繁忙，请稍后再试！</string>
+    <string name="usernamecheck">用户名为3到15位字母或数字</string>
+    <string name="passwordcheck">密码为6到20位的字母或数字</string>
+    <string name="loginsuccess">登录成功</string>
+    <string name="login">登  录</string>
+    <string name="shiwantishi">重新注册试玩账号可能会导致原试玩账号丢失，确定继续？</string>
+    <string name="checkusername">请检查用户名长度</string>
+    <string name="checkpassword">请检查密码长度</string>
+    <string name="loginyanzheng">验证中...</string>
+    <string name="yanzhengfailed">密码验证失败，请重新验证</string>
+    <string name="jinrumibaoshezhi">进入密保设置</string>
+    <string name="bangdingemail">已绑定邮箱</string>
+    <string name="checkemailstyle">请检查邮箱格式</string>
+    <string name="registing">正在注册...</string>
+    <string name="wanshanzhanghao">注册成功，立刻完善您的帐号</string>
+    <string name="registagain">重新注册</string>
+    <string name="usernamesendemail">用户名已发送到您绑定的邮箱</string>
+    <string name="usernameerro">请输入正确的用户名</string>
+    <string name="myusername">您的帐号：</string>
+    <string name="codenotnull">验证码不能为空</string>
+    <string name="emailgetcode">请先输入正确的邮箱号并获取验证码</string>
+    <string name="codesend">验证码已发送到</string>
+    <string name="getcode">请到邮箱中获取验证码</string>
+    <string name="passworddiff">两次输入的密码不一致，请重新输入</string>
+    <string name="passwordchangesuccess">密码修改已成功，请牢记您的新密码</string>
+    <string name="selectpay">请选择支付方式后付款</string>
+    <string name="tradenodesuccess">订单获取成功</string>
+    <string name="tradenodefailed">订单获取失败</string>
+    <string name="tradenodeneterro">订单信息获取失败,请检查网络后重试</string>
+    <string name="paysuccess">支付成功</string >
+    <string name="payfailed">支付失败</string>
+    <string name="paycancel">支付取消</string>
+    <string name="paysureing">支付结果正在确认，请耐心等待</string>
+    <string name="tishi">提示</string>
+    <string name="tradeloading">正在获取支付订单...</string>
+    <string name="clearaccount">确认清除帐号？</string>
+    <string name="resetpasswordsuccess">密码重置已成功，请牢记您的新密码</string>
+    <string name="acounttoemail">帐号已发送至邮箱</string>
+</resources>

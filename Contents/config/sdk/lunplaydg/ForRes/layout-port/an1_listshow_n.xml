@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/an1_listbg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/an1_itemimgbg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/my_img_bg"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_list_bg"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/an1_itemimgbg"
+        android:layout_alignTop="@+id/an1_itemimgbg"
+        android:gravity="center_vertical" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+        <ImageView
+            android:id="@+id/an1_itemimg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bg_list_img"
+             />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+        <TextView
+            android:id="@+id/an1_itemtxt2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="135"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/an1_itemimg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/my_txtsize" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+        <Button
+            android:id="@+id/an1_itembut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"            
+            android:background="@drawable/bg_list_but"
+            android:focusable="false"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/an1_listtemp"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+    </LinearLayout>
+
+</RelativeLayout>

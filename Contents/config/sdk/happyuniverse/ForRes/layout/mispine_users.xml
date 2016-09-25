@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/mispine_form"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip">
+
+        <Spinner
+            android:id="@+id/mispine_email"
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="20dip"
+            android:hint="@string/mispine_email"
+            android:inputType="textEmailAddress"
+            android:drawSelectorOnTop="true"
+            android:textColor="@android:color/black"
+            />
+
+        <LinearLayout
+            android:id="@+id/mispine_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/mispine_submit_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:textSize="20dip"
+                android:text="@string/mispine_play_now"
+                android:textColor="@android:color/white"
+                android:background="@drawable/mispine_default_button"
+                />
+
+            <!-- Link to switch -->
+            <Button android:id="@+id/mispine_toggle_button"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dip"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:text="@string/mispine_i_want_to_play_with_another_account"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textSize="12dip"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textColor="#025f7c"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/mispine_submit_button"
+                android:layout_toEndOf="@+id/mispine_submit_button" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mispine_buttons_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:orientation="vertical" >
+            <Button android:id="@+id/mispine_facebook_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:layout_alignParentLeft="true"
+                android:textColor="#025f7c"
+                android:background="@drawable/mispine_icon_facebook"
+                />
+
+            <Button android:id="@+id/mispine_help_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:textColor="#025f7c"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/mispine_button_security"
+                >
+            </Button>
+            <ImageView
+                android:id="@+id/mispine_notice_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/mispine_icon_notice"
+                android:visibility="gone"
+                >
+            </ImageView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

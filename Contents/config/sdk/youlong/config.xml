@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+  <paramLs>
+    <param name="PID" required="1" showName="PID" desc="应用id" bWriteIntoManifest="1" bUserOffer="1" bWriteIntoClient="1"/>
+    <param name="PKEY" required="1" showName="PKEY" desc="应用密钥" bWriteIntoManifest="1" bUserOffer="1" bWriteIntoClient="1"/>
+    <param name="Version" required="1" showName="Version" desc="sdk版本号" bWriteIntoManifest="1" bUserOffer="1" bWriteIntoClient="1" placeholderText="默认为0.72"/>
+    <param name="introduction" required="1" showName="introduction" desc="推广人员id" bWriteIntoManifest="1" bUserOffer="1" bWriteIntoClient="1" placeholderText="默认为0"/>
+  <param name = "Orientation" required = "1" desc = "横竖屏" showName = "Orientation" bWriteIntoManifest = "0" bUserOffer = "1"  bWriteIntoClient = "1">
+         <option value = "portrait"/>
+          <option value = "landscape"/>
+        </param>
+    <param name="callback" required="1" desc="anysdk支付结果通知" showName="支付通知地址" bUserOffer="1" bWriteIntoClient="0"/>
+  </paramLs>
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="youlong"/>
+    <operate step="2" name="copy" from="ForAssets" to="assets" desc="youlong"/>
+    <operate step="3" name="copy" from="ForRes" to="res" desc="youlong"/>
+    <operate step="4" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="IAPOnlineYoulong" typePlugin="2" desc="游龙支付插件"/>
+    <plugin name="UserYoulong" typePlugin="0" desc="游龙用户插件"/>
+  </pluginLs>
+   <version code = "1001" showVersion = "2.0.1_0.72">
+  <![CDATA[
+9月17日接入0.72版本<br/>
+1.添加支付界面<br/>
+2.添加登陆<br/>
+3.添加游戏资源和配置文件<br/>
+4.由于支付没有支付回调只能在退出支付界面后给游戏一个支付成功的消息。但是这样用户体验不好。等待下版本的更新<br/>
+5.包括登录、支付、切换账号、退出账号等功能
+11月18日11月18日游龙修复Role_name（游戏角色名） 传值为空的问题<br/>
+  ]]>
+  </version>
+</config>

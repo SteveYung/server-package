@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/e_size_25"
+        android:layout_marginTop="@dimen/e_size_30"
+        android:text="@string/person_title_nav_person"
+        android:textColor="@color/e_383838"
+        android:textSize="@dimen/e_text_size_48" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_3"
+        android:layout_marginLeft="@dimen/e_size_138"
+        android:layout_marginRight="@dimen/e_size_138"
+        android:background="@color/e_d9d9d9" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/person_player_layout"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="vertical" >
+            <!-- 基本信息 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/e_size_70"
+                android:paddingTop="@dimen/e_size_15" >
+
+                <!-- 头像 -->
+
+                <RelativeLayout
+                    android:layout_width="@dimen/e_size_200"
+                    android:layout_height="@dimen/e_size_200" >
+
+                    <ImageView
+                        android:id="@+id/person_head_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/e_size_46"
+                        android:layout_height="@dimen/e_size_46"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/e_size_10"
+                        android:layout_marginRight="@dimen/e_size_10"
+                        android:src="@drawable/efun_pd_person_camera_icon" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/e_size_50"
+                    android:layout_marginRight="@dimen/e_size_150"
+                    android:layout_marginTop="@dimen/e_size_20"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <!-- UID -->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/person_uid_desc"
+                                android:textColor="@color/e_18c6ff"
+                                android:textSize="@dimen/e_text_size_36" />
+
+                            <TextView
+                                android:id="@+id/person_uid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/e_8c8c8c"
+                                android:textSize="@dimen/e_text_size_30" />
+                        </LinearLayout>
+
+                        <!-- 昵称 -->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/person_nickname_desc"
+                                android:textColor="@color/e_18c6ff"
+                                android:textSize="@dimen/e_text_size_36" />
+
+                            <TextView
+                                android:id="@+id/person_nick_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/e_8c8c8c"
+                                android:textSize="@dimen/e_text_size_30" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/e_size_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <!-- 积分 -->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/person_integral"
+                                android:textColor="@color/e_18c6ff"
+                                android:textSize="@dimen/e_text_size_36" />
+
+                            <TextView
+                                android:id="@+id/person_integral"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/e_8c8c8c"
+                                android:textSize="@dimen/e_text_size_30" />
+                        </LinearLayout>
+
+                        <!-- 平台点 -->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/person_platform_point"
+                                android:textColor="@color/e_18c6ff"
+                                android:textSize="@dimen/e_text_size_36" />
+
+                            <TextView
+                                android:id="@+id/person_platform_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/e_8c8c8c"
+                                android:textSize="@dimen/e_text_size_30" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/e_size_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/person_signin_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/efun_pd_2cd7d1_rectangle_bg"
+                            android:paddingBottom="@dimen/e_size_10"
+                            android:paddingLeft="@dimen/e_size_60"
+                            android:paddingRight="@dimen/e_size_60"
+                            android:paddingTop="@dimen/e_size_10"
+                            android:text="@string/person_sign_in"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/e_text_size_45" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/e_size_20"
+                            android:text="@string/person_sign_in_desc1"
+                            android:textColor="@color/e_747474"
+                            android:textSize="@dimen/e_text_size_36" />
+
+                        <TextView
+                            android:id="@+id/person_signin_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/e_2cd7d1"
+                            android:textSize="@dimen/e_text_size_36" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/person_sign_in_desc2"
+                            android:textColor="@color/e_747474"
+                            android:textSize="@dimen/e_text_size_36" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 绑定手机或者绑定邮箱标题 -->
+
+            <LinearLayout
+                android:id="@+id/person_bind_info_title_body"
+                android:layout_width="@dimen/e_size_650"
+                android:layout_height="@dimen/e_size_87"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/e_size_50"
+                android:background="@drawable/efun_pd_cons_bind_phone_email_title_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/person_bind_phone_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/efun_pd_bind_phone_bg_selector"
+                    android:gravity="center"
+                    android:text="@string/person_bind_phone_title"
+                    android:textColor="@color/efun_pd_bind_phone_email_title_text_selector"
+                    android:textSize="@dimen/e_text_size_45" />
+
+                <TextView
+                    android:id="@+id/person_bind_email_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/efun_pd_bind_email_bg_selector"
+                    android:gravity="center"
+                    android:text="@string/person_bind_email_title"
+                    android:textColor="@color/efun_pd_bind_phone_email_title_text_selector"
+                    android:textSize="@dimen/e_text_size_45" />
+            </LinearLayout>
+
+            <!-- 綁定手機具體內容項 -->
+
+            <LinearLayout
+                android:id="@+id/person_bind_phone_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/e_size_30"
+                android:layout_marginLeft="@dimen/e_size_130"
+                android:layout_marginRight="@dimen/e_size_130"
+                android:layout_marginTop="@dimen/e_size_20"
+                android:orientation="vertical" >
+
+                <!-- 手機號碼 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/e_size_100"
+                    android:background="@drawable/efun_pd_cons_grey_solid_rectangle"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/e_size_10" >
+
+                        <TextView
+                            android:id="@+id/person_area_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/e_5c5c5c"
+                            android:textSize="@dimen/e_text_size_36" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/e_size_20"
+                            android:layout_marginRight="@dimen/e_size_20"
+                            android:layout_marginTop="@dimen/e_size_10"
+                            android:background="@drawable/efun_pd_line_grey_dash" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/e_size_1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.0"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/e_size_10" >
+
+                        <EditText
+                            android:id="@+id/person_ed_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/person_bind_hint_phone"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/e_5c5c5c"
+                            android:textColorHint="@color/e_c5c4c5"
+                            android:textSize="@dimen/e_text_size_34" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/e_size_20"
+                            android:layout_marginRight="@dimen/e_size_20"
+                            android:layout_marginTop="@dimen/e_size_10"
+                            android:background="@drawable/efun_pd_line_grey_dash" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 描述內容 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/e_size_20"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/person_bind_phone_gift_title"
+                        android:textColor="@color/e_ff686a"
+                        android:textSize="@dimen/e_text_size_34" />
+
+                    <TextView
+                        android:id="@+id/person_bind_phone_gift_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/e_5c5c5c"
+                        android:textSize="@dimen/e_text_size_34" />
+                </LinearLayout>
+
+                <!-- 验证码 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/e_size_100"
+                    android:layout_marginTop="@dimen/e_size_20"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.0"
+                        android:background="@drawable/efun_pd_cons_grey_solid_rectangle"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/e_size_10" >
+
+                        <EditText
+                            android:id="@+id/person_ed_phone_vcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/person_bind_hint_vcode"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:textColor="@color/e_5c5c5c"
+                            android:textColorHint="@color/e_c5c4c5"
+                            android:textSize="@dimen/e_text_size_34" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/e_size_20"
+                            android:layout_marginRight="@dimen/e_size_20"
+                            android:layout_marginTop="@dimen/e_size_10"
+                            android:background="@drawable/efun_pd_line_grey_dash" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/person_btn_phone_get_vcode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/e_size_10"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/efun_pd_ff4848_rectangle_bg"
+                        android:gravity="center"
+                        android:text="@string/person_get_vcode_btn"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/e_text_size_36" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/person_btn_phone_confirm_bind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/e_size_40"
+                    android:background="@drawable/efun_pd_2eade4_rectangle_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/e_size_10"
+                    android:paddingLeft="@dimen/e_size_30"
+                    android:paddingRight="@dimen/e_size_30"
+                    android:paddingTop="@dimen/e_size_10"
+                    android:text="@string/person_bind_confirm_btn"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/e_text_size_45" />
+            </LinearLayout>
+            
+            <!-- 已綁定的手機樣式  -->
+            <LinearLayout
+                android:id="@+id/person_has_single_bind_phone_body"
+                android:layout_width="@dimen/e_size_510"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/e_size_30"
+                android:layout_marginTop="@dimen/e_size_30"
+                android:background="@drawable/efun_pd_cons_grey_dash_rectangle"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/e_size_30" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/e_size_30"
+                    android:text="@string/person_bind_phone_already"
+                    android:textColor="@color/e_8c8c8c"
+                    android:textSize="@dimen/e_text_size_36" />
+
+                <TextView
+                    android:id="@+id/person_has_bind_phone_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/e_size_30"
+                    android:textColor="@color/e_20aeff"
+                    android:textSize="@dimen/e_text_size_36" />
+
+                <TextView
+                    android:id="@+id/person_bind_phone_gift_content_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/e_size_50"
+                    android:textColor="@color/e_8c8c8c"
+                    android:textSize="@dimen/e_text_size_36" />
+
+                <TextView
+                    android:id="@+id/person_bind_trance_to_serial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/e_size_10"
+                    android:text="@string/person_bind_phone_already_desc"
+                    android:textColor="@color/e_ff6262"
+                    android:textSize="@dimen/e_text_size_36" />
+            </LinearLayout>
+
+            <!-- email具體內容項 -->
+
+            <LinearLayout
+                android:id="@+id/person_bind_email_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/e_size_30"
+                android:layout_marginLeft="@dimen/e_size_130"
+                android:layout_marginRight="@dimen/e_size_130"
+                android:layout_marginTop="@dimen/e_size_20"
+                android:orientation="vertical" >
+
+                <!-- email -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/e_size_100"
+                    android:background="@drawable/efun_pd_cons_grey_solid_rectangle"
+                    android:orientation="vertical"
+                    android:padding="@dimen/e_size_10" >
+
+                    <EditText
+                        android:id="@+id/person_ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="@string/person_bind_hint_email"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="@color/e_5c5c5c"
+                        android:textColorHint="@color/e_c5c4c5"
+                        android:textSize="@dimen/e_text_size_34" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/e_size_20"
+                        android:layout_marginRight="@dimen/e_size_20"
+                        android:layout_marginTop="@dimen/e_size_10"
+                        android:background="@drawable/efun_pd_line_grey_dash" />
+                </LinearLayout>
+
+                <!-- 验证码 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/e_size_100"
+                    android:layout_marginTop="@dimen/e_size_20"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.0"
+                        android:background="@drawable/efun_pd_cons_grey_solid_rectangle"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/e_size_10" >
+
+                        <EditText
+                            android:id="@+id/person_ed_email_vcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/person_bind_hint_vcode"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:textColor="@color/e_5c5c5c"
+                            android:textColorHint="@color/e_c5c4c5"
+                            android:textSize="@dimen/e_text_size_34" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/e_size_20"
+                            android:layout_marginRight="@dimen/e_size_20"
+                            android:layout_marginTop="@dimen/e_size_10"
+                            android:background="@drawable/efun_pd_line_grey_dash" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/person_btn_email_get_vcode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/e_size_10"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/efun_pd_ff4848_rectangle_bg"
+                        android:gravity="center"
+                        android:text="@string/person_get_vcode_btn"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/e_text_size_36" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/person_btn_email_confirm_bind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/e_size_40"
+                    android:background="@drawable/efun_pd_2eade4_rectangle_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/e_size_10"
+                    android:paddingLeft="@dimen/e_size_30"
+                    android:paddingRight="@dimen/e_size_30"
+                    android:paddingTop="@dimen/e_size_10"
+                    android:text="@string/person_bind_confirm_btn"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/e_text_size_45" />
+            </LinearLayout>
+            
+ 
+
+            <!-- 已绑定邮箱样式 -->
+
+            <LinearLayout
+                android:id="@+id/person_has_single_bind_email_body"
+                android:layout_width="@dimen/e_size_510"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/e_size_30"
+                android:background="@drawable/efun_pd_cons_grey_dash_rectangle"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/e_size_100"
+                android:layout_marginTop="@dimen/e_size_30"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/e_size_30"
+                    android:text="@string/person_bind_email_already"
+                    android:textColor="@color/e_8c8c8c"
+                    android:textSize="@dimen/e_text_size_36" />
+
+                <TextView
+                    android:id="@+id/person_has_bind_email_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/e_size_30"
+                    android:textColor="@color/e_20aeff"
+                    android:textSize="@dimen/e_text_size_36" />
+            </LinearLayout>
+			<!-- 已绑定手机,email样式 -->
+           <include
+               android:id="@+id/person_phone_or_email_has_bind" 
+               layout="@layout/efun_pd_person_binded_phone_email"/>
+           </LinearLayout>
+           <include 
+               android:id="@+id/person_mac_layout"
+               layout="@layout/efun_pd_person_person"
+               android:visibility="gone"/>
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

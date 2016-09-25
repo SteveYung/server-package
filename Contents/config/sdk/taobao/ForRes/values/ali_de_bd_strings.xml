@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 通用 -->
+    <string name="ali_de_bd_sdk_channel_id">10001</string>
+    
+    <string name="ali_de_bd_string_app_name">TaobaoBd_v1.3.3.7</string>
+    <string name="ali_de_bd_string_progress_pelease_wait">请稍候...</string>
+    <string name="ali_de_bd_string_yes">是</string>
+    <string name="ali_de_bd_string_no">否</string>
+    <string name="ali_de_bd_string_ok">确定</string>
+    <string name="ali_de_bd_string_cancel">取消</string>
+    <string name="ali_de_bd_loading">请稍后</string>
+    <string name="ali_de_bd_quit">退出</string>
+    
+    <string name="ali_de_bd_network_error">网络繁忙请稍后重试</string>
+    <string name="ali_de_bd_no_network_connection">连接失败请检查网络</string>
+    <string name="ali_de_bd_string_v2_params_error">请求参数错误</string>
+    
+    <!-- webview -->
+    <string name="ali_de_bd_taobao_auth_title">登录授权</string>
+    <string name="ali_de_bd_taobao_bind_alipay_title">支付宝账号绑定</string>
+    
+    <!-- 消费宝点模块 -->
+    <string name="ali_de_bd_string_v2_consume_title_dep">当前宝点余额：%s 点</string>
+    
+    <string name="ali_de_bd_string_v2_charge_main_msg">支付宝支付 %1$s 点 （%2$.2f元）</string>
+    <string name="ali_de_bd_string_v2_consume_charge_main_msg">应付宝点：%s 点</string>
+    <string name="ali_de_bd_string_v2_consume_charge_sub_msg_use_dep">宝点余额支付 %s 点</string>
+    <string name="ali_de_bd_string_v2_consume_charge_sub_msg_repay">已透支 %s 宝点</string>
+    <string name="ali_de_bd_string_v2_consume_charge_sub_msg_pay">本次消费 %s 点</string>
+    <string name="ali_de_bd_string_v2_consume_charge_repay_det_hint">支付宝支付会优先偿还您已透支的 %s 宝点</string>
+    <string name="ali_de_bd_string_v2_consume_charge_repay_not_det_hint">支付宝支付必须是100的整数倍，本次消费后剩余的宝点将存入您的宝点账户。</string>
+    <string name="ali_de_bd_string_v2_consume_OK">确认购买</string>
+    
+    <string name="ali_de_bd_string_v2_consume_err_not_bind_alipay">您的淘宝账号%s尚未绑定支付宝账号，这将导致您无法继续购买操作，马上去绑定</string>
+    <string name="ali_de_bd_string_v2_consume_go_to_bind_alipay_txt">前往绑定支付宝账号</string>
+    <string name="ali_de_bd_string_v2_consume_go_to_bind_alipay_success_txt">支付宝绑定成功请重试</string>
+    
+    <string name="ali_de_bd_string_v2_consume_result_ok">购买成功</string>
+    <string name="ali_de_bd_string_v2_consume_result_fail">购买失败</string>
+    <string name="ali_de_bd_string_v2_consume_result_ok_submsg">宝贝正在空投中，请稍等几秒查看</string>
+    <string name="ali_de_bd_string_v2_consume_result_fail_submsg">请重新购买</string>
+    <string name="ali_de_bd_string_v2_consume_result_repay">请先偿还首笔透支宝点</string>
+    <string name="ali_de_bd_string_v2_consume_result_title">订单结果</string>
+    
+    <string name="ali_de_bd_string_v3_consume_price_title">宝贝价格</string>
+    <string name="ali_de_bd_string_v3_consume_deposite_title">账户余额</string>
+    <string name="ali_de_bd_string_v3_consume_price_unit">宝点</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_title_deposit">账户余额支付</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_title_alipay">支付宝支付</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_title_credit">借宝点</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_main_text_pay">账户余额支付 %s 宝点</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_sub_text_other_pay">剩余金额的支付方式:</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_main_text_expair">您有借款逾期未还，需先还 %s 宝点</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_main_text_det_pay">您有借款未还，需先还 %s 宝点</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_main_text_first_det_pay">您的首笔借款未还，需还 %s 宝点</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_main_text_should_pay">本次应付 %s 宝点</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_main_text_should_pay_first">含还借款 %s 宝点</string>
+    <string name="ali_de_bd_string_v3_consume_pay_btn_seperator_text">或</string>
+    <string name="ali_de_bd_string_v3_consume_follow_alipay_text">是否关注支付宝公众账号</string>
+    <string name="ali_de_bd_string_v3_consume_extra_pay_method">使用%s支付</string>
+    <string name="ali_de_bd_string_v3_consume_extra_pay_method_tao_coin">淘金币</string>
+    <string name="ali_de_bd_string_v3_consume_extra_pay_method_tmall_ponit">天猫积分</string>
+    <string name="ali_de_bd_string_v3_consume_type_error">消费类型错误</string>
+    <string name="ali_de_bd_string_v3_consume_no_pay_method_error">没有可用的消费模式</string>
+    <string name="ali_de_bd_string_v3_consume_unknown_error">没有可用的消费模式</string>
+    
+    <string name="ali_de_bd_string_v3_consume_tmall_ponit_subtext">%s天猫积分</string>
+    <string name="ali_de_bd_string_v3_consume_extra_paymethod_btn_text">确认支付</string>
+    
+    <string name="ali_de_bd_string_v3_credit_prompt">本次借%1$s宝点\n%2$s偿还即可</string>
+    <string name="ali_de_bd_string_v3_credit_introduction">提醒：首次借的宝点必须归还后才能再借，最多可借%s宝点</string>
+    
+    <string name="ali_de_bd_string_v3_credit_limit">当前可借%s宝点</string>
+    
+    <string name="ali_de_bd_string_charge_prompt">宝点余额不足，还差%s宝点，是否立即充值？</string>
+    <string name="ali_de_bd_string_use_credti_prompt">您可以使用信用支付完成本次购买，是否立即购买？</string>
+    
+    <!-- 信用模块 -->
+    <string name="ali_de_bd_page_title_buy">购买</string>
+    <string name="ali_de_bd_string_credit_agree_credit">信用购买</string>
+    <string name="ali_de_bd_string_credit_charge">充值</string>
+    <string name="ali_de_bd_string_credit_prompt">宝点余额不足，您可以先信用透支%1$s宝点，%2$s偿还即可。</string>
+    <string name="ali_de_bd_string_credit_expire_prompt">宝点余额不足，您有逾期宝点没有偿还，不能使用信用购买。是否立即充值偿还？</string>
+   
+    <string name="ali_de_bd_string_credit_user_price">宝贝价格：</string>
+    <string name="ali_de_bd_string_credit_user_balance">宝点余额：</string>
+    <string name="ali_de_bd_string_credit_user_loan">信用借贷：</string>
+    <string name="ali_de_bd_string_credit_user_credit_balance">信用额度：</string>
+    <string name="ali_de_bd_string_credit_user_credit_det">当前透支：</string>
+    
+    <string name="ali_de_bd_string_credit_user_credit_current_det">本次透支：</string>
+    <string name="ali_de_bd_string_credit_user_credit_deadline">还款日期：</string>
+    
+    <!-- 充值模块 -->
+    <string name="ali_de_bd_page_title_charge">充值</string>
+    <string name="ali_de_bd_string_charge_pay">立即充值</string>
+    <string name="ali_de_bd_string_charge_price_block_tag">选择宝点充值个数：</string>
+    <string name="ali_de_bd_string_charge_input_hint">请输入宝点个数</string>
+    <string name="ali_de_bd_string_charge_input_warning">需为100的整数倍</string>
+    <string name="ali_de_bd_string_charge_price_prefix">售价：</string>
+    <string name="ali_de_bd_string_charge_price_unit">元</string>
+    <string name="ali_de_bd_string_charge_baodian_unit">宝点</string>
+    <string name="ali_de_bd_string_charge_cannot_pay">宝点数目有误请重试</string>
+    <string name="ali_de_bd_string_charge_deposite_title"> 宝点余额：</string>
+    <string name="ali_de_bd_string_charge_credit_limit_title"> 可透支宝点：</string>
+    <string name="ali_de_bd_string_charge_det_title"> 当前已透支：</string>
+    <string name="ali_de_bd_string_charge_loan_title">借贷宝点：</string>
+    <string name="ali_de_bd_string_charge_deadline_title">还款期限：</string>
+    <string name="ali_de_bd_string_charge_credit_alter">充值时优先偿还已透支的宝点，当前已透支%d宝点</string>
+    <string name="ali_de_bd_string_charge_price_into_alter">系统繁忙请重试</string>
+    <string name="ali_de_bd_string_charge_submit_alter">选择宝点充值个数</string>
+    <string name="ali_de_bd_string_charge_result_success">充值成功</string>
+    <string name="ali_de_bd_string_charge_result_fail">充值失败请联系客服</string>
+    <string name="ali_de_bd_string_charge_result_unknown">已付款请稍后查看账户余额</string>
+    <string name="ali_de_bd_string_v2_charge_go_to_bind_alipay_txt">请先绑定支付宝账号</string>
+    
+    <!-- 消费宝点模块 -->
+    <string name="ali_de_bd_string_v2_jili_invailable_params">输入的参数错误</string>
+    
+</resources>

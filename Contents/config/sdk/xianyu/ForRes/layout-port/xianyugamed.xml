@@ -1,0 +1,416 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xianyugamezhifupingtai"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <!-- 动态数据订单管理 -->
+        <Button
+            android:id="@+id/xianyugame_order_management"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/yuanquanhuise"
+            android:text="@string/dingdanguanli"
+            android:textSize="15dip"
+            android:visibility="invisible" />
+
+        <!-- 支付平台返回键 -->
+        <ImageView
+            android:id="@+id/xianyugame_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedede" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8.62"
+        android:background="#dedede"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/dingdanxinxi"
+                android:textStyle="bold" 
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@drawable/yuanquanbiankuanghuisebeijing"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" >
+
+                <!-- 动态数据订单号 -->
+				
+                <TextView
+                    android:id="@+id/xianyugame_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/dingdanhao" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede" />
+            
+			<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <!-- 动态数据支付账号 -->
+
+                <TextView
+                    android:id="@+id/xianyugame_defray_account_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="34242424" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/zhifuzhanghao" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <!-- 动态数据购买物品 -->
+
+                <TextView
+                    android:id="@+id/xianyugame_purchase_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="34242424" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/goumaiwupin" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1" >
+
+                <!-- 动态数据支付总额 -->
+
+                <TextView
+                    android:id="@+id/xianyugame_defray_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="34242424"
+                    android:textColor="#c40000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/zhifuzonge" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zhifufangshi"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/yuanquanbiankuanghuisebeijing"
+            android:weightSum="4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            >
+            
+            <RelativeLayout
+                android:id="@+id/rl_xianyugame_alipay_layout"
+                android:layout_width="115dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:tag="alipay">
+
+                <!-- 选定支付宝支付 -->
+                
+                <RelativeLayout 
+                    android:id="@+id/rl_xianyugame_alipay_border"
+                    android:layout_width="100dp"
+                    android:layout_height="65dp"
+                     android:background="@drawable/yuanquanbiankuang"
+                     android:layout_alignParentLeft="true">
+                    <ImageView
+                        android:id="@+id/iv_xianyugame_alipay"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/alipay" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_alipay_gou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/zhifuxuanzhonggougou" 
+                    android:visibility="gone"/>
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_xianyugame_tenpay_layout"
+                android:layout_width="115dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:padding="2dp" 
+                android:tag="tenpay"
+                android:visibility="gone">
+
+                <!-- 财付通支付 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_xianyugame_tenpay_border"
+                    android:layout_width="100dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/yuanquanbiankuang" >
+
+                    <ImageView
+                        android:id="@+id/iv_xianyugame_tenpay"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/tenpay_buy" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_xianyugame_tenpay_gou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/zhifuxuanzhonggougou" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_xianyugame_weinxin_layout"
+                android:layout_width="115dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="2dp" 
+                android:tag="weinxin"
+                android:visibility="gone">
+
+                <!-- 选定微信支付 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_xianyugame_weinxin_border"
+                    android:layout_width="100dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/yuanquanbiankuang" >
+
+                    <ImageView
+                        android:id="@+id/iv_xianyugame_weinxin"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/wxzfs" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_xianyugame_weinxin_gou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/zhifuxuanzhonggougou" 
+                    android:visibility="gone"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rl_xianyugame_yinlian_layout"
+                android:layout_width="115dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/rl_xianyugame_alipay_layout"
+                android:layout_alignParentTop="true"
+                android:padding="2dp" 
+                android:tag="yinlian">
+
+                <!-- 选定银联支付 -->
+                
+                <RelativeLayout 
+                    android:id="@+id/rl_xianyugame_yinlian_border"
+                    android:layout_width="100dp"
+                    android:layout_height="65dp"
+                     android:background="@drawable/yuanquanbiankuang"
+                     android:layout_alignParentLeft="true">
+                    <ImageView
+                        android:id="@+id/iv_xianyugame_yinlian"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/yinlian" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_yinlian_gou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/zhifuxuanzhonggougou" 
+                    android:visibility="gone"/>
+                
+            </RelativeLayout>
+        </RelativeLayout>
+        
+        
+        
+        
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#dedede"
+        android:gravity="center_vertical" >
+
+        <!-- 确定支付 -->
+        <Button
+            android:id="@+id/xianyugame_determinin_payment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+            android:background="@drawable/yuanquanbiankuangblue"
+            android:text="@string/querenzhifu"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

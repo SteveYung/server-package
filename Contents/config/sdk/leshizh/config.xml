@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="000101">
+  <paramLs>
+    <param
+        name="LeshiProductId"
+        required="1"
+        showName="productCode"
+        desc="游戏代码"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+    <param
+        name="LeshizhSignKey"
+        required="1"
+        showName="SignKey"
+        desc="签名key"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+    </param>
+    <param
+        name="LeshizhSecretKey"
+        required="0"
+        showName="SecretKey"
+        desc="支付key"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="0">
+    </param>
+    <param
+        name="LeshizhSetorientation"
+        required="1"
+        showName="Orientation"
+        desc="横竖屏"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="portrait"/>
+        <option value="landscape"/>
+    </param>     
+    <param
+        name="LeshizhDebugState"
+        required="1"
+        showName="Debug模式"
+        desc="正式上线请设置为false"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="false"/>
+        <option value="true"/>
+    </param>
+    <param
+        name="LeshizhLocation"
+        required="1"
+        showName="ServerLocation"
+        desc="正式上线请设置为正式服cn"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="cn"/>
+        <option value="test"/>
+    </param> 
+  </paramLs>
+  
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="leshizh"/>
+    <operate step="2" name="copy" from="ForAssets" to="assets" desc="leshizh"/>
+    <operate step="3" name="copy" from="ForLibs" to="lib" desc="leshizh"/>
+    <operate step="4" name="copy" from="ForRes" to="res" desc="leshizh"/>
+    <operate step="5" name="script" desc=""/>
+    <operate step="6" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="UserLeshizh" typePlugin="0" desc="乐视整合SDK用户插件"/>
+    <plugin name="IAPOnlineLeshizh" typePlugin="2" desc="乐视整合SDK支付插件"/>
+  </pluginLs>
+  <version code = "1006" showVersion = "1.4.5_1.0.0" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[2016年06月07日 更新至1.4.5]]>
+    </version>
+</config>

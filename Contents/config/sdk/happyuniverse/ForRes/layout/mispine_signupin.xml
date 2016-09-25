@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/mispine_form"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip">
+    <!--android:layout_below="@id/header">-->
+
+    <AutoCompleteTextView
+        android:id="@+id/mispine_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mispine_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:nextFocusDown="@+id/mispine_password"
+        android:imeOptions="actionNext"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/mispine_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mispine_password"
+        android:imeActionId="@+id/login"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:nextFocusDown="@+id/mispine_submit_button"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/mispine_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mispine_confirm_password"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/mispine_sign_up"
+        android:imeOptions="actionUnspecified"
+        android:nextFocusDown="@+id/mispine_submit_button"
+        android:inputType="textPassword"
+        android:visibility="gone"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:singleLine="true"/>
+
+    <RelativeLayout
+        android:id="@+id/mispine_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/mispine_submit_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:textSize="20dip"
+            android:text="@string/mispine_sign_in"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mispine_default_button"
+            android:layout_alignParentBottom="true" />
+
+        <!-- Link to switch -->
+        <Button android:id="@+id/mispine_toggle_button"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:paddingRight="6dip"
+            android:text="@string/mispine_not_registered_yet_sign_up_now"
+            android:textStyle="italic"
+            android:gravity="right"
+            android:textSize="12dip"
+            android:background="@android:color/transparent"
+            android:textColor="#025f7c"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/mispine_submit_button"
+            android:layout_toEndOf="@+id/mispine_submit_button" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mispine_buttons_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:orientation="vertical" >
+        <Button android:id="@+id/mispine_facebook_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:layout_alignParentLeft="true"
+            android:textColor="#025f7c"
+            android:background="@drawable/mispine_icon_facebook"
+            />
+
+        <Button android:id="@+id/mispine_help_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="#025f7c"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/mispine_button_security"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

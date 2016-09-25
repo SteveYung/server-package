@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config pluginId="7">
+    <paramLs>
+        <param name="VivoStoreId" required="1" showName="StoreId" desc="支付storeId,也是 Cp_id" bWriteIntoManifest="0" bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="VivoAppId" required="1" showName="AppId" desc="应用id" bWriteIntoManifest="0" bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="VivoSecretKey" required="1" showName="SecretKey" desc="支付密钥，也就是 Cp_key" bWriteIntoManifest="0" bUserOffer="1" bWriteIntoClient="1"/>
+    </paramLs>
+    
+    <operateLs>
+        <operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "vivo"/>
+        <operate step = "2" name = "copy" from = "ForAssets" to = "assets" desc = "vivo"/>
+        <operate step = "3" name = "copy" from = "ForLibs" to = "lib" desc = "vivo"/>
+        <operate step = "4" name = "copy" from = "ForRes" to = "res" desc = "vivo"/>
+        <operate step = "5" name = "script" desc = "vivo"/>
+        <operate step = "6" name = "mergeR" desc = "合并R文件，此步骤需在res目录合并完后才执行" />
+    </operateLs>
+    
+    <pluginLs>
+        <plugin name="UserVivo" typePlugin="0" desc="步步高用户插件"/>
+        <plugin name="IAPOnlineVivo" typePlugin="2" desc="步步高支付插件"/>
+    </pluginLs>
+    <version code = "1012" showVersion = "2.1.2_1.6.7" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[更新框架2.0]]>
+    </version>
+</config>

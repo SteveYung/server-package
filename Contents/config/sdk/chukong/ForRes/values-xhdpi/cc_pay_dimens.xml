@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cc_pay_font_size_24">24px</dimen>
+    <dimen name="cc_pay_font_size_30">30px</dimen>
+    <dimen name="cc_pay_font_size_32">32px</dimen>
+    <dimen name="cc_pay_font_size_40">40px</dimen>
+    
+    <dimen name="cc_pay_margin_5">5px</dimen>
+    <dimen name="cc_pay_margin_10">10px</dimen>
+    <dimen name="cc_pay_margin_20">20px</dimen>
+    <dimen name="cc_pay_margin_22">22px</dimen>
+    <dimen name="cc_pay_margin_32">32px</dimen>
+    <dimen name="cc_pay_margin_30">30px</dimen>
+    <dimen name="cc_pay_margin_40">40px</dimen>
+    <dimen name="cc_pay_margin_45">45px</dimen>
+    <dimen name="cc_pay_margin_50">50px</dimen>
+    <dimen name="cc_pay_margin_55">55px</dimen>
+    <dimen name="cc_pay_margin_54">54px</dimen>
+    <dimen name="cc_pay_margin_60">60px</dimen>
+    <dimen name="cc_pay_margin_80">80px</dimen>
+    <dimen name="cc_pay_margin_100">100px</dimen>
+    <dimen name="cc_pay_margin_180">180px</dimen>
+    
+    <dimen name="cc_pay_width_130">130px</dimen>
+    <dimen name="cc_pay_width_150">150px</dimen>
+    <dimen name="cc_pay_width_250">250px</dimen>
+    <dimen name="cc_pay_height_80">80px</dimen>    
+    <dimen name="cc_pay_height_90">90px</dimen>    
+    <dimen name="cc_pay_height_180">180px</dimen>
+    <dimen name="cc_pay_height_128">128px</dimen>    
+    <dimen name="cc_pay_height_130">130px</dimen>    
+    <dimen name="cc_pay_height_100">100px</dimen>    
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tz_activity_hero_details_skill_lv_item_kuang_d" >
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="你已经拥有了试玩账号，再次注册试玩账号会导致原账号数据丢失，确定注册新账号？"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dip"
+        android:paddingBottom="10dip"
+         >
+
+        <TextView
+            android:id="@+id/tz_login_dialog_cancal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tz_activity_hero_details_skill_lv_item_kuang"
+            android:text="取消"
+            android:textColor="#333333"
+            android:textSize="16dip"
+            android:paddingLeft="25dip"
+            android:paddingRight="25dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip" />
+
+        <TextView
+            android:id="@+id/tz_login_dialogtwo_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tz_activity_hero_details_skill_lv_item_kuang"
+            android:layout_toRightOf="@id/tz_login_dialog_cancal"
+            android:layout_marginLeft="50dip"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="16dip"
+            android:paddingLeft="25dip"
+            android:paddingRight="25dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

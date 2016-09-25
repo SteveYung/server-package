@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <dimen name="sdk_page_height">280dp</dimen>
+    <dimen name="sdk_page_width">450dp</dimen>
+    
+    <dimen name="sdk_title_height">37dp</dimen>
+    
+    <dimen name="sdk_separator_height">1dp</dimen>
+    
+    <dimen name="sdk_paddingTop">6dp</dimen>
+    <dimen name="sdk_paddingBottom">6dp</dimen>
+    <dimen name="sdk_paddingLeft">19dp</dimen>
+    <dimen name="sdk_paddingRight">19dp</dimen>
+    <dimen name="icon_size">68dp</dimen>
+    <dimen name="icon_padding">6dp</dimen>
+    
+    <dimen name="sdk_table_paddingTop">6dp</dimen>
+    <dimen name="sdk_pay_table_spacing">10dp</dimen>
+    <dimen name="sdk_sum_table_spacing">10dp</dimen>
+    
+    <dimen name="sdk_foot_height">24dp</dimen>
+    
+    <dimen name="sdk_sum_edittext_height">30dp</dimen>
+    <dimen name="sdk_sum_btns_eara_height">32dp</dimen>
+    <dimen name="sdk_btns_hspacing">7dp</dimen>
+    <dimen name="sdk_btns_vspacing">12dp</dimen>
+    
+    <dimen name="sdk_gridview_hspacing">7dp</dimen>
+    <dimen name="sdk_gridview_half_vspacing">7dp</dimen>
+    <dimen name="sdk_gridview_vspacing">7dp</dimen>
+    <dimen name="sdk_gridview_item_height">35dp</dimen>
+    
+    <dimen name="sdk_spinner_width">67dp</dimen>
+    <dimen name="sdk_spinner_height">@dimen/sdk_sum_btns_eara_height</dimen>
+    
+    <dimen name="dialog_height">200dp</dimen>
+    <dimen name="dialog_width">275dp</dimen>
+    <dimen name="dialog_spacing">7dp</dimen>
+    
+    <dimen name="install_dialog_paddingTop">14dp</dimen>
+    
+    <dimen name="sdk_fixed_extra_info">57dp</dimen>
+    <dimen name="sdk_fixed_sum_area_height">146dp</dimen>
+</resources>

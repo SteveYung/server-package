@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/mispine_form"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip">
+    <!--android:layout_below="@id/header">-->
+
+    <EditText
+        android:id="@+id/mispine_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mispine_verification_code"
+        android:imeActionId="@+id/login"
+        android:inputType="textPhonetic"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:nextFocusDown="@+id/mispine_password"
+        android:imeOptions="actionNext"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/mispine_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mispine_password"
+        android:imeActionId="@+id/login"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:nextFocusDown="@+id/mispine_confirm_password"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/mispine_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mispine_confirm_password"
+        android:imeActionId="@+id/login"
+        android:inputType="textPassword"
+        android:nextFocusDown="@+id/mispine_submit_button"
+        android:visibility="visible"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:singleLine="true"/>
+
+    <RelativeLayout
+        android:id="@+id/mispine_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/mispine_submit_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:textSize="20dip"
+            android:text="@string/mispine_confirm"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mispine_default_button"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

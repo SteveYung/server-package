@@ -1,0 +1,415 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >   	
+	
+    
+    <RelativeLayout
+        android:id="@+id/lppopwindow_root_RelativeLayout"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"    	
+    	android:background="#7d000000"
+    	android:focusable="false"
+        >
+    
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/lpchange_login_outshape"
+    	android:layout_centerInParent="true"
+    	android:padding="5dp"
+	    >
+	 
+    
+	<RelativeLayout
+	    android:id="@+id/lunqi360_layout_pop_root"
+	    android:layout_width="500px"
+    	android:layout_height="300px"  	    	
+    	android:orientation="vertical"
+	    >
+	    <ImageButton 
+	    	android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:background="@drawable/lpchange_login_inshape"
+	        />
+	     <LinearLayout 
+	    	android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"    	
+    		android:orientation="vertical">
+    		<!--  -->
+    		<LinearLayout 
+        	 android:layout_width="fill_parent"
+    		 android:layout_height="0px"
+    		 android:layout_weight="19"
+    		 android:gravity="right|center_vertical"
+    		 >
+    		 <ImageView 
+    		    android:id="@+id/lpchange_login_close"
+	       		android:layout_width="wrap_content"
+	       		android:layout_height="fill_parent"
+	       		android:src="@drawable/ebpay_bg_del_selector"
+	       		android:scaleType="fitCenter"
+	       		android:adjustViewBounds="true"
+	       		android:paddingRight="5dp"
+	       		/>
+	    </LinearLayout >
+	    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0px"
+    android:layout_weight="50"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+		<RelativeLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		 >
+			<LinearLayout 
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:orientation="horizontal"  
+    		    android:gravity="center_vertical">
+			 	<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="91"
+    		     	/>
+				<ImageView 
+    		        android:id="@+id/lpchange_login_zhback"
+    		        android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="318"
+    		        android:src="@drawable/an1_lp_reg_bg1"
+    		        android:adjustViewBounds="true"
+    		        android:scaleType="fitCenter"    		             
+    		        />
+				<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="91"
+    		     	/>		
+				</LinearLayout>	
+				<LinearLayout 
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:orientation="horizontal"  
+					android:gravity="center_vertical">
+			 	<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="200"
+    		     	/>
+				 <EditText 
+    		        android:id="@+id/lpchange_reg_nametxt"
+    		        android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="200"
+    		 		android:gravity="center_vertical"
+    		 		android:background="@null"
+    		 		android:singleLine="true"
+    		 		android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_@."
+    		 		android:maxLength="20" 		 
+    		 		android:textColor="#ffffff"
+    		 		android:textColorHint="#ddffffff"		
+    		 		android:hint="請輸入賬號"
+    		        />    		              
+				<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="100"
+    		     	/>		
+				</LinearLayout>	
+				
+		</RelativeLayout>
+	</LinearLayout>
+	
+	          <!--  -->
+	          <LinearLayout 
+    		    android:layout_width="fill_parent"
+    		 	android:layout_height="0px"
+    		 	android:layout_weight="23"
+    		 	android:orientation="horizontal">
+    		    <View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="95"
+    		    	/>
+    		    <ImageView 
+    		        android:layout_width="0px"
+    		        android:layout_height="fill_parent"
+    		        android:layout_weight="300"
+    		        android:src="@drawable/lpchangeregtipmsga"
+    		        android:scaleType="fitCenter"
+    		        />
+    		    <View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="105"
+    		    	/>
+    		     	
+    		 </LinearLayout>
+     <!--  -->
+	          <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0px"
+    android:layout_weight="50"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+		<RelativeLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		 >
+			<LinearLayout 
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:orientation="horizontal"  
+    		    android:gravity="center_vertical">
+			 	<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="91"
+    		     	/>
+				<ImageView 
+    		        
+    		        android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="318"
+    		        android:src="@drawable/an1_lp_reg_bg3"
+    		        android:adjustViewBounds="true"
+    		        android:scaleType="fitCenter"    		             
+    		        />
+				<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="91"
+    		     	/>		
+				</LinearLayout>	
+				<LinearLayout 
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:orientation="horizontal"  
+					android:gravity="center_vertical">
+			 	<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="200"
+    		     	/>
+				   <EditText 
+    		           android:id="@+id/lpchange_reg_mimatxt"
+    		            android:layout_width="0px"
+    		 			android:layout_height="fill_parent"
+    		 			android:layout_weight="200"
+    		 			android:gravity="center_vertical"
+    		 			android:background="@null"
+    		 			android:singleLine="true"
+    		 			android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    		 			android:maxLength="20" 		 
+    		 			android:textColor="#ffffff"
+    		 			android:textColorHint="#ddffffff"	
+    		 			android:hint="請輸入密碼"
+    		            />    		              
+				<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="100"
+    		     	/>		
+				</LinearLayout>	
+				
+		</RelativeLayout>
+	</LinearLayout>
+	<!--  -->
+<LinearLayout 
+    		    android:layout_width="fill_parent"
+    		 	android:layout_height="0px"
+    		 	android:layout_weight="23"
+    		 	android:orientation="horizontal">
+    		    <View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="95"
+    		    	/>
+    		    <ImageView 
+    		        android:layout_width="0px"
+    		        android:layout_height="fill_parent"
+    		        android:layout_weight="206"
+    		        android:src="@drawable/lpchangeregtipmsgb"
+    		        android:scaleType="fitCenter"
+    		        />
+    		    <View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="199"
+    		    	/>
+    		     	
+    		 </LinearLayout>
+     <!--  -->
+     <!--  -->
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0px"
+    android:layout_weight="50"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+		<RelativeLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		 >
+			<LinearLayout 
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:orientation="horizontal"  
+    		    android:gravity="center_vertical">
+			 	<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="91"
+    		     	/>
+				<ImageView 
+    		       
+    		        android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="318"
+    		        android:src="@drawable/an1_lp_reg_bg2"
+    		        android:adjustViewBounds="true"
+    		        android:scaleType="fitCenter"    		             
+    		        />
+				<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="91"
+    		     	/>		
+				</LinearLayout>	
+				<LinearLayout 
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:orientation="horizontal"  
+					android:gravity="center_vertical">
+			 	<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="200"
+    		     	/>
+				<EditText 
+    		        android:id="@+id/lpchange_reg_renametxt"
+    		        android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="200"
+    		 		android:gravity="center_vertical"
+    		 		android:background="@null"
+    		 		android:singleLine="true"
+    		 		android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    		 		android:maxLength="20" 		 
+    		 		android:textColor="#ffffff"
+    		 		android:textColorHint="#ddffffff"	
+    		 		android:hint="再次輸入密碼"
+    		        />              
+				<View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="100"
+    		     	/>		
+				</LinearLayout>	
+				
+		</RelativeLayout>
+	</LinearLayout>
+	<!--  -->
+	   <LinearLayout 
+    		    android:layout_width="fill_parent"
+    		 	android:layout_height="0px"
+    		 	android:layout_weight="23"
+    		 	android:orientation="horizontal">
+    		    <View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="95"
+    		    	/>
+    		    <ImageView 
+    		        android:layout_width="0px"
+    		        android:layout_height="fill_parent"
+    		        android:layout_weight="100"
+    		        android:src="@drawable/lpchangeregtipmsgc"
+    		        android:scaleType="fitCenter"
+    		        />
+    		    <View 
+    		    	android:layout_width="0px"
+    		 		android:layout_height="fill_parent"
+    		 		android:layout_weight="305"
+    		    	/>
+    		     	
+    		 </LinearLayout>
+    		 <!--  -->
+    		  <LinearLayout 
+        	 android:layout_width="fill_parent"
+    		 android:layout_height="0px"
+    		 android:layout_weight="62"
+    		 android:orientation="horizontal"
+    		 >
+    		   <View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="205"
+    		     />
+    		
+    		  <ImageButton 
+    		    android:id="@+id/lpchange_reg_strart"  
+    		    android:background="@null"
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="230"		
+				android:src="@drawable/lpchangeduihuanbut"
+    		    android:adjustViewBounds="true"
+    		    android:scaleType="fitCenter"/>
+    		  
+    		   
+    		  <LinearLayout
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="205"
+    		 	android:orientation="horizontal"
+    		     >
+    		  <View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="20"
+    		     />
+    		  
+    		   <ImageButton
+    		    android:id="@+id/lpchange_reg_backtologin"  
+    		    android:background="@null"
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="148"		
+				android:src="@drawable/an1_ddt_reg_text6"
+    		    android:adjustViewBounds="true"
+    		    android:scaleType="fitCenter"/>
+    		<View 
+    		    android:layout_width="0px"
+    		 	android:layout_height="fill_parent"
+    		 	android:layout_weight="60"
+    		     />
+    		  </LinearLayout>
+    		  
+	    </LinearLayout >
+	
+    		</LinearLayout>
+	   
+     <!--  -->
+     
+	   
+    		 
+	
+  </RelativeLayout>
+   </LinearLayout>   
+    </RelativeLayout>
+
+</RelativeLayout>
+<!--    <ImageView 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/an1_bg"
+    	/>android:src="@drawable/aipay_order_bottom_line"
+    	android:src="@drawable/ebpay_bg_back_sheller_pressed"
+	    </LinearLayout> -->

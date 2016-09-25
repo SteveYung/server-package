@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="th_th_com_efun_invite_title">ฟังก์ชั่นสังคมFacebook</string>
+    <string name="th_th_com_efun_invite_head_comment">กดไลค์</string>
+    <string name="th_th_com_efun_invite_head_share">แชร์</string>
+    <string name="th_th_com_efun_invite_head_invited">เชิญ 0 คนสำเร็จ</string>
+    <string name="th_th_com_efun_invite_login_failed">Facebookล็อกอินล้มเหลว กรุณาลองใหม่</string>
+    <string name="th_th_com_efun_invite_taglist_leaderboard">การจัดอันดับ</string>
+    <string name="th_th_com_efun_invite_taglist_invite">เชิญเพื่อน</string>
+    <string name="th_th_com_efun_invite_taglist_reward">รางวัลอีเมล์</string>
+    <string name="th_th_com_efun_invite_taglist_info">คำอธิบายของฟังก์ชั่น</string>
+    <string name="th_th_com_efun_invite_leaderboard_rank">อันดับ</string>
+    <string name="th_th_com_efun_invite_leaderboard_pic">เพื่อน</string>
+    <string name="th_th_com_efun_invite_leaderboard_server">เซิร์ฟเวอร์</string>
+    <string name="th_th_com_efun_invite_leaderboard_level">เลเวล</string>
+    <string name="th_th_com_efun_invite_leaderboard_power">CAP</string>
+    <string name="th_th_com_efun_invite_leaderboard_sendgift">มอบ</string>
+    <string name="th_th_com_efun_invite_leaderboard_hassendgift">มอบแล้ว</string>
+    <string name="th_th_com_efun_invite_invite_selectall">เลือกทั้งหมด</string>
+    <string name="th_th_com_efun_invite_invite_send">ส่ง</string>
+    <string name="th_th_com_efun_invite_invite_warnning_select_friend">อย่างน้อยต้องเลือกเพื่อน 1 คน</string>
+    <string name="th_th_com_efun_invite_invite_response_invite_success">เชิญสำเร็จ</string>
+    <string name="th_th_com_efun_invite_invite_warnning_no_invitable_friend">ไม่มีเพื่อนที่เชิญได้</string>
+    <string name="th_th_com_efun_invite_reward_reward">รางวัลเชิญสำเร็จ</string>
+    <string name="th_th_com_efun_invite_reward_rewardfrom">รางวัลจาก%s</string>
+    <string name="th_th_com_efun_invite_reward_invited">%sได้รับการเชิญ</string>
+    <string name="th_th_com_efun_invite_reward_invited_replace">เพื่อนของท่าน</string>
+    <string name="th_th_com_efun_invite_reward_claim">รับ</string>
+    <string name="th_th_com_efun_invite_reward_claimed">รับแล้ว</string>
+    <string name="th_th_com_efun_invite_network_error">อินเตอร์เน็ตผิดปกติ</string>
+        <!-- fb社交功能内 fb分享成功吐司信息 -->
+    <string name="th_th_efun_invite_share_success">share success</string>
+    <!-- fb社交功能内 fb分享失败吐司信息 -->
+    <string name="th_th_efun_invite_share_failed">share failure</string>
+
+     <string name="th_th_efun_invite_inform">        
+    \n   
+        สะสมเชิญชวนเพื่อนสำเร็จจะได้รางวัลที่กำหนด\n\n
+	1.ผู้เล่นที่ล็อกอินด้วยบัญชีเพิ่มเติมต้องการความอนุญาตของFabcbookตอนใช้ฟังก์ชั่นนี้เป็นครั้งแรก\n\n
+	2.รายชื่อเพื่อนจะแสดงเพื่อนFackbookของท่าน กดเลือกก็จะเชิญชวนได้\n\n
+	3.เพื่อนที่ได้รับการเชิญชวนเพื่อน ต้องการล็อกอินเกมส์ด้วยFackbook ถึงจะถือว่าเชิญชวนสำเร็จ สะสมเชิญชวนเพื่อนสำเร็จจะได้รางวัลที่กำหนด\n\n
+	4.รางวัลสะสมเชิญชวนมี3ชิ้น รางวัลแต่ละชิ้นรับได้แค่ครั้งเดียวเท่านั้น\n\n
+	\nคำแนะนำอันดับ\n\n
+	1.ในอันดับสามารถเช็คดูอันดับของเพื่อนFackbookท่านในเกมส์ได้\n\n 
+	2.อันดับเพื่อนจัดตามเลเวล CAP （เปลี่ยนตามความต้องการของเกม）รายชื่ออันดับอาจจะเกิดความล่าช้าได้ โปรดระวัง\n\n
+	3.สามารถมอบรางวัลให้เพื่อนคนหนึ่งต่อวัน เพื่อนยิ่งเยอะ รางวัลที่ได้ยิ่งเยอะ\n\n
+	4.รางวัลอันดับสามารถรับได้ 30 ชิ้นมากสุดต่อวัน\n\n
+	5.รางวัลอันดับจะรีเซ็ตทุกวัน \n\n
+<!--         \n
+         1.非FB帳戶登入的玩家需要進行Facebook授權才能使用該功能；\n\n
+         2.好友列表會顯示您Facebook的好友，勾選後可發送好友邀請；\n\n
+         3.接收到好友邀請後，好友必須使用Facebook登入遊戲才計算一個成功邀請。累計成功邀請相應的數量，可獲得相應的獎勵；\n\n
+         4.累計邀請獎勵有三個，領取完後無法繼續領取；\n\n
+         5.您每天可以對每一位好友進行獎勵贈送，好友會收到相應的虛寶序號喔；\n\n
+         6.被贈送的虛寶序號可以通過“獎勵信箱”查收。\n -->
+</string>
+</resources>

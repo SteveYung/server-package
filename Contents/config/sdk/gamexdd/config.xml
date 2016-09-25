@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="000106">
+  <paramLs>    
+    <param
+        name="appKey"
+        required="1"
+        showName="appKey"
+        desc="初始化参数"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+    <param
+        name="statisticsAppId"
+        required="1"
+        showName="statisticsAppId"
+        desc="初始化参数"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+    <param
+        name="siteCode"
+        required="1"
+        showName="siteCode"
+        desc="支付参数"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+    <param
+        name="fbAppId"
+        required="1"
+        showName="fbAppId"
+        desc=""
+        bWriteIntoManifest="1"
+        bUserOffer="1"
+        bWriteIntoClient="0"/>
+    <param
+        name="GamexddChannelID"
+        required="1"
+        showName="Gamexdd渠道号"
+        desc=""
+        bWriteIntoManifest="1"
+        bUserOffer="1"
+        bWriteIntoClient="0"/>
+    <param
+        name="needGooglePlay"
+        required="1"
+        showName="NeedGooglePlay"
+        desc="有无google支付"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="true"/>
+        <option value="false"/>
+    </param> 
+    <param
+        name="googlePlayAppKey"
+        required="1"
+        showName="GooglePlayAppKey"
+        desc="GooglePlayAppKey"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>    
+    <param
+        name="screenOrientation"
+        required="1"
+        showName="屏幕方向"
+        desc=""
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="landscape"/>
+        <option value="portrait"/>
+    </param>                
+  </paramLs>
+  
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc=""/>
+    <operate step="2" name="copy" from="ForRes" to="res" desc=""/>
+    <operate step="3" name="script" desc=""/>
+    <operate step="4" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="IAPOnlineGamexdd" typePlugin="2" desc="支付插件"/>
+    <plugin name="UserGamexdd" typePlugin="0" desc="用户插件"/>
+  </pluginLs>
+  <version code = "1006" showVersion = "2.0.6_2.5.0" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[2015年8月18日 更新至2.5.0]]>
+  </version>
+</config>

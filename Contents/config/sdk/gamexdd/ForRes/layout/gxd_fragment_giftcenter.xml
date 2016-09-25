@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gamexdd.sdk.widget.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rbGiftTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbPrize"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x90"
+            android:layout_weight="1"
+            android:background="@drawable/gxd_rb_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="兌獎品"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/rbDepositBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x90"
+            android:layout_weight="1"
+            android:background="@drawable/gxd_rb_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我的存號箱"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x74"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvGiftUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="帳號:"
+                android:textColor="@color/gamexdd_default_color" />
+
+            <ImageView
+                android:id="@+id/imgGiftLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gxd_user_icon_16"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x74"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvGift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:text="禮券"
+                android:textColor="@color/gamexdd_e04a32" />
+
+            <ImageView
+                android:id="@+id/imgGiftRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gxd_user_icon_16"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_fragment_giftcenter.xml -->

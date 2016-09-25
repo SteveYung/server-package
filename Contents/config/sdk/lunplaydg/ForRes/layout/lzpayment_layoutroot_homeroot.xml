@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    tools:context=".paymentMainActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"   
+    	android:orientation="vertical"
+    	android:background="@null"
+        >               
+       
+    	<LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="88"
+    		android:orientation="horizontal"
+    		>
+    		<View 
+            	android:layout_width="0px" 
+    		   	android:layout_height="match_parent" 
+    			android:layout_weight="10"    			
+    			/>
+    		<LinearLayout 
+    		  android:layout_width="0px" 
+    		   	android:layout_height="match_parent" 
+    		   android:layout_weight="460"
+    		   android:orientation="vertical"
+    		   >
+    		<View 
+            	android:layout_width="match_parent"
+    			android:layout_height="0px" 
+    			android:layout_weight="6"    			
+    			/>
+    		 <lezhou.paymentStuff.totoleView.baseTextView
+    		    android:id="@id/lzpay_homeroot_label_one"
+            	android:layout_width="wrap_content"
+    			android:layout_height="0px" 
+    			android:layout_weight="35"
+    			android:orientation="vertical"    			
+    			android:background="@drawable/lzpayment_mainroot_home_textlabelback"
+    			android:gravity="center"
+	    		android:text="確認送出"
+	    		android:textSize="18px"    		
+    			android:textColor="#c7c7c8" 
+    			android:minWidth="100px"	
+    			android:paddingLeft="5dp"	
+    			android:paddingRight="5dp"	
+    			/>
+    		<View 
+            	android:layout_width="match_parent"
+    			android:layout_height="0px" 
+    			android:layout_weight="6"    			
+    			/>          
+    		<lezhou.paymentStuff.totoleView.baseTextView
+    		    android:id="@id/lzpay_homeroot_label_two"
+            	android:layout_width="wrap_content"
+    			android:layout_height="0px" 
+    			android:layout_weight="35"
+    			android:orientation="vertical"    			
+    			android:background="@drawable/lzpayment_mainroot_home_textlabelback"
+    			android:gravity="center"
+	    		android:text="確認送出"
+	    		android:textSize="18px"    		
+    			android:textColor="#c7c7c8" 
+    			android:minWidth="100px"	
+    			android:paddingLeft="5dp"	
+    			android:paddingRight="5dp"			
+    			/>
+    		<View 
+            	android:layout_width="match_parent"
+    			android:layout_height="0px" 
+    			android:layout_weight="6"    			
+    			/>          
+    		    
+    		</LinearLayout>
+    	  	<View 
+            	android:layout_width="0px" 
+    		   	android:layout_height="match_parent" 
+    			android:layout_weight="10"    	  			
+    			/>
+    		 </LinearLayout >	
+    	 <View 
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="25"
+             />
+    		<LinearLayout 
+    		    android:layout_width="fill_parent"
+    			android:layout_height="0px" 
+    			android:layout_weight="127"
+    			android:orientation="horizontal"
+    			android:gravity="top|center_horizontal"
+    			
+    		    >
+    		
+    		<lezhou.paymentStuff.totoleView.baseTextView
+            	android:layout_width="wrap_content"
+    			android:layout_height="fill_parent"   
+	    		android:text="$"	    		
+	    		android:textSize="30px"   	    			
+    			android:textColor="#ffffff"    
+    			android:gravity="bottom" 				    		
+    			android:shadowColor="#ff000000"     			
+    			android:shadowDx="2"
+    			android:shadowDy="0"    			
+    			android:shadowRadius="1"    
+    			android:visibility="gone"
+    			/>
+
+    		<TextView
+    		    android:id="@id/lzpay_homeroot_moneyvalue"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:gravity="center"
+    		    android:text="123456"
+    		    android:textColor="#ffffff"
+    		    android:textSize="120px" 
+    		    style="@style/myMoneyTextView"
+    		    android:lineSpacingExtra = "0px" 		   
+    		    />
+    	
+            </LinearLayout>  
+       
+         <View 
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="30"
+             />
+         <RelativeLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="355"
+            >
+    		 <GridView 
+    		    android:id="@id/lzpay_homeroot_GridView"  
+    			android:layout_width="match_parent"
+    			android:layout_height="wrap_content" 
+    			android:gravity="center"   
+    			android:background="@null"    	
+  				android:numColumns="2"
+  				android:stretchMode="columnWidth"
+  				android:focusable="false"  		
+  				android:focusableInTouchMode="false"
+  				android:visibility="gone"
+  				/>
+    		<lezhou.paymentStuff.totoleView.baseTextView
+            	android:id="@id/lzpay_homeroot_showtip"
+            	android:layout_width="match_parent"
+    			android:layout_height="85px"     			
+    			android:orientation="vertical"
+    			android:layout_margin="10px"
+    			android:background="@drawable/lzpayment_mainroot_home_textlabelback"
+    			android:gravity="center"
+    			android:text="親愛的，交易成功了"
+    			android:textSize="20px"    		
+    			android:textColor="#ffffff"    		
+    			android:shadowColor="#ff000000" 
+    			android:shadowDx="2"
+    			android:shadowDy="0"
+    			android:shadowRadius="1"    
+    			android:visibility="gone"		
+    			/>
+             
+         </RelativeLayout>
+        
+      
+        <lezhou.paymentStuff.totoleView.bottomButTextView
+            android:id="@id/lzpay_homeroot_sentbutton"
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="80"
+    		android:orientation="vertical"
+    		android:layout_margin="10px"
+    		android:background="@drawable/lzpayment_mainroot_home_textbuttonback"
+    		android:gravity="center"
+    		android:text="確認送出"
+    		android:textSize="26px"    		
+    		android:textColor="#ffffff"    		
+    		android:shadowColor="#507a29" 
+    		android:shadowDx="0"
+    		android:shadowDy="1"
+    		android:shadowRadius="1"    	    		
+    		/>
+    		
+        
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- 
+   <ScrollView 
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="350"
+             >
+       		<LinearLayout 
+            	android:layout_width="match_parent"
+    			android:layout_height="match_parent"    			
+    			android:orientation="vertical"
+    			android:gravity="center_horizontal"
+    			>
+    		android:gravity="top|center"
+    		</LinearLayout>             
+         </ScrollView>    	
+ -->

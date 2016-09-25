@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+   
+
+
+    <!-- ac使用 -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="dialog_line_offset">30dp</dimen>
+    <dimen name="left_offset">15dp</dimen>
+    <dimen name="right_offset">15dp</dimen>
+    <dimen name="top_offset">50dp</dimen>
+    <dimen name="bottom_offset">20dp</dimen>
+    <dimen name="login_height">300dp</dimen>
+    <dimen name="title_height">47dp</dimen>
+    <dimen name="content_left">13dp</dimen>
+    <dimen name="content_right">13dp</dimen>
+    <dimen name="content_input_leftright">14.5dp</dimen>
+    <dimen name="content_top">15dp</dimen>
+    <dimen name="input_text_height">57dp</dimen>
+    <dimen name="input_text_margin_left">11.5dp</dimen>
+    <dimen name="input_text_margin_right">11.5dp</dimen>
+    <dimen name="input_text_margin_top">11.5dp</dimen>
+    <dimen name="corner">4dp</dimen>
+    <dimen name="authcode_text_width">140dp</dimen>
+    <dimen name="authcode_text_size">20dp</dimen>  
+    <dimen name="authcode_height">57dp</dimen>  
+	<dimen name="dialog_leftright_padding">15dp</dimen>
+	<dimen name="fragment_top_padding">80dp</dimen>
+	<dimen name="dialog_top_padding">140dp</dimen>
+    <dimen name="top_padding">15dp</dimen>
+    <dimen name="bottom_padding">15dp</dimen>
+    <dimen name="ac_button_height">50dp</dimen>
+    <dimen name="dialog_height">60dp</dimen>
+    <dimen name="edit_height">57dp</dimen>
+    <dimen name="window_width">290dp</dimen>
+    <!-- ac使用 -->
+    <dimen name="button_height">31.3dip</dimen>
+    <dimen name="bottom_tab_font_size">15.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">12.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">12.0dip</dimen>
+    <dimen name="switch_logo_bottom_padding">30.0sp</dimen>
+</resources>

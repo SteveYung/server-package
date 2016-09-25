@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x92"
+        android:background="#FFFFFF"
+        >
+
+        <TextView
+            android:id="@+id/tvToolBarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/gxd_top_back"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvToolBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/x70"
+            android:paddingRight="@dimen/x70"
+            android:singleLine="true"
+            android:text="首页"
+            android:textColor="#0066cc"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvToolBarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:drawableRight="@drawable/gxd_top_back"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x4"
+        android:background="#0066cc"
+        />
+
+
+</LinearLayout><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_widget_header.xml -->

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/movga_stage_background"
+    android:minWidth="@dimen/movga_dialog_min_width"
+    android:orientation="vertical"
+    tools:context=".OriginalLoginActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7" >
+
+        <ImageView
+            android:layout_width="@dimen/movga_logo_width"
+            android:layout_height="@dimen/movga_logo_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/movga_layout_value_12"
+            android:layout_marginLeft="@dimen/movga_layout_value_16"
+            android:layout_marginTop="@dimen/movga_layout_value_12"
+            android:src="@drawable/movga_logo_normal" />
+
+        <ImageView
+            android:id="@+id/register_return_btn"
+            android:layout_width="@dimen/movga_layout_value_24"
+            android:layout_height="@dimen/movga_layout_value_24"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/movga_layout_value_12"
+            android:layout_marginRight="@dimen/movga_layout_value_16"
+            android:layout_marginTop="@dimen/movga_layout_value_12"
+            android:src="@drawable/movga_close_btn" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/movga_layout_value_16"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/movga_layout_value_16"
+        android:paddingRight="@dimen/movga_layout_value_16" >
+
+        <Button
+            android:id="@+id/movga_fast_login"
+            style="@style/movga_fast_login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/movga_fast_login" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/movga_layout_top_16_0" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/movga_layout_value_12"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/movga_layout_value_16"
+        android:paddingRight="@dimen/movga_layout_value_16" >
+
+        <Button
+            android:id="@+id/movga_number_login"
+            style="@style/movga_login_login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/movga_movgalogin_text" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/chooselogin_tplogin_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/movga_layout_value_16"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:id="@+id/chooselogin_tplogin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="@dimen/movga_layout_value_12"
+        android:orientation="horizontal"
+        android:padding="@dimen/movga_layout_value_16" >
+    </LinearLayout>
+	<TextView 
+	    android:layout_height="2dp"
+	    android:layout_width="match_parent"/>
+</LinearLayout>

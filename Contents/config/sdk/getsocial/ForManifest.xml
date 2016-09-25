@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifestConfig xmlns:android="http://schemas.android.com/apk/res/android">
+    <permissionCfg>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    </permissionCfg>
+    <applicationCfg keyword="com.getsocialrayjoy.platformsdk.LoginActivity">
+    <!-- sdk begin -->
+    <!-- get social -->
+
+    <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    
+    <receiver
+        android:name="im.getsocial.sdk.core.GetSocialReceiver"
+        android:permission="com.google.android.c2dm.permission.SEND" >
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <category android:name="YOUR_PACKAGE_NAME.gcm" />
+        </intent-filter>
+        
+        <intent-filter>
+            <action android:name="im.getsocial.sdk.intent.RECEIVE" />
+            <data android:scheme="getSocialNotificationId"/>
+        </intent-filter>
+    </receiver>
+    <meta-data android:name="getsocial_fbinviter_flag" android:value="getsocial" />
+    <meta-data android:name="getsocial_setuserid_flag" android:value="getsocial" />
+    
+    <!-- sdk end -->
+   
+
+</applicationCfg>
+
+</manifestConfig>

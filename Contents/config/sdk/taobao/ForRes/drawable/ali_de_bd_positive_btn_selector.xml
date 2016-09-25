@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ali_de_bd_bu_yellow_click" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ali_de_bd_bu_disable_normal" android:state_enabled="false"/>
+    <item android:drawable="@drawable/ali_de_bd_bu_yellow_normal"/>
+</selector>

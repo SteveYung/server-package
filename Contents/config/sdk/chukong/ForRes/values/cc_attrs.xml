@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="cocosdk">  
+	    <attr name="title_type" format="string" />  
+	    <attr name="title_text" format="string" />  
+	    <attr name="title_logo" format="string" />       
+    </declare-styleable>  
+</resources>

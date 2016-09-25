@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="movga_app_name">MovgaSDK</string>
+
+    <!-- valid hint -->
+    <string name="movga_username_blank">Username cannot be empty</string>
+    <string name="movga_username_format_incorrect">Username invalid, only 5-30 letters and numbers allowed</string>
+    <string name="movga_password_blank">Password cannot be empty</string>
+    <string name="movga_password_format_incorrect">Password invalid, only 5-32 letters or symbols, notice the Capital letter</string>
+    <string name="movga_displayname_blank">Nickname can\'t be blank</string>
+    <string name="movga_displayname_format_incorrect">Nickname cannot be empty</string>
+
+    <!-- network -->
+    <string name="movga_network_unknown_error">Unknown Error</string>
+    <string name="movga_network_not_available">Network Not Available</string>
+    <string name="movga_network_login_password_incorrect">Incorrect username or password</string>
+    <string name="movga_network_timed_out">Connect Timed Out</string>
+    <string name="movga_network_register_username_exists">Account already exist</string>
+    <string name="movga_network_invalid_relogin">Network error, please login again.</string>
+
+    <!-- Loading -->
+    <string name="movga_network_loading_loading">Loading...</string>
+    <string name="movga_network_loading_login">Logging in...</string>
+    <string name="movga_network_loading_pay">Payment being processed...</string>
+    <!--  -->
+    <string name="movga_email_blank">Email cannot be empty</string>
+    <string name="movga_network_email_has_been_bound">This email has been bound to other account</string>
+    <string name="movga_network_email_not_exists">Please confirm the email has been bound.</string>
+    <string name="movga_email_format_incorrect">Email invalid</string>
+    <string name="movga_bound_email_already">You have bound to an email already</string>
+    <string name="movga_bound_account_already">Bind failed, you can\'t rebind the same account.</string>
+    <string name="movga_alreay_upgrade">You have been upgraded already.</string>
+    <string name="movga_upgrade_success">Bind successfully, enter the game.</string>
+    <string name="movga_please_accept_agreement">Please accept the user agreement.</string>
+    <string name="movga_guest_upgrade_success">You will enter the game as a guest user.</string>
+    <string name="movga_guest_upgrade_success_text">	In order to ensure your account security and provide better service, we recommend you upgrading to the official account as soon as possible.</string>
+    <!--  -->
+    <string name="movga_tp_number_already_bind">This account has already been bound.</string>
+    
+    <string name="movga_login_clear_tip">No records</string>
+    
+    <!-- check version -->
+ 	<string name="movga_checkverison_check_tittle">Update check</string>
+ 	<string name="movga_checkverison_check_message">The latest version is checked, if you update now?</string>
+ 	<string name="movga_checkverison_check_update">confirm</string>
+ 	<string name="movga_checkverison_check_cancle">cancel</string>
+ 	<string name="movga_checkverison_check_ok">confirm</string>
+ 	<string name="movga_checkverison_faile_mesage">Update failed</string>
+ 	<string name="movga_checkverison_down_finish">Update finished</string>
+ 	<string name="movga_checkverison_install"> Install now</string>
+ 	<string name="movga_checkverison_down_loding">updating...</string>
+    
+</resources>

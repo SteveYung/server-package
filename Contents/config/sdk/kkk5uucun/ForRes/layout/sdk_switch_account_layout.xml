@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/sdk_fast_reg_margin_h_dimen"
+    android:paddingRight="@dimen/sdk_fast_reg_margin_h_dimen"  >
+    
+    <ListView android:id="@id/sdk_lv_accounts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sdk_btn_switch"
+        android:cacheColorHint="@null"></ListView>
+    
+    <Button
+        android:id="@id/sdk_btn_switch"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_button_height"
+        android:layout_below="@id/sdk_tv_find_code"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_button_dimen"
+        android:layout_marginLeft="@dimen/sdk_margin_h_max"
+        android:layout_marginRight="@dimen/sdk_margin_h_max"
+        android:background="@drawable/sdk_btn_blue_selector"
+        android:text="@string/sdk_login"
+        android:textColor="@color/color_button_text"
+        android:textSize="@dimen/button_generic_size"
+        android:drawableStart="@drawable/sdk_btn_switch" />
+    
+    <Button
+        android:id="@id/sdk_btn_add_account"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_button_height"
+        android:layout_below="@id/sdk_btn_switch"
+        android:layout_marginTop="@dimen/sdk_fast_reg_margin_v_button_dimen"
+        android:layout_marginLeft="@dimen/sdk_margin_h_max"
+        android:layout_marginRight="@dimen/sdk_margin_h_max"
+        android:background="@drawable/sdk_btn_blue_line_selector"
+        android:text="@string/sdk_fast_register"
+        android:textColor="@color/color_button_text"
+        android:textSize="@dimen/button_small_size" />
+
+</RelativeLayout>

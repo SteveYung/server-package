@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kkk_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kkk_accout_gift_color" >
+
+        <LinearLayout
+            android:id="@+id/kkk_gift_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kkk_gift_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/kkk_account_gift_need"
+                android:textColor="@color/kkk_account_gift_btn_on"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/kkk_account_gift_linel"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/kkk_accout_gift_btn_on" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+          	android:id="@+id/kkk_gift_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kkk_gift_list_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/kkk_account_gift_has"
+                android:textColor="@color/kkk_account_gift_btn_normal"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/kkk_account_gift_liner"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/kkk_accout_gift_btn_on"
+                android:visibility="gone" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

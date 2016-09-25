@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.taobao.de.aligame.views.BaodianUserInfoFieldView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ali_de_bd_bg_blue_normal" />
+
+        <LinearLayout
+            android:id="@+id/id_ali_de_bd_user_info_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-15dp"
+            android:layout_marginLeft="@dimen/ali_de_bd_dimen_charge_margin"
+        	android:layout_marginRight="@dimen/ali_de_bd_dimen_charge_margin"
+            android:layout_centerInParent="true"
+            android:paddingBottom="21dp"
+            android:background="@drawable/ali_de_bd_bg_charge_kebian"
+            >
+
+            <TextView
+                android:id="@+id/id_ali_de_bd_user_info_balance"
+                style="@style/ali_de_bd_style_charge_user_info"
+                android:text="@string/ali_de_bd_string_charge_deposite_title"
+                />
+
+            <TextView
+                android:id="@+id/id_ali_de_bd_user_info_credit_limit"
+                style="@style/ali_de_bd_style_charge_user_info"
+                android:text="@string/ali_de_bd_string_charge_credit_limit_title"
+                />
+
+            <TextView
+                android:id="@+id/id_ali_de_bd_user_info_det"
+                style="@style/ali_de_bd_style_charge_user_info"
+                android:text="@string/ali_de_bd_string_charge_det_title"
+                />
+            
+            <TextView
+                android:id="@+id/id_ali_de_bd_user_info_deanline"
+                style="@style/ali_de_bd_style_charge_user_info"
+                android:text="@string/ali_de_bd_string_charge_deadline_title"
+                />
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ali_de_bd_dimen_charge_margin"
+        android:layout_marginRight="@dimen/ali_de_bd_dimen_charge_margin"
+        android:background="@drawable/ali_de_bd_bg_sanjiao" />
+
+</com.taobao.de.aligame.views.BaodianUserInfoFieldView>

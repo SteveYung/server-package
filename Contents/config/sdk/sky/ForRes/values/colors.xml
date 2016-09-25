@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	
+	<!-- ac使用 -->
+    <color name="layout_background">#ffffffff</color>
+    <color name="blue_background">#ffFF0000</color>
+    <color name="title_background">#ff72C5F8</color>
+    <color name="dialog_background">#e0000000</color>
+    <color name="dialog_linecolor">#f09f9b9b</color>
+    <color name="input_content_text_color">#ff464646</color>
+    <color name="input_hint_text_color">#ffabb1b4</color>
+    <color name="error_reason_color">#fff07057</color>
+    <color name="button_gray_bg_normal">#ffD6D6D6</color>
+    <color name="button_gray_bg_pressed">#ff969696</color>
+    <color name="button_normal_blue_color">#ff72C5F8</color>
+    <color name="button_focus_blue_color">#ff4E8BAD</color>
+    <color name="button_focus_blue_disable_color">#fff4fdff</color>
+    <color name="dialog_left_button">#ffebebeb</color>
+    <color name="dialog_left_button_pressed">#ffa4a4a4</color>
+    <color name="text_blue_color">#ff72C5F8</color>
+    <color name="text_white_color">#ffffffff</color>
+    <color name="text_black_color">#ff000000</color>
+    <color name="text_phonenumber_bg">#fffeffee</color>
+    <color name="text_color_big_phoneNumber">#ff2DCC70</color>
+    <color name="phone_numbers">#ff2ecc71</color>
+    <color name="button_ignore_bg_pressed">#ffc4c4c4</color>
+    <color name="button_ignore_bg_normal">#fff0f0f0</color>
+    <color name="text_color">#ff7a7a7a</color>
+	<!-- ac使用 -->
+    <color name="transparent_background">#00FFFFFF</color>
+    <color name="dialog_transparent_background">@android:color/transparent</color>
+    <color name="green">#FF00FF00</color>
+    <color name="input_title">#FF484848</color>
+    <color name="input_hint">#FF282828</color>
+    <color name="input_edit_hint">#BBCBD8</color>
+    <color name="input_edit_content">#FF5B6E7C</color>
+    <color name="user_hint">#29323B</color>
+
+    <color name="tab_font">#FF086DBA</color>
+    <color name="query_list_even_bg">#FFe8e8e8</color>
+    <color name="query_list_odd_bg">#FFE6EFF6</color>
+
+    <color name="query_list_item_1">#FF29323B</color>
+    <color name="query_list_item_2">#FF5B6E7C</color>
+    <color name="query_list_item_3">#FF5B6E7C</color>
+    <color name="query_list_item_4">#FFEC5B29</color>
+
+    <color name="back_button_normal">#FFFFFFFF</color>
+    <color name="back_button_shadow_normal">#FF359FFF</color>
+    <color name="back_button_focus">#FFFBD893</color>
+    <color name="back_button_shadow_focus">#FF359FFF</color>
+
+</resources>

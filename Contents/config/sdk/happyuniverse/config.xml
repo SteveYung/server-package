@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config pluginId="100006">
+	<paramLs>
+		<param name = "HappyUniverseAppId" required = "1" desc = "AppId" showName = "AppId" bWriteIntoManifest = "0" bUserOffer= "1" bWriteIntoClient="1"/>
+        <param name = "HappyUniverseAppKey" required = "1" desc = "AppKey" showName = "AppKey" bWriteIntoManifest = "0" bUserOffer= "1" bWriteIntoClient="1"/>
+	</paramLs>
+	
+	<operateLs>
+        <operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "happyuniverse"/>
+        <operate step = "2" name = "copy" from = "ForAssets" to = "assets" desc = "happyuniverse"/>
+        <operate step = "3" name = "copy" from = "ForRes" to = "res" desc = "happyuniverse"/>
+        <operate step = "4" name = "mergeR" desc = "合并R文件，此步骤需在res目录合并完后才执行" />
+    </operateLs>
+
+	<pluginLs>
+		<plugin name = "UserHappyuniverse" typePlugin = "0" desc = "happyuniverse"/>
+		<plugin name = "IAPOnlineHappyuniverse" typePlugin = "2" desc = "happyuniverse"/>
+        <plugin name = "AnalyticsHappyuniverse" typePlugin = "5" desc = "happyuniverse"/>
+	</pluginLs>
+	<version code = "1000" showVersion = "2.0.0_1.0.0" minClientVer="2.0"
+        minFrameworkVer="2.0">
+        <![CDATA[更新至2.0.0版本 ]]>
+    </version>
+</config>

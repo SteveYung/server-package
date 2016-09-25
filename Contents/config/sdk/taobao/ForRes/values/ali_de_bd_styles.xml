@@ -1,0 +1,86 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 上面的不需要 -->
+
+    <style name="ali_de_bd_style_v2_consume_sub_msg_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/ali_de_bd_color_v2_consume_text</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="ali_de_bd_style_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/ali_de_bd_color_white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="ali_de_bd_style_single_btn">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/ali_de_bd_color_white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    
+    <style name="ali_de_bd_style_dialog_msg_text">
+        <item name="android:textColor">@color/ali_de_bd_color_consume_dialog_msg</item>
+        <item name="android:textSize">@dimen/ali_de_bd_dimen_cosume_dialog_text</item>
+    </style>
+
+    <style name="ali_de_bd_style_charge_user_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/ali_de_bd_color_black</item>
+	</style>
+	
+    <style name="ali_de_bd_style_credit_text">
+        <item name="android:textColor">@color/ali_de_bd_color_black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="ali_de_bd_style_consume_dialog_notify_text">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/ali_de_bd_color_black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

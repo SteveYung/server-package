@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gxd_input_border">
+
+    <TextView
+        android:id="@+id/tvGiftDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x80"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:gravity="left|center_vertical"
+        android:text="aasdasdasd"
+        android:textColor="@color/gamexdd_666666"
+        android:layout_toLeftOf="@+id/tvGiftChange"
+        android:layout_alignParentLeft="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvGiftChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x20"
+        android:text="商城兌換"
+        android:textColor="@drawable/gxd_tv_giftrecord_desc_selector"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_widget_item_giftrecord_desc.xml -->

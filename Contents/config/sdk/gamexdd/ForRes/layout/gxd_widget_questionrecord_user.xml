@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llXy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRecordUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gamexdd_0066CC"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvRecordUserTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="發表時間:2015-07-16 16:55:42"
+            android:textColor="@color/gamexdd_default_hint" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgXy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llXy"
+        android:layout_marginLeft="@dimen/x100"
+        android:src="@drawable/gxd_user_kefu_bg09" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgXy"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@color/gamexdd_eeeeee"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRecordUserContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/x10"
+            android:maxWidth="@dimen/x800"
+            android:minWidth="@dimen/x200"
+            android:textColor="@color/gamexdd_666666" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_widget_questionrecord_user.xml -->

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip" >
+
+    <TextView
+        android:id="@+id/kkk_binding_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:text="@string/kkk_phone_title"
+        android:textColor="@color/kkkwan_blue"
+        android:textSize="@dimen/kkk_account_change_password" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kkk_divider_bg"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/kkk_binding_success_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:text="@string/kkk_binding_success_tv"
+        android:textColor="@color/kkkwan_black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/kkk_binding_success_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/kkk_btn_back"
+        android:contentDescription="@null" />
+
+</LinearLayout>

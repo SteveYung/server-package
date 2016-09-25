@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocosdk="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    style="@style/CCPageTheme" 
+    >
+
+    <com.coco.sdk.ui.widget.CCPageTitle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cocosdk:title_type="only_close"
+        cocosdk:title_text="@string/cc_user_login_title" />
+    <View 
+        android:id="@+id/height_120"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cc_height_120"
+        />
+    <RelativeLayout 
+        android:id="@+id/ed_name_container" 
+        android:layout_below="@+id/height_120"
+        android:layout_height="@dimen/cc_height_80"
+        android:layout_width="match_parent"
+        >
+   	 <EditText style="@style/EditTextPhone" android:id="@+id/ed_name"  android:hint="@string/cc_user_login_hint_1" android:inputType="text" 
+   	     android:maxLength="20"/>
+   	 <com.coco.sdk.ui.widget.CCSpinner
+      android:id="@+id/cache_user_list"
+       style="@style/EditTextPhone"
+       android:visibility="invisible"
+       android:paddingLeft="0dip"
+                    android:animationCache="false"
+                    android:drawSelectorOnTop="false"
+                    android:divider="@drawable/cc_line_menu"
+                    android:background="@drawable/cc_menu_button"
+                    android:dropDownSelector="@drawable/cc_menu_button"
+                    android:popupBackground="@drawable/cc_user_droplist"
+                    android:layout_alignParentBottom="true"
+                    android:dropDownVerticalOffset="0px"
+                    android:spinnerMode="dropdown" />
+      <View 
+        android:id="@+id/user_list_able"
+        android:layout_height="@dimen/cc_height_70"
+        android:layout_width="@dimen/cc_height_70"
+        android:visibility="gone"
+        android:background="@drawable/cc_user_list_able"
+        android:layout_alignRight="@+id/ed_name"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        />
+    </RelativeLayout>
+    <EditText style="@style/EditTextPhone" 
+        android:maxLength="15"
+        android:id="@+id/ed_pwd" android:layout_marginTop="@dimen/cc_height_30" android:layout_below="@+id/ed_name_container" android:inputType="textPassword" android:hint="@string/cc_user_login_hint_2" />
+    <TextView
+        android:id="@+id/errorinfo_text"
+        style="@style/ErrorInfo"
+        android:layout_marginLeft="@dimen/cc_margin_50"
+        android:layout_above="@+id/ed_name_container"
+        android:layout_alignLeft="@+id/ed_name_container" />
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+	    android:layout_alignParentBottom="true"
+        >
+        
+        
+    <Button style="@style/OneLineButton"
+        android:id="@+id/ed_loginbutn"
+        android:text="@string/cc_user_login"/>
+    <RelativeLayout 
+   	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/cc_height_80"
+   	    >
+        <TextView 
+            android:id="@+id/login_question"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/cc_margin_50"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_hint_grey"
+            android:textSize="@dimen/cc_font_size_24"
+            android:text="@string/cc_user_login_question"
+            />
+        
+    </RelativeLayout>
+    <View 
+        android:layout_height="@dimen/cc_height_2"
+        android:layout_width="match_parent"
+        android:background="@drawable/cc_line"
+        />
+   	<RelativeLayout 
+   	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/cc_height_80"
+   	    >
+   	    <TextView 
+   	        android:id="@+id/user_login_regist"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    style="@style/TextLinkBig"
+	    android:layout_centerInParent="true"
+	    android:background="@drawable/cc_menu_button"
+	    android:text="@string/cc_user_login_regist"
+	    />
+   	</RelativeLayout>
+    </LinearLayout>
+    <TextView style="@style/ErrorInfo"
+        android:id="@+id/errorinfo_page"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

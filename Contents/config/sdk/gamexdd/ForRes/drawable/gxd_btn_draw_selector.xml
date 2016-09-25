@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/gamexdd_aaaaaa" android:state_enabled="false" android:state_pressed="true"/>
+    <item android:drawable="@color/gamexdd_999999" android:state_enabled="false"/>
+    <item android:drawable="@color/gamexdd_8bd237" android:state_pressed="true"/>
+    <item android:drawable="@color/gamexdd_6cb01b"/>
+</selector><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_btn_draw_selector.xml -->

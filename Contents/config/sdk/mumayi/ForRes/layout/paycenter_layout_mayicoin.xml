@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paycenter_little_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/la_mayicoin_balance"
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/pay_white_bg_style" >
+
+        <TextView
+            android:id="@+id/tv_mayicoin_balance_remind"
+            style="@style/paycenter_text_14_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:text="@string/str_paycenter_mayi_coin_balance" />
+
+        <TextView
+            android:id="@+id/tv_mayicoin_balance"
+            style="@style/paycenter_text_24_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@+id/tv_mayicoin_balance_remind"
+            android:singleLine="true"
+            android:text="0.00" />
+
+        <TextView
+            android:id="@+id/tv_mayicoin_charge"
+            style="@style/paycenter_text_24_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:layout_toLeftOf="@+id/img_icon"
+            android:singleLine="true"
+            android:text="@string/str_paycenter_mayi_coin_card_charge"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/pay_card_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/la_mayi_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/la_mayicoin_balance"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_mayicoin_card_charge"
+            style="@style/paycenter_text_16_big_black"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="4"
+            android:hint="@string/str_paycenter_mayi_coin_card_hint"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColorHint="@color/paycenter_big_black"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_mayicoin_card_charge_sibmit"
+            style="@style/paycenter_text_16_realwhite"
+            android:layout_width="70dip"
+            android:layout_height="46dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/pay_alix_style"
+            android:text="@string/str_paycenter_mayi_coin_charge"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/la_mayi_card"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip" >
+
+        <TextView
+            android:id="@+id/tv_mayicoin_remind"
+            style="@style/paycenter_text_14_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10dip"
+           />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_company_email"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dip"
+        android:text="@string/str_paycenter_email" />
+
+    <Button
+        android:id="@+id/btn_goto_pay_mayicoin"
+        style="@style/paycenter_text_14_realwhite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_company_email"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/pay_alix_style"
+        android:text="@string/pay_goto_pay" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/efun_pd_person_title_bg_selector"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/summary_nav_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/e_size_100"
+        android:textColor="@color/efun_pd_person_title_text_selector"
+        android:gravity="center"
+        android:textSize="@dimen/e_text_size_40" />
+
+</LinearLayout>

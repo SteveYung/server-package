@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <paramLs>
+        <param name="Orientation" required="1" showName="Orientation" desc="界面方向" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1">
+            <option value="landscape"/>
+            <option value="portrait"/>
+        </param>
+        <param name="You49_AppId" required="1" showName="appid" desc="You49_AppId 49游分配的 应用id" bWriteIntoManifest="0" 
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="You49_AppKey" required="1" showName="appkey" desc="You49_AppKey 49游分配的 应用key" bWriteIntoManifest="0" 
+               bUserOffer="1" bWriteIntoClient="1"/>
+    </paramLs>    
+
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="appyou49"/>  
+        <operate step="2" name="copy" from="ForRes" to="res" desc="appyou49"/>  
+        <operate step="3" name="copy" from="ForAssets" to="assets" desc="appyou49"/>
+        <operate step="4" name="script" desc="更改49you的manifest"/>                        
+        <operate step="5" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    
+    <pluginLs>
+        <plugin name="UserYou49" typePlugin="0" desc="49游用户插件"/>
+        <plugin name="IAPOnlineYou49" typePlugin="2" desc="49游支付插件"/>
+    </pluginLs>
+    <version code = "1014" showVersion = "1.0" >
+        <![CDATA[
+        <br/>
+    ]]>
+    </version>
+</config>

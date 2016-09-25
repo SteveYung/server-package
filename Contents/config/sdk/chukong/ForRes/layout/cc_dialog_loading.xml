@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+	<RelativeLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="@dimen/cc_window_width"
+        android:layout_centerInParent="true"
+	    >
+	    <LinearLayout
+	        style="@style/content_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cc_page"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/cc_margin_36"
+        android:paddingLeft="@dimen/cc_margin_30"
+        android:paddingRight="@dimen/cc_margin_30"
+        android:paddingTop="@dimen/cc_margin_36" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/loading_container"
+                android:layout_width="@dimen/cc_height_76"
+                android:layout_height="@dimen/cc_height_76"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/cc_margin_24" >
+
+                <ImageView
+                    android:id="@+id/img_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_msg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/loading_container"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/cc_font_size_30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/loading_container"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_msg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/cc_font_size_34" />
+
+                <TextView
+                    android:id="@+id/tv_msg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cc_height_16"
+                    android:textSize="@dimen/cc_font_size_30" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ed_loginbutn"
+            style="@style/OneLineButton"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="@dimen/cc_margin_36" />
+    </LinearLayout>
+	    
+	    
+	</RelativeLayout>
+    
+
+</RelativeLayout>

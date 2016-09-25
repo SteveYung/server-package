@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings related to global -->
+    <string name="mispine_default_name">Happy Universe</string>
+    <string name="mispine_alertdialog_title_default">Notice</string>
+    <string name="mispine_alertdialog_title_notice">Notice</string>
+    <string name="mispine_alertdialog_title_alert">Alert</string>
+
+    <!-- Strings related to IAB -->
+    <string name="mispine_product_list_title_default">Products</string>
+    <string name="mispine_product_list_title_play_store">Products</string>
+    <string name="mispine_webview_title_default">Happy Universe</string>
+    <string name="mispine_selector_list_title_default">Happy Universe Checkout</string>
+
+    <!-- Strings related to login -->
+    <string name="mispine_signinup_title_sign_in_up">Sign In/Up</string>
+    <string name="mispine_signinup_promote_sign_in"><u>Already have an \n<br></br>account? Sign in</u></string>
+    <string name="mispine_signinup_promote_sign_up"><u>Not registered yet? \n<br></br>Sign up now</u></string>
+    <string name="mispine_signinup_promote_sign_up_now"><u>Sign up now</u></string>
+    <string name="mispine_signinup_prompt_name">User name (optional)</string>
+    <string name="mispine_signinup_prompt_email">Email</string>
+    <string name="mispine_signinup_prompt_password">Password</string>
+    <string name="mispine_signinup_confirm_password">Confirm Password</string>
+
+    <string name="mispine_signinup_error_invalid_email">Email address is invalid</string>
+    <string name="mispine_signinup_error_invalid_password">Password is too short</string>
+    <string name="mispine_signinup_error_incorrect_password">Password is incorrect</string>
+    <string name="mispine_signinup_error_password_doesnt_match">Password does not match</string>
+    <string name="mispine_signinup_error_field_required">This field is required</string>
+
+    <string name="mispine_signinup_action_sign_up">Sign up</string>
+    <string name="mispine_signinup_action_sign_in">Sign in</string>
+    <string name="mispine_signinup_action_sign_in_short">Sign in</string>
+
+
+
+    <string name="mispine_working">作業中...</string>
+    <string name="mispine_next">下一行</string>
+    <!-- Strings related to mispine -->
+    <string name="mispine_your_account_is_locked">抱歉, 你的帳號已被鎖定</string>
+    <string name="mispine_failed_to_connect_to_server">連接伺服器失敗</string>
+    <string name="mispine_please_check_your_network_connection_and_try_again_later">请稍后再重试</string>
+    <string name="mispine_our_server_is_under_emergency_maintenance">伺服器緊急維護</string>
+    <string name="mispine_please_try_again_later">請稍後再重試</string>
+    <string name="mispine_invalid_account"><u>賬號無效</u></string>
+    <string name="mispine_no_available_billing_service_for_this_product">没有可用的支付渠道</string>
+    <string name="mispine_i_want_to_play_with_another_account"><u>我想使用另壹個遊戲賬號</u></string>
+    <string name="mispine_play_now">開始遊戲!</string>
+    <string name="mispine_sign_in">登錄</string>
+    <string name="mispine_sign_up">註冊</string>
+    <string name="mispine_sign_up_now"><u>註冊</u></string>
+    <string name="mispine_email">郵箱, 如 john@example.com</string>
+    <string name="mispine_password">密碼, 至少六位</string>
+    <string name="mispine_confirm_password">確認密碼</string>
+    <string name="mispine_already_have_an_account_sign_in"><u>已有賬號? \n馬上登錄</u></string>
+    <string name="mispine_not_registered_yet_sign_up_now"><u>尚未註冊? \n現在註冊</u></string>
+    <string name="mispine_email_address_is_invalid">無效的郵箱</string>
+    <string name="mispine_password_is_too_short">密碼不正確</string>
+    <string name="mispine_password_is_incorrect">密碼不正確</string>
+    <string name="mispine_password_does_not_match">密碼不正確</string>
+    <string name="mispine_this_field_is_required">必填</string>
+
+    <string name="mispine_signed_in_successfully">登錄成功</string>
+
+    <string name="mispine_alert">警告</string>
+    <string name="mispine_notice">提醒</string>
+    <string name="mispine_are_you_sure_to_delete_this_account_from_device">確定要從這個設備上刪除這個賬號嗎?</string>
+    <string name="mispine_no_keep_it">不, 保留</string>
+    <string name="mispine_yes_delete_anyway">是的, 刪除</string>
+    <string name="mispine_no">取消</string>
+    <string name="mispine_yes">確定</string>
+    <string name="mispine_ok">好的</string>
+    <string name="mispine_invalid">無效</string>
+    <string name="mispine_password_6_chars_at_least">密碼, 至少六位</string>
+    <string name="mispine_secure_your_guest_account">保護你的遊客賬號!</string>
+    <string name="mispine_change_your_password">修改你的密碼</string>
+    <string name="mispine_forget_your_password">忘記密碼?</string>
+    <string name="mispine_all_your_guest_accounts_are_securely_bound_to_an_email_address">所有賬號均已綁定了安全郵箱</string>
+    <string name="mispine_congratulations">恭喜</string>
+    <string name="mispine_cheers">好的</string>
+    <string name="mispine_you_dont_have_any_account_that_was_bound_to_an_email_address_and_password">你沒有綁定了郵箱和密碼的賬號</string>
+    <string name="mispine_current_password">當前密碼</string>
+    <string name="mispine_new_password_6_chars_at_least">新密碼, 至少六位</string>
+    <string name="mispine_confirm_new_password">確認新密碼</string>
+    <string name="mispine_confirm">確認</string>
+    <string name="mispine_succeed">成功完成</string>
+    <string name="mispine_done_successfully">操作成功</string>
+    <string name="mispine_verification_code">驗證碼</string>
+    <string name="mispine_happy_universe">Happy Universe</string>
+    <string name="mispine_happy_universe_checkout">Happy Universe 結賬</string>
+    <string name="mispine_you_need_to_sign_in_before_continue">你需要登錄以繼續</string>
+    <string name="mispine_your_network_connection_seems_to_be_broken_please_check_your_wifi_or_cellular_network_status_and_try_again">你的網絡已斷開, 請檢查設備的 Wi-Fi 或運營商網絡後重試</string>
+    <string name="mispine_try_again">重試</string>
+    <string name="mispine_account_created">賬號已創建</string>
+    <string name="mispine_account_does_not_exists">賬號沒有註冊</string>
+    <string name="mispine_please_confirm_your_password_and_sign_up">請確認你的密碼並註冊</string>
+    <string name="mispine_account_exists">賬號已存在</string>
+    <string name="mispine_signed_out_current_user">登出當前用戶</string>
+    <string name="mispine_signed_in">登錄</string>
+    <string name="mispine_but_failed_to_signed_in">但登錄失敗</string>
+    <string name="mispine_but_password_does_not_match">但密碼不正確</string>
+    <string name="mispine_already_bound_to_this_account">已登錄至此賬號</string>
+    <string name="mispine_you_have_already_signed_in_with_another_account">你已登錄了另壹個賬號</string>
+    <string name="mispine_sign_it_out_and_sign_in_a_new_one">要登出當前賬號並登錄另壹個賬號嗎?</string>
+    <string name="mispine_sign_up_and_bind_succeeded">註冊成功</string>
+    <string name="mispine_and_shit_happened">服務器內部出錯</string>
+    <string name="mispine_invalid_guid">Invalid guid</string>
+    <string name="mispine_sorry">抱歉</string>
+    <string name="mispine_but_you_could_not_sign_in">登錄失敗</string>
+    <string name="mispine_not_authorized">未獲得授權</string>
+    <string name="mispine_current_password_invalid">當前密碼無效</string>
+    <string name="mispine_email_not_signed_up">此郵箱未註冊</string>
+    <string name="mispine_an_email_with_a_verification_code_has_been_sent_to_your_email_address_please_check_your_email">壹封帶驗證碼的郵件已發送至你的郵箱. 請查看你的郵箱.</string>
+    <string name="mispine_an_email_with_a_verification_code_has_already_been_sent_to_your_email_address_please_check_your_email">壹封帶驗證碼的郵件已發送至你的郵箱. 請查看你的郵箱.</string>
+    <string name="mispine_verification_code_invalid">驗證碼無效</string>
+    <string name="mispine_verification_code_expired">驗證碼已過期</string>
+    <string name="mispine_please_go_back_and_try_again">請退回並重試</string>
+    <string name="mispine_invalid_email_to_reset_password">此郵箱無法重設密碼</string>
+    <string name="mispine_password_reset_successfully">密碼重設成功</string>
+    <string name="mispine_signed_in_with_facebook_successfully">Facebook 登錄成功</string>
+    <string name="mispine_paypal_payment_succeed">Paypal 支付成功!</string>
+
+    <string name="mispine_no_available_payment_method_please_contact_us">沒有可用的支付服務</string>
+    <string name="mispine_something_goes_wrong_please_try_again">內部出錯, 請重試</string>
+    <string name="mispine_this_channel_is_not_implemented_yet_in_this_version_of_app">此版本尚未支持此支付服務</string>
+    <string name="mispine_payment_succeed_will_close_this_window_now">支付成功! 即將回到遊戲</string>
+    <string name="mispine_payment_failed_please_contact_us">支付失敗! 請聯系我們</string>
+
+</resources>
+

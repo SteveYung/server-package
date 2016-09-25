@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+    android:background="@color/sdk_color_white"
+    android:focusable="true"
+    android:gravity="center"
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/serial"
+		style="@style/CardTextStyle"
+		android:layout_marginRight="@dimen/sdk_btns_hspacing"
+		android:textCursorDrawable="@null"
+        android:hint="@string/input_card_serial">
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwd"
+     	style="@style/CardTextStyle"
+     	android:textCursorDrawable="@null"
+        android:hint="@string/input_card_psword"/>
+
+</LinearLayout>

@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/lunqiitemback_cl" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="60"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/an1_mytitlebut"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="20"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bg_top_back" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" />
+
+            <TextView
+                android:id="@+id/an1_checkservice_title"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="100"
+                android:maxLength="30"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:text="綁定賬號"
+                android:textColor="#000000"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" />
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="50"
+                android:adjustViewBounds="true"
+                android:paddingBottom="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/lunqicheckservicelogo" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="36" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="168"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="60" />
+
+            <LinearLayout
+                android:id="@+id/lunqi_tryplay_layoutbg"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="660"
+                android:background="@drawable/lunqi_tile_shape"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="15" />
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="660"
+                    android:background="@drawable/lunqi_tile_shape"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="8" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="210"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/lunqi_tryplay_zhlable"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="100"
+                            android:gravity="center_vertical"
+                            android:hint="賬號："
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/lunqi_tryplay_zhedit"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="530"
+                            android:background="@null"
+                            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_@."
+                            android:gravity="center_vertical"
+                            android:hint="3-20位字母數字、下劃線、@及.的組合"
+                            android:maxLength="20"
+                            android:textSize="18px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="7"
+                        android:background="#33000000" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="210"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/lunqi_tryplay_mimalable"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="100"
+                            android:gravity="center_vertical"
+                            android:hint="密碼："
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/lunqi_tryplay_mimaedit"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="530"
+                            android:background="@null"
+                            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:gravity="center_vertical"
+                            android:hint="6-20位字母數字"
+                            android:maxLength="20"
+                            android:textSize="18px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="7"
+                        android:background="#33000000" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="210"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/lunqi_tryplay_mima2lable"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="100"
+                            android:gravity="center_vertical"
+                            android:hint="確認密碼："
+                            android:textSize="20px" />
+
+                        <EditText
+                            android:id="@+id/lunqi_tryplay_mima2edit"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="530"
+                            android:background="@null"
+                            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:gravity="center_vertical"
+                            android:hint="6-20位字母數字"
+                            android:maxLength="20"
+                            android:textSize="18px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="8" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="60" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="32" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="54"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="200" />
+
+            <TextView
+                android:id="@+id/lunqi_tryplay_surebut"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="400"
+                android:background="@drawable/lunqi_service_but"
+                android:gravity="center"
+                android:text="綁定後繼續"
+                android:textColor="#000000"
+                android:textSize="24px" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="200" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="130" />
+    </LinearLayout>
+
+</RelativeLayout>

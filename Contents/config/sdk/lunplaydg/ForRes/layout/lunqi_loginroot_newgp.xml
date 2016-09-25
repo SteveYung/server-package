@@ -1,0 +1,364 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/lunqi360_layout_pop_root"
+        android:layout_width="700px"
+        android:layout_height="420px"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="27" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="645"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="155"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/an1_ddt_mm_bg7" />
+                </LinearLayout>
+                <!--  -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="11" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="54"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="177" />
+
+                            <ImageView
+                                android:id="@+id/lpchange_login_zhback"
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="290"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/an1_lp_mm_bg1" />
+
+                            <View
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="178" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="242" />
+
+                            <EditText
+                                android:id="@+id/an1_lpchange_loginname"
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="180"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="請輸入賬號"
+                                android:maxLength="20"
+                                android:singleLine="true"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#99ffffff" />
+
+                            <ImageButton
+                                android:id="@+id/an1_lpchange_listbut"
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="38"
+                                android:adjustViewBounds="true"
+                                android:background="@null"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/an1_ddt_main_popdata" />
+
+                            <View
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="185" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--  -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="10" />
+                <!--  -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="54"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="177" />
+
+                            <ImageView
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="290"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/an1_lp_mm_bg2" />
+
+                            <View
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="178" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" >
+
+                            <View
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="242" />
+
+                            <EditText
+                                android:id="@+id/an1_lpchange_loginwords"
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="218"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="請輸入密碼"
+                                android:maxLength="20"
+                                android:password="true"
+                                android:singleLine="true"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#99ffffff" />
+
+                            <View
+                                android:layout_width="0px"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="185" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--  -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="10" />
+                <!--  -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="38"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="176" />
+
+                    <CheckBox
+                        android:id="@+id/an1_ddt_mycheck_sigle"
+                        style="@style/CustomCheckboxTheme"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="38"
+                        android:checked="true"
+                        android:gravity="center" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="10" />
+
+                    <ImageView
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="99"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/an1_ddt_mm_text1" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="10" />
+
+                    <ImageButton
+                        android:id="@+id/an1_lpchange_regbut"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="96"
+                        android:background="@null"
+                        android:scaleType="fitEnd"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/an1_ddt_mm_btn2" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="12" />
+
+                    <TextView
+                        android:id="@+id/lunqi_loadView_new_GOOGLEPLUS"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="105"
+                        android:background="@drawable/bg_bggplus"
+                        android:gravity="center"
+                        android:text="登陸"
+                        android:paddingLeft="5dip"
+                        android:textColor="#ffffff" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="104" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="22" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="45"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="242"
+                        android:background="@null"
+                        android:gravity="right" >
+
+                        <ImageView
+                            android:id="@+id/an1_lpchange_tryplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/lunqizhijieyouxi1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="8" />
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="185"
+                        android:gravity="center_horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/an1_lpchange_loginbut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/lpchangeloginbutnew" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="8" />
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="202"
+                        android:gravity="left" >
+
+                        <ImageButton
+                            android:id="@+id/an1_lpchange_fbbut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:adjustViewBounds="true"
+                            android:background="@null"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/lpchangefbbut" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="21" />
+                <!--  -->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="28" />
+            <!--  -->
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout> <!-- an1_lp_zhijieyx" lunqizhijieyouxi1 -->

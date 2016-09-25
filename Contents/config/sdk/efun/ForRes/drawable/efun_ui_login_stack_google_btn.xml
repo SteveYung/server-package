@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:state_pressed="true" android:drawable="@drawable/efun_ui_login_stack_google_click"/>
+	<item android:drawable="@drawable/efun_ui_login_stack_google_normal"/>
+</selector>

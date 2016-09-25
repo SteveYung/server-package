@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifestConfig xmlns:android="http://schemas.android.com/apk/res/android"     xmlns:tools="http://schemas.android.com/tools" >
+
+    <permissionCfg>
+        <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </permissionCfg>
+
+    <applicationCfg keyword="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterLogin" >
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterLogin"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterCompleteInfo"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterRegist"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenter"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterMain"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.pay.MMYPayMain"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterChargeRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterConsumeRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterModifyPwd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterBindPhone"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterFineGame"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterAboutUs"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterQuestion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterMail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.usercenter.PaymentCenterFeedBack"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mumayi.paymentcenter.ui.MiniBrowserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UPPay" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UPPay"
+            android:windowSoftInputMode="adjustResize" />
+
+        <receiver android:name="com.mumayi.paymentcenter.dao.util.UserDataReciver" >
+            <intent-filter>
+                <action android:name="com.mumayi.paycenter.updateuser" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mumayi.paycenter.returnuser" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mumayi.paycenter.needuser" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.mumayi.down.service.DownService" >
+        </service>
+        <service android:name="com.mumayi.paymentcenter.ui.PaymentCenterDownLoadService" >
+        </service>
+
+        <meta-data
+            android:name="MMY-PID"
+            android:value="KEY-8YCe1DwnvyQ" />
+    </applicationCfg>
+
+</manifestConfig>

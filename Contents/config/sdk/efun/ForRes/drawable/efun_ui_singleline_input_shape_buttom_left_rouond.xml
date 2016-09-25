@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <solid android:color="#FFFFFF" />
+
+    <corners android:bottomLeftRadius="@dimen/efun_ui_round" />
+
+    <stroke
+        android:width="@dimen/efun_ui_shape_input_width"
+        android:color="#C1C1C1" />
+
+</shape>

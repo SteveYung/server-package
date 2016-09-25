@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    tools:context=".paymentMainActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"   
+    	android:orientation="vertical"
+    	android:background="@drawable/lzpayment_mainroot_home_background"
+        >
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="70"
+    		android:orientation="vertical"
+    		android:background="@color/LZ_payment_home_logobackground" 
+    		>
+    		<View 
+            	android:layout_width="match_parent"
+    			android:layout_height="0px" 
+    			android:layout_weight="1"    			
+    			/>
+    		<ImageView 
+    		    android:layout_width="match_parent"
+    			android:layout_height="0px" 
+    			android:layout_weight="1"  
+    			android:src="@drawable/rockpaylogo"
+    		    />
+    		<View 
+            	android:layout_width="match_parent"
+    			android:layout_height="0px" 
+    			android:layout_weight="1"    			
+    			/>            
+            
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="10"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="12"
+    		android:background="@null" 
+    		android:gravity="center_vertical"
+    		android:visibility="gone"
+    		>
+    		
+    		    <ImageView 
+    		        android:id="@id/lzpay_baseroot_title_imageView0"
+    	    		android:layout_width="wrap_content"
+    				android:layout_height="fill_parent"
+    				android:src="@drawable/lzpayment_yuandian_light"
+    				android:scaleType="centerInside"
+    				android:adjustViewBounds="true"
+    				android:background="@null"   
+    				android:layout_alignParentLeft="true"
+    				android:layout_marginLeft="184px"
+    				/>
+    		
+   
+    		    <ImageView 
+    		        android:id="@id/lzpay_baseroot_title_imageView1"
+    	    		android:layout_width="wrap_content"
+    				android:layout_height="fill_parent"
+    				android:src="@drawable/lzpayment_yuandian_drak"
+    				android:scaleType="centerInside"
+    				android:adjustViewBounds="true"
+    				android:background="@null"  
+    				android:layout_alignParentLeft="true"
+    				android:layout_marginLeft="384px"
+    				/>
+    	
+    		
+    		    <ImageView 
+    		        android:id="@id/lzpay_baseroot_title_imageView2"
+    	    		android:layout_width="wrap_content"
+    				android:layout_height="fill_parent"
+    				android:src="@drawable/lzpayment_yuandian_drak"
+    				android:scaleType="centerInside"
+    				android:adjustViewBounds="true"
+    				android:background="@null"   
+    				android:layout_alignParentLeft="true"
+    				android:layout_marginLeft="416px"
+    				/>
+    		
+    		    <ImageView 
+    		        android:id="@id/lzpay_baseroot_title_imageView3"
+    	    		android:layout_width="wrap_content"
+    				android:layout_height="fill_parent"
+    				android:src="@drawable/lzpayment_yuandian_drak"
+    				android:scaleType="centerInside"
+    				android:adjustViewBounds="true"
+    				android:background="@null"   
+    				android:layout_alignParentLeft="true"
+    				android:layout_marginLeft="448px"
+    				/>
+    		
+    	</RelativeLayout>
+    	
+        <lezhou.paymentStuff.totoleView.myViewPager
+            android:id="@id/lzpay_baseroot_viewpager"
+            android:layout_width="match_parent"
+    		android:layout_height="0px" 
+    		android:layout_weight="400"
+    		android:orientation="vertical"
+    		/>
+       </LinearLayout>
+        <View 
+           android:id="@id/lzpay_baseroot_fillscreen"
+           android:layout_width="match_parent"
+    	   android:layout_height="match_parent"
+    	   android:visibility="gone"/>
+         <ProgressBar
+            android:id="@id/lzpay_baseroot_loadingview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            />
+</RelativeLayout>
+
+<!-- <LinearLayout 
+    		    android:id="@id/lzpay_baseroot_title_imageView1"
+    		    android:layout_width="0px"
+    			android:layout_height="fill_parent"
+    			android:layout_weight="32"    	
+    			android:gravity="center"	
+    		    > -->

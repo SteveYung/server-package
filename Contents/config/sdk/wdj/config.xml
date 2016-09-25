@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<paramLs>
+		<param name = "WDJAppKeyID" required = "1" desc = "应用id" showName = "AppKeyID" bWriteIntoManifest = "0" bUserOffer = "1"/>
+		<param name = "WDJAppSecret" required = "1" desc = "应用密钥" showName = "AppSecret" bWriteIntoManifest = "0" bUserOffer = "1"/>
+		<param name = "WDJAppName" required = "1" desc = "应用名称" showName = "AppName" bWriteIntoManifest = "0" bUserOffer = "1" />
+		<param name="Orientation" required="1" showName="Orientation" desc="SDK的横竖屏类型" bWriteIntoManifest="0" bUserOffer="1" bWriteIntoClient="1">
+      		<option value="portrait"/>
+     		 <option value="landscape"/>
+    	</param>
+		<param name = "callback" required = "1" desc = "支付回调地址" showName = "支付通知地址" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "0"/>
+	</paramLs>
+	
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "wdj"/>
+		<operate step = "2" name = "copy" from = "ForAssets" to = "assets" desc = "wdj"/>
+        <operate step = "3" name = "copy" from = "ForLibs" to = "lib" desc = "wdj"/>
+		<operate step = "4" name = "copy" from = "ForRes" to = "res" desc = "wdj"/>
+		<operate step = "5" name = "script" desc = "更改豌豆荚的manifest"/>
+		<operate step = "6" name = "mergeR" desc = "合并R文件，此步骤需在res目录合并完后才执行" />
+	</operateLs>
+	
+	<pluginLs>
+		<plugin name = "UserWdj" typePlugin = "0" desc = "豌豆荚用户插件"/>
+		<plugin name = "IAPOnlineWdj" typePlugin = "2" desc = "豌豆荚支付插件"/>
+	</pluginLs>
+	<version code = "1008" showVersion = "2.0.8_3.2.3" >
+        <![CDATA[
+ 	9月26日完成豌豆荚3.1.2版本更新<br/>
+	1.本插件包括登录、登出、支付等功能  但支付不支持客户端配置回调地址。<br/>
+	2.支付最低金额为0.01元人民币<br/>
+	3.更换插件版本<br/>
+	4.更换资源文件<br/>
+	5.添加application脚本，如有application的游戏请多关注下是否会影响到游戏代码。<br/>
+
+	2014年11月27日更新豌豆荚3.2.2版本<br/>
+	1.更换插件版本<br/>
+	2.更换资源文件<br/>
+	3.新增悬浮窗<br/>
+	4.悬浮窗不可控制<br/>
+	
+	2014年12月10日更新豌豆荚3.2.3版本<br/>
+	1.修复一些bug<br/>
+	2015年1月4日更新豌豆荚3.2.3（2014-12-26）<br/>
+	1.针对特别低的版本做了一些优化<br/>
+    ]]>
+    </version>
+</config>

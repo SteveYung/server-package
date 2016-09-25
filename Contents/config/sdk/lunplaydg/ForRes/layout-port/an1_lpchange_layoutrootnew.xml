@@ -1,0 +1,342 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#ebebeb" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@drawable/lpchangetitleimg"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="5" />
+
+            <ImageButton
+                android:id="@+id/an1_mytitlebut"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="45"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/an1_lp_butback" />
+
+            <TextView
+                android:id="@+id/an1_lpchang_titlemsg"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="100"
+                android:gravity="center"
+                android:text="@string/pay_main"
+                android:textColor="#bbffffff"
+                android:textSize="26px" />
+
+            <ImageButton
+                android:id="@+id/an1_mytitlebut_service"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="45"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/an1_lp_butservice" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/an1_lpchang_msgtext_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:background="@drawable/shape_lpchange_title2"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="98"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="5" />
+
+                        <TextView
+                            android:id="@+id/an1_lpchang_msgtext_title"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="50"
+                            android:gravity="center_vertical"
+                            android:text="賬戶："
+                            android:textColor="#bb000000"
+                            android:textSize="22px" />
+
+                        <View
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="5" />
+
+                        <TextView
+                            android:id="@+id/an1_lpchang_msgtext"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="140"
+                            android:ellipsize="middle"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="#bb000000"
+                            android:textSize="22px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                         >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#CBCCCE" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="98"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="5" />
+
+                        <TextView
+                            android:id="@+id/an1_lpchang_msgyuer_title"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="50"
+                            android:gravity="center_vertical"
+                            android:text="剩餘L點："
+                            android:textColor="#bb000000"
+                            android:textSize="22px" />
+
+                        <View
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="5" />
+
+                        <TextView
+                            android:id="@+id/an1_lpchang_msgyuer"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="140"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:singleLine="true"
+                            android:textColor="#bb000000"
+                            android:textSize="22px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="15" />
+
+                <LinearLayout
+                    android:id="@+id/an1_lpchang_msgarea_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="75"
+                    android:background="@drawable/shape_lpchange_msgarea"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/an1_lpchang_lpservicetile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="6px"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:paddingTop="5dip"
+                        android:text="訂單信息"
+                        android:textColor="#ffffff"
+                        android:textSize="26px" />
+
+                    <TextView
+                        android:id="@+id/an1_lpchang_lpservicemsg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:textColor="#ffffff"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="30"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="30" />
+
+                    <TextView
+                        android:id="@+id/an1_lpchang_trypaybut"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="140"
+                        android:background="@drawable/shape_lpchange_surebut"
+                        android:gravity="center"
+                        android:text="@string/lpchange_paynow"
+                        android:textColor="#ffffff"
+                        android:textSize="30px" />
+
+                    <View
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="30" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="45" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+        </LinearLayout>
+    </LinearLayout>
+	<!-- 一下的控件是不使用的，僅作備份 -->
+    <ImageButton
+        android:id="@+id/an1_lpchang_duihuannow"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="170"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/an1_lp_loginnow"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/an1_lpchang_paynow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/an1_lp_payright"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/an1_lpchang_count"
+        android:layout_width="0px"
+        android:layout_height="fill_parent"
+        android:layout_weight="60"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/an1_lp_changecount"
+        android:visibility="invisible" />
+<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="80"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="140" />
+
+            <ImageButton
+                android:id="@+id/an1_lpchang_webmoremsg"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="481"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/an1_lp_moneydata" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="40" />
+
+            <ImageButton
+                android:id="@+id/an1_lpchang_webbili"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="479"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/an1_lp_moremsg" />
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="140" />
+        </LinearLayout>
+    
+</RelativeLayout>

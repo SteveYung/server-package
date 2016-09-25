@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<paramLs>
+		<param name = "OuPengAppId" required = "1" desc = "oupeng" showName = "AppId" bWriteIntoManifest = "0" bUserOffer = "1"/>
+		<param name = "OuPengAppKey" required = "1" desc = "oupeng" showName = "AppKey" bWriteIntoManifest = "0" bUserOffer = "1"/>
+		<param name = "OuPengOrientation" required = "1" desc = "oupeng" showName = "Orientation" bWriteIntoManifest = "0" bUserOffer = "1" >
+			<option value = "landscape"/>
+			<option value = "portrait"/>
+		</param>
+		
+		<param name = "callback" required = "1" desc = "oupeng" showName = "支付通知地址" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "0"/>
+	</paramLs>
+	
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "oupeng"/>
+		<operate step = "2" name = "copy" from = "ForLibs" to = "lib" desc = "oupeng"/>
+		<operate step = "3" name = "copy" from = "ForRes" to = "res" desc = "oupeng"/>
+	</operateLs>
+	
+	<pluginLs>
+		<plugin name = "UserOuPeng" typePlugin = "0" desc = "oupeng"/>
+		<plugin name = "IAPOnlineOuPeng" typePlugin = "2" desc = "oupeng"/>
+	</pluginLs>
+</config>

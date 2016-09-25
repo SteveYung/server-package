@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fh_e0e0e0" >
+
+    <include
+        android:id="@+id/bf_pay_top_layout"
+        layout="@layout/fh_top_view" />
+
+    <TextView
+        android:id="@+id/bf_pay_line_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/bf_pay_top_layout"
+        android:background="@color/fh_space_line_color" />
+
+    <LinearLayout
+        android:id="@+id/fh_pay_center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bf_pay_line_layout"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="27dp"
+            android:background="@color/fh_ffe9d8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/fh_history_title_style"
+                android:layout_weight="1"
+                android:text="@string/fh_history_time_str" />
+
+
+            <TextView
+                style="@style/fh_history_title_style"
+                android:layout_weight="1"
+                android:text="@string/fh_history_gamename_str" />
+
+
+            <TextView
+                style="@style/fh_history_title_style"
+                android:layout_weight="1"
+                android:text="@string/fh_history_paycode_str" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/fh_e6bf9f" />
+
+        <com.feihuo.gamesdk.api.view.FhPayHistoryDetailView
+            android:id="@+id/fh_pay_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

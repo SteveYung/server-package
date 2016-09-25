@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fh_userinfo_center_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="416dp"
+    android:background="@color/fh_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/fh_userinfo_top_view" />
+
+    <LinearLayout style="@style/fh_userinfo_center_line_top_style" />
+
+    <RelativeLayout
+        android:id="@+id/fh_useringo_accountsafe_loginsafe_layout"
+        style="@style/fh_userinfo_center_item_style" >
+
+        <TextView
+            style="@style/fh_userinfo_center_title_style"
+            android:text="@string/fh_userinfo_account_safe_loginsafe_str" />
+
+        <ImageView style="@style/fh_userinfo_center_point_style" />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/fh_userinfo_center_line_style" />
+
+    <RelativeLayout
+        android:id="@+id/fh_useringo_accountsafe_modify_paypwd_layout"
+        style="@style/fh_userinfo_center_item_style" >
+
+        <TextView
+            style="@style/fh_userinfo_center_title_style"
+            android:text="@string/fh_userinfo_account_safe_modify_paypwd_str" />
+
+        <ImageView style="@style/fh_userinfo_center_point_style" />
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/fh_useringo_accountsafe_modify_paypwd_line" style="@style/fh_userinfo_center_line_style" />
+
+    <RelativeLayout
+        android:id="@+id/fh_useringo_accountsafe_modify_loginpwd_layout"
+        style="@style/fh_userinfo_center_item_style" >
+
+        <TextView
+            style="@style/fh_userinfo_center_title_style"
+            android:text="@string/fh_userinfo_account_safe_modify_loginpwd_str" />
+
+        <ImageView style="@style/fh_userinfo_center_point_style" />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/fh_userinfo_center_line_style" />
+
+    <RelativeLayout
+        android:id="@+id/fh_useringo_accountsafe_mobile_blind_layout"
+        style="@style/fh_userinfo_center_item_style" >
+
+        <TextView
+            style="@style/fh_userinfo_center_title_style"
+            android:text="@string/fh_userinfo_account_safe_mobile_blind_str" />
+
+        <ImageView style="@style/fh_userinfo_center_point_style" />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/fh_userinfo_center_line_top_style" />
+
+</LinearLayout>

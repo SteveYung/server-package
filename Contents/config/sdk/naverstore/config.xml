@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config pluginId="100114">
+	<paramLs>
+        <param name = "NaverStorePublicKey" required = "1" desc = "key" showName = "key" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "1"/>
+        <param name = "callback" required = "1" desc = "支付回调地址" showName = "支付通知地址" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "0"/>
+	</paramLs>
+	
+	<operateLs>
+        <operate step = "1" name = "mergeR" desc = "合并R文件，此步骤需在res目录合并完后才执行" />
+    </operateLs>
+	
+	<pluginLs>
+		<plugin name = "IAPOnlineNaverstore" typePlugin = "2" desc = "IAPOnlineNaverstore"/>
+	</pluginLs>
+	<version code = "1000" showVersion = "2.0.0_1.0.0" minClientVer="2.0"
+        minFrameworkVer="2.0">
+        <![CDATA[更新至1.1.2版本 ]]>
+    </version>
+</config>

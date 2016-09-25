@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config pluginId="600017">
+    <paramLs>
+        <param name="developer_key" required="1" showName="developer_key" desc="" bWriteIntoManifest="1"
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="app_id" required="1" showName="app_id" desc="" bWriteIntoManifest="1" bUserOffer="1" bWriteIntoClient="1"/>
+    </paramLs>
+    
+    <operateLs>
+        <operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "anzhi"/>
+        <operate step = "2" name = "copy" from = "ForLibs" to = "lib" desc = ""/>
+        <operate step = "3" name = "copy" from = "ForAssets" to = "assets" desc = ""/>
+        <operate step = "4" name = "copy" from = "ForRes" to = "res" desc = ""/>
+        <operate step="5" name="script" desc=""/>
+        <operate step = "6" name = "mergeR" desc = "合并R文件，此步骤需在res目录合并完后才执行" />
+    </operateLs>
+    
+    <pluginLs>
+        <plugin name="UserChongchong" typePlugin="0" desc=" "/>
+        <plugin name="IAPOnlineChongchong" typePlugin="2" desc=""/>
+    </pluginLs>
+
+    <version code = "1013" showVersion = "2.1.3_3.2" >
+        <requestVersion minClientVer="2.0" minFrameworkVer="2.0"/>
+        <![CDATA[更新框架2.0]]>
+    </version>
+</config>

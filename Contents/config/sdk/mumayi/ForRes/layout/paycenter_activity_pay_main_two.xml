@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paycenter_white"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/rl_pay_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/paycenter_layout_common_title" />
+
+    <ImageView
+        android:id="@+id/iv_official"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_pay_title"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/pay_official" />
+
+    <TableLayout
+        android:id="@+id/tab_pay_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_pay_title"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:shrinkColumns="1"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tr_game_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/paycenter_text_14_dark_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="right"
+                android:text="@string/str_paycenter_game_name" />
+
+            <TextView
+                android:id="@+id/tv_game_name_value"
+                style="@style/paycenter_text_16_big_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_account_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/paycenter_text_14_dark_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="right"
+                android:text="@string/str_paycenter_accoutn_name" />
+
+            <TextView
+                android:id="@+id/tv_account_name_value"
+                style="@style/paycenter_text_16_big_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_pay_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/paycenter_text_14_dark_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="right"
+                android:text="@string/str_paycenter_pay_price" />
+
+            <TextView
+                android:id="@+id/tv_product_price_value"
+                style="@style/paycenter_text_16_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_product_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/paycenter_text_14_dark_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="right"
+                android:text="@string/str_paycenter_product_name" />
+
+            <TextView
+                android:id="@+id/tv_product_name_value"
+                style="@style/paycenter_text_16_big_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/ra_pay_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_pay_info"
+        android:layout_marginBottom="3dip" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pay_line_center_null" />
+
+        <TextView
+            style="@style/paycenter_text_14_bright_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pay_choice" />
+    </RelativeLayout>
+
+    <com.mumayi.paymentcenter.ui.pay.view.ScrollTabView
+        android:id="@+id/hsv_pay_type_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ra_pay_divider"
+        android:background="@color/paycenter_white"
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btn1"
+                    style="@style/paycenter_rb_style"
+                    android:text="one"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/btn2"
+                    style="@style/paycenter_rb_style"
+                    android:text="two"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/btn3"
+                    style="@style/paycenter_rb_style"
+                    android:text="three"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/btn4"
+                    style="@style/paycenter_rb_style"
+                    android:text="four"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/btn5"
+                    style="@style/paycenter_rb_style"
+                    android:text="five"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dip"
+                android:background="@color/paycenter_green" />
+        </RelativeLayout>
+    </com.mumayi.paymentcenter.ui.pay.view.ScrollTabView>
+
+    <com.mumayi.paymentcenter.ui.util.view.ScrollLayout
+        android:id="@+id/sl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/hsv_pay_type_tab" >
+    </com.mumayi.paymentcenter.ui.util.view.ScrollLayout>
+
+</RelativeLayout>

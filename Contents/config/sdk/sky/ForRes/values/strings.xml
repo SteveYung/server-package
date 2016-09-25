@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sdk_plat_name">sdk</string>
+    <string name="rank_activity_name">排行榜</string>
+	<string name="user_name">昵称</string>
+	<string name="user_score">成绩</string>
+	<string name="user_rankiing">排名</string>
+
+
+    <!-- ac使用 -->
+    <string name="goto_newsdk">启动SDK</string>  
+    <string name="account_info">帐号信息</string>
+    <string name="image_default_desc">imageview</string>
+    <string name="login_title">冒泡社区帐号</string> 
+    <string name="register_title">冒泡社区帐号注册</string>
+    <string name="register_tips">使用手机注册可以更快找到好友</string>
+    <string name="account_hint">用户名/手机号</string>
+	<string name="error_reason">出错了</string>
+	<string name="password_hint">密码</string>
+	<string name="quick_register">快速注册</string>
+	<string name="register_success">注册成功</string>
+	<string name="login_text">立即登录</string>
+	<string name="find_password">找回密码</string>
+	<string name="phonenumber_hint">输入手机号</string>
+	<string name="phonenumber_tips">如果已绑定手机号,通过手机验证找回:</string>
+	<string name="check_account">验证身份</string>
+	<string name="nobind_tips_1">未绑定手机号,通过</string>
+	<string name="nobind_tips_2">其它方式</string>
+	<string name="nobind_tips_3">找回</string>
+	<string name="password_tips">通过验证,请设置密码:</string>
+	<string name="password_hint_1">设置密码</string>
+	<string name="password_hint_2">再次输入</string>
+	<string name="password_type">密码6&#8722;12位数字加字母组成</string>
+	<string name="next">下一步</string>
+	<string name="phonenumber_send">验证码短信已经发到以下手机:</string>
+	<string name="input_auth_code_hint">输入验证码</string>
+	<string name="register_bind_left_time">重新获取&#160;&#160;AAA</string>
+	<string name="other_type_tips_1">你可以登录冒泡社区客户端通过密保功能找回密码.</string>
+	<string name="other_type_tips_2">你也可以通过以下方式联系我们.\n客服电话:0571&#8211;87966766</string>
+	<string name="dialog_content_login">正在登录&#8230;</string>
+	<string name="dialog_change_account">更换帐号</string>
+	<string name="authcode_getting">正在获取验证码,请稍候!</string>
+	<string name="authcode_reget_ok">验证码重新获取成功,请到短信收件箱查看!</string>
+	<string name="password_resetting">正在重置密码,请稍候!</string>
+	<string name="password_reset_ok">密码重置成功!</string>
+	<string name="account_registering">正在注册帐号,请稍候!</string>
+	<string name="account_register_ok">注册成功!</string>
+	<string name="account_welcome">,欢迎回来!</string>
+	<string name="default_welcome">成功,欢迎回来!</string>
+	
+	<!-- 出错提示 -->
+	<string name="error_account">请输入帐号,不能为空</string>
+	<string name="error_password">请输入密码,不能为空</string>
+	<string name="error_input_password">请输入有效密码,6~12位</string>
+	<string name="error_password_same">两次输入密码不一致,请重新输入</string>
+	<string name="error_network">网络异常,请检查手机当前网络.</string>
+	<string name="error_phonenumber">请输入有效的手机号</string>
+	<string name="error_getauthcode">获取验证码出错</string>
+	<string name="error_authcode">请输入有效验证码</string>
+	<string name="error_register">注册失败</string>
+	<string name="error_reset_password">重置密码出错</string>
+	<string name="error_login">登录出错</string>
+	<string name="error_default">网络请求出错</string>
+	<string name="error_max_size_reset_password">规定时间内密码重置次数过多</string>
+	<!-- 登录出错 -->
+	<string name="error_login_account">当前帐号不存在</string>
+	<string name="error_login_password">当前帐号与密码不匹配</string>
+	<string name="error_authcode_maxsize">当天获取验证码次数过多</string>
+	<string name="error_authcode_input">输入的验证码有误</string>
+	<string name="error_phone_no_register">该手机号还未注册</string>
+	<string name="error_phone_registered">该手机号已经注册</string>
+	<!-- ac使用 -->
+    <string name="app_name_skypay">指易付</string>
+    <string name="day_skypay">当天</string>
+    <string name="week_skypay">最近7天</string>
+    <string name="month_skypay">最近30天</string>
+
+    <!-- 运营商付费 -->
+    <string name="STRING_HINT_CONFIRM">确 定</string>
+    <string name="STRING_HINT_CANCEL">取 消</string>
+    <string name="STRING_HINT_EXIT">退 出</string>
+    <string name="STRING_PAY_FAILED">支付失败！</string>
+
+    <!-- SkyPayRemoteService提示 -->
+    <!-- <string name="STRING_HINT_ORDER_INFO_ERROR_CODE">(ErrorCode = %1$d)</string> -->
+    <string name="STRING_HINT_ORDER_INFO_ERROR_CODE">(%1$d)</string>
+    <string name="STRING_HINT_ORDER_INFO_LEGAL_ERROR">启动支付服务失败，应用版本有误，请您安装最新版本后重试！</string>
+    <string name="STRING_HINT_NO_NETWORK_ERROR">启动支付服务失败，当前无网络连接，请您设置网络后重试！</string>
+    <string name="STRING_HINT_NO_SIM_ERROR">启动支付服务失败，请您检查SIM卡状态后重试！</string>
+    <string name="STRING_HINT_NO_MEM_ERROR">启动支付服务失败，请您检查可用存储空间后重试！</string>
+    <string name="STRING_HINT_IS_PAYING_ERROR">启动支付服务失败，支付系统繁忙，请您稍后重试！</string>
+
+    <!-- PayCtrlService提示
+    <string name="STRING_HINT_ORDER_PAY_METHOD_SMS_ERROR">pay_method为非短信付费请求</string>
+    <string name="STRING_HINT_ORDER_INFO_ERROR">订单缺少%1$s参数</string>
+    <string name="STRING_HINT_ORDER_PRICE_ERROR">价格有误</string>
+     -->
+
+    <string name="STRING_HINT_GET_CHANNEL">正在进行安全检查......</string>
+    <string name="STRING_HINT_NETWORK_ERROR">支付失败，联网超时，请您检查网络设置后重试！</string>
+    <string name="STRING_HINT_SERVER_RET_ERROR">支付失败，支付系统繁忙，请您稍后重试！</string>
+    <string name="STRING_HINT_CHANNEL_INFO_ERROR">支付失败，支付系统繁忙，请您稍后重试！</string>
+    <string name="STRING_HINT_FORCE_DOWNLOAD_ERROR">安全支付服务需要更新，请您稍后重试！</string>
+
+    <string name="STRING_HINT_FIRST_CONFIRM">支付金额 ：%1$d.00元\n指易付提示：需发送%2$d条扣费短信（不含通信费，由运营商代收）,请点击确定发送。客服电话：0571-87966766</string>
+
+    <string name="STRING_HINT_SENDING_SMS">正在支付，请您耐心等候</string>
+    <string name="STRING_HINT_SYN_DATA">支付即将完成，请耐心等候…</string>
+
+    <string name="STRING_HINT_SET_MOBILE_DATA_FAILED">支付失败，请您开启移动网络（GPRS/3G）后重试！</string>
+
+    <string name="STRING_HINT_SIMULATE_PAY_TIP">模拟支付\n点击成功，返回成功付费结果\n点击失败，返回失败付费结果</string>
+    <string name="STRING_HINT_SUCCESS">成功</string>
+    <string name="STRING_HINT_FAILED">失败</string>
+
+    <!-- 第三方 -->
+    <string name="ERROR_DIALOG_TITLE">提示</string>
+    <string name="QUERY_POPUP_TITLE">充值记录</string>
+
+    <string name="APP_INFO_ERROR_HINT">支付请求数据有误，请退出重试</string>
+    <string name="ENTER_CHARGE_CENTER_WAITING_HINT">正在进行安全检查…</string>
+    <string name="GRID_UNABLE_HINT">对不起！此功能暂不能使用，请选用其他支付方式！</string>
+    <string name="GET_DATA_WAITING_HINT">正在获取数据，请稍候…</string>
+    <string name="GET_DATA_TIMROUT_HINT">获取数据超时，请您稍后重试！！</string>
+    <string name="INPUT_NULL_ERROR_HINT">卡号或者密码为空，请您输入后重试！！</string>
+    <string name="INPUT_WRONG_LENTH_ERROR_HINT">请您检查卡号密码长度是否正确！</string>
+
+    <string name="INPUT_NULL_AMOUNT_HINT">面额不能为空，请您选择金额后重试！！</string>
+    <string name="INPUT_NULL_CARD_ERROR_HINT">输入的卡号不能为空，请您输入卡号后重试！！</string>
+    <string name="INPUT_WRONG_CARD_LENTH_ERROR_HINT">输入的卡号长度不正确，请您检查！！</string>
+    <string name="INPUT_WRONG_PASSWORD_LENTH_ERROR_HINT">输入的密码长度不正确，请您检查！！</string>
+
+    <string name="SUBMIT_FAILED">支付请求失败</string>
+    <string name="SUBMIT_SUCCESS">支付请求成功</string>
+    <string name="HELP_ACTIVITY_TITLE">帮助</string>
+    <string name="QUERY_HISTORY_NULL">暂无充值记录！</string>
+
+    <string name="TEXT_INFO_NULL_ERROR">系统异常</string>
+
+    <!-- 银行卡支付 -->
+    <string name="INPUT_WRONG_BANKCARD_LENTH_ERROR_HINT">输入的银行卡号长度有误，请您检查！当前卡号长度：</string>
+    <string name="INPUT_WRONG_NAME_LENTH_ERROR_HINT">输入的姓名有误，请您检查！</string>
+    <string name="INPUT_WRONG_ID_LENTH_ERROR_HINT">输入的身份证号有误，请您检查！</string>
+    <string name="INPUT_WRONG_AREA_LENTH_ERROR_HINT">输入的开户地区有误，请您检查！</string>
+    <string name="INPUT_WRONG_PHONE_LENTH_ERROR_HINT">输入的手机号码有误，请您检查！</string>
+    <string name="INPUT_NULL_CONFIRM_INFO_ERROR_HINT">输入的短信验证码为空，请您输入验证码后重试！</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config pluginId="600008">
+	<paramLs>
+		<param name = "NaverCafe_ClientID" required = "1" desc = "ClientID" showName = "ClientID" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "1"/>
+		<param name = "NaverCafe_ClientSecret" required = "1" desc = "ClientSecret" showName = "ClientSecret" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "1"/>
+		<param name = "NaverCafe_CafeID" required = "1" desc = "CafeID" showName = "CafeID" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "1"/>
+	</paramLs>
+	
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = ""/>
+		<operate step = "2" name = "copy" from = "ForRes" to = "res" desc = ""/>
+		<operate step = "3" name = "mergeR" desc = "(合并R文件，此步骤需在res目录合并完后才执行)"/>
+	</operateLs>
+	
+	<pluginLs>
+		<plugin name = "ShareNavercafe" typePlugin = "4" desc = ""/>
+	</pluginLs>
+</config>

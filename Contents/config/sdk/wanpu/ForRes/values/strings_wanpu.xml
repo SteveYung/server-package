@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="hello">Hello World, MainActivity!</string>
+    
+    <string name="txt1">提交订单</string>
+    <string name="txt2">订单详情</string>
+    <string name="txt3">商品名称：</string>
+    <string name="txt4">支付金额：</string>
+    <string name="txt5">商品描述：</string>
+    <string name="txt6">提交订单</string>
+    <string name="txt7">玩铺游戏中心</string>
+    <string name="txt8">客服电话: 010-57738610</string>
+    <string name="txt9">快捷支付</string>
+    <string name="txt10">返回</string>
+    <string name="txt11">请选择支付方式</string>
+    <string name="txt12">1.0</string>
+    <string name="txt13">LoginPayDemo</string>
+    <string name="txt14">LoginPayDemo</string>
+    <string name="txt15">LoginPayDemo</string>
+    <string name="txt16">LoginPayDemo</string>
+    <string name="txt17">LoginPayDemo</string>
+    <string name="txt18">LoginPayDemo</string>
+    <string name="txt19">登录</string>
+    <string name="txt20">充值</string>
+    <string name="txt21">账户：</string>
+    <string name="txt22">余额：</string>
+    <string name="txt23">充入金额：</string>
+    <string name="txt24">玩铺豆充值</string>
+    <string name="txt25">关于玩铺豆</string>
+    <string name="txt26">绑定手机号：</string>
+    <string name="txt28">余额：</string>
+    <string name="txt27">玩铺账户余额</string>
+    <string name="txt29">确认付款</string>
+    <string name="txt30">充值(点击下拉)</string>
+    <string name="txt31">玩铺豆充值</string>
+    <string name="txt32">充值(点击收回)</string>
+    <string name="txt33">\t\t尊敬的用户，检测到您的的充值卡里还有余额，因充值卡不能再次使用，为了避免您的损失，现已将余额自动存入到您的万普临时账户，请尽快注册或登录万普支付账号以便将余额转入您的安全账户中。</string>
+	<string name="txt34">\t\t尊敬的用户，检测到您的的充值卡里还有余额，因充值卡不能再次使用，为了避免您的损失，现已将余额自动存入到您的万普支付账户，请下次支付时优先使用玩铺豆支付。</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    
+    <TextView
+        android:id="@id/sdk_setted_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sdk_padding_h_max"
+        android:layout_marginBottom="@dimen/sdk_padding_h_max"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_generic_size"/>
+    
+    <Button
+        android:id="@id/sdk_btn_set_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_button_height"
+        android:layout_below="@id/sdk_setted_phone"
+        android:background="@drawable/sdk_btn_blue_selector"
+        android:text="@string/sdk_continue"
+        android:textSize="@dimen/button_generic_size"
+        android:layout_marginLeft="@dimen/sdk_margin_h_max"
+        android:layout_marginRight="@dimen/sdk_margin_h_max"
+        android:textColor="@color/color_button_text" />
+
+    
+
+</RelativeLayout>

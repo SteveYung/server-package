@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/gxd_user_kefu_icon05" android:state_checked="false" />
+    <item android:drawable="@drawable/gxd_user_kefu_icon06" android:state_checked="true"/>
+    <item android:drawable="@drawable/gxd_user_kefu_icon06" android:state_pressed="true"/>
+</selector>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_rb_record_selector.xml -->

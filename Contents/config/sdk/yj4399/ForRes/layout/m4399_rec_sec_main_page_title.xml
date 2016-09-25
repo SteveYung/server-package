@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/sdk_title_height"
+    android:gravity="center_vertical"
+    android:background="@drawable/m4399_rec_mvcenter_title_bg"
+    android:paddingLeft="@dimen/sdk_paddingLeft"
+    android:paddingRight="@dimen/sdk_paddingRight"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/sdk_title"
+        style="@style/TitleTextStyle"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/sdk_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/m4399_ope_sdk_cancel" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="100113">
+  <paramLs>
+    <param
+        name="appsee_open"
+        required="1"
+        showName="开启appseelogevents"
+        desc="是否开启appsee logevent功能,"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="true"/>
+        <option value="false"/>
+    </param>
+    <param
+        name="appsee_api_key"
+        required="1"
+        showName="appsee apikey"
+        desc="apikey"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+  </paramLs>
+  
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc=""/>
+    <operate step="2" name="copy" from="ForAssets" to="assets" desc=""/>
+    <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+  	<plugin name="AnalyticsAppsee" typePlugin="5" desc="统计插件"/>
+  </pluginLs>
+  <version code = "1006" showVersion = "2.0.6_2.5.0" minClientVer="1.5" minFrameworkVer="1.5">
+        <![CDATA[2015年8月18日 更新至2.5.0]]>
+  </version>
+</config>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<resources>	
+    <string name="game_name">超级舰队HD</string>	
+    <string name="game_main">com.efunfun.efunfunplatformbasesdk.test.MainActivity</string>	
+    <string name="wx_app_id">wx18bcc01c666a5349</string>	
+    <string name="app_id">982338755121601</string>	
+    <string name="eff_newpay_weburl">http://pay.efunfun.com/mobilePayWay/mobile.do?method=getPayWay</string>	
+    <string name="efunfun_package_name">com.efunfun.xm.cjjd</string>	
+	
+    <string name="efunfun_confirm">OK</string>
+    <string name="efunfun_no_network">Network Disconnecting</string>
+    <string name="efunfun_network_fail">Network time out or Error, try later!</string>
+    <string name="efunfun_back">Return</string>
+    <string name="efunfun_hint">Tips</string>
+    <string name="efunfun_retry">OK</string>
+    <string name="efunfun_canel">Cancel</string>
+    <string name="efunfun_error_code">Code:</string>
+    <string name="efunfun_parameter_no_null">Parameter can\'t be blank!</string>
+	
+    <!-- Efunfun 登入 -->	
+    <string name="efunfun_login_title">Member login</string>
+    <string name="efunfun_account_login">Account login</string>	
+    <string name="efunfun_account">Account</string>
+    <string name="efunfun_account_hint">Enter Efunfun Account</string>
+    <string name="efunfun_password">Password</string>
+    <string name="efunfun_password_hint">Enter Efunfun Password</string>
+    <string name="efunfun_login">Login</string>
+    <string name="efunfun_regist">Register>></string>	
+    <string name="efunfun_regist_text">Register</string>	
+    <string name="efunfun_forget_password">Forgot Password</string>
+    <string name="efunfun_quick_login">Other Logins</string>
+    <string name="efunfun_guest_login">Just Play</string>
+    <string name="efunfun_facebook_login">facebook login</string>	
+    <string name="efunfun_account_limit">Account can\'t be blank or less than 6 numbers</string>
+    <string name="efunfun_account_much">Account can\'t be more than 32 numbers!</string>
+    <string name="efunfun_password_limit">Password can\'t be blank or less than 6 numbers!</string>
+    <string name="efunfun_get_mac_fail">Obtaining Mobile ID Code failure!</string>
+    <string name="efunfun_account_lately">Recent</string>
+    <string name="efunfun_account_record">Records</string>
+    <string name="efunfun_privacy_page">Privacy Page>></string>	
+    <!-- 注册 -->	
+    <string name="eff_reg_input_username">Please enter account(At least 6 characters of English letters,numbers or mail)</string>	
+    <string name="eff_reg_input_name_email">Use Numbers/Letters/Email(6-32 Length)</string>
+    <string name="eff_reg_input_password">Enter Password</string>
+    <string name="eff_reg_input_confirm_password">Re-enter Password</string>
+    <string name="eff_reg_input_email">Please enter email(For retrieving password)</string>	
+    <string name="eff_reg_submit">OK</string>
+    <string name="eff_reg_name">Account:</string>
+    <string name="eff_reg_password">Password:</string>
+    <string name="eff_reg_confirm_password">Re-enter:</string>
+    <string name="eff_reg_back">Return</string>
+    <string name="eff_reg_by_phone">Mobile Register</string>
+    <string name="eff_reg_by_email">Email Register</string>
+    <string name="eff_reg_by_email_error">Email limit (6-32Length)</string>
+    <string name="eff_reg_msg">【Suggest player us E-MAIL as account to retrieve password more easily】</string>	
+    <!-- 登入错误资讯 -->	
+    <string name="efunfun_fail_login">Login Failed</string>
+    <string name="efunfun_login_params_error">Parameter Error</string>
+    <string name="efunfun_login_1004">Account Not Existed.</string>
+    <string name="efunfun_login_1005">Incorrect Account or password.</string>
+    <string name="efunfun_login_1006">Account info modified already, contact  CS.</string>
+    <string name="efunfun_login_1007">Account closed</string>
+    <string name="efunfun_partner_1004">Co-partner not exited.</string>
+    <string name="efunfun_partner_1005">Co-partner closed, contact  CS.</string>
+    <string name="efunfun_partner_1006">Account has closed!</string>
+    <!-- 开始游戏时，获取伺服器 -->	
+    <string name="efunfun_server_fail">Accessing servers failed!</string>
+    <!-- 版本更新 -->	
+    <string name="efunfun_text_newversion">New Version</string>
+    <string name="efunfun_text_updateerr">Updating Version Unusual.</string>
+    <string name="efunfun_button_update">Update</string>
+    <string name="efunfun_button_cancel">Cancel</string>
+    <string name="efunfun_update_content">Update Content \n</string>
+    <string name="efunfun_modify_content">Modified Content \n</string>
+    <string name="efunfun_text_prompt">Tips</string>
+    <string name="efunfun_prompt_content">Update latest package</string>
+    <string name="efunfun_version_update_default">New Version, update?</string>
+    <string name="efunfun_update_error_title">Updating Version unusual</string>
+    <string name="efunfun_update_error_content">Network Unusual!</string>
+    <string name="efunfun_update_retry">Try Again</string>
+    <string name="efunfun_update_cancel">Cancel</string>
+    <!-- fb分享 -->	
+    <string name="efunfun_fb_share_sucess">Sharing Succeeded</string>
+    <string name="efunfun_fb_share_fail">Sharing Failed</string>
+	
+    <string name="efunfun_fb_share_cancel">Sharing Cancel</string>
+    <string name="eff_no_network">Network unavailable</string>
+    <string name="eff_reg_name_not_null">Account can\'t be blank</string>
+    <string name="eff_reg_name_size_error">Phone No. should be all numbers (7-16 Length)</string>
+    <string name="eff_reg_name_error">Phone No. should be pure numbers</string>
+    <string name="eff_reg_pw_not_null">Password can\'t be blank</string>
+    <string name="eff_reg_conpw_not_null">Password again</string>
+    <string name="eff_reg_conpw_error">Password not matched</string>
+    <string name="eff_reg_email_not_null">Email not matched</string>	
+    <string name="eff_reg_email_format_error">Incorrect Email format</string>
+    <string name="eff_reg_error">Network Disconnected,try again</string>
+    <string name="eff_reg_pw_little">Enter Password (At least 6 Length)</string>
+    <string name="eff_reg_se_pw_limit">Password can\'t be blank or less than 6 length</string>
+    <string name="eff_reg_pw_much">Password too long(In 32Length)</string>
+    <!-- 忘记密码 -->	
+    <string name="eff_forget_findback">Password Find back</string>
+    <string name="eff_forget_email">Enter registered Email</string>
+    <string name="eff_forget_send_again">Resend</string>
+    <!-- 帐号找回 ,试玩帐号找回 -->	
+     <string name="eff_find_back_official_count">Find back Formal Account</string>
+    <string name="eff_find_back_try_play_count">Find back Trial Character</string>
+    <string name="eff_find_back_input_email_addr">Enter Mail Address</string>
+    <string name="eff_find_back_declare">The following info can find back in the device\'s back-up file</string>
+    <string name="eff_find_back_input_uid">Enter the UID</string>
+    <string name="eff_find_back_uid">UID</string>
+    <string name="eff_find_back_input_recovery">Enter the Recovey Code</string>
+    <string name="eff_find_back_recovery">Recovery Code</string>
+    <string name="eff_find_back_input_account">Enter Account(Email Only )</string>
+    <string name="eff_find_back_account">Account</string>
+    <string name="eff_find_back_input_pass">Enter Account&amp;Password</string>
+    <string name="eff_find_back_pass">Password</string>
+    <string name="eff_find_back_input_pass_agame">Repeat Password</string>
+    <string name="eff_find_back_picture_have_save">Pictures saved to Album</string>
+    <string name="eff_find_back_have_account">Formal account existed</string>
+    <string name="eff_find_back_for_safe">Efunfun account bound already</string>
+    <string name="eff_find_back_params_not_null_1">UID can\'t be blank</string>
+    <string name="eff_find_back_params_not_null_2">Recovery Code can\'t be blank</string>
+    <string name="eff_find_back_params_not_null_3">Account can\'t be blank</string>
+    <string name="eff_find_back_params_not_null_4">Password can\'t be blank</string>
+    <string name="eff_find_back_params_not_null_5">Confirming Password can\'t be blank</string>
+    <string name="eff_find_back_must_email_name">User name must be Email format</string>
+    <string name="eff_find_back_code_10007">Can\'t repeat binding</string>
+    <string name="eff_find_back_code_10008">You\'ve bound your account, can\'t be repeated</string>
+    <string name="eff_find_back_code_10009">Incorrect UID or Recovery code</string>
+    <string name="eff_find_back_dialog_title_10000">Your Account has saved</string>
+    <string name="eff_find_back_dialog_message_10000">Your Account has saved to album,  keep your password!</string>
+    <string name="eff_find_back_dialog_title_10007">This Recover code has been binding to another account</string>
+    <string name="eff_find_back_dialog_message_10007">Find back the back-up photo in your device ablum</string>
+    <string name="eff_find_back_dialog_title">Enter game using the trial play account</string>
+    <string name="eff_find_back_dialog_message">For your account safety, we advise you to create a formal account in game. And your trial account information will keep as picture in your profile album.</string>
+    <string name="efunfun_guest_record_machineid_null">Reading the machine code failed, can\'t save visitor\'s account information!</string>
+    <string name="eff_find_back_bind_fail">Binding login failed</string>
+    <string name="eff_find_back_save_img_fail">Saving picture failed!</string>
+
+    <!-- 重置密码 -->
+    <string name="eff_resetpw_account">Enter account name</string>
+    <string name="eff_resetpw_origina_password">Enter old password</string>
+    <string name="eff_resetpw_new_password">Enter new password</string>
+    <string name="eff_resetpw_new_password_again">Enter new password again</string>
+    <string name="eff_reset_password_count">Change Password</string>
+    <string name="eff_change_password_1000">Changed password successfully</string>
+    <string name="eff_change_password_1004">New password should be no less than 6 length</string>
+    <string name="eff_change_password_1005">Account not exists</string>
+    <string name="eff_change_password_1006">Wrong password</string>
+    <string name="eff_change_password_other">System error, failed to change, please retry later</string>
+    
+    <string name="eff_find_back_gamename_notice1">This picture is for finding back your trial character in </string>
+	<string name="eff_find_back_gamename_notice2"></string>
+    <string name="eff_find_back_gamename_account_notice1">This is your Efunfun Account of Efunfun</string>
+    <string name="eff_find_back_gamename_account_notice2"></string>
+    <!-- 线上客服 -->	
+    <string name="eff_online_cs">Online CS</string>
+    <string name="eff_question_title">Title</string>
+    <string name="eff_question_type">Type</string>
+    <string name="eff_question_msg">Content</string>
+    <string name="eff_question_submit">Submit</string>
+    <string name="eff_question_type_prompt">Type</string>
+
+     <string-array name="eff_question_type_arry">
+        <item value="11">Login Problem</item>
+        <item value="12">Top up Problem</item>
+        <item value="13">Account Problem</item>
+        <item value="14">Game Problem</item>
+        <item value="15">About Activities</item>
+        <item value="16">Announcement</item>
+        <item value="17">Report Cheating </item>
+        <item value="18">Report Bugs </item>
+        <item value="19">Complaints </item>
+        <item value="20">Suggestion</item>
+        <item value="24">Others</item>
+    </string-array>	
+    <string-array name="cs_question_type_list_value">	
+        <item>11</item>	
+        <item>12</item>	
+        <item>13</item>	
+        <item>14</item>	
+        <item>15</item>	
+        <item>16</item>	
+        <item>17</item>	
+        <item>18</item>	
+        <item>19</item>	
+        <item>20</item>	
+        <item>24</item>	
+    </string-array>	
+	
+    <string name="efunfun_code_1003"> Incorrect Account or less than 6 number, check first</string>
+    <string name="efunfun_code_1004"> Code length less than 6 numbers </string>
+    <string name="efunfun_code_1005"> Account existed, use another one </string>
+    <string name="efunfun_code_1008"> Enter correct phone number !</string>
+    <string name="eff_question_title_not_null"> Title can\'t be blank </string>
+    <string name="eff_question_title_size_error">Title length between 6-50 words </string>
+    <string name="eff_question_msg_not_null"> Enter question content </string>
+    <string name="eff_question_msg_size_error">Content should be 6-200 words </string>
+    <string name="eff_question_title_error"> Title can\'t contain special characters"%!"</string>
+    <string name="eff_question_msg_error"> Question can\'t contain special characters"%!"</string>
+    <string name="efunfun_email_suc">Sending password mail succeeded!</string>
+    <string name="efunfun_verify_fail">Verification failed</string>
+    <string name="efunfun_email_err">Account  invalid</string>
+    <string name="efunfun_email_format">Invalid Email format</string>
+	<string name="efunfun_email_notequals">Email not matched the registered information </string>
+	<string name="efunfun_email_sendfail">Sending mail failed</string>
+	<string name="efunfun_email_not_null">Email can\'t be blank </string>
+	<string name="efunfun_email_net_not_use">Current network unavailable</string>
+	<string name="eff_send_question_success">Request  Succeeded </string>
+	<string name="eff_send_question_error">System Error, request failed</string>
+	<string name="eff_send_question_fail">Network Unusual, request failed, try later!</string>
+	<string name="eff_send_question_parameter_error">Parameter Error ,try later!</string>
+	<string name="eff_send_question_user_error">Incorrect Account</string>
+	<string name="efunfun_email_limit">Can\'t be less than 6 words</string>
+	<string name="efunfun_request_faile">Network Request Failed</string>
+    <string name="efunfun_question_list_title">%1$s%2$s</string>
+	<string name="efunfun_question_reply">(Replied)</string>
+	<string name="efunfun_question_no_reply">(Not Reply yet)</string>
+	<string name="efunfun_question_reply_ok">(Done)</string>
+	
+    <!-- 游客绑定 -->	
+    <string name="eff_bind_title">Visitor Binding</string>
+	<string name="eff_bind_name">Account(Email format )</string>
+	<string name="eff_bind_fail_10003">User name is not Email or less than 6 words</string>
+	<string name="eff_bind_fail_10004">Password is less than 6 words </string>
+	<string name="eff_bind_fail_10005">Account existed </string>
+	<string name="eff_bind_fail">Binding Failed</string>
+	<string name="eff_bind_suc">Binding succeeded </string>
+	<string name="eff_bind_player_no_guest">The player is not a visitor </string>
+	<string name="eff_reg_account_format_error">Account Not Existed</string>
+	<string name="eff_reg_account_format_hint">Please Use 6-32 Length Words or mail</string>
+    <!-- CS客服 -->	
+    <string name="eff_cs_phone_text">CS Hotmail</string>
+	<string name="eff_cs_online_text">Online CS</string>
+	<string name="eff_cs_case_text">Case Tracking </string>
+	<string name="eff_cs_center_title">CS Center</string>
+	<string name="eff_cs_case_grade">Service Grade </string>
+	<string name="eff_cs_case_prompt">Please grade our service if we have settled your problem, thank you.   </string>
+	<string name="eff_cs_grade_button">My question settled </string>
+	<string name="eff_cs_reply_button">Reply</string>
+	<string name="eff_cs_reply_hint">Enter reply content </string>
+	<string name="eff_cs">CS</string>
+	<string name="eff_cs_response_success">Reply Done</string>
+	<string name="eff_cs_response_fail">System Error, reply failed,try later</string>
+	<string name="eff_cs_response_error">Parameter Error, reply failed</string>
+	<string name="eff_cs_response_name_error">Account incorrect , reply failed</string>
+	<string name="eff_cs_reply_time_out">Question Solved</string>
+	<string name="eff_cs_detail_title">%1$s Time:%2$s</string>
+	<string name="eff_cs_detail_no_find">Question not existed</string>
+	<string name="eff_cs_mark_success">Grade succeeded, thank you </string>
+	<string name="eff_cs_mark_fail">Grade failed, try later </string>
+	<string name="eff_cs_error">System Error, try later </string>
+	<string name="eff_cs_question_error">Accessing question list failed, try again</string>
+	<string name="eff_cs_question_null">Question list is blank, ask a qustion first</string>
+	<string name="eff_cs_mark_null">At lest grad one mark</string>
+	<string name="eff_cs_online_title_hint">Keep the title in 6-50 words</string>
+	<string name="eff_cs_online_msg_hint">Question content in 6-200words</string>
+	<string name="eff_cs_xlistview_footer_hint_normal">See more</string>
+	<string name="eff_cs_xlistview_header_hint_normal">Dropdown to refresh </string>
+	<string name="eff_cs_xlistview_header_hint_ready">Loosen to refresh </string>
+	<string name="eff_cs_xlistview_header_hint_loading">Loading </string>
+	<string name="eff_cs_xlistview_header_last_time">Last update time</string>
+	<string name="eff_cs_xlistview_footer_hint_ready">Loosen to upload more</string>
+	<string name="eff_cs_no_more">No more data</string>
+	
+    <!-- 储值 -->	
+    <string name="eff_pay_index_title">Top Up center</string>
+    <string name="eff_pay_text">Top up</string>	
+	<string name="eff_pay_role_text">Character Name </string>
+	<string name="eff_pay_server_text">Servers</string>
+        <string name="eff_pay_google">Google Play</string>
+    <!-- 储值 -->	
+    <string name="eff_paytype_card">Points Card</string>
+	<string name="eff_paytype_mpoint">E-wallet</string>
+	<string name="eff_paytype_online">Mobile&amp;Telephone</string>
+	<string name="eff_paytype_creditcard">Credit Card</string>
+	<string name="eff_paytype_atm">ATM</string>
+    <string name="eff_title_gplay">Google Play</string>
+	<string name="eff_pay_ok">OK</string>
+	<string name="efunfun_role_name_pay">Character Name </string>
+	<string name="efunfun_current_server_pay">Servers</string>
+	<string name="efunfun_pay_back">Return</string>
+	<string name="eff_v3_nonsupport">You don\'t have a Google account or your Google play incompatible with the V3 inapp purchase , please update to the latest version.  </string>
+	<string name="eff_query_inventory_error">Inquiry inventory failed</string>
+        <string name="eff_ok">OK</string>
+    <string name="eff_purchase_fail">Purchase failed</string>
+	<string name="eff_pay_fail">Top Up failed, contact the CS</string>
+	<string name="eff_supplement_fail">Compensation failed, contact the CS</string>
+	<string name="eff_supplement_success">Compensation Succeeded </string>
+	<string name="eff_consume_fail">Consumption failed, open the top up page again</string>
+	<string name="eff_consume_success">Consumption succeeded</string>
+	<string name="eff_pay_success">Purchase Succeeded </string>
+	<string name="eff_verify_fail">Confirm payload failed</string>
+	<string name="eff_order_fail">Creating orders failed </string>
+	<string name="efunfun_pay_center_sdk">Top up center </string>
+	<string name="efunfun_pay_coin_type">Choose top up amount </string>
+	<string name="efunfun_pay_except_text">Network Request Unusual</string>
+	<string name="efunfun_try_except_text">Data Unusual</string>
+    <!-- google play start -->	
+    <string name="eff_url">https://mpay.efunfun.com/</string>	
+    <string name="eff_url_3">androidGamePay.do?method=</string>	
+    <string name="eff_url_0">genAnGooglePlayOrders</string>	
+    <string name="eff_url_1">payAnGooglePlayOrders</string>	
+    <string name="eff_url_2">payAnGooglePlaySuppleOrders</string>	
+    <string name="eff_key_0">AEEFA1CD4E5D195BBF28B0FF608BD065</string>	
+    <string name="eff_key_1">6BB9EB90BBFDDCF2886166DF119A4FE6</string>	
+    <string name="eff_key_2">0BC779A#2A57E28859DD179$B67E70AE</string>	
+    <string name="eff_key_3">efunfun.com/payGame</string>	
+    <string name="eff_not_sku">Items list not available</string>
+    <string name="eff_google_not_sku">Google Items list not available</string>	
+	<!-- google play end -->
+    <!-- 伺服器 -->	
+    <string name="eff_services_title">Choose servers</string>
+	<string name="eff_lately_login">Recent Login</string>
+	<string name="eff_recommend_service">Recommended </string>
+	<string name="eff_service_null">Servers Null</string>
+	<string name="eff_save_service_info_error">Saving server\'s data failed</string>
+	<string name="eff_service_list_null">Servers list Null</string>
+    <string name="eff_get_service_fail">Obtaining Servers list failed </string>
+    <string name="eff_service_maintenance">Server maintained, choose other servers</string>
+    <string name="eff_service_no_have">Null</string>
+    <string name="eff_no_phone">Your device can\'t dial, you may dial the following number \n%1$s</string>
+    <string name="efunfun_not_phone">Your device cannot dial </string>
+    
+    <string name="eff_find_picture_back_uid">Your guest account UID</string>	
+    <string name="eff_find_picture_back_recode">Recovery Code</string>	
+    <string name="eff_find_picture_back_info">This pic is used to retrieve role;    please store properly！</string>	
+    <string name="eff_find_picture_efun_account">you efunfun account</string>	
+    <!-- fb -->
+</resources>

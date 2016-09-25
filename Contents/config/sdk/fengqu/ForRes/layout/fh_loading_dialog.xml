@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/fh_progress_icon"
+            android:indeterminateOnly="true" />
+
+        <ImageView
+            android:id="@+id/fh_error_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbLoading"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fh_error_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fh_error_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="正在加载中..."
+            android:textColor="@color/fh_gray_66"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

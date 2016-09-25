@@ -1,0 +1,153 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="WindowTitleBackground" >   
+        <item name="android:background">@color/sdk_title_bg_colour</item>       
+    </style>
+    <style name="MVTheme" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/m4399_rec_page_bg</item>
+    </style>
+    
+	<!-- For mvcenter title -->
+	<style name="TitleTextStyle" >
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_weight">1.0</item>
+	    <item name="android:textSize">22sp</item>
+	    <item name="android:textColor">@color/sdk_color_white</item>
+	    <item name="android:text">@string/sdk_title</item>
+	</style>
+	
+	<style name="MyDialog" parent="@android:style/Theme.Dialog">
+	    <item name="android:windowBackground">@color/dialog_bg_color</item>
+	    <item name="android:windowIsTranslucent">true</item>
+	    <item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="MyProgressDialog" parent="@android:style/Theme.Dialog">
+	    <item name="android:windowFrame">@null</item>   
+	    <item name="android:windowIsFloating">true</item>   
+	    <item name="android:windowContentOverlay">@null</item>   
+	   	<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>   
+	   	<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+	   	<item name="android:windowNoTitle">true</item>
+	   	<item name="android:windowBackground">@drawable/m4399_rec_pdialog_bg</item>
+	</style>
+	
+	<style name="SumButtonStyle" parent="@android:attr/buttonStyleSmall">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:background">@drawable/m4399_rec_sum_btn_bg</item>
+    </style>
+    
+	<style name="DialogLeftButtonStyle" parent="@android:attr/buttonStyle">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">@dimen/sdk_sum_btns_eara_height</item>
+	    <item name="android:layout_weight">1.0</item>
+	    <item name="android:layout_marginLeft">2dp</item>
+	    <item name="android:layout_marginRight">2dp</item>
+	    <item name="android:background">@drawable/m4399_rec_left_btn_bg</item>
+	    <item name="android:textColor">#333333</item>
+	</style>
+	
+	<style name="DialogRightButtonStyle" parent="DialogLeftButtonStyle">
+	    <item name="android:background">@drawable/m4399_rec_right_btn_bg</item>
+	</style>
+	
+	<style name="PaymentGridview">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:numColumns">4</item>
+	    <item name="android:listSelector">@drawable/m4399_rec_pm_item_bg</item>
+	</style>
+	
+	<style name="FootTextStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:text">@string/sdk_help_message</item>
+    </style>
+    
+	<style name="CardTextStyle">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">@dimen/sdk_sum_edittext_height</item>
+	    <item name="android:layout_weight">2.6</item>
+	    <item name="android:paddingLeft">10dp</item>
+	    <item name="android:gravity">center_vertical|left</item>
+	    <item name="android:background">@drawable/m4399_rec_edittext_bg_normal</item>
+	    <item name="android:textSize">13sp</item>
+	    <item name="android:textColor">#111111</item>
+	    <item name="android:inputType">number</item> 
+	</style> 
+	
+	<style name="SerPwdStyle">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">0dp</item>
+	    <item name="android:layout_weight">2.6</item>
+	    <item name="android:layout_marginBottom">10dp</item>
+	    <item name="android:paddingLeft">10dp</item>
+	    <item name="android:gravity">center_vertical|left</item>
+	    <item name="android:background">@drawable/m4399_rec_edittext_bg</item>
+	    <item name="android:textSize">13sp</item>
+	    <item name="android:textColor">#111111</item>
+	    <item name="android:inputType">number</item> 
+	</style>
+	
+	<style name="GameInfoTextStyle">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">16sp</item>
+	    <item name="android:textColor">#999999</item>
+	    <item name="android:gravity">right</item>
+	</style>
+	
+	<style name="RmdAmountGridview">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginTop">@dimen/sdk_gridview_vspacing</item>
+	    <item name="android:layout_marginBottom">@dimen/sdk_gridview_vspacing</item>
+	    <item name="android:numColumns">4</item>
+	    <item name="android:listSelector">@null</item>
+	    <item name="android:verticalSpacing">@dimen/sdk_gridview_hspacing</item>
+	    <item name="android:horizontalSpacing">@dimen/sdk_gridview_hspacing</item>
+	</style>
+	
+	<style name="WangyinBankTable" parent="RmdAmountGridview">
+	    <item name="android:numColumns">3</item>
+	</style>
+	
+	<style name="ChongzhikaGridview">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_weight">3</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:numColumns">3</item>
+	    <item name="android:listSelector">@null</item>
+	    <item name="android:verticalSpacing">@dimen/sdk_gridview_hspacing</item>
+	    <item name="android:horizontalSpacing">@dimen/sdk_gridview_hspacing</item>
+	</style>
+	
+    <style name="SelectArea">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:gravity">center</item>
+	</style>
+	
+    <style name="YoubiArea">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+	</style>
+	
+	
+
+<!-- 	<style name=""> -->
+<!-- 	    <item name=""></item> -->
+<!-- 	</style> -->
+</resources>

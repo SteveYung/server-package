@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/oasisgames_sdk_pay_history_item_price"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="14dip"
+                android:layout_height="14dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/oasisgames_sdk_pay_item_diamond_logo" />
+
+            <TextView
+                android:id="@+id/oasisgames_sdk_pay_history_item_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/oasisgames_sdk_pay_history_item_addcoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="14dip"
+                android:layout_height="14dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/oasisgames_sdk_pay_item_diamond_logo_red" />
+
+            <TextView
+                android:id="@+id/oasisgames_sdk_pay_history_item_d2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_weight="1" 
+        android:orientation="vertical"
+        android:gravity="center">
+	    <TextView
+	        android:id="@+id/oasisgames_sdk_pay_history_item_time_a"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#666666"
+	        android:textSize="16sp"/>
+	    <TextView
+	        android:id="@+id/oasisgames_sdk_pay_history_item_time_b"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#666666"
+	        android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

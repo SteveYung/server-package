@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>	
+<resources>	
+    <string name="game_name">超级舰队HD</string>	
+    <string name="game_main">com.efunfun.efunfunplatformbasesdk.test.MainActivity</string>	
+    <string name="wx_app_id">wx18bcc01c666a5349</string>	
+    <string name="app_id">982338755121601</string>	
+    <string name="eff_newpay_weburl">http://pay.efunfun.com/mobilePayWay/mobile.do?method=getPayWay</string>	
+    <string name="efunfun_package_name">com.efunfun.xm.cjjd</string>	
+	
+    <string name="efunfun_confirm">确认</string>	
+    <string name="efunfun_no_network">无网路联接</string>	
+    <string name="efunfun_network_fail">请求网路超时或者出现错误，请稍后重试！</string>	
+    <string name="efunfun_back">返回</string>	
+    <string name="efunfun_hint">提示</string>	
+    <string name="efunfun_retry">确认</string>	
+    <string name="efunfun_canel">取消</string>	
+    <string name="efunfun_error_code"> Code:</string>	
+    <string name="efunfun_parameter_no_null">参数不能为空！</string>	
+	
+    <!-- Efunfun 登入 -->	
+    <string name="efunfun_login_title">会员登入</string>	
+    <string name="efunfun_account_login">帐号登入</string>	
+    <string name="efunfun_account">帐号</string>	
+    <string name="efunfun_account_hint">请输入帐号</string>	
+    <string name="efunfun_password">密码</string>	
+    <string name="efunfun_password_hint">请输入密码</string>	
+    <string name="efunfun_login">登入</string>	
+    <string name="efunfun_regist">马上注册>></string>	
+    <string name="efunfun_regist_text">帐号注册</string>	
+    <string name="efunfun_forget_password">忘记密码</string>	
+    <string name="efunfun_quick_login">其他登入方式</string>	
+    <string name="efunfun_guest_login">直接玩</string>	
+    <string name="efunfun_facebook_login">facebook登入</string>	
+    <string name="efunfun_account_limit">帐号不能为空！</string>	
+    <string name="efunfun_account_much">帐号不能多于32位！</string>	
+    <string name="efunfun_password_limit">密码不能为空！</string>	
+    <string name="efunfun_get_mac_fail">获取手机唯壹标识码失败！</string>	
+    <string name="efunfun_account_lately">最近的</string>	
+    <string name="efunfun_account_record">条记录</string>	
+    <string name="efunfun_privacy_page">隐私条列页>></string>	
+    <!-- 注册 -->	
+    <string name="eff_reg_input_username">请输入帐号(至少六位元英,数字或邮箱)</string>	
+    <string name="eff_reg_input_name_email">请使用6-32位元数位、字母或邮箱</string>	
+    <string name="eff_reg_input_password">请输入密码(至少六位元英数字)</string>	
+    <string name="eff_reg_input_confirm_password">请确认密码</string>	
+    <string name="eff_reg_input_email">请输入邮箱(用于找回密码)</string>	
+    <string name="eff_reg_submit">确认</string>	
+    <string name="eff_reg_name">帐号:</string>	
+    <string name="eff_reg_password">密码:</string>	
+    <string name="eff_reg_confirm_password">确认:</string>	
+    <string name="eff_reg_back">返回</string>	
+    <string name="eff_reg_by_phone">手机注册</string>	
+    <string name="eff_reg_by_email">邮箱注册</string>	
+    <string name="eff_reg_by_email_error">邮箱限制为6-32位</string>	
+    <string name="eff_reg_msg">【建议玩家使用E-MAIL作为帐号,以利日后密码找回】</string>	
+    <!-- 登入错误资讯 -->	
+    <string name="efunfun_fail_login">登入失败</string>	
+    <string name="efunfun_login_params_error">参数错误</string>	
+    <string name="efunfun_login_1004">帐号不存在。</string>	
+    <string name="efunfun_login_1005">帐号或密码错误。</string>	
+    <string name="efunfun_login_1006">帐号资讯被修改，请联系客服。</string>	
+    <string name="efunfun_login_1007">该帐号已经停用</string>	
+    <string name="efunfun_partner_1004"> 合作商不存在。</string>	
+    <string name="efunfun_partner_1005"> 合作商已停用，请联系客服。</string>	
+    <string name="efunfun_partner_1006"> 该帐号已经停用！</string>	
+    <!-- 开始游戏时，获取伺服器 -->	
+    <string name="efunfun_server_fail">获取伺服器失败！</string>	
+    <!-- 版本更新 -->	
+    <string name="efunfun_text_newversion">新版本</string>	
+    <string name="efunfun_text_updateerr">版本更新异常。</string>	
+    <string name="efunfun_button_update">更新</string>	
+    <string name="efunfun_button_cancel">取消</string>	
+    <string name="efunfun_update_content">更新内容 \n</string>	
+    <string name="efunfun_modify_content">修正内容\n</string>	
+    <string name="efunfun_text_prompt">温馨提示</string>	
+    <string name="efunfun_prompt_content">请更新最新包</string>	
+    <string name="efunfun_version_update_default">当前有新版本，是否需要更新</string>	
+    <string name="efunfun_update_error_title">版本更新异常</string>	
+    <string name="efunfun_update_error_content">网路异常,版本更新失败,请重试!</string>	
+    <string name="efunfun_update_retry">重试</string>	
+    <string name="efunfun_update_cancel">取消</string>	
+    <!-- fb分享 -->	
+    <string name="efunfun_fb_share_sucess">分享成功</string>	
+    <string name="efunfun_fb_share_fail">分享失败</string>	
+    <string name="efunfun_fb_share_cancel">取消分享</string>	
+    <string name="eff_no_network">网路不可用</string>	
+    <string name="eff_reg_name_not_null">帐号不能为空</string>	
+    <string name="eff_reg_name_size_error">手机号码必须为7-12个数字之间</string>	
+    <string name="eff_reg_name_error">手机号码只能纯数字</string>	
+    <string name="eff_reg_pw_not_null">密码不能为空</string>	
+    <string name="eff_reg_conpw_not_null">请再次输入密码</string>	
+    <string name="eff_reg_conpw_error">两次输入的密码不相同</string>	
+    <string name="eff_reg_email_not_null">邮箱不能为空</string>	
+    <string name="eff_reg_email_format_error">邮箱格式不正确</string>	
+    <string name="eff_reg_error">网路连接失败,请稍候重试</string>	
+    <string name="eff_reg_pw_little">密码请至少输入6位元</string>	
+    <string name="eff_reg_se_pw_limit">确认密码不能为空或长度小于6位</string>	
+    <string name="eff_reg_pw_much">密码不能大于32位元</string>	
+    <!-- 忘记密码 -->	
+    <string name="eff_forget_findback">密码找回</string>	
+    <string name="eff_forget_email">请输入邮箱位址</string>	
+    <string name="eff_forget_send_again">再次发送</string>	
+    <!-- 帐号找回 ,试玩帐号找回 -->	
+    <string name="eff_find_back_official_count">正式帐号找回</string>	
+    <string name="eff_find_back_try_play_count">试玩角色找回</string>	
+    <string name="eff_find_back_input_email_addr">请输入邮箱位址</string>	
+    <string name="eff_find_back_declare">以下资料可以从设备相册备份图片中找到</string>	
+    <string name="eff_find_back_input_uid">请输入UID</string>	
+    <string name="eff_find_back_uid">UID</string>	
+    <string name="eff_find_back_input_recovery">请输入恢复码</string>	
+    <string name="eff_find_back_recovery">恢复码</string>	
+    <string name="eff_find_back_input_account">请输入帐号（限制为邮箱）</string>	
+    <string name="eff_find_back_account">帐号</string>	
+    <string name="eff_find_back_input_pass">请输入您的帐号密码</string>	
+    <string name="eff_find_back_pass">密码</string>	
+    <string name="eff_find_back_input_pass_agame">请重复您的密码</string>	
+    <string name="eff_find_back_picture_have_save">您的试玩角色资料已经储存到相簿中</string>	
+    <string name="eff_find_back_have_account">已有正式帐号</string>	
+    <string name="eff_find_back_for_safe">已经绑定Efunfun帐号</string>	
+    <string name="eff_find_back_params_not_null_1">UID不能为空</string>	
+    <string name="eff_find_back_params_not_null_2">恢复码不能为空</string>	
+    <string name="eff_find_back_params_not_null_3">帐号不能为空</string>	
+    <string name="eff_find_back_params_not_null_4">密码不能为空</string>	
+    <string name="eff_find_back_params_not_null_5">确认密码不能为空</string>	
+    <string name="eff_find_back_must_email_name">用户名必须为邮箱格式</string>	
+    <string name="eff_find_back_code_10007">不能重复绑定</string>	
+    <string name="eff_find_back_code_10008">您已经在游戏中绑定过帐号，不能重复绑定</string>	
+    <string name="eff_find_back_code_10009">UID或恢复码不正确</string>	
+    <string name="eff_find_back_dialog_title_10000">系统将保存您的帐号</string>	
+    <string name="eff_find_back_dialog_message_10000">系统将保存您的新帐号到相册，请牢记您的密码！</string>	
+    <string name="eff_find_back_dialog_title_10007">该恢复码已经绑定帐号</string>	
+    <string name="eff_find_back_dialog_message_10007">请到您的设备相册中寻找帐号备份图片</string>	
+    <string name="eff_find_back_dialog_title">将以试玩帐号进入游戏</string>	
+    <string name="eff_find_back_dialog_message">为了帐号安全,建议尽快在游戏内绑定正式帐号.同时我们会将试玩帐号资料以照片方式保存到您的相册,方便找回帐号</string>	
+    <string name="efunfun_guest_record_machineid_null">获取不到机器码，不能进行游客登入资讯记录！</string>	
+    <string name="eff_find_back_bind_fail">绑定登入失败</string>	
+    <string name="eff_find_back_save_img_fail">保存图片失败!</string>	
+    <string name="eff_find_back_gamename_notice1">此图为Efunfun平台试玩角色恢复资料，用于恢复您在</string>	
+    <string name="eff_find_back_gamename_notice2">中创建的试玩角色</string>	
+    <string name="eff_find_back_gamename_account_notice1">此图为您在Efunfun平台</string>	
+    <string name="eff_find_back_gamename_account_notice2">中创建的Efunfun帐号</string>	
+    <!-- 线上客服 -->	
+    <string name="eff_online_cs">线上客服</string>	
+    <string name="eff_question_title">标题</string>	
+    <string name="eff_question_type">类型</string>	
+    <string name="eff_question_msg">内容</string>	
+    <string name="eff_question_submit">提交</string>	
+    <string name="eff_question_type_prompt">类型</string>	
+	
+    <string-array name="eff_question_type_arry">	
+        <item value="11">登入问题</item>	
+        <item value="12">储值问题</item>	
+        <item value="13">帐号问题</item>	
+        <item value="14">游戏问题</item>	
+        <item value="15">活动相关</item>	
+        <item value="16">公告</item>	
+        <item value="17">外挂举报</item>	
+        <item value="18">Bug回报</item>	
+        <item value="19">投诉</item>	
+        <item value="20">建议</item>	
+        <item value="24">其他</item>	
+    </string-array>	
+    <string-array name="cs_question_type_list_value">	
+        <item>11</item>	
+        <item>12</item>	
+        <item>13</item>	
+        <item>14</item>	
+        <item>15</item>	
+        <item>16</item>	
+        <item>17</item>	
+        <item>18</item>	
+        <item>19</item>	
+        <item>20</item>	
+        <item>24</item>	
+    </string-array>	
+	
+    <string name="efunfun_code_1003"> 帐号不是正确的Email位址或小于6位,请检查</string>	
+    <string name="efunfun_code_1004"> 密码小于6位元 </string>	
+    <string name="efunfun_code_1005"> 该帐号已存在,请使用其他帐号注册 </string>	
+    <string name="efunfun_code_1008"> 请输入7-12位元数位的手机号码！</string>	
+    <string name="eff_question_title_not_null"> 标题不能为空 </string>	
+    <string name="eff_question_title_size_error">标题字数必须大于6位,少于50位 </string>	
+    <string name="eff_question_msg_not_null"> 请输入提问内容 </string>	
+    <string name="eff_question_msg_size_error">提问内容字数请大于6位,少于200位 </string>	
+    <string name="eff_question_title_error"> 标题不能含有特殊字元"%!"</string>	
+    <string name="eff_question_msg_error"> 问题不能含有特殊字元"%!"</string>	
+    <string name="efunfun_email_suc">发送密码邮件成功!</string>	
+    <string name="efunfun_verify_fail">验证失败</string>	
+    <string name="efunfun_email_err">帐户无效</string>	
+    <string name="efunfun_email_format">电子邮件格式无效</string>	
+    <string name="efunfun_email_notequals">邮箱与注册资讯不符合</string>	
+    <string name="efunfun_email_sendfail">发送邮件失败</string>	
+    <string name="efunfun_email_not_null">输入的邮箱不能为空</string>	
+    <string name="efunfun_email_net_not_use">当前网路不可用</string>	
+    <string name="eff_send_question_success">提问成功</string>	
+    <string name="eff_send_question_error">系统异常，提问失败!</string>	
+    <string name="eff_send_question_fail">网路异常,提问失败,请稍后重试!</string>	
+    <string name="eff_send_question_parameter_error">参数错误,请重试!</string>	
+    <string name="eff_send_question_user_error">帐号错误！</string>	
+    <string name="efunfun_email_limit">不能小于6个字元</string>	
+    <string name="efunfun_request_faile">网路请求失败</string>	
+    <string name="efunfun_question_list_title">%1$s%2$s</string>	
+    <string name="efunfun_question_reply">(已回复)</string>	
+    <string name="efunfun_question_no_reply">(未回复)</string>	
+    <string name="efunfun_question_reply_ok">(已解决)</string>	
+	
+    <!-- 游客绑定 -->	
+    <string name="eff_bind_title">游客绑定</string>	
+    <string name="eff_bind_name">帐号（请使用邮箱格式）</string>	
+    <string name="eff_bind_fail_10003">用户名不是邮箱或者少于6位</string>	
+    <string name="eff_bind_fail_10004">密码少于6位元</string>	
+    <string name="eff_bind_fail_10005">帐号已存在</string>	
+    <string name="eff_bind_fail">绑定失败</string>	
+    <string name="eff_bind_suc">绑定成功</string>	
+    <string name="eff_bind_player_no_guest">玩家不是游客！</string>	
+    <string name="eff_reg_account_format_error">帐户非6-32位元数位或字母或正确的邮箱格式</string>	
+    <string name="eff_reg_account_format_hint">请使用6-32位元数位字母或邮箱</string>	
+    <!-- CS客服 -->	
+    <string name="eff_cs_phone_text">客服热线</string>	
+    <string name="eff_cs_online_text">线上客服</string>	
+    <string name="eff_cs_case_text">案件追踪</string>	
+    <string name="eff_cs_center_title">客服中心</string>	
+    <string name="eff_cs_case_grade">服务评分：</string>	
+    <string name="eff_cs_case_prompt">如果您的问题解决了，请对我们的服务进行评分，谢谢！</string>	
+    <string name="eff_cs_grade_button">我的问题解决了</string>	
+    <string name="eff_cs_reply_button">回复</string>	
+    <string name="eff_cs_reply_hint">请输入回复内容</string>	
+    <string name="eff_cs">客服</string>	
+    <string name="eff_cs_response_success">回复成功</string>	
+    <string name="eff_cs_response_fail">系统错误,回复失败,请稍后重试!</string>	
+    <string name="eff_cs_response_error">参数错误,回复失败</string>	
+    <string name="eff_cs_response_name_error">帐号错误,回复失败</string>	
+    <string name="eff_cs_reply_time_out">该问题已解决!</string>	
+    <string name="eff_cs_detail_title">%1$s 时间:%2$s</string>	
+    <string name="eff_cs_detail_no_find">问题不存在!</string>	
+    <string name="eff_cs_mark_success">评分成功,感谢妳的支持!</string>	
+    <string name="eff_cs_mark_fail">评分失败,请稍候重试!</string>	
+    <string name="eff_cs_error">系统错误,请稍后重试!</string>	
+    <string name="eff_cs_question_error">获取问题列表失败,请重试!</string>	
+    <string name="eff_cs_question_null">提问列表为空,请先提问!</string>	
+    <string name="eff_cs_mark_null">请至少评壹分!</string>	
+    <string name="eff_cs_online_title_hint">标题字数请保持在6-50字之间!</string>	
+    <string name="eff_cs_online_msg_hint">提问内容请至少输入6个字元,请勿多于200字元!</string>	
+    <string name="eff_cs_xlistview_footer_hint_normal">查看更多</string>	
+    <string name="eff_cs_xlistview_header_hint_normal">下拉刷新</string>	
+    <string name="eff_cs_xlistview_header_hint_ready">松开刷新资料</string>	
+    <string name="eff_cs_xlistview_header_hint_loading">正在载入...</string>	
+    <string name="eff_cs_xlistview_header_last_time">上次更新时间：</string>	
+    <string name="eff_cs_xlistview_footer_hint_ready">松开载入更多</string>	
+    <string name="eff_cs_no_more">已经没有更多资料</string>	
+	
+    <!-- 储值 -->	
+    <string name="eff_pay_index_title">储值中心</string>	
+    <string name="eff_pay_text">储值</string>	
+    <string name="eff_pay_role_text">角色名：</string>	
+    <string name="eff_pay_server_text">伺服器：</string>	
+    <string name="eff_pay_google">Google Play</string>	
+    <!-- 储值 -->	
+    <string name="eff_paytype_card">点数卡</string>	
+    <string name="eff_paytype_mpoint">电子钱包</string>	
+    <string name="eff_paytype_online">手机市话</string>	
+    <string name="eff_paytype_creditcard">信用卡</string>	
+    <string name="eff_paytype_atm">ATM</string>	
+    <string name="eff_title_gplay">Google Play</string>	
+    <string name="eff_pay_ok">确认</string>	
+    <string name="efunfun_role_name_pay">角色名： </string>	
+    <string name="efunfun_current_server_pay">伺服器： </string>	
+    <string name="efunfun_pay_back">返回</string>	
+    <string name="eff_v3_nonsupport">您未设置google帐号或者手机上的google play不支援V3版本内购，请更新到最新版本</string>	
+    <string name="eff_query_inventory_error">查询存货失败</string>	
+    <string name="eff_ok">OK</string>	
+    <string name="eff_purchase_fail">购买失败。</string>	
+    <string name="eff_pay_fail">储值失败，请联系客服。</string>	
+    <string name="eff_supplement_fail">补点失败，请联系客服。</string>	
+    <string name="eff_supplement_success">补点成功。</string>	
+    <string name="eff_consume_fail">消费失败。请再次打开储值页面</string>	
+    <string name="eff_consume_success">消费成功。</string>	
+    <string name="eff_pay_success">购买成功。</string>	
+    <string name="eff_verify_fail">验证Payload失败。</string>	
+    <string name="eff_order_fail">订单生成失败。</string>	
+    <string name="efunfun_pay_center_sdk">储值中心</string>	
+    <string name="efunfun_pay_coin_type">请选择储值金额</string>	
+    <string name="efunfun_pay_except_text">请求网路异常</string>	
+    <string name="efunfun_try_except_text">数据异常</string>	
+    <!-- google play start -->	
+    <string name="eff_url">https://mpay.efunfun.com/</string>	
+    <string name="eff_url_3">androidGamePay.do?method=</string>	
+    <string name="eff_url_0">genAnGooglePlayOrders</string>	
+    <string name="eff_url_1">payAnGooglePlayOrders</string>	
+    <string name="eff_url_2">payAnGooglePlaySuppleOrders</string>	
+    <string name="eff_key_0">AEEFA1CD4E5D195BBF28B0FF608BD065</string>	
+    <string name="eff_key_1">6BB9EB90BBFDDCF2886166DF119A4FE6</string>	
+    <string name="eff_key_2">0BC779A#2A57E28859DD179$B67E70AE</string>	
+    <string name="eff_key_3">efunfun.com/payGame</string>	
+    <string name="eff_not_sku">暂无产品清单</string>	
+    <string name="eff_google_not_sku">Google暂无产品清单</string>	
+	<!-- google play end -->
+    <!-- 伺服器 -->	
+    <string name="eff_services_title">选择伺服器</string>	
+    <string name="eff_lately_login">最近登入:</string>	
+    <string name="eff_recommend_service">推荐伺服器:</string>	
+    <string name="eff_service_null">伺服器为空</string>	
+    <string name="eff_save_service_info_error">保存伺服器资讯失败</string>	
+    <string name="eff_service_list_null">伺服器列表为空</string>	
+    <string name="eff_get_service_fail">获取伺服器列表失败,请重试</string>	
+    <string name="eff_service_maintenance">伺服器维护中,请选择其他伺服器</string>	
+    <string name="eff_service_no_have">无</string>	
+    <string name="eff_no_phone">您的设备无电话功能，您可以拨打以下电话：\n%1$s</string>	
+    <string name="efunfun_not_phone">您的设备不是电话！</string>	
+    
+    <string name="eff_find_picture_back_uid">您的直接玩角色UID</string>	
+    <string name="eff_find_picture_back_recode">恢复码</string>	
+    <string name="eff_find_picture_back_info">此图用于试玩角色找回 ;  请妥善保存!</string>	
+     <string name="eff_find_picture_efun_account">您的Efunfun帐号</string>	
+    <!-- fb -->
+</resources>

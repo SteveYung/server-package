@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="mispine_translucent" type="color">#9000</item>
+    <item name="mispine_orange" type="color">#E89432</item>
+    <item name="mispine_white" type="color">#FFF</item>
+    <item name="mispine_dark" type="color">#5D5D5D</item>
+    <item name="mispine_gray" type="color">#8C8C8C</item>
+    <item name="mispine_light_gray" type="color">#C8C8C8</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/mispine_translucent</item>
+        <item>@color/mispine_orange</item>
+        <item>@color/mispine_white</item>
+        <item>@color/mispine_dark</item>
+        <item>@color/mispine_gray</item>
+        <item>@color/mispine_light_gray</item>
+    </integer-array>
+
+</resources>

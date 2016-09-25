@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gamexdd_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.gamexdd.sdk.widget.Header
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x140"
+            android:background="@color/gamexdd_btn_red_normal"
+            >
+
+            <ImageView
+                android:id="@+id/imgUserLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x16"
+                android:src="@drawable/gxd_user_pic_xdd"
+                />
+
+            <LinearLayout
+                android:layout_width="@dimen/x330"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@+id/imgUserLogo"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="18666806599"
+                        android:textColor="#ffffff"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/gxd_user_btn_upuser"
+                        />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbVipDot"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x6"
+                    android:layout_marginTop="@dimen/x16"
+                    android:max="100"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/gxd_progressbar_color"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvVipLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/gxd_user_icon_vipbg"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/x16"
+                        android:text="VIP 4"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvVipdot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:layout_toRightOf="@+id/tvVipLevel"
+                        android:text="1256"
+                        android:textColor="#ffff33"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvNextVipdot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x5"
+                        android:layout_toRightOf="@+id/tvVipdot"
+                        android:text="/50000"
+                        android:textColor="#a01f0a"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgExplain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/gxd_user_icon_vipxq"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSign"
+                android:layout_width="@dimen/x180"
+                android:layout_height="@dimen/x94"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/gxd_btn_sign_selector"
+                android:text="每日签到"
+                android:textColor="#e04a32"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x92"
+            android:background="#eeeeee"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x20"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XD點:"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tvXdDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="#e04a32"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x60"
+                android:text="禮劵:"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tvGiftDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30303"
+                android:textColor="#e04a32"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/itFreeDot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x110"
+            android:background="@drawable/gxd_btn_white_selector"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/gxd_user_icon_01"
+                android:drawablePadding="@dimen/x10"
+                android:gravity="center_vertical"
+                android:text="免費點數"
+                android:textColor="#666666"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/x30"
+                android:drawableRight="@drawable/gxd_icon_right"
+                android:gravity="center_vertical"
+                android:text="做任務免費點數"
+                android:textColor="#999999"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eeeeee"
+            />
+
+        <TextView
+            android:id="@+id/itGiftStore"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x110"
+            android:background="@drawable/gxd_btn_white_selector"
+            android:drawableLeft="@drawable/gxd_user_icon_02"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/gxd_icon_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="禮劵商城"
+            android:textColor="#666666"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x10"
+            android:background="#eeeeee"
+            />
+
+        <TextView
+            android:id="@+id/itPayList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x110"
+            android:background="@drawable/gxd_btn_white_selector"
+            android:drawableLeft="@drawable/gxd_user_icon_03"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/gxd_icon_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="儲值記錄"
+            android:textColor="#666666"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eeeeee"
+            />
+
+        <TextView
+            android:id="@+id/itGiftList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x110"
+            android:background="@drawable/gxd_btn_white_selector"
+            android:drawableLeft="@drawable/gxd_user_icon_04"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/gxd_icon_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="禮劵記錄"
+            android:textColor="#666666"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x10"
+            android:background="#eeeeee"
+            />
+
+        <TextView
+            android:id="@+id/itBindPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x110"
+            android:background="@drawable/gxd_btn_white_selector"
+            android:drawableLeft="@drawable/gxd_user_icon_05"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/gxd_icon_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="綁定手機"
+            android:textColor="#666666"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eeeeee"
+            />
+
+        <TextView
+            android:id="@+id/itModifyPwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x110"
+            android:background="@drawable/gxd_btn_white_selector"
+            android:drawableLeft="@drawable/gxd_user_icon_06"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@drawable/gxd_icon_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:text="修改密碼"
+            android:textColor="#666666"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#eeeeee"
+            />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="@dimen/x680"
+            android:layout_height="@dimen/x90"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@drawable/gxd_btn_red_selector"
+            android:text="退出帳號"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+</ScrollView>
+

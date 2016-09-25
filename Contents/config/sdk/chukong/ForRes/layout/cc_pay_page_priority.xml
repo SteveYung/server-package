@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocosdk="http://schemas.android.com/apk/res-auto"
+    style="@style/CCPageTheme" >
+
+    <com.coco.sdk.ui.widget.CCPageTitle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cocosdk:title_text="@string/cc_coco_pay_center"
+        cocosdk:title_type="only_close" 
+        cocosdk:title_logo="none"/>
+    
+    <TextView
+        android:id="@+id/errorinfo_text"
+        style="@style/ErrorInfo"/>
+    
+    <TextView style="@style/ErrorInfo"
+        android:id="@+id/errorinfo_page"/>
+
+    <Button
+        android:id="@+id/pay_priority_btn"
+        style="@style/PayButton"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/pay_other_btn"
+        android:layout_marginBottom="@dimen/cc_pay_margin_54"
+        android:text="@string/cc_pay_btn" />
+    
+    <Button
+        android:id="@+id/pay_other_btn"
+        style="@style/PayButtonOther"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/cc_pay_other"/>
+
+    <TextView
+        android:id="@+id/pay_money"
+        style="@style/PayText"
+        android:layout_above="@+id/pay_priority_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/cc_pay_margin_32"
+        android:text="@string/cc_pay_money" />
+
+    <ImageView
+        android:id="@+id/pay_type_icon"
+        style="@style/PayTypeIcon"
+        android:layout_above="@+id/pay_priority_btn"
+        android:layout_marginBottom="@dimen/cc_pay_margin_40"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cc_pay_sms4" />
+    
+</RelativeLayout>

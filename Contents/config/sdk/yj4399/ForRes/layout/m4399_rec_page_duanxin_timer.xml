@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sdk_page_width"
+    android:layout_height="@dimen/sdk_page_height"
+    android:background="@drawable/m4399_rec_page_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_title_height"
+        layout="@layout/m4399_rec_sec_text_title" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        layout="@layout/m4399_rec_sec_duanxin_timer" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_foot_height"
+        layout="@layout/m4399_rec_sec_mvcenter_foot" />
+
+</LinearLayout>

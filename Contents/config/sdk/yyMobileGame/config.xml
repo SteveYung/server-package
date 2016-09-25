@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="000094">
+  <paramLs>
+    <param
+        name="yyMobileGameAppId"
+        required="1"
+        showName="AppId"
+        desc="应用APPID"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"/>
+        
+    <param
+        name="AppKey"
+        required="0"
+        showName="AppKey"
+        desc="登录验证用的appkey"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="0"/>
+
+     <param
+        name="yyMobileGameOrientation"
+        required="1"
+        showName="横竖屏设置"
+        desc="设置横竖屏"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="landscape"/>
+        <option value="portrait"/>
+    </param>
+        
+    <param
+        name="payKey"
+        required="0"
+        showName="payKey"
+        desc="支付验证用的paykey"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="0"/>
+    
+    <param
+        name="yyDebugMode"
+        required="1"
+        showName="DebugMode"
+        desc="是否为调试模式"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="false"/>
+        <option value="true"/>
+    </param>
+    
+    <param
+        name="NeedSdkUpdate"
+        required="1"
+        showName="是否需要sdk更新"
+        desc="默认为true，因为yy自己会签名"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value="false"/>
+        <option value="true"/>
+    </param>
+    
+    <param
+        name="XG_V2_ACCESS_ID"
+        required="1"
+        showName="信鸽AccessId"
+        desc="APP信鸽推送的AccessId"
+        bWriteIntoManifest="1"
+        bUserOffer="1"
+        bWriteIntoClient="0"/>
+    
+    <param
+        name="XG_V2_ACCESS_KEY"
+        required="1"
+        showName="信鸽AccessKey"
+        desc="APP信鸽推送的AccessKey"
+        bWriteIntoManifest="1"
+        bUserOffer="1"
+        bWriteIntoClient="0"/>
+  </paramLs>
+  
+  <operateLs>
+    <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="yyMobileGame"/>
+    <operate step="2" name="copy" from="ForLibs" to="lib" desc="yyMobileGame"/>
+    <operate step="3" name="copy" from="ForRes" to="res" desc="yyMobileGame"/>
+    <operate step="5" name="script" desc="yyMobileGame"/>
+    <operate step="5" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="UserYYMobileGame" typePlugin="0" desc="YY手机游戏4.0.1用户插件"/>
+    <plugin name="IAPOnlineYYMobileGame" typePlugin="2" desc="YY手机游戏4.0.1支付插件"/>
+  </pluginLs>
+  <version code = "1201" showVersion = "2.0.6_4.0.1" minClientVer="1.5" minFrameworkVer="1.5">
+  </version>
+</config>

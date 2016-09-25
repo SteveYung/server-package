@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/llMenu"
+        android:layout_width="@dimen/x665"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gxd_menu_btn02"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rlMessage"
+            android:layout_width="@dimen/x105"
+            android:layout_height="@dimen/x85"
+            android:layout_gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imgXY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:src="@drawable/gxd_menu_icon04"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgXY"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:text="消息"
+                android:textColor="#333333"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/tvPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/gxd_menu_icon03"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#ffffff"
+                android:textSize="6sp"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@color/gamexdd_eeeeee"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlGift"
+            android:layout_width="@dimen/x105"
+            android:layout_height="@dimen/x85"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgXY1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:src="@drawable/gxd_menu_icon05"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgXY1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:text="禮包"
+                android:textColor="#333333"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@color/gamexdd_eeeeee"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlInvite"
+            android:layout_width="@dimen/x105"
+            android:layout_height="@dimen/x85"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgXY2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:src="@drawable/gxd_menu_icon06"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgXY2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:text="邀請"
+                android:textColor="#333333"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@color/gamexdd_eeeeee"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlService"
+            android:layout_width="@dimen/x105"
+            android:layout_height="@dimen/x85"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgXY3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:src="@drawable/gxd_menu_icon07"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgXY3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:text="客服"
+                android:textColor="#333333"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@color/gamexdd_eeeeee"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlUserCenter"
+            android:layout_width="@dimen/x105"
+            android:layout_height="@dimen/x85"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+
+                android:id="@+id/imgXY4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:src="@drawable/gxd_menu_icon08"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgXY4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10"
+                android:text="會員"
+                android:textColor="#333333"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_widget_floating_menu_view.xml -->

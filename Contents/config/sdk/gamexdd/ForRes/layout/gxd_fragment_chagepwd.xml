@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.gamexdd.sdk.widget.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.gamexdd.sdk.widget.Header>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x94"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@drawable/gxd_input_border"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x19"
+            android:src="@drawable/gxd_user_icon_08" />
+
+        <EditText
+            android:id="@+id/etOldPwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x19"
+            android:layout_toLeftOf="@+id/btnForgetPwd"
+            android:layout_toRightOf="@+id/imgXYothree"
+            android:background="@null"
+            android:hint="請輸入舊密碼"
+            android:textColor="#333333"
+            android:password="true"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x94"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/gxd_input_border"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x19"
+            android:src="@drawable/gxd_user_icon_08" />
+
+        <EditText
+            android:id="@+id/etNewPwdOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x19"
+            android:layout_toLeftOf="@+id/btnForgetPwd"
+            android:layout_toRightOf="@+id/imgXYothree"
+            android:background="@null"
+            android:hint="請輸入新密碼"
+            android:password="true"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x94"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/gxd_input_border"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x19"
+            android:src="@drawable/gxd_user_icon_08" />
+
+        <EditText
+            android:id="@+id/etNewPwdTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x19"
+            android:layout_toLeftOf="@+id/btnForgetPwd"
+            android:layout_toRightOf="@+id/imgXYothree"
+            android:background="@null"
+            android:hint="請再次輸入新密碼"
+            android:password="true"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnChagePwd"
+        android:layout_width="@dimen/x580"
+        android:layout_height="@dimen/x94"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/gxd_btn_blue_selector"
+        android:text="確定修改"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_fragment_chagepwd.xml -->

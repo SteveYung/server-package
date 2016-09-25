@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <paramLs>
+        <param name="Orientation" required="1" showName="Orientation" desc="界面方向" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1">
+            <option value="landscape"/>
+            <option value="portrait"/>
+        </param>
+        <param name="Quick_Callback_Key" required="1" showName="callbackkey" desc=" Quick分配的回调key" bWriteIntoManifest="0" 
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="Quick_Product_Code" required="1" showName="productcode" desc=" Quick分配的产品码" bWriteIntoManifest="0" 
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="Quick_Product_Key" required="1" showName="productkey" desc=" Quick产品秘钥" bWriteIntoManifest="0" 
+               bUserOffer="1" bWriteIntoClient="1"/>
+    </paramLs>    
+
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="appquick"/>  
+        <operate step="2" name="copy" from="ForRes" to="res" desc="appquick"/>  
+        <operate step="3" name="copy" from="ForAssets" to="assets" desc="appquick"/>
+        <operate step="4" name="copy" from="Forlibs" to= "lib" desc="appquick"/>
+        <operate step="5" name="script" desc="更改quick的manifest"/>                       
+        <operate step="6" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    
+    <pluginLs>
+        <plugin name="UserQuick" typePlugin="0" desc="Quick用户插件"/>
+        <plugin name="IAPOnlineQuick" typePlugin="2" desc="Quick支付插件"/>
+    </pluginLs>
+    <version code = "1014" showVersion = "1.0" >
+        <![CDATA[
+        <br/>
+    ]]>
+    </version>
+</config>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/movga_stage_background"
+    android:layerType="software"
+    android:minWidth="@dimen/movga_dialog_min_width"
+    android:orientation="vertical"
+    tools:context=".OriginalLoginActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <ImageView
+            android:layout_width="@dimen/movga_logo_width"
+            android:layout_height="@dimen/movga_logo_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/movga_layout_value_12"
+            android:layout_marginLeft="@dimen/movga_layout_value_16"
+            android:layout_marginTop="@dimen/movga_layout_value_12"
+            android:src="@drawable/movga_logo_normal" />
+
+        <ImageView
+            android:id="@+id/popwindow_close_btn"
+            android:layout_width="@dimen/movga_layout_value_24"
+            android:layout_height="@dimen/movga_layout_value_24"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/movga_layout_value_12"
+            android:layout_marginRight="@dimen/movga_layout_value_16"
+            android:layout_marginTop="@dimen/movga_layout_value_12"
+            android:src="@drawable/movga_return_btn" />
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/popupwindow_webView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+    <ImageView
+        android:id="@+id/login_tplogin_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:id="@+id/login_tplogin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="@dimen/movga_layout_value_12"
+        android:orientation="horizontal"
+        android:padding="@dimen/movga_layout_value_8" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+  <paramLs>
+    <param
+        name="AdjustAppToken"
+        required="1"
+        showName="AdjustAppToken"
+        desc="Adjust应用ID"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"
+        placeholderText="Adjust后台申请的标识该应用的ID"/>
+        
+    <param
+        name="AdjustLoginEnventToken"
+        required="1"
+        showName="AdjustLoginEnventToken"
+        desc="Adjust登陆事件Token,可选,若没有,别填"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"
+        placeholderText="Adjust后台定义的登陆事件的Token"/>
+        
+    <param
+        name="AdjustPayEventToken"
+        required="1"
+        showName="AdjustPayEventToken"
+        desc="Adjust支付事件Token,可选,若没有,别填"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1"
+        placeholderText="Adjust后台定义的支付事件的Token"/>
+    
+    <param
+        name="AdjustLogLevel"
+        required="0"
+        desc="Adjust调试日志输出级别设置,可选,默认error级别"
+        showName = "AdjustLogLevel"
+        bWriteIntoManifest = "0"
+        bWriteIntoClient="1"
+        bUserOffer = "1">
+        <option value = "ADJLogLevelVerbose"/>
+        <option value = "ADJLogLevelDebug"/>
+        <option value = "ADJLogLevelInfo"/>
+        <option value = "ADJLogLevelWarn"/>
+        <option value = "ADJLogLevelError"/>
+        <option value = "ADJLogLevelAssert"/>
+    </param>
+    <param
+        name="AdjustEnvironment"
+        required="0"
+        showName="AdjustEnvironment"
+        desc="Adjust生产模式/沙箱模式开关,可选,默认production"
+        bWriteIntoManifest="0"
+        bUserOffer="1"
+        bWriteIntoClient="1">
+        <option value = "sandbox"/>
+        <option value = "production"/>
+    </param>
+    
+  </paramLs>
+  <operateLs>
+      <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc=""/>
+      <operate step="2" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+  </operateLs>
+  <pluginLs>
+    <plugin name="AnalyticsAdjust" typePlugin="5" desc="统计插件"/>
+  </pluginLs>
+    <version code = "1000" showVersion = "2.0.0_v3">
+  <![CDATA[
+  adjust一般与google sdk绑定接入，如果不接google，请在manifest中加上
+  <meta-data android:name="com.google.android.gms.version" 
+    android:value="@integer/google_play_services_version" />
+  ]]>
+  </version>
+
+</config>

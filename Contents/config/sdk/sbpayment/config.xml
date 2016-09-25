@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config pluginId="6">
+    <paramLs>
+        <param
+            name="payKey"
+            required="1"
+            showName="payKey"
+            desc="支付签名秘钥"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="merchantId"
+            required="1"
+            showName="merchantId"
+            desc="厂商ID,于软银支付后台申请"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="timeZone"
+            required="1"
+            showName="timeZone"
+            desc="时区设置，在国内测试需设置为cn，插件会据此模拟日本时间"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="cn"/>
+            <option value="jp"/>
+        </param>
+            
+        <param
+            name="productName"
+            required="1"
+            showName="productName"
+            desc="必须为英文（Golds\Diamonds等）,用于支付过程中商品名称显示"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+        
+        <param
+            name="payBaseUrl"
+            required="1"
+            showName="payBaseUrl"
+            desc="软银支付URL"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="paySuccessUrl"
+            required="1"
+            showName="paySuccessUrl"
+            desc="获取支付成功状态URL,支付成功后由支付系统调用获取成功状态"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="payFailedUrl"
+            required="1"
+            showName="payFailedUrl"
+            desc="获取支付失败状态URL,支付失败后由支付系统调用获取失败状态"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="payCancelUrl"
+            required="1"
+            showName="payCancelUrl"
+            desc="获取支付取消状态URL,支付取消后由支付系统调用获取取消状态"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+    </paramLs>
+
+    <operateLs>
+        <operate step="1" name="modifyManifest" desc="sbpayment" from="ForManifest.xml" to="AndroidManifest.xml" />
+        <operate step="2" name="copy" desc="sbpayment" from="ForRes" to="res" />
+        <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+
+    <pluginLs>
+        <plugin name="IAPOnlineSBPayment" desc="软银支付插件" typePlugin="2" />
+    </pluginLs>
+
+    <version
+        code="1"
+        minClientVer="1.0.0"
+        minFrameworkVer="1.0.0"
+        showVersion="1.0.0" >
+<![CDATA[2015年6月4日 1.0.0]]>
+    </version>
+
+</config>

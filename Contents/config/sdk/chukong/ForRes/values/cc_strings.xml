@@ -1,0 +1,97 @@
+<resources>
+    <string name="cc_app_name">CocoSDK_Android_V1.0.0</string>
+
+    <string name="cc_loading_1">正在验证…</string>
+    <string name="cc_loading_2">coco帐号</string>
+    <string name="cc_loading_3">正在登录</string>
+    <string name="cc_loading_4">登录失败</string>
+    <string name="cc_loading_5"><b>切换帐号</b></string>
+    <string name="cc_loading_6">正在注册…</string>
+    <string name="cc_loading_7">正在重设密码</string>
+    <string name="cc_loading_8">正在设定密码</string>
+    <string name="cc_loading_9">密码重设成功</string>
+    <string name="cc_loading_10">密码设定成功</string>
+    <string name="cc_loading_11">登录成功</string>
+    
+    <string name="cc_regist_coco"><b>coco帐号注册</b></string>
+    <string name="cc_regist_coco_1">推荐使用手机号注册，便于找回密码</string>
+    <string name="cc_regist_coco_2">请输入手机号</string>
+    <string name="cc_regist_coco_3"><b>获取验证码</b></string>
+    <string name="cc_regist_coco_4">我已阅读同意</string>
+    <string name="cc_regist_coco_5">《触控帐户使用协议》</string>
+    <string name="cc_regist_coco_6">您也可以使用</string>
+    <string name="cc_regist_coco_7"><u>帐号注册</u></string>
+    
+    <string name="cc_verify_phone"><b>验证手机号</b></string>
+    <string name="cc_verify_phone_1">已向您的手机发送短信验证码，请查收</string>
+    <string name="cc_verify_phone_2">请输入您收到的验证码</string>
+    <string name="cc_verify_phone_3">您将在</string>
+    <string name="cc_verify_phone_4">秒</string>
+    <string name="cc_verify_phone_5">内收到验证码</string>
+    <string name="cc_verify_phone_6"><b>立即注册</b></string>
+    <string name="cc_verify_phone_7"><u>重新发送验证码</u></string>
+    <string name="cc_verify_phone_8"><b>下一步</b></string>
+    
+	
+    <string name="cc_regist_coco_akey_1">该手机号已被注册，请直接</string>
+    <string name="cc_regist_coco_akey_2"><b>手机号一键注册</b></string>
+    <string name="cc_regist_coco_akey_3">将用您的手机发送验证短信</string>
+    <string name="cc_regist_coco_akey_4"><u>登录</u></string>
+    
+	<string name="cc_menu_1">忘记密码或者没有密码</string>
+	<string name="cc_menu_2">联系客服</string>
+	<string name="cc_eula">触控帐户使用协议</string>
+	<string name="cc_email"><u>gm@coco.cn</u></string>
+	<string name="cc_contact_text1">你可以通过以下方式联系我们:</string>
+	<string name="cc_contact_title">联系客服</string>
+	<string name="cc_contact_text2">客服邮箱： </string>
+    <string name="cc_regist_sucess"><b>注册成功</b></string>
+	<string name="cc_user_login"><b>登录</b></string>
+	<string name="cc_user_login_title">coco帐号登录</string>
+	<string name="cc_user_login_hint_1">请输入手机号/帐号</string>
+	<string name="cc_user_login_hint_2">请输入密码</string>
+	<string name="cc_user_login_question">登录遇到问题?</string>
+	<string name="cc_user_login_regist"><u>没有帐号？现在去注册>></u></string>
+	<string name="cc_user_login_error_1">帐号或密码不能为空</string>
+	<string name="cc_user_login_more_cocoid">你的手机号绑定了多个帐号，请使用帐号和密码登录</string>
+	<string name="cc_user_login_more_cocoid_btn">知道了</string>
+	<string name="cc_user_select_title">选择要重设密码的帐号</string>
+    <string name="cc_regist_sucess_1">帐号： </string>
+    <string name="cc_regist_sucess_2">初始密码： </string>
+    <string name="cc_regist_sucess_3">为方便您记忆，可输入新密码</string>
+    <string name="cc_regist_sucess_4">密码6–15个字符 </string>
+    <string name="cc_regist_sucess_5"><b>进入游戏</b></string>
+    <string name="cc_regist_sucess_6">显示密码</string>
+    
+    <string name="cc_regist_failure_1"><b>一键注册失败</b></string>
+    <string name="cc_regist_failure_2">手机号一键注册失败，请手动输入手机号</string>
+    
+    <string name="cc_reset_pwd"><b>重设密码</b></string>
+    <string name="cc_reset_pwd_1">已绑定手机号，通过手机验证找回</string>
+    <string name="cc_reset_pwd_2">请输入您的帐号所绑定的手机号</string>
+    <string name="cc_reset_pwd_3">未绑定手机号，可以</string>
+    <string name="cc_reset_pwd_4"><u>点击这里</u></string>
+    <string name="cc_reset_pwd_5">找回密码</string>
+    
+    <string name="cc_reset_verify_1">下一步</string>
+
+    <string name="cc_set_new_password"><b>设定新密码</b></string>
+    <string name="cc_set_new_password_1">您的手机号已注册过coco帐号，需补充密码后才能进入游戏</string>
+    <string name="cc_set_new_password_2">帐号： </string>
+    <string name="cc_set_new_password_3">请输入您的新密码</string>
+    <string name="cc_set_new_password_4">显示密码</string>
+    <string name="cc_set_new_password_5"><b>设定密码并进入游戏</b></string>
+    <string name="cc_set_new_password_6"><b>重设密码并进入游戏</b></string>
+    <string name="cc_set_new_password_7">http://coco.cn/users/forget_pwd</string>
+
+    <string name="cc_regist_user"><b>coco帐号注册</b></string>
+    <string name="cc_regist_user_1">帐号，4–20位字母数字组合</string>
+    <string name="cc_regist_user_2">密码，可输入6–15位字符</string>
+    <string name="cc_regist_user_3">显示密码</string>
+    <string name="cc_regist_user_4"><b>注 册</b></string>
+    <string name="cc_regist_user_5">我已阅读同意</string>
+    <string name="cc_regist_user_6">《触控帐户使用协议》</string>
+    <string name="cc_regist_user_7"><u>已有coco帐号，登录</u></string>
+    
+    
+</resources>

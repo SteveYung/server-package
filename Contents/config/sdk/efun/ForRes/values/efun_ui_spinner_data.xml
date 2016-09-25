@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="phone_area_name">
+        <item>台灣+886</item>
+        <item>香港+852</item>
+    </string-array>
+    <string-array name="phone_area_num">
+        <item>886-</item>
+        <item>852-</item>
+    </string-array>
+</resources>

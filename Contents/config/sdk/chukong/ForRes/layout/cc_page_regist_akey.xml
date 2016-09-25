@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocosdk="http://schemas.android.com/apk/res-auto"
+    style="@style/CCPageTheme" >
+
+    <com.coco.sdk.ui.widget.CCPageTitle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cocosdk:title_type="both"
+        cocosdk:title_text="@string/cc_regist_coco" />
+
+    <TextView style="@style/TextPrompt"
+        android:id="@+id/e_Prompt_1"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/cc_height_120"
+        android:text="@string/cc_regist_coco_akey_1"
+        android:visibility="invisible" />
+    
+    <TextView style="@style/TextLinkBig"
+        android:id="@+id/e_Prompt_2"
+        android:layout_alignBaseline="@id/e_Prompt_1"
+        android:layout_alignBottom="@id/e_Prompt_1"
+        android:layout_toRightOf="@id/e_Prompt_1"
+        android:text="@string/cc_regist_coco_akey_4"
+        android:visibility="invisible"  />
+	<RelativeLayout 
+        style="@style/OneLayout"
+        android:id = "@+id/key_regist"
+        android:layout_below="@id/e_Prompt_1">
+    <LinearLayout 
+	android:layout_centerVertical="true"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	>
+        <TextView style= "@style/LayoutText_1"
+            android:text="@string/cc_regist_coco_akey_2"/>
+        <TextView style= "@style/LayoutText_2"
+            android:text="@string/cc_regist_coco_akey_3"/>       
+    </LinearLayout>
+    </RelativeLayout>
+    
+	<RelativeLayout 
+	    android:id="@+id/checkbox_container"
+	    android:layout_height="@dimen/cc_height_90"
+	    android:layout_width="match_parent"
+	    android:layout_below="@+id/key_regist"
+	    >
+	    
+	    <CheckBox
+	        android:id="@+id/cb_accept_eula"
+	        style="@style/CheckBox"
+	        android:layout_marginLeft="@dimen/cc_margin_50"
+	        android:layout_centerVertical="true"
+	        android:checked="true" />
+
+	    <TextView
+	        android:id="@+id/tv_accept_eula"
+	        style="@style/CheckBoxText"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@+id/cb_accept_eula"
+	        android:text="@string/cc_regist_coco_4" />
+
+	    <Button
+	        android:id="@+id/bt_eula"
+	        android:layout_centerVertical="true"
+	        style="@style/TextLinkSmall"
+	        android:layout_toRightOf="@+id/tv_accept_eula"
+	        android:text="@string/cc_regist_coco_5" />
+
+	</RelativeLayout>
+        
+    
+    
+    <TextView style="@style/Label"
+        android:id="@+id/t2"
+        android:text="@string/cc_regist_coco_6"
+        android:layout_below="@id/key_regist"
+        android:layout_marginTop="@dimen/cc_margin_190" />
+
+    <TextView style="@style/TextLinkBig"
+        android:id="@+id/tv_regist_account"
+        android:layout_alignBaseline="@id/t2"
+        android:layout_alignBottom="@id/t2"
+        android:layout_toRightOf="@id/t2"
+        android:text="@string/cc_regist_coco_7" />
+
+    <TextView style="@style/ErrorInfo"
+        android:id="@+id/errorinfo_page"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+

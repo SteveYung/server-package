@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop18_prompt_bottom" >
+
+    <TextView
+        android:id="@+id/secondTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#8c8c8c"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/pop18_progress_bottom"
+        android:indeterminateDrawable="@drawable/pop18_dialog_style_xml_icon" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="@dimen/pop18_login_button_width"
+        android:layout_height="@dimen/pop18_login_pwd_height"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/pop18_login_pad"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pop18_selector_blue_button"
+        android:gravity="center"
+        android:text="其他账号登录"
+        android:textColor="@color/pop18_white" />
+
+</RelativeLayout>

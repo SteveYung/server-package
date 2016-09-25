@@ -1,0 +1,17 @@
+<TextView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:id="@+id/an1_ddt_pop_item"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" 
+       android:textColor="#000000"
+       android:textSize="18sp"
+       android:background="@null"
+       />
+  
+
+<!-- android:background="@drawable/an1_lcard_button_shape" 
+android:layout_marginTop="5dp"
+    		android:layout_marginBottom="10dp"
+    		 android:layout_marginTop="@dimen/an1_lcard_top"
+    		-->

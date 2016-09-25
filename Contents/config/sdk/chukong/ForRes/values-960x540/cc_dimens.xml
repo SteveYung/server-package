@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project Licensed under the 
+	Apache License, Version 2.0 (the "License"); you may not use this file except 
+	in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+
+<resources>
+	<dimen name="cc_font_size_40">30.00px</dimen>
+
+	<dimen name="cc_font_size_34">25.50px</dimen>
+
+	<dimen name="cc_font_size_30">22.50px</dimen>
+
+	<dimen name="cc_font_size_24">18.00px</dimen>
+
+	
+	<dimen name="cc_window_height">435.00px</dimen>
+
+	<dimen name="cc_window_width">487.50px</dimen>
+
+	<dimen name="cc_margin_190">142.50px</dimen>
+
+	<dimen name="cc_margin_50">37.50px</dimen>
+
+	<dimen name="cc_margin_44">33.00px</dimen>
+
+	<dimen name="cc_margin_36">27.00px</dimen>
+
+	<dimen name="cc_margin_30">22.50px</dimen>
+
+	<dimen name="cc_margin_10">7.50px</dimen>
+
+	<dimen name="cc_margin_90">67.50px</dimen>
+
+	<dimen name="cc_margin_24">18.00px</dimen>
+
+	<dimen name="cc_margin_20">15.00px</dimen>
+
+	<dimen name="cc_margin_14">10.50px</dimen>
+
+	<dimen name="cc_margin_18">13.50px</dimen>
+
+	<dimen name="cc_width_34">25.50px</dimen>
+
+	<dimen name="cc_height_174">130.50px</dimen>
+
+	<dimen name="cc_height_120">90.00px</dimen>
+
+	<dimen name="cc_height_343">257.25px</dimen>
+
+	<dimen name="cc_height_98">73.50px</dimen>
+
+	<dimen name="cc_height_90">67.50px</dimen>
+
+	<dimen name="cc_height_88">66.00px</dimen>
+
+	<dimen name="cc_height_118">88.50px</dimen>
+
+	<dimen name="cc_height_80">60.00px</dimen>
+
+	<dimen name="cc_height_78">58.50px</dimen>
+
+	<dimen name="cc_height_76">57.00px</dimen>
+
+	<dimen name="cc_height_70">52.50px</dimen>
+
+	<dimen name="cc_height_66">49.50px</dimen>
+
+	<dimen name="cc_height_48">36.00px</dimen>
+
+	<dimen name="cc_height_30">22.50px</dimen>
+
+	<dimen name="cc_height_16">12.00px</dimen>
+
+	<dimen name="cc_height_2">1.50px</dimen>
+
+</resources>

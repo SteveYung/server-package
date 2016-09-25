@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >   
+	
+     <RelativeLayout
+        android:id="@+id/lppopwindow_root_RelativeLayout"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"    	
+    	android:background="#7d000000"
+    	android:focusable="false"
+        >
+    
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/lpchange_login_outshape"
+    	android:layout_centerInParent="true"
+    	android:padding="5dp"
+	    >
+    
+	<RelativeLayout
+	    android:id="@+id/lunqi360_layout_pop_root"
+	    android:layout_width="460px"
+    	android:layout_height="272px"  	
+    	android:background="@null"
+    	android:orientation="vertical"
+	    >
+	    <ImageButton 
+	    	android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:background="@drawable/lunqi360_layout_shape"
+	        />
+	    <LinearLayout 
+	    	android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"    	
+    		android:orientation="vertical">
+	   
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+    		android:layout_height="0px"
+    		android:layout_weight="58"	        
+    		android:gravity="left|bottom"
+    		android:orientation="vertical"
+	        >
+	        
+	        <ImageView 
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="fill_parent"
+	        	android:background="@drawable/lpchangemsgwebbg"	      
+	        	  
+	        />
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_alignParentBottom="true"
+    			android:layout_alignParentLeft="true"
+    			android:orientation="horizontal"
+    			android:gravity="bottom|left"
+	            >
+	            
+	        
+	        <Button
+	            android:id="@+id/lpchange_msgcha_but"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/lpchangemsg2"
+	        	android:text="兌換記錄"
+	        	android:paddingLeft="5dp"
+	            />
+	        <View 
+	            android:layout_width="5dp"
+	        	android:layout_height="wrap_content"
+	            />
+	        <Button
+	            android:id="@+id/lpchange_msgpay_but"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:background="@drawable/lpchangemsg1"
+	        	android:paddingLeft="5dp"
+	        	android:text="儲值記錄"
+	            />
+	        
+	        
+	        </LinearLayout>
+	         <ImageView 
+	       			android:id="@+id/lunqi_baidusdk_statictitle_img"
+	       			android:layout_width="wrap_content"
+	       			android:layout_height="wrap_content"
+	       			android:src="@drawable/ebpay_bg_del_selector"
+	       			android:scaleType="fitCenter"
+	       			android:layout_centerVertical="true"	
+	      			android:layout_alignParentRight="true"
+	       			android:maxHeight="40dp"
+	       			android:paddingRight="5dp"
+	       			/>
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+    		android:layout_height="0px"
+    		android:layout_weight="242"	    
+    		android:background="#ededed"    
+	        >
+	      <WebView 
+	          android:id="@+id/lpchange_msgweb_pay"
+	          android:layout_width="fill_parent"
+	          android:layout_height="fill_parent"
+	           android:visibility="gone"
+	          />	        
+	     <WebView 
+	          android:id="@+id/lpchange_msgweb_cha"
+	          android:layout_width="fill_parent"
+	          android:layout_height="fill_parent"
+	          android:visibility="visible"	         
+	          />	        
+	    </RelativeLayout>
+	    
+	    </LinearLayout>
+
+  </RelativeLayout>
+	</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

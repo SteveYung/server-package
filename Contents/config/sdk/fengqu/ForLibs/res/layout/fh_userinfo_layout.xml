@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fh_userinfo_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:background="@color/fh_white" >
+
+        <RelativeLayout
+            android:id="@+id/fh_userinfo_editinfo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:background="@drawable/fh_userinf_top_bg" >
+
+            <com.feihuo.gamesdk.api.view.FhCircleImageView
+                android:id="@+id/fh_userinfo_imageview"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="33dp"
+                android:layout_marginLeft="@dimen/fh_margin_left"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/fh_userinfo_default_icon" />
+
+            <TextView
+                android:id="@+id/fh_userinfo_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40.0dp"
+                android:layout_toRightOf="@+id/fh_userinfo_imageview"
+                android:text="测试的啦"
+                android:textColor="@color/fh_write_fff2ee"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fh_userinfo_name_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12.0dp"
+                android:layout_toRightOf="@+id/fh_userinfo_imageview"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fh_userinfo_pay_total_str"
+                    android:textColor="@color/fh_write_fff2ee"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/fh_userinfo_money_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="1111111"
+                    android:textColor="@color/fh_white"
+                    android:textSize="24.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fh_pay_money_unit_str"
+                    android:textColor="@color/fh_write_fff2ee"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fh_tools_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fh_userinfo_editinfo_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/fh_userinfo_layout_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/fh_userinfo_fhmoney_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/fh_item_selector" >
+
+                        <ImageView
+                            android:id="@+id/fh_userinfo_fhmoney_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/fh_margin_left"
+                            android:src="@drawable/fh_userinf_fhmoney_bg" />
+
+                        <TextView
+                            android:id="@+id/fh_userinfo_fhmoney_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/fh_userinfo_fhmoney_imageview"
+                            android:text="@string/fh_userinfo_fhmoney_str"
+                            android:textColor="@color/fh_userinfo_color" />
+
+                        <TextView
+                            android:id="@+id/fh_userinfo_fhmoney_count_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/fh_userinfo_fhmoney_textview"
+                            android:layout_below="@+id/fh_userinfo_fhmoney_textview"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/fh_ff4100"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fh_space_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/fh_userinfo_email_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/fh_item_selector" >
+
+                        <ImageView
+                            android:id="@+id/fh_userinfo_email_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/fh_margin_left"
+                            android:src="@drawable/fh_userinf_emailinfo_bg" />
+
+                        <TextView
+                            android:id="@+id/fh_userinfo_email_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/fh_userinfo_email_imageview"
+                            android:text="@string/fh_userinfo_email_str"
+                            android:textColor="@color/fh_userinfo_color" />
+
+                        <TextView
+                            android:id="@+id/fh_userinfo_email_count_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/fh_userinfo_email_textview"
+                            android:layout_below="@+id/fh_userinfo_email_textview"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/fh_ff4100"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/fh_space_line_color" />
+
+            <LinearLayout style="@style/fh_userinfo_layout_style" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/fh_userinfo_identitycard_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/fh_item_selector" >
+
+                        <ImageView
+                            android:id="@+id/fh_userinfo_identitycard_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/fh_margin_left"
+                            android:src="@drawable/fh_userinf_identitycard_bg" />
+
+                        <TextView
+                            android:id="@+id/fh_userinfo_identitycard_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_toRightOf="@+id/fh_userinfo_identitycard_imageview"
+                            android:text="@string/fh_userinfo_identitycard_str"
+                            android:textColor="@color/fh_userinfo_color" />
+
+                        <TextView
+                            android:id="@+id/fh_userinfo_identitycard_state_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/fh_userinfo_identitycard_textview"
+                            android:layout_below="@+id/fh_userinfo_identitycard_textview"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/fh_ff4100"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fh_space_line_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/fh_userinfo_setting_layout"
+                        style="@style/fh_userinfo_layout_button_style"
+                        android:drawableLeft="@drawable/fh_userinf_setting_bg"
+                        android:background="@drawable/fh_item_selector"
+                        android:text="@string/fh_userinfo_setting_str" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/fh_space_line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="33dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fh_userinfo_kfphone_str"
+                    android:textColor="@color/fh_gray_77"
+                    android:textSize="13.0sp" />
+
+                <TextView
+                    android:id="@+id/fh_userinfo_kfphone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fh_userinfo_kfphone_num"
+                    android:textColor="@color/fh_5492cc"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/fh_userinfo_notice_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/fh_userinfo_notice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fh_gray_77"
+                    android:singleLine="true"
+                     android:layout_marginLeft="@dimen/fh_margin_left"
+                android:layout_marginRight="@dimen/fh_margin_right"
+                    android:textSize="13.0sp" />
+
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/fh_userinfo_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:background="@drawable/fh_close_btn_bg" />
+
+</FrameLayout>

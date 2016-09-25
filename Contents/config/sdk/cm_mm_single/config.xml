@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config version="1000" showVersion="2.0.0_3.0.5" date="20140410">
+	<paramLs>
+	    
+	    <param name = "AppId" required = "1" desc = "id" showName = "AppId" bWriteIntoClient = "1" bUserOffer = "1" />
+	    <param name = "AppKey" required = "1" desc = "key" showName = "AppKey" bWriteIntoClient = "1" bUserOffer = "1" />
+	    <param name = "Skin" required = "1" desc = "" showName = "sdk皮肤" bWriteIntoClient = "1" bUserOffer = "1" >
+			<option value = "default"/>
+			<option value = "皮肤一"/>
+			<option value = "皮肤二"/>
+			<option value = "皮肤三"/>
+	    </param>
+	    
+	</paramLs>
+	
+	<operateLs>
+		<operate step = "1" name = "modifyManifest" from = "ForManifest.xml" to = "AndroidManifest.xml" desc = "chukong"/>
+		<operate step = "2" name = "copy" from = "ForAssets" to = "assets" desc = "cm_jd"/>
+		<operate step = "3" name = "copy" from = "ForLibs" to = "lib" desc = "cm_jd"/>
+		<operate step = "4" name = "mergeR" desc = "chukong(合并R文件，此步骤需在res目录合并完后才执行)"/>
+	</operateLs>
+	
+	<pluginLs>
+		<plugin name = "IAPChinaMobile_single" typePlugin = "2" desc = "chinamobile"/>
+	</pluginLs>
+</config>

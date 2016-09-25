@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" 
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/band_myback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_myback" />
+
+        <TextView
+             android:id="@+id/band_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="免 註 冊 綁 定"
+            android:textColor="#3A5895"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#3492d0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/band_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_band_username"
+                    android:gravity="center_vertical"
+                    android:hint="帳  號:手機號/email"
+                    style="@style/lunqiNewViewEditView_32"        
+                    android:textSize="14sp" 
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/band_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_band_password"
+                    android:gravity="center_vertical"
+                    android:hint="密 碼"
+                    style="@style/lunqiNewViewEditView_20"        
+                    android:password="true"
+                    android:textSize="14sp" 
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/band_password2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_band_password"
+                    android:gravity="center_vertical"
+                    android:hint="重複密碼"
+                    style="@style/lunqiNewViewEditView_20"
+                    android:password="true"
+                    android:textSize="14sp" 
+                    android:singleLine="true"/>
+
+                <EditText
+                    android:id="@+id/band_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_band_email"
+                    android:gravity="center_vertical"
+                    android:hint="Email （可用於找回密碼）"                   
+                    android:textSize="14sp" 
+                    android:singleLine="true"
+                    android:imeOptions="actionGo"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+
+            <Button
+                android:id="@+id/bindusername"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/selector_button_other"
+                android:text="綁 定 帳 號"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+</LinearLayout>

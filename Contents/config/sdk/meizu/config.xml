@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config pluginId="000014">
+    <paramLs>
+        <param
+            name="MeiZuAppId"
+            required="1"
+            showName="AppID"
+            desc="应用id"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="MeiZuAppKey"
+            required="1"
+            showName="AppKey"
+            desc="应用key"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1"/>
+            
+        <param
+            name="MeiZuAppSecret"
+            required="1"
+            showName="AppSecret"
+            desc="App的秘钥"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="0"/>
+            
+        <param
+            name="MeizuToolbarPosition"
+            required="1"
+            showName="ToolbarPosition"
+            desc="魅族悬浮ToolBar的初始位置"
+            bWriteIntoManifest="0"
+            bUserOffer="1"
+            bWriteIntoClient="1">
+            <option value="LEFT_TOP"/>
+            <option value="LEFT_BOTTOM"/>
+            <option value="RIGHT_TOP"/>
+            <option value="RIGHT_BOTTOM"/>
+        </param>
+    </paramLs>
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="meizu"/>
+        <operate step="2" name="copy" from="ForAssets" to="assets" desc="meizu"/>
+    </operateLs>
+    <pluginLs>
+        <plugin name="UserMeizu" typePlugin="0" desc="魅族用户插件"/>
+        <plugin name="IAPOnlineMeizu" typePlugin="2" desc="魅族支付插件"/>
+    </pluginLs>
+    <!-- 2015-08-07 完成魅族plugin sdk version 2.1-->
+</config>

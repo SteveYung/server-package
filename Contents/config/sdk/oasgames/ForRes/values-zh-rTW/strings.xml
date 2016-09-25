@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+
+    You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+    copy, modify, and distribute this software in source code or binary form for use
+    in connection with the web services and APIs provided by Facebook.
+
+    As with any software that integrates with the Facebook platform, your use of
+    this software is subject to the Facebook Developer Principles and Policies
+    [http://developers.facebook.com/policy/]. This copyright notice shall be
+    included in all copies or substantial portions of the software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<resources>
+    <string name="oasisgames_sdk_head_title_register">註冊Oasis Games帳號</string>
+	<string name="oasisgames_sdk_login_hint_username">請輸入帳號</string>
+	<string name="oasisgames_sdk_login_hint_password">請輸入密碼</string>
+	<string name="oasisgames_sdk_login_username_notice_error_length">帳號長度應在6至50個字元之間</string>
+	<string name="oasisgames_sdk_login_username_notice_error1">帳號不能為純數字</string>
+	<string name="oasisgames_sdk_login_password_notice_error2">密碼不能包含&amp;、# 符號</string>
+	<string name="oasisgames_sdk_login_rule_notice2">使用者協議</string>
+	<string name="oasisgames_sdk_bind_btn_regist">同意本協議並進行註冊</string>
+	<string name="oasisgames_sdk_bind_btn_userrule">閱讀使用者協議</string>
+	<string name="oasissdk_temp_1">使用Facebook連接</string>
+	<string name="oasissdk_temp_2">登入Oasis Games帳號</string>
+	<string name="oasisgames_sdk_common_btn_sure">確定</string>
+	<string name="oasisgames_sdk_bind_success">恭喜註冊成功，您可以使用OASIS登入遊戲</string>
+	<string name="oasisgames_sdk_login_result_1">登入成功</string>
+	<string name="oasisgames_sdk_bind_togame">繼續遊戲</string>
+	<string name="oasisgames_sdk_head_title_changeuser">切換帳號</string>
+	<string name="oasisgames_sdk_login_notice_changeuser">切換帳號將導致您\n當前的角色被覆蓋\n請您慎重選擇</string>
+	<string name="oasisgames_sdk_login_button_changeuser_suer">確認切換</string>
+	<string name="oasisgames_sdk_login_button_changeuser_toregist">去註冊</string>
+	<string name="oasisgames_sdk_login_notice_2">切換帳號後，下次登入時將自動登入您切換的帳號，請選擇登入方式。</string>
+	<string name="oasissdk_temp_3">切換Facebook帳號</string>
+	<string name="oasisgames_sdk_head_title_changeuser_oas">切換Oasis Games帳號</string>
+	<string name="oasisgames_sdk_login_button_registnewuser">註冊新帳號</string>
+	<string name="oasissdk_temp_4">請輸入正確的帳號和密碼</string>
+	<string name="oasisgames_sdk_login_notice_autologin_fail">登入失敗，請重新登入</string>
+	<string name="oasisgames_sdk_login_notice_autologin_fail_btn">立即登入</string>
+	<string name="oasisgames_sdk_login_forgetpw_text">忘記密碼</string>
+	<string name="oasissdk_temp_6">請選擇登入方式</string>
+	<string name="oasissdk_temp_7">當前帳號</string>
+	<string name="oasisgames_sdk_pay_notice_no">您所在的區域不支援手機支付</string>
+	<string name="oasisgames_sdk_pay_notice_null">請選擇套餐</string>
+	<string name="oasisgames_sdk_pay_btn">立即支付</string>
+	<string name="oasisgames_sdk_scan_text1">操作說明</string>
+	<string name="oasisgames_sdk_scan_text2_1">請使用電腦瀏覽器打開</string>
+	<string name="oasisgames_sdk_scan_text2_2">將二維碼放入框內，即可自動掃描</string>
+	<string name="oasisgames_sdk_scan_success">掃描成功，請使用電腦完成充值</string>
+	<string name="oasisgames_sdk_login_notice_autologin_exception">網路異常，請稍後再試</string>
+	<string name="oasisgames_sdk_login_notice_autologin_exception_btn">立即重試</string>
+	<string name="oasisgames_sdk_login_notice_1">歡迎您</string>
+	<string name="oasisgames_sdk_publickey_not_init">公共KEY尚未初始化</string>
+	<string name="oasisgames_sdk_paykey_not_init">支付KEY尚未初始化</string>
+	<string name="oasisgames_sdk_login_btn_submit">登入</string>
+	<string name="oasissdk_temp_8">如果這不是您本人的操作，建議您修改密碼</string>
+	<string name="oasisgames_sdk_bind_notice_connectto">關聯到</string>
+	<string name="oasisgames_sdk_login_username_text">帳號</string>
+	<string name="oasisgames_sdk_login_username_text2">電子信箱</string>
+	<string name="oasisgames_sdk_login_password_text">密碼</string>
+	<string name="oasisgames_sdk_login_remenberpw_text">記住我的密碼</string>
+	<string name="oasisgames_sdk_login_userlist_dialog_content">確定刪除帳號？</string>
+	<string name="oasisgames_sdk_common_errorcode_negative_4">帳號或密碼錯誤</string>
+	<string name="oasissdk_temp_9">登入成功</string>
+	<string name="oasisgames_sdk_login_result_3">登入失敗</string>
+	<string name="oasisgames_sdk_login_error_value_3">該信箱已註冊過，可直接登入</string>
+	<string name="oasisgames_sdk_login_error_value_1">簽名未通過</string>
+	<string name="oasisgames_sdk_login_error_value_4">未知錯誤</string>
+	<string name="oasisgames_sdk_login_repassword_text">確認密碼</string>
+	<string name="oasisgames_sdk_login_result_2">註冊成功</string>
+	<string name="oasissdk_temp_10">切換成功</string>
+	<string name="oasissdk_temp_11">關聯帳號</string>
+	<string name="oasisgames_sdk_guide_notice4">分享</string>
+	<string name="oasisgames_sdk_login_result_4">您當前正在使用此帳號</string>
+	<string name="oasisgames_sdk_bind_error_token_lose">無法關聯！Token獲取失敗</string>
+	<string name="oasisgames_sdk_bind_error_value_1">Sign驗證失敗</string>
+	<string name="oasissdk_temp_12">帳號或密碼錯誤</string>
+	<string name="oasissdk_temp_13">帳號已關聯過，不能重複關聯</string>
+	<string name="oasisgames_sdk_bind_error_value_4">參數不能為空</string>
+	<string name="oasisgames_sdk_bind_error_value_3">同一伺服器下的兩個帳號不能進行關聯</string>
+	<string name="oasisgames_sdk_common_errorcode_negative_999">其它錯誤</string>
+	<string name="oasissdk_temp_14">已分享至Facebook</string>
+	<string name="oasisgames_sdk_share_btn_text">Facebook分享</string>
+	<string name="oasisgames_sdk_share_content_hint">分享你的心情</string>
+	<string name="oasisgames_sdk_share_success">分享成功</string>
+	<string name="oasisgames_sdk_share_fail">分享失敗</string>
+	<string name="oasisgames_sdk_share_cancled">分享操作被取消</string>
+	<string name="oasisgames_sdk_exit_title">重要提示</string>
+	<string name="oasisgames_sdk_error_exception">發生異常，請稍後再試</string>
+	<string name="oasisgames_sdk_pay_notice2">伺服器ID:</string>
+	<string name="oasisgames_sdk_pay_btn_error1">下單失敗，請稍後再試</string>
+	<string name="oasisgames_sdk_pay_error_success">支付成功</string>
+	<string name="oasisgames_sdk_pay_error_success2">支付完成，請等待商家確認。</string>
+	<string name="oasisgames_sdk_pay_error_success_fail">支付成功,但未充值成功</string>
+	<string name="oasisgames_sdk_pay_error_getinfos_fail">套餐訊息獲取失敗</string>
+	<string name="oasisgames_sdk_pay_infobip_notice_1">設備內必須有SIM卡。</string>
+	<string name="oasisgames_sdk_pay_infobip_notice_2">設備不可處於飛航模式.</string>
+	<string name="oasisgames_sdk_pay_infobip_notice_3">設備必須連接可用網路.</string>
+	<string name="oasisgames_sdk_pay_infobip_notice_4">無法從設備辨識移動國家代碼和移動網路代碼.</string>
+	<string name="oasisgames_sdk_pay_infobip_notice_5">已有API KEY的服務不存在.</string>
+	<string name="oasisgames_sdk_pay_infobip_notice_6">已有API KEY的服務已禁用.</string>
+	<string name="oasisgames_sdk_pay_infobip_notice_7">不支持您所在的國家/地區.</string>
+	<string name="oasisgames_sdk_pay_infobip_notice_8">服務無法使用.</string>
+	<string name="oasisgames_sdk_pay_google_notice_3">商品購買失敗。</string>
+	<string name="oasisgames_sdk_pay_google_notice_4">購買驗證失敗，請稍後再試。</string>
+	<string name="oasisgames_sdk_pay_google_notice_alert_content">充值失敗，請重新嘗試或聯繫客服</string>
+	<string name="oasissdk_temp_15">發送鑽石失敗，請重新嘗試或聯繫客服</string>
+	<string name="oasisgames_sdk_pay_google_notice_alert_retry">重試</string>
+	<string name="oasisgames_sdk_pay_google_notice_alert_close">關閉</string>
+	<string name="oasisgames_sdk_common_btn_cancle">取消</string>
+	<string name="oasisgames_sdk_login_username_notice_error">請輸入正確的電子信箱地址</string>
+	<string name="oasisgames_sdk_login_username_notice_error2">僅支援英文字元、數字和“_”的組合 或 常用信箱</string>
+	<string name="oasissdk_temp_16">支付中心</string>
+	<string name="oasisgames_sdk_common_errorcode_negative_7">該帳號不存在</string>
+	<string name="oasisgames_sdk_common_errorcode_negative_6">該帳號已存在</string>
+	<string name="oasissdk_temp_17">當前帳號存在其它角色，確定覆蓋舊角色的訊息嗎？ （請慎重選擇）</string>
+	<string name="oasisgames_sdk_login_password_notice_error">密碼長度應在6至20個字元之間</string>
+	<string name="oasisgames_sdk_pay_error_fail">支付失敗</string>
+	<string name="oasisgames_sdk_login_notice_3">請選擇以下方式來登入遊戲</string>
+	<string name="oasisgames_sdk_login_notice_5">立即註冊</string>
+	<string name="oasisgames_sdk_login_notice_6">為了您的帳號安全，建議您立即註冊一個Oasis Games帳號，以防帳號丟失</string>
+	<string name="oasisgames_sdk_head_title_charge">充值</string>
+	<string name="oasisgames_sdk_menu_notice_drag">支持拖拽</string>
+	<string name="oasisgames_sdk_pay_notice_null2">暫時無法獲取套餐訊息，請點擊刷新 或 使用電腦充值</string>
+	<string name="oasisgames_sdk_menu_notice_relogin">無法獲取角色訊息，請重新登入</string>
+	<string name="oasissdk_temp_18">暫時無法獲取套餐訊息，請點擊刷新</string>
+	<string name="oasisgames_sdk_head_title_register_1">註冊</string>
+	<string name="oasissdk_temp_19">切換帳號</string>
+	<string name="oasissdk_temp_20">充值</string>
+	<string name="oasissdk_temp_21">分享</string>
+	<string name="oasisgames_sdk_guide_notice5">幫助</string>
+	<string name="oasisgames_sdk_guide_notice1">本次註冊將把您當前正在玩的角色關聯到這個帳號上</string>
+	<string name="oasisgames_sdk_guide_notice2">可以將當前角色關聯到此帳號上</string>
+	<string name="oasisgames_sdk_guide_notice3">電腦充值更優惠</string>
+	<string name="oasisgames_sdk_login_notice_7">退出遊戲</string>
+	<string name="oasisgames_sdk_login_notice_8">退出當前遊戲？</string>
+	<string name="oasisgames_sdk_common_errorcode_negative_13">您的設備已被暫停登入，請聯繫客服</string>
+	<string name="oasisgames_sdk_common_errorcode_negative_14">您的帳號已被暫停登入，請聯繫客服</string>
+	<string name="oasisgames_sdk_login_notice_11">您的設備已被暫停充值服務，請前往 mpay.oasgames.com 頁面進行查詢</string>
+	<string name="oasisgames_sdk_login_notice_12">您的帳號已被暫停充值服務，請前往 mpay.oasgames.com 頁面進行查詢</string>
+	<string name="oasisgames_sdk_login_notice_13">您輸入的帳號已被暫停登入，請聯繫客服</string>
+	<string name="oasisgames_sdk_login_notice_14">您要切換的帳號已被暫停登入，請聯繫客服</string>
+	<string name="oasisgames_sdk_bind_notice_error">帳號USERNAME下已有相關遊戲角色了，您是否要使用該角色進行遊戲？</string>
+	<string name="oasisgames_sdk_bind_notice_error2">當前的遊戲角色將會 PERMANENTLYLOST，您確認要使用之前的角色（來自USERNAME帳號）進行遊戲嗎？</string>
+	<string name="oasisgames_sdk_bind_notice_error3">永久丟失</string>
+	<string name="oasisgames_sdk_common_net_disable">請連接網路</string>
+	<string name="oasisgames_sdk_common_net_exception">連線中，請稍後…</string>
+	<string name="oasisgames_sdk_pay_order_notice_old">發現未處理訂單，正在處理中，請稍後…</string>
+	<string name="oasisgames_sdk_pay_google_notice_1">支付初始化失敗，請稍後再試</string>
+	<string name="oasisgames_sdk_pay_google_notice_2">商品訊息獲取失敗，請稍後再試</string>
+	<string name="oasisgames_sdk_bind_notice_error5">我還沒有帳號</string>
+	<string name="oasisgames_sdk_bind_notice_error4">當前試玩帳號有付費行為，無法關聯，請選擇以下操作</string>
+	<string name="oasisgames_sdk_pcenter_notice_2">個人中心</string>
+	<string name="oasisgames_sdk_pcenter_notice_5">試玩帳號</string>
+	<string name="oasisgames_sdk_pay_history_1">支付金額</string>
+	<string name="oasisgames_sdk_pay_history_2">獲得商品</string>
+	<string name="oasisgames_sdk_pay_history_3">充值時間</string>
+	<string name="oasisgames_sdk_pay_history_4">您還沒有任何充值記錄</string>
+	<string name="oasisgames_sdk_pcenter_notice_3">修改密碼</string>
+	<string name="oasisgames_sdk_pcenter_notice_1">論壇</string>
+	<string name="oasisgames_sdk_modify_1">舊密碼</string>
+	<string name="oasisgames_sdk_modify_2">新密碼</string>
+	<string name="oasisgames_sdk_modify_3">確認新密碼</string>
+	<string name="oasisgames_sdk_modify_8">您輸入的舊密碼不正確</string>
+	<string name="oasisgames_sdk_modify_6">兩次輸入的密碼不一致</string>
+	<string name="oasisgames_sdk_modify_7">修改成功</string>
+	<string name="oasisgames_sdk_pcenter_notice_4">充值記錄</string>
+	<string name="oasisgames_sdk_modify_4">請輸入舊密碼</string>
+	<string name="oasisgames_sdk_modify_5">請輸入新密碼</string>
+	<string name="oasisgames_sdk_forum_1">論壇登入失敗，請嘗試重新啟動遊戲</string>
+	<string name="oasisgames_sdk_pcenter_notice_6">客服中心</string>
+	<string name="oasisgames_sdk_customer_notice1">解決中</string>
+	<string name="oasisgames_sdk_customer_notice2">已關閉</string>
+	<string name="oasisgames_sdk_common_more">更多</string>
+	<string name="oasisgames_sdk_customer_notice3">客服人員會儘快給您答覆</string>
+	<string name="oasisgames_sdk_customer_notice5">無任何訊息</string>
+	<string name="oasisgames_sdk_customer_notice6">下一步</string>
+	<string name="oasisgames_sdk_customer_notice7">關閉</string>
+	<string name="oasisgames_sdk_customer_notice4">問題詳情</string>
+	<string name="oasisgames_sdk_customer_notice8">問題類型</string>
+	<string name="oasisgames_sdk_customer_notice9">圖片</string>
+	<string name="oasisgames_sdk_customer_notice11">發送</string>
+	<string name="oasisgames_sdk_customer_notice10">本地圖片</string>
+	<string name="oasisgames_sdk_customer_notice12">預覽</string>
+	<string name="oasisgames_sdk_login_notice_addpersonalinfo">為了您的帳號安全，建議您完善個人訊息以便日後方便找回帳號</string>
+	<string name="oasisgames_sdk_pcenter_notice_7">帳號資料</string>
+	<string name="oasisgames_sdk_head_title_customer">紀錄問題</string>
+	<string name="oasisgames_sdk_customer_notice13">我</string>
+	<string name="oasisgames_sdk_customer_notice14">無問題類型</string>
+	<string name="oasisgames_sdk_share_notapp">請先安裝Facebook App後再分享圖片</string>
+	<string name="oasissdk_temp_22">複製</string>
+	<string name="oasisgames_sdk_customer_notice15">感謝您的提問，希望我們的回答能解決您的問題</string>
+	
+	<string name="oasisgames_sdk_pcenter_notice_10">遊客</string>
+	<string name="oasisgames_sdk_pcenter_notice_11">關聯</string>
+	<string name="oasisgames_sdk_pcenter_notice_9">切換到另一個帳號進行遊戲</string>
+	<string name="oasisgames_sdk_bind_guide_1">選擇已有帳號，關聯正在遊戲的角色</string>
+	<string name="oasisgames_sdk_bind_guide_2">註冊一個新的OAS帳號，關聯現有角色</string>
+	<string name="oasisgames_sdk_pcenter_notice_8">關聯當前角色，以免丟失遊戲進度</string>
+	<string name="oasisgames_sdk_common_warn">警告</string>
+    
+    
+    
+    <string name="com_facebook_like_button_not_liked">讚</string>
+    <string name="com_facebook_like_button_liked">說讚</string>
+    <string name="com_facebook_loginview_log_out_button">登出</string>
+    <string name="com_facebook_loginview_log_in_button">登入</string>
+    <string name="com_facebook_loginview_log_in_button_long">使用 Facebook 登入</string>
+    <string name="com_facebook_loginview_logged_in_as">使用下列身分登入：%1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">已使用 Facebook 登入</string>
+    <string name="com_facebook_loginview_log_out_action">登出</string>
+    <string name="com_facebook_loginview_cancel_action">取消</string>
+    <string name="com_facebook_loading">正在載入…</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest 錯誤</string>
+    <string name="com_facebook_internet_permission_error_message">WebView 登入需要「網際網路」授權</string>
+    <string name="com_facebook_tooltip_default">新消息！您已成功登入，請選擇要與應用程式分享的資訊。</string>
+    <string name="com_facebook_image_download_unknown_error">下載圖像時發生非預期的錯誤。</string>
+    <string name="com_facebook_share_button_text">分享</string>
+    <string name="com_facebook_send_button_text">傳送</string>
+</resources>

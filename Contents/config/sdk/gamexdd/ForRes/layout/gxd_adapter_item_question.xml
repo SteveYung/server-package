@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x110">
+
+        <TextView
+            android:id="@+id/tvNum"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@drawable/gxd_bg_question_selector"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/tvQuestionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_toLeftOf="@+id/imgArrows"
+            android:layout_toRightOf="@+id/tvNum"
+            android:text="綁定手機號有什麼用?"
+            android:textColor="@drawable/gxd_tv_question_selector"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgArrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/gxd_img_question_selector" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvQuestionDesc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:text="玩家綁定手機"
+        android:paddingLeft="@dimen/x70"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
+<!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/layout/gxd_adapter_item_question.xml -->

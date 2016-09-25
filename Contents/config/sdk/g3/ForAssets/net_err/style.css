@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 全局样式global css */
+* { margin: 0; padding: 0; }
+a { 
+  color: #FFFFFF; 
+  font-size: 20px;
+  text-decoration: none; outline: none; }
+  a:visited{color: #333332;
+}
+
+html{color:#000;font:12px/1.5 'yahei';
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    tap-highlight-color:rgba(0,0,0,0);
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #494949;
+}
+.bigBox {
+    background: url("net_err.png") no-repeat;
+    background-size: 320px auto;
+    height: 74px;
+    background-position: 50% 0;
+    text-align: center;
+    padding-top: 400px;
+
+}
+.refurbish,.enter {
+    margin: 0px 14px;
+    height: 30px;
+    display: inline-block;
+}
+.refurbish {
+    width: 118px;
+}
+.enter {
+    width: 130px;
+}

@@ -1,0 +1,72 @@
+.commendiv{
+text-align: center;
+padding-top:7px;
+}
+.button{
+font-size: 27px;
+padding: 0.3em 0.6em;
+display: inline-block;
+width: 110px;
+height: auto;
+cursor: pointer;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+-o-border-radius: 8px;
+-ms-border-radius: 8px;
+-khtml-border-radius: 8px;
+border-radius: 8px;
+background-color: #63a6ed;
+background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #63a6ed), color-stop(70%, #63a6ed));
+background: -webkit-linear-gradient(#63a6ed, #63a6ed 70%);
+background: -moz-linear-gradient(#63a6ed, #63a6ed 70%);
+background: -o-linear-gradient(#63a6ed, #63a6ed 70%);
+background: -ms-linear-gradient(#63a6ed, #63a6ed 70%);
+background: linear-gradient(#63a6ed, #63a6ed 70%);
+-moz-box-shadow: #83a2f2 0 1px 0 inset;
+-webkit-box-shadow: #83a2f2 0 1px 0 inset;
+-o-box-shadow: #83a2f2 0 1px 0 inset;
+box-shadow: #83a2f2 0 1px 0 inset;
+border: 1px solid #63a6ed;
+color: white;
+}
+.button1{
+font-size: 27px;
+padding: 0.3em 0.6em;
+display: inline-block;
+width: 110px;
+height: auto;
+cursor: pointer;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+-o-border-radius: 8px;
+-ms-border-radius: 8px;
+-khtml-border-radius: 8px;
+border-radius: 8px;
+background-color: #c0c0c0;
+background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c0c0c0), color-stop(70%, #c0c0c0));
+background: -webkit-linear-gradient(#c0c0c0, #c0c0c0 70%);
+background: -moz-linear-gradient(#c0c0c0, #c0c0c0 70%);
+background: -o-linear-gradient(#c0c0c0, #c0c0c0 70%);
+background: -ms-linear-gradient(#c0c0c0, #c0c0c0 70%);
+background: linear-gradient(#c0c0c0, #c0c0c0 70%);
+-moz-box-shadow: #c0c0c0 0 1px 0 inset;
+-webkit-box-shadow: #c0c0c0 0 1px 0 inset;
+-o-box-shadow: #c0c0c0 0 1px 0 inset;
+box-shadow: #c0c0c0 0 1px 0 inset;
+border: 1px solid #c0c0c0;
+color: white;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.vert {
+	width: 580px;
+	height: 190px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -95px 0 0 -290px;

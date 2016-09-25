@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lzpay_baseroot_viewpager" type="id"/>   
+    
+    <item name="lzpay_baseroot_title_imageView0" type="id"/>   
+    <item name="lzpay_baseroot_title_imageView1" type="id"/>  
+    <item name="lzpay_baseroot_title_imageView2" type="id"/>  
+    <item name="lzpay_baseroot_title_imageView3" type="id"/>  
+    
+     <item name="lzpay_homeroot_GridView" type="id"/>  
+     <item name="lzpay_viewpaperitem_imageView" type="id"/>  
+     
+     <item name="lzpay_homeroot_sentbutton" type="id"/>  
+     
+     <item name="lzpay_nextroot_edittextname" type="id"/>  
+     <item name="lzpay_nextroot_edittextnums" type="id"/>  
+     <item name="lzpay_nextroot_edittextlabel" type="id"/>  
+     
+     <item name="lzpay_viewpaperitem_root" type="id"/> 
+     <item name="lzpay_viewpaperitem_testlabel" type="id"/>  
+     
+     <item name="lzpay_nextroot_label_top" type="id"/> 
+     <item name="lzpay_nextroot_label_bottom" type="id"/>  
+     
+     <item name="lzpay_nextroot_logoimage" type="id"/>  
+     <item name="lzpay_nextroot_moneyvalue" type="id"/> 
+     
+     <item name="lzpay_nextroot_sendbutton" type="id"/> 
+     
+     <item name="lzpay_homeroot_label_one" type="id"/> 
+     <item name="lzpay_homeroot_label_two" type="id"/> 
+     <item name="lzpay_homeroot_showtip" type="id"/> 
+     
+     <item name="lzpay_guidimage_show_one" type="id" /> 
+     <item name="lzpay_guidimage_show_two" type="id" /> 
+     <item name="lzpay_guidimage_golast" type="id" /> 
+     <item name="lzpay_guidimage_gonext" type="id" /> 
+     
+     <item name="lzpay_homeroot_moneyvalue" type="id" />   
+        
+     <item name="lzpay_baseroot_fillscreen" type="id" />      
+     
+      <item name="lzpay_nextroot_bottombut_top" type="id" />      
+      <item name="lzpay_nextroot_bottombut_under" type="id" />      
+      <item name="lzpay_nextroot_cameraview" type="id" />      
+      
+      <item name="lzpay_nextroot_edittextlabel_fortips" type="id" />      
+      <item name="lzpay_nextroot_edittextlabel_fortips_2" type="id" />   
+      <item name="lzpay_nextroot_edittextlabel_fortips_3" type="id" />     
+   <!-- zfb -->
+    <item name="lzpayment_ali_mainView" type="id"/>       
+    <item name="lzpayment_ali_webView" type="id"/>   
+    
+    <item name="lzpayment_ali_dialog_title" type="id"/>  
+    <item name="lzpayment_ali_dialog_divider" type="id"/>  
+    <item name="lzpayment_ali_dialog_message" type="id"/>      
+     <item name="lzpayment_ali_dialog_content_view" type="id"/>  
+     <item name="lzpayment_ali_dialog_button_group" type="id"/>       
+     <item name="lzpayment_ali_left_button" type="id"/>       
+     <item name="lzpayment_ali_dialog_split_v" type="id"/>  
+     <item name="lzpayment_ali_right_button" type="id"/>  
+     
+     <item name="lzpayment_ali_AlipayTitle" type="id"/>  
+     <item name="lzpayment_ali_btn_refresh" type="id"/> 
+     
+     <item name="lzpay_baseroot_loadingview" type="id"/>  
+     
+</resources>

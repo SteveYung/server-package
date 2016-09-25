@@ -1,0 +1,173 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- activity切换动画 -->
+	<style name="ActivityAnimation" parent="@android:style/Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@anim/cc_page_in</item>
+		<item name="android:activityOpenExitAnimation">@anim/cc_page_out</item>
+		<item name="android:activityCloseEnterAnimation">@anim/cc_page_in</item>
+		<item name="android:activityCloseExitAnimation">@anim/cc_page_out</item>
+	</style>
+	<style name="DialogCustom" parent="android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsFloating">true</item>
+	</style>
+	<style  name="content_margin" >
+	    <item name="android:layout_marginLeft">@dimen/cc_margin_50</item>
+	    <item name="android:layout_marginRight">@dimen/cc_margin_50</item>
+	    
+	</style>
+	
+	<!-- sdk界面activity theme -->
+    <style name="CCActivityTheme" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+    </style>
+    <!-- sdk界面laytout style -->
+    <style name="CCPageTheme" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">        
+        <item name="android:background">@drawable/cc_page</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        
+    </style>
+
+    <!-- 灰色文字label -->
+    <style name="Label">
+        <item name="android:textSize">@dimen/cc_font_size_30</item>
+        <item name="android:textColor">@color/text_hint_grey</item>   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>   
+        <item name="android:layout_marginLeft">@dimen/cc_margin_50</item>        
+    </style>
+        <!-- 橙色文字label -->
+    <style name="LabelOrange">
+        <item name="android:textSize">@dimen/cc_font_size_30</item>
+        <item name="android:textColor">@color/text_orange</item>   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>   
+        <item name="android:layout_marginLeft">@dimen/cc_margin_50</item>     
+    </style>
+    <!-- 黑色文字大lable -->
+    <style name="LabelBig">
+        <item name="android:textSize">@dimen/cc_font_size_34</item>
+        <item name="android:textColor">@color/text_black</item>   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>   
+        <item name="android:layout_marginLeft">@dimen/cc_margin_50</item>     
+    </style>
+    
+    <!-- 手机号输入框 -->
+    <style name="EditTextPhone" parent="content_margin">
+        <item name="android:background">@drawable/cc_edittext </item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/cc_height_80</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">@dimen/cc_font_size_34</item>
+        <item name="android:textColor">@color/text_black</item>        
+        <item name="android:textColorHint">@color/text_hint_grey</item>        
+        <!-- <item name="android:textCursorDrawable">@color/text_blue</item> -->        
+        <item name="android:inputType">number</item>        
+        <item name="android:maxLength">11</item>        
+        <item name="android:maxLines">1</item> 
+        <item name="android:imeOptions">actionDone</item>        
+    </style>
+    
+    <!-- 单行文字按钮 -->
+    <style name="OneLineButton" parent="content_margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/cc_height_80</item>
+        <item name="android:textSize">@dimen/cc_font_size_34</item>
+        <item name="android:textColor">@color/text_white</item>        
+        <item name="android:background">@drawable/cc_button</item>        
+    </style>  
+    <!-- 勾选框 -->
+    <style name="CheckBox">
+        <item name="android:layout_width">@dimen/cc_width_34</item>
+        <item name="android:layout_height">@dimen/cc_height_30</item>
+       	<item name="android:layout_marginRight">4dp</item>
+        <item name="android:background">@drawable/cc_checkbox</item>        
+        <item name="android:button">@null</item>    
+    </style>
+    <!-- 勾选框附属文字 -->
+    <style name="CheckBoxText">
+        <item name="android:textSize">@dimen/cc_font_size_24</item>
+        <item name="android:textColor">@color/text_hint_grey</item>   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>    
+        <item name="android:gravity">center</item>
+    </style>  
+    <!-- 小文字链接 -->
+    <style name="TextLinkSmall">
+        <item name="android:textSize">@dimen/cc_font_size_24</item>
+        <item name="android:textColor">@drawable/cc_button_link</item>   
+        <item name="android:background">#00000000</item>   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>    
+        <item name="android:gravity">center</item>
+    </style> 
+    <!-- 大文字链接 -->
+    <style name="TextLinkBig">
+        <item name="android:textSize">@dimen/cc_font_size_30</item>
+        <item name="android:textColor">@drawable/cc_button_link</item>   
+        <item name="android:background">#00000000</item>   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>    
+        <item name="android:gravity">center</item>
+    </style> 
+    <!-- 页面错误提示 -->
+    <style name="ErrorInfo">
+        <item name="android:visibility">invisible</item>
+        <item name="android:textSize">@dimen/cc_font_size_24</item>
+        <item name="android:textColor">@color/text_orange</item>   
+        <item name="android:background">@drawable/cc_errorinfo</item>
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>    
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style> 
+    <!-- 一键注册-Layout -->
+    <style name="OneLayout" parent="content_margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/cc_height_118</item>
+        <item name="android:layout_marginTop">@dimen/cc_margin_30</item>
+        <item name="android:background">@drawable/cc_button</item>        
+    </style> 
+    <!-- 一键注册-text1 -->
+    <style name="LayoutText_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/cc_font_size_34</item>
+        <item name="android:gravity">center</item>      
+    </style> 
+    <!-- 一键注册-text2 -->
+    <style name="LayoutText_2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0px</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/cc_font_size_24</item>
+        <item name="android:gravity">center</item>      
+    </style> 
+    <!-- 页面警示文字 -->
+    <style name="TextPrompt" parent="content_margin">
+        <item name="android:textSize">@dimen/cc_font_size_30</item>
+        <item name="android:textColor">@color/text_orange</item>   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>   
+    </style>
+    <!-- 灰色文字label重设密码 -->
+    <style name="LabelReset">
+        <item name="android:textSize">@dimen/cc_font_size_30</item>
+        <item name="android:textColor">@color/text_hint_grey</item>   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>       
+    </style>
+
+</resources>

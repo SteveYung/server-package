@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="ali_de_bd_dimen_activity_horizontal_margin">16dp</dimen>
+    <dimen name="ali_de_bd_dimen_activity_vertical_margin">16dp</dimen>
+    <dimen name="ali_de_bd_dimen_common_margin">15dp</dimen>
+    
+    <dimen name="ali_de_bd_dimen_btn_heigth">50dp</dimen>
+    
+    <dimen name="ali_de_bd_dimen_charge_pay_btn_heigth">100dp</dimen>
+    <dimen name="ali_de_bd_dimen_charge_price_heigth">40dp</dimen>
+
+    <!-- 消费模块 -->
+    <dimen name="ali_de_bd_dimen_cosume_dialog_text">17sp</dimen>
+    
+    <!-- 充值模块 -->
+    <dimen name="ali_de_bd_dimen_charge_margin">11dp</dimen>
+    
+    <!-- 信用模块 -->
+    <dimen name="ali_de_bd_dimen_credit_margin">20dp</dimen>
+    
+    <dimen name="ali_de_bd_dimen_consume_corner_radius">10dp</dimen>
+    <dimen name="ali_de_bd_dimen_consume_btn_corner_radius">15dp</dimen>
+    
+    <dimen name="ali_de_bd_dimen_consume_pay_btn_seperator_margin">5dp</dimen>
+    
+</resources>

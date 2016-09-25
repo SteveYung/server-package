@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    <paramLs>
+
+        <param
+            name="PipawMerchantId"
+            bUserOffer="1"
+            bWriteIntoClient="1"
+            bWriteIntoManifest="0"
+            desc="商户系统Id"
+            required="1"
+            showName="MerchantId" />
+
+        <param
+            name="PipawMerchantAppId"
+            bUserOffer="1"
+            bWriteIntoClient="1"
+            bWriteIntoManifest="0"
+            desc="商户应用Id"
+            required="1"
+            showName="MerchantAppId" />
+
+        <param
+            name="PipawAppId"
+            bUserOffer="1"
+            bWriteIntoClient="1"
+            bWriteIntoManifest="0"
+            desc="应用Id"
+            required="1"
+            showName="AppId" />
+
+        <param
+            name="PipawPrivateKey"
+            bUserOffer="1"
+            bWriteIntoClient="1"
+            bWriteIntoManifest="0"
+            desc="私钥"
+            required="1"
+            showName="PrivateKey" />
+
+        <param
+            name="Orientation"
+            bUserOffer="1"
+            bWriteIntoClient="1"
+            bWriteIntoManifest="0"
+            desc="屏幕朝向"
+            required="1"
+            showName="Orientation" >
+
+            <option value="landscape" />
+
+            <option value="portrait" />
+        </param>
+
+        <param
+            name="callback"
+            bUserOffer="1"
+            bWriteIntoClient="0"
+            desc="anysdk支付结果通知"
+            required="1"
+            showName="支付通知地址" />
+    </paramLs>
+
+    <operateLs>
+
+        <operate
+            name="modifyManifest"
+            desc="pipaw"
+            from="ForManifest.xml"
+            step="1"
+            to="AndroidManifest.xml" />
+
+        <operate
+            name="copy"
+            desc="pipaw"
+            from="ForRes"
+            step="2"
+            to="res" />
+
+        <operate
+            name="mergeR"
+            desc="合并R文件，此步骤需在res目录合并完后才执行"
+            step="3" />
+    </operateLs>
+
+    <pluginLs>
+
+        <plugin
+            name="UserPipaw"
+            desc="琵琶网用户插件"
+            typePlugin="0" />
+
+        <plugin
+            name="IAPOnlinePipaw"
+            desc="琵琶网支付插件"
+            typePlugin="2" />
+    </pluginLs>
+    <version code = "1003" showVersion = "2.0.3_2.4" >
+        <![CDATA[
+        2014年10月20日更新到2.4<br/>
+        删除登录验证前的登录成功，删除中文注释<br/>
+        修改内容：增加ext字段的判断和处理<br/>
+    ]]>
+    </version>
+
+</config>

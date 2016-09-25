@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="en_us_com_efun_invite_title">Facebook Social Function</string>
+    <string name="en_us_com_efun_invite_head_comment">Like</string>
+    <string name="en_us_com_efun_invite_head_share">Share</string>
+    <string name="en_us_com_efun_invite_head_invited">0 successful</string>
+    <string name="en_us_com_efun_invite_login_failed">Facebook login failed. Try again!</string>
+    <string name="en_us_com_efun_invite_taglist_leaderboard">Ranking List</string>
+    <string name="en_us_com_efun_invite_taglist_invite">Friend Invitation</string>
+    <string name="en_us_com_efun_invite_taglist_reward">Gift Box</string>
+    <string name="en_us_com_efun_invite_taglist_info">Function Rule</string>
+    <string name="en_us_com_efun_invite_leaderboard_rank">Ranking</string>
+    <string name="en_us_com_efun_invite_leaderboard_pic">Friend</string>
+    <string name="en_us_com_efun_invite_leaderboard_server">Server</string>
+    <string name="en_us_com_efun_invite_leaderboard_level">Level</string>
+    <string name="en_us_com_efun_invite_leaderboard_power">Power</string>
+    <string name="en_us_com_efun_invite_leaderboard_sendgift">Send</string>
+    <string name="en_us_com_efun_invite_leaderboard_hassendgift">Sent</string>
+    <string name="en_us_com_efun_invite_invite_selectall">Select All</string>
+    <string name="en_us_com_efun_invite_invite_send">Send</string>
+    <string name="en_us_com_efun_invite_invite_warnning_select_friend">Please choose one friend at least</string>
+    <string name="en_us_com_efun_invite_invite_response_invite_success">Invited successfully</string>
+    <string name="en_us_com_efun_invite_invite_warnning_no_invitable_friend">No friend available</string>
+    <string name="en_us_com_efun_invite_reward_reward">Successful Invitation Gift</string>
+    <string name="en_us_com_efun_invite_reward_rewardfrom">Gift sent by %s</string>
+    <string name="en_us_com_efun_invite_reward_invited">%s accepted invitation</string>
+    <string name="en_us_com_efun_invite_reward_invited_replace">Your Friends</string>
+    <string name="en_us_com_efun_invite_reward_claim">Claim</string>
+    <string name="en_us_com_efun_invite_reward_claimed">Claimed</string>
+    <string name="en_us_com_efun_invite_network_error">Network Error</string>
+    <!-- fb社交功能内 fb分享成功吐司信息 -->
+    <string name="en_us_efun_invite_share_success">share success</string>
+    <!-- fb社交功能内 fb分享失败吐司信息 -->
+    <string name="en_us_efun_invite_share_failed">share failure</string>
+    <string name="en_us_efun_invite_inform">    Friend Invitation Rule\n
+     1.For more Account players must authorize the function to link with your Facebook at first;\n
+     2.The friend list will show your Facebook friends on it. You can send invitation to them after successfully choosing them;\n
+     3. After being invited, your friend must login the game with Login with Facebook method. Only this login method will be counted as a successful invitation. Accumulating different amounts of successful invitations can earn you corresponding gifts;\n
+     4.There are totally three additional gifts for completing different amount of successful invitations. The one which has been claimed before will no longer be available to be claimed next time\n\n
+
+
+   Ranking List Rule\n
+    1.You can check your Facebook friends rankings of this game in the Ranking List;\n
+    2.The rankings of your Facebook friends will base on their level, power different game has different judgment. The update of rankings will have a certain delay time. Please pay attention to that;\n
+    3.You can send gift to each Facebook friend every day. More Facebook friends you have, more gifts your friends might send to you;\n
+    4.For more Account players can also check the rankings of their Facebook friends and send gifts to them after authorizing their Facebook linking. But your Facebook friends will be unable to see your own ranking or send gifts to you if you login with For more Account method. Please pay attention to that.\n</string>
+
+</resources>

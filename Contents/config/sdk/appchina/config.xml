@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <paramLs>
+        <param name="APPCHINA_ACCOUNT_APPKEY" required="1" showName="ACCOUNT_APPKEY" desc="账户的appkey"
+               bWriteIntoManifest="1" bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="APPCHINA_ACCOUNT_APPID" required="1" showName="ACCOUNT_APPID" desc="账户appid" bWriteIntoManifest="1"
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="AppchinaAppId" required="1" showName="PAY_APPID" desc="支付appid" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="AppchinaAppKey" required="1" showName="PAY_APPKEY" desc="支付appkey" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1"/>
+        <param name="APPCHINA_Orientation" required="1" showName="Orientation" desc="界面方向" bWriteIntoManifest="0"
+               bUserOffer="1" bWriteIntoClient="1">
+            <option value="landscape"/>
+            <option value="portrait"/>
+        </param>
+      <!--  <param name="AppChina_Color" required="1" showName="浮窗颜色" desc="浮窗颜色" bWriteIntoManifest="0" bUserOffer="1"
+               bWriteIntoClient="1">
+            <option value="blue"/>
+            <option value="green"/>
+            <option value="red"/>
+        </param>-->
+        <param name="callback" required="1" desc="anysdk支付结果通知" showName="支付通知地址" bUserOffer="1" bWriteIntoClient="0"/>
+    </paramLs>
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="appchina"/>
+        <operate step="2" name="copy" from="ForAssets" to="assets" desc="appchina"/>
+        <operate step="3" name="copy" from="ForLibs" to="lib" desc="appchina"/>
+        <operate step="4" name="copy" from="ForRes" to="res" desc="appchina"/>
+        <operate step="5" name="script" desc="appchina"/>
+        <operate step="6" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    <pluginLs>
+        <plugin name="UserAppchina" typePlugin="0" desc="应用汇用户插件"/>
+        <plugin name="IAPOnlineAppchina" typePlugin="2" desc="应用汇支付插件"/>
+    </pluginLs>
+    <version code = "1014" showVersion = "2.1.4_4.0.3" >
+        <![CDATA[
+        2015年1月7日  修复已知bug<br/>
+       	 按照官方要求修改activity的属性值。<br/>
+        11月05日 应用汇修复多次调用showtoolbar显示多个浮窗的问题 <br/>
+        应用汇的充值按钮回调 使用新框架状态ACTION_RET_OPENSHOP<br/>
+        应用汇包括进入个人中心（enterPlatform，内含有退出账号、切换账号、进入游戏商城等）、浮窗显示（请在登录后调用显示）等功能<br/>
+    ]]>
+    </version>
+</config>

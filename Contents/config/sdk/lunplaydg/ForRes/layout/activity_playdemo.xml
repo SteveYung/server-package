@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/demo_myback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_myback" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/logo" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:background="@drawable/shape_choice"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/gogame"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/selector_button_other"
+                    android:text="進入遊戲"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5" />
+
+                <Button
+                    android:id="@+id/chooseband"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/selector_button_other"
+                    android:text="綁定帳號"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hintband"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="你正在使用試玩帳號進入遊戲，為了你的帳號安全，建議你綁定正式帳號。"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+</LinearLayout>
