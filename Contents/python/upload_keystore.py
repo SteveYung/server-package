@@ -22,7 +22,7 @@ def updataKeystoreFile(database):
     conn = MySQLdb.connect(host = '10.66.118.154',port=3307,user = 'root',passwd = 'ycfwkX6312')
     conn.select_db(database)
     curs = conn.cursor(MySQLdb.cursors.DictCursor)
-    curs.execute('SELECT game.gameName,channel.name,channel.keystoreFile,channel.keystorePwd,channel.keystoreAlias,channel.keystoreAliasPwd FROM tpl_channel channel JOIN game ON channel.idGame = game.gameId AND channel.keystoreFile IS NOT NULL')
+    curs.execute('SELECT game.gameName,channel.name,channel.keystoreFile,channel.keystorePwd,channel.keystoreAlias,channel.keystoreAliasPwd FROM tpl_channel channel JOIN game ON channel.idGame = game.gameId AND channel.keystoreFile IS NOT NULL AND channel.keystoreFile != ""')
     results = curs.fetchall()
     for r in results:
         if not os.path.exists(backupDir+r['gameName']+'/'+r['name']):
@@ -36,7 +36,7 @@ def updataKeystoreFile(database):
         logdir = backupDir+r['gameName']+'/'+r['name'] + '/readme.txt'
         log(content,logdir,'w')
 
-    curs.execute('select gameName,keystoreFile,keystorePwd,keystoreAlias,keystoreAliasPwd from game')
+    curs.execute('SELECT gameName,keystoreFile,keystorePwd,keystoreAlias,keystoreAliasPwd FROM game WHERE keystoreFile IS NOT NULL AND keystoreFile != ""')
     results = curs.fetchall()
     for r in results:
         if not os.path.exists(backupDir+r['gameName']):
