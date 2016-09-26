@@ -40,20 +40,19 @@ def backup(database):
     dateDIR = backupDir+'backup.log'
     s = subprocess.Popen('git pull', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content = '\r\n========backupTime:'+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))\
-              +'\r\n'+stdoutput+'\r\n'+erroutput
+    content = '\r\n======================backupTime:'+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))+'======================\r\ncmd:git pull\r\noutput:'+stdoutput+'\r\nerror:'+erroutput
 
     s = subprocess.Popen('git add --all', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content =  content+'\r\n'+stdoutput+'\r\n'+erroutput
+    content =  content+'\r\noutput:'+stdoutput+'\r\nerror:'+erroutput
 
     s = subprocess.Popen('git commit -m "%s backup"' % (time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content = content +'\r\n'+stdoutput+'\r\n'+erroutput
+    content =  content+'\r\ncmd:git commit\r\noutput:'+stdoutput+'\r\nerror:'+erroutput
 
     s = subprocess.Popen('git push', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content = content +'\r\n'+stdoutput+'\r\n'+erroutput+'\r\n'+'======================END'+'\r\n'
+    content =  content+'\r\ncmd:git push\r\noutput:'+stdoutput+'\r\nerror:'+erroutput+'\r\n'+'END'+'\r\n'
     log(content,dateDIR,'a+')
 
 backup('rsdk_zhangbizheng')
