@@ -37,7 +37,7 @@ def backup(database):
     conn.close()
 
     subprocess.Popen('cd '+backupDir, shell=True)
-    dateDIR = backupDir+time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
+    dateDIR = backupDir+time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))+'.log'
     s = subprocess.Popen('git pull', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
     content = '\r\n'+stdoutput+'\r\n'+erroutput
