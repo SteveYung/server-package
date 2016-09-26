@@ -2,6 +2,7 @@ import MySQLdb
 import urllib
 import os
 import codecs
+import file_operate
 
 backupDir = '/data/plattech/game-keystore-backup/'
 
@@ -24,3 +25,7 @@ for r in results:
     print '<===Write '+backupDir+r['gameName']+'/'+r['name']+'/defualt.keystore Success===>'
 
 conn.close()
+
+file_operate.execFormatCmd('cd '+backupDir)
+file_operate.execFormatCmd('git pull')
+file_operate.execFormatCmd('git status')
