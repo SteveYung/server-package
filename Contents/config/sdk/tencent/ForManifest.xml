@@ -84,5 +84,4 @@
         android:largeScreens="true"
         android:normalScreens="true" />
     </permissionCfg>
-
 </manifestConfig>
