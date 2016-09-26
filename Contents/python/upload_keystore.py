@@ -6,6 +6,10 @@ import subprocess
 import time
 
 
+
+
+databasesList = ['rsdk_rayjoy','rsdk_rproj','rsdk_xdzz','rsdk_xproj','rsdk_zhangbizheng']
+
 backupDir = '/data/plattech/game-keystore-backup/'
 
 def log(content,dirfile,mode):
@@ -14,7 +18,7 @@ def log(content,dirfile,mode):
     logFile.close()
 
 
-def backup(database):
+def updataKeystoreFile(database):
     conn = MySQLdb.connect(host = '10.66.118.154',port=3307,user = 'root',passwd = 'ycfwkX6312')
     conn.select_db(database)
     curs = conn.cursor(MySQLdb.cursors.DictCursor)
@@ -32,27 +36,35 @@ def backup(database):
         logdir = backupDir+r['gameName']+'/'+r['name'] + '/readme.txt'
         log(content,logdir,'w')
 
-        print '<===Write '+backupDir+r['gameName']+'/'+r['name']+'/defualt.keystore Success===>'
 
     conn.close()
 
+
+
+
+
+def updateTogit():
     subprocess.Popen('cd '+backupDir, shell=True)
     dateDIR = backupDir+'backup.log'
     s = subprocess.Popen('git pull', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content = '\r\n======================backupTime:'+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))+'======================\r\n==>cmd:git pull\r\noutput:'+stdoutput+'\r\nerror:'+erroutput
+    content = '\r\n======================backupTime:'+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))+'======================\r\n++++>cmd:git pull\r\noutput:'+stdoutput+'\r\nerror:'+erroutput
 
     s = subprocess.Popen('git add --all', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content =  content+'\r\n==>cmd:git add --all\r\noutput:'+stdoutput+'\r\nerror:'+erroutput
+    content =  content+'\r\n++++>cmd:git add --all'
 
     s = subprocess.Popen('git commit -m "%s backup"' % (time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content =  content+'\r\n==>cmd:git commit\r\noutput:'+stdoutput+'\r\nerror:'+erroutput
+    content =  content+'\r\n++++>cmd:git commit\r\noutput:'+stdoutput+'\r\nerror:'+erroutput
 
     s = subprocess.Popen('git push', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content =  content+'\r\n==>cmd:git push\r\noutput:'+stdoutput+'\r\nerror:'+erroutput+'\r\n'+'END'+'\r\n'
+    content =  content+'\r\n++++>cmd:git push\r\noutput:'+stdoutput+'\r\nerror:'+erroutput+'\r\n'+'END'+'\r\n'
     log(content,dateDIR,'a+')
 
-backup('rsdk_zhangbizheng')
+for database in databasesList:
+    updataKeystoreFile(database)
+
+
+updateTogit()
