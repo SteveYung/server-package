@@ -8,8 +8,8 @@ import time
 
 backupDir = '/data/plattech/game-keystore-backup/'
 
-def log(content,dirfile):
-    logFile = codecs.open(dirfile, 'w', 'utf-8')
+def log(content,dirfile,mode):
+    logFile = codecs.open(dirfile, mode, 'utf-8')
     logFile.write(unicode(content, 'gbk'))
     logFile.close()
 
@@ -30,18 +30,31 @@ def backup(database):
         content += 'keystoreAlias:'+r['keystoreAlias'] + '\r\n'
         content += 'keystoreAliasPwd:'+r['keystoreAliasPwd']
         logdir = backupDir+r['gameName']+'/'+r['name'] + '/readme.txt'
-        log(content,logdir)
+        log(content,logdir,'w')
 
         print '<===Write '+backupDir+r['gameName']+'/'+r['name']+'/defualt.keystore Success===>'
 
     conn.close()
 
     subprocess.Popen('cd '+backupDir, shell=True)
+    dateDIR = backupDir+time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
+    s = subprocess.Popen('git pull', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    stdoutput, erroutput = s.communicate()
+    content = '\r\n'+stdoutput+'\r\n'+erroutput
 
-    subprocess.Popen('git pull', shell=True)
-    subprocess.Popen('git add --all', shell=True)
-    subprocess.Popen('git commit -m "%s backup"' % (time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))), shell=True)
+
+    s = subprocess.Popen('git add --all', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    stdoutput, erroutput = s.communicate()
+    content =  content+'\r\n'+stdoutput+'\r\n'+erroutput
+
+
+    s = subprocess.Popen('git commit -m "%s backup"' % (time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    stdoutput, erroutput = s.communicate()
+    content = content +'\r\n'+stdoutput+'\r\n'+erroutput+'\r\n'+'======================END'+'\r\n'
+    log(content,dateDIR,'a+')
+
     subprocess.Popen('git push', shell=True)
+
 
 
 backup('rsdk_zhangbizheng')
