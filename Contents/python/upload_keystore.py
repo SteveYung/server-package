@@ -28,12 +28,26 @@ def updataKeystoreFile(database):
         if not os.path.exists(backupDir+r['gameName']+'/'+r['name']):
            os.makedirs(backupDir+r['gameName']+'/'+r['name'])
 
-        urllib.urlretrieve(r['keystoreFile'],backupDir+r['gameName']+'/'+r['name']+'/defualt.keystore')
+        urllib.urlretrieve(r['keystoreFile'],backupDir+r['gameName']+'/'+r['name']+'/channel.keystore')
 
         content = 'keystorePwd:'+r['keystorePwd'] + '\r\n'
         content += 'keystoreAlias:'+r['keystoreAlias'] + '\r\n'
         content += 'keystoreAliasPwd:'+r['keystoreAliasPwd']
         logdir = backupDir+r['gameName']+'/'+r['name'] + '/readme.txt'
+        log(content,logdir,'w')
+
+    curs.execute('select gameName,keystoreFile,keystorePwd,keystoreAlias,keystoreAliasPwd from game')
+    results = curs.fetchall()
+    for r in results:
+        if not os.path.exists(backupDir+r['gameName']):
+           os.makedirs(backupDir+r['gameName'])
+
+        urllib.urlretrieve(r['keystoreFile'],backupDir+r['gameName']+'/defualt.keystore')
+
+        content = 'GAME DEFUALT KEYSTORE\r\nkeystorePwd:'+r['keystorePwd'] + '\r\n'
+        content += 'keystoreAlias:'+r['keystoreAlias'] + '\r\n'
+        content += 'keystoreAliasPwd:'+r['keystoreAliasPwd']
+        logdir = backupDir+r['gameName'] + '/readme.txt'
         log(content,logdir,'w')
 
 
