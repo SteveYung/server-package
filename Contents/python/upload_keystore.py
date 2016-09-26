@@ -36,31 +36,12 @@ def backup(database):
 
     conn.close()
 
-    s = subprocess.Popen('cd '+backupDir, shell=True)
-    s.wait()
-    s = subprocess.Popen('git pull', shell=True)
-    ret = s.wait()
-    if not ret:
-        log('git pull',backupDir+ 'cmd_'+time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))+'.txt')
-        return
+    subprocess.Popen('cd '+backupDir, shell=True)
 
-    s = subprocess.Popen('git add --all', shell=True)
-    ret = s.wait()
-    if not ret:
-        log('git add --all',backupDir+ 'cmd_'+time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))+'.txt')
-        return
-
-    s = subprocess.Popen('git commit -m "%s backup"' % (time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))), shell=True)
-    ret = s.wait()
-    if not ret:
-        log('git commit -m "%s backup"' % (time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))),backupDir+ 'cmd_'+time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))+'.txt')
-        return
-
-    s = subprocess.Popen('git push', shell=True)
-    ret = s.wait()
-    if not ret:
-        log('git push',backupDir+ 'cmd_'+time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))+'.txt')
-        return
+    subprocess.Popen('git pull', shell=True)
+    subprocess.Popen('git add --all', shell=True)
+    subprocess.Popen('git commit -m "%s backup"' % (time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))), shell=True)
+    subprocess.Popen('git push', shell=True)
 
 
 backup('rsdk_zhangbizheng')
