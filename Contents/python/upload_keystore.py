@@ -37,24 +37,23 @@ def backup(database):
     conn.close()
 
     subprocess.Popen('cd '+backupDir, shell=True)
-    dateDIR = backupDir+time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))+'.log'
+    dateDIR = backupDir+'backup.log'
     s = subprocess.Popen('git pull', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
-    content = '\r\n'+stdoutput+'\r\n'+erroutput
-
+    content = '\r\n========backupTime:'+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))\
+              +'\r\n'+stdoutput+'\r\n'+erroutput
 
     s = subprocess.Popen('git add --all', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
     content =  content+'\r\n'+stdoutput+'\r\n'+erroutput
 
-
     s = subprocess.Popen('git commit -m "%s backup"' % (time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))), stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    stdoutput, erroutput = s.communicate()
+    content = content +'\r\n'+stdoutput+'\r\n'+erroutput
+
+    s = subprocess.Popen('git push', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
     content = content +'\r\n'+stdoutput+'\r\n'+erroutput+'\r\n'+'======================END'+'\r\n'
     log(content,dateDIR,'a+')
-
-    subprocess.Popen('git push', shell=True)
-
-
 
 backup('rsdk_zhangbizheng')
