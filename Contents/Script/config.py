@@ -3,20 +3,20 @@
 #Embedded file name: /Projects/GitLab/rsdk_package/Env/Script/config.py
 import threading
 from xml.etree import ElementTree as ET
-import re
+
 import os
 import file_operate
-import sqlite3
+
 import platform
 from modifyProject import XcodeProject
-from xml.dom import minidom
-import codecs
-import re
+
 from modifyPlist import *
 import MySQLdb
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
+import ConfigParser
 
 class ConfigParse(object):
     """The class can parse project config file of xml """
@@ -50,6 +50,19 @@ class ConfigParse(object):
     __SDKVersionLs = []
     __isCocosPlayMode = False
     _targetName = '' #存放target
+
+    db_host = ''
+    db_port = 0
+    db_user = ''
+    db_pwd = ''
+
+    cf = ConfigParser.ConfigParser()
+    cf.read("../config/db_config.ini")
+
+    db_host = cf.get("mysqlconf", "host")
+    db_port = cf.getint("mysqlconf", "port")
+    db_user = cf.get("mysqlconf", "user")
+    db_pwd = cf.get("mysqlconf", "password")
 
     @staticmethod
     def shareInstance():
@@ -116,14 +129,14 @@ class ConfigParse(object):
 
     def initDatabase(self):
         """get the data from database."""
-        cx = MySQLdb.connect(host = '10.66.118.154',port=3307,user = 'root',passwd = 'ycfwkX6312')
+        cx = MySQLdb.connect(host = ConfigParse.db_host,port=ConfigParse.db_port,user = ConfigParse.db_user,passwd = ConfigParse.db_pwd)
         cx.select_db('rsdk_user')
         self.readSDKLs(cx)
         cx.close()
 
     def readUserDatabase(self):
         """get the config about user's sdk from database"""
-        cx = MySQLdb.connect(host = '10.66.118.154',port=3307,user = 'root',passwd = 'ycfwkX6312')
+        cx = MySQLdb.connect(host = ConfigParse.db_host,port=ConfigParse.db_port,user = ConfigParse.db_user,passwd = ConfigParse.db_pwd)
         cx.select_db(sys.argv[1])
         #self.readSDKVersionLs(cx)
 #        self.readChannelCustomLs(cx) 7.12
