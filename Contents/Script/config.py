@@ -57,7 +57,7 @@ class ConfigParse(object):
     db_pwd = ''
 
     cf = ConfigParser.ConfigParser()
-    cf.read("../config/db_config.ini")
+    cf.read(file_operate.get_server_dir()+"/config/db_config.ini")
 
     db_host = cf.get("mysqlconf", "host")
     db_port = cf.getint("mysqlconf", "port")
