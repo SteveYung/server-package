@@ -56,14 +56,6 @@ class ConfigParse(object):
     db_user = ''
     db_pwd = ''
 
-    cf = ConfigParser.ConfigParser()
-    cf.read(file_operate.get_server_dir()+"/config/db_config.ini")
-
-    db_host = cf.get("mysqlconf", "host")
-    db_port = cf.getint("mysqlconf", "port")
-    db_user = cf.get("mysqlconf", "user")
-    db_pwd = cf.get("mysqlconf", "password")
-
     @staticmethod
     def shareInstance():
         ConfigParse.__lock.acquire()
@@ -129,14 +121,31 @@ class ConfigParse(object):
 
     def initDatabase(self):
         """get the data from database."""
-        cx = MySQLdb.connect(host = ConfigParse.db_host,port=ConfigParse.db_port,user = ConfigParse.db_user,passwd = ConfigParse.db_pwd)
+
+        cf = ConfigParser.ConfigParser()
+        cf.read(file_operate.get_server_dir()+"/config/db_config.ini")
+
+        self.db_host = cf.get("mysqlconf", "host")
+        self.db_port = cf.getint("mysqlconf", "port")
+        self.db_user = cf.get("mysqlconf", "user")
+        self.db_pwd = cf.get("mysqlconf", "password")
+
+        cx = MySQLdb.connect(host = self.db_host,port=self.db_port,user = self.db_user,passwd = self.db_pwd)
         cx.select_db('rsdk_user')
         self.readSDKLs(cx)
         cx.close()
 
     def readUserDatabase(self):
         """get the config about user's sdk from database"""
-        cx = MySQLdb.connect(host = ConfigParse.db_host,port=ConfigParse.db_port,user = ConfigParse.db_user,passwd = ConfigParse.db_pwd)
+        cf = ConfigParser.ConfigParser()
+        cf.read(file_operate.get_server_dir()+"/config/db_config.ini")
+
+        self.db_host = cf.get("mysqlconf", "host")
+        self.db_port = cf.getint("mysqlconf", "port")
+        self.db_user = cf.get("mysqlconf", "user")
+        self.db_pwd = cf.get("mysqlconf", "password")
+
+        cx = MySQLdb.connect(host = self.db_host,port=self.db_port,user = self.db_user,passwd = self.db_pwd)
         cx.select_db(sys.argv[1])
         #self.readSDKVersionLs(cx)
 #        self.readChannelCustomLs(cx) 7.12
