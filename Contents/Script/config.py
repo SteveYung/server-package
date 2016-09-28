@@ -230,6 +230,7 @@ class ConfigParse(object):
         """get the data about tpl_channel from database"""
         self.__channelLs.clear()
         c = cx.cursor(MySQLdb.cursors.DictCursor)
+        c.execute('set names utf8')
         c.execute('select * from tpl_channel')
         rows = c.fetchall()
         for r in rows:

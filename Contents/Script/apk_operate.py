@@ -1069,7 +1069,7 @@ def doModifyAppName(decompileDir,newAppName):
     stringLsNode = stringRoot.findall('string')
     for stringNode in stringLsNode:
         if stringNode.attrib.get('name') is not None and stringNode.attrib['name'] == appName:
-            stringNode.text = gameName.encode('utf-8')
+            stringNode.text = gameName
 
     stringTree.write(stringsXml, 'UTF-8')
 
