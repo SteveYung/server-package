@@ -35,7 +35,7 @@ class PackThread(threading.Thread):
                         core.deleteWorkspace(self.__task)
                     elif self.__platform == 1:
                         coreios.main(self.__task)
-                        coreios.deleteWorkspace(self.__task)
+                        # coreios.deleteWorkspace(self.__task)
                     self.__status = 0
                 except Exception as e:
                     print '<---packThread Exception--->%s' %(e)
