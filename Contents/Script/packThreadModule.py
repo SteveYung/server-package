@@ -2,7 +2,7 @@
 #Embedded file name: /Projects/GitLab/rsdk_package/Env/Script/packThreadModule.py
 import threading
 import time
-import coreios
+
 import core
 import os
 import file_operate
@@ -33,9 +33,9 @@ class PackThread(threading.Thread):
                     if self.__platform == 0:
                         core.main(self.__task)
                         core.deleteWorkspace(self.__task)
-                    elif self.__platform == 1:
-                        coreios.main(self.__task)
-                        coreios.deleteWorkspace(self.__task)
+                    # elif self.__platform == 1:
+                    #     coreios.main(self.__task)
+                    #     coreios.deleteWorkspace(self.__task)
                     self.__status = 0
                 except Exception as e:
                     print '<---packThread Exception--->%s' %(e)
