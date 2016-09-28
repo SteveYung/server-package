@@ -32,7 +32,7 @@ class PackThread(threading.Thread):
                     os.chdir(self.__curWorkDir)
                     if self.__platform == 0:
                         core.main(self.__task)
-                        # core.deleteWorkspace(self.__task)
+                        core.deleteWorkspace(self.__task)
                     elif self.__platform == 1:
                         coreios.main(self.__task)
                         coreios.deleteWorkspace(self.__task)
