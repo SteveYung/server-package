@@ -178,7 +178,7 @@ def main(channel):
         apk_operate.modifyAppName(game, decompileDir, newAppName)
         #modify app display name by channel setting
         #if channel display_name is not null,the app displayname will be set by channel
-        #apk_operate.modifyAppNameByChannel(channel, decompileDir)
+        apk_operate.modifyAppNameByChannel(channel, decompileDir)
 
         apk_operate.writeDataIntoAndroidManifest(decompileDir, channel)
         taskManager.shareInstance().notify(idChannel, 75)
