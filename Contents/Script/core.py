@@ -484,7 +484,7 @@ def inspectJDK():
     (status,output)= commands.getstatusoutput('java -version')
     if status == 0:
         print output
-        file_operate.reportError(output,threading.currentThread().getName(),0)
+        file_operate.reportError(output,-100,0)
         return True
     else:
         print "请先安装jdk"

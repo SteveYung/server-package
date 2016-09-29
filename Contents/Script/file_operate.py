@@ -293,10 +293,19 @@ def reportCmdError(cmd, stdoutput, erroutput):
     reportError(errorLog, int(threading.currentThread().getName()))
 
 
-def reportError(errorOuput, idChannel,iserror = 1):
+def reportError(errorOuput, idChannel = -100,iserror = 1,step = 0):
     """
     """
     packageName = ''
+    if(idChannel == -100):
+        error = '==================>>>> STEP <<<<==================\r\n'
+        error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+        error += errorOuput + '\r\n'
+        error += '[rsdk_Step]: '+step + '\r\n'
+        error += '===================================================\r\n'
+        log(error)
+        return
+
     channel = ConfigParse.shareInstance().findChannel(idChannel)
     if channel != None and channel.get('packNameSuffix') != None:
         packageName = str(channel['packNameSuffix'])
