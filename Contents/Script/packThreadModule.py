@@ -24,7 +24,7 @@ class PackThread(threading.Thread):
     def run(self):
         """Overwrite run() method, put what you want the thread do here"""
         print '<---packThread run()--->'
-	while not self.__stop:
+        while not self.__stop:
             if self.__status == 0:
                 time.sleep(1)
             elif self.__status == 1:
@@ -39,8 +39,8 @@ class PackThread(threading.Thread):
                     self.__status = 0
                 except Exception as e:
                     print '<---packThread Exception--->%s' %(e)
-		    self.__status = 0
-                    file_operate.reportError(traceback.format_exc(), int(threading.currentThread().getName()))
+                    self.__status = 0
+                    file_operate.reportError(traceback.format_exc()+'\r\n'+e, int(threading.currentThread().getName()))
                     error_operate.error(80)
 
     def assignPackTask(self, task):
