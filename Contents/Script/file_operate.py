@@ -301,7 +301,7 @@ def reportError(errorOuput, idChannel = -100,iserror = 1,step = 0):
         error = '==================>>>> STEP <<<<==================\r\n'
         error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
         error += errorOuput + '\r\n'
-        error += '[rsdk_Step]: '+step + '\r\n'
+        error += '[rsdk_Step]: '+str(step) + '\r\n'
         error += '===================================================\r\n'
         log(error)
         return
