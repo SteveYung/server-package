@@ -5,17 +5,16 @@ import file_operate
 import apk_operate
 import encode_operate
 import error_operate
-from http_manager import httpManager
-import modifyManifest
+
 from config import ConfigParse
 from taskManagerModule import taskManager
-import thread
+
 import threading
-import platform
+
 import special_script
-from time import sleep
+
 import os
-import time
+
 import commands
 import urllib
 import sys
