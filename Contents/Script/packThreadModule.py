@@ -40,7 +40,6 @@ class PackThread(threading.Thread):
                 except Exception as e:
                     print '<---packThread Exception--->%s' %(e)
                     self.__status = 0
-                    file_operate.reportError(traceback.format_exc()+'\r\n'+e, int(threading.currentThread().getName()))
                     error_operate.error(80)
 
     def assignPackTask(self, task):

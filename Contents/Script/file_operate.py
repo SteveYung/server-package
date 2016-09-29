@@ -7,7 +7,7 @@ import re
 import subprocess
 import platform
 from config import ConfigParse
-import inspect
+
 import sys
 import codecs
 import threading
@@ -293,26 +293,40 @@ def reportCmdError(cmd, stdoutput, erroutput):
     reportError(errorLog, int(threading.currentThread().getName()))
 
 
-def reportError(errorOuput, idChannel):
+def reportError(errorOuput, idChannel = -100,iserror = 1,step = 0):
     """
     """
     packageName = ''
+    if(idChannel == -100):
+        error = '==================>>>> STEP <<<<==================\r\n'
+        error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+        error += errorOuput + '\r\n'
+        error += '[rsdk_Step]: '+str(step) + '\r\n'
+        error += '===================================================\r\n'
+        log(error)
+        return
+
     channel = ConfigParse.shareInstance().findChannel(idChannel)
     if channel != None and channel.get('packNameSuffix') != None:
         packageName = str(channel['packNameSuffix'])
-        channelName = str(channel['name'])
-        if platform.system() == 'Windows':
-            channelName = str(channel['name']).encode('gbk')
-        else:
-            channelName = channel['name'].decode('utf8').encode('gbk')
-    error = '==================>>>> ERROR <<<<==================\r\n'
-    error += '[rsdk_Channel]: ' + threading.currentThread().getName() + '\r\n'
-    error += '[rsdk_ChannelName]: ' + channelName + '\r\n'
-    error += '[rsdk_Package]: ' + packageName + '\r\n'
-    error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
-    error += '[rsdk_Error]:\r\n'
-    error += errorOuput + '\r\n'
-    error += '===================================================\r\n'
+        channelName = channel['name'].decode('utf8').encode('gbk')
+    if(iserror == 1):
+        error = '==================>>>> ERROR <<<<==================\r\n'
+        error += '[rsdk_Channel]: ' + threading.currentThread().getName() + '\r\n'
+        error += '[rsdk_ChannelName]: ' + channelName + '\r\n'
+        error += '[rsdk_Package]: ' + packageName + '\r\n'
+        error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+        error += errorOuput + '\r\n'
+        error += '==================================================\r\n'
+    else:
+        error = '==================>>>> INFO <<<<==================\r\n'
+        error += '[rsdk_Channel]: ' + threading.currentThread().getName() + '\r\n'
+        error += '[rsdk_ChannelName]: ' + channelName + '\r\n'
+        error += '[rsdk_Package]: ' + packageName + '\r\n'
+        error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+        error += errorOuput + '\r\n'
+        error += '===================================================\r\n'
+
     log(error)
 
 
