@@ -2,54 +2,56 @@
 <manifestConfig xmlns:android="http://schemas.android.com/apk/res/android">
 
     <permissionCfg>
-            <!-- ↓↓↓ SDK ↓↓↓ -->
-        <uses-permission android:name="android.permission.SEND_SMS" />
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.GET_TASKS" />
-        
-        <uses-permission android:name="android.permission.READ_CONTACTS" />                 <!-- 百度钱包 -->
-        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />         <!-- 百度钱包 -->
-        <uses-permission android:name="android.permission.READ_SMS" />                      <!-- 百度钱包 -->
-        
+         <!-- ↓↓↓ SDK ↓↓↓ -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <uses-permission android:name="android.permission.READ_CONTACTS" />                 <!-- 百度钱包 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />         <!-- 百度钱包 -->
+    <uses-permission android:name="android.permission.READ_SMS" />                      <!-- 百度钱包 -->
+    
 
-        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-        
-        <!-- 若需录音需加此权限 omlet sdk -->
-        <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-        <!-- ↑↑↑ SDK ↑↑↑ -->
-        
-        <!-- ↓↓↓ DK SDK ↓↓↓ --> 
-        <uses-permission android:name="android.permission.WAKE_LOCK" />
-        <uses-permission android:name="android.permission.RECEIVE_SMS" />
-        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-        <uses-permission android:name="android.permission.CALL_PHONE" />
-        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-        <uses-permission android:name="android.permission.VIBRATE" />
-        <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
-        <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
-        <uses-permission android:name="android.permission.CAMERA" />
-        <uses-permission android:name="android.permission.FLASHLIGHT" />
-        <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-        <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    
+    <!-- 若需录音需加此权限 omlet sdk -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- ↑↑↑ SDK ↑↑↑ -->
+    
+    <!-- ↓↓↓ DK SDK ↓↓↓ --> 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
 
     <!-- ↑↑↑ DK SDK ↑↑↑ -->
     </permissionCfg>
 
     <applicationCfg keyword="com.baidu.platformsdk.LoginActivity">
        <!-- ↓↓↓ SDK ↓↓↓ -->
-         <!-- 0-百度 1-多酷 2-91 -->
+
+
+        <!-- 0-百度 1-多酷 2-91 -->
 
         <meta-data android:name="BDPlatformType" android:value="0" />
         
-         
-        <meta-data android:name="BDGameVersion" android:value="3.7.1" />
+        
+        <meta-data android:name="BDGameVersion" android:value="3.7.2" />
         
         <activity
             android:name="com.baidu.platformsdk.LoginActivity"
@@ -63,6 +65,12 @@
             android:exported="false"
             android:excludeFromRecents="true"
             android:theme="@style/bdp_dialog_style_fullscreen"/> 
+        <activity
+            android:name="com.baidu.platformsdk.ConcertActivity"
+            android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/bdp_style_transparent"/> 
         <activity
             android:name="com.baidu.platformsdk.BindPhoneActivity"
             android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
@@ -132,10 +140,9 @@
         <activity 
             android:name="com.baidu.platformsdk.wxpay.PayActivity"
             android:configChanges="orientation|navigation|screenSize|keyboard|keyboardHidden"
-            android:screenOrientation="portrait"
             android:exported="false"
             android:windowSoftInputMode="adjustPan"
-            android:theme="@style/bdp_dialog_style_fullscreen" />
+            android:theme="@style/bdp_style_transparent" />
         
         <activity 
             android:name="com.baidu.platformsdk.AuthenticateActivity"
@@ -393,7 +400,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/bdp_SapiTheme"
             android:windowSoftInputMode="adjustPan" />
-        <!-- ↑↑↑ passport ↑↑↑ -->  
+        <!-- ↑↑↑ passport ↑↑↑ -->
 
 
         <!-- ↓↓↓ 银联SDK ↓↓↓ -->
@@ -401,7 +408,7 @@
             android:name="com.unionpay.uppay.PayActivity"
             android:configChanges="orientation|keyboardHidden"
             android:excludeFromRecents="true"
-            android:screenOrientation="behind"
+            android:screenOrientation="landscape"
             android:windowSoftInputMode="adjustResize" />
         <!-- ↑↑↑ 银联SDK ↑↑↑ -->
         
@@ -431,7 +438,9 @@
         </activity>
         <!-- ↑↑↑ 支付宝插件 ↑↑↑ -->
         
-        <!-- ↓↓↓ QQ插件 需修改<data android:scheme="qwallet+packagename" />↓↓↓ -->
+        <!-- ↓↓↓ QQ插件 需修改<data android:scheme="qwallet"+packagename />
+            替换packagename为应用包名, 如：<data android:scheme="qwalletcom.baidu.test"
+            否则将无法收到支付结果通知！！ />↓↓↓ -->
         <activity 
             android:name="com.baidu.platformsdk.pay.channel.qqwallet.QQPayActivity" 
             android:launchMode="singleTop"
@@ -447,7 +456,9 @@
         </activity>
         <!-- ↑↑↑ QQ插件 ↑↑↑ -->
         
-        <!-- ↓↓↓ 多酷SDK ↓↓↓ -->   
+        <!-- ↓↓↓ 多酷SDK ↓↓↓ -->  
+         
+         <!-- ↓↓↓ 多酷SDK ↓↓↓ -->
         <activity
             android:name="com.duoku.platform.ui.DKContainerActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
@@ -492,7 +503,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
 
-                <data android:scheme="package" />
+                <data android:scheme="com.baidu.bdgamesdk.demo" />
             </intent-filter>
         </receiver>
 
@@ -559,14 +570,13 @@
             </intent-filter>
         </receiver>
 
-         <!-- 需修改android:authorities="com.baidu.bdgamesdk.demo"替换com.baidu.bdgamesdk.demo为您自己应用的包名, 如：android:authorities="com.baidu.test" -->
+         <!-- 需修改android:authorities="packagename"替换packagename为应用包名, 如：android:authorities="com.baidu.test" -->
         <provider
             android:name="com.duoku.platform.download.DownloadProvider"
             android:authorities="com.baidu.bdgamesdk.demo"
             android:exported="false" />
+        
         <!-- ↑↑↑ 多酷SDK ↑↑↑ -->
-
-        <!-- ↓↓↓ 录屏 ↓↓↓ -->
         <activity
             android:name="mobisocial.omlet.overlaybar.ui.activity.SigninActivity"
             android:hardwareAccelerated="true"
@@ -623,7 +633,7 @@
             android:authorities="com.baidu.bdgamesdk.demo.initializer"
             android:exported="false"
             android:initOrder="2147483647" />
-        <!-- ↑↑↑ 录屏 ↑↑↑ -->
+        
     </applicationCfg>
 
 </manifestConfig>

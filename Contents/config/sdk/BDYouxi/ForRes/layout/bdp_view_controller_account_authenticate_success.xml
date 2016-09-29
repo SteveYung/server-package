@@ -19,7 +19,6 @@
 	        />
 	    <!-- 认证成功 -->
 	    <TextView 
-	        android:id="@+id/txt_title"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_margin="10dip"
@@ -42,7 +41,7 @@
 	    />
 	
 	<ScrollView 
-	    android:id="@+id/sv_view"
+	    android:id="@+id/svView"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:padding="20dip"
@@ -55,7 +54,7 @@
 		    android:orientation="vertical" >
 	    
 		    <TextView 
-		        android:id="@+id/txt_name"
+		        android:id="@+id/txtName"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:padding="10dip"
@@ -65,7 +64,7 @@
 		        />
 		    
 		    <TextView 
-		        android:id="@+id/txt_id"
+		        android:id="@+id/txtId"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:padding="10dip"
@@ -75,7 +74,7 @@
 		        />
 		    
 		    <TextView 
-		        android:id="@+id/txt_age"
+		        android:id="@+id/txtAge"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:padding="10dip"
@@ -85,7 +84,7 @@
 		        />
 		    
 		    <Button 
-		        android:id="@+id/btn_complete"
+		        android:id="@+id/btnComplete"
 		        android:layout_width="match_parent"
 		        android:layout_height="40dip"
 		        android:layout_marginTop="10dip"

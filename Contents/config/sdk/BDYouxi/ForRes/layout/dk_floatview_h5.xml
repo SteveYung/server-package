@@ -107,8 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:orientation="vertical"
-                android:visibility="gone" >
+                android:orientation="vertical" >
 
                 <ImageView
                     android:id="@+id/dk_iv_network_error"
@@ -136,13 +135,22 @@
                     android:textColor="#ffffff"
                     android:textSize="@dimen/dk_text_size_16_sp" />
             </LinearLayout>
-
+            
             <WebView
                 android:id="@+id/float_web_view"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_above="@+id/dk_layout_tab"
                 android:layout_marginBottom="8dp" />
+            
+            <TextView
+                android:id="@+id/float_web_view_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/dk_tv_string_loading" />
+            
         </FrameLayout>
     </RelativeLayout>
 

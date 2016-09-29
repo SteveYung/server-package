@@ -50,8 +50,15 @@
     <color name="omp_purple_text_663366">#663366</color>
     <color name="omp_red_background_ff0064">#ff0064</color>
     <color name="omp_red_text_f06666">#f06666</color>
+    <color name="omp_video_edit_thumbnail_slider_background">#cc222222</color>
+    <color name="omp_video_edit_thumbnail_slider_default_color">#2f2f2f</color>
     <color name="omp_video_overlay_inner_background">#ff000000</color>
     <color name="omp_video_overlay_outer_background">#99000000</color>
+    
+    <eat-comment/>
+    <color name="omp_video_video_range_picker_thumb_changed_color">@color/omp_baidu_blue</color>
+    
+    <eat-comment/>
     <color name="omp_yellow_background_f6c621">#f6c621</color>
     <color name="omp_yellow_background_f6c82a">#f6c82a</color>
     <color name="omp_yellow_background_f7c826">#f7c826</color>
@@ -62,6 +69,7 @@
     <declare-styleable name="OmpFlowLayout_LayoutParams"><attr format="boolean" name="omp_layout_breakLine"/><attr format="dimension" name="omp_layout_horizontalSpacing"/></declare-styleable>
     <declare-styleable name="OmpRangeBar"><attr format="integer" name="omp_rb_tickCount"/><attr format="dimension" name="omp_rb_tickHeight"/><attr format="dimension" name="omp_rb_barWeight"/><attr format="reference|color" name="omp_rb_barColor"/><attr format="dimension" name="omp_rb_connectingLineWeight"/><attr format="reference|color" name="omp_rb_connectingLineColor"/><attr format="dimension" name="omp_rb_thumbRadius"/><attr format="reference" name="omp_rb_thumbImageNormal"/><attr format="reference" name="omp_rb_thumbImagePressed"/><attr format="reference|color" name="omp_rb_thumbColorNormal"/><attr format="reference|color" name="omp_rb_thumbColorPressed"/></declare-styleable>
     <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
+    <declare-styleable name="VideoRangePicker"><attr format="reference|color" name="omp_video_range_picker_thumbMovedColor"/></declare-styleable>
     
     <eat-comment/>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
@@ -73,6 +81,7 @@
     <dimen name="omp_gridview_space">10dp</dimen>
     <dimen name="omp_overlay_edge_margin">14dp</dimen>
     <dimen name="omp_overlay_margin">15dp</dimen>
+    <dimen name="omp_trim_video_tool_thumb_width">24dp</dimen>
     <dimen name="omp_video_overlay_bottom_bar_height">50dp</dimen>
     <dimen name="omp_video_overlay_top_bar_height">38dp</dimen>
     
@@ -95,10 +104,12 @@
     <string name="omp_already_signed_in">Already signed in!</string>
     <string name="omp_bitmapLoader_problem_saving_screenshot">There was a problem saving this screenshot. Please try again.</string>
     <string name="omp_bitmapLoader_saved_successfully">Saved Successfully!</string>
+    <string name="omp_button_cancelling">Cancelling</string>
     <string name="omp_button_close">Close</string>
     <string name="omp_button_record_video">Video</string>
     <string name="omp_button_saving">Saving</string>
     <string name="omp_button_screenshot">Camera</string>
+    <string name="omp_button_stopping">Stopping</string>
     <string name="omp_cancel">Cancel</string>
     <string name="omp_capture_it_catchphrase"/>
     <string name="omp_change_nickname">Change Nickname</string>
@@ -131,6 +142,7 @@
     <string name="omp_legend_of_the_turret">Arcade Videos</string>
     <string name="omp_likes">likes</string>
     <string name="omp_login_baidu_again">Your login session is expired, will help you automatically login again!</string>
+    <string name="omp_login_baidu_again2">Your login session is expired, please login again!</string>
     <string name="omp_login_baidu_first">You need to login Baidu account first!</string>
     <string name="omp_mediaItemAdapter_description_for_video">"description for video "</string>
     <string name="omp_mediaItemAdapter_poster">"poster "</string>
@@ -284,10 +296,10 @@
     <string name="omp_upload_successful_screenshot">Screenshot Uploaded!</string>
     <string name="omp_upload_successful_video">Video Uploaded!</string>
     <string name="omp_upload_video_edit_name_description">You will use this name to post videos and screenshots to the forum. You will not be able to change the name</string>
-    <string name="omp_upload_video_edit_name_hint">Add Username</string>
+    <string name="omp_upload_video_edit_name_hint">*Add Username</string>
     <string name="omp_upload_video_edit_name_registered_description">You will use this name to post videos and screenshots to the forum.</string>
     <string name="omp_upload_video_edit_text_description_hint">Add description</string>
-    <string name="omp_upload_video_edit_text_title_hint">Add Title</string>
+    <string name="omp_upload_video_edit_text_title_hint">*Add Title</string>
     <string name="omp_upload_video_name_error_access_error">The network is not good. Please try again later.</string>
     <string name="omp_upload_video_name_error_empty">Please input a username.</string>
     <string name="omp_upload_video_name_error_existed">This name is registered. Please try another one.</string>
@@ -321,7 +333,7 @@
     <string name="omp_video_details_cannot_open_video">Cannot play this video!</string>
     <string name="omp_video_details_download">Download</string>
     <string name="omp_video_length_too_long_dialog_description">Your video is longer than %s. We will use video editor to trim video later.</string>
-    <string name="omp_video_length_too_short_dialog_description">Your recording is shorter than %d seconds. We will keep recording.</string>
+    <string name="omp_video_length_too_short_dialog_description">Cancelled the recording. Please record a video longer than %d seconds.</string>
     <string name="omp_video_length_too_short_dialog_title">Video too short!</string>
     <string name="omp_video_preview_toast_save_failed">Cannot save video!</string>
     <string name="omp_video_preview_toast_save_succeeded">Video saved to device!</string>

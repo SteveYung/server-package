@@ -24,7 +24,7 @@
 	        />
         
         <Button 
-            android:id="@+id/btn_name_1"
+            android:id="@+id/btnName1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dip"
@@ -35,7 +35,7 @@
             />
         
         <Button 
-            android:id="@+id/btn_name_2"
+            android:id="@+id/btnName2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
@@ -47,7 +47,7 @@
             />
         
         <Button 
-            android:id="@+id/btn_name_3"
+            android:id="@+id/btnName3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
@@ -61,7 +61,7 @@
     </LinearLayout>
     
     <ImageView 
-        android:id="@+id/img_close"
+        android:id="@+id/imgClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

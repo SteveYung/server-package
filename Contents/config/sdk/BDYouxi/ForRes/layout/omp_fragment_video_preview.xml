@@ -84,12 +84,13 @@
                     android:id="@+id/image_edit_upload"
                     android:layout_width="34dp"
                     android:layout_height="34dp"
-                    android:src="@drawable/omp_btn_edit_upload_normal"/>
+                    android:src="@drawable/omp_btn_edit_upload_normal"
+                    android:visibility="gone"/>
                 <TextView
                     android:id="@+id/textview_upload"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/omp_upload"
+                    android:text="@string/omp_title_next"
                     style="@style/omp_video_overlay_top_bar_button"
                     android:textSize="16sp"/>
             </LinearLayout>

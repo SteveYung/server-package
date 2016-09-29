@@ -130,7 +130,8 @@
                 android:layout_height="24dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="12dp"
-                android:background="@drawable/omp_ic_upload_warning"/>
+                android:background="@drawable/omp_ic_upload_warning"
+                android:visibility="gone"/>
         </LinearLayout>
 
         <EditText

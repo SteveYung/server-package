@@ -44,7 +44,7 @@
 	            android:gravity="center">
 	            
 	            <TextView 
-	                android:id="@+id/txt_tab_login"
+	                android:id="@+id/txtTabLogin"
 	                android:layout_width="0dip"
 	                android:layout_height="wrap_content"
 	                android:layout_weight="1"
@@ -55,7 +55,7 @@
 	                />
 	            
 	            <TextView 
-	                android:id="@+id/txt_tab_register"
+	                android:id="@+id/txtTabRegister"
 	                android:layout_width="0dip"
 	                android:layout_height="wrap_content"
 	                android:layout_weight="1"
@@ -82,7 +82,7 @@
 		            android:orientation="horizontal" >
 		
 		            <EditText
-		                android:id="@+id/edt_account"
+		                android:id="@+id/edtAccount"
 		                android:layout_width="0dip"
 		                android:layout_height="wrap_content"
 		                android:layout_weight="1"
@@ -97,7 +97,7 @@
 		                android:background="@null" />
 		
 		            <ImageView
-		                android:id="@+id/img_account_del"
+		                android:id="@+id/imgAccountDel"
 		                android:layout_width="30dip"
 		                android:layout_height="40dip"
 		                android:scaleType="center"
@@ -121,7 +121,7 @@
 		            android:orientation="horizontal" >
 		
 		            <EditText
-		                android:id="@+id/edt_pass"
+		                android:id="@+id/edtPass"
 		                android:layout_width="0dip"
 		                android:layout_height="wrap_content"
 		                android:layout_weight="1"
@@ -138,7 +138,7 @@
 		                android:background="@null" />
 		
 		            <ImageView
-		                android:id="@+id/img_pass_del"
+		                android:id="@+id/imgPassDel"
 		                android:layout_width="30dip"
 		                android:layout_height="40dip"
 		                android:scaleType="center"
@@ -147,7 +147,7 @@
 		                android:visibility="invisible" />
 		
 		            <ImageView
-		                android:id="@+id/img_show_pwd"
+		                android:id="@+id/imgShowPwd"
 		                android:layout_width="wrap_content"
 		                android:layout_height="40dip"
 		                android:src="@drawable/bdp_account_icon_pwd_hidden"
@@ -156,7 +156,7 @@
 	        </LinearLayout>
 	        
 	        <LinearLayout 
-	            android:id="@+id/lin_verifycode"
+	            android:id="@+id/linVerifycode"
 	            android:layout_width="match_parent"
 	            android:layout_height="40dip"
 	            android:layout_marginTop="3dip"
@@ -167,7 +167,7 @@
 	            android:background="@drawable/bdp_bg_light_gray_round_no_padding">
 		        
 	            <EditText 
-	                android:id="@+id/edt_verifycode"
+	                android:id="@+id/edtVerifycode"
 	                android:layout_width="0dip"
 	                android:layout_height="40dip"
 	                android:layout_weight="1"
@@ -185,7 +185,7 @@
 	                />
 	            
 	            <ImageView 
-	                android:id="@+id/img_verifycode_del"
+	                android:id="@+id/imgVerifycodeDel"
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
 	                android:layout_marginRight="5dip"
@@ -199,7 +199,7 @@
 	                android:layout_height="40dip" >
 	
 	                <ImageView
-	                    android:id="@+id/img_verifycode"
+	                    android:id="@+id/imgVerifycode"
 	                    android:layout_width="fill_parent"
 	                    android:layout_height="fill_parent"
 	                    android:contentDescription="@string/bdp_image"
@@ -213,7 +213,7 @@
 	                    android:layout_height="fill_parent" >
 	
 	                    <ImageView
-	                        android:id="@+id/img_verifycode_loading"
+	                        android:id="@+id/imgVerifycodeLoading"
 	                        android:layout_width="wrap_content"
 	                        android:layout_height="wrap_content"
 	                        android:layout_centerInParent="true"
@@ -223,7 +223,7 @@
 	                </RelativeLayout>
 	            </FrameLayout>
 	            <ImageView 
-	                android:id="@+id/img_change_verifycode"
+	                android:id="@+id/imgChangeVerifycode"
 	                android:layout_width="wrap_content"
 	                android:layout_height="40dip"
 	                android:scaleType="fitXY"
@@ -233,7 +233,7 @@
             </LinearLayout>
             
             <Button 
-                android:id="@+id/btn_submit"
+                android:id="@+id/btnSubmit"
                 android:layout_width="match_parent"
                 android:layout_height="40dip"
                 android:layout_marginTop="18dip"
@@ -246,7 +246,7 @@
                 />
             
             <TextView 
-                android:id="@+id/txt_fast_upgrade"
+                android:id="@+id/txtFastUpgrade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dip"
@@ -258,7 +258,7 @@
 	    </LinearLayout>
 	    
 	    <ImageView 
-	        android:id="@+id/img_close"
+	        android:id="@+id/imgClose"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignParentTop="true"
