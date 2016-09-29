@@ -7,11 +7,11 @@
     <applicationCfg keyword="com.rsdk.framework.PayActivity">
         <activity
             android:name="com.rsdk.framework.PayActivity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.rsdk.framework.PayResultActivity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
             <intent-filter>
                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
