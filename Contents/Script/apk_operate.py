@@ -1,3 +1,4 @@
+#coding=utf-8
 # 2015.01.17 10:32:27 CST
 #Embedded file name: /Projects/GitLab/rsdk_package/Env/Script/apk_operate.py
 from xml.etree import ElementTree as ET
@@ -229,6 +230,7 @@ def signApkAuto(apkFile, game, channel):
         # print ('<---sign Apk ret--->%d' %(ret))
         if ret:
             return 1
+        file_operate.reportError(int("sign with channel info success",threading.currentThread().getName()), 0)
     else:
         print('<---apk sign with gameInfo--->')
         keystoreFile = keystore.get('file')
@@ -242,9 +244,9 @@ def signApkAuto(apkFile, game, channel):
             if ret:
                 file_operate.reportError(int("sign with gameinfo fail",threading.currentThread().getName()))
                 return 1
-            file_operate.reportError(int("sign with game success",threading.currentThread().getName()))
+            file_operate.reportError(int("sign with gameinfo success",threading.currentThread().getName()), 0)
         else:
-            file_operate.reportError(int("sgin error",threading.currentThread().getName()))
+            file_operate.reportError(int("sign error",threading.currentThread().getName()))
             return 1
     return 0
 
@@ -1588,7 +1590,7 @@ def writeDataIntoAndroidManifest(decompileDir, channel):
     targetTree.write(manifestFile, 'UTF-8')
 
 def get_all_method_count(workDir, channel):
-    """ 读取插件中的 classfilter.xml 文件, 获取插件中 dex 文件的方法数 """
+
     methodNum = 0
     for Channel_SDK in channel['sdkLs']:
         idSDK = Channel_SDK['idSDK']
@@ -1596,6 +1598,7 @@ def get_all_method_count(workDir, channel):
         if SDK == None:
             continue
         SDKDestDir = workDir + '/sdk/' + SDK['SDKName']
+
         classesXml = SDKDestDir + '/classfilter.xml'
         if not os.path.exists(classesXml):
             continue
@@ -1603,10 +1606,11 @@ def get_all_method_count(workDir, channel):
         rootLabel = tree.getroot()
         for num in rootLabel.findall('number'):
             methodNum += int(num.text)
+        file_operate.reportError(SDK['SDKName']+"mothed number= %s " %(methodNum),threading.currentThread().getName(), 0)
     return methodNum
 
 def get_all_class_fillter(workDir, channel):
-    """ 读取插件中的 classfilter.xml 文件, 获取需要忽略的类文件列表 """
+
     clasFillters = []
     for Channel_SDK in channel['sdkLs']:
         idSDK = Channel_SDK['idSDK']
@@ -1719,6 +1723,7 @@ def splitDex(workDir, channel):
     maxMinorFucNum = 40000
 
     if currDexFunNum < maxMainFucNum:
+        file_operate.reportError("mothed number safe", threading.currentThread().getName(), 0)
         return 0
 
     # 需要移动的方法数

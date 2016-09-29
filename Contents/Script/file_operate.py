@@ -293,7 +293,7 @@ def reportCmdError(cmd, stdoutput, erroutput):
     reportError(errorLog, int(threading.currentThread().getName()))
 
 
-def reportError(errorOuput, idChannel):
+def reportError(errorOuput, idChannel,iserror = 1):
     """
     """
     packageName = ''
@@ -305,14 +305,23 @@ def reportError(errorOuput, idChannel):
             channelName = str(channel['name']).encode('gbk')
         else:
             channelName = channel['name'].decode('utf8').encode('gbk')
-    error = '==================>>>> ERROR <<<<==================\r\n'
-    error += '[rsdk_Channel]: ' + threading.currentThread().getName() + '\r\n'
-    error += '[rsdk_ChannelName]: ' + channelName + '\r\n'
-    error += '[rsdk_Package]: ' + packageName + '\r\n'
-    error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
-    error += '[rsdk_Error]:\r\n'
-    error += errorOuput + '\r\n'
-    error += '===================================================\r\n'
+    if(iserror == 1):
+        error = '==================>>>> ERROR <<<<==================\r\n'
+        error += '[rsdk_Channel]: ' + threading.currentThread().getName() + '\r\n'
+        error += '[rsdk_ChannelName]: ' + channelName + '\r\n'
+        error += '[rsdk_Package]: ' + packageName + '\r\n'
+        error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+        error += errorOuput + '\r\n'
+        error += '==================================================\r\n'
+    else:
+        error = '==================>>>> INFO <<<<==================\r\n'
+        error += '[rsdk_Channel]: ' + threading.currentThread().getName() + '\r\n'
+        error += '[rsdk_ChannelName]: ' + channelName + '\r\n'
+        error += '[rsdk_Package]: ' + packageName + '\r\n'
+        error += '[rsdk_Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+        error += errorOuput + '\r\n'
+        error += '===================================================\r\n'
+
     log(error)
 
 
