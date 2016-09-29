@@ -7,7 +7,7 @@ import re
 import subprocess
 import platform
 from config import ConfigParse
-import inspect
+
 import sys
 import codecs
 import threading
@@ -300,11 +300,7 @@ def reportError(errorOuput, idChannel,iserror = 1):
     channel = ConfigParse.shareInstance().findChannel(idChannel)
     if channel != None and channel.get('packNameSuffix') != None:
         packageName = str(channel['packNameSuffix'])
-        channelName = str(channel['name'])
-        if platform.system() == 'Windows':
-            channelName = str(channel['name']).encode('gbk')
-        else:
-            channelName = channel['name'].decode('utf8').encode('gbk')
+        channelName = channel['name'].decode('utf8').encode('gbk')
     if(iserror == 1):
         error = '==================>>>> ERROR <<<<==================\r\n'
         error += '[rsdk_Channel]: ' + threading.currentThread().getName() + '\r\n'
