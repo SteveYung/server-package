@@ -43,9 +43,9 @@ class packThreadManager(object):
         #print '<---TASK INFO--->%s' %(packageLs)
     	for package in packageLs:
             idChannel = package['idChannel']
-            # if idChannel in self.__finishChannel:
+            if idChannel in self.__finishChannel:
                 #print '<---...CONTINUE WORKING...--->'
-		        # continue
+		continue
             pkThread = self.getIdleThread()
             if pkThread is None:
                 return
