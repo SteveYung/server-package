@@ -240,12 +240,12 @@ def signApkAuto(apkFile, game, channel):
             print '<---gamekeystoreFile--->'+gamekeystoreDir+'game.keystore'
             ret = signApk(apkFile, gamekeystoreDir+'game.keystore', keystore.get('storepassword'), keystore.get('keyalias'), keystore.get('aliaspassword'))
             if ret:
+                file_operate.reportError(int("sign with gameinfo fail",threading.currentThread().getName()))
                 return 1
+            file_operate.reportError(int("sign with game success",threading.currentThread().getName()))
         else:
-            keystoreFile = file_operate.getFullPath('../config/keystore/default.keystore')
-            ret = signApk(apkFile, keystoreFile, '123456', '123456', '123456')
-            if ret:
-                return 1
+            file_operate.reportError(int("sgin error",threading.currentThread().getName()))
+            return 1
     return 0
 
 
@@ -1588,7 +1588,7 @@ def writeDataIntoAndroidManifest(decompileDir, channel):
     targetTree.write(manifestFile, 'UTF-8')
 
 def get_all_method_count(workDir, channel):
-    """ get number value in sdk classes.xml, the number value is smali method count in classes.dex """
+    """ 读取插件中的 classfilter.xml 文件, 获取插件中 dex 文件的方法数 """
     methodNum = 0
     for Channel_SDK in channel['sdkLs']:
         idSDK = Channel_SDK['idSDK']
@@ -1606,7 +1606,7 @@ def get_all_method_count(workDir, channel):
     return methodNum
 
 def get_all_class_fillter(workDir, channel):
-    """ get packages value in sdk classes.xml file, the packages value is mainClassList"""
+    """ 读取插件中的 classfilter.xml 文件, 获取需要忽略的类文件列表 """
     clasFillters = []
     for Channel_SDK in channel['sdkLs']:
         idSDK = Channel_SDK['idSDK']
@@ -1624,13 +1624,13 @@ def get_all_class_fillter(workDir, channel):
     return clasFillters
 
 def file_list(dir, filelist = []):
-    """ get smali list in decompile folder """
+    """ 获取文件夹下所有文件列表，包括子文件夹 """
     for root, dirs, files in os.walk(dir):
         for file in files:
             filelist.append(root + '/' + file)
 
 def get_smali_method_count(smaliFile, allMethods, allClasNums):
-    """ smali method count """
+    """ 扫描 smali 文件中的方法数 """
     if not os.path.exists(smaliFile):
         allClasNums[smaliFile] = 0
         return 0
@@ -1706,23 +1706,30 @@ def parse_method_invoke(line):
     return blocks[len(blocks)-1]
 
 def splitDex(workDir, channel):
-    """ multidex """
+    """ 分包 """
+
+    # 获取总方法数
     currDexFunNum = get_all_method_count(workDir, channel)
     # print currDexFunNum
 
-    maxMainFucNum = 60000
+    # 最大方法数
+    maxMainFucNum = 50000
 
+    # 从 dex 最大方法数
     maxMinorFucNum = 40000
 
     if currDexFunNum < maxMainFucNum:
         return 0
 
+    # 需要移动的方法数
     currDexFunNum -= maxMainFucNum
 
+    # 获取 smali 文件列表
     fileList = []
     samilDir = workDir + '/decompile/smali'
     file_list(samilDir, fileList)
 
+    # 方法数统计，统计时间长，将该功能移除
     # allRefs = []
     # allClasNum = {}
     # currDexFunNum = 0
@@ -1739,12 +1746,15 @@ def splitDex(workDir, channel):
     samilDir = workDir + '/decompile/smali'
     decompileDir = workDir + '/decompile'
 
+    # 添加分包支持代码
     multidexPath = file_operate.get_server_dir()+'/config/channel/android-support-multidex.dex'
     multidexPath = file_operate.getFullPath(multidexPath)
     ret = dexTrans2Smali(multidexPath, samilDir, 10)
     if ret:
         return 1
 
+    # 添加分包支持 MultiDexApplication
+    # 目前只支持没有额外 Application 的 SDK
     ManifestDir = os.path.join(decompileDir, 'AndroidManifest.xml')
     ET.register_namespace('android', androidNS)
     tree = ET.parse(ManifestDir)
@@ -1754,6 +1764,7 @@ def splitDex(workDir, channel):
     application.set(attr_Name, 'android.support.multidex.MultiDexApplication')
     tree.write(ManifestDir, 'utf-8')
 
+    # 创建从 dex 文件夹，下标从2开始
     fileList = []
     file_list(samilDir, fileList)
     currDexIndex = 2
@@ -1766,6 +1777,8 @@ def splitDex(workDir, channel):
     moveFuncNum = 0
     moveFunCount = 0
     allRefs = []
+
+    # smali 文件转移
     for f in fileList:
         if 'android/support' in f:
             continue
@@ -1773,6 +1786,7 @@ def splitDex(workDir, channel):
         if 'com/rsdk/framework' in f:
             continue
 
+        # 跳过不需要转移的 smali
         isContinue = False
         for c in clasFillters:
             if c in f:
@@ -1785,17 +1799,20 @@ def splitDex(workDir, channel):
         allClasNum = {}
         get_smali_method_count(f, allRefs, allClasNum)
         moveFuncNum += allClasNum[f]
-        moveFunCount += moveFuncNum
+        moveFunCount += allClasNum[f]
 
+        # 如果移动的方法数超过了需要移动的方法数就结束分包
         if moveFunCount >= currDexFunNum:
             break
 
+        # 如果从 dex 文件夹容纳的方法数超过限制就创建新的从 dex 文件夹
         if moveFuncNum >= maxMinorFucNum:
             moveFuncNum = 0
             currDexIndex += 1
             newDexPath = os.path.join(decompileDir, "smali_classes"+str(currDexIndex))
             os.makedirs(newDexPath)
 
+        # 转移 smali 文件至从 dex 文件夹，并删除主 dex 中相应的 smali 文件
         targetPath = f[0:len(decompileDir)] + "/smali_classes"+str(currDexIndex) + f[len(samilDir):]
         file_operate.copyFiles(f, targetPath)
         file_operate.delete_file_folder(f)
