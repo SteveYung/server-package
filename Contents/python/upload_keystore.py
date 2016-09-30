@@ -26,6 +26,7 @@ def updataKeystoreFile(database):
     conn = MySQLdb.connect(host = db_host,port=db_port,user = db_user,passwd = db_pwd)
     conn.select_db(database)
     curs = conn.cursor(MySQLdb.cursors.DictCursor)
+    curs.execute('set names utf8')
     curs.execute('SELECT game.gameName,channel.name,channel.keystoreFile,channel.keystorePwd,channel.keystoreAlias,channel.keystoreAliasPwd FROM tpl_channel channel JOIN game ON channel.idGame = game.gameId AND channel.keystoreFile IS NOT NULL AND channel.keystoreFile != ""')
     results = curs.fetchall()
     for r in results:
