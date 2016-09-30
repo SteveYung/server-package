@@ -5,7 +5,6 @@ import codecs
 import subprocess
 import time
 import ConfigParser
-import file_operate
 
 db_host = ''
 db_port = ''
@@ -86,7 +85,7 @@ def updateToGit():
 
 
 cf = ConfigParser.ConfigParser()
-cf.read(file_operate.get_server_dir()+"/config/db_config.ini")
+cf.read(backupDir+"../server_sdk_pack/config/db_config.ini")
 databasesList = cf.options("dbconf")
 
 
