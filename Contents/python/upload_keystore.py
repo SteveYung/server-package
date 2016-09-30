@@ -4,11 +4,13 @@ import os
 import codecs
 import subprocess
 import time
+import ConfigParser
 
+db_host = ''
+db_port = ''
+db_user = ''
+db_pwd = ''
 
-
-
-databasesList = ['rsdk_rayjoy','rsdk_rproj','rsdk_xdzz','rsdk_xproj','rsdk_zhangbizheng']
 
 backupDir = '/data/plattech/game-keystore-backup/'
 
@@ -19,7 +21,9 @@ def log(content,dirfile,mode):
 
 
 def updataKeystoreFile(database):
-    conn = MySQLdb.connect(host = '10.66.118.154',port=3307,user = 'root',passwd = 'ycfwkX6312')
+
+
+    conn = MySQLdb.connect(host = db_host,port=db_port,user = db_user,passwd = db_pwd)
     conn.select_db(database)
     curs = conn.cursor(MySQLdb.cursors.DictCursor)
     curs.execute('SELECT game.gameName,channel.name,channel.keystoreFile,channel.keystorePwd,channel.keystoreAlias,channel.keystoreAliasPwd FROM tpl_channel channel JOIN game ON channel.idGame = game.gameId AND channel.keystoreFile IS NOT NULL AND channel.keystoreFile != ""')
@@ -76,6 +80,19 @@ def updateToGit():
     stdoutput, erroutput = s.communicate()
     content =  content+'\r\n++++>cmd:git push\r\n++++>output:'+stdoutput+'\r\n++++>result:'+erroutput+'\r\n'+'<++++END++++>'+'\r\n'
     log(content,dateDIR,'a+')
+
+
+
+
+cf = ConfigParser.ConfigParser()
+cf.read(file_operate.get_server_dir()+"/config/db_config.ini")
+databasesList = cf.options("dbconf")
+
+
+db_host = cf.get("mysqlconf", "host")
+db_port = cf.getint("mysqlconf", "port")
+db_user = cf.get("mysqlconf", "user")
+db_pwd = cf.get("mysqlconf", "password")
 
 for database in databasesList:
     updataKeystoreFile(database)

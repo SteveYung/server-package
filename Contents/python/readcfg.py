@@ -1,6 +1,11 @@
 
 import ConfigParser
 
+db_host =''
+db_port = ''
+db_user = ''
+db_pwd = ''
+
 cf = ConfigParser.ConfigParser()
 cf.read("../config/db_config.ini")
 
