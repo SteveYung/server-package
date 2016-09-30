@@ -5,6 +5,7 @@ import codecs
 import subprocess
 import time
 import ConfigParser
+import file_operate
 
 db_host = ''
 db_port = ''
