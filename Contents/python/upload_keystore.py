@@ -11,7 +11,7 @@ db_port = ''
 db_user = ''
 db_pwd = ''
 
-
+db_config_dir = '/data/plattech/server_sdk_pack/config/db_config.ini'
 backupDir = '/data/plattech/game-keystore-backup/'
 
 def log(content,dirfile,mode):
@@ -85,7 +85,7 @@ def updateToGit():
 
 
 cf = ConfigParser.ConfigParser()
-cf.read(backupDir+"../server_sdk_pack/config/db_config.ini")
+cf.read(db_config_dir)
 databasesList = cf.options("dbconf")
 
 
