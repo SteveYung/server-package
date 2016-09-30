@@ -7,11 +7,11 @@ import time
 import ConfigParser
 
 db_host = ''
-db_port = ''
+db_port = 0
 db_user = ''
 db_pwd = ''
 
-db_config_dir = '/data/plattech/server_sdk_pack/config/db_config.ini'
+db_config_dir = '/data/plattech/server_sdk_pack/Contents/config/db_config.ini'
 backupDir = '/data/plattech/game-keystore-backup/'
 
 def log(content,dirfile,mode):
