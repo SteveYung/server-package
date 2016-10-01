@@ -63,7 +63,6 @@ def updataKeystoreFile(database):
 
 
 def updateToGit():
-    subprocess.Popen('cd '+backupDir, shell=True)
     dateDIR = backupDir+'backup.log'
     s = subprocess.Popen('git pull', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdoutput, erroutput = s.communicate()
