@@ -80,8 +80,8 @@ def copyFile(sourceFile, targetFile):
         print "111115"+sourceFile
         sourceFileHandle = open(sourceFile, 'rb')
         print "111116"
-        targetFileHandle.write(sourceFileHandle.read())
-        print "111117"
+        ret = targetFileHandle.write(sourceFileHandle.read())
+        print "111117 " + ret
         targetFileHandle.close()
         sourceFileHandle.close()
 
