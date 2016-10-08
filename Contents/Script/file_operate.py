@@ -75,13 +75,10 @@ def copyFile(sourceFile, targetFile):
         targetDir = os.path.dirname(targetFile)
         if not os.path.exists(targetDir):
             os.makedirs(targetDir)
-        print "111114 gargetfile:"+targetFile
         targetFileHandle = open(targetFile, 'wb')
-        print "111115"+sourceFile
         sourceFileHandle = open(sourceFile, 'rb')
-        print "111116"
         ret = targetFileHandle.write(sourceFileHandle.read())
-        print "111117 " + ret
+        print "111117 %s" %(ret)
         targetFileHandle.close()
         sourceFileHandle.close()
 
