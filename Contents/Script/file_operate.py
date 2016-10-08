@@ -77,9 +77,11 @@ def copyFile(sourceFile, targetFile):
             os.makedirs(targetDir)
         print "111114"
         targetFileHandle = open(targetFile, 'wb')
-        sourceFileHandle = open(sourceFile, 'rb')
-        targetFileHandle.write(sourceFileHandle.read())
         print "111115"
+        sourceFileHandle = open(sourceFile, 'rb')
+        print "111116"
+        targetFileHandle.write(sourceFileHandle.read())
+        print "111117"
         targetFileHandle.close()
         sourceFileHandle.close()
 
