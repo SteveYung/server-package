@@ -75,7 +75,7 @@ def copyFile(sourceFile, targetFile):
         targetDir = os.path.dirname(targetFile)
         if not os.path.exists(targetDir):
             os.makedirs(targetDir)
-        execFormatCmd('cp -f %s %s ' %(sourceFile,targetDir))
+        execFormatCmd('cp -f -a %s %s ' %(sourceFile,targetDir))
 
         # targetFileHandle = open(targetFile, 'wb')
         # sourceFileHandle = open(sourceFile, 'rb')
