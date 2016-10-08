@@ -70,6 +70,7 @@ def copyFile(sourceFile, targetFile):
     sourceFile = getFullPath(sourceFile)
     targetFile = getFullPath(targetFile)
     if not os.path.exists(sourceFile):
+        print "111111"
         return
     if not os.path.exists(targetFile) or os.path.exists(targetFile) and os.path.getsize(targetFile) != os.path.getsize(sourceFile):
         targetDir = os.path.dirname(targetFile)

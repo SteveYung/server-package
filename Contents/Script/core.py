@@ -58,10 +58,8 @@ def main(channel):
         workDir = file_operate.getFullPath(workDir)
         file_operate.delete_file_folder(workDir)
         if not os.path.exists(source):
-            print "------1112"
             error_operate.error(60)
             return
-        print "------111"
         tmpApkSource = workDir + '/temp.apk'
         file_operate.copyFile(source, tmpApkSource)
         print 'tmpApkSource-->'+ tmpApkSource
