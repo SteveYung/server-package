@@ -76,7 +76,7 @@ def copyFile(sourceFile, targetFile):
         if not os.path.exists(targetDir):
             os.makedirs(targetDir)
         execFormatCmd('cp -f -a %s %s ' %(sourceFile,targetDir))
-
+        execFormatCmd('sudo chmod 777 %s' % (targetDir))
         # targetFileHandle = open(targetFile, 'wb')
         # sourceFileHandle = open(sourceFile, 'rb')
         # targetFileHandle.write(sourceFileHandle.read())
