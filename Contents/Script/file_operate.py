@@ -75,14 +75,13 @@ def copyFile(sourceFile, targetFile):
         targetDir = os.path.dirname(targetFile)
         if not os.path.exists(targetDir):
             os.makedirs(targetDir)
-        targetFileHandle = open(targetFile, 'wb')
-        sourceFileHandle = open(sourceFile, 'rb')
-        try:
-            targetFileHandle.write(sourceFileHandle.read())
-        except Exception as e:
-            print "Exception %s" %(e)
-        targetFileHandle.close()
-        sourceFileHandle.close()
+        execFormatCmd('cp -f %s %s ' %(sourceFile,targetDir))
+
+        # targetFileHandle = open(targetFile, 'wb')
+        # sourceFileHandle = open(sourceFile, 'rb')
+        # targetFileHandle.write(sourceFileHandle.read())
+        # targetFileHandle.close()
+        # sourceFileHandle.close()
 
 
 def copyApkToZip(filename):
