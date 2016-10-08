@@ -77,8 +77,10 @@ def copyFile(sourceFile, targetFile):
             os.makedirs(targetDir)
         targetFileHandle = open(targetFile, 'wb')
         sourceFileHandle = open(sourceFile, 'rb')
-        ret = targetFileHandle.write(sourceFileHandle.read())
-        print "111117 %s" %(ret)
+        try:
+            targetFileHandle.write(sourceFileHandle.read())
+        except Exception as e:
+            print "Exception %s" %(e)
         targetFileHandle.close()
         sourceFileHandle.close()
 
