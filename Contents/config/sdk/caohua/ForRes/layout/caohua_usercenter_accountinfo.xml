@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ededeb"
+   >
+ 
+   <include 
+       layout="@layout/caohua_main_sdk"
+       android:id="@+id/include2"
+       android:visibility="gone"
+       />
+   
+   <!-- 第一行 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/body_rela"
+        android:background="#3BAB25"
+        
+        >
+        <!-- android:src="ch_my_hand" -->
+       
+        <ImageView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/iv_user_img"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/caohua_user_name"
+            android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+            android:background="@drawable/ch_my_hand_no"
+           />
+        <TextView 
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/caohua_user_name_value"
+            android:textSize="15sp"  
+            android:textColor="#ffffff"       
+            android:layout_toRightOf="@id/iv_user_img"
+            android:layout_alignTop="@id/iv_user_img"
+           
+            />
+        <TextView 
+            android:id="@+id/user_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+         	android:textSize="15sp" 
+         	android:layout_centerVertical="true"
+         	android:layout_below="@id/tv_name"
+         	android:layout_alignLeft="@id/tv_name" 
+         	android:layout_marginTop="5dp"
+            android:visibility="gone"
+            />
+        <ImageView 
+            android:contentDescription="@string/caohua_exit"
+            android:id="@+id/iv_edit"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+		    android:scaleType="centerCrop"
+			android:layout_alignBottom="@id/tv_name"
+			android:background="@drawable/exit_new"
+			android:visibility="gone"
+	     />
+        
+    </RelativeLayout>
+
+    <!-- 第二行 -->
+  	<LinearLayout
+  	    android:layout_width="match_parent"
+  	    android:layout_height="80dp"
+  	    android:orientation="horizontal"
+  	    android:baselineAligned="true"
+  	    android:background="#FFFFFF"
+  	    >
+  	    <FrameLayout 
+  	        android:layout_width="0dp"
+  	        android:layout_height="match_parent"
+  	        android:layout_weight="1"
+  	      
+  	        >
+        	<Button 
+        	    android:id="@+id/iv_refresh"
+        	    android:layout_width="20dp"
+        	    android:layout_height="20dp"
+        	    android:layout_margin="5dp"
+        	    android:background="@drawable/caohua_shuaxin"
+        	    android:layout_gravity="right"
+        	    />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|bottom"
+            >
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+            <TextView
+                android:id="@+id/caohua_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:text="0"
+                android:textColor="#F7C1A9"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/caohua_num"
+                android:gravity="center"
+                android:text="@string/caohua_ge"
+                android:textColor="#F7C1A9"
+                android:textSize="15sp" />
+            </LinearLayout>
+        
+        	
+
+            <TextView
+                android:id="@+id/caohua_bi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/caohua_num"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#525252"
+                android:gravity="center"
+                android:text="草花币"
+                android:paddingBottom="10dp"
+                android:textSize="15sp" />
+            </LinearLayout>
+            
+               <View
+  	             android:layout_width="1dp"
+  	             android:layout_height="match_parent"
+  	             android:background="#EDEDEB"
+  	             android:layout_gravity="right"
+  	             
+  	             />
+
+  	    </FrameLayout>
+  	    
+  	     <FrameLayout
+  	        android:layout_width="0dp"
+  	        android:layout_height="match_parent"
+  	        android:layout_weight="1"
+  	        android:orientation="horizontal"
+  	        >
+              
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:orientation="vertical"
+                   android:paddingBottom="10dp"
+                   android:background="#ffffff" 
+                   android:gravity="center_horizontal|bottom"
+                   >
+                    <Button 
+	        	    android:id="@+id/iv_caohudou"
+	        	    android:layout_width="20dp"
+	        	    android:layout_height="20dp"
+	        	    android:layout_marginRight="6dp"
+	        	    android:background="@drawable/caohuadou"
+	        	    android:layout_gravity="right"
+        	    	/>
+                 <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     >  
+               
+  	        <TextView
+                android:id="@+id/caohua_score"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A2D76C"
+                android:textSize="20sp" />
+  	        
+  	        <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/caohua_score"
+                android:gravity="center"
+                android:text="@string/caohua_user_score"
+                android:textColor="#A2D76C"
+                android:textSize="15sp" />
+  	        </LinearLayout>
+            
+                 <TextView
+                android:id="@+id/caohua_core"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/caohua_score"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="#525252"
+                android:text="草花豆"
+                android:textSize="15sp" />
+            </LinearLayout>
+
+             <TextView
+  	             android:layout_width="1dp"
+  	             android:layout_height="fill_parent"
+  	             android:background="#ebebeb"
+  	             android:layout_gravity="right"
+  	             />
+
+  	        
+  	     </FrameLayout>
+  	      <LinearLayout 
+  	        android:layout_width="0dp"
+  	        android:layout_height="match_parent"
+  	        android:layout_weight="1"
+  	        android:orientation="vertical"
+  	        android:visibility="gone"
+  	       android:gravity="center_horizontal|bottom"
+  	        >
+             
+  	          <LinearLayout 
+  	              android:layout_width="fill_parent"
+  	              android:layout_height="wrap_content"
+  	              android:gravity="center"
+  	              >
+  	         <TextView
+                android:id="@+id/caohua_grow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#E4AC50"
+                android:textSize="20sp" />
+  	         
+  	         <TextView
+                android:id="@+id/tv_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/caohua_scot"
+                android:textColor="#E4AC50"
+                android:textSize="15sp" />
+  	         </LinearLayout>
+
+            
+
+            <TextView
+                android:id="@+id/caohua_zhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="成长值"
+                android:textSize="15sp" />
+
+  	      </LinearLayout>
+  	</LinearLayout>
+  	<!-- 分割线 -->
+  	<View 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="10dp"
+  	    android:background="#ededeb"
+  	    />
+  	<!-- 第四行 gridView -->
+  	<RelativeLayout
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	   
+  	     >
+  	   
+  	 <GridView 
+	  	    android:id="@+id/gv_view"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:numColumns="3"
+	  	    android:horizontalSpacing="1dp"
+	  	    android:verticalSpacing="1dp"
+	  	    android:clickable="true"
+	  	    android:fadingEdge="none" 
+	  	    android:background="#ffffff" 
+	        android:scrollbars="none"
+	        android:fadeScrollbars="true"             
+			android:fastScrollEnabled="true"    
+			android:cacheColorHint="#00000000"  
+	     />
+  	<!--  -->
+  	  <View 
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="1dp"
+  	    android:background="#EDEDEB"
+  	    android:layout_alignLeft="@id/gv_view"
+  	    />
+  	   <View 
+  	    android:layout_width="1dp"
+  	    android:layout_height="fill_parent"
+  	    android:background="#EDEDEB"
+  	    android:layout_alignLeft="@id/gv_view"
+  	    />
+  	</RelativeLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#f5f5f5"
+	    
+	    />
+</LinearLayout>

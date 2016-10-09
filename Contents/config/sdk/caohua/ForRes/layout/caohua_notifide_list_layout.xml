@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/caohua_grad_item_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/ch_titel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="前方可能预警"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ch_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ch_titel_tv"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:text="双十二充值优惠活动"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dip"
+            android:gravity="left"
+            android:orientation="horizontal" >
+	
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+                <TextView
+                android:id="@+id/hot_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/caohua_btn_chengse_hot"
+                android:text="@string/caohua_styled_text_hot"
+                android:textColor="@color/ch_white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/new_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/caohua_btn_chengse_new"
+                android:text="@string/caohua_styled_text_new"
+                android:textColor="@color/ch_white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+                
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/green_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/caohua_green_arrows"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/notice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/caohua_btn_chengse_notice"
+                android:text="@string/caohua_styled_text_notice"
+                android:textColor="@color/ch_white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listbackground"
+            android:paddingBottom="20dip"
+            android:paddingLeft="40dip"
+            android:paddingTop="40dip" 
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ch_titel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前方可能预警"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ch_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ch_titel_tv"
+                android:text="双十二充值优惠活动"
+                android:textSize="14sp" />
+        </LinearLayout>    -->
+
+</LinearLayout>

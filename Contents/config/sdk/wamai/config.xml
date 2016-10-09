@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config pluginId="600042">
+    <paramLs>
+        <param name="Wamai_AppId" required="1" showName="AppId" desc="Wamai_AppId" bWriteIntoManifest="1" bUserOffer="1"
+               bWriteIntoClient="1"/>
+    </paramLs>
+    <operateLs>
+        <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="caohua"/>
+        <operate step="2" name="copy" from="ForAssets" to="assets" desc="caohua"/> 
+        <operate step="3" name="copy" from="ForRes" to="res" desc="caohua"/>       
+        <operate step="4" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+    </operateLs>
+    <pluginLs>
+        <plugin name="IAPOnlineWamai" typePlugin="2" desc=" 哇麦支付插件"/>
+        <plugin name="UserWamai" typePlugin="0" desc="哇麦用户插件"/>
+    </pluginLs>
+</config>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+    <!-- 三角脚标 -->
+    <RelativeLayout 
+        android:id="@+id/rl_jaobiao"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        >
+        <ImageView 
+            android:id="@+id/iv_sanjiaoxing"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/caohua_jiao_biao"
+            />
+        
+        
+        
+    </RelativeLayout>
+ 	
+ 	
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="100dp" 
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+       
+ 	    
+ 	     <!-- <ImageView 
+ 	         android:visibility="gone"
+           android:id="@+id/caohua_red"
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:layout_gravity="right"
+           android:background="@drawable/caohua_red"
+           android:layout_alignParentRight="true"
+           /> -->
+ 	     
+ 	     
+ 	     <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/caohua_bi"
+            />
+			
+        <TextView
+            android:id="@+id/caohua_bi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+           	android:text="@string/caohua_bi"
+           	android:textColor="#525252"
+           	android:layout_centerHorizontal="true"
+         	android:layout_below="@id/iv_1"
+            android:textSize="12sp"
+             />
+ 	  
+        
+		 
+      
+       
+        
+    </LinearLayout>
+    
+    
+
+ </FrameLayout>
+     <View 
+        android:layout_alignParentRight="true"
+  	    android:layout_width="1dp"
+  	    android:layout_height="100dp"
+  	    android:background="#EDEDEB"
+  	    />
+        
+       <View 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="1dp"
+  	    android:background="#EDEDEB"
+  	    android:layout_alignParentBottom="true"
+  	    />
+  
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifestConfig xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <permissionCfg>
+        <!-- 为查询终端机调制解调器（Moderm）状态（ex. 网络运营商名称）而用。-->
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        <!-- 使用外部内存的权限，主要为未传送出去的内部使用的数据缓存而用。-->
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+        <uses-permission android:name="android.permission.INTERNET" />
+    </permissionCfg>
+    
+    <applicationCfg keyword="com.unionpay.uppay.PayActivity">
+        <receiver
+            android:name="com.toast.android.analytics.InstallReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.toast.android.analytics.ExecutionReferrerReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.toast.android.analytics.toastpromotion.EXECUTION" />
+            </intent-filter>
+        </receiver>
+    </applicationCfg>
+    
+</manifestConfig>

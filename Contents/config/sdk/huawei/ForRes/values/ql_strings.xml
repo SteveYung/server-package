@@ -35,8 +35,11 @@
 	<string name="ql_reset_password_fail">重置密码失败，请重试</string>
 	<string name="ql_newuser_enter_without_setpassword_error">密码（6-32个字符）</string>
     <string name="CS_no_send_sms_permission">没有发送短信权限</string>
-    <string name="ql_check_no_sim">未检测到SIM卡，请用已有华为账号登录</string>
+    <string name="ql_check_no_sim">未检测到SIM卡，请用已有华为帐号登录</string>
     <string name="ql_btn_ok">确定</string>
     <string name="ql_dialog_title">注意</string>
+    <string name="CS_ERR_for_unable_connect_server">"无法连接服务器，是否重试。"</string>
+    <string name="CS_ERR_for_system_error">"鉴权失败，请重新登录"</string>
+    <string name="CS_ERR_for_unable_get_data">"无法获取数据，请稍后再试。"</string>
 
 </resources>

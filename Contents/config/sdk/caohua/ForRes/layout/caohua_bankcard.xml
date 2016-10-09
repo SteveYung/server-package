@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <!--  <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="10dip" > -->
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_success"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:background="@drawable/caohua_four_shape"
+            android:orientation="vertical" >
+
+            <include layout="@layout/caohua_return_my_title_recharge" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/ZF_linearlayout"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_bankcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ZF_linearlayout"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:padding="2dp"
+                    android:text="银行卡"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/ZF_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.2dip"
+                    android:layout_below="@+id/tv_bankcard"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="#C0C0C0" />
+
+                <TextView
+                    android:id="@+id/tv_ts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ZF_view1"
+                    android:layout_margin="10dp"
+                    android:padding="2dp"
+                    android:text="仅支持:工、招、建、中、农等主流银行,建议使用支付宝"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tv_ts"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="请输入银行卡号"
+                    android:background="@drawable/caohua_edt_shape"
+                    android:paddingLeft="5dp"
+                    />
+<!--                     android:text="6215982920720005601"  -->
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#FF7C08"
+                    android:text="下一步"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+  <!--   </FrameLayout> -->
+
+</RelativeLayout>

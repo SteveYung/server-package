@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="buoy_validParamFail">The app ID or CP ID is invalid.</string>
     <string name="buoy_noInit">SDK not initialized.</string>
@@ -40,4 +40,6 @@
 	<!-- 快捷支付 -->
 	<string name="pay_plugn_msg_install_service">Installing quick pay service…</string>
 	<string name="pay_plugn_msg_check_version">Checking quick pay version…</string>
+	
+	<string name="tab_name_switch_account">Switch</string>
 </resources>

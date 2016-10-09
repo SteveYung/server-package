@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="zh_ch_com_efun_invite_title">Facebook 社交功能</string>
+    <string name="zh_ch_com_efun_invite_head_comment">点赞</string>
+    <string name="zh_ch_com_efun_invite_head_share">分享</string>
+    <string name="zh_ch_com_efun_invite_head_invited">已成功邀请 0人</string>
+    <string name="zh_ch_com_efun_invite_login_failed">Facebook 登陆失败，请重试！</string>
+    <string name="zh_ch_com_efun_invite_taglist_leaderboard">排行榜</string>
+    <string name="zh_ch_com_efun_invite_taglist_invite">好友邀请</string>
+    <string name="zh_ch_com_efun_invite_taglist_reward">奖励信箱</string>
+    <string name="zh_ch_com_efun_invite_taglist_info">功能说明</string>
+    <string name="zh_ch_com_efun_invite_leaderboard_rank">排名</string>
+    <string name="zh_ch_com_efun_invite_leaderboard_pic">好友</string>
+    <string name="zh_ch_com_efun_invite_leaderboard_server">服务器</string>
+    <string name="zh_ch_com_efun_invite_leaderboard_level">等级</string>
+    <string name="zh_ch_com_efun_invite_leaderboard_power">战力</string>
+    <string name="zh_ch_com_efun_invite_leaderboard_sendgift">赠送</string>
+    <string name="zh_ch_com_efun_invite_leaderboard_hassendgift">已赠送</string>
+    <string name="zh_ch_com_efun_invite_invite_selectall">全选</string>
+    <string name="zh_ch_com_efun_invite_invite_send">发送</string>
+    <string name="zh_ch_com_efun_invite_invite_warnning_select_friend">请最少选择一名好友</string>
+    <string name="zh_ch_com_efun_invite_invite_response_invite_success">邀请成功</string>
+    <string name="zh_ch_com_efun_invite_invite_warnning_no_invitable_friend">没有可邀请好友</string>
+    <string name="zh_ch_com_efun_invite_reward_reward">成功邀请礼包</string>
+    <string name="zh_ch_com_efun_invite_reward_rewardfrom">%s发来的礼包</string>
+    <string name="zh_ch_com_efun_invite_reward_invited">%s接收了邀请</string>
+    <string name="zh_ch_com_efun_invite_reward_invited_replace">您的朋友</string>
+    <string name="zh_ch_com_efun_invite_reward_claim">领取</string>
+    <string name="zh_ch_com_efun_invite_reward_claimed">已领取</string>
+    <string name="zh_ch_com_efun_invite_network_error">网络异常</string>
+    <!-- fb社交功能内 fb分享成功吐司信息 -->
+    <string name="zh_ch_efun_invite_share_success">分享成功</string>
+    <!-- fb社交功能内 fb分享失败吐司信息 -->
+    <string name="zh_ch_efun_invite_share_failed">分享失败</string>
+    <string name="zh_ch_efun_invite_inform">         好友邀请说明\n
+     1.普通账号登陆的玩家使用该功能首先需要进行Fabcbook授权;\n
+     2.好友列表会显示出您Fackbook的好友，勾选后可发送好友邀请；\n
+     3.接受到好友邀请后，好友必须用Fackbook登陆游戏才能算一个成功邀请。累积成功邀请相应的好友可以获得相应的奖励；\n
+     4.累积邀请奖励有三个，领取完后无法继续领取。\n\n
+
+
+       排行榜说明\n
+    1.排行榜内可以看到您Facebook好友在本游戏内的排名情况；\n
+    2.好友排名按照等级、战力 为基准，排名信息更新会有一定的延迟，请您留意哦；\n
+    3.每天可以对每一位好友进行奖励赠送，好友越多收到的奖励会越多哦；\n
+    4.使用普通账号登陆的玩家授权进入页面后，可以看到自己Facebook的好友排名，可以赠送奖励给好友，但您的FB好友会看不到您在排行榜的名次，也无法赠送奖励至您的角色，请您留意。\n</string>
+
+</resources>

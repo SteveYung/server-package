@@ -54,6 +54,7 @@
             </RelativeLayout>
 
             <LinearLayout
+                android:id="@+id/my_dialog_layout_1"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="12dp"
@@ -80,6 +81,24 @@
                     android:layout_weight="1"
                     android:background="@drawable/xh_footer_selector"
                     android:text="@string/ql_btn_ok"
+                    android:textColor="@color/ql_quick_login_foot_button"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/my_dialog_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/my_dialog_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/xh_footer_selector"
+                    android:text="@android:string/ok"
                     android:textColor="@color/ql_quick_login_foot_button"
                     android:textSize="13sp" />
             </LinearLayout>

@@ -27,12 +27,14 @@
         android:name="com.huawei.hwid.openapi.auth.dump.OpenDumpActivity"
         android:configChanges="orientation|screenSize"
         android:exported="false"
-        android:theme="@android:style/Theme.Translucent" />
+        android:theme="@android:style/Theme.Translucent"
+        android:screenOrientation="portrait" />
         <activity
             android:name="com.huawei.hwid.openapi.quicklogin.ui.QuickLoginActivity"
             android:configChanges="orientation|screenSize"
             android:exported="false"
-            android:theme="@style/Theme.quicklogin" >
+            android:theme="@style/Theme.quicklogin"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="com.huawei.hwid.opensdk.ACTION_QUICKLOGIN_SMS" />
                 
@@ -47,19 +49,35 @@
         android:screenOrientation="portrait" />
         <activity
         android:name="com.huawei.gamebox.buoy.sdk.activity.NoticeActivity"
-        android:configChanges="orientation|screenSize" />
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" />
         <activity
             android:name="com.huawei.gamebox.buoy.sdk.activity.BaseDialogActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
-            android:theme="@style/buoy_baseDialog" >
+            android:theme="@style/buoy_baseDialog"
+            android:screenOrientation="portrait" >
         </activity>
-        
+        		<activity
+			android:name="com.huawei.gamebox.buoy.sdk.service.permissions.PermissionsActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"
+			android:exported="false" >
+		</activity>
         <!-- 浮标中下载依赖的广播 -->
         <receiver android:name="com.huawei.gamebox.buoy.sdk.service.download.DownloadBroadcastReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+ <!-- 切换帐号的广播，由开发者自行实现逻辑，并修改package路径；其中的exported参数必须添加，防止其他应用的广播干扰 -->
+        <receiver
+            android:name="com.huawei.gb.huawei.ChangeUserReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.huawei.gamebox.changeUserLogin" />
             </intent-filter>
         </receiver>
     </applicationCfg>

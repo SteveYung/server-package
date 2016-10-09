@@ -10,8 +10,10 @@
     </paramLs>
     <operateLs>
         <operate step="1" name="modifyManifest" from="ForManifest.xml" to="AndroidManifest.xml" desc="caohua"/>
-        <operate step="2" name="copy" from="ForAssets" to="assets" desc="caohua"/>        
-        <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
+        <operate step="2" name="copy" from="ForAssets" to="assets" desc="caohua"/> 
+        <operate step="3" name="copy" from="ForRes" to="res" desc="caohua"/>
+        <operate step="4" name="copy" from="ForLibs" to="lib" desc="caohua"/>       
+        <operate step="5" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
     </operateLs>
     <pluginLs>
         <plugin name="IAPOnlineCaohua" typePlugin="2" desc=" 草花支付插件"/>

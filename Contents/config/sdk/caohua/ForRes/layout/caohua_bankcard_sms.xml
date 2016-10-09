@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <include layout="@layout/caohua_my_title_recharge_no_shape" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sms"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ZF_linearlayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+    
+     <TextView
+        android:id="@+id/tv_yanzhengma"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:textColor="#D1D1D1"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:text="请输入手机号" />
+   
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/tv_yanzhengma"
+        android:layout_toRightOf="@+id/tv_yanzhengma"
+        android:gravity="center_vertical"
+        android:text="88888888888"
+        android:textColor="#32BFF3" />
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+        android:textColor="#D1D1D1"
+        android:textSize="13sp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/tv_number"
+        android:text="发送了一条验证码"
+        android:layout_alignTop="@+id/tv_number"
+       />
+</RelativeLayout>
+<LinearLayout
+            android:id="@+id/ch_yanzhengma_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/caohua_edt"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/rl_sms"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:text="校验码"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                 />
+
+            <EditText
+                android:id="@+id/et_yanzhengma"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColorHint="#D1D1D1"
+                android:hint="短信校验码"
+                android:textSize="13dip" />
+
+            <LinearLayout
+                android:id="@+id/send_code_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal" >
+
+               
+               
+                <Button
+                    android:id="@+id/again_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="重新发送"
+                    android:textColor="#32BFF3"
+                    android:background="@drawable/caohua_edt"
+                    android:textSize="13sp" />
+               
+            </LinearLayout>
+        </LinearLayout>
+        
+ <TextView
+        android:id="@+id/next_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/caohua_btn_chengse"
+        android:layout_below="@+id/ch_yanzhengma_ll"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp" />
+</RelativeLayout>

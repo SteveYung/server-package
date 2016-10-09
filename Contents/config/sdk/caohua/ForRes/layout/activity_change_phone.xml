@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/caohua_my_title_search_new" />
+    <!-- 二 -->
+
+    <LinearLayout
+        android:id="@+id/ll_yanzhengma"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_below="@+id/tv_yanzhengma"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ch_yanzhengma_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dip"
+                android:src="@drawable/code_icon" />
+
+            <EditText
+                android:id="@+id/input_code"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dip"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入手机验证码"
+                android:textColorHint="#D1D1D1"
+                android:textSize="13dip" />
+
+            <LinearLayout
+                android:id="@+id/send_code_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_send_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_forgetpassword"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="重新发送"
+                    android:textColor="#32BFF3"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_yanzhengma11"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_below="@+id/ll_yanzhengma"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dip"
+                android:src="@drawable/code_icon" />
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:textColorHint="#D1D1D1"
+                android:textColor="#000000"
+                android:textSize="13dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_send_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_forgetpassword"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="发送验证码"
+                    android:textColor="#32BFF3"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_yanzhengma12"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_below="@+id/ll_yanzhengma11"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dip"
+                android:src="@drawable/code_icon" />
+            
+            <EditText
+                android:id="@+id/input_code_again"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入手机验证码"
+                android:textColorHint="#D1D1D1"
+                android:textColor="#000000"
+                android:textSize="13dip" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_yanzhengma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="已给"
+        android:textColor="#D1D1D1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_yanzhengma"
+        android:layout_toRightOf="@+id/tv_yanzhengma"
+        android:textColor="#ff7200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_number"
+        android:layout_toRightOf="@+id/tv_number"
+        android:text="发送了一条验证码"
+        android:textColor="#D1D1D1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_yanzhengma"
+        android:layout_below="@+id/btn_ok"
+        android:layout_marginTop="15dp"
+        android:text="收到验证码？请联系"
+        android:textColor="#D1D1D1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="客服QQ:800032511"
+        android:textColor="#32BFF3"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/ll_yanzhengma12"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_chengse"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+</RelativeLayout>

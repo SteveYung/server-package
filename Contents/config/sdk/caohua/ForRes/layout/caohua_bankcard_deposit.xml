@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+
+    <include layout="@layout/caohua_my_title_recharge_no_shape" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ZF_linearlayout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_bankcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ZF_linearlayout"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:text="银行卡"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/ZF_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="0.2dip"
+                android:layout_below="@+id/tv_bankcard"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="#C0C0C0" />
+
+            <TextView
+                android:id="@+id/tv_ts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ZF_view1"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:text="填写银行卡详细信息"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/tv_ts"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/caohua_edt_shape"
+                android:gravity="center_vertical"
+                android:hint="建设银行储蓄卡 "
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/textview1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/caohua_edt_shape"
+                android:gravity="center_vertical"
+                android:hint="请输入持卡人姓名"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+            <!-- android:text="朱晓琳" -->
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/caohua_edt_shape"
+                android:gravity="center_vertical"
+                android:hint="请输入持卡人身份证号"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+            <!-- android:text="430726199103045424" -->
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editText3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/caohua_edt_shape"
+                android:gravity="center_vertical"
+                android:hint="请输入银行预留手机号码"
+                android:paddingLeft="5dp"
+                android:textSize="14sp" />
+            <!-- android:text="18274979883" -->
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/editText4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FF7C08"
+                android:text="下一步"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

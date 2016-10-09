@@ -3,29 +3,201 @@
     <applicationCfg keyword="com.chsdk.view.payment.PayActivity">
 
        <!-- CHSDK开始 -->
-          <activity android:name="com.chsdk.view.usercenter.UserCenter" android:theme="@android:style/Theme.Black.NoTitleBar" 
-          android:screenOrientation="portrait" />
-        <activity android:name="com.chsdk.view.payment.PayActivity" 
-          android:theme="@android:style/Theme.Black.NoTitleBar" 
-          android:windowSoftInputMode="adjustPan" 
-          android:screenOrientation="portrait" 
-          android:configChanges="orientation|screenSize"/>
-        <activity android:name="com.alipay.sdk.app.H5PayActivity" 
-          android:configChanges="orientation|keyboardHidden|navigation" android:exported="false" 
-          android:screenOrientation="portrait"
-          android:windowSoftInputMode="adjustResize|stateHidden" />
-    
-         <!-- CHSDK结束 -->
+        <activity
+            android:name="com.chsdk.view.usercenter.HomeSdkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.chsdk.activity.CaoHuaDouActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.activity.H5WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.activity.MessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.chsdk.activity.UpdatePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.activity.WebViewSdkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.activity.H5PayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.chsdk.view.usercenter.fragment.later.AccountSafeByPhone" />
+        <activity android:name="com.chsdk.view.usercenter.fragment.later.AccountSafeByThreeWay" />
+        <activity android:name="com.chsdk.view.usercenter.fragment.later.UpdatePhoneAccountWay" />
+        <activity
+            android:name="com.chsdk.view.login2.UserLogin"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.chsdk.view.usercenter.UserCenter"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+        <!-- 充值中心主界面 -->
+        <activity
+            android:name="com.chsdk.view.payment.PayActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 充值中心主界面 -->
+        <activity
+            android:name="com.chsdk.view.payment.PayDialog"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 银行卡充值界面 -->
+        <activity
+            android:name="com.chsdk.view.payment.CardBankActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 信用卡充值界面 -->
+        <activity android:name="com.chsdk.view.payment.CreditCardAvtivity" />
+        <!-- 储蓄卡充值界面 -->
+        <activity android:name="com.chsdk.view.payment.DepositCardAvtivity" />
+        <!-- 充值常见问题H5界面 -->
+        <activity android:name="com.chsdk.view.payment.WebViewActivity" />
+        <!-- 银行卡支付-验证码界面 -->
+        <activity android:name="com.chsdk.view.payment.SendSmsActivity" />
+        <!-- 支付成功 -->
+        <activity
+            android:name="com.chsdk.view.payment.PaySuccessActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.FloatActivity" />
+        <!-- 支付失败 -->
+        <activity
+            android:name="com.chsdk.view.payment.PayFailedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.FloatActivity" />
+        <!-- 支付异常 -->
+        <activity
+            android:name="com.chsdk.view.payment.PayExceptionActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.chsdk.view.payment.NoticeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.FloatActivity" />
+
+        <!-- 银联配置 -->
+        <!-- 银联配置 -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/caohua_app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc" />
+        </activity>
+        <activity
+            android:name="com.chsdk.view.usercenter.SdkWebviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- CHSDK结束 -->
+
+
+        <!-- 新增微信支付 -->
+        <activity
+            android:name="com.switfpass.pay.activity.QQWapPayWebView"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 新增APP 账号安全和找回密码功能 -->
+
+        <activity
+            android:name="com.chsdk.view.security.AccountSafeByThreeWayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.UserWriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.FindPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.AccountByPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.AccountEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.EmailWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.ChangeQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.ChangeQuestionAswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.AccountQuestionAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.NeedTelephoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.NeedMailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.ChangePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.NeedAnswerQuestionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.ResetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chsdk.view.security.ChangeEmailActivity"
+            android:screenOrientation="portrait" />
 
     </applicationCfg>
     <permissionCfg>
-     <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="info.loginout.receiver.interprocess" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
    </permissionCfg>
 
 </manifestConfig>

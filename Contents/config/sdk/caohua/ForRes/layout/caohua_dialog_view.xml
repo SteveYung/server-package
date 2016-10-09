@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="20dp"
+     android:background="@drawable/caohua_four_round"
+     >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/caohua_four_round"
+        >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/caohua_llogo" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="游戏更新"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+      
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#26ffffff"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/caohua_dialog_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:src="@drawable/caohua_update" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textStyle="bold" 
+                   android:textSize="18sp"
+                   android:textColor="#d1d1d1"
+                    android:text="发现新版本:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#d1d1d1"
+                    android:text="新版本降临，小伙伴们都更新了~" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#d1d1d1"
+                    android:text="你还在等什么，快快更新吧！" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/caohua_dialog_btn"
+            android:text="立即更新"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

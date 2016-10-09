@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="caohua_app_name">CHSDKDemo</string>
+    <string name="caohua_action_settings">Settings</string>
+     <string name="send_email_tv">已发送验证邮件到</string>
+     <string name="send_email2">未收到邮件？请</string>
+     <string name="send_email_next_tv">去邮箱验证</string>
+     <string name="search_password_tv">请在30分钟内登陆邮箱验证</string>
+    <string name="caohua_no_token_id">订单号为空或位数不对，请检查输入的订单号！</string>
+	<string name="caohua_get_token_id">请输入一个要支付的财付通订单号：</string>
+	<string name="caohua_buy">去财付通支付</string>
+    <string name="caohua_styled_text_hot">最热</string>
+    <string name="caohua_styled_text_new">最新</string>
+    <string name="caohua_styled_text_notice">公告</string>
+	<string name="caohua_ge">个</string>
+	<string name="caohua_jiao_biao">角标</string>
+	<string name="caohua_bi">充值草华币</string>
+	<string name="caohua_user_name">用户名</string>
+	<string name="caohua_user_name_value">小兔崽子</string>
+	<string name="caohua_level">等级</string>
+	<string name="caohua_name_account">账号:</string>
+	<string name="caohua_exit">退出图标</string>
+	<string name="caohua_user_score">个</string>
+	<string name="caohua_user_ji_score">积分</string>
+	<string name="caohua_scot">点</string>
+	<string name="wx_hint">温馨提示：\n若都无法为您找回密码,请联系</string>
+	<string name="verification_mode">为了您的账号安全，请选择绑定密保</string>
+	    <string name="sendemail_tv">收不到验证码？ </string>
+	     <string name="sendemail_tv1">1.请核对您的手机号是否正确</string>
+    <string name="sendemail_tv2"> 2.其次呢，您确认下是否设置了黑名单拦截。</string>
+    <string name="sendemail_tv3"> 3.您的手机是否欠费停机或被运营商屏蔽，如果是，请缴纳费用或找运营商联系</string>
+    <string name="sendemail_tv4"> 注：如果上述问题还未解决。请联系</string>
+	  <!-- 领取活动礼包的button颜色 -->
+	   <!-- 绿朱红的button颜色 -->
+    <drawable name="caohua_clr_normal">#32CD32</drawable>
+    <drawable name="caohua_clr_pressed">#a44100</drawable>
+	  <drawable name="caohua_z_normal">#FF6103</drawable>
+    <drawable name="caohua_z_pressed">#a44100</drawable>
+    <drawable name="caohua_get_gift_normal">#68CD0D</drawable>
+    <drawable name="caohua_get_gift_pressed">#006400</drawable>
+   
+</resources>

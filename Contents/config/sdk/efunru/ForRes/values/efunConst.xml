@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- google plus -->
+    <string name="google_error">Google Plus Fail</string>
+	<string name="google_message">Loading...</string>
+	
+	<!-- 谷歌储值错误提示 -->
+    <!-- <string name="efunGoogleServerError">Require Service Timeout,Please try again</string> -->
+    <!-- <string name="efunGoogleBuyFailError">Purchase Error</string> -->
+    <!-- <string name="efunGoogleStoreError">Your area does not support google wallet.</string> -->
+    
+    <!-- twitter -->
+    <string name="twitter_error">Twitter connection failed</string>
+</resources>

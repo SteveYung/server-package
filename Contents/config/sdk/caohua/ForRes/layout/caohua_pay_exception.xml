@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_success"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/caohua_four_shape"
+            android:orientation="vertical" >
+
+            <include layout="@layout/caohua_my_title_recharge" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ZF_linearlayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/caohua_pay_exception" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/iv_success"
+                    android:layout_toRightOf="@id/iv_success"
+                    android:padding="5dp"
+                    android:text="支付异常"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/return_game"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_success"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="返回游戏重新充值"
+                android:background="@drawable/caohua_edt"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_pay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="充值异常，用户取消了订单！"
+                android:textColor="#000000" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

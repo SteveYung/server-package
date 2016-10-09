@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 新版UI控制语言的字体 -->
+    <!-- 显示第三方登录的字体 -->
+    <color name="ui_threelogin">#FFFFFF</color>
+    <!-- 右上角标题的颜色 -->
+    <color name="ui_titlecolor">#FFFFFF</color>
+    <!-- 用户协议的语言 -->
+    <color name="ui_useragreement_false">#FFFFFF</color>
+    <color name="ui_useragreement_true">#FFFFFF</color>
+    <!-- 账号管理 -->
+    <color name="ui_management_false">#FFFFFF</color>
+    <color name="ui_management_true">#FFFFFF</color>
+    <!-- 输入框点击前 -->
+    <color name="ui_inputhint">#888888</color>
+     <!-- 输入框点击后 -->
+    <color name="ui_inputclick">#000000</color>
+    <!-- 登录，免注册，注册等按钮语言 -->
+    <color name="ui_efunbutton_false">#FFFFFF</color>
+    <color name="ui_efunbutton_true">#FFFFFF</color>
+    <!-- 欢迎页你回到游戏 -->
+    <color name="ui_welcome_role">#9400D3</color>
+    <color name="ui_transparent">#00000000</color>
+    
+</resources>

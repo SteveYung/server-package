@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_margin="5dip"
+                android:layout_weight="8" >
+
+                <GridView
+                    android:id="@+id/view_invite_fragment_invitable_friendlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dip"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dip" >
+                </GridView>
+            </LinearLayout>
+
+            <com.efun.invite.vk.widget.view.invite.InviteableFriendListSendInviteView
+                android:id="@+id/view_invite_fragment_invite_btn_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_data_loading" />
+    </RelativeLayout>
+
+</LinearLayout>
