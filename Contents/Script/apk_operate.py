@@ -274,7 +274,7 @@ def decompileApk(apkFile, targetDir, lock, apkTool = 'apktool2.jar'):
     if os.path.exists(targetDir):
         file_operate.delete_file_folder(targetDir)
     if not os.path.exists(targetDir):
-        os.makedirs(targetDir)
+        file_operate.execFormatCmd('mkdir %s' %(targetDir))
     if lock != None:
         lock.acquire()
   #  print '<---LD_LIBRRY_PATH-->'+os.environ['LD_LIBRARY_PATH']
