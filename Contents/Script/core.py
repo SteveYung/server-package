@@ -60,7 +60,6 @@ def main(channel):
         if not os.path.exists(source):
             error_operate.error(60)
             return
-        file_operate.execFormatCmd('chmod -R 777 %s' % workDir)
         tmpApkSource = workDir + '/temp.apk'
         file_operate.copyFile(source, tmpApkSource)
         print 'tmpApkSource-->'+ tmpApkSource
