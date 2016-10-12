@@ -18,7 +18,6 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@+id/push_progressBar_right_layout"
         android:layout_toRightOf="@+id/push_progressBar_image" >
 
         <RelativeLayout

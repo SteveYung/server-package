@@ -65,5 +65,8 @@
 	
 	<dimen name="com_lenovo_toolbar_first_left_margin">5dp</dimen>
 	<dimen name="com_lenovo_toolbar_end_right_margin">12dp</dimen>
+	<dimen name="com_lenovo_lsf_title_introduce_fontsize">14sp</dimen>
+	<dimen name="com_lenovo_lsf_ad_btn_text_size">16sp</dimen>
+	
 	
 </resources>

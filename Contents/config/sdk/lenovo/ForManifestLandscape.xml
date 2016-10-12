@@ -3,62 +3,37 @@
     
     <permissionCfg>
         
-        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-        
-        <uses-permission android:name="android.permission.RECEIVE_SMS" />
-        <uses-permission android:name="android.permission.SEND_SMS" />
-        <uses-permission android:name="android.permission.READ_SMS" />
-        <uses-permission android:name="android.permission.GET_TASKS" />
-        
-        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-        <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-        <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
-        <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
-        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-        <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-        <uses-permission android:name="android.permission.RECORD_AUDIO" />
-        
-        <uses-permission android:name="com.lenovo.lsf.device.permission.MESSAGE" />
-        <uses-permission android:name="com.lenovo.lsf.device.permission.RECEIVE" />
-        <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
-        <uses-permission android:name="android.permission.RESTART_PACKAGES" />
-        <uses-permission android:name="android.permission.VIBRATE" />
-        
-        <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-        
-        <!--  照相的权限-->
-        <uses-feature android:name="android.hardware.camera" />
-        <uses-permission android:name="android.permission.CAMERA" />
-        <uses-permission android:name="android.hardware.camera.autofocus" />
-        <!--录像需要的权限-->
-        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-        <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lenovo.lsf.device.permission.MESSAGE" />
+    <uses-permission android:name="com.lenovo.lsf.device.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     </permissionCfg>
 
     <applicationCfg keyword="com.lenovo.lsf.gamesdk.ui.WelcomeActivity" >
         <!-- 收银台界面，默认横屏，通过screenOrientation可以进行修改-->
-        <activity
-        android:name="com.lenovo.pay.api.PayManagerActivity"
-        android:configChanges="keyboardHidden|orientation|screenSize|navigation|locale|layoutDirection"
-        android:launchMode="singleTop"
-        android:screenOrientation="landscape"
-        android:theme="@style/com_lenovo_pay_theme_dialog" />
-        <!-- 收银台界面结束-->
-        
-        <meta-data
-        android:name="lenovo.gamesdk.new"
-        android:value="2.4.2.1" />
-        
-        <!-- 闪屏界面，默认横屏，通过screenOrientation可以进行修改-->
         <activity
             android:name="com.lenovo.lsf.gamesdk.ui.WelcomeActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -67,13 +42,12 @@
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- 闪屏界面结束 -->
-        
-        <!-- 登录成功欢迎条界面，默认横屏，通过screenOrientation可以进行修改 -->
+
+        <!-- 登录成功欢迎条界面,默认横屏,通过screenOrientation可以进行修改 -->
         <activity
             android:name="com.lenovo.lsf.lenovoid.ui.KeyLoginActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -82,34 +56,28 @@
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <!-- 登录成功欢迎条界面结束 -->
-        
-        <!-- 登录过程界面，默认横屏，通过screenOrientation可以进行修改 -->
+        <!-- 登录过程界面,默认横屏,通过screenOrientation可以进行修改,注意必须 10 个 activity同时修改,最好指定全部横屏或全部竖屏,否则在部分机器(z1)上会导致工具条重叠 -->
         <activity
             android:name="com.lenovo.lsf.lenovoid.ui.PsLoginActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="landscape"
             android:label="@string/com_lenovo_lsf_ui_name"
             android:launchMode="singleTask"
+            android:screenOrientation="landscape"
             android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog"
             android:windowSoftInputMode="stateHidden" >
-            
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-                
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.lenovo.lsf.lenovoid.ui.PsLoginCommonActivity"
             android:configChanges="orientation|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
             android:screenOrientation="landscape"
             android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog"
-            android:launchMode="singleTask"
             android:windowSoftInputMode="stateVisible" >
-            <intent-filter>
-                <action android:name="android.intent.action.USERSETTING" />
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.lenovo.lsf.lenovoid.ui.StartLoginingGameActivity"
@@ -154,46 +122,61 @@
             android:label=""
             android:screenOrientation="landscape"
             android:theme="@style/com_lenovo_lsf_ui" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
         </activity>
         <activity
-            android:name="com.lenovo.lsf.lenovoid.ui.FlexibleActivity"
+            android:name="com.lenovo.pop.ui.FlexibleActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
         </activity>
-        
+        <activity
+            android:name="com.lenovo.pop.ui.QuiteActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
         <activity
             android:name="com.lenovo.lsf.lenovoid.ui.QuitActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|navigation"
             android:screenOrientation="landscape"
             android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
         </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.RegistRealAuthActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
         <!-- 登录过程界面结束 -->
-        
-        <service
-            android:name="com.lenovo.lsf.lenovoid.toolbar.AppCheckService" >
+        <service android:name="com.lenovo.lsf.lenovoid.toolbar.AppCheckService" >
         </service>
-        
-        <receiver android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkReceiver" android:permission="com.lenovo.lsf.device.permission.MESSAGE">
+
+        <receiver
+            android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkReceiver"
+            android:permission="com.lenovo.lsf.device.permission.MESSAGE" >
             <intent-filter>
-                <action android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkReceiver"></action>
-                <action android:name="ReplaceOpenAppID"></action>  <!--在此处填入申请的lenovo open AppID-->
-                <category android:name="ReplacePackageName" /> <!--在此处填入Package Name-->
+                <action android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkReceiver" >
+                </action>
+                <action android:name="1508050356436.app.ln" >
+                </action>
+
+                <category android:name="com.rsdk.sample" />
             </intent-filter>
         </receiver>
-        
-        <receiver android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkAndroidLReceiver">
+        <receiver android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkAndroidLReceiver" >
             <intent-filter>
-                <action android:name="com.lenovo.lsf.device.ANDROID_L_MSG"></action>
-                <category android:name="ReplacePackageName" /><!--在此处填入Package Name-->
+                <action android:name="com.lenovo.lsf.device.ANDROID_L_MSG" >
+                </action>
+
+                <category android:name="com.rsdk.sample" />
             </intent-filter>
         </receiver>
-        
-        <receiver android:name="com.lenovo.lsf.push.receiver.PushReceiver" android:process=":PushService">
-            <intent-filter >
+        <receiver
+            android:name="com.lenovo.lsf.push.receiver.PushReceiver"
+            android:process=":PushService" >
+            <intent-filter>
                 <action android:name="com.lenovo.lsf.intent.REGISTER" />
                 <action android:name="com.lenovo.lsf.intent.UNREGISTER" />
                 <action android:name="com.lenovo.lsf.intent.LOG_CONTROL" />
@@ -203,20 +186,50 @@
                 <action android:name="com.lenovo.lsf.intent.SWITCH_OFF_SERVICE" />
             </intent-filter>
         </receiver>
-        
-        <service android:name="com.lenovo.lsf.push.service.PushService" android:process=":PushService"
-            android:exported="true">
+
+        <service
+            android:name="com.lenovo.lsf.push.service.PushService"
+            android:exported="true"
+            android:process=":PushService" >
         </service>
-        
-        <activity android:name="com.lenovo.lsf.push.ui.DisplayActivity" android:process=":DisplayActivity"
-            android:theme="@android:style/Theme.Translucent" android:screenOrientation="portrait">
+
+        <activity
+            android:name="com.lenovo.lsf.push.ui.DisplayActivity"
+            android:process=":DisplayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
         </activity>
-        
-        <service android:name="com.lenovo.lsf.push.ui.DisplayService" android:process=":PushService"
-            android:exported="true">
+
+        <service
+            android:name="com.lenovo.lsf.push.ui.DisplayService"
+            android:exported="true"
+            android:process=":PushService" >
         </service>
-        
-        <!-- 登录配置结束 -->
+        <!-- Lenovo game 支付 -->
+        <!-- 收银台界面,默认横屏,通过screenOrientation可以进行修改 -->
+        <activity
+            android:name="com.lenovo.pay.api.PayManagerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation|locale|layoutDirection"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/com_lenovo_pay_theme_dialog" />
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.minewebview.HomeHtmlActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="com.lenovo.lsf.lenovoid.action.ACTION_START_WEB_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 收银台界面结束 -->
+        <!-- 如 无 法 注 册 "keyboardHidden|orientation|screenSize" , 请 修 改 为 "keyboardHidden|orientation" -->
+        <!-- 易联 -->
     </applicationCfg>
     
 </manifestConfig>

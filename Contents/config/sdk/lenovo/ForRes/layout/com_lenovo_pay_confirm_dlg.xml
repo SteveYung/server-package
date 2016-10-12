@@ -70,7 +70,7 @@
             android:clickable="true"
             android:gravity="center"
             android:text="@string/com_lenovo_pay_dlg_cancel_text"
-            android:textColor="@color/com_lenovo_pay_goods_label"
+            android:textColor="@color/com_lenovo_pay_button"
             android:textSize="@dimen/com_lenovo_pay_button_fontsize" />
 
         <View

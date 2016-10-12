@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config pluginId="11">
 	<paramLs>
-		<param name = "LenovoAppKey" required = "1" desc = "应用key" showName = "AppKey" bWriteIntoManifest = "0" bWriteIntoClient = "1" bUserOffer = "1"/>
+		<param name = "lenovo_AppId" required = "1" desc = "AppId" showName = "AppId" bWriteIntoManifest = "0" bWriteIntoClient = "1" bUserOffer = "1"/>
+
+		<param name = "lenovo_AppKey" required = "1" desc = "AppKey" showName = "AppKey" bWriteIntoManifest = "0" bWriteIntoClient = "1" bUserOffer = "1"/>
+
+		<param name = "lenovo:applicationToken" required = "1" desc = "应用token" showName = "appToken" bWriteIntoManifest = "1" bWriteIntoClient = "1" bUserOffer = "1"/>
+
+		<param name = "lenovo.gamesdk.new" required = "1" desc = "sdk版本" showName = "sdkVersion" bWriteIntoManifest = "1" bWriteIntoClient = "1" bUserOffer = "1"/>
+
         <param name = "lenovo.open.appid" required = "1" desc = "应用id" showName = "openAppId" bWriteIntoManifest = "1" bWriteIntoClient = "1" bUserOffer = "1" />
-        <param name = "LenovoProductNumber" required = "1" desc = "商品编码" showName = "productNumber" bWriteIntoManifest = "0" bWriteIntoClient = "1" bUserOffer = "1" />
+
+        <param name = "lenovo:channel" required = "1" desc = "渠道id" showName = "channnel" bWriteIntoManifest = "1" bWriteIntoClient = "1" bUserOffer = "1"/>
+
+        <param name = "LenovoProductNumber" required = "1" desc = "商品编码" showName = "productNumber" bWriteIntoManifest = "1" bWriteIntoClient = "1" bUserOffer = "1" />
+
 		<param name = "Orientation" required = "1" desc = "屏幕方向" showName = "Orientation" bWriteIntoManifest = "0" bUserOffer = "1" >
 			<option value = "landscape"/>
 			<option value = "portrait"/>
 		</param>
+
 		<param name = "callback" required = "1" desc = "cp方的游戏服务器支付通知地址" showName = "支付通知地址" bWriteIntoManifest = "0" bUserOffer = "1" bWriteIntoClient = "0"/>
+
 	</paramLs>
 	
 	<operateLs>
