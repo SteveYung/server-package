@@ -21,8 +21,7 @@ Language = 'Chinese'
 curDir = os.getcwd()
 
 def get_server_dir():
-    execFormatCmd('cd /data/plattech/server_sdk_pack/')
-    return 'Contents'
+    return '/data/plattech/server_sdk_pack/Contents'
 
 def delete_file_folder(src):
     if os.path.exists(src):
@@ -75,10 +74,9 @@ def copyFile(sourceFile, targetFile):
     if not os.path.exists(targetFile) or os.path.exists(targetFile) and os.path.getsize(targetFile) != os.path.getsize(sourceFile):
         targetDir = os.path.dirname(targetFile)
         if not os.path.exists(targetDir):
-            os.makedirs(targetDir)
-            file_operate.execFormatCmd('chmod -R 777 %s' % targetFile)
+            execFormatCmd('mkdir %s' %(targetDir))
         execFormatCmd('cp -f -a %s %s ' %(sourceFile,targetDir+'/temp.apk'))
-        execFormatCmd('chmod 777 %s' % (targetDir+'/temp.apk'))
+        # execFormatCmd('chmod 777 %s' % (targetDir+'/temp.apk'))
         # targetFileHandle = open(targetFile, 'wb')
         # sourceFileHandle = open(sourceFile, 'rb')
         # targetFileHandle.write(sourceFileHandle.read())
