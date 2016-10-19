@@ -17,7 +17,7 @@ def dexTrans2Smali(dexFile, targetDir, step):
         dexFile = file_operate.getFullPath(dexFile)
         smaliFile = file_operate.getToolPath('baksmali.jar')
         targetDir = file_operate.getFullPath(targetDir)
-        cmd = '"%s" -jar -Xms512m -Xmx512m "%s" -o "%s" "%s"' % (file_operate.getJava(),
+        cmd = '"%s" -jar "%s" -o "%s" "%s"' % (file_operate.getJava(),
          smaliFile,
          targetDir,
          dexFile)
@@ -95,7 +95,7 @@ def script(SDK, decompileDir, packageName, usrSDKConfig):
         cmd = '"%s" --dex --output="%s" "%s"' % (dxTool, dexPath, SrcDir)
     else:
         dxTool = file_operate.getToolPath('/lib/dx.jar')
-        cmd = 'java -jar -Xms512m -Xmx512m "%s" --dex --output="%s" "%s"' % (dxTool, dexPath, SrcDir)
+        cmd = 'java -jar "%s" --dex --output="%s" "%s"' % (dxTool, dexPath, SrcDir)
     ret = file_operate.execFormatCmd(cmd)
     if ret:
         error_operate.error(104)
