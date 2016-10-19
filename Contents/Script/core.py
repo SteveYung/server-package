@@ -476,7 +476,7 @@ def deleteWorkspace(channel):
     channelNum = channel['channelNum']
     workDir = file_operate.get_server_dir()+'/workspace/%s' %(channelNum)
     workDir = file_operate.getFullPath(workDir)
-    file_operate.delete_file_folder(workDir)
+    # file_operate.delete_file_folder(workDir)
 # 定义函数 8.4
 def inspectJDK():
     # print '<---inspectJDK LD_LIBRARY_PATH--> '+os.environ['LD_LIBRARY_PATH']
