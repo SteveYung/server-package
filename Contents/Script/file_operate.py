@@ -75,7 +75,7 @@ def copyFile(sourceFile, targetFile):
         targetDir = os.path.dirname(targetFile)
         if not os.path.exists(targetDir):
             execFormatCmd('mkdir %s' %(targetDir))
-        execFormatCmd('cp -f -a %s %s ' %(sourceFile,targetDir+'/temp.apk'))
+        execFormatCmd('cp -f -a %s %s ' %(sourceFile,targetFile))
         # execFormatCmd('chmod 777 %s' % (targetDir+'/temp.apk'))
         # targetFileHandle = open(targetFile, 'wb')
         # sourceFileHandle = open(sourceFile, 'rb')
