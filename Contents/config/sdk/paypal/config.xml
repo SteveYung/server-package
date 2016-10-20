@@ -10,7 +10,7 @@
     <operate step="3" name="mergeR" desc="合并R文件，此步骤需在res目录合并完后才执行"/>
   </operateLs>
   <pluginLs>
-    <plugin name="IAPOnlinePaypal" typePlugin="2" desc="支付插件"/>
+    <plugin name="IAPOnlinePyal" typePlugin="2" desc="支付插件"/>
   </pluginLs>
    <version code = "1" showVersion = "1.0">
   <![CDATA[]]>

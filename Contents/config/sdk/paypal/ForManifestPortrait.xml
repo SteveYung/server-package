@@ -2,7 +2,7 @@
 <manifestConfig xmlns:android="http://schemas.android.com/apk/res/android">
     <applicationCfg keyword="com.paypal.login">
 
-         <activity android:name="com.rsdk.framework.PaypalActivity" 
+         <activity android:name="com.rsdk.framework.PyalActivity" 
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
