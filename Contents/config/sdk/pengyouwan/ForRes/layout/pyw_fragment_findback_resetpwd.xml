@@ -70,6 +70,15 @@
             android:text="重置密码并登录"
             android:textColor="@android:color/white"
             android:textSize="@dimen/pyw_common_large" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="温馨提示:修改成功后,请用手机号码和手机密码登录"
+            android:textColor="@color/pyw_common_hint_color_dark"
+            android:textSize="@dimen/pyw_common_small" />
     </LinearLayout>
 
 </RelativeLayout>

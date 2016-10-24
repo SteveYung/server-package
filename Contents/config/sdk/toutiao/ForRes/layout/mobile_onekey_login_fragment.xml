@@ -22,8 +22,7 @@
 
                 <TextView
                     android:id="@+id/title"
-                    style="@style/login_panel_title"
-                    android:text="@string/login_frag_title"/>
+                    style="@style/login_panel_title"/>
                 <TextView
                     android:id="@+id/title_desc"
                     style="@style/login_panel_desc"

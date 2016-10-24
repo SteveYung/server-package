@@ -11,13 +11,13 @@
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:indeterminateDrawable="@drawable/progress_icon"/>
+        android:indeterminateDrawable="@drawable/dialog_progress"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/progress_waiting"
-        android:textColor="@color/baise1"
+        android:textColor="@color/heise1"
         android:layout_marginTop="12dp"/>
 
 </LinearLayout>

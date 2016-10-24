@@ -1,10 +1,32 @@
 <resources>
+    
+    <dimen name="float_btn_icon_width">50dip</dimen>
+    <dimen name="float_btn_icon_width_closed">25dip</dimen>
+    <dimen name="float_btn_icon_height">50dip</dimen>
+    <dimen name="float_btn_icon_margin_right">4dip</dimen>
+
+    <dimen name="float_btn_event_width">60dip</dimen>
+    <dimen name="float_btn_event_height">50dip</dimen>
+    <dimen name="float_btn_event_margin_top">4dip</dimen>
+    <dimen name="float_btn_event_text_size">10sp</dimen>
+
+    <dimen name="float_btn_bar_width">1dp</dimen>
+    <dimen name="float_btn_gift_more_height">8dp</dimen>
+    <dimen name="float_btn_gift_more_width">8dp</dimen>
+
+    <dimen name="float_btn_closed_more_height">6dp</dimen>
+    <dimen name="float_btn_closed_more_width">6dp</dimen>
+    <dimen name="float_btn_closed_more_margin_top">4dp</dimen>
+    <dimen name="float_btn_closed_more_margin_left">1dp</dimen>
+
+
+    <dimen name="float_btn_gift_more_margin_left">2dp</dimen>
 
     
-    <dimen name="capture_image_width">220dp</dimen>
-    <dimen name="big_avatar_size">90dp</dimen>
-<dimen name="shadow_height">5dp</dimen>
-    <dimen name="title_bar_height">44dp</dimen>
+    <dimen name="shadow_height">5dp</dimen>
+    <dimen name="title_bar_height">42dp</dimen>
+    <dimen name="game_browser_title_font">15sp</dimen>
+
 <dimen name="pay_dialog_corner_radius">5dp</dimen>
     <dimen name="pay_dialog_title_textsize">18sp</dimen>
     <dimen name="pay_dialog_currency_textsize">12sp</dimen>
@@ -21,4 +43,6 @@
     <dimen name="pay_button_text_size">16sp</dimen>
     <dimen name="pay_consult_text_size">10sp</dimen>
     <dimen name="pay_topup_item_textsize">14sp</dimen>
+<dimen name="capture_image_width">220dp</dimen>
+    <dimen name="big_avatar_size">90dp</dimen>
 </resources>

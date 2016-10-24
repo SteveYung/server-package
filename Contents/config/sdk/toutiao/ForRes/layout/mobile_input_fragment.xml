@@ -95,7 +95,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:text="@string/user_agreement"
                         style="@style/mobile_accent_link_text"/>
 
                 </LinearLayout>

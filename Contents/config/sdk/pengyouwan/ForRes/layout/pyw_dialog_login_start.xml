@@ -153,6 +153,24 @@
                 android:text="@string/pyw_register_tips"
                 android:textColor="@color/pyw_common_hint_color_dark"
                 android:textSize="@dimen/pyw_common_large" />
+            
+            <TextView
+                android:id="@+id/pyw_tv_separated" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/pyw_tv_fast_regist"
+                android:text="  |  "
+                android:textColor="@color/pyw_common_hint_color_dark"
+                android:textSize="@dimen/pyw_common_large"/>
+            
+            <TextView 
+                android:id="@+id/pyw_tv_quick_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/pyw_tv_separated"
+                android:text="@string/pyw_layout_common_title_register"
+                android:textColor="@color/pyw_common_hint_color_dark"
+                android:textSize="@dimen/pyw_common_large"/>
         </RelativeLayout>
     </LinearLayout>
 
