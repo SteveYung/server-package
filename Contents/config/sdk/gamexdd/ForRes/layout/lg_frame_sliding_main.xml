@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.lg.common.libary.base.swipeback.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/slidingmenumain"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    /><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddLibrary/src/main/res/layout/lg_frame_sliding_main.xml -->

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/gxd_user_kefu_bg02" android:state_selected="true"/>
-    <item android:drawable="@drawable/gxd_user_kefu_bg01" android:state_selected="false"/>
-</selector><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_bg_question_selector.xml -->

@@ -1,6 +1,0 @@
-说明：
-1.gn_component_config.json:声明当前sdk需要依赖的子部件和版本号信息，发布的时候在里面配置，并把apk发布到assets的gionee目录下。
-并把apkName更新为存在assets的gionee目录下对应的文件名，需要带上后缀。
-2.gn_depend_config.json:声明当前子部件之间的依赖关系，发布的时候需要在里面配置，由sdk在检查环境的时候统一安装。
-3.上面2个文件通过id做为子部件的标示，通过id做关联，如果修改id的话，需要同步修改代码DependComponent里面的子部件和id的关联关系。
-4.component_config和depend_config的名字已经在代码里面做了引用，如果要改文件名请同时修改代码里面的常量（全局搜索）。

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="text_color_title">#FF666666</color>
-    <color name="text_color_checkbox">#FF666666</color>
-    <color name="text_color_edit">#FF000000</color>
-    <color name="text_color_edit_hint">#FF909090</color>
-</resources>

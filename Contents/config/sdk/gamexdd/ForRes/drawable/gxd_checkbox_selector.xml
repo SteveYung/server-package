@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/gxd_checkbox_checked" android:state_checked="true"/>
-    <item android:drawable="@drawable/gxd_checkbox_normal"/>
-</selector><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_checkbox_selector.xml -->

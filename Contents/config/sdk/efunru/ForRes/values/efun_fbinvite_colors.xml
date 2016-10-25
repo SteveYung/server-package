@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <color name="com_efun_invite_color_btn_pressed">#FFFB76</color>
-    <color name="com_efun_invite_color_btn_default">#4F81BD</color>
-    <color name="com_efun_invite_color_activity_main_text">#FFFFFF</color>
-    <color name="com_efun_invite_color_activity_leaderboard_bg">#080C15</color>
-</resources>

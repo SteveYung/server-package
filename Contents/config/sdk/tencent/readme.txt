@@ -1,1 +1,0 @@
-注意：不要随意替换WXEntryActivity.java,python脚本中有修改WXEntryActivity.java中的com.tencent.tmgp.sgscq

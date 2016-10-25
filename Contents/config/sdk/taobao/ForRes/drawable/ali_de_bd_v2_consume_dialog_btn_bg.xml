@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="@dimen/ali_de_bd_dimen_consume_btn_corner_radius"/>
-    <solid android:color="@color/ali_de_bd_color_v2_consume_dialog_btn"/>
-</shape>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/gamexdd_e04a32" android:state_pressed="true" />
-    <item android:drawable="@color/gamexdd_btn_red_press" android:state_pressed="false"/>
-    <item android:drawable="@color/gamexdd_btn_gray_press" android:state_selected="false"/>
-</selector><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_btn_giftexchange_selector.xml -->

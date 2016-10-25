@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="@dimen/ali_de_bd_dimen_charge_price_heigth"
-    android:layout_gravity="center_vertical"
-    android:background="@color/ali_de_bd_color_white"
-    android:gravity="center"
-    android:textColor="@color/ali_de_bd_color_black" 
-    />

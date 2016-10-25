@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@color/gamexdd_f2f2f2" android:state_pressed="true"/>
-    <item android:drawable="@color/gamexdd_ffffff"/>
-</selector><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_btn_sign_selector.xml -->

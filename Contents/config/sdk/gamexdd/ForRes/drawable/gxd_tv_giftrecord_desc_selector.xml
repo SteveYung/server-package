@@ -1,6 +1,0 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <item android:state_selected="true" android:color="@color/gamexdd_e04a32"></item>
-    <item android:state_selected="false" android:color="@color/gamexdd_6cb01b"></item>
-
-</selector><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_tv_giftrecord_desc_selector.xml -->

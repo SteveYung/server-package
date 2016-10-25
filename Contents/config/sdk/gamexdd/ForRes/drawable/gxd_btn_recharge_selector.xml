@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@color/gamexdd_e04a32" android:state_selected="true"/>
-    <item android:drawable="@color/gamexdd_6cb01b" android:state_selected="false"/>
-</selector><!-- From: file:/Users/Encore/Desktop/AndroidProject/gamexdd/thrunk/GamexddSDK/GamexddPaySDK/src/main/res/drawable/gxd_btn_recharge_selector.xml -->

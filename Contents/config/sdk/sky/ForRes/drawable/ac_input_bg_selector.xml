@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/ac_input_bg_focused" android:state_focused="true"></item> 
-    <item android:drawable="@drawable/ac_input_bg_disabled" android:state_enabled="false"></item>   
-    <item android:drawable="@drawable/ac_input_bg_normal"></item>
-</selector>

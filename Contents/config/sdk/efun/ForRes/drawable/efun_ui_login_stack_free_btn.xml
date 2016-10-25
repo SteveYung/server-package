@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" >
-    
-    <item android:drawable="@drawable/efun_ui_login_stack_free_click" android:state_pressed="true"/>
-    <item android:drawable="@drawable/efun_ui_login_stack_free_normal"/>
-
-</selector>
