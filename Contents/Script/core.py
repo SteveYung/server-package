@@ -55,7 +55,7 @@ def main(channel):
             return
         taskManager.shareInstance().notify(idChannel, 10)
         # file_operate.execFormatCmd('chmod -R 777 %s' % (file_operate.get_server_dir()+'/workspace/'))
-        workDir = file_operate.get_server_dir()+'/workspace/%s' % (idChannel)
+        workDir = file_operate.get_server_dir()+'/workspace/%s/%s' % (sys.argv[1],idChannel)
         workDir = file_operate.getFullPath(workDir)
         file_operate.delete_file_folder(workDir)
         if not os.path.exists(source):
@@ -474,7 +474,7 @@ def buildGradle(channel):
 
 def deleteWorkspace(channel):
     idChannel = channel['idChannel']
-    workDir = file_operate.get_server_dir()+'/workspace/%s' %(idChannel)
+    workDir = file_operate.get_server_dir()+'/workspace/%s/%s' %(sys.argv[1],idChannel)
     workDir = file_operate.getFullPath(workDir)
     file_operate.delete_file_folder(workDir)
 # 定义函数 8.4
