@@ -140,6 +140,8 @@ def main(channel):
             SDKVersionInfo = ConfigParse.shareInstance().findSDKVersion(SDK['SDKName'])
             if SDKVersionInfo is not None:
                 SDK['showVersion'] = SDKVersionInfo['showVersion']
+            print '<---- SDK:%s ---->' %(SDK)
+            print '<---- UsrSDKConfig:%s ---->' %(UsrSDKConfig)
             ret = apk_operate.configDeveloperInfo(channel, SDK, UsrSDKConfig, decompileDir)
             if ret:
                 return
