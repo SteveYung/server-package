@@ -184,7 +184,10 @@ class ConfigParse(object):
             dictTemp['pluginxType'] = r['pluginxType']
             dictTemp['SDKShowName'] = r['SDKShowName']
             dictTemp['bHasChildSDK'] = r['bHasChildSDK']
-            dictTemp['orderCallback'] = r['orderCallback']
+            if(r['orderCallback'] is None):
+                dictTemp['orderCallback'] = ''
+            else:
+                dictTemp['orderCallback'] = r['orderCallback']
             dictTemp['operateLs'] = []
             dictTemp['pluginLs'] = []
             dictTemp['SDKLs'] = []
