@@ -1,9 +1,10 @@
 # 2015.01.17 10:32:34 CST
-#Embedded file name: /Projects/GitLab/rsdk_package/Env/Script/packThreadManagerModule.py
+# Embedded file name: /Projects/GitLab/rsdk_package/Env/Script/packThreadManagerModule.py
 import threading
 from packThreadModule import PackThread
 from config import ConfigParse
 import file_operate
+
 
 class packThreadManager(object):
     """
@@ -40,12 +41,12 @@ class packThreadManager(object):
 
     def startTask(self, platform):
         packageLs = ConfigParse.shareInstance().getPackageLs()
-        #print '<---TASK INFO--->%s' %(packageLs)
-    	for package in packageLs:
+        # print '<---TASK INFO--->%s' %(packageLs)
+        for package in packageLs:
             idChannel = package['idChannel']
             if idChannel in self.__finishChannel:
                 #print '<---...CONTINUE WORKING...--->'
-		continue
+                continue
             pkThread = self.getIdleThread()
             if pkThread is None:
                 return
@@ -87,6 +88,7 @@ class packThreadManager(object):
 
     def clearRecord(self):
         self.__finishChannel = []
-# +++ okay decompyling rsdk1.4/Script/packThreadManagerModule.pyc 
+
+# +++ okay decompyling rsdk1.4/Script/packThreadManagerModule.pyc
 # decompiled 1 files: 1 okay, 0 failed, 0 verify failed
 # 2015.01.17 10:32:35 CST
