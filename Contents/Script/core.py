@@ -5,17 +5,12 @@ import file_operate
 import apk_operate
 import encode_operate
 import error_operate
-from http_manager import httpManager
-import modifyManifest
+
 from config import ConfigParse
 from taskManagerModule import taskManager
-import thread
 import threading
-import platform
 import special_script
-from time import sleep
 import os
-import time
 import commands
 import urllib
 import sys
@@ -153,7 +148,7 @@ def main(channel):
 
         taskManager.shareInstance().notify(idChannel, 65)
         # bMergeR = False
-        ret, bMergeR = apk_operate.addSplashScreen(channel, decompileDir)
+        ret, bMergeR = apk_operate.addSplashScreenToSource(channel, decompileDir)
         if ret:
             return
         ret = encode_operate.encodeXmlFiles(workDir + '/decompile')
@@ -272,207 +267,6 @@ def main(channel):
         if ret:
             return
         taskManager.shareInstance().notify(idChannel, 100)
-
-"""
-def buildGradle(channel):
-    # setting gradle environ
-    # libPath = file_operate.getToolPath('')
-    # os.environ['PATH'] = libPath + '/gradle/bin:' + os.environ['PATH']
-    # os.environ['GRADLE_OPTS'] = '-Dorg.gradle.native=false'
-
-    idChannel = channel.get('idChannel')
-    channelName = channel.get('name')
-    channelNum = channel.get('channelNum')
-    threading.currentThread().setName(idChannel)
-    taskManager.shareInstance().notify(idChannel, 5)
-    source = ConfigParse.shareInstance().getSource()  # GameSource
-    basename = os.path.basename(source)
-    game = ConfigParse.shareInstance().getCurrentGame()  # GameInfo
-    if game is None:
-        error_operate.error(3)
-        return
-    if channelName is None:
-        error_operate.error(5)
-        return
-    taskManager.shareInstance().notify(idChannel, 10)
-
-    # create workspace and copy game source
-    workDir = '../workspace/' + channelNum
-    workDir = file_operate.getFullPath(workDir)
-    file_operate.delete_file_folder(workDir)
-    if not os.path.exists(source):
-        error_operate.error(60)
-        return
-    gameSource = workDir + '/' + basename
-    file_operate.copyFiles(source, gameSource)  # copy game source
-    taskManager.shareInstance().notify(idChannel, 20)
-
-    # copy sdkplugin
-    SDKWorkDir = workDir + '/sdk/'
-    for Channel_SDK in channel['sdkLs']:
-        idSDK = Channel_SDK['idSDK']
-        SDK = ConfigParse.shareInstance().findSDK(idSDK)
-        if SDK == None:
-            continue
-        SDKSrcDir = '../config/sdk/' + SDK['SDKName']
-        SDKSrcDir = file_operate.getFullPath(SDKSrcDir)
-        SDKDestDir = SDKWorkDir + SDK['SDKName']
-        file_operate.copyFiles(SDKSrcDir, SDKDestDir)
-    taskManager.shareInstance().notify(idChannel, 30)
-
-    appModule = gameSource + '/app'  # module folder
-    mainDir = appModule + '/src/main'
-    taskManager.shareInstance().notify(idChannel, 45)
-    # create developInfo.xml and SupportInfo.xml
-    apk_operate.writeChannelInfoIntoDevelopInfo(mainDir, channel, game)
-    apk_operate.writeSupportInfo(mainDir)
-    taskManager.shareInstance().notify(idChannel, 50)
-
-    bExecuteSpecialScipt = False
-    for Channel_SDK in channel['sdkLs']:
-        idSDK = Channel_SDK['idSDK']
-        # sdkplugin config.xml
-        UsrSDKConfig = ConfigParse.shareInstance().findUserSDKConfigBySDK(idSDK, channel['idChannel'])
-        SDK = ConfigParse.shareInstance().findSDK(idSDK)
-        if SDK == None:
-            continue
-        # merge resource in to game
-        ret = apk_operate.packResIntoGame(SDKWorkDir, SDK, appModule, UsrSDKConfig)
-        if ret:
-            return
-        SDKVersionInfo = ConfigParse.shareInstance().findSDKVersion(SDK['SDKName'])
-        if SDKVersionInfo is not None:
-            SDK['showVersion'] = SDKVersionInfo['showVersion']
-        # merge resource in to developerInfo.xml
-        ret = apk_operate.configDeveloperInfo(channel, SDK, UsrSDKConfig, mainDir)
-        if ret:
-            return
-        # mark sdkplugin script
-        for child in SDK['operateLs']:
-            if child['name'] == 'script' or child['name'] == 'Script':
-                bExecuteSpecialScipt = True
-                break
-
-    taskManager.shareInstance().notify(idChannel, 65)
-    # add Splash Screen
-    ret = apk_operate.addSplashScreenToSource(channel, mainDir)
-    if ret:
-        return
-    # encode developInfo.xml and SupportInfo.xml
-    ret = encode_operate.encodeXmlFiles(mainDir + '/')
-    if ret:
-        return
-
-    taskManager.shareInstance().notify(idChannel, 60)
-    # execute sdkplugin script
-    if bExecuteSpecialScipt:
-        ret = special_script.doSpecialOperate(channel, gameSource, channel['r_bundle_id'], SDKWorkDir)
-        if ret:
-            return
-
-    taskManager.shareInstance().notify(idChannel, 70)
-    # add icon
-    ret = apk_operate.pushIconIntoApk(game['gameName'], channelNum, mainDir)
-    if ret:
-        return
-
-    newAppName = ConfigParse.shareInstance().getAppName()
-    #modify app display name by game setting
-    apk_operate.modifyAppName(game, mainDir, newAppName)
-    #modify app display name by channel setting
-    #if channel display_name is not null,the app displayname will be set by channel
-    apk_operate.modifyAppNameByChannel(channel, mainDir)
-
-    apk_operate.writeDataIntoAndroidManifest(mainDir, channel)
-
-    taskManager.shareInstance().notify(idChannel, 75)
-    signInfo = apk_operate.getSignInfo(game, channel)
-    if signInfo == 0:
-        return
-
-    buildFile = open(appModule + '/build.gradle', 'r')
-    buildFiles = buildFile.readlines()
-    buildFile.close()
-
-    libsDir = appModule + '/libs'
-    libsFiles = os.listdir(libsDir)
-    libstr = ''
-    for lib in libsFiles:
-        exttuple = os.path.splitext(lib)
-        filename = exttuple[0]
-        extname = exttuple[1]
-        if extname == '.aar':
-            libstr = libstr + 'compile(name: \'' + filename + '\', ext: \'aar\')\n'
-
-    newBuildFile = \
-        '\nandroid {\n' \
-        '   signingConfigs {\n' \
-        '       release {\n' + \
-        '           keyAlias \'%s\'\n' % (signInfo['keystoreAlias']) + \
-        '           keyPassword \'%s\'\n' % (signInfo['keystoreAliasPwd']) + \
-        '           storeFile file(\'%s\')\n' % (signInfo['keystoreFile']) + \
-        '           storePassword \'%s\'\n' % (signInfo['keystorePwd']) + \
-        '       }\n' \
-        '   }\n' \
-        '   productFlavors{\n' \
-        '       rsdk{\n' \
-        '           applicationId \"%s\"\n' % (channel['r_bundle_id']) + \
-        '           versionCode %s\n' % (channel['r_gameversion_build']) + \
-        '           versionName \'%s\'\n' % (channel['r_gameversion']) + \
-        '           signingConfig signingConfigs.release\n' \
-        '       }\n' \
-        '   }\n' \
-        '}\n' \
-        'dependencies {\n' + \
-        libstr + \
-        '}'
-    buildFiles.append(newBuildFile)
-
-    buildStr = ''
-    for str in buildFiles:
-        buildStr = buildStr + str
-    buildFile = open(appModule + '/build.gradle', 'w')
-    buildFile.write(buildStr)
-    buildFile.close()
-    cmd = 'cd ' + gameSource + '; gradle --stacktrace --info clean'
-    ret = file_operate.execFormatCmd(cmd)
-    if ret:
-        error_operate.error(130)
-        return
-    cmd = 'cd ' + gameSource + '; gradle --info assemblersdkRelease'
-    ret = file_operate.execFormatCmd(cmd)
-    if ret:
-        error_operate.error(130)
-        return
-    import time
-
-    dateStr = time.strftime("%Y%m%d%H%M%S")
-
-    versionName = channel['r_gameversion']
-    #get final apk name
-    finalAppName = ''
-    if game.get('isModifyAppName') is not None and game['isModifyAppName'] != False:
-        finalAppName = game.get('gameName')
-    if channel['display_name'] is not None and channel['display_name'] != '':
-        finalAppName = channel['display_name']
-
-    if finalAppName == '':
-        finalAppName = game.get('gameName')
-
-    outputDir = ConfigParse.shareInstance().getOutputDir()
-    if outputDir == '':
-        outputDir = '../'
-    outputDir += '/' + game['gameName'] + '/' + versionName + '/' + channel['name']
-    outputDir = file_operate.getFullPath(outputDir)
-    apkName = '%s/%s_%s_%s_%s%s' % (outputDir,
-                                    finalAppName,
-                                    channel['name'],
-                                    versionName,
-                                    dateStr,
-                                    '.apk')
-    file_operate.copyFile(appModule + '/build/outputs/apk/app-rsdk-release.apk', apkName)
-    taskManager.shareInstance().notify(idChannel, 100)
-"""
 
 def deleteWorkspace(channel):
     idChannel = channel['idChannel']
