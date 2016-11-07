@@ -148,7 +148,7 @@ def main(channel):
 
         taskManager.shareInstance().notify(idChannel, 65)
         # bMergeR = False
-        ret, bMergeR = apk_operate.addSplashScreenToSource(channel, decompileDir)
+        ret = apk_operate.addSplashScreenToSource(channel, decompileDir)
         if ret:
             return
         ret = encode_operate.encodeXmlFiles(workDir + '/decompile')
