@@ -74,14 +74,12 @@ def copyFile(sourceFile, targetFile):
     if not os.path.exists(targetFile) or os.path.exists(targetFile) and os.path.getsize(targetFile) != os.path.getsize(sourceFile):
         targetDir = os.path.dirname(targetFile)
         if not os.path.exists(targetDir):
-            execFormatCmd('mkdir %s' %(targetDir))
-        execFormatCmd('cp -f -a %s %s ' %(sourceFile,targetFile))
-        # execFormatCmd('chmod 777 %s' % (targetDir+'/temp.apk'))
-        # targetFileHandle = open(targetFile, 'wb')
-        # sourceFileHandle = open(sourceFile, 'rb')
-        # targetFileHandle.write(sourceFileHandle.read())
-        # targetFileHandle.close()
-        # sourceFileHandle.close()
+            os.makedirs(targetDir)
+        targetFileHandle = open(targetFile, 'wb')
+        sourceFileHandle = open(sourceFile, 'rb')
+        targetFileHandle.write(sourceFileHandle.read())
+        targetFileHandle.close()
+        sourceFileHandle.close()
 
 
 def copyApkToZip(filename):
