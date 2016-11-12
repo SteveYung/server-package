@@ -905,6 +905,8 @@ def generatePluginInfo(SDK, usrSDKConfig, decompileDir):
         paramNode = SubElement(pluginLsNode, 'param')
         paramNode.text = pluginName
         paramNode.set('name', SDK['SDKName'])
+        paramNode.set('pluginName', SDK['SDKName'])
+        paramNode.set('pluginId', SDK['SDKNum'])
 
     targetTree.write(PluginFile, 'UTF-8')
     file_operate.printf('generate supportPlugin.xml success')
