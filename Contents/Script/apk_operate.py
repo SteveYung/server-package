@@ -1713,6 +1713,7 @@ def splitDex(workDir, channel):
     moveFuncNum = 0
     moveFunCount = 0
     allRefs = []
+
     for f in fileList:
         if 'android/support' in f:
             continue
@@ -1732,10 +1733,10 @@ def splitDex(workDir, channel):
         allClasNum = {}
         get_smali_method_count(f, allRefs, allClasNum)
         moveFuncNum += allClasNum[f]
-        moveFuncNum += moveFuncNum
+        moveFunCount += allClasNum[f]
 
         if moveFunCount >= currDexFunNum:
-            print "======moveFuncNum:%s" %(moveFuncNum)
+            print "=======movedFunCount:%s;break" %(moveFunCount)
             break
 
         if moveFuncNum >= maxMainFucNum:
