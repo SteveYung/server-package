@@ -1642,37 +1642,36 @@ def parse_method_invoke(line):
     blocks = line.split()
     return blocks[len(blocks)-1]
 
+def modifySmaliForApplication(applicationName, smaliDir,sdkapplicationStr):
+    print 'modifySmaliForApplication sdkapplicationStr:%s '%(sdkapplicationStr)
+    applicationSmali = smaliDir + applicationName + '.smali'
+    if not os.path.exists(applicationSmali):
+        return False
+    htxtSmali = open(applicationSmali, 'r')
+    data = str(htxtSmali.read())
+    htxtSmali.close()
+    superPrefix = '.super L'
+    idxStart = data.find(superPrefix)
+    idxEnd = data.find(';', idxStart)
+    superName = data[idxStart + len(superPrefix):idxEnd]
+    if superName == 'android/app/Application':
+        file_operate.modifyFileContent(applicationSmali, '.smali', 'L' + superName, 'L'+sdkapplicationStr)
+    else:
+        modifySmaliForApplication(superName, smaliDir,sdkapplicationStr)
+
 def splitDex(workDir, channel):
     """ multidex """
     currDexFunNum = get_all_method_count(workDir, channel)
     # print currDexFunNum
 
-    maxMainFucNum = 60000
+    maxMainFucNum = 64000
 
-    maxMinorFucNum = 40000
+    # maxMinorFucNum = 40000
 
     if currDexFunNum < maxMainFucNum:
         return 0
 
     currDexFunNum -= maxMainFucNum
-
-    fileList = []
-    samilDir = workDir + '/decompile/smali'
-    file_list(samilDir, fileList)
-
-    # allRefs = []
-    # allClasNum = {}
-    # currDexFunNum = 0
-    # countTimeStart = time.time()
-    # for f in fileList:
-    #     currDexFunNum += get_smali_method_count(f, allRefs, allClasNum)
-    # countTimeEnd = time.time()
-    # count = countTimeEnd - countTimeStart
-    # file_operate.printf("countTime =====> %d" % count)
-    # file_operate.printf("count =====> %d" % currDexFunNum)
-
-
-
     samilDir = workDir + '/decompile/smali'
     decompileDir = workDir + '/decompile'
 
@@ -1686,9 +1685,18 @@ def splitDex(workDir, channel):
     ET.register_namespace('android', androidNS)
     tree = ET.parse(ManifestDir)
     root = tree.getroot()
-    application = root.find('application')
+    applicationNode = root.find('application')
     attr_Name = '{' + androidNS + '}name'
-    application.set(attr_Name, 'android.support.multidex.MultiDexApplication')
+#   application.set(attr_Name, 'android.support.multidex.MultiDexApplication')
+
+    applicationName = applicationNode.get(attr_Name)
+    sdkApplicationName = 'android.support.multidex.MultiDexApplication'
+    if applicationName is None:
+        applicationNode.set(attr_Name,sdkApplicationName )
+    else:
+        applicationSmali = applicationName.replace('.', '/')
+        sdkApplicationStr = sdkApplicationName.replace('.', '/')
+        modifySmaliForApplication(applicationSmali, samilDir,sdkApplicationStr)
     tree.write(ManifestDir, 'utf-8')
 
     fileList = []
@@ -1727,7 +1735,7 @@ def splitDex(workDir, channel):
         if moveFunCount >= currDexFunNum:
             break
 
-        if moveFuncNum >= maxMinorFucNum:
+        if moveFuncNum >= maxMainFucNum:
             moveFuncNum = 0
             currDexIndex += 1
             newDexPath = os.path.join(decompileDir, "smali_classes"+str(currDexIndex))
