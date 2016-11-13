@@ -1669,6 +1669,7 @@ def splitDex(workDir, channel):
     # maxMinorFucNum = 40000
 
     if currDexFunNum < maxMainFucNum:
+        print "=======currDexFunNum:%s" %(currDexFunNum)
         return 0
 
     currDexFunNum -= maxMainFucNum
