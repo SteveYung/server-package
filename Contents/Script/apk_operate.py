@@ -1732,9 +1732,10 @@ def splitDex(workDir, channel):
         allClasNum = {}
         get_smali_method_count(f, allRefs, allClasNum)
         moveFuncNum += allClasNum[f]
-        moveFunCount += moveFuncNum
+        moveFuncNum += moveFuncNum
 
         if moveFunCount >= currDexFunNum:
+            print "======moveFuncNum:%s" %(moveFuncNum)
             break
 
         if moveFuncNum >= maxMainFucNum:
