@@ -1664,7 +1664,7 @@ def splitDex(workDir, channel):
     currDexFunNum = get_all_method_count(workDir, channel)
     # print currDexFunNum
 
-    maxMainFucNum = 64000
+    maxMainFucNum = 65535
 
     # maxMinorFucNum = 40000
 
