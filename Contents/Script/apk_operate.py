@@ -1674,7 +1674,7 @@ def splitDex(workDir, channel):
 
     currDexFunNum -= maxMainFucNum
     print "=======need moveFucNum:%s" %(currDexFunNum)
-    samilDir = workDir + '/decompile/smali'
+    samilDir = workDir + '/decompile/smali/'
     decompileDir = workDir + '/decompile'
 
     multidexPath = file_operate.get_server_dir()+'/config/channel/android-support-multidex.dex'
