@@ -1642,6 +1642,34 @@ def parse_method_invoke(line):
     blocks = line.split()
     return blocks[len(blocks)-1]
 
+def modifyFileContentByRule(source, fileType, oldContent, newContent):
+    if os.path.isdir(source):
+        for file in os.listdir(source):
+            sourceFile = os.path.join(source, file)
+            modifyFileContentByRule(sourceFile, fileType, oldContent, newContent)
+
+    elif os.path.isfile(source) and os.path.splitext(source)[1] == fileType:
+        file1 = open(source, 'r+')
+
+        inConstructor = False
+        for line in open(source):
+            if '.super ' + oldContent in line or 'invoke-super' in line:
+                idx = line.find(oldContent)
+                line = line[:idx] + newContent + line[idx + len(oldContent):]
+                print line
+            if 'constructor' in line:
+                inConstructor = True
+            if inConstructor:
+                if 'invoke-direct' in line and 'init' in line and oldContent in line:
+                    idx = line.find(oldContent)
+                    line = line[:idx] + newContent + line[idx + len(oldContent):]
+                    print line
+            if '.end method' in line:
+                inConstructor = False
+
+            file1.write(line)
+        file1.close()
+
 def modifySmaliForApplication(applicationName, smaliDir,sdkapplicationStr):
     print 'modifySmaliForApplication sdkapplicationStr:%s '%(sdkapplicationStr)
     applicationSmali = smaliDir + applicationName + '.smali'
@@ -1655,7 +1683,7 @@ def modifySmaliForApplication(applicationName, smaliDir,sdkapplicationStr):
     idxEnd = data.find(';', idxStart)
     superName = data[idxStart + len(superPrefix):idxEnd]
     if superName == 'android/app/Application':
-        file_operate.modifyFileContent(applicationSmali, '.smali', 'L' + superName, 'L'+sdkapplicationStr)
+        modifyFileContentByRule(applicationSmali, '.smali', 'L' + superName, 'L'+sdkapplicationStr)
     else:
         modifySmaliForApplication(superName, smaliDir,sdkapplicationStr)
 
