@@ -1773,7 +1773,7 @@ def splitDex(workDir, channel):
             newDexPath = os.path.join(decompileDir, "smali_classes"+str(currDexIndex))
             os.makedirs(newDexPath)
 
-        targetPath = f[0:len(decompileDir)] + "/smali_classes"+str(currDexIndex) + f[len(samilDir):]
+        targetPath = f[0:len(decompileDir)] + "/smali_classes"+str(currDexIndex) + f[len(samilDir) - 1:]
         file_operate.copyFiles(f, targetPath)
         file_operate.delete_file_folder(f)
     return 0
