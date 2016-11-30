@@ -1692,6 +1692,9 @@ def splitDex(workDir, channel):
     currDexFunNum = get_all_method_count(workDir, channel)
     # print currDexFunNum
 
+    '''
+    the max method number in one dex file is 65535,but not one smali contains only one method
+    '''
     maxMainFucNum = 65535
 
     # maxMinorFucNum = 40000
@@ -1700,7 +1703,7 @@ def splitDex(workDir, channel):
         print "=======currDexFunNum:%s" %(currDexFunNum)
         return 0
 
-    currDexFunNum -= maxMainFucNum
+    currDexFunNum = currDexFunNum - maxMainFucNum + 1000
     print "=======need moveFucNum:%s" %(currDexFunNum)
     samilDir = workDir + '/decompile/smali/'
     decompileDir = workDir + '/decompile'
