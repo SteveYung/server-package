@@ -1172,7 +1172,7 @@ def replace_custom_res(decompileDir):
 
 
 
-            file_path =os.path.join(decompileDir ,r['replace'])
+            file_path = decompileDir + r['replace']
             print 'replace res path : '+file_path
             file_url = r['url']
 
