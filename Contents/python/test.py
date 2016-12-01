@@ -76,8 +76,15 @@ def reporthook(count,block_size,total_size):
 
 # down_log = urllib.urlretrieve(url,'icon.png',reporthook)
 # resizeImg(ori_img='icon.png',dst_img='icon144.png',dst_w=144,dst_h=144,save_q=100)
-str = 'asset/ini'
+str = '/ini'
+
+
+
 if(str[0] == '/'):
     print 'true'
 else:
     print 'false'
+
+strlist = str.split('/')
+file_dir = str.replace('/'+strlist[len(strlist)-1],'')
+print file_dir
