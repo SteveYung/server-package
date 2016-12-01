@@ -454,7 +454,7 @@ class ConfigParse(object):
         """get the data about tpl_resource_replace from database"""
         self.__resReplaceLs.clear()
         c = cx.cursor(MySQLdb.cursors.DictCursor)
-        c.execute('select * from tpl_resource_replace where channel_id = %d' %(sys.argv[3]))
+        c.execute('select * from tpl_resource_replace where channel_id = ' + sys.argv[3])
         self.__resReplaceLs = c.fetchall()
         c.close()
 

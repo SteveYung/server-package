@@ -19,10 +19,9 @@
 # print outputDir
 # print str_final
 import urllib
-from PIL import Image as image
 
 
-
+'''
 url = 'http://123.207.92.160/rsdk-set/upload/rsdk_zhangbizheng/1/600072/icon/game.png '
 
 
@@ -63,7 +62,7 @@ def resizeImg(**args):
         
     im.resize((newWidth,newHeight),image.ANTIALIAS).save(arg['dst_img'],quality=arg['save_q'])
 
-    '''
+
     image.ANTIALIAS
     NEAREST: use nearest neighbour
     BILINEAR: linear interpolation in a 2x2 environment
@@ -75,5 +74,10 @@ def reporthook(count,block_size,total_size):
     per = (100.0 * count * block_size ) / total_size
     print "Downloading: %d%%" % per
 
-down_log = urllib.urlretrieve(url,'icon.png',reporthook)
-resizeImg(ori_img='icon.png',dst_img='icon144.png',dst_w=144,dst_h=144,save_q=100)
+# down_log = urllib.urlretrieve(url,'icon.png',reporthook)
+# resizeImg(ori_img='icon.png',dst_img='icon144.png',dst_w=144,dst_h=144,save_q=100)
+str = 'asset/ini'
+if(str[0] == '/'):
+    print 'true'
+else:
+    print 'false'
