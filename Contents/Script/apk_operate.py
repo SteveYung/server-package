@@ -1159,7 +1159,7 @@ def addSplashScreen(channel, decompileDir):
     return (0, True)
 
 def replace_custom_res(decompileDir):
-    resLs = ConfigParse.shareInstance().get_replace_res();
+    resLs = ConfigParse.shareInstance().get_replace_res()
     if(len(resLs)>0):
         for r in resLs:
             if(r['replace'] is None or r['replace'] == '' or r['url'] is None or r['url'] == ''):
@@ -1173,6 +1173,7 @@ def replace_custom_res(decompileDir):
 
 
             file_path =os.path.join(decompileDir ,r['replace'])
+            print 'replace res path : '+file_path
             file_url = r['url']
 
             strlist = file_path.split('/')
