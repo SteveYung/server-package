@@ -1158,7 +1158,24 @@ def addSplashScreen(channel, decompileDir):
     file_operate.modifyFileContent(newSplashCodePath, '.smali', '###rsdk_Start_Activity###', activityName)
     return (0, True)
 
+def replace_custom_res(decompileDir):
+    resLs = ConfigParse.shareInstance().get_replace_res();
+    if(len(resLs)>0):
+        for r in resLs:
+            if(r['replace'] is None or r['replace'] == '' or r['url'] is None or r['url'] == ''):
+                continue
+            if(r['replace'][0] != '/'):
+                r['replace'] = '/%s' % (r['replace'])
 
+            r['replace'] = r['replace'].replace('\\', '/')
+            r['replace'] = re.sub('/+', '/', r['replace'])
+
+
+
+            file_path =os.path.join(decompileDir ,r['replace'])
+            file_url = r['url']
+            urllib.urlretrieve(file_url,file_path)
+            print 'replace custom res %s success' %(file_path)
 
 def removeStartActivity(bHasSplash, decompileDir, bRemove = True):
     """

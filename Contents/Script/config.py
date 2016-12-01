@@ -46,6 +46,7 @@ class ConfigParse(object):
     __channelCustomLs = {}
     __channelLs = {}
     __userSDKConfigLs = {}
+    __resReplaceLs = {}
     __packageLs = []
     __SDKVersionLs = []
     __isCocosPlayMode = False
@@ -159,6 +160,7 @@ class ConfigParse(object):
         # self.readProjSDKPath(cx)
         self.readOutputDir(cx)
         self.readPackage(cx)
+        self.read_res_for_replace(cx)
         # self.readTargetName(cx) #从user.xml里读取targetName
         cx.close()
         game = self.getCurrentGame()
@@ -380,59 +382,7 @@ class ConfigParse(object):
         print "<---outputDir--->"+outputDir
         self._outputDir = outputDir
 
-    # def readProjFolder(self, cx):
-        # data = self.readConfig(6)
-        # if data is not None:
-            # self._projFolder = data['data1']
-            # self._projXcode = data['data2']
-            # self._projSDKVersion = data['data3']
-            # self._projIpaPackage = data['data4']
-            # if data.get('data5') is not None:
-            #     self.__iOSName = data['data5']
 
-    #从user.xml里读取targetName
-    # def readTargetName(self,cx):
-        """read target name from user.xml"""
-        # data = self.readConfig(9)
-        # if data is not None:
-        #     self._targetName = data['data1']
-
-    # def readProjSDKPath(self, cx):
-        # data = self.readConfig(7)
-        # if data is not None:
-        #     self._projSDKPath = data['data1']
-
-    # def readConfig(self, type):
-        """
-            read config from config/user.xml
-            @param type:
-                1:apk src
-                2:out dir
-                3:user name
-
-        configPath = '../config/user.xml'
-        configPath = file_operate.getFullPath(configPath)
-        if not os.path.exists(configPath):
-            return
-        targetTree = ET.parse(configPath)
-        targetRoot = targetTree.getroot()
-        if targetRoot is None:
-            return
-        dataLsNode = targetRoot.findall('data')
-        if dataLsNode is None:
-            return
-        for dataNode in dataLsNode:
-            dictTemp = {}
-            dictTemp['type'] = dataNode.get('type')
-            dictTemp['data1'] = dataNode.get('data1')
-            dictTemp['data2'] = dataNode.get('data2')
-            dictTemp['data3'] = dataNode.get('data3')
-            dictTemp['data4'] = dataNode.get('data4')
-            dictTemp['data5'] = dataNode.get('data5')
-            dictTemp['desc'] = dataNode.get('desc')
-            if dictTemp['type'] is not None and int(dictTemp['type']) == type:
-                return dictTemp
-        """
     def readGameLs(self, cx):
         """get the data about game list from database"""
         self.__gameLs = []
@@ -500,6 +450,14 @@ class ConfigParse(object):
             idChannel = self.__packageLs[0]['idChannel']
             self.__gamekey = self.__channelLs[idChannel]['idGame']
 
+    def read_res_for_replace(self, cx):
+        """get the data about tpl_resource_replace from database"""
+        self.__resReplaceLs.clear()
+        c = cx.cursor(MySQLdb.cursors.DictCursor)
+        c.execute('select * from tpl_resource_replace where channel_id = %d' %(sys.argv[3]))
+        self.__resReplaceLs = c.fetchall()
+        c.close()
+
     def findGame(self, gameId):
         for item in self.__gameLs:
             if str(item['gameId']) == str(gameId):
@@ -519,6 +477,9 @@ class ConfigParse(object):
 
     def getUserSDKConfig(self):
         return self.__userSDKConfigLs
+
+    def get_replace_res(self):
+        return self.__resReplaceLs
 
     def findChannel(self, idChannel):
         return self.__channelLs[idChannel]

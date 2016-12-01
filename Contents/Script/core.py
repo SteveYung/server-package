@@ -180,15 +180,8 @@ def main(channel):
 
         apk_operate.writeDataIntoAndroidManifest(decompileDir, channel)
         taskManager.shareInstance().notify(idChannel, 75)
-        for Channel_SDK in channel['sdkLs']:
-            idSDK = Channel_SDK['idSDK']
-            SDK = ConfigParse.shareInstance().findSDK(idSDK)
-            if SDK is None:
-                continue
-            # for child in SDK['operateLs']:
-            #     if child['name'] == 'mergeR':
-            #         bMergeR = True
-            #         break
+
+        apk_operate.replace_custom_res()
 
         ret = apk_operate.produceNewRFile(newPackagename, decompileDir)
         if ret:
@@ -233,20 +226,20 @@ def main(channel):
         #get date for apk file name
         import time
 
-        dateStr = time.strftime("%Y%m%d%H%M%S")
+        # dateStr = time.strftime("%Y%m%d%H%M%S")
 
         #get final apk name
         finalAppName = ''
         print '<---start rename apk--->'
-        if game.get('isModifyAppName') is not None and game['isModifyAppName'] != False:
-            finalAppName = game.get('gameName').encode('utf-8')
-        display_name = channel['display_name'].encode('utf-8')
-        if display_name is not None and display_name != '':
-            finalAppName = display_name
-	
+        # if game.get('isModifyAppName') is not None and game['isModifyAppName'] != False:
+        #     finalAppName = game.get('gameName').encode('utf-8')
+        # display_name = channel['display_name'].encode('utf-8')
+        # if display_name is not None and display_name != '':
+        #     finalAppName = display_name
+        #
         # if finalAppName == '':
         #     finalAppName = game.get('gameName')
-        channel_name = channel['name'].encode('utf-8')
+        # channel_name = channel['name'].encode('utf-8')
         #outputDir += '/' + game['gameName'] + '/' + versionName + '/' + channel_name
         #outputDir = file_operate.getFullPath(outputDir)
         #apkName = ('%s/%s_%s_%s_%s%s' % (outputDir,
