@@ -1164,15 +1164,17 @@ def replace_custom_res(decompileDir):
         for r in resLs:
             if(r['replace'] is None or r['replace'] == '' or r['url'] is None or r['url'] == ''):
                 continue
-            if(r['replace'][0] != '/'):
-                r['replace'] = '/%s' % (r['replace'])
+            print 'replace:'+r['replace']
+            tempstr = r['replace']
+            if(tempstr[0] != '/'):
+                tempstr = '/' + tempstr
 
-            r['replace'] = r['replace'].replace('\\', '/')
-            r['replace'] = re.sub('/+', '/', r['replace'])
+            tempstr = tempstr.replace('\\', '/')
+            tempstr = re.sub('/+', '/', tempstr)
 
 
 
-            file_path = decompileDir + r['replace']
+            file_path = decompileDir + tempstr
             print 'replace res path : '+file_path
             file_url = r['url']
 
