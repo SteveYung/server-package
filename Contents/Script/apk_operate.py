@@ -1724,7 +1724,7 @@ def splitDex(workDir, channel):
     '''
     maxMainFucNum = 65535
 
-    if (channel.get('idChannel') == 27):
+    if (channel.get('idChannel') == 27 and channel.get('channelNum') == '110009'):
         maxMainFucNum = 50000
     # maxMinorFucNum = 40000
 
