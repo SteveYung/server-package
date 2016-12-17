@@ -517,17 +517,8 @@ def appendResXml(copyFrom, copyTo):
     basename = os.path.basename(copyFrom)
     if not os.path.exists(copyTo):
         return False
-    aryXml = ['strings.xml',
-     'styles.xml',
-     'colors.xml',
-     'dimens.xml',
-     'ids.xml',
-     'attrs.xml',
-     'integers.xml',
-     'arrays.xml',
-     'bools.xml',
-     'drawables.xml']
-    if basename == 'strings.xml' or basename == 'styles.xml' or basename == 'colors.xml' or basename == 'dimens.xml' or basename == 'ids.xml' or basename == 'attrs.xml' or basename == 'integers.xml' or basename == 'arrays.xml':
+
+    if basename == 'values.xml' or basename == 'strings.xml' or basename == 'styles.xml' or basename == 'colors.xml' or basename == 'dimens.xml' or basename == 'ids.xml' or basename == 'attrs.xml' or basename == 'integers.xml' or basename == 'arrays.xml':
         copyToTree = ET.parse(copyTo)
         copyToRoot = copyToTree.getroot()
         copyFromTree = ET.parse(copyFrom)
@@ -554,7 +545,8 @@ def mergeValueXml(decompileDir):
      'arrays.xml',
      'bools.xml',
      'drawables.xml',
-     'public.xml']
+     'public.xml',
+     'values.xml']
     valuesDir = decompileDir + '/res/values'
     dictString = {}
     stringXml = valuesDir + '/strings.xml'
