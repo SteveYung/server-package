@@ -167,7 +167,7 @@ def main(channel):
 
         if extChannel.find("androidsupportv4") != -1:
             print 'handle androidsupportv4 resource'
-            androidsupportv4dex =  decompileDir+'/../../../config/channel/android-support-v4.dex'
+            androidsupportv4dex =  decompileDir+'/../../../../config/channel/android-support-v4.dex'
             if os.path.exists(androidsupportv4dex):
                 samilDir = decompileDir + '/smali'
                 ret = apk_operate.dexTrans2Smali(androidsupportv4dex, samilDir, 10)
