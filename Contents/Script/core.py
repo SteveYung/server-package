@@ -29,6 +29,7 @@ def main(channel):
         idChannel = channel.get('idChannel')
         channelName = channel.get('name')
         channelNum = channel.get('channelNum')
+        extChannel = channel.get('extChannel')
         threading.currentThread().setName(idChannel)
         taskManager.shareInstance().notify(idChannel, 5)
         source = ConfigParse.shareInstance().getSource()
@@ -162,6 +163,22 @@ def main(channel):
                 return
 
         taskManager.shareInstance().notify(idChannel, 70)
+
+
+        if extChannel.find("androidsupportv4") != -1:
+            print 'handle androidsupportv4 resource'
+            androidsupportv4dex =  decompileDir+'/../../../config/channel/android-support-v4.dex'
+            if os.path.exists(androidsupportv4dex):
+                samilDir = decompileDir + '/smali'
+                ret = apk_operate.dexTrans2Smali(androidsupportv4dex, samilDir, 10)
+                if ret:
+                    print ('copy androidsupportv4 dex to smali fail')
+                    return
+            else:
+                print ('androidsupportv4.dex is not exists')
+                return
+
+
         if(ConfigParse.shareInstance().getChannelIcon(idChannel) != ''):
             iconDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/icon/'
             if not os.path.exists(iconDir):
