@@ -1709,7 +1709,21 @@ def modifySmaliForApplication(applicationName, smaliDir,sdkapplicationStr):
 def splitDex(workDir, channel):
     """ multidex """
     currDexFunNum = get_all_method_count(workDir, channel)
-    # print currDexFunNum
+
+
+    extChannel = channel.get('extChannel')
+    if extChannel.find("androidsupportv4") != -1:
+        public_number_xml = file_operate.get_server_dir()+'/config/channel/public_number.xml'
+        if os.path.exists(public_number_xml):
+            public_number_xml_tree = ET.parse(public_number_xml)
+            public_number_xml_root = public_number_xml_tree.getroot()
+            androidsupportv4_note = public_number_xml_root.find('androidsupportv4')
+            androidsupportv4_number = androidsupportv4_note.text
+            print 'public androidsupportv4_number :%s' % androidsupportv4_number
+            currDexFunNum += int(androidsupportv4_number)
+        else:
+            print 'default androidsupportv4_number 11734'
+            currDexFunNum += 11734
 
     '''
     the max method number in one dex file is 65535,but not one smali contains only one method
