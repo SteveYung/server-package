@@ -21,7 +21,7 @@ Language = 'Chinese'
 curDir = os.getcwd()
 
 def get_server_dir():
-    return '/data/plattech/server_sdk_pack/Contents'
+    return sys.path[0] + '/..'
 
 def delete_file_folder(src):
     if os.path.exists(src):

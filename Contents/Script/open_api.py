@@ -3,6 +3,9 @@ import file_operate
 import error_operate
 import platform
 import apk_operate
+from xml.etree import ElementTree as ET
+from xml.etree.ElementTree import SubElement
+androidNS = 'http://schemas.android.com/apk/res/android'
 
 class OpenApi:
 
@@ -93,3 +96,27 @@ class OpenApi:
             file_operate.modifyFileContent(f, '.smali', oldRPath, newRPath)
             pass
         pass
+
+    def addMetaDataIntoManifestApplication(self, metaKey , metaValue):
+
+        manifestFile = self.__decompileDir + '/AndroidManifest.xml'
+        ET.register_namespace('android', androidNS)
+        targetTree = ET.parse(manifestFile)
+        targetRoot = targetTree.getroot()
+        key = '{' + androidNS + '}name'
+        value = '{' + androidNS + '}value'
+        applicationNode = targetRoot.find('application')
+        if applicationNode is None:
+            error_operate.error(110)
+            return
+
+        metaListNode = applicationNode.findall('meta-data')
+        for metaNode in metaListNode:
+            name = metaNode.attrib[key]
+            if name == metaKey:
+                applicationNode.remove(metaNode)
+
+        metaNode = SubElement(applicationNode, 'meta-data')
+        metaNode.set(key, metaKey)
+        metaNode.set(value, metaValue)
+        targetTree.write(manifestFile, 'UTF-8')

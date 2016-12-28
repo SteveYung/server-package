@@ -8,7 +8,7 @@ import sys
 import apk_operate
 import encode_operate
 from config import ConfigParse
-from open_api import OpenApi
+
 
 def split_apk(dbname,sub_channel_id,parent_apk_path,sub_apk_path):
     print sys.path[0]
