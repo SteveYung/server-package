@@ -94,7 +94,6 @@ def xmlDecode(xmlFile):
             j += 2
 
         FinallyArray = base64.b64decode(str(bytesarray))
-        print FinallyArray
     finally:
         file_xml.close()
         file_xml_write = open(xmlFile, 'w')
