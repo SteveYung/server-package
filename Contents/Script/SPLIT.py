@@ -174,8 +174,8 @@ def change_develop_id(work_dir, new_sub_app_id, sub_num):
     tree = ET.ElementTree()
     tree.parse(develop_file)
     channel_node = tree.find('channel')
-    channel_node.set('r_sub_app_id', new_sub_app_id)
-    channel_node.set('package_number', sub_num)
+    channel_node.set('r_sub_app_id', str(new_sub_app_id))
+    channel_node.set('package_number', str(sub_num))
     tree.write(develop_file, 'UTF-8')
     return 0
 
