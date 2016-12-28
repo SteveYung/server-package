@@ -155,7 +155,6 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         return
 
     out_put_dir = os.path.dirname(sub_apk_path)
-    logError('out_put_dir:' + out_put_dir,log_dir)
     ret = apk_operate.alignAPK(channel_unsign_apk,sub_apk_path, out_put_dir)
     if ret:
         print 'alignAPK fail'
@@ -163,7 +162,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         return
     else:
         print '{"ret":"success","msg":"run pack success"}'
-        file_operate.delete_file_folder(split_work_dir)
+    file_operate.delete_file_folder(split_work_dir)
 
 
 def change_develop_id(work_dir, new_sub_app_id, sub_num):

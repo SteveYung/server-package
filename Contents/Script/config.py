@@ -186,7 +186,7 @@ class ConfigParse(object):
                 pass
             else:
                 c = cx.cursor(MySQLdb.cursors.DictCursor)
-                c.execute('select * from tpl_sub_channel where id == %s' % sys.argv[6])
+                c.execute('select * from tpl_sub_channel where id = %s' % sys.argv[6])
                 self.__subPackageLs = c.fetchall()
                 c.close()
         except:
