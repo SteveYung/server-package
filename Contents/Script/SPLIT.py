@@ -76,9 +76,9 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
             else:
                 display_name = r['display_name'].encode('utf-8')
 
-            sub_app_id = r['sub_app_id']
+            sub_app_id = str(r['sub_app_id'])
             print 'sub_app_id: %s' % sub_app_id
-            sub_num = r['sub_num']
+            sub_num = str(r['sub_num'])
 
     else:
         logError('sub channel config is empty', log_dir)
@@ -175,8 +175,8 @@ def change_develop_id(work_dir, new_sub_app_id, sub_num):
     tree = ET.ElementTree()
     tree.parse(develop_file)
     channel_node = tree.find('channel')
-    channel_node.set('r_sub_app_id', str(new_sub_app_id))
-    channel_node.set('package_number', str(sub_num))
+    channel_node.set('r_sub_app_id', new_sub_app_id)
+    channel_node.set('package_number', sub_num)
     tree.write(develop_file, 'UTF-8')
     return 0
 
