@@ -131,6 +131,8 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         import specialsplit_script
         print 'sub_app_id:' + sub_app_id
         ret = specialsplit_script.script(split_decompile_dir, sub_app_id, sub_num)
+        del sys.modules['specialsplit_script']
+        sys.path.remove(SDKDir)
         if ret:
             logError("error do Special Operate",log_dir)
             print "error do Special Operate"
