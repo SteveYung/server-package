@@ -136,7 +136,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
             print "error do Special Operate"
             return
     encode_operate.encodeXmlFiles(split_decompile_dir)
-    
+
     channel_unsign_apk = channel_temp_apk_dir + '/channel_temp_apk.apk'
     ret = apk_operate.recompileApk(split_decompile_dir, channel_unsign_apk)
     if ret:
