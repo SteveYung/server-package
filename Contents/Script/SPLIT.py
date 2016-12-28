@@ -109,7 +109,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
     if ret:
         logError('change develop id error', log_dir)
         return
-    encode_operate.encodeXmlFiles(split_decompile_dir)
+
 
     channel = ConfigParse.shareInstance().findChannel(int(id_channel))
     sdk_dir = split_work_dir + '/sdk/'
@@ -135,7 +135,8 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
             logError("error do Special Operate",log_dir)
             print "error do Special Operate"
             return
-
+    encode_operate.encodeXmlFiles(split_decompile_dir)
+    
     channel_unsign_apk = channel_temp_apk_dir + '/channel_temp_apk.apk'
     ret = apk_operate.recompileApk(split_decompile_dir, channel_unsign_apk)
     if ret:
