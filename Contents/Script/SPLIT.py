@@ -27,9 +27,11 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         print '{"ret":"fail","msg":"parent apk not exist"}'
         return
     middle_dir = '%s/%s' % (db_name, sub_channel_id)
-    split_work_dir = file_operate.get_server_dir() + '/workspace/%s' % middle_dir
+    split_work_dir = file_operate.get_server_dir() + '/split_workspace/%s' % middle_dir
     if os.path.exists(split_work_dir):
         file_operate.delete_file_folder(split_work_dir)
+
+    os.makedirs(split_work_dir)
     split_decompile_dir = split_work_dir + '/decompile'
     os.mkdir(split_decompile_dir)
 
@@ -142,11 +144,13 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         return
     game = ConfigParse.shareInstance().getCurrentGame()
     if game is None:
+        print 'game is none'
         logError('game is none',log_dir)
         return
     ret = apk_operate.signApkAuto(channel_unsign_apk, game, channel,middle_dir)
 
     if ret:
+        print 'signApkAuto fail'
         logError('signApkAuto fail',log_dir)
         return
 
@@ -154,11 +158,12 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
     logError('out_put_dir:' + out_put_dir,log_dir)
     ret = apk_operate.alignAPK(channel_unsign_apk,sub_apk_path, out_put_dir)
     if ret:
+        print 'alignAPK fail'
         logError('alignAPK fail',log_dir)
         return
     else:
         print '{"ret":"success","msg":"run pack success"}'
-    return
+        file_operate.delete_file_folder(split_work_dir)
 
 
 def change_develop_id(work_dir, new_sub_app_id, sub_num):
