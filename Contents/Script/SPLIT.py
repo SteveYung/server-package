@@ -56,14 +56,12 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
 
     if len(sub_channel_config) > 0:
         for r in sub_channel_config:
-            if id_channel != r['p_channel_id']:
-                print id_channel
-                print r['p_channel_id']
+            if int(id_channel) != int(r['p_channel_id']):
                 logError('param channel id is not right', log_dir)
                 print '{"ret":"fail","msg":"param channel id is not right"}'
                 return
 
-            if game_id != r['game_id']:
+            if int(game_id) != int(r['game_id']):
                 logError('param game id is not right', log_dir)
                 print '{"ret":"fail","msg":"param game id is not right"}'
                 return
