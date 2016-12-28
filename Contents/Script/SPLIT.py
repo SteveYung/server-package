@@ -1,132 +1,181 @@
-#coding=utf-8
-# 2016.11.23 17:13:35 CST
-#Embedded file name: /Users/xiejunze/Library/Developer/Xcode/DerivedData/RSDKTools-esaquivcxevmwlbmbxkykdnmhbwh/Build/Products/Release/RSDKTools.app/Contents/Script/SPLIT.py
+# coding=utf-8
 import os
 import file_operate
 import xml.etree.ElementTree as ET
 import sys
 import apk_operate
+import urllib
 import encode_operate
 from config import ConfigParse
+import time
 
 
-def split_apk(dbname,sub_channel_id,parent_apk_path,sub_apk_path):
-    print sys.path[0]
+def logError(error_info, log_dir):
+    error = '==================>>>> ERROR <<<<==================\r\n'
+    error += '[Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+    error += error_info + '\r\n'
+    error += '===================================================\r\n'
+    file_operate.log(error, log_dir)
+
+
+def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_channel_id):
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+    log_dir = '%s/%s/%s' % (db_name, game_id, id_channel)
+    if not os.path.exists(parent_apk_path):
+        logError('parent apk not exist', log_dir)
+        print '{"ret":"fail","msg":"parent apk not exist"}'
+        return
+    middle_dir = '%s/%s' % (db_name, sub_channel_id)
+    split_work_dir = file_operate.get_server_dir() + '/workspace/%s' % middle_dir
+    if os.path.exists(split_work_dir):
+        file_operate.delete_file_folder(split_work_dir)
+    split_decompile_dir = split_work_dir + '/decompile'
+    os.mkdir(split_decompile_dir)
+
+    channel_temp_apk_dir = split_work_dir + '/temp'
+    os.mkdir(channel_temp_apk_dir)
+
+    channel_temp_apk = channel_temp_apk_dir + '/temp.apk'
+    file_operate.copyFile(parent_apk_path, channel_temp_apk)
+
+    ret = apk_operate.decompileApk(channel_temp_apk, split_decompile_dir, None)
+    if ret:
+        logError('decompileApk parent apk fail', log_dir)
+        print '{"ret":"fail","msg":"decompileApk parent apk fail"}'
+        return
+    ConfigParse.shareInstance().readUserConfig(0)
+    sub_channel_config = ConfigParse.shareInstance().get_sub_channel_config()
+
+    sub_channel_icon_url = None
+    display_name = None
+    sub_app_id = 0
+    sub_num = 0
+
+    if len(sub_channel_config) > 0:
+        for r in sub_channel_config:
+            if id_channel != r['p_channel_id']:
+                logError('param channel id is not right', log_dir)
+                print '{"ret":"fail","msg":"param channel id is not right"}'
+                return
+
+            if game_id != r['game_id']:
+                logError('param game id is not right', log_dir)
+                print '{"ret":"fail","msg":"param game id is not right"}'
+                return
+
+            if r['r_channel_game_icon'] is None:
+                sub_channel_icon_url = ''
+            else:
+                sub_channel_icon_url = r['r_channel_game_icon']
+
+            if r['display_name'] is None:
+                display_name = ''
+            else:
+                display_name = r['display_name'].encode('utf-8')
+
+            sub_app_id = r['sub_app_id']
+
+            sub_num = r['sub_num']
+
+    else:
+        logError('sub channel config is empty', log_dir)
+        print '{"ret":"fail","msg":"sub channel config is empty"}'
+        return
+
+    if sub_app_id == 0 or sub_num == 0:
+        log_info = 'ret:fail,msg:sub_app_id and sub_num == 0'
+        logError(log_info, log_dir)
+        return
+
+    if display_name != '' and display_name is not None:
+        apk_operate.doModifyAppName(split_decompile_dir, display_name)
+
+    if sub_channel_icon_url != '' and sub_channel_icon_url is not None:
+        channel_icon_dir = split_work_dir + '/icon/'
+        os.mkdir(channel_icon_dir)
+        urllib.urlretrieve(sub_channel_icon_url, channel_icon_dir + 'icon.png')
+        ret = apk_operate.pushIconIntoApk(channel_icon_dir, split_decompile_dir)
+        if ret:
+            logError('pushIconIntoApk error', log_dir)
+            return
+    ret = encode_operate.decodeXmlFiles(split_decompile_dir)
+    if ret:
+        logError('decodeXmlFiles error', log_dir)
+        return
+    ret = change_develop_id(split_decompile_dir, sub_app_id, sub_num)
+    if ret:
+        logError('change develop id error', log_dir)
+        return
+    encode_operate.encodeXmlFiles(split_decompile_dir)
+
+    channel = ConfigParse.shareInstance().findChannel(id_channel)
+    sdk_dir = split_work_dir + '/sdk/'
+    for channel_sdk in channel['sdkLs']:
+        id_sdk = channel_sdk['idSDK']
+        SDK = ConfigParse.shareInstance().findSDK(id_sdk)
+        if SDK is None:
+            continue
+        split_script_src_dir = file_operate.get_server_dir() + '/config/sdk/' + SDK['SDKName'] + '/specialsplit_script.pyc'
+        split_script_src_dir = file_operate.getFullPath(split_script_src_dir)
+        if not os.path.exists(split_script_src_dir):
+            continue
+
+        split_script_dest_dir = sdk_dir + SDK['SDKName'] + '/specialsplit_script.pyc'
+
+        file_operate.copyFiles(split_script_src_dir, split_script_dest_dir)
+        SDKDir = sdk_dir + SDK['SDKName']
+        sys.path.append(SDKDir)
+        import specialsplit_script
+
+        ret = specialsplit_script.script(split_decompile_dir, sub_app_id, sub_num)
+        if ret:
+            logError("error do Special Operate",log_dir)
+            print "error do Special Operate"
+            return
+
+    channel_unsign_apk = channel_temp_apk_dir + '/channel_temp_apk.apk'
+    ret = apk_operate.recompileApk(split_decompile_dir, channel_unsign_apk)
+    if ret:
+        logError("recompileApk fail",log_dir)
+        print "recompileApk fail"
+        return
+    game = ConfigParse.shareInstance().getCurrentGame()
+    if game is None:
+        logError('game is none',log_dir)
+        return
+    ret = apk_operate.signApkAuto(channel_unsign_apk, game, channel,middle_dir)
+
+    if ret:
+        logError('signApkAuto fail',log_dir)
+        return
+
+    out_put_dir = os.path.dirname(sub_apk_path)
+    logError('out_put_dir:' + out_put_dir,log_dir)
+    ret = apk_operate.alignAPK(channel_unsign_apk,sub_apk_path, out_put_dir)
+    if ret:
+        logError('alignAPK fail',log_dir)
+        return
+    else:
+        print '{"ret":"success","msg":"run pack success"}'
     return
 
-def read_xml(in_path, is_space = False):
+
+def change_develop_id(work_dir, new_sub_app_id, sub_num):
+    assets_dir = os.path.join(work_dir, 'assets')
+    develop_file = assets_dir + '/developerInfo.xml'
+    if not os.path.exists(assets_dir):
+        return 1
+
     tree = ET.ElementTree()
-    if is_space:
-        ET.register_namespace('android', 'http://schemas.android.com/apk/res/android')
-    tree.parse(in_path)
-    return tree
-
-def change_node_properties(nodelist, name, values):
-    for node in nodelist:
-        for key in node.attrib:
-            if node.attrib[key] == values:
-                node.text = name
-
-
-def change_node_key(nodelist, values, keyname):
-    for node in nodelist:
-        for key in node.attrib:
-            if key == keyname:
-                print key
-                node.set(keyname, values)
-
-
-def changeheadernodes(node,key,value):
-    node.set(key,value);
-
-def write_xml(tree, out_path):
-    tree.write(out_path, encoding='utf-8', xml_declaration=True)
-
-def change_gameName(workdir, newName):
-    if os.path.exists(workdir):
-        valuesplace = os.path.join(workdir, 'res/values')
-        if os.path.exists(valuesplace):
-            gamenamespace = valuesplace + '/strings.xml'
-            if os.path.exists(gamenamespace):
-                tree = read_xml(gamenamespace)
-                string_node = tree.findall('string')
-                change_node_properties(string_node, newName, 'app_name')
-                write_xml(tree, gamenamespace)
-            else:
-                print '\xe6\xb2\xa1\xe6\x9c\x89strings.xml\xe6\x96\x87\xe4\xbb\xb6'
-        else:
-            print '\xe6\xb2\xa1\xe6\x9c\x89values\xe6\x96\x87\xe4\xbb\xb6'
-    else:
-        print '\xe6\x9c\xaa\xe6\x89\xbe\xe5\x88\xb0\xe8\xa7\xa3\xe5\x8e\x8b\xe7\xbc\xa9\xe5\x90\x8e\xe7\x9a\x84\xe6\x96\x87\xe4\xbb\xb6'
-
-
-def change_develop_id(workdir, newID):
-    assetsspace = os.path.join(workdir, 'assets')
-    developsplace = assetsspace + '/developerInfo.xml'
-    if not os.path.exists(assetsspace):
-        print '\xe6\xb2\xa1\xe6\x9c\x89assets\xe6\x96\x87\xe4\xbb\xb6'
-    tree = read_xml(developsplace)
-    channel_node = tree.findall('channel')
-    change_node_key(channel_node, newID, 'r_sub_app_id')
-    write_xml(tree, developsplace)
-
-
-def push_icon_into_apk(iconDir, decompileDir, r_sub_app_id):
-    print 'r_sub_app_id = ' + r_sub_app_id
-    file_operate.copyFile(iconDir + '/' + r_sub_app_id + '/icon36.png', decompileDir + '/res/drawable-ldpi/icon.png')
-    file_operate.copyFile(iconDir + '/' + r_sub_app_id + '/icon48.png', decompileDir + '/res/drawable/icon.png')
-    file_operate.copyFile(iconDir + '/' + r_sub_app_id + '/icon48.png', decompileDir + '/res/drawable-mdpi/icon.png')
-    file_operate.copyFile(iconDir + '/' + r_sub_app_id + '/icon72.png', decompileDir + '/res/drawable-hdpi/icon.png')
-    file_operate.copyFile(iconDir + '/' + r_sub_app_id + '/icon96.png', decompileDir + '/res/drawable-xhdpi/icon.png')
-    file_operate.copyFile(iconDir + '/' + r_sub_app_id + '/icon144.png', decompileDir + '/res/drawable-xxhdpi/icon.png')
-    xxxhdpi = decompileDir + '/res/drawable-xxxhdpi'
-    if os.path.exists(xxxhdpi):
-        file_operate.copyFile(iconDir + '/' + r_sub_app_id + '/icon192.png', decompileDir + '/res/drawable-xxxhdpi/icon.png')
-
-
-def get_app_name(wordir):
-    name = ''
-    tree = read_xml(wordir)
-    string_node = tree.findall('string')
-    for node in string_node:
-        for key in node.attrib:
-            if node.attrib[key] == 'app_name':
-                name = node.text
-
-    return name
-
-def push_oldIcon_into_apk(iconDir, decompileDir):
-    file_operate.copyFile(iconDir + '/icon36.png', decompileDir + '/res/drawable-ldpi/icon.png')
-    file_operate.copyFile(iconDir + '/icon48.png', decompileDir + '/res/drawable/icon.png')
-    file_operate.copyFile(iconDir + '/icon48.png', decompileDir + '/res/drawable-mdpi/icon.png')
-    file_operate.copyFile(iconDir + '/icon72.png', decompileDir + '/res/drawable-hdpi/icon.png')
-    file_operate.copyFile(iconDir + '/icon96.png', decompileDir + '/res/drawable-xhdpi/icon.png')
-    file_operate.copyFile(iconDir + '/icon144.png', decompileDir + '/res/drawable-xxhdpi/icon.png')
-    xxxhdpi = decompileDir + '/res/drawable-xxxhdpi'
-    if os.path.exists(xxxhdpi):
-        file_operate.copyFile(iconDir + '/icon192.png', decompileDir + '/res/drawable-xxxhdpi/icon.png')
-
-
-def icon_backup_apk(workdir,iconbackupdir):
-    file_operate.copyFile(workdir + '/res/drawable-ldpi/icon.png', iconbackupdir + '/icon36.png')
-    file_operate.copyFile(workdir + '/res/drawable-mdpi/icon.png', iconbackupdir + '/icon48.png')
-    file_operate.copyFile(workdir + '/res/drawable-hdpi/icon.png', iconbackupdir + '/icon72.png')
-    file_operate.copyFile(workdir + '/res/drawable-xhdpi/icon.png', iconbackupdir + '/icon96.png')
-    file_operate.copyFile(workdir + '/res/drawable-xxhdpi/icon.png', iconbackupdir + '/icon144.png')
-    backupxxxhdpi = workdir + '/res/drawable-xxxhdpi'
-    if os.path.exists(backupxxxhdpi):
-        file_operate.copyFile(workdir + '/res/drawable-xxxhdpi/icon.png', iconbackupdir + '/icon192.png')
-
-def change_package_number(workDir,packageNumber):
-    assetsspace = os.path.join(workDir, 'assets')
-    developsplace = assetsspace + '/developerInfo.xml'
-    if not os.path.exists(assetsspace):
-        print '\xe6\xb2\xa1\xe6\x9c\x89assets\xe6\x96\x87\xe4\xbb\xb6'
-    tree = read_xml(developsplace)
+    tree.parse(develop_file)
     channel_node = tree.find('channel')
-    changeheadernodes(channel_node,"package_number",packageNumber);
-    write_xml(tree, developsplace)
+    channel_node.set('r_sub_app_id', new_sub_app_id)
+    channel_node.set('package_number', sub_num)
+    tree.write(develop_file, 'UTF-8')
+    return 0
 
 
-split_apk(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
+
+split_apk(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6])
 

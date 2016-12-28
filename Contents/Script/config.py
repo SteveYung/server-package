@@ -48,6 +48,7 @@ class ConfigParse(object):
     __userSDKConfigLs = {}
     __resReplaceLs = {}
     __packageLs = []
+    __subPackageLs = {}
     __SDKVersionLs = []
     __isCocosPlayMode = False
     _targetName = '' #存放target
@@ -56,6 +57,7 @@ class ConfigParse(object):
     db_port = 0
     db_user = ''
     db_pwd = ''
+    db_sdk_name = ''
 
     @staticmethod
     def shareInstance():
@@ -80,6 +82,8 @@ class ConfigParse(object):
             # print 'gameVersionName='+self.__gameVersionName
         elif platform == 1:
             self.__gameVersionName = self.getIosProjectVersion()
+
+
 
     def getSource(self):
         return self._source
@@ -130,9 +134,10 @@ class ConfigParse(object):
         self.db_port = cf.getint("mysqlconf", "port")
         self.db_user = cf.get("mysqlconf", "user")
         self.db_pwd = cf.get("mysqlconf", "password")
+        self.db_sdk_name = cf.get("mysqlconf", "sdkdbname")
 
-        cx = MySQLdb.connect(host = self.db_host,port=self.db_port,user = self.db_user,passwd = self.db_pwd)
-        cx.select_db('rsdk_user')
+        cx = MySQLdb.connect(host=self.db_host, port=self.db_port, user=self.db_user, passwd=self.db_pwd)
+        cx.select_db(self.db_sdk_name)
         self.readSDKLs(cx)
         cx.close()
 
@@ -146,7 +151,7 @@ class ConfigParse(object):
         self.db_user = cf.get("mysqlconf", "user")
         self.db_pwd = cf.get("mysqlconf", "password")
 
-        cx = MySQLdb.connect(host = self.db_host,port=self.db_port,user = self.db_user,passwd = self.db_pwd)
+        cx = MySQLdb.connect(host=self.db_host, port=self.db_port, user=self.db_user, passwd=self.db_pwd)
         cx.select_db(sys.argv[1])
         #self.readSDKVersionLs(cx)
 #        self.readChannelCustomLs(cx) 7.12
@@ -161,6 +166,7 @@ class ConfigParse(object):
         self.readOutputDir(cx)
         self.readPackage(cx)
         self.read_res_for_replace(cx)
+        self.read_sub_channel_database(cx)
         # self.readTargetName(cx) #从user.xml里读取targetName
         cx.close()
         game = self.getCurrentGame()
@@ -172,6 +178,22 @@ class ConfigParse(object):
         self._keystore['keyalias'] = game['keystoreAlias']
         self._keystore['aliaspassword'] = game['keystoreAliasPwd']
         # print 'keystore-->'+game['keystoreFile']
+
+    def read_sub_channel_database(self,cx):
+        self.__subPackageLs.clear()
+        try:
+            if sys.argv[6] is None:
+                pass
+            else:
+                c = cx.cursor(MySQLdb.cursors.DictCursor)
+                c.execute('select * from tpl_sub_channel where id == %s' % sys.argv[6])
+                self.__subPackageLs = c.fetchall()
+                c.close()
+        except:
+            pass
+
+
+
     def readSDKLs(self, cx):
         """get the data about tpl_sdk from database"""
         self.__SDKLs.clear()
@@ -186,7 +208,7 @@ class ConfigParse(object):
             dictTemp['pluginxType'] = r['pluginxType']
             dictTemp['SDKShowName'] = r['SDKShowName']
             dictTemp['bHasChildSDK'] = r['bHasChildSDK']
-            if(r['orderCallback'] is None):
+            if r['orderCallback'] is None:
                 dictTemp['orderCallback'] = ''
             else:
                 dictTemp['orderCallback'] = r['orderCallback']
@@ -200,7 +222,7 @@ class ConfigParse(object):
     def readChannelCustomLs(self, cx):
         """get the data about tpl_channel_customer from database"""
         self.__channelCustomLs.clear()
-        c = cx.cursor(MySQLdb.cursors.DictCursor) 
+        c = cx.cursor(MySQLdb.cursors.DictCursor)
         c.execute('select * from tpl_channel_customer')
         rows = c.fetchall()
         for r in rows:
@@ -245,7 +267,7 @@ class ConfigParse(object):
             dictTemp['name'] = r['name'].encode('utf-8')
             dictTemp['idGame'] = r['idGame']
             dictTemp['packNameSuffix'] = r['packNameSuffix']
-            if(r['r_channel_game_icon'] == None):
+            if r['r_channel_game_icon'] is None:
                 dictTemp['r_channel_game_icon'] = ''
             else:
                 dictTemp['r_channel_game_icon'] = r['r_channel_game_icon']
@@ -253,46 +275,46 @@ class ConfigParse(object):
             dictTemp['keystorePwd'] = r['keystorePwd']
             dictTemp['keystoreAlias'] = r['keystoreAlias']
             dictTemp['keystoreAliasPwd'] = r['keystoreAliasPwd']
-            if(r['uapiKey']==None):
-                dictTemp['uapiKey'] =''
+            if r['uapiKey'] is None:
+                dictTemp['uapiKey'] = ''
             else:
                 dictTemp['uapiKey'] = r['uapiKey']
-            if(r['uapiSecret']==None):
-                dictTemp['uapiSecret'] =''
+            if r['uapiSecret'] is None:
+                dictTemp['uapiSecret'] = ''
             else:
                 dictTemp['uapiSecret'] = r['uapiSecret']
             dictTemp['oauthLoginServer'] = r['oauthLoginServer']
             dictTemp['bHasSplash'] = r['bHasSplash']
-            if(r['extChannel']==None):
-                dictTemp['extChannel'] =''
+            if r['extChannel'] is None:
+                dictTemp['extChannel'] = ''
             else:
                 dictTemp['extChannel'] = r['extChannel']
-            if(r['jsonMeta']==None):
-                dictTemp['jsonMeta'] =''
+            if r['jsonMeta'] is None:
+                dictTemp['jsonMeta'] = ''
             else:
                 dictTemp['jsonMeta'] = r['jsonMeta']
-            if(r['customChannelNumber'] == None):
-                dictTemp['customChannelNumber'] =''
+            if r['customChannelNumber'] is None:
+                dictTemp['customChannelNumber'] = ''
             else:
                 dictTemp['customChannelNumber'] = r['customChannelNumber']
             dictTemp['r_big_app_id'] = r['r_big_app_id']
             dictTemp['r_sub_app_id'] = r['r_sub_app_id']
-            if(r['r_gameversion']==None):
+            if r['r_gameversion'] is None:
                 dictTemp['r_gameversion'] = ''
             else:
                 dictTemp['r_gameversion'] = r['r_gameversion']
-            if(r['r_gameversion_build'] == None):
+            if r['r_gameversion_build'] is None:
                 dictTemp['r_gameversion_build'] = ''
             else:
                 dictTemp['r_gameversion_build'] = r['r_gameversion_build']
-            if(r['r_bundle_id'] == None):
-                dictTemp['r_bundle_id'] =''
+            if r['r_bundle_id'] is None:
+                dictTemp['r_bundle_id'] = ''
             else:
                 dictTemp['r_bundle_id'] = r['r_bundle_id']
-            if(None == r['display_name']):
+            if r['display_name'] is None:
                 dictTemp['display_name'] = ''
             else:
-                dictTemp['display_name']=r['display_name'].encode('utf-8')
+                dictTemp['display_name'] = r['display_name'].encode('utf-8')
             dictTemp['sdkLs'] = []
             self.__channelLs[dictTemp['idChannel']] = dictTemp
 
@@ -310,13 +332,13 @@ class ConfigParse(object):
             dictTemp['idSDK'] = r['idSDK']
             dictTemp['type'] = r['type']
             dictTemp['childSDK'] = r['childSDK']
-            if(r['notify_url'] == None):
+            if r['notify_url'] is None:
                 dictTemp['notify_url'] = ''
             else:
                 dictTemp['notify_url'] = r['notify_url']
             idChannel = dictTemp['idChannel']
             channel = self.__channelLs.get(idChannel)
-            if channel != None:
+            if channel is not None:
                 channel['sdkLs'].append(dictTemp)
 
         c.close()
@@ -336,8 +358,8 @@ class ConfigParse(object):
             dictTemp['showName'] = r['showName']
             dictTemp['type'] = r['type']
             dictTemp['childSDK'] = r['childSDK']
-            if(r['notify_url']==None):
-                dictTemp['notify_url'] =''
+            if r['notify_url'] is None:
+                dictTemp['notify_url'] = ''
             else:
                 dictTemp['notify_url'] = r['notify_url']
             dictTemp['param'] = []
@@ -361,7 +383,7 @@ class ConfigParse(object):
             dictTemp['bUserOffer'] = r['bUserOffer']
             dictTemp['bWriteIntoClient'] = r['bWriteIntoClient']
             sdkItem = self.__userSDKConfigLs.get(dictTemp['idUserSDK'])
-            if sdkItem != None:
+            if sdkItem is not None:
                 sdkItem['param'].append(dictTemp)
 
         c.close()
@@ -377,9 +399,8 @@ class ConfigParse(object):
     def readOutputDir(self, cx):
         """read output dir from user.xml"""
         str = sys.argv[5]
-        strlist = str.split('/')
-        outputDir = strlist[len(strlist)-4]+'/'+strlist[len(strlist)-3]+'/'+strlist[len(strlist)-2]
-        print "<---outputDir--->"+outputDir
+        outputDir = os.path.dirname(str).strip('/')
+        print "<---outputDir--->" + outputDir
         self._outputDir = outputDir
 
 
@@ -398,36 +419,36 @@ class ConfigParse(object):
             dictTemp['gameTelephone'] = r['gameTelephone']
             dictTemp['gameQQ'] = r['gameQQ']
             dictTemp['gameWx'] = r['gameWx']
-            if(r['gameWeibo']== None):
+            if r['gameWeibo'] is None:
                 dictTemp['gameWeibo'] = ''
             else:
                 dictTemp['gameWeibo'] = r['gameWeibo']
-            if(r['gameIconPos']==None):
+            if r['gameIconPos'] is None:
                 dictTemp['gameIconPos'] = ''
             else:
                 dictTemp['gameIconPos'] = r['gameIconPos']
-            if(r['gameIconOffsetX']==None):
+            if r['gameIconOffsetX'] is None:
                 dictTemp['gameIconOffsetX'] = ''
             else:
                 dictTemp['gameIconOffsetX'] = r['gameIconOffsetX']
-            if(r['gameIconOffsetY']==None):
-                dictTemp['gameIconOffsetY']=''
+            if r['gameIconOffsetY'] is None:
+                dictTemp['gameIconOffsetY']= ''
             else:
                 dictTemp['gameIconOffsetY'] = r['gameIconOffsetY']
-            if(r['keystoreFile'] == None):
-                dictTemp['keystoreFile'] =''
+            if(r['keystoreFile'] is None):
+                dictTemp['keystoreFile'] = ''
             else:
                 dictTemp['keystoreFile'] = r['keystoreFile']
-            if(r['keystorePwd'] == None):
+            if(r['keystorePwd'] is None):
                 dictTemp['keystorePwd'] = ''
             else:
                 dictTemp['keystorePwd'] = r['keystorePwd']
-            if(r['keystoreAlias'] == None):
+            if r['keystoreAlias'] is None:
                 dictTemp['keystoreAlias'] = ''
             else:
                 dictTemp['keystoreAlias'] = r['keystoreAlias']
-            if(r['keystoreAliasPwd'] == None):
-                dictTemp['keystoreAliasPwd'] =''
+            if r['keystoreAliasPwd'] is None:
+                dictTemp['keystoreAliasPwd'] = ''
             else:
                 dictTemp['keystoreAliasPwd'] = r['keystoreAliasPwd']
             dictTemp['privateKey'] = r['privateKey']
@@ -442,8 +463,8 @@ class ConfigParse(object):
         """get the data about tpl_package from database"""
         self.__packageLs = []
         dictTemp = {}
-        dictTemp['id'] ='1' 
-        dictTemp['idChannel'] = int(sys.argv[3]) 
+        dictTemp['id'] ='1'
+        dictTemp['idChannel'] = int(sys.argv[3])
         self.__packageLs.append(dictTemp)
 
         if len(self.__packageLs) > 0:
@@ -480,6 +501,9 @@ class ConfigParse(object):
 
     def get_replace_res(self):
         return self.__resReplaceLs
+
+    def get_sub_channel_config(self):
+        return self.__subPackageLs
 
     def findChannel(self, idChannel):
         return self.__channelLs[idChannel]

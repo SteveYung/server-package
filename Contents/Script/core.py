@@ -185,13 +185,13 @@ def main(channel):
                 os.makedirs(iconDir)
             urllib.urlretrieve(ConfigParse.shareInstance().getChannelIcon(idChannel),iconDir+'icon.png')
 
-            ret = apk_operate.pushIconIntoApk(game['gameName'], iconDir, decompileDir)
+            ret = apk_operate.pushIconIntoApk(iconDir, decompileDir)
             if ret:
                 return
-        newAppName = ConfigParse.shareInstance().getAppName()
+        # newAppName = ConfigParse.shareInstance().getAppName()
         #modify app display name by game setting
-        apk_operate.modifyAppName(game, decompileDir, newAppName)
-        #modify app display name by channel setting
+        # apk_operate.modifyAppName(game, decompileDir, newAppName)
+        # modify app display name by channel setting
         #if channel display_name is not null,the app displayname will be set by channel
         apk_operate.modifyAppNameByChannel(channel, decompileDir)
 

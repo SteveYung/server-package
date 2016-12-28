@@ -201,10 +201,12 @@ def signApk(apkFile, keyStore, storepassword, keyalias, aliaspassword):
     return 0
 
 
-def signApkAuto(apkFile, game, channel):
+def signApkAuto(apkFile, game, channel,keystore_dir=None):
     """"""
     # keystorePath = file_operate.getFullPath(file_operate.get_server_dir()+'/config/games/' + game['gameName'] + '/keystore/')
     # defaultPath = file_operate.getFullPath('')
+    if keystore_dir is None:
+        keystore_dir = ConfigParse.shareInstance().getOutputDir()
     keystoreFile = channel['keystoreFile']
     keystorePwd = channel['keystorePwd']
     keystoreAlias = channel['keystoreAlias']
@@ -216,7 +218,7 @@ def signApkAuto(apkFile, game, channel):
     keystore['aliaspassword'] = game['keystoreAliasPwd']
     if keystoreFile != '' and keystorePwd != '' and keystoreAlias != '' and keystoreAliasPwd != '':
         print '<---Sign apk with ChannelInfo--->'
-        channelkeystoreDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/keystore/'
+        channelkeystoreDir = file_operate.get_server_dir()+'/workspace/'+keystore_dir+'/keystore/'
         if not os.path.exists(channelkeystoreDir):
             os.makedirs(channelkeystoreDir)
         urllib.urlretrieve(keystoreFile,channelkeystoreDir+'channel.keystore')
@@ -233,7 +235,7 @@ def signApkAuto(apkFile, game, channel):
         print('<---apk sign with gameInfo--->')
         keystoreFile = keystore.get('file')
         if keystoreFile != '' and keystore.get('storepassword') != '' and keystore.get('keyalias') != '' and keystore.get('aliaspassword') != '':
-            gamekeystoreDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/keystore/'
+            gamekeystoreDir = file_operate.get_server_dir()+'/workspace/'+keystore_dir+'/keystore/'
             if not os.path.exists(keystoreFile):
                 os.makedirs(gamekeystoreDir)
             urllib.urlretrieve(keystoreFile,gamekeystoreDir+'game.keystore')
@@ -935,7 +937,7 @@ def writeDeveloperIntoManifest(SDK, usrSDKConfig, decompileDir):
     file_operate.printf('write Developer Infomation into AndroidManifest.xml success')
 
 
-def pushIconIntoApk(gameName, iconDir, decompileDir):
+def pushIconIntoApk(iconDir, decompileDir):
     # gameIconDir = file_operate.get_server_dir()+'/workspace/'+ConfigParse.shareInstance().getOutputDir()+'/icon'
     # gameIconDir = file_operate.getFullPath(gameIconDir)
     if not os.path.exists(iconDir):
@@ -1154,11 +1156,11 @@ def replace_custom_res(decompileDir):
     resLs = ConfigParse.shareInstance().get_replace_res()
     if(len(resLs)>0):
         for r in resLs:
-            if(r['replace'] is None or r['replace'] == '' or r['url'] is None or r['url'] == ''):
+            if r['replace'] is None or r['replace'] == '' or r['url'] is None or r['url'] == '':
                 continue
             print 'replace:'+r['replace']
             tempstr = r['replace']
-            if(tempstr[0] != '/'):
+            if tempstr[0] != '/':
                 tempstr = '/' + tempstr
 
             tempstr = tempstr.replace('\\', '/')

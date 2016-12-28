@@ -316,8 +316,9 @@ def reportError(errorOuput, idChannel):
     log(error)
 
 
-def log(str):
-    outputDir = ConfigParse.shareInstance().getOutputDir()
+def log(str, outputDir = None):
+    if outputDir is None:
+        outputDir = ConfigParse.shareInstance().getOutputDir()
     logDir = get_server_dir()+'/Log/'+outputDir + '/'
     if not os.path.exists(logDir):
         os.makedirs(logDir)

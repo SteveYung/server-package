@@ -71,6 +71,38 @@ def xmlEncode(xmlFile):
         finally:
             file_xml_write.close()
 
+def xmlDecode(xmlFile):
+    file_xml = open(xmlFile, 'r')
+    try:
+        text_xml = file_xml.read()
+        urllib_xml = urllib.unquote(text_xml)
+        bytesarray = []
+        strlen = 0
+        while strlen < len(urllib_xml):
+            bytesarray.append(urllib_xml[strlen])
+            strlen += 1
+
+        if len(bytesarray) % 2 == 0:
+            i = 5
+        else:
+            i = 4
+        j = 0
+        while j < len(bytesarray) - i:
+            k = bytesarray[j]
+            bytesarray[j] = bytesarray[j + 1]
+            bytesarray[j + 1] = k
+            j += 2
+
+        FinallyArray = base64.b64decode(str(bytesarray))
+        print FinallyArray
+    finally:
+        file_xml.close()
+        file_xml_write = open(xmlFile, 'w')
+        try:
+            file_xml_write.write(FinallyArray)
+        finally:
+            file_xml_write.close()
+
 
 def encodeXmlFiles(workDir):
     devInfo = workDir + '/assets/developerInfo.xml'
@@ -82,6 +114,18 @@ def encodeXmlFiles(workDir):
     if os.path.exists(supPlug):
         xmlEncode(supPlug)
     return 0
+
+def decodeXmlFiles(workDir):
+    devInfo = workDir + '/assets/developerInfo.xml'
+    supPlug = workDir + '/assets/supportPlugin.xml'
+    if not os.path.exists(devInfo):
+        error_operate.error(112)
+        return 1
+    xmlDecode(devInfo)
+    if os.path.exists(supPlug):
+        xmlDecode(supPlug)
+    return 0
+
 # +++ okay decompyling rsdk1.4/Script/encode_operate.pyc 
 # decompiled 1 files: 1 okay, 0 failed, 0 verify failed
 # 2015.01.17 10:32:30 CST
