@@ -111,7 +111,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         return
     encode_operate.encodeXmlFiles(split_decompile_dir)
 
-    channel = ConfigParse.shareInstance().findChannel(id_channel)
+    channel = ConfigParse.shareInstance().findChannel(int(id_channel))
     sdk_dir = split_work_dir + '/sdk/'
     for channel_sdk in channel['sdkLs']:
         id_sdk = channel_sdk['idSDK']
