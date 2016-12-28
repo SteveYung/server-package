@@ -77,7 +77,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
                 display_name = r['display_name'].encode('utf-8')
 
             sub_app_id = r['sub_app_id']
-
+            print 'sub_app_id: %s' % sub_app_id
             sub_num = r['sub_num']
 
     else:
