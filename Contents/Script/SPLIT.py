@@ -23,7 +23,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
     reload(sys)
     sys.setdefaultencoding('utf8')
     log_dir = '%s/%s/%s' % (db_name, game_id, id_channel)
-    file_operate.set_log_dir(log_dir)
+    ConfigParse.shareInstance().set_log_dir(log_dir)
     if not os.path.exists(parent_apk_path):
         logError('parent apk not exist', log_dir)
         print '{"ret":"fail","msg":"parent apk not exist"}'

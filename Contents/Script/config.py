@@ -52,6 +52,7 @@ class ConfigParse(object):
     __SDKVersionLs = []
     __isCocosPlayMode = False
     _targetName = '' #存放target
+    __log_dir = None
 
     db_host = ''
     db_port = 0
@@ -83,7 +84,11 @@ class ConfigParse(object):
         elif platform == 1:
             self.__gameVersionName = self.getIosProjectVersion()
 
+    def set_log_dir(self,log_dir):
+        self.__log_dir = log_dir
 
+    def get_log_dir(self):
+        return self.__log_dir
 
     def getSource(self):
         return self._source
