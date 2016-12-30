@@ -13,7 +13,7 @@ def error(code):
         print '<---error code---> %d' %(code)
         file_operate.printf('%s Failed at code %s!' % (idChannel, -100 - code))
     except:
-        print 'error code:'+code
+        print 'error code:%d' % code
 #+++ okay decompyling rsdk1.4/Script/error_operate.pyc 
 # decompiled 1 files: 1 okay, 0 failed, 0 verify failed
 # 2015.01.17 10:32:30 CST
