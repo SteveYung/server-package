@@ -19,6 +19,7 @@ from PIL import Image as image
 bPrint = False
 Language = 'Chinese'
 curDir = os.getcwd()
+__log_dir = None
 
 def get_server_dir():
     return os.path.abspath(sys.path[0] + '/..')
@@ -285,13 +286,24 @@ def printf(str):
     if bPrint:
         print str
 
+def set_log_dir(log_dir):
+    __log_dir = log_dir
+
 
 def reportCmdError(cmd, stdoutput, erroutput):
     """
     """
     errorLog = stdoutput + '\r\n' + erroutput
-    reportError(errorLog, int(threading.currentThread().getName()))
-
+    print errorLog
+    if __log_dir is None:
+        reportError(errorLog, int(threading.currentThread().getName()))
+    else:
+        error = '==================>>>> ERROR <<<<==================\r\n'
+        error += '[Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+        error += '[Error]:\r\n'
+        error += errorLog + '\r\n'
+        error += '==================================================\r\n'
+        log(error,__log_dir)
 
 def reportError(errorOuput, idChannel):
     """

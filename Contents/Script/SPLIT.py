@@ -13,6 +13,7 @@ import time
 def logError(error_info, log_dir):
     error = '==================>>>> ERROR <<<<==================\r\n'
     error += '[Time]: ' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + '\r\n'
+    error += '[Error]:\r\n'
     error += error_info + '\r\n'
     error += '===================================================\r\n'
     file_operate.log(error, log_dir)
@@ -22,6 +23,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
     reload(sys)
     sys.setdefaultencoding('utf8')
     log_dir = '%s/%s/%s' % (db_name, game_id, id_channel)
+    file_operate.set_log_dir(log_dir)
     if not os.path.exists(parent_apk_path):
         logError('parent apk not exist', log_dir)
         print '{"ret":"fail","msg":"parent apk not exist"}'
