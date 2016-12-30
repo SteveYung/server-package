@@ -19,7 +19,7 @@ from PIL import Image as image
 bPrint = False
 Language = 'Chinese'
 curDir = os.getcwd()
-__log_dir = None
+global __log_dir
 
 def get_server_dir():
     return os.path.abspath(sys.path[0] + '/..')
@@ -332,6 +332,7 @@ def log(str,outputDir = None):
     if outputDir is None:
         outputDir = ConfigParse.shareInstance().getOutputDir()
     logDir = get_server_dir()+'/Log/'+outputDir + '/'
+    print 'log_dir:'+logDir
     if not os.path.exists(logDir):
         os.makedirs(logDir)
     logFile = codecs.open(logDir + 'error.txt', 'a+', 'utf-8')
