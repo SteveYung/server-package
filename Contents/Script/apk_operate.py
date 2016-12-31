@@ -254,6 +254,7 @@ def signApkAuto(apkFile, game, channel,keystore_dir=None):
 def alignAPK(tempApkFile, apkFile,outputDir):
     if not os.path.exists(outputDir):
         file_operate.execFormatCmd('sudo mkdir -p -m 777 %s' %(outputDir))
+        file_operate.execFormatCmd('sudo chomd -R 777 %s' %(outputDir))
     align = file_operate.getToolPath('zipalign')
     aligncmd = '"%s" -f 4 "%s" "%s"' % (align, tempApkFile.encode('utf-8'), apkFile.encode('utf-8'))
     print '<---align cmd--->%s' %(aligncmd)
