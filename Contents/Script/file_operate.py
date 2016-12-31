@@ -291,7 +291,6 @@ def reportCmdError(cmd, stdoutput, erroutput):
     """
     """
     errorLog = stdoutput + '\r\n' + erroutput
-    print errorLog
     if ConfigParse.shareInstance().get_log_dir() is None:
         reportError(errorLog, int(threading.currentThread().getName()))
     else:
