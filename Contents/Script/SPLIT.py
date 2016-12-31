@@ -30,6 +30,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         return
     middle_dir = '%s/%s' % (db_name, sub_channel_id)
     split_work_dir = file_operate.get_server_dir() + '/split_workspace/%s' % middle_dir
+    print 'split_work_dir:'+split_work_dir
     if os.path.exists(split_work_dir):
         file_operate.delete_file_folder(split_work_dir)
 
