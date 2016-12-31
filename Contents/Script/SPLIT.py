@@ -169,7 +169,7 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         print 'alignAPK fail'
         logError('alignAPK fail',log_dir)
         return
-    file_operate.delete_file_folder(split_work_dir)
+    # file_operate.delete_file_folder(split_work_dir)
 
 
 def change_develop_id(work_dir, new_sub_app_id, sub_num):
