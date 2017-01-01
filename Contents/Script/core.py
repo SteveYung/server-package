@@ -156,6 +156,8 @@ def main(channel):
         if ret:
             return
 
+        apk_operate.replace_custom_res(decompileDir)
+
         taskManager.shareInstance().notify(idChannel, 60)
         if bExecuteSpecialScipt:
             ret = special_script.doSpecialOperate(channel, decompileDir, newPackagename, SDKWorkDir)
@@ -198,7 +200,6 @@ def main(channel):
         apk_operate.writeDataIntoAndroidManifest(decompileDir, channel)
         taskManager.shareInstance().notify(idChannel, 75)
 
-        apk_operate.replace_custom_res(decompileDir)
 
         ret = apk_operate.produceNewRFile(newPackagename, decompileDir)
         if ret:

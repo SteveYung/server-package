@@ -294,11 +294,32 @@ def decompileApk(apkFile, targetDir, lock, apkTool = 'apktool2.jar'):
     else:
         return 0
 
+def checkManifest(decompileDir):
+    manifest = decompileDir + '/AndroidManifest.xml'
+    ET.register_namespace('android', androidNS)
+    targetTree = ET.parse(manifest)
+    targetRoot = targetTree.getroot()
+    applicationNode = targetRoot.find('application')
+    if applicationNode is None:
+        return
+
+    delete_key1 = '{' + androidNS + '}banner'
+    delete_key2 = '{' + androidNS + '}isGame'
+
+    if delete_key1 in applicationNode.attrib:
+        del applicationNode.attrib[delete_key1]
+    if delete_key2 in applicationNode.attrib:
+        del applicationNode.attrib[delete_key2]
+    targetTree.write(manifest, 'UTF-8')
+
 
 def recompileApk(srcFolder, apkFile, apkTool = 'apktool2.jar'):
     """
         recompile Apk after decompile apk.
     """
+
+    checkManifest(srcFolder)
+
     os.chdir(file_operate.curDir)
     apkFile = file_operate.getFullPath(apkFile)
     srcFolder = file_operate.getFullPath(srcFolder)
