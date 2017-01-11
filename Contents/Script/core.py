@@ -52,6 +52,7 @@ def main(channel):
         taskManager.shareInstance().notify(idChannel, 10)
         # file_operate.execFormatCmd('chmod -R 777 %s' % (file_operate.get_server_dir()+'/workspace/'))
         workDir = file_operate.get_server_dir()+'/workspace/%s/%s' % (sys.argv[1],idChannel)
+        file_operate.log('workDir:'+workDir)
         workDir = file_operate.getFullPath(workDir)
         file_operate.delete_file_folder(workDir)
         if not os.path.exists(source):
@@ -93,6 +94,7 @@ def main(channel):
                     file_operate.delete_file_folder(SDKDestDir + '/ForRes/drawable-xxxhdpi')
 
         taskManager.shareInstance().notify(idChannel, 30)
+        file_operate.log('<-- notify(idChannel, 30)  -->')
         for Channel_SDK in channel['sdkLs']:
             idSDK = Channel_SDK['idSDK']
             SDK = ConfigParse.shareInstance().findSDK(idSDK)
@@ -165,7 +167,7 @@ def main(channel):
                 return
 
         taskManager.shareInstance().notify(idChannel, 70)
-
+        file_operate.log('<-- notify(idChannel, 70)  -->')
 
         if extChannel.find("androidsupportv4") != -1:
             print 'handle androidsupportv4 resource'

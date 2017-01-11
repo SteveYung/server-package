@@ -205,8 +205,10 @@ def signApkAuto(apkFile, game, channel,keystore_dir=None):
     """"""
     # keystorePath = file_operate.getFullPath(file_operate.get_server_dir()+'/config/games/' + game['gameName'] + '/keystore/')
     # defaultPath = file_operate.getFullPath('')
+    file_operate.log('<---apk sign--->')
     if keystore_dir is None:
         keystore_dir = ConfigParse.shareInstance().getOutputDir()
+    file_operate.log('<---keystore_dir--->'+keystore_dir)
     keystoreFile = channel['keystoreFile']
     keystorePwd = channel['keystorePwd']
     keystoreAlias = channel['keystoreAlias']
