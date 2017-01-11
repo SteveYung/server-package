@@ -205,10 +205,8 @@ def signApkAuto(apkFile, game, channel,keystore_dir=None):
     """"""
     # keystorePath = file_operate.getFullPath(file_operate.get_server_dir()+'/config/games/' + game['gameName'] + '/keystore/')
     # defaultPath = file_operate.getFullPath('')
-    file_operate.log('<---apk sign--->')
     if keystore_dir is None:
         keystore_dir = ConfigParse.shareInstance().getOutputDir()
-    file_operate.log('<---keystore_dir--->'+keystore_dir)
     keystoreFile = channel['keystoreFile']
     keystorePwd = channel['keystorePwd']
     keystoreAlias = channel['keystoreAlias']
@@ -234,14 +232,14 @@ def signApkAuto(apkFile, game, channel,keystore_dir=None):
         if ret:
             return 1
     else:
-        file_operate.log('<---apk sign with gameInfo--->')
+        print('<---apk sign with gameInfo--->')
         keystoreFile = keystore.get('file')
         if keystoreFile != '' and keystore.get('storepassword') != '' and keystore.get('keyalias') != '' and keystore.get('aliaspassword') != '':
             gamekeystoreDir = file_operate.get_server_dir()+'/workspace/'+keystore_dir+'/keystore/'
-            if not os.path.exists(keystoreFile):
+            if not os.path.exists(gamekeystoreDir):
                 os.makedirs(gamekeystoreDir)
-            urllib.urlretrieve(keystoreFile,gamekeystoreDir + 'game.keystore')
-            file_operate.log('<---gamekeystoreFile--->' + gamekeystoreDir + 'game.keystore')
+            urllib.urlretrieve(keystoreFile,gamekeystoreDir+'game.keystore')
+            print '<---gamekeystoreFile--->'+gamekeystoreDir+'game.keystore'
             ret = signApk(apkFile, gamekeystoreDir+'game.keystore', keystore.get('storepassword'), keystore.get('keyalias'), keystore.get('aliaspassword'))
             if ret:
                 return 1
