@@ -276,10 +276,22 @@ class ConfigParse(object):
                 dictTemp['r_channel_game_icon'] = ''
             else:
                 dictTemp['r_channel_game_icon'] = r['r_channel_game_icon']
-            dictTemp['keystoreFile'] = r['keystoreFile']
-            dictTemp['keystorePwd'] = r['keystorePwd']
-            dictTemp['keystoreAlias'] = r['keystoreAlias']
-            dictTemp['keystoreAliasPwd'] = r['keystoreAliasPwd']
+            if r['keystoreFile'] is None:
+                dictTemp['keystoreFile'] = ''
+            else:
+                dictTemp['keystoreFile'] = r['keystoreFile']
+            if r['keystorePwd'] is None:
+                dictTemp['keystorePwd'] = ''
+            else:
+                dictTemp['keystorePwd'] = r['keystorePwd']
+            if r['keystoreAlias'] is None:
+                dictTemp['keystoreAlias'] = ''
+            else:
+                dictTemp['keystoreAlias'] = r['keystoreAlias']
+            if r['keystoreAliasPwd'] is None:
+                dictTemp['keystoreAliasPwd'] = ''
+            else:
+                dictTemp['keystoreAliasPwd'] = r['keystoreAliasPwd']
             if r['uapiKey'] is None:
                 dictTemp['uapiKey'] = ''
             else:
