@@ -232,14 +232,14 @@ def signApkAuto(apkFile, game, channel,keystore_dir=None):
         if ret:
             return 1
     else:
-        print('<---apk sign with gameInfo--->')
+        file_operate.log('<---apk sign with gameInfo--->')
         keystoreFile = keystore.get('file')
         if keystoreFile != '' and keystore.get('storepassword') != '' and keystore.get('keyalias') != '' and keystore.get('aliaspassword') != '':
             gamekeystoreDir = file_operate.get_server_dir()+'/workspace/'+keystore_dir+'/keystore/'
             if not os.path.exists(keystoreFile):
                 os.makedirs(gamekeystoreDir)
-            urllib.urlretrieve(keystoreFile,gamekeystoreDir+'game.keystore')
-            print '<---gamekeystoreFile--->'+gamekeystoreDir+'game.keystore'
+            urllib.urlretrieve(keystoreFile,gamekeystoreDir + 'game.keystore')
+            file_operate.log('<---gamekeystoreFile--->' + gamekeystoreDir + 'game.keystore')
             ret = signApk(apkFile, gamekeystoreDir+'game.keystore', keystore.get('storepassword'), keystore.get('keyalias'), keystore.get('aliaspassword'))
             if ret:
                 return 1
