@@ -1755,6 +1755,8 @@ def splitDex(workDir, channel):
 
     if (channel.get('idChannel') == 27 and channel.get('channelNum') == '110009'):
         maxMainFucNum = 50000
+    if (channel.get('idChannel') == 263 and channel.get('channelNum') == '600033'):
+        maxMainFucNum = 50000
     # maxMinorFucNum = 40000
 
     if currDexFunNum < maxMainFucNum:
