@@ -68,7 +68,7 @@ def main(channel):
         unknownFile = decompileDir + '/AddForRoot'
         if os.path.exists(decompileDir + '/unknown'):
             os.rename(decompileDir + '/unknown', unknownFile)
-        oldPackageName = apk_operate.getPackageName(decompileDir)
+        # oldPackageName = apk_operate.getPackageName(decompileDir)
         # isCocosPlay = apk_operate.checkForCocosPlay(decompileDir, channel, oldPackageName)
         # if isCocosPlay:
         #     ret = apk_operate.renameApkForCocosPlay(decompileDir, oldPackageName, channel['packNameSuffix'], game,
@@ -76,6 +76,9 @@ def main(channel):
         #     if ret:
         #         return
         # ConfigParse.shareInstance().setCocosPlayMode(isCocosPlay)
+
+        apk_operate.replace_custom_res(decompileDir)
+
         taskManager.shareInstance().notify(idChannel, 20)
         SmaliDir = decompileDir + '/smali'
         SDKWorkDir = workDir + '/sdk/'
@@ -156,7 +159,6 @@ def main(channel):
         if ret:
             return
 
-        apk_operate.replace_custom_res(decompileDir)
 
         taskManager.shareInstance().notify(idChannel, 60)
         if bExecuteSpecialScipt:
