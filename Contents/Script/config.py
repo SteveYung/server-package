@@ -393,7 +393,10 @@ class ConfigParse(object):
             dictTemp = {}
             dictTemp['id'] = r['id']
             dictTemp['name'] = r['name']
-            dictTemp['value'] = r['value'][1:]
+            if r['value'][1:] is None:
+                dictTemp['value'] = ''
+            else:
+                dictTemp['value'] = r['value'][1:]
             dictTemp['idUserSDK'] = r['idUserSDK']
             dictTemp['required'] = r['required']
             dictTemp['bWriteIntoManifest'] = r['bWriteIntoManifest']
