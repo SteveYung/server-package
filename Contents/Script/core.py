@@ -69,13 +69,13 @@ def main(channel):
         if os.path.exists(decompileDir + '/unknown'):
             os.rename(decompileDir + '/unknown', unknownFile)
         oldPackageName = apk_operate.getPackageName(decompileDir)
-        isCocosPlay = apk_operate.checkForCocosPlay(decompileDir, channel, oldPackageName)
-        if isCocosPlay:
-            ret = apk_operate.renameApkForCocosPlay(decompileDir, oldPackageName, channel['packNameSuffix'], game,
-                                                    channel, taskLock)
-            if ret:
-                return
-        ConfigParse.shareInstance().setCocosPlayMode(isCocosPlay)
+        # isCocosPlay = apk_operate.checkForCocosPlay(decompileDir, channel, oldPackageName)
+        # if isCocosPlay:
+        #     ret = apk_operate.renameApkForCocosPlay(decompileDir, oldPackageName, channel['packNameSuffix'], game,
+        #                                             channel, taskLock)
+        #     if ret:
+        #         return
+        # ConfigParse.shareInstance().setCocosPlayMode(isCocosPlay)
         taskManager.shareInstance().notify(idChannel, 20)
         SmaliDir = decompileDir + '/smali'
         SDKWorkDir = workDir + '/sdk/'
@@ -111,7 +111,7 @@ def main(channel):
         newPackagename = apk_operate.renameApkPackage(decompileSmaliDir, maniFestFile, channel['packNameSuffix'],
                                                       channel['r_bundle_id'])
 
-        #by tonet reset apk version
+        #reset apk version
         if channel['r_gameversion_build'] != '' and channel['r_gameversion'] != '':
             apk_operate.resetApkVersion(maniFestFile, channel['r_gameversion_build'], channel['r_gameversion'])
             file_operate.printf("Reset ApkVersion success")

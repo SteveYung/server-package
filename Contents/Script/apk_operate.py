@@ -1187,20 +1187,17 @@ def replace_custom_res(decompileDir):
             tempstr = tempstr.replace('\\', '/')
             tempstr = re.sub('/+', '/', tempstr)
 
-
-
             file_path = decompileDir + tempstr
-            print 'replace res path : '+file_path
+            print 'replace res path : ' + file_path
             file_url = r['url']
 
-            strlist = file_path.split('/')
-            file_dir = file_path.replace('/'+strlist[len(strlist)-1],'')
-            if(not os.path.exists(file_dir)):
+            file_dir = os.path.dirname(file_path)
+            if not os.path.exists(file_dir):
                 os.makedirs(file_dir)
 
 
             urllib.urlretrieve(file_url,file_path)
-            print 'replace custom res %s success' %(file_path)
+            print 'replace custom res %s success' % file_path
 
 def removeStartActivity(bHasSplash, decompileDir, bRemove = True):
     """
