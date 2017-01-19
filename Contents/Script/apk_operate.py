@@ -261,7 +261,6 @@ def alignAPK(tempApkFile, apkFile,outputDir):
     if ret:
         error_operate.error(250)
         return 1
-    print '{"ret":"success","msg":"run pack success"}'
     return 0
 
 

@@ -278,7 +278,9 @@ def main(channel):
         print '<---outputDir--->'+outputDir
         ret = apk_operate.alignAPK(tempApkName, apkName,outputDir)
         if ret:
+            print '{"ret":"fail","msg":"run pack fail"}'
             return
+        print '{"ret":"success","msg":"run pack success"}'
         taskManager.shareInstance().notify(idChannel, 100)
 
 def deleteWorkspace(channel):
