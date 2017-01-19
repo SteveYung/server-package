@@ -170,7 +170,6 @@ def split_apk(db_name, game_id, id_channel, parent_apk_path, sub_apk_path, sub_c
         logError('alignAPK fail',log_dir)
         return
     print '{"ret":"success","msg":"run pack success"}'
-    logError('run pack success',log_dir)
     file_operate.delete_file_folder(split_work_dir)
 
 
