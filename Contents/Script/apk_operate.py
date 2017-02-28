@@ -1743,17 +1743,35 @@ def splitDex(workDir, channel):
         else:
             print 'default androidsupportv4_number 11734'
             currDexFunNum += 11734
+    if extChannel.find(';') != -1 and extChannel.find('apk_method_num') != -1:
+        str_arr = extChannel.split(';')
+        for s in str_arr:
+            if s.find('apk_method_num') != -1:
+                str_arr2 = s.split('=', 2)
+                try:
+                    currDexFunNum += int(str_arr2[1])
+                    print ("apk_method_num:%d", int(str_arr2[1]))
+                except ValueError:
+                    print ("apk_method_num error--:%s", extChannel)
+                    return 1
 
+    elif extChannel.find('apk_method_num') != -1:
+        str_arr = extChannel.split('=', 2)
+        try:
+            currDexFunNum += int(str_arr[1])
+            print ("apk_method_num :%d", int(str_arr[1]))
+        except ValueError:
+            print ("apk_method_num error:%s", extChannel)
+            return 1
     '''
     the max method number in one dex file is 65535,but not one smali contains only one method
     '''
     maxMainFucNum = 65535
 
-    if (channel.get('idChannel') == 27 and channel.get('channelNum') == '110009'):
-        maxMainFucNum = 50000
-    if (channel.get('idChannel') == 263 and channel.get('channelNum') == '600033'):
-        maxMainFucNum = 50000
-    # maxMinorFucNum = 40000
+    # if (channel.get('idChannel') == 27 and channel.get('channelNum') == '110009'):
+    #     maxMainFucNum = 50000
+    # if (channel.get('idChannel') == 263 and channel.get('channelNum') == '600033'):
+    #     maxMainFucNum = 50000
 
     if currDexFunNum < maxMainFucNum:
         print "=======currDexFunNum:%s" %(currDexFunNum)
