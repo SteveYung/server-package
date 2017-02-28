@@ -1777,7 +1777,7 @@ def splitDex(workDir, channel):
         print "=======currDexFunNum:%s" %(currDexFunNum)
         return 0
 
-    currDexFunNum = currDexFunNum - maxMainFucNum - 1000
+    currDexFunNum -= maxMainFucNum
     print "=======need moveFucNum:%s" %(currDexFunNum)
     samilDir = workDir + '/decompile/smali/'
     decompileDir = workDir + '/decompile'
