@@ -35,9 +35,22 @@ def updataKeystoreFile(database):
 
         urllib.urlretrieve(r['keystoreFile'],backupDir+r['gameName']+'/'+r['name']+'/channel.keystore')
 
-        content = 'keystorePwd:'+r['keystorePwd'] + '\r\n'
-        content += 'keystoreAlias:'+r['keystoreAlias'] + '\r\n'
-        content += 'keystoreAliasPwd:'+r['keystoreAliasPwd']
+        keystorePwd = r['keystorePwd']
+        if r['keystorePwd'] is None:
+            keystorePwd = ''
+
+        keystoreAlias = r['keystoreAlias']
+        if r['keystoreAlias'] is None:
+            keystoreAlias = ''
+
+        keystoreAliasPwd = r['keystoreAliasPwd']
+        if r['keystoreAliasPwd'] is None:
+            keystoreAliasPwd = ''
+
+
+        content = 'keystorePwd:' + keystorePwd + '\r\n'
+        content += 'keystoreAlias:' + keystoreAlias + '\r\n'
+        content += 'keystoreAliasPwd:' + keystoreAliasPwd
         logdir = backupDir+r['gameName']+'/'+r['name'] + '/readme.txt'
         log(content,logdir,'w')
 
@@ -47,11 +60,23 @@ def updataKeystoreFile(database):
         if not os.path.exists(backupDir+r['gameName']):
            os.makedirs(backupDir+r['gameName'])
 
+        keystorePwd = r['keystorePwd']
+        if r['keystorePwd'] is None:
+            keystorePwd = ''
+
+        keystoreAlias = r['keystoreAlias']
+        if r['keystoreAlias'] is None:
+            keystoreAlias = ''
+
+        keystoreAliasPwd = r['keystoreAliasPwd']
+        if r['keystoreAliasPwd'] is None:
+            keystoreAliasPwd = ''
+
         urllib.urlretrieve(r['keystoreFile'],backupDir+r['gameName']+'/defualt.keystore')
 
-        content = 'GAME DEFUALT KEYSTORE\r\nkeystorePwd:'+r['keystorePwd'] + '\r\n'
-        content += 'keystoreAlias:'+r['keystoreAlias'] + '\r\n'
-        content += 'keystoreAliasPwd:'+r['keystoreAliasPwd']
+        content = 'GAME DEFUALT KEYSTORE\r\nkeystorePwd:'+keystorePwd + '\r\n'
+        content += 'keystoreAlias:'+keystoreAlias + '\r\n'
+        content += 'keystoreAliasPwd:'+keystoreAliasPwd
         logdir = backupDir+r['gameName'] + '/readme.txt'
         log(content,logdir,'w')
 

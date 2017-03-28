@@ -32,7 +32,7 @@ def resizeImg(**args):
     for key in args_key:
         if key in args:
             arg[key] = args[key]
-        
+
     im = image.open(arg['ori_img'])
     ori_w,ori_h = im.size
     widthRatio = heightRatio = None
@@ -53,13 +53,13 @@ def resizeImg(**args):
             ratio = widthRatio
         if heightRatio and not widthRatio:
             ratio = heightRatio
-            
+
         newWidth = int(ori_w * ratio)
         newHeight = int(ori_h * ratio)
     else:
         newWidth = ori_w
         newHeight = ori_h
-        
+
     im.resize((newWidth,newHeight),image.ANTIALIAS).save(arg['dst_img'],quality=arg['save_q'])
 
 
