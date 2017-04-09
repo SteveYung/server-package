@@ -29,10 +29,12 @@ def main(channel):
         idChannel = channel.get('idChannel')
         channelName = channel.get('name')
         channelNum = channel.get('channelNum')
+        ConfigParse.shareInstance().set_channel_num(channelNum)
+
         extChannel = channel.get('extChannel')
         threading.currentThread().setName(idChannel)
         taskManager.shareInstance().notify(idChannel, 5)
-        source = ConfigParse.shareInstance().getSource()
+        # source = ConfigParse.shareInstance().getSource()
         basename = os.path.basename(source)
         exttuple = os.path.splitext(basename)
         taskLock = taskManager.shareInstance().getLock()
@@ -51,7 +53,7 @@ def main(channel):
             return
         taskManager.shareInstance().notify(idChannel, 10)
         # file_operate.execFormatCmd('chmod -R 777 %s' % (file_operate.get_server_dir()+'/workspace/'))
-        workDir = file_operate.get_server_dir()+'/workspace/%s/%s' % (sys.argv[1],idChannel)
+        workDir = file_operate.get_server_dir()+'/workspace/%s/%s' % (ConfigParse.shareInstance().getDBName(),idChannel)
         workDir = file_operate.getFullPath(workDir)
         file_operate.delete_file_folder(workDir)
         if not os.path.exists(source):
@@ -268,7 +270,7 @@ def main(channel):
            #                             versionName,
             #                            dateStr,
              #                           extname)).encode('utf-8')
-        apkName = sys.argv[5]
+        apkName = ConfigParse.shareInstance().getOutPutApkName()
         print '<---Apk PATH--->'+apkName
         #if platform.system() == 'Windows':
          #   apkName = '%s/game_%s%s' % (outputDir, versionName, extname)
@@ -285,7 +287,7 @@ def main(channel):
 
 def deleteWorkspace(channel):
     idChannel = channel['idChannel']
-    workDir = file_operate.get_server_dir()+'/workspace/%s/%s' %(sys.argv[1],idChannel)
+    workDir = file_operate.get_server_dir()+'/workspace/%s/%s' % (ConfigParse.shareInstance().getDBName(),idChannel)
     workDir = file_operate.getFullPath(workDir)
     file_operate.delete_file_folder(workDir)
 # 定义函数 8.4

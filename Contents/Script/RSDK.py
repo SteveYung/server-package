@@ -9,10 +9,7 @@ import file_operate
 file_operate.curDir = sys.path[0]
 file_operate.setPrintEnable(True)
 
-if sys.argv[1] == 'ios':
-    start.startIos()
-else:
-    start.start()
+start.start()
 
 #+++ okay decompyling rsdk1.4/Script/rsdk.pyc 
 # decompiled 1 files: 1 okay, 0 failed, 0 verify failed

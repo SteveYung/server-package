@@ -7,7 +7,6 @@ import re
 import subprocess
 import platform
 from config import ConfigParse
-import inspect
 import sys
 import codecs
 import threading
@@ -327,7 +326,7 @@ def reportError(errorOuput, idChannel):
 
 def log(str,outputDir = None):
     if outputDir is None:
-        outputDir = ConfigParse.shareInstance().getOutputDir()
+        outputDir = ConfigParse.shareInstance().getOutputLogDir()
     logDir = get_server_dir()+'/Log/'+outputDir + '/'
     print 'log_dir:'+logDir
     if not os.path.exists(logDir):

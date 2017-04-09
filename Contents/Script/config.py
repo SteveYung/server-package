@@ -27,7 +27,7 @@ class ConfigParse(object):
 
     __configParse = None
     __lock = threading.Lock()
-    _source = ''
+
     __appName = ''
     __iOSName = ''
     _projFolder = ''
@@ -53,6 +53,14 @@ class ConfigParse(object):
     __isCocosPlayMode = False
     _targetName = '' #存放target
     __log_dir = None
+    _channel_num = None
+
+    _db_name = sys.argv[1]
+    _game_id = sys.argv[2]
+    _channel_id = sys.argv[3]
+    _source = sys.argv[4]
+    _out_put_file = sys.argv[5]
+    _sub_channel_id = sys.argv[6]
 
     db_host = ''
     db_port = 0
@@ -87,11 +95,20 @@ class ConfigParse(object):
     def set_log_dir(self,log_dir):
         self.__log_dir = log_dir
 
+    def set_channel_num(self,channel_num):
+        self._channel_num = channel_num
+
     def get_log_dir(self):
         return self.__log_dir
 
     def getSource(self):
         return self._source
+
+    def getDBName(self):
+        return self._db_name
+
+    def getOutPutApkName(self):
+        return self._out_put_file
 
     def getAppName(self):
         return self.__appName
@@ -116,6 +133,9 @@ class ConfigParse(object):
 
     def getOutputDir(self):
         return self._outputDir
+
+    def getOutputLogDir(self):
+        return self._db_name + self._game_id + self._channel_num
 
     def getKeyStore(self):
         return self._keystore
@@ -157,7 +177,7 @@ class ConfigParse(object):
         self.db_pwd = cf.get("mysqlconf", "password")
 
         cx = MySQLdb.connect(host=self.db_host, port=self.db_port, user=self.db_user, passwd=self.db_pwd)
-        cx.select_db(sys.argv[1])
+        cx.select_db(self._db_name)
         #self.readSDKVersionLs(cx)
 #        self.readChannelCustomLs(cx) 7.12
         self.readChannel(cx)
@@ -165,7 +185,7 @@ class ConfigParse(object):
         self.readUserSDKConfig(cx)
         self.readUserSDKParam(cx)
         self.readGameLs(cx)
-        self.readUserSource(cx)
+        # self.readUserSource(cx)
         # self.readProjFolder(cx)
         # self.readProjSDKPath(cx)
         self.readOutputDir(cx)
@@ -187,17 +207,15 @@ class ConfigParse(object):
     def read_sub_channel_database(self,cx):
         self.__subPackageLs.clear()
         try:
-            if sys.argv[6] is None:
+            if self._sub_channel_id is None:
                 pass
             else:
                 c = cx.cursor(MySQLdb.cursors.DictCursor)
-                c.execute('select * from tpl_sub_channel where id = %s' % sys.argv[6])
+                c.execute('select * from tpl_sub_channel where id = %s' % self._sub_channel_id)
                 self.__subPackageLs = c.fetchall()
                 c.close()
         except:
             pass
-
-
 
     def readSDKLs(self, cx):
         """get the data about tpl_sdk from database"""
@@ -408,17 +426,10 @@ class ConfigParse(object):
 
         c.close()
 
-    def readUserSource(self, cx):
-        """read apk src from user.xml"""
-        # data = self.readConfig(1)
-        # if data is not None:
-        self._source = sys.argv[4]
-            # if data.get('data4') is not None:
-            #     self.__appName = data['data4']
 
     def readOutputDir(self, cx):
         """read output dir from user.xml"""
-        str = sys.argv[5]
+        str = self._out_put_file
         outputDir = os.path.dirname(str).strip('/')
         print "<---outputDir--->" + outputDir
         self._outputDir = outputDir
@@ -428,7 +439,7 @@ class ConfigParse(object):
         """get the data about game list from database"""
         self.__gameLs = []
         c = cx.cursor(MySQLdb.cursors.DictCursor)
-        c.execute('select * from game where gameId = '+sys.argv[2])
+        c.execute('select * from game where gameId = ' + self._game_id)
         rows = c.fetchall()
         for r in rows:
             dictTemp = {}
@@ -484,7 +495,7 @@ class ConfigParse(object):
         self.__packageLs = []
         dictTemp = {}
         dictTemp['id'] ='1'
-        dictTemp['idChannel'] = int(sys.argv[3])
+        dictTemp['idChannel'] = int(self._channel_id)
         self.__packageLs.append(dictTemp)
 
         if len(self.__packageLs) > 0:
@@ -495,7 +506,7 @@ class ConfigParse(object):
         """get the data about tpl_resource_replace from database"""
         self.__resReplaceLs.clear()
         c = cx.cursor(MySQLdb.cursors.DictCursor)
-        c.execute('select * from tpl_resource_replace where channel_id = ' + sys.argv[3])
+        c.execute('select * from tpl_resource_replace where channel_id = ' + self._channel_id)
         self.__resReplaceLs = c.fetchall()
         c.close()
 
